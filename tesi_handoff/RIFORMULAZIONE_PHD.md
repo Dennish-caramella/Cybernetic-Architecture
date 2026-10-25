@@ -5,9 +5,9 @@
 **Autore del documento:** il modello orchestratore, nel ruolo di dottorando esterno. Le posizioni delle "voci" sono simulazioni di competenze costruite dalle schede del corpus, non gli autori reali.
 **Base:** `REPORT_FONDATIVO.md` (H1-H4, assi 1-6), `T1_protocollo_negoziazione.md`, `LETTURA_CRITICA_FASE_1_MILANO.md`, `pipeline_milano/` (README e config), `stato_avanzamento.md`, e una tavola rotonda di otto voci del team (vedi §9).
 
-**Marche** (come nel Report): **[S]** riportato da una scheda del corpus (le schede sono riassunti, non fonti primarie); **[I]** inferenza mia; **[H]** ipotesi da verificare; **[L]** lacuna. Nessuna fonte esterna al corpus è stata aperta per questo documento: tutto ciò che non sta nelle schede è [I] o [L].
+**Marche** (come nel Report): **[S]** riportato da una scheda del corpus (le schede sono riassunti, non fonti primarie); **[I]** inferenza mia; **[H]** ipotesi da verificare; **[L]** lacuna. Nessuna fonte esterna al corpus è stata aperta per questo documento (la scheda 37 su Azadi è parte del corpus ma si basa su abstract): tutto ciò che non sta nelle schede è [I] o [L].
 
-**Lacuna dichiarata:** l'analisi del paper TU/e sull'*augmented urban planning* è in corso in un altro thread e non è disponibile qui. Va integrata prima di congelare la domanda di ricerca (§11).
+**Integrazione AUP (aggiunta il 2026-10-25, dopo la tavola rotonda):** la scheda 37 (Azadi, *Augmented Urban Planning*, tesi PhD TU/e 2026) è stata letta solo a livello di scheda, non il testo integrale (sotto embargo fino al 23-09-2027). Le voci della tavola rotonda **non** l'hanno vista. Vedi §11.
 
 ---
 
@@ -253,8 +253,13 @@ Un soggetto istituzionale (ente pubblico, cooperativa, fondazione) che porti il 
 
 ## 11. Integrazioni in arrivo e punti aperti
 
-1. **Paper TU/e** (*augmented urban planning*): un altro thread lo sta analizzando. Va letto prima di congelare la domanda (§3), perché potrebbe fornire un quadro sociotecnico già pubblicato su cui ancorare il dottorato [L].
-2. **Letture da aggiungere** (nessuna è nel corpus, nessuna è verificata): scienze sociali sulla partecipazione e metodi di elicitazione; scelta sociale e aggregazione che protegga le minoranze; urbanistica italiana e social housing; modelli di prezzo e costo. Vanno cercate e verificate prima di entrare in bibliografia.
+1. **Azadi, *Augmented Urban Planning* (scheda 37 e file di deep research).** Fonte: tesi di dottorato di S. Azadi, TU/e, 2026. Il testo integrale è sotto embargo fino al 23-09-2027: la scheda si basa sull'abstract del record TU/e e su abstract di articoli collegati; la corrispondenza articolo-capitolo è inferenza [S: scheda 37, avviso di integrità]. Che cosa ne ricavo per la riformulazione:
+   - **Vocabolario e griglia di valutazione.** Le tre dimensioni dell'AUP (*Interdisciplinary Integration*, *Consensual Contextualization*, *Procedural Operationalization*) offrono una griglia per rendere verificabile lo strumento, senza fornire un metodo di selezione dei lotti [S:37; I]. Possono diventare criteri di valutazione di processo accanto a H1-H9 (es. il tool si innesta in un processo decisionale reale? rappresenta punti di vista diversi?). [H]
+   - **Contrappeso sul chi partecipa.** Il workshop AUP coinvolge 12 stakeholder esperti su densificazione del centro di Eindhoven, non residenti [S:37, abstract CUPUM]. Questo conferma, dal lato della letteratura, l'obiezione di De Carlo: la domanda "chi entra nel processo" non è risolta dai digital twin.
+   - **Possibile spazio di originalità.** Nella letteratura verificata dalla scheda non risulta un sistema in cui le scelte dei residenti tra lotti riaddestrino il modello [S:37, 'Rilevanza']. **Non è una prova di novità**: la ricerca si è limitata a quanto raggiungibile (testo integrale e molti PDF non aperti), e un'assenza di risultati non è assenza dell'oggetto. Prima di rivendicare originalità serve una rassegna sistematica dedicata (preference learning in urbanistica partecipativa, PPGIS, *participatory digital twins*). [L]
+   - **Cautela sulla corrispondenza.** L'AUP non dichiara un ciclo di apprendimento; il DKG è una struttura di conoscenza, non un modello predittivo [S:37]. Quindi AUP non è il concorrente diretto dell'apprendimento da scelte, ma è l'antecedente più vicino sul versante processo/partecipazione.
+   - **Ruolo nell'impianto.** Suggerisco di usarla come ancoraggio teorico di Fase 1 per il lato "digital twin partecipativo" e di non basare nulla su dettagli del testo integrale finché non è accessibile.
+2. **Letture da aggiungere** (oltre all'AUP) (nessuna è nel corpus, nessuna è verificata): scienze sociali sulla partecipazione e metodi di elicitazione; scelta sociale e aggregazione che protegga le minoranze; urbanistica italiana e social housing; modelli di prezzo e costo. Vanno cercate e verificate prima di entrare in bibliografia.
 3. **Ashby, pp. 121-126 e 202-213**, e le citazioni di De Carlo: ancora da leggere sui testi primari (avvisi 3 e 4 dello stato).
 4. **Glossario unico** (PAI, rent gap, velocità, K, lotto): da scrivere in F0.
 
@@ -280,4 +285,4 @@ Revisione condotta dalla voce `revisore-integrita` (un agente che ha riletto 16 
 2. **Nessuna evidenza a favore.** Sono state sentite voci critiche. Non è stata cercata evidenza che sostenga la proposta, per esempio Oikos [S:31], dove persone reali giocano e i dati alimentano le regole.
 3. **Ipotesi H5-H9 non operative** (vedi nota nel §5).
 4. **Dati di De Carlo (scheda 24)** da verificare sul libro prima di ogni citazione (avviso 3 dello stato).
-5. **Paper TU/e** non integrato (§11).
+5. **Integrazione AUP fatta dopo la tavola rotonda e dopo la revisione:** il §11 punto 1 non è stato visto né dalle voci né dal revisore. Rivendicazione di originalità da non fare senza rassegna dedicata.
