@@ -286,3 +286,36 @@ Revisione condotta dalla voce `revisore-integrita` (un agente che ha riletto 16 
 3. **Ipotesi H5-H9 non operative** (vedi nota nel §5).
 4. **Dati di De Carlo (scheda 24)** da verificare sul libro prima di ogni citazione (avviso 3 dello stato).
 5. **Integrazione AUP fatta dopo la tavola rotonda e dopo la revisione:** il §11 punto 1 non è stato visto né dalle voci né dal revisore. Rivendicazione di originalità da non fare senza rassegna dedicata.
+
+---
+
+## 14. Aggiornamento del 2026-10-25: risposta di Dennis
+
+Dennis ha precisato tre punti. Li registro come sua decisione e ne traggo le conseguenze; le parti non dette da lui sono mie [I].
+
+**Contributo (decisione 1 del §12).** Il contributo è un **ciclo con feedback umano** per la scelta dei lotti: (1) le persone esprimono le proprie esigenze; (2) dai dati già disponibili il sistema genera lotti candidati "ideali"; (3) le persone esprimono opinione sulle proposte; (4) il ciclo si ripete finché i lotti non sono scelti. Dalla scelta parte la Fase 2, come ponte verso la progettazione partecipativa con negoziazione spaziale o altri metodi, da valutare con approccio scientifico. Rispetto al §0, questo è più vicino a (b) il gioco con ricompensa contestabile che a (a) la sola valutazione riscrivibile. Resta compatibile con (a) se, nel ciclo, le persone possono anche modificare criteri e pesi (H2) e non solo votare i lotti. Altrimenti diventa una consultazione iterata su criteri fissi, esattamente la cooptazione segnalata da De Carlo [S:24, da verificare sul libro; I].
+
+**Dati (decisione 3 del §12).** Dennis non ha accesso a dati personali reali. Due strade: pubblicare il tool e far giocare persone, oppure simulare *personas* e validare il modello. Sono compatibili, in due stadi.
+
+| Stadio | Cosa prova | Cosa NON prova |
+|---|---|---|
+| **A. Personas simulate** | che il meccanismo funzioni: il modello recupera preferenze note (*parameter recovery*), regge a minoranze, a rumore e a partecipanti in malafede, e il ciclo converge; che H1, H2 (in versione scenario), H5, H8 si possano calcolare | che i bisogni delle persone reali siano questi. Le personas le scrive l'autore: contengono le sue ipotesi. Personas generate da un LLM sono scenario, non evidenza [S: LETTURA_CRITICA, punto 3; Report rischio 2] |
+| **B. Pilota pubblico con tool online** | comportamento di persone reali con il tool: se cambiano i criteri (H2), se i pesi appresi predicono scelte nuove (H6), quanto pesa l'auto-selezione (H7) | rappresentatività: chi risponde a un tool online è auto-selezionato; quindi nessuna stima sulla "pancia della curva" |
+
+Raccomando A prima di B: A costa poco e rivela errori di meccanismo. Poi B come pilota esplorativo, dichiarato tale. [I]
+
+**Cautele su B.** Anche senza dati personali identificativi, far giocare persone è ricerca con partecipanti: servono informativa e consenso, raccolta minima (niente indirizzi o dati anagrafici non necessari), conservazione e anonimizzazione dichiarate, e il parere del comitato etico o dell'ufficio competente dell'ateneo prima di pubblicare. Cosa richieda esattamente l'ateneo e la normativa sulla protezione dei dati non è verificato [L]: va chiesto. Il motivo per cui conta: "tutti esprimono le loro esigenze" è un reclutamento, non un fatto. Chi gioca è chi ha tempo, accesso digitale e interesse; chi sta fuori dai registri o dalla rete non c'è (De Carlo: chi manca dal tavolo? [S:24; I]). Il pilota non può quindi dire "le esigenze reali sono X", solo "queste persone, con questo tool, hanno fatto così".
+
+**Cosa cambia nelle ipotesi.**
+- H2 e H5 si testano già in A (con personas che hanno cataloghi diversi), e in B con persone reali.
+- H6 (apprendimento) richiede in A un test di recupero dei parametri e in B un campione di controllo: in B va fissata prima la numerosità minima [L].
+- H7 (bias) in A è una simulazione di auto-selezione controllata (si sa il vero profilo della popolazione), in B resta non misurabile senza un campione di riferimento. Questo è un limite onesto del pilota online. [I]
+- Nuova **H10 (convergenza del ciclo)**: il ciclo di feedback converge a una scelta di lotti stabile in un numero finito di round, senza che il modello o l'ordine di presentazione la determinino. Falsificata se la scelta finale dipende dall'ordine di presentazione o dal seme casuale oltre una soglia fissata ex ante (calibrata sulla variabilità test-retest, come per H5). [H]
+
+**Rischio specifico del ciclo.** "Finché non si scelgono i lotti" richiede una regola di arresto e una regola di aggregazione tra persone con scelte diverse. Senza queste, il ciclo termina quando uno si stanca, o quando il modello ha ridotto le opzioni abbastanza da forzare l'accordo (convergenza indotta, non consenso). La scelta sociale è una lacuna del corpus [L]. Va definita in F0 prima di costruire il tool.
+
+**Sulla "previsit".** Se per "dati previsit" Dennis intende i dati già raccolti (OMI, PGT, ISTAT, OSM) usati per pre-valutare i lotti prima che le persone intervengano, la prevalutazione è lo screening di F1a e può influenzare le persone (effetto ancoraggio). Da decidere: le persone vedono prima i lotti pre-valutati o prima esprimono le esigenze? Le due sequenze producono bias diversi e si possono confrontare come condizioni sperimentali. [H]
+
+**Fase 2.** Resta come da §6: ponte esplorativo (H9). "Negoziazione spaziale" non è ancora un metodo: serve scegliere tra grafi, mereologia, parti combinatorie o gioco, con criteri di confronto. Non va fatto ora.
+
+**Prossimo passo concreto.** Fissare in F0: (1) la regola di arresto e di aggregazione del ciclo; (2) lo schema delle personas (parametri, minoranze, personas avversarie) e quali parametri il modello deve recuperare; (3) la sequenza dei passi del ciclo; (4) la domanda al comitato etico. Poi eseguire lo stadio A su `pipeline_milano`, appena girata su dati reali.
