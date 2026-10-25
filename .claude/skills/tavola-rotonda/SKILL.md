@@ -6,7 +6,7 @@ description: Orchestra il team di voci-esperte della tesi (agenti in .claude/age
 # Tavola rotonda
 
 Il team simula le competenze dei testi analizzati, non gli autori reali. Le voci sono definite in `.claude/agents/`:
-`alexander-sistemi`, `pask-cibernetica`, `negroponte-steenson`, `decarlo-mari-partecipazione`, `degraaf-murphy-potere`, `carpo-sanchez-discreto`, `mvrdv-negoziazione`, `aadrl-bartlett-agenti`, `agenti-stigmergia`, `ingegnere-edile`, `revisore-integrita`.
+`alexander-sistemi`, `pask-cibernetica`, `negroponte-steenson`, `decarlo-mari-partecipazione`, `degraaf-murphy-potere`, `carpo-sanchez-discreto`, `mvrdv-negoziazione`, `aadrl-bartlett-agenti`, `agenti-stigmergia`, `azadi-pianificazione-aumentata`, `ingegnere-edile`, `revisore-integrita`.
 
 ## Procedura
 
