@@ -17,7 +17,7 @@ Ricerca e sintesi, con prove sulla Fase 1 (urbanistica, Milano). Scrittura riman
 ## Avvisi aperti
 1. ~~Tesi magistrale o dottorato?~~ Chiuso il 27/10: dottorato, un anno (Dennis). Le istruzioni sono aggiornate; il topic del progetto su Claude dice ancora "tesi magistrale".
 2. **Pipeline Milano su dati reali (22/10)**: la cronologia dice eseguita (1.911 celle H3, 348 tile 3D, `RAPPORTO_ESECUZIONE.md`, `MANIFEST.csv`), ma quei file non sono né nella cartella condivisa né in `Desktop\TESI\05_Urbanistica` (vuota). Qui c'è solo la versione con dati sintetici del 21/10.
-3. **Spatial Milano Lab**: nel repo ci sono documenti e modelli testuali; mancano dati (`parcels.csv.gz`, 119.352 particelle), `run.py`, `prototype/` e `model.json`, che stanno nella cartella di scratch di una sessione sul PC. Artifact: vedi `prove/.../docs/ripresa_spatial_milano_lab_2026-10-27.md`.
+3. **Spatial Milano Lab incompleto**: recuperati da artifact il prototipo, `lab.json` (risultati), PGT, DUSAF, core e i tasselli (vedi `prove/in_evidenza/2026-10-25_spatial_milano_lab/RECUPERO.md`). Mancano nel repo `parcels.csv.gz`, `run.py`, gli script di build e i dati grezzi: stanno nella cartella di scratch sul PC, non raggiungibile da qui. Serve che Dennis la colleghi o la copi in `Desktop\TESI`.
 4. Dati numerici non verificati nelle schede 08, 14, 20, 23. Incoerenza interna scheda 13 (16 o 18 prototipi). Residui di estrazione PDF nella scheda 10. Hillier 1989/2015 (scheda 17).
 5. Scheda 24 (De Carlo): appunti dell'autore, non fonte; citazioni da verificare sul libro.
 6. Tutto ciò che nel Report fondativo e nei modelli è [S]/[L] resta da verificare sui PDF.
