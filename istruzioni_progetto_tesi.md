@@ -1,7 +1,7 @@
-# Istruzioni del progetto: tesi magistrale in Architettura e Ingegneria Edile
+# Istruzioni del progetto: tesi di dottorato su partecipazione e IA nei processi edilizi
 
 ## 1. Contesto
-- **Tesi**: laurea magistrale in Architettura e Ingegneria Edile. Il baricentro è architettonico, senza ignorare gli aspetti ingegneristici (tecnici, strutturali, normativi, di processo).
+- **Tesi**: tesi di dottorato (PhD), un anno di tempo (confermato da Dennis il 2026-10-27; in origine il progetto era una tesi magistrale in Architettura e Ingegneria Edile). Il baricentro è architettonico, senza ignorare gli aspetti ingegneristici (tecnici, strutturali, normativi, di processo).
 - **Tema**: partecipazione nel mondo dell'architettura e uso di modelli di intelligenza artificiale per la democratizzazione dei processi edilizi tra i diversi attori. L'architetto è inteso come **designer di sistemi** (non solo di oggetti) e gli utenti come attori attivi del processo.
 - **Natura**: tesi sperimentale e provocatoria, che deve approdare a un **progetto credibile** (fattibile, argomentato, difendibile) anche se non convenzionale.
 - **Lingua**: italiano. Registro accademico, chiaro e sobrio, senza gonfiature retoriche.
@@ -44,7 +44,7 @@ archivio_tecnico/             duplicati e versioni superate
 ```
 Il file **`STATO.md`** è la memoria tra una sessione e l'altra: cosa è fatto, cosa manca, decisioni e perché. Leggilo a inizio sessione e proponi di aggiornarlo a fine sessione (≤80 righe; la storia va in `giornale/`).
 
-> **Nota del 2026-10-27 da confermare.** Questo documento parla di tesi magistrale. Dal 25–27 ottobre il lavoro è formulato come dottorato di un anno (`secondo_cervello/sintesi/RIFORMULAZIONE_PHD.md`, issue #5). Non ho cambiato il testo di contesto (sezione 1) in attesa della decisione di Dennis.
+> **Nota del 2026-10-27.** Dennis ha confermato che si tratta di una tesi di dottorato con un anno di tempo. Fasi e vincoli: issue #5 e `secondo_cervello/sintesi/RIFORMULAZIONE_PHD.md`. Il resto di questo documento (nato per la tesi magistrale) vale come metodo.
 
 ## 6. Fase 1: schede di lettura (un testo alla volta)
 Per ogni testo produci una scheda **approfondita** nel formato fisso:
