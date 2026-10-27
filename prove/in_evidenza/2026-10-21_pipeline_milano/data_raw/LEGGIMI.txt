@@ -1,0 +1,1 @@
+Metti qui i file scaricati (vedi config/sources.yaml). La cache di OpenStreetMap si crea in data_raw/osm_cache/.

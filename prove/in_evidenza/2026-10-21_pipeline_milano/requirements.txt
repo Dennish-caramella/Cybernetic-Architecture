@@ -1,0 +1,12 @@
+numpy
+pandas
+geopandas
+shapely
+pyproj
+h3>=4.0
+scikit-learn
+scipy
+networkx
+osmnx>=2.0
+pyyaml
+pyogrio

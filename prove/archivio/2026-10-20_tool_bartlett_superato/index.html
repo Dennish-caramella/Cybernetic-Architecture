@@ -1,0 +1,483 @@
+<!doctype html>
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Laboratorio Bartlett</title>
+<style>
+/* Layout: una colonna stretta con tre moduli in sequenza, ciascuno con il proprio dato di partenza e il proprio limite dichiarato. */
+:root {
+  --bg: #eef1ed;
+  --surface: #f8faf7;
+  --fg: #1c2622;
+  --muted: #5b6963;
+  --line: #c9d3cc;
+  --accent: #2c6659;
+  --accent-soft: #d5e7e1;
+  --warn: #9a4a24;
+  --src: #3a5a8c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111916;
+    --surface: #17211d;
+    --fg: #e4ece7;
+    --muted: #9db0a5;
+    --line: #2e3d36;
+    --accent: #7fc1b0;
+    --accent-soft: #1f3a33;
+    --warn: #e39a72;
+    --src: #9cb8e6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111916;
+  --surface: #17211d;
+  --fg: #e4ece7;
+  --muted: #9db0a5;
+  --line: #2e3d36;
+  --accent: #7fc1b0;
+  --accent-soft: #1f3a33;
+  --warn: #e39a72;
+  --src: #9cb8e6;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 15px/1.6 "IBM Plex Sans", system-ui, sans-serif;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px 48px;
+}
+main { max-width: 760px; margin: 0 auto; display: grid; gap: 40px; }
+h1, h2, h3 { text-wrap: balance; line-height: 1.2; margin: 0; font-family: "Source Serif 4", Georgia, serif; font-weight: 600; }
+h1 { font-size: clamp(26px, 6vw, 36px); }
+h2 { font-size: 22px; }
+h3 { font-size: 17px; font-family: "IBM Plex Sans", system-ui, sans-serif; }
+p { margin: 0; max-width: 65ch; }
+.label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.lede { color: var(--muted); }
+nav { display: flex; flex-wrap: wrap; gap: 8px; }
+nav a {
+  color: var(--fg); text-decoration: none; padding: 6px 12px;
+  border: 1px solid var(--line); border-radius: 999px; font-size: 14px;
+}
+nav a[aria-current="true"] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+nav a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+section { display: grid; gap: 16px; scroll-margin-top: 16px; }
+section[hidden] { display: none; }
+.panel {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 6px;
+  padding: 16px; display: grid; gap: 14px; min-width: 0;
+}
+.src {
+  font-size: 13px; color: var(--src); border-left: 2px solid var(--src);
+  padding-left: 10px; max-width: 65ch;
+}
+.inf {
+  font-size: 13px; color: var(--muted); border-left: 2px dashed var(--muted);
+  padding-left: 10px; max-width: 65ch;
+}
+.controls { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: end; }
+.controls label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); }
+input[type="range"] { width: 180px; accent-color: var(--accent); }
+input[type="number"], select {
+  font: inherit; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 4px; padding: 4px 8px; width: 110px;
+}
+button {
+  font: inherit; font-size: 14px; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 4px; padding: 6px 12px; cursor: pointer;
+}
+button.primary { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.num { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.stats div { display: grid; gap: 2px; min-width: 0; }
+.stats strong { font-size: 22px; font-weight: 600; }
+.gap { color: var(--warn); }
+.tablewrap { overflow-x: auto; min-width: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 500; color: var(--muted); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
+.ok { color: var(--accent); font-weight: 600; }
+.ko { color: var(--warn); font-weight: 600; }
+canvas { width: 100%; max-width: 100%; height: auto; aspect-ratio: 1 / 1; display: block; background: var(--bg); border: 1px solid var(--line); border-radius: 4px; image-rendering: pixelated; }
+.rank { display: grid; gap: 6px; }
+.rank div { display: flex; justify-content: space-between; gap: 12px; }
+footer { font-size: 13px; color: var(--muted); max-width: 65ch; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<main>
+  <header style="display:grid;gap:12px">
+    <span class="label">Prove di modelli · cluster Bartlett (RC3, RC10, RC14)</span>
+    <h1>Laboratorio Bartlett</h1>
+    <p class="lede">Tre prove per i modelli emersi dalle analisi 34–36. Ogni modulo mostra prima il dato dichiarato dalla fonte, poi lascia manipolare il modello, e dichiara ciò che non è stato reperito. Nessun parametro della fonte è stato inventato: i valori usati come esempio sono marcati come tali.</p>
+    <nav aria-label="Moduli">
+      <a href="#combinatoria" data-tab="combinatoria">1 · Combinatoria</a>
+      <a href="#regole" data-tab="regole">2 · Regole locali</a>
+      <a href="#pesi" data-tab="pesi">3 · Pesi e grafo</a>
+    </nav>
+  </header>
+
+  <!-- MODULO 1 -->
+  <section id="combinatoria" aria-labelledby="h-comb">
+    <span class="label">Modulo 1 · Connessioni modulari</span>
+    <h2 id="h-comb">Quante connessioni, con quale aritmetica</h2>
+    <p>TetrAgora dichiara una libreria di connessioni tra moduli. La pagina riporta 9 geometrie e 24 rotazioni, cioè 216 combinazioni, ma indica 303 configurazioni senza spiegarne il calcolo. Qui il conteggio si può rifare.</p>
+    <div class="panel">
+      <div class="controls">
+        <label>Geometrie
+          <input id="geo" type="number" min="1" max="50" value="9">
+        </label>
+        <label>Rotazioni
+          <input id="rot" type="number" min="1" max="72" value="24">
+        </label>
+        <label>Configurazioni dichiarate
+          <input id="decl" type="number" min="0" max="10000" value="303">
+        </label>
+      </div>
+      <div class="stats">
+        <div><span class="label">Prodotto geometrie × rotazioni</span><strong class="num" id="prod">216</strong></div>
+        <div><span class="label">Scarto rispetto al dichiarato</span><strong class="num gap" id="scarto">87</strong></div>
+      </div>
+      <p class="src" id="comb-msg">Fonte: 9 × 24 = 216; 303 riportate. Lo scarto resta non spiegato nella fonte.</p>
+      <p class="inf">Inferenza: un prodotto semplice è una ipotesi di calcolo, non la spiegazione di TetrAgora. Il valore 303 potrebbe includere configurazioni non ottenute da questo prodotto (per esempio di ricorsione). Da chiedere al progetto o alla pagina originale.</p>
+    </div>
+  </section>
+
+  <!-- MODULO 2 -->
+  <section id="regole" aria-labelledby="h-reg" hidden>
+    <span class="label">Modulo 2 · Assemblaggio a regole locali</span>
+    <h2 id="h-reg">Costruire senza un piano globale</h2>
+    <p>TetrAgora descrive 800 "builder" che assemblano collettivamente, con wandering a zero e ispirazione dalla formica di Langton. La fonte non riporta la regola. Qui ogni agente segue una regola di rotazione scelta da te: a ogni cella legge lo stato, gira a destra (R) o sinistra (L), cambia lo stato della cella e avanza.</p>
+    <div class="panel">
+      <div class="controls">
+        <label>Regola (sequenza R/L)
+          <select id="preset">
+            <option value="RL">RL · classica di Langton</option>
+            <option value="RLR">RLR</option>
+            <option value="LLRR">LLRR</option>
+            <option value="RLLR">RLLR</option>
+            <option value="RRLLLRLLLRRR">RRLLLRLLLRRR · lunga</option>
+          </select>
+        </label>
+        <label>Agenti
+          <input id="ants" type="number" min="1" max="2000" value="800">
+        </label>
+        <label>Griglia (lato)
+          <input id="size" type="number" min="20" max="200" value="120">
+        </label>
+        <label>Passi per fotogramma
+          <input id="speed" type="range" min="1" max="60" value="8">
+        </label>
+      </div>
+      <div class="controls">
+        <button class="primary" id="run" type="button">Avvia</button>
+        <button id="step" type="button">Passo singolo</button>
+        <button id="reset" type="button">Reimposta</button>
+      </div>
+      <canvas id="grid" width="480" height="480" role="img" aria-label="Griglia con le celle costruite dagli agenti"></canvas>
+      <div class="stats">
+        <div><span class="label">Passi</span><strong class="num" id="steps">0</strong></div>
+        <div><span class="label">Celle toccate</span><strong class="num" id="filled">0</strong></div>
+        <div><span class="label">Frazione della griglia</span><strong class="num" id="frac">0,0%</strong></div>
+      </div>
+      <p class="src">Fonte: 800 builder e wandering a zero (pagina TetrAgora). Il numero di agenti è il dato sourced; regola, griglia e velocità sono impostazioni di esempio.</p>
+      <p class="inf">Inferenza: la regola non determina il risultato da sola; conta anche il numero di agenti e la dimensione della griglia. Il modulo serve a osservare come cambia la forma al variare della regola, non a riprodurre TetrAgora.</p>
+    </div>
+  </section>
+
+  <!-- MODULO 3 -->
+  <section id="pesi" aria-labelledby="h-pes" hidden>
+    <span class="label">Modulo 3 · Pesi e grafo di adiacenza</span>
+    <h2 id="h-pes">Chi decide i pesi decide la forma</h2>
+    <p>Tessellated Biomes definisce un indice di connettività come somma pesata di tre termini (grado medio di contatto, rapporto di articolazione, frazione connessa al suolo). La formula precisa e i pesi α, β, γ non sono riportati. Il grafo di adiacenza con regole ✓/✗ ricorda la valutazione di Horizon. Qui i pesi li imposti tu, e puoi vedere se cambia la classifica di due piante.</p>
+    <div class="panel">
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Pianta</th><th>Collegamenti</th><th>Piano terra</th></tr></thead>
+          <tbody>
+            <tr><td>A · Soggiorno al centro</td><td class="num">soggiorno–cucina, soggiorno–camera 1, soggiorno–camera 2, soggiorno–studio, camera 1–bagno</td><td class="num">soggiorno, cucina, studio</td></tr>
+            <tr><td>B · Percorso lineare</td><td class="num">soggiorno–cucina, cucina–bagno, soggiorno–camera 1, camera 1–camera 2, camera 2–studio</td><td class="num">soggiorno, cucina, bagno</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="src" id="pesi-src">Le piante A e B sono esempi costruiti per la prova, non progetti dalla fonte. Le stanze e i collegamenti sono dati di esempio.</p>
+
+      <h3>Regole di adiacenza (✓ / ✗)</h3>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Regola (esempio)</th><th>A</th><th>B</th></tr></thead>
+          <tbody id="rules"></tbody>
+        </table>
+      </div>
+
+      <h3>Pesi dell'indice (impostati da te)</h3>
+      <div class="controls">
+        <label>α · grado medio
+          <input id="wa" type="range" min="0" max="1" step="0.05" value="0.33">
+        </label>
+        <label>β · articolazione
+          <input id="wb" type="range" min="0" max="1" step="0.05" value="0.33">
+        </label>
+        <label>γ · piano terra
+          <input id="wg" type="range" min="0" max="1" step="0.05" value="0.33">
+        </label>
+      </div>
+      <div class="rank" id="rank" aria-live="polite"></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Pianta</th><th>Grado medio</th><th>Articolazione</th><th>Piano terra</th><th>Indice</th></tr></thead>
+          <tbody id="terms"></tbody>
+        </table>
+      </div>
+      <p class="inf">Definizioni usate qui, inferenza e non della fonte: grado medio = 2 × collegamenti / stanze, normalizzato dividendo per 4; articolazione = stanze che, se rimosse, spezzano il grafo, divise per il totale; piano terra = quota di stanze al piano terra. Pesi e normalizzazione dell'indice sono scelte di esempio.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Fonti: analisi 34 (Bartlett, RC3, RC10, RC11, RC14), 35 (RC10) e 36 (RC14) in <span class="num">03_Analisi Approfondite</span>. Stato: <strong>prototipo</strong>, non verificato da sessioni con la fonte originale. Le cifre dei progetti sono da controllare sulle pagine di progetto prima di essere citate.</p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  // Navigazione tra moduli tramite #token
+  var tabs = ["combinatoria", "regole", "pesi"];
+  function showTab() {
+    var t = location.hash.slice(1);
+    if (tabs.indexOf(t) === -1) t = "combinatoria";
+    tabs.forEach(function (id) {
+      document.getElementById(id).hidden = id !== t;
+    });
+    document.querySelectorAll("nav a").forEach(function (a) {
+      a.setAttribute("aria-current", a.dataset.tab === t ? "true" : "false");
+    });
+  }
+  window.addEventListener("hashchange", showTab);
+  showTab();
+
+  // MODULO 1
+  var geo = document.getElementById("geo");
+  var rot = document.getElementById("rot");
+  var decl = document.getElementById("decl");
+  function num(el, fallback) {
+    var v = parseInt(el.value, 10);
+    return isNaN(v) ? fallback : v;
+  }
+  function updateComb() {
+    var p = num(geo, 0) * num(rot, 0);
+    var d = num(decl, 0);
+    document.getElementById("prod").textContent = p;
+    var s = d - p;
+    document.getElementById("scarto").textContent = s;
+    document.getElementById("comb-msg").textContent =
+      s === 0
+        ? "Il prodotto coincide con il dichiarato: nessuno scarto."
+        : "Fonte: 9 × 24 = 216; 303 riportate. Scarto di " + s + " configurazioni con questi valori.";
+  }
+  [geo, rot, decl].forEach(function (el) { el.addEventListener("input", updateComb); });
+  updateComb();
+
+  // MODULO 2: agenti con regola di rotazione (stile Langton), stato cella = numero di passaggi mod lunghezza regola
+  var canvas = document.getElementById("grid");
+  var ctx = canvas.getContext("2d");
+  var presetEl = document.getElementById("preset");
+  var antsEl = document.getElementById("ants");
+  var sizeEl = document.getElementById("size");
+  var speedEl = document.getElementById("speed");
+  var runBtn = document.getElementById("run");
+  var N, grid, ants, rule, steps, running = false, raf = 0;
+  var DIRS = [[0, -1], [1, 0], [0, 1], [-1, 0]];
+  var PALETTE = ["#eef1ed", "#2c6659", "#7fc1b0", "#9a4a24", "#d9a86a", "#3a5a8c", "#8c6fb0", "#c9d3cc", "#5b6963", "#1c2622", "#e39a72", "#9cb8e6"];
+
+  function cssVar(name) {
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  }
+
+  function init() {
+    rule = (presetEl.value || "RL").toUpperCase().replace(/[^RL]/g, "") || "RL";
+    N = Math.min(200, Math.max(20, num(sizeEl, 120)));
+    grid = new Uint16Array(N * N);
+    var count = Math.min(2000, Math.max(1, num(antsEl, 800)));
+    ants = [];
+    // Seme fisso: ogni reset parte dallo stesso punto, così le prove sono confrontabili
+    var seed = 12345;
+    function rnd() { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff; }
+    for (var i = 0; i < count; i++) {
+      ants.push({ x: Math.floor(rnd() * N), y: Math.floor(rnd() * N), d: Math.floor(rnd() * 4) });
+    }
+    steps = 0;
+    draw();
+    metrics();
+  }
+
+  function stepOnce() {
+    var L = rule.length;
+    for (var a = 0; a < ants.length; a++) {
+      var ant = ants[a];
+      var i = ant.y * N + ant.x;
+      var s = grid[i] % L;
+      ant.d = (ant.d + (rule[s] === "R" ? 1 : 3)) % 4;
+      grid[i] = (grid[i] + 1) % L;
+      var dv = DIRS[ant.d];
+      ant.x = (ant.x + dv[0] + N) % N;
+      ant.y = (ant.y + dv[1] + N) % N;
+    }
+    steps++;
+  }
+
+  function draw() {
+    var cell = canvas.width / N;
+    ctx.fillStyle = cssVar("--bg") || "#eef1ed";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    var L = rule.length;
+    for (var y = 0; y < N; y++) {
+      for (var x = 0; x < N; x++) {
+        var v = grid[y * N + x];
+        if (v === 0) continue;
+        ctx.fillStyle = PALETTE[v % PALETTE.length];
+        ctx.fillRect(x * cell, y * cell, Math.ceil(cell), Math.ceil(cell));
+      }
+    }
+    ctx.fillStyle = cssVar("--fg") || "#1c2622";
+    for (var k = 0; k < ants.length; k++) {
+      var ant = ants[k];
+      ctx.fillRect(ant.x * cell + cell * 0.35, ant.y * cell + cell * 0.35, cell * 0.3, cell * 0.3);
+    }
+  }
+
+  function metrics() {
+    var touched = 0;
+    for (var i = 0; i < grid.length; i++) if (grid[i] !== 0) touched++;
+    document.getElementById("steps").textContent = steps;
+    document.getElementById("filled").textContent = touched;
+    document.getElementById("frac").textContent = ((touched / grid.length) * 100).toFixed(1).replace(".", ",") + "%";
+  }
+
+  function loop() {
+    var n = num(speedEl, 8);
+    for (var j = 0; j < n; j++) stepOnce();
+    draw();
+    metrics();
+    raf = running ? requestAnimationFrame(loop) : 0;
+  }
+
+  function setRunning(on) {
+    running = on;
+    runBtn.textContent = on ? "Pausa" : "Avvia";
+    runBtn.classList.toggle("primary", !on);
+    if (on) raf = requestAnimationFrame(loop);
+    else cancelAnimationFrame(raf);
+  }
+
+  runBtn.addEventListener("click", function () { setRunning(!running); });
+  document.getElementById("step").addEventListener("click", function () {
+    setRunning(false); stepOnce(); draw(); metrics();
+  });
+  document.getElementById("reset").addEventListener("click", function () {
+    setRunning(false); init();
+  });
+  [presetEl, antsEl, sizeEl].forEach(function (el) {
+    el.addEventListener("change", function () { setRunning(false); init(); });
+  });
+  init();
+
+  // MODULO 3: grafo, regole e indice
+  var rooms = ["soggiorno", "cucina", "bagno", "camera 1", "camera 2", "studio"];
+  var ground = { "soggiorno": 1, "cucina": 1, "bagno": 0, "camera 1": 0, "camera 2": 0, "studio": 1 };
+  var plans = {
+    A: { name: "A · Soggiorno al centro", edges: [["soggiorno", "cucina"], ["soggiorno", "camera 1"], ["soggiorno", "camera 2"], ["soggiorno", "studio"], ["camera 1", "bagno"]], ground: { "soggiorno": 1, "cucina": 1, "studio": 1, "bagno": 0, "camera 1": 0, "camera 2": 0 } },
+    B: { name: "B · Percorso lineare", edges: [["soggiorno", "cucina"], ["cucina", "bagno"], ["soggiorno", "camera 1"], ["camera 1", "camera 2"], ["camera 2", "studio"]], ground: { "soggiorno": 1, "cucina": 1, "bagno": 1, "camera 1": 0, "camera 2": 0, "studio": 0 } }
+  };
+  var ruleDefs = [
+    { label: "Soggiorno adiacente alla cucina", test: function (g) { return adj(g, "soggiorno", "cucina"); } },
+    { label: "Ogni camera raggiunge il soggiorno", test: function (g) { return ["camera 1", "camera 2"].every(function (r) { return reach(g, r, "soggiorno", null); }); } },
+    { label: "Bagno raggiungibile senza passare per una camera", test: function (g) { return reach(g, "bagno", "soggiorno", ["camera 1", "camera 2"]); } },
+    { label: "Studio collegato direttamente al soggiorno", test: function (g) { return adj(g, "soggiorno", "studio"); } }
+  ];
+
+  function adj(g, a, b) {
+    return g.edges.some(function (e) { return (e[0] === a && e[1] === b) || (e[0] === b && e[1] === a); });
+  }
+  function neighbors(g, r, banned) {
+    var out = [];
+    g.edges.forEach(function (e) {
+      if (e[0] === r && (!banned || banned.indexOf(e[1]) === -1)) out.push(e[1]);
+      if (e[1] === r && (!banned || banned.indexOf(e[0]) === -1)) out.push(e[0]);
+    });
+    return out;
+  }
+  // Raggiungibilità con nodi esclusi (banned); a e b sono i due estremi
+  function reach(g, a, b, banned) {
+    var seen = {}; seen[a] = true; var q = [a];
+    while (q.length) {
+      var cur = q.shift();
+      if (cur === b) return true;
+      neighbors(g, cur, banned).forEach(function (n) {
+        if (!seen[n] && (!banned || banned.indexOf(n) === -1)) { seen[n] = true; q.push(n); }
+      });
+    }
+    return false;
+  }
+  function connected(g, removed) {
+    var nodes = rooms.filter(function (r) { return r !== removed; });
+    if (nodes.length === 0) return true;
+    var seen = {}; seen[nodes[0]] = true; var q = [nodes[0]];
+    while (q.length) {
+      var cur = q.shift();
+      neighbors(g, cur, removed ? [removed] : null).forEach(function (n) {
+        if (!seen[n]) { seen[n] = true; q.push(n); }
+      });
+    }
+    return nodes.every(function (r) { return seen[r]; });
+  }
+  function terms(g) {
+    var deg = 2 * g.edges.length / rooms.length;
+    var degNorm = deg / 4;
+    var artic = rooms.filter(function (r) { return !connected(g, r); }).length / rooms.length;
+    var gr = rooms.filter(function (r) { return g.ground[r]; }).length / rooms.length;
+    return { deg: deg, degNorm: degNorm, artic: artic, gr: gr };
+  }
+
+  var wa = document.getElementById("wa"), wb = document.getElementById("wb"), wg = document.getElementById("wg");
+
+  function renderPesi() {
+    var ids = ["A", "B"];
+    // Regole
+    document.getElementById("rules").innerHTML = ruleDefs.map(function (r) {
+      var cells = ids.map(function (id) {
+        var ok = r.test(plans[id]);
+        return '<td class="' + (ok ? "ok" : "ko") + '">' + (ok ? "✓" : "✗") + "</td>";
+      }).join("");
+      return "<tr><td>" + r.label + "</td>" + cells + "</tr>";
+    }).join("");
+
+    // Termini e indice
+    var a = parseFloat(wa.value), b = parseFloat(wb.value), g = parseFloat(wg.value);
+    var scores = {};
+    var rows = ids.map(function (id) {
+      var t = terms(plans[id]);
+      var idx = a * t.degNorm + b * t.artic + g * t.gr;
+      scores[id] = idx;
+      return '<tr><td>' + plans[id].name + '</td><td class="num">' + t.degNorm.toFixed(2) + '</td><td class="num">' + t.artic.toFixed(2) + '</td><td class="num">' + t.gr.toFixed(2) + '</td><td class="num">' + idx.toFixed(2) + "</td></tr>";
+    });
+    document.getElementById("terms").innerHTML = rows.join("");
+
+    var order = ids.slice().sort(function (x, y) { return scores[y] - scores[x]; });
+    var same = Math.abs(scores.A - scores.B) < 1e-9;
+    document.getElementById("rank").innerHTML = same
+      ? '<div><span>Pari con questi pesi</span><span class="num">' + scores.A.toFixed(2) + "</span></div>"
+      : order.map(function (id, i) {
+          return '<div><span>' + (i + 1) + ". " + plans[id].name + '</span><span class="num">' + scores[id].toFixed(2) + "</span></div>";
+        }).join("");
+  }
+  [wa, wb, wg].forEach(function (el) { el.addEventListener("input", renderPesi); });
+  renderPesi();
+})();
+</script>

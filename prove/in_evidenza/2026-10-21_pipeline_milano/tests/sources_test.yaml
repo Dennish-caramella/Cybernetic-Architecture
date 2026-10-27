@@ -1,0 +1,40 @@
+# Adattatori per i dati SINTETICI di collaudo (data_test/). I nomi delle colonne qui sono quelli della fixture,
+# non quelli delle fonti reali.
+osm:
+  stato_verifica: "SINTETICO: dati generati da tests/make_fixture.py"
+fonti:
+  popolazione:
+    file: data_test/popolazione.gpkg
+    ente: "SINTETICO"
+    stato_verifica: "sintetico"
+    attributi:
+      pop_total:   {col: pop_tot, kind: extensive}
+      pop_over65:  {col: pop_65, kind: extensive}
+      households:  {col: famiglie, kind: extensive}
+      income_mean: {col: reddito, kind: intensive, peso: pop_total}
+  omi:
+    file: data_test/omi.gpkg
+    ente: "SINTETICO"
+    stato_verifica: "sintetico"
+    attributi:
+      omi_rent_min:  {col: aff_min, kind: intensive}
+      omi_rent_max:  {col: aff_max, kind: intensive}
+      omi_price_min: {col: pr_min, kind: intensive}
+      omi_price_max: {col: pr_max, kind: intensive}
+  pgt_ambiti:
+    file: data_test/pgt_ambiti.gpkg
+    ente: "SINTETICO"
+    stato_verifica: "sintetico"
+    attributi:
+      transformable_share_pgt: {kind: coverage}
+  vincolo_protetta:
+    file: data_test/non_esiste.gpkg
+    attributi:
+      c_protetta: {kind: coverage, soglia_overlap: 0.2}
+  vincolo_idraulico:
+    file: data_test/non_esiste2.gpkg
+    attributi:
+      c_idraulico: {kind: coverage, soglia_overlap: 0.2}
+  lotti_pgt:
+    file: data_test/non_esiste3.gpkg
+    attributi: {}

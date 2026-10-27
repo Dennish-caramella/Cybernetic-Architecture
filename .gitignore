@@ -218,3 +218,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Progetto tesi: file pesanti solo sul PC
+*.pdf
+*.tif
+*.TIF
+*.tiff
+*.eps
+*.bmp
+*.png
+*.jpg
+*.jpeg
+*.docx
+*.pptx
+Thumbs.db
+*.csv.gz
+graph.json

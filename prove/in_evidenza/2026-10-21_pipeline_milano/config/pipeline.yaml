@@ -1,0 +1,55 @@
+# Parametri della pipeline. Ogni valore marcato [PARAMETRO] è una scelta dell'autore,
+# non un dato: va giustificato in tesi e testato con l'analisi di sensibilità.
+
+area:
+  nome: "Milano"
+  osm_query: "Milano, Lombardia, Italia"   # confine amministrativo da OpenStreetMap
+
+griglia:
+  h3_res: 9            # [PARAMETRO] ~0,105 km2 per cella. Prova anche 8 e 10 (test di sensibilità MAUP)
+  h3_res_sensibilita: [8, 10]
+
+accessibilita:
+  velocita_kmh: 4.5    # [PARAMETRO] Milano è pianeggiante: nessuna correzione di pendenza (Tobler non usata)
+  tempo_max_min: 20
+  categorie:           # peso e soglia in minuti a piedi; [PARAMETRO] da discutere
+    metro:     {peso: 0.20, soglia_min: 15}
+    scuola:    {peso: 0.20, soglia_min: 10}
+    asilo:     {peso: 0.15, soglia_min: 10}
+    sanita:    {peso: 0.15, soglia_min: 15}
+    farmacia:  {peso: 0.10, soglia_min: 10}
+    verde:     {peso: 0.10, soglia_min: 10}
+    commercio: {peso: 0.10, soglia_min: 10}
+
+obiettivo_canone:
+  canone_target_eur_m2_mese: 8.0   # [PARAMETRO] canone calmierato di riferimento; da derivare da fonte verificata
+
+clustering:
+  feature: [pop_density, income_mean, omi_rent_mid, afford_gap, share_elderly,
+            pai, t_metro, built_density, transformable_share]
+  log1p: [pop_density, built_density, transformable_share]
+  winsor: [0.01, 0.99]
+  n_componenti: 3
+  k_range: [2, 8]
+  k_forzato: null      # se null, K scelto con silhouette; imposta un intero per forzarlo
+  n_bootstrap: 50
+  seed: 42
+
+idoneita:
+  criteri:             # tutti normalizzati 0-1, più alto = meglio
+    need:      {colonna: afford_gap,         direzione: alto}
+    access:    {colonna: pai,                direzione: alto}
+    transform: {colonna: transformable_share, direzione: alto}
+    feasib:    {colonna: omi_price_mid,      direzione: basso}   # proxy del costo del suolo
+  scenari:             # [PARAMETRO] pesi iniziali. Nel viewer si modificano a mano.
+    equilibrato: {need: 0.25, access: 0.25, transform: 0.25, feasib: 0.25}
+    comune:      {need: 0.40, access: 0.30, transform: 0.20, feasib: 0.10}
+    developer:   {need: 0.20, access: 0.15, transform: 0.25, feasib: 0.40}
+    comitati:    {need: 0.30, access: 0.50, transform: 0.10, feasib: 0.10}
+  sensibilita: {n_estrazioni: 1000, concentrazione: 50, quantile_top: 0.9}
+  vincoli_booleani: [c_protetta, c_idraulico]   # colonne 0/1 se disponibili; se assenti il vincolo NON è applicato (segnalato)
+
+lotti:
+  area_minima_m2: 5000     # [PARAMETRO]
+  indice_if_m2_m2: null    # indice di fabbricabilità: da PGT, lasciare null finché non verificato
+  top_n: 25
