@@ -1,6 +1,6 @@
 # STATO
 
-Aggiornato 2026-10-27. Storia completa: `giornale/CRONOLOGIA_COMPLETA.md`. Una riga per giorno: `giornale/GIORNALE.md`.
+Aggiornato 2026-10-28. Storia completa: `giornale/CRONOLOGIA_COMPLETA.md`. Una riga per giorno: `giornale/GIORNALE.md`.
 
 ## Fase
 Ricerca e sintesi, con prove sulla Fase 1 (urbanistica, Milano). Scrittura rimandata. Direzione dichiarata il 27/10 nell'issue #5: **un anno**, prove ed errori che definiscono la ricerca; Fase 1 scala urbana e lotti partecipativi, Fase 2 progetto sul lotto (kit of parts, negoziazione, Assembler, gioco/RL); solo persone, niente developer.
@@ -17,7 +17,7 @@ Ricerca e sintesi, con prove sulla Fase 1 (urbanistica, Milano). Scrittura riman
 ## Avvisi aperti
 1. ~~Tesi magistrale o dottorato?~~ Chiuso il 27/10: dottorato, un anno (Dennis). Le istruzioni sono aggiornate; il topic del progetto su Claude dice ancora "tesi magistrale".
 2. **Pipeline Milano su dati reali (22/10)**: la cronologia dice eseguita (1.911 celle H3, 348 tile 3D, `RAPPORTO_ESECUZIONE.md`, `MANIFEST.csv`), ma quei file non sono né nella cartella condivisa né in `Desktop\TESI\05_Urbanistica` (vuota). Qui c'è solo la versione con dati sintetici del 21/10.
-3. **Spatial Milano Lab incompleto**: recuperati da artifact il prototipo, `lab.json` (risultati), PGT, DUSAF, core e i tasselli (vedi `prove/in_evidenza/2026-10-25_spatial_milano_lab/RECUPERO.md`). Mancano nel repo `parcels.csv.gz`, `run.py`, gli script di build e i dati grezzi: stanno nella cartella di scratch sul PC, non raggiungibile da qui. Serve che Dennis la colleghi o la copi in `Desktop\TESI`.
+3. ~~Spatial Milano Lab incompleto~~ Chiuso il 28/10: copiato tutto lo scratch (1024 file, hash verificati). Codice e dati leggeri nel repo, dati medi in cartella condivisa, grezzi sul PC (`RECUPERO.md`). Nessuno script rieseguito; `build_mi.py` richiede `istat_samples/` accanto a `mi/`.
 4. Dati numerici non verificati nelle schede 08, 14, 20, 23. Incoerenza interna scheda 13 (16 o 18 prototipi). Residui di estrazione PDF nella scheda 10. Hillier 1989/2015 (scheda 17).
 5. Scheda 24 (De Carlo): appunti dell'autore, non fonte; citazioni da verificare sul libro.
 6. Tutto ciò che nel Report fondativo e nei modelli è [S]/[L] resta da verificare sui PDF.
@@ -25,5 +25,5 @@ Ricerca e sintesi, con prove sulla Fase 1 (urbanistica, Milano). Scrittura riman
 ## Prossimi passi
 1. Rispondere all'avviso 2 (dove sono i file della pipeline su dati reali).
 2. Issue #10 (domanda di ricerca e perimetro), #11 (attori e pesi), #12 (prove Fase 1).
-3. Recuperare dal PC i file dell'avviso 2 e 3.
+3. Recuperare dal PC i file dell'avviso 2. Rieseguire `run.py` sul PC per confermare che i risultati si riproducono.
 4. Fondere Report fondativo e Riformulazione PhD.

@@ -1,0 +1,646 @@
+{
+ "young_worker": {
+  "true_w": {
+   "access": 0.3,
+   "need": 0.2,
+   "green": 0.08,
+   "heat": 0.07,
+   "capacity": 0.1,
+   "mix": 0.1,
+   "cost": 0.15
+  },
+  "learned_w": {
+   "access": 0.303,
+   "need": 0.154,
+   "green": 0.115,
+   "heat": 0.113,
+   "capacity": 0.077,
+   "mix": 0.149,
+   "cost": 0.087
+  },
+  "final": {
+   "tv": 0.13127548364400074,
+   "top10": 0.9,
+   "top1": 1.0,
+   "regret": 0.0,
+   "regret10": 0.006341286958421796,
+   "q": 12
+  },
+  "questions": [
+   {
+    "a": "051700.211 (Porta Genova, 0.44 km to Bolivar)",
+    "b": "000700.86 (Roserio, 2.25 km to S.Leonardo)",
+    "answer": "a"
+   },
+   {
+    "a": "001600.21 (Bruzzano, 0.11 km to Comasina)",
+    "b": "032800.3 (Parco Bosco in Citta', 2.73 km to San Siro Stadio)",
+    "answer": "a"
+   },
+   {
+    "a": "022200.51 (Farini, 0.55 km to Monumentale)",
+    "b": "004200.163 (Parco Nord, 0.95 km to Affori Fn)",
+    "answer": "b"
+   },
+   {
+    "a": "032800.3 (Parco Bosco in Citta', 2.73 km to San Siro Stadio)",
+    "b": "005800.128 (Maggiore - Musocco - Certosa, 0.53 km to S.Leonardo)",
+    "answer": "b"
+   },
+   {
+    "a": "066700.8 (Gratosoglio - Q.re Missaglia - Q.re Terrazze, 2.05 km to Assago Milanofiori Nord)",
+    "b": "000400.364 (Cascina Merlata, 0.55 km to Rho Fieramilano)",
+    "answer": "b"
+   },
+   {
+    "a": "039900.149 (Parco Forlanini - Cavriano, 1.27 km to Repetti)",
+    "b": "003600.154 (Bovisasca, 0.96 km to Affori Fn)",
+    "answer": "b"
+   },
+   {
+    "a": "030400.274 (Tre Torri, 0.19 km to Tre Torri)",
+    "b": "000300.26 (Cascina Merlata, 1.18 km to Rho Fieramilano)",
+    "answer": "a"
+   },
+   {
+    "a": "061900.60 (Triulzo Superiore, 0.16 km to San Donato)",
+    "b": "021300.83 (Qt 8, 0.21 km to Qt8)",
+    "answer": "a"
+   },
+   {
+    "a": "021300.81 (Qt 8, 0.20 km to Qt8)",
+    "b": "059200.43 (Triulzo Superiore, 0.40 km to San Donato)",
+    "answer": "b"
+   },
+   {
+    "a": "028200.119 (Cimiano - Rottole - Q.re Feltre, 1.39 km to Udine)",
+    "b": "005800.365 (Maggiore - Musocco - Certosa, 1.05 km to S.Leonardo)",
+    "answer": "a"
+   },
+   {
+    "a": "064600.9 (Parco Dei Navigli, 0.98 km to Assago Milanofiori Nord)",
+    "b": "005700.338 (Maggiore - Musocco - Certosa, 0.57 km to S.Leonardo)",
+    "answer": "a"
+   },
+   {
+    "a": "002500.279 (Maggiore - Musocco - Certosa, 1.02 km to Molino Dorino)",
+    "b": "000400.364 (Cascina Merlata, 0.55 km to Rho Fieramilano)",
+    "answer": "a"
+   }
+  ],
+  "top5": [
+   "015400.27 (Cimiano - Rottole - Q.re Feltre, 0.06 km to Cascina Gobba)",
+   "015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)",
+   "015200.208 (Cimiano - Rottole - Q.re Feltre, 0.26 km to Crescenzago)",
+   "039600.314 (Parco Forlanini - Cavriano, 0.18 km to Stazione Forlanini)",
+   "024100.85 (Cimiano - Rottole - Q.re Feltre, 0.19 km to Cimiano)"
+  ]
+ },
+ "family_children": {
+  "true_w": {
+   "access": 0.12,
+   "need": 0.12,
+   "green": 0.25,
+   "heat": 0.15,
+   "capacity": 0.08,
+   "mix": 0.18,
+   "cost": 0.1
+  },
+  "learned_w": {
+   "access": 0.154,
+   "need": 0.076,
+   "green": 0.205,
+   "heat": 0.152,
+   "capacity": 0.068,
+   "mix": 0.221,
+   "cost": 0.123
+  },
+  "final": {
+   "tv": 0.10057774867128405,
+   "top10": 0.6,
+   "top1": 0.0,
+   "regret": 0.2796261052946599,
+   "regret10": 0.07485843343916702,
+   "q": 12
+  },
+  "questions": [
+   {
+    "a": "005700.344 (Maggiore - Musocco - Certosa, 0.63 km to Molino Dorino)",
+    "b": "000700.86 (Roserio, 2.25 km to S.Leonardo)",
+    "answer": "a"
+   },
+   {
+    "a": "034100.21 (Pagano, 0.21 km to Pagano)",
+    "b": "002900.113 (Quarto Oggiaro - Vialba - Musocco, 2.15 km to Uruguay)",
+    "answer": "a"
+   },
+   {
+    "a": "066600.61 (Gratosoglio - Q.re Missaglia - Q.re Terrazze, 1.95 km to Abbiategrasso)",
+    "b": "000500.1157 (Roserio, 1.72 km to Rho Fieramilano)",
+    "answer": "a"
+   },
+   {
+    "a": "038300.24 (Pagano, 0.15 km to Pagano)",
+    "b": "032800.3 (Parco Bosco in Citta', 2.73 km to San Siro Stadio)",
+    "answer": "b"
+   },
+   {
+    "a": "021500.277 (Qt 8, 0.46 km to Lotto M5)",
+    "b": "022200.57 (Farini, 0.42 km to Monumentale)",
+    "answer": "a"
+   },
+   {
+    "a": "022100.34 (Farini, 0.67 km to Cenisio)",
+    "b": "036900.48 (Parco Bosco in Citta', 2.06 km to Bisceglie)",
+    "answer": "b"
+   },
+   {
+    "a": "003600.154 (Bovisasca, 0.96 km to Affori Fn)",
+    "b": "064400.11 (Parco Dei Navigli, 0.54 km to Assago Milanofiori Nord)",
+    "answer": "a"
+   },
+   {
+    "a": "047000.387 (Porta Genova, 0.11 km to California)",
+    "b": "002800.61 (Stephenson, 1.83 km to Bonola)",
+    "answer": "a"
+   },
+   {
+    "a": "030500.22 (Pagano, 0.45 km to Domodossola)",
+    "b": "003900.282 (Bovisasca, 0.28 km to Affori Fn)",
+    "answer": "b"
+   },
+   {
+    "a": "024900.2 (Figino, 2.18 km to S.Leonardo)",
+    "b": "061600.5 (Lodi - Corvetto, 0.09 km to Rogoredo Fs)",
+    "answer": "b"
+   },
+   {
+    "a": "000400.364 (Cascina Merlata, 0.55 km to Rho Fieramilano)",
+    "b": "002900.113 (Quarto Oggiaro - Vialba - Musocco, 2.15 km to Uruguay)",
+    "answer": "a"
+   },
+   {
+    "a": "047000.387 (Porta Genova, 0.11 km to California)",
+    "b": "030400.162 (Tre Torri, 0.24 km to Tre Torri)",
+    "answer": "b"
+   }
+  ],
+  "top5": [
+   "039600.314 (Parco Forlanini - Cavriano, 0.18 km to Stazione Forlanini)",
+   "015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)",
+   "015200.208 (Cimiano - Rottole - Q.re Feltre, 0.26 km to Crescenzago)",
+   "015400.27 (Cimiano - Rottole - Q.re Feltre, 0.06 km to Cascina Gobba)",
+   "039700.144 (Parco Forlanini - Cavriano, 0.43 km to Repetti)"
+  ]
+ },
+ "elderly": {
+  "true_w": {
+   "access": 0.25,
+   "need": 0.08,
+   "green": 0.17,
+   "heat": 0.3,
+   "capacity": 0.05,
+   "mix": 0.1,
+   "cost": 0.05
+  },
+  "learned_w": {
+   "access": 0.215,
+   "need": 0.075,
+   "green": 0.28,
+   "heat": 0.096,
+   "capacity": 0.105,
+   "mix": 0.119,
+   "cost": 0.11
+  },
+  "final": {
+   "tv": 0.24437064476008596,
+   "top10": 0.5,
+   "top1": 1.0,
+   "regret": 0.0,
+   "regret10": 0.05008190581243233,
+   "q": 12
+  },
+  "questions": [
+   {
+    "a": "000700.231 (Roserio, 2.23 km to S.Leonardo)",
+    "b": "030400.331 (Tre Torri, 0.17 km to Tre Torri)",
+    "answer": "b"
+   },
+   {
+    "a": "005800.445 (Maggiore - Musocco - Certosa, 1.52 km to Bonola)",
+    "b": "000300.174 (Cascina Merlata, 1.02 km to Rho Fieramilano)",
+    "answer": "b"
+   },
+   {
+    "a": "021300.81 (Qt 8, 0.20 km to Qt8)",
+    "b": "032900.552 (Parco Bosco in Citta', 2.44 km to San Siro Stadio)",
+    "answer": "a"
+   },
+   {
+    "a": "005700.351 (Maggiore - Musocco - Certosa, 0.60 km to S.Leonardo)",
+    "b": "059800.45 (Barona, 1.20 km to Famagosta)",
+    "answer": "a"
+   },
+   {
+    "a": "041700.182 (Parco Bosco in Citta', 0.85 km to Bisceglie)",
+    "b": "000300.299 (Cascina Merlata, 0.80 km to Rho Fieramilano)",
+    "answer": "a"
+   },
+   {
+    "a": "000200.26 (Cascina Merlata, 0.95 km to Rho Fieramilano)",
+    "b": "033000.34 (Parco Bosco in Citta', 2.04 km to San Siro Stadio)",
+    "answer": "b"
+   },
+   {
+    "a": "000400.447 (Cascina Merlata, 0.69 km to Rho Fieramilano)",
+    "b": "066700.8 (Gratosoglio - Q.re Missaglia - Q.re Terrazze, 2.05 km to Assago Milanofiori Nord)",
+    "answer": "b"
+   },
+   {
+    "a": "051700.167 (Porta Genova, 0.28 km to P.Ta Genova F.S.)",
+    "b": "032800.3 (Parco Bosco in Citta', 2.73 km to San Siro Stadio)",
+    "answer": "b"
+   },
+   {
+    "a": "020800.15 (Figino, 2.03 km to Molino Dorino)",
+    "b": "054100.111 (Giambellino, 0.14 km to San Cristoforo)",
+    "answer": "b"
+   },
+   {
+    "a": "039900.149 (Parco Forlanini - Cavriano, 1.27 km to Repetti)",
+    "b": "001600.21 (Bruzzano, 0.11 km to Comasina)",
+    "answer": "b"
+   },
+   {
+    "a": "004200.118 (Parco Nord, 0.95 km to Affori Fn)",
+    "b": "040000.7 (Parco Forlanini - Cavriano, 1.43 km to Linate Aeroporto)",
+    "answer": "a"
+   },
+   {
+    "a": "016400.116 (Parco Bosco in Citta', 1.60 km to Molino Dorino)",
+    "b": "039600.112 (Parco Forlanini - Cavriano, 0.05 km to Repetti)",
+    "answer": "a"
+   }
+  ],
+  "top5": [
+   "015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)",
+   "015200.208 (Cimiano - Rottole - Q.re Feltre, 0.26 km to Crescenzago)",
+   "015400.27 (Cimiano - Rottole - Q.re Feltre, 0.06 km to Cascina Gobba)",
+   "015200.183 (Cimiano - Rottole - Q.re Feltre, 0.34 km to Crescenzago)",
+   "024100.57 (Cimiano - Rottole - Q.re Feltre, 0.39 km to Cimiano)"
+  ]
+ },
+ "commuter": {
+  "true_w": {
+   "access": 0.4,
+   "need": 0.1,
+   "green": 0.05,
+   "heat": 0.05,
+   "capacity": 0.1,
+   "mix": 0.05,
+   "cost": 0.25
+  },
+  "learned_w": {
+   "access": 0.582,
+   "need": 0.044,
+   "green": 0.051,
+   "heat": 0.076,
+   "capacity": 0.087,
+   "mix": 0.055,
+   "cost": 0.105
+  },
+  "final": {
+   "tv": 0.21383016728208631,
+   "top10": 0.7,
+   "top1": 1.0,
+   "regret": 0.0,
+   "regret10": 0.018627274953072696,
+   "q": 12
+  },
+  "questions": [
+   {
+    "a": "002900.111 (Quarto Oggiaro - Vialba - Musocco, 2.21 km to Uruguay)",
+    "b": "030600.94 (Pagano, 0.38 km to Domodossola)",
+    "answer": "b"
+   },
+   {
+    "a": "016200.33 (Figino, 2.35 km to Pero)",
+    "b": "061900.152 (Triulzo Superiore, 0.09 km to San Donato)",
+    "answer": "b"
+   },
+   {
+    "a": "025900.133 (Portello, 0.42 km to Domodossola)",
+    "b": "004200.163 (Parco Nord, 0.95 km to Affori Fn)",
+    "answer": "a"
+   },
+   {
+    "a": "022200.48 (Farini, 0.53 km to Monumentale)",
+    "b": "030500.187 (Pagano, 0.55 km to Domodossola)",
+    "answer": "a"
+   },
+   {
+    "a": "039700.134 (Parco Forlanini - Cavriano, 0.63 km to Repetti)",
+    "b": "001400.24 (Comasina, 0.15 km to Comasina)",
+    "answer": "b"
+   },
+   {
+    "a": "000200.26 (Cascina Merlata, 0.95 km to Rho Fieramilano)",
+    "b": "004200.84 (Parco Nord, 0.78 km to Affori Centro)",
+    "answer": "a"
+   },
+   {
+    "a": "017200.60 (Q.re Gallaratese - Q.re San Leonardo - Lampugnano, 0.28 km to Bonola)",
+    "b": "022200.48 (Farini, 0.53 km to Monumentale)",
+    "answer": "a"
+   },
+   {
+    "a": "001600.224 (Bruzzano, 0.11 km to Comasina)",
+    "b": "032800.3 (Parco Bosco in Citta', 2.73 km to San Siro Stadio)",
+    "answer": "a"
+   },
+   {
+    "a": "005800.128 (Maggiore - Musocco - Certosa, 0.53 km to S.Leonardo)",
+    "b": "022100.156 (Farini, 0.65 km to Cenisio)",
+    "answer": "a"
+   },
+   {
+    "a": "032800.3 (Parco Bosco in Citta', 2.73 km to San Siro Stadio)",
+    "b": "001100.116 (Quarto Oggiaro - Vialba - Musocco, 1.83 km to Comasina)",
+    "answer": "b"
+   },
+   {
+    "a": "030400.162 (Tre Torri, 0.24 km to Tre Torri)",
+    "b": "005800.365 (Maggiore - Musocco - Certosa, 1.05 km to S.Leonardo)",
+    "answer": "a"
+   },
+   {
+    "a": "000400.364 (Cascina Merlata, 0.55 km to Rho Fieramilano)",
+    "b": "025200.11 (Parco Bosco in Citta', 1.29 km to Bonola)",
+    "answer": "a"
+   }
+  ],
+  "top5": [
+   "015400.27 (Cimiano - Rottole - Q.re Feltre, 0.06 km to Cascina Gobba)",
+   "015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)",
+   "061900.177 (Triulzo Superiore, 0.01 km to San Donato)",
+   "011700.231 (Q.re Gallaratese - Q.re San Leonardo - Lampugnano, 0.04 km to Molino Dorino)",
+   "039600.314 (Parco Forlanini - Cavriano, 0.18 km to Stazione Forlanini)"
+  ]
+ },
+ "_consensus_gic_top10": [
+  {
+   "parcel": "015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)",
+   "gic": 0.2215652713906005,
+   "young_worker": 0.7822866727470688,
+   "family_children": 0.4826523379444621,
+   "elderly": 0.8064999999999666,
+   "commuter": 0.7276071726878872
+  },
+  {
+   "parcel": "015400.27 (Cimiano - Rottole - Q.re Feltre, 0.06 km to Cascina Gobba)",
+   "gic": 0.17431004219438498,
+   "young_worker": 0.7529030672141812,
+   "family_children": 0.4150251248380142,
+   "elderly": 0.7214999999999759,
+   "commuter": 0.7731657679459147
+  },
+  {
+   "parcel": "015200.208 (Cimiano - Rottole - Q.re Feltre, 0.26 km to Crescenzago)",
+   "gic": 0.029504653134998757,
+   "young_worker": 0.5445630292493367,
+   "family_children": 0.42442764684979745,
+   "elderly": 0.7194999999999762,
+   "commuter": 0.17742217375537236
+  },
+  {
+   "parcel": "039600.314 (Parco Forlanini - Cavriano, 0.18 km to Stazione Forlanini)",
+   "gic": 0.01202323442889093,
+   "young_worker": 0.4579321119171166,
+   "family_children": 0.4341164573007261,
+   "elderly": 0.1570000000000001,
+   "commuter": 0.3852248666468024
+  },
+  {
+   "parcel": "024100.85 (Cimiano - Rottole - Q.re Feltre, 0.19 km to Cimiano)",
+   "gic": 0.006202385738370133,
+   "young_worker": 0.46524356995010885,
+   "family_children": 0.13372974625021972,
+   "elderly": 0.35850000000000026,
+   "commuter": 0.27807453027005513
+  },
+  {
+   "parcel": "020400.213 (Cimiano - Rottole - Q.re Feltre, 0.06 km to Cimiano)",
+   "gic": 0.004586355813661507,
+   "young_worker": 0.3060338408775073,
+   "family_children": 0.21978196425824031,
+   "elderly": 0.2985000000000002,
+   "commuter": 0.22843461079157612
+  },
+  {
+   "parcel": "011700.231 (Q.re Gallaratese - Q.re San Leonardo - Lampugnano, 0.04 km to Molino Dorino)",
+   "gic": 0.003397055025499669,
+   "young_worker": 0.09869232692101029,
+   "family_children": 0.27843787359060834,
+   "elderly": 0.21450000000000016,
+   "commuter": 0.576319863128826
+  },
+  {
+   "parcel": "020400.224 (Cimiano - Rottole - Q.re Feltre, 0.08 km to Cimiano)",
+   "gic": 0.0031724206551367565,
+   "young_worker": 0.3058712155997273,
+   "family_children": 0.17002783257818926,
+   "elderly": 0.23850000000000018,
+   "commuter": 0.2557665572462047
+  },
+  {
+   "parcel": "015200.57 (Cimiano - Rottole - Q.re Feltre, 0.13 km to Crescenzago)",
+   "gic": 0.0021062985626800405,
+   "young_worker": 0.4011029723995979,
+   "family_children": 0.09053941251596388,
+   "elderly": 0.18400000000000014,
+   "commuter": 0.3152162193437695
+  },
+  {
+   "parcel": "017500.179 (Q.re Gallaratese - Q.re San Leonardo - Lampugnano, 0.17 km to Uruguay)",
+   "gic": 0.0013048184145028677,
+   "young_worker": 0.06430717761896028,
+   "family_children": 0.3162600796569419,
+   "elderly": 0.2615000000000002,
+   "commuter": 0.24534350125492846
+  }
+ ],
+ "_consensus_gic_top10_one_per_nil": [
+  {
+   "parcel": "015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)",
+   "gic": 0.2215652713906005,
+   "mean_p": 0.6997615458448461,
+   "young_worker": 0.7822866727470688,
+   "family_children": 0.4826523379444621,
+   "elderly": 0.8064999999999666,
+   "commuter": 0.7276071726878872
+  },
+  {
+   "parcel": "039600.314 (Parco Forlanini - Cavriano, 0.18 km to Stazione Forlanini)",
+   "gic": 0.01202323442889093,
+   "mean_p": 0.3585683589661613,
+   "young_worker": 0.4579321119171166,
+   "family_children": 0.4341164573007261,
+   "elderly": 0.1570000000000001,
+   "commuter": 0.3852248666468024
+  },
+  {
+   "parcel": "011700.231 (Q.re Gallaratese - Q.re San Leonardo - Lampugnano, 0.04 km to Molino Dorino)",
+   "gic": 0.003397055025499669,
+   "mean_p": 0.2919875159101112,
+   "young_worker": 0.09869232692101029,
+   "family_children": 0.27843787359060834,
+   "elderly": 0.21450000000000016,
+   "commuter": 0.576319863128826
+  },
+  {
+   "parcel": "061900.177 (Triulzo Superiore, 0.01 km to San Donato)",
+   "gic": 0.000390105810082944,
+   "mean_p": 0.2604192780605291,
+   "young_worker": 0.33122381928300704,
+   "family_children": 0.06364910307012595,
+   "elderly": 0.030000000000000023,
+   "commuter": 0.6168041898889834
+  },
+  {
+   "parcel": "001400.24 (Comasina, 0.15 km to Comasina)",
+   "gic": 2.490777844949467e-07,
+   "mean_p": 0.05181683384886827,
+   "young_worker": 0.015765141010288544,
+   "family_children": 0.007090099322731068,
+   "elderly": 0.013000000000000008,
+   "commuter": 0.17141209506245345
+  },
+  {
+   "parcel": "057800.153 (Barona, 0.03 km to Famagosta)",
+   "gic": 1.1637608873411643e-07,
+   "mean_p": 0.05102119231080571,
+   "young_worker": 0.1122591471150675,
+   "family_children": 0.0020627140242620735,
+   "elderly": 0.006000000000000002,
+   "commuter": 0.08376290810389324
+  },
+  {
+   "parcel": "003900.920 (Bovisasca, 0.14 km to Affori Fn)",
+   "gic": 3.519675959794067e-08,
+   "mean_p": 0.01982404695380966,
+   "young_worker": 0.0045145332444663875,
+   "family_children": 0.006956183554885348,
+   "elderly": 0.028500000000000022,
+   "commuter": 0.03932547101588689
+  },
+  {
+   "parcel": "030400.342 (Tre Torri, 0.01 km to Tre Torri)",
+   "gic": 1.3150602714520787e-08,
+   "mean_p": 0.014588685696049042,
+   "young_worker": 0.031733276030603455,
+   "family_children": 0.012975460950230461,
+   "elderly": 0.003,
+   "commuter": 0.010646005803362248
+  },
+  {
+   "parcel": "007900.69 (Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi, 0.15 km to Bicocca)",
+   "gic": 9.613593283749015e-09,
+   "mean_p": 0.0172470949143668,
+   "young_worker": 0.04871931666187598,
+   "family_children": 0.008951281522781105,
+   "elderly": 0.0025,
+   "commuter": 0.008817781472810102
+  },
+  {
+   "parcel": "042400.72 (Forze Armate, 0.21 km to Inganni)",
+   "gic": 8.085104048159153e-09,
+   "mean_p": 0.01980656687784415,
+   "young_worker": 0.017259882436862384,
+   "family_children": 0.0023865641784478987,
+   "elderly": 0.0035,
+   "commuter": 0.05607982089606631
+  }
+ ],
+ "_teach_back": [
+  {
+   "archetype": "young_worker",
+   "current_top": "015400.27 (Cimiano - Rottole - Q.re Feltre, 0.06 km to Cascina Gobba)",
+   "challenger": "015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)",
+   "utility_gap": 0.0002309889857735699,
+   "L1_change_points": 0.6,
+   "weights_after": {
+    "access": 0.303,
+    "need": 0.154,
+    "green": 0.118,
+    "heat": 0.113,
+    "capacity": 0.074,
+    "mix": 0.149,
+    "cost": 0.087
+   },
+   "easiest_single_criterion": "green",
+   "from_pct": 11.5,
+   "to_pct": 12.2,
+   "sentence": "'015200.232' would overtake '015400.27' if 'green' rose from 11.5% to 12.2% of your weight (others shrinking proportionally)."
+  },
+  {
+   "archetype": "family_children",
+   "current_top": "039600.314 (Parco Forlanini - Cavriano, 0.18 km to Stazione Forlanini)",
+   "challenger": "015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)",
+   "utility_gap": 0.0018759429584047592,
+   "L1_change_points": 0.7,
+   "weights_after": {
+    "access": 0.154,
+    "need": 0.076,
+    "green": 0.209,
+    "heat": 0.152,
+    "capacity": 0.068,
+    "mix": 0.217,
+    "cost": 0.123
+   },
+   "easiest_single_criterion": "green",
+   "from_pct": 20.5,
+   "to_pct": 21.1,
+   "sentence": "'015200.232' would overtake '039600.314' if 'green' rose from 20.5% to 21.1% of your weight (others shrinking proportionally)."
+  },
+  {
+   "archetype": "elderly",
+   "current_top": "015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)",
+   "challenger": "015200.208 (Cimiano - Rottole - Q.re Feltre, 0.26 km to Crescenzago)",
+   "utility_gap": 0.0026395294511141944,
+   "L1_change_points": 4.9,
+   "weights_after": {
+    "access": 0.19,
+    "need": 0.075,
+    "green": 0.28,
+    "heat": 0.096,
+    "capacity": 0.13,
+    "mix": 0.119,
+    "cost": 0.11
+   },
+   "easiest_single_criterion": "capacity",
+   "from_pct": 10.5,
+   "to_pct": 15.1,
+   "sentence": "'015200.208' would overtake '015200.232' if 'capacity' rose from 10.5% to 15.1% of your weight (others shrinking proportionally)."
+  },
+  {
+   "archetype": "commuter",
+   "current_top": "015400.27 (Cimiano - Rottole - Q.re Feltre, 0.06 km to Cascina Gobba)",
+   "challenger": "015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)",
+   "utility_gap": 0.0027920995655235435,
+   "L1_change_points": 6.8,
+   "weights_after": {
+    "access": 0.582,
+    "need": 0.044,
+    "green": 0.085,
+    "heat": 0.076,
+    "capacity": 0.053,
+    "mix": 0.055,
+    "cost": 0.105
+   },
+   "easiest_single_criterion": "green",
+   "from_pct": 5.1,
+   "to_pct": 12.8,
+   "sentence": "'015200.232' would overtake '015400.27' if 'green' rose from 5.1% to 12.8% of your weight (others shrinking proportionally)."
+  }
+ ]
+}

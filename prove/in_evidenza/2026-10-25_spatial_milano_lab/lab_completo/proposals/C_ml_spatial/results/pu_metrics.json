@@ -1,0 +1,294 @@
+{
+ "n": 112851,
+ "positives_site": 1440,
+ "parcels_in_redev_AT": 1354,
+ "parcels_in_PCU_unlabelled": 5653,
+ "amb_deg_polygons": 59,
+ "positives_zone_rig": 34552,
+ "n_blocks": {
+  "2km": 67,
+  "4km": 21
+ },
+ "features": {
+  "physical": [
+   "log_area",
+   "coverage",
+   "far",
+   "far_ratio",
+   "h_max",
+   "h_mean",
+   "log_nvol",
+   "use_res_share",
+   "use_dom_share",
+   "use_Reside",
+   "use_Altro",
+   "use_Indust",
+   "use_Commer",
+   "use_Serviz",
+   "use_Traspo",
+   "use_Agrico"
+  ],
+  "context": [
+   "nb_coverage",
+   "nb_far",
+   "nb_industrial",
+   "nb_vacant",
+   "nb_log_area",
+   "metro_km",
+   "metro_n800",
+   "green_srv_km",
+   "hex_pop",
+   "hex_emp",
+   "hex_dw",
+   "hex_far",
+   "dist_centre"
+  ],
+  "nil": [
+   "nil_rent",
+   "nil_price",
+   "nil_net_m",
+   "nil_dens",
+   "nil_for_",
+   "nil_poor",
+   "nil_a65"
+  ],
+  "dusaf": [
+   "dusaf_resd",
+   "dusaf_resr",
+   "dusaf_prod",
+   "dusaf_serv",
+   "dusaf_infra",
+   "dusaf_vac",
+   "dusaf_green",
+   "dusaf_unk",
+   "dusaf_agr",
+   "dusaf_wood",
+   "dusaf_wat"
+  ]
+ },
+ "runs": {
+  "baseline_soft_site_rule": {
+   "pr_auc": 0.015,
+   "base_rate": 0.0128,
+   "roc_auc": 0.53,
+   "recall@1%": 0.015,
+   "recall@5%": 0.076,
+   "recall@10%": 0.142
+  },
+  "baseline_1_minus_far_ratio": {
+   "pr_auc": 0.017,
+   "base_rate": 0.0128,
+   "roc_auc": 0.613,
+   "recall@1%": 0.0,
+   "recall@5%": 0.095,
+   "recall@10%": 0.243
+  },
+  "site_logit_block4km": {
+   "pr_auc": 0.072,
+   "base_rate": 0.0128,
+   "roc_auc": 0.846,
+   "recall@1%": 0.097,
+   "recall@5%": 0.319,
+   "recall@10%": 0.522,
+   "c_folds": [
+    0.066,
+    0.104,
+    0.029,
+    0.059,
+    0.061
+   ]
+  },
+  "site_hgb_random": {
+   "pr_auc": 0.928,
+   "base_rate": 0.0128,
+   "roc_auc": 0.99,
+   "recall@1%": 0.75,
+   "recall@5%": 0.976,
+   "recall@10%": 0.98,
+   "c_folds": [
+    0.785,
+    0.786,
+    0.746,
+    0.749,
+    0.824
+   ],
+   "moran_I_residual": 0.115
+  },
+  "site_hgb_block2km": {
+   "pr_auc": 0.363,
+   "base_rate": 0.0128,
+   "roc_auc": 0.843,
+   "recall@1%": 0.374,
+   "recall@5%": 0.586,
+   "recall@10%": 0.654,
+   "c_folds": [
+    0.339,
+    0.06,
+    0.19,
+    0.299,
+    0.033
+   ],
+   "moran_I_residual": 0.683
+  },
+  "site_hgb_block4km": {
+   "pr_auc": 0.326,
+   "base_rate": 0.0128,
+   "roc_auc": 0.775,
+   "recall@1%": 0.31,
+   "recall@5%": 0.531,
+   "recall@10%": 0.589,
+   "c_folds": [
+    0.512,
+    0.055,
+    0.114,
+    0.397,
+    0.205
+   ],
+   "moran_I_residual": 0.686
+  },
+  "site_pubag10_block4km": {
+   "pr_auc": 0.334,
+   "base_rate": 0.0128,
+   "roc_auc": 0.825,
+   "recall@1%": 0.338,
+   "recall@5%": 0.572,
+   "recall@10%": 0.652,
+   "c_folds": [
+    0.885,
+    0.203,
+    0.365,
+    0.807,
+    0.69
+   ],
+   "moran_I_residual": 0.71
+  },
+  "zone_rig_hgb_random": {
+   "pr_auc": 0.963,
+   "base_rate": 0.3062,
+   "roc_auc": 0.985,
+   "recall@1%": 0.033,
+   "recall@5%": 0.162,
+   "recall@10%": 0.323,
+   "c_folds": [
+    0.83,
+    0.827,
+    0.828,
+    0.832,
+    0.827
+   ],
+   "moran_I_residual": 0.39
+  },
+  "zone_rig_hgb_block4km": {
+   "pr_auc": 0.747,
+   "base_rate": 0.3062,
+   "roc_auc": 0.875,
+   "recall@1%": 0.028,
+   "recall@5%": 0.142,
+   "recall@10%": 0.279,
+   "c_folds": [
+    0.601,
+    0.58,
+    0.365,
+    0.412,
+    0.749
+   ],
+   "moran_I_residual": 0.766
+  }
+ },
+ "moran_I_label_site": 0.762,
+ "moran_I_label_zone": 0.847,
+ "main_model": "HGB, physical+context (no NIL socio-economics), block4km OOF",
+ "c_elkan_noto_main": 0.06,
+ "est_prior_pi_EN": 0.0855,
+ "main_metrics": {
+  "features": "physical+context",
+  "pr_auc": 0.099,
+  "base_rate": 0.0128,
+  "roc_auc": 0.737,
+  "recall@1%": 0.163,
+  "recall@5%": 0.394,
+  "recall@10%": 0.501,
+  "c_mean": 0.06
+ },
+ "object_recall_AT": {
+  "n_AT": 21,
+  "AT_with_>=50pct_area_in_top10": 14,
+  "median_area_share_top10": 0.873
+ },
+ "main_moran_I_residual": 0.738,
+ "brier_g": 0.0126,
+ "univariate_auc_top": [
+  [
+   "hex_pop",
+   0.782
+  ],
+  [
+   "hex_emp",
+   0.775
+  ],
+  [
+   "hex_dw",
+   0.775
+  ],
+  [
+   "dusaf_resd",
+   0.753
+  ],
+  [
+   "nb_far",
+   0.736
+  ],
+  [
+   "nil_for_",
+   0.711
+  ],
+  [
+   "nil_poor",
+   0.697
+  ],
+  [
+   "nil_a65",
+   0.692
+  ],
+  [
+   "nb_vacant",
+   0.69
+  ],
+  [
+   "nb_coverage",
+   0.687
+  ],
+  [
+   "nil_dens",
+   0.678
+  ],
+  [
+   "dusaf_prod",
+   0.666
+  ]
+ ],
+ "top200": {
+  "eligible_unlabelled": 5347,
+  "share_soft_site_rule": 0.835,
+  "share_in_rig": 0.575,
+  "use_dom": {
+   "(none)": 82,
+   "Altro": 39,
+   "Industriale": 34,
+   "Commerciale": 23,
+   "Residenziale": 16,
+   "Trasporti e impianti": 2,
+   "Culto, cultura e sport": 2,
+   "Amministrativo": 1,
+   "Agricolo": 1
+  },
+  "median_area_m2": 4165.5,
+  "total_area_ha": 146.5,
+  "n_nil": 36,
+  "g_range": [
+   0.0367,
+   0.90388
+  ],
+  "overlap_with_soft_site_rule_eligible": 3589
+ }
+}

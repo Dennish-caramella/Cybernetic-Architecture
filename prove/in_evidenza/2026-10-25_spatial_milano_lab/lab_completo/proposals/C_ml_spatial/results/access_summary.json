@@ -1,0 +1,131 @@
+{
+ "n_parcels": 112851,
+ "n_soft_sites": 15718,
+ "catchment_km": {
+  "A_jobs": 8.0,
+  "A_school": 1.0,
+  "A_services": 1.0,
+  "A_green": 0.8,
+  "A_metro": 1.0
+ },
+ "describe_soft_sites": {
+  "A_jobs": {
+   "count": 15718.0,
+   "mean": 36.434,
+   "std": 8.869,
+   "min": 6.106,
+   "5%": 20.692,
+   "50%": 37.007,
+   "95%": 49.589,
+   "max": 52.216
+  },
+  "A_school": {
+   "count": 15718.0,
+   "mean": 36.815,
+   "std": 44.062,
+   "min": 0.0,
+   "5%": 7.95,
+   "50%": 28.465,
+   "95%": 84.489,
+   "max": 783.462
+  },
+  "A_services": {
+   "count": 15718.0,
+   "mean": 24.658,
+   "std": 204.196,
+   "min": 0.0,
+   "5%": 2.206,
+   "50%": 7.53,
+   "95%": 53.951,
+   "max": 8082.167
+  },
+  "A_green": {
+   "count": 15718.0,
+   "mean": 18.12,
+   "std": 123.492,
+   "min": 0.0,
+   "5%": 1.686,
+   "50%": 8.328,
+   "95%": 42.522,
+   "max": 6247.83
+  },
+  "A_metro": {
+   "count": 15718.0,
+   "mean": 2.42,
+   "std": 51.469,
+   "min": 0.0,
+   "5%": 0.0,
+   "50%": 0.579,
+   "95%": 2.331,
+   "max": 2975.284
+  }
+ },
+ "spearman_2sfca_vs_simple": {
+  "A_school": -0.379,
+  "A_services": -0.16,
+  "A_green": -0.39,
+  "A_metro": 0.887,
+  "A_jobs": 0.978
+ },
+ "pairs_abs_rho_ge_0.7": [
+  [
+   "A_jobs",
+   "cum_jobs_5km",
+   0.978
+  ],
+  [
+   "A_jobs",
+   "nil_heatexp",
+   0.724
+  ],
+  [
+   "A_metro",
+   "d_metro",
+   -0.88
+  ],
+  [
+   "A_metro",
+   "metro_n800",
+   0.887
+  ],
+  [
+   "cum_jobs_5km",
+   "nil_heatexp",
+   0.736
+  ],
+  [
+   "d_metro",
+   "metro_n800",
+   -0.848
+  ],
+  [
+   "nil_green",
+   "nil_heatexp",
+   -0.87
+  ]
+ ],
+ "pca_eigen_share": [
+  0.41,
+  0.143,
+  0.103,
+  0.072,
+  0.065,
+  0.052,
+  0.043,
+  0.035,
+  0.028,
+  0.025,
+  0.01,
+  0.008,
+  0.005,
+  0.001
+ ],
+ "pca_n_eig_gt_1": 4,
+ "jobs_proxy_total_km2": 23.96,
+ "top10pct_jaccard_2sfca_vs_simple": {
+  "A_school": 0.11,
+  "A_green": 0.122,
+  "A_metro": 0.179,
+  "A_jobs": 0.807
+ }
+}

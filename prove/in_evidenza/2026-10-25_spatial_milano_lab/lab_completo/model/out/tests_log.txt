@@ -1,0 +1,43 @@
+PASS 2a_milp_equals_bruteforce {'milp': 114.4252, 'brute': 114.4252}
+PASS 2b_diversity_cuts_overlap_le_70pct {'n': 3, 'overlaps': [0.67, 0.67]}
+PASS 1a_planted_segregation_detected {'p_size': 0.001, 'p_ring': 0.001, 'z_size': 3.52}
+PASS 1b_false_positive_rate {'fp_rate_1000': 0.031, 'ci95': [0.021, 0.044], 'fp_rate_first50': 0.08}
+PASS 1c_clustered_h0_false_positive {'reps': 1000, 'nil_per_set': 3, 'site_null': {'fp': 0.238, 'ci95': [0.212, 0.266]}, 'nil_block_null': {'fp': 0.003, 'ci95': [0.001, 0.009]}}
+PASS 5_null_pvalues_uniform {'ks_p': 0.985, 'mean_p': 0.509}
+PASS 3_weight_recovery_tv {'tv_mean': 0.136, 'tv_max': 0.182, 'criteria': 9, 'questions': 25}
+PASS 4a_no_pcu_no_green_in_sites {'pcu': 0, 'green': 0}
+PASS 4b_parcel_in_one_site {'parcels_in_sites': 7651}
+PASS 4c_site_area_equals_parcel_sum {'rel_diff': np.float64(0.0)}
+C:\Users\Caredda Dennis\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\a470af2b-033c-43bf-b939-4e491576ce55\1299d199-735c-4baa-abfb-4a387c77fa66\scratch-2026-10-25-2e192b\lab\model\tests.py:179: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  Dbar = Dl[Dl.scen >= 0].pivot(index="nil_id", columns="scen", values=lay).reindex(base["ids"]).fillna(0).mean(1).values
+C:\Users\Caredda Dennis\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\a470af2b-033c-43bf-b939-4e491576ce55\1299d199-735c-4baa-abfb-4a387c77fa66\scratch-2026-10-25-2e192b\lab\model\tests.py:179: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  Dbar = Dl[Dl.scen >= 0].pivot(index="nil_id", columns="scen", values=lay).reindex(base["ids"]).fillna(0).mean(1).values
+C:\Users\Caredda Dennis\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\a470af2b-033c-43bf-b939-4e491576ce55\1299d199-735c-4baa-abfb-4a387c77fa66\scratch-2026-10-25-2e192b\lab\model\tests.py:179: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  Dbar = Dl[Dl.scen >= 0].pivot(index="nil_id", columns="scen", values=lay).reindex(base["ids"]).fillna(0).mean(1).values
+C:\Users\Caredda Dennis\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\a470af2b-033c-43bf-b939-4e491576ce55\1299d199-735c-4baa-abfb-4a387c77fa66\scratch-2026-10-25-2e192b\lab\model\tests.py:179: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  Dbar = Dl[Dl.scen >= 0].pivot(index="nil_id", columns="scen", values=lay).reindex(base["ids"]).fillna(0).mean(1).values
+C:\Users\Caredda Dennis\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\a470af2b-033c-43bf-b939-4e491576ce55\1299d199-735c-4baa-abfb-4a387c77fa66\scratch-2026-10-25-2e192b\lab\model\tests.py:179: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  Dbar = Dl[Dl.scen >= 0].pivot(index="nil_id", columns="scen", values=lay).reindex(base["ids"]).fillna(0).mean(1).values
+C:\Users\Caredda Dennis\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\a470af2b-033c-43bf-b939-4e491576ce55\1299d199-735c-4baa-abfb-4a387c77fa66\scratch-2026-10-25-2e192b\lab\model\tests.py:179: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  Dbar = Dl[Dl.scen >= 0].pivot(index="nil_id", columns="scen", values=lay).reindex(base["ids"]).fillna(0).mean(1).values
+C:\Users\Caredda Dennis\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\a470af2b-033c-43bf-b939-4e491576ce55\1299d199-735c-4baa-abfb-4a387c77fa66\scratch-2026-10-25-2e192b\lab\model\tests.py:179: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  Dbar = Dl[Dl.scen >= 0].pivot(index="nil_id", columns="scen", values=lay).reindex(base["ids"]).fillna(0).mean(1).values
+C:\Users\Caredda Dennis\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\a470af2b-033c-43bf-b939-4e491576ce55\1299d199-735c-4baa-abfb-4a387c77fa66\scratch-2026-10-25-2e192b\lab\model\tests.py:179: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  Dbar = Dl[Dl.scen >= 0].pivot(index="nil_id", columns="scen", values=lay).reindex(base["ids"]).fillna(0).mean(1).values
+C:\Users\Caredda Dennis\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\a470af2b-033c-43bf-b939-4e491576ce55\1299d199-735c-4baa-abfb-4a387c77fa66\scratch-2026-10-25-2e192b\lab\model\tests.py:179: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  Dbar = Dl[Dl.scen >= 0].pivot(index="nil_id", columns="scen", values=lay).reindex(base["ids"]).fillna(0).mean(1).values
+C:\Users\Caredda Dennis\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\a470af2b-033c-43bf-b939-4e491576ce55\1299d199-735c-4baa-abfb-4a387c77fa66\scratch-2026-10-25-2e192b\lab\model\tests.py:179: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  Dbar = Dl[Dl.scen >= 0].pivot(index="nil_id", columns="scen", values=lay).reindex(base["ids"]).fillna(0).mean(1).values
+C:\Users\Caredda Dennis\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\a470af2b-033c-43bf-b939-4e491576ce55\1299d199-735c-4baa-abfb-4a387c77fa66\scratch-2026-10-25-2e192b\lab\model\tests.py:179: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  Dbar = Dl[Dl.scen >= 0].pivot(index="nil_id", columns="scen", values=lay).reindex(base["ids"]).fillna(0).mean(1).values
+PASS 4d_served_le_demand {'violations': 0, 'note': 'mean over scenarios; per-scenario u<=D is a variable bound'}
+PASS 4e_kappa_respected {'violations': 0}
+PASS 4f_budget_respected {'violations': 0}
+PASS 4g_acceptability_columns_sum_to_1 {'max_dev': 1.3322676295501878e-15}
+PASS 4h_dominated_sites_zero_topk {'n_dominated': 145}
+PASS 4i_export_geometry_area_within_2pct {'share_within': 0.9956, 'p99': 0.0132, 'max': 0.0557}
+PASS 4j_no_household_records_in_export {'forbidden_keys_found': [], 'size_mb': 1.44}
+INFO 6_sensitivity_summary {'ok': None, 'reported': True, 'label_stability': {'AT': np.float64(0.143), 'AMB_DEG': np.float64(1.0), 'ERP': np.float64(1.0)}, 'stable_ge_2_3': {'AT': np.False_, 'AMB_DEG': np.True_, 'ERP': np.True_}, 'kendall_tau_median': 0.9815, 'p1_overlap_median': 0.598}
+0 failed, runtime 114.5 s
+TESTEXIT 0
+[   0.1s] results.md written

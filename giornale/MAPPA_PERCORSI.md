@@ -11,7 +11,7 @@ I file storici (schede, cronologia, ripresa di sessione) citano ancora i percors
 | `04_Fondamenta Matematiche/`, `fondamenta_matematiche/`, `tesi_out/ricerche_teoriche/` | `secondo_cervello/modelli/` |
 | `ricerche_mappa/`, `tesi_out/ricerche_progetti/`, `tesi_out/da_artifact/` | `secondo_cervello/ricerche/` |
 | `spatial_milano_lab/reports`, `research_notes` | `secondo_cervello/ricerche/spatial_milano/` |
-| `spatial_milano_lab/lab/` | `prove/in_evidenza/2026-10-25_spatial_milano_lab/lab/` |
+| `spatial_milano_lab/lab/` | `prove/in_evidenza/2026-10-25_spatial_milano_lab/lab_completo/` (rinominata il 28/10) |
 | `tesi_handoff/pipeline_milano/` | `prove/in_evidenza/2026-10-21_pipeline_milano/` |
 | `tesi_handoff/` (REPORT_FONDATIVO, RIFORMULAZIONE_PHD, T1, confronti) | `secondo_cervello/sintesi/` |
 | `00_Avanzamento/02_sintesi/` (ORCHESTRATORE, PIPELINE_FASE_1, LETTURA_CRITICA) | `prove/in_evidenza/2026-10-21_pipeline_milano/docs/` |

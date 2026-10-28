@@ -4,6 +4,7 @@ Una riga per giorno, dal più recente. Le date vengono dal registro storico e da
 
 | Giorno | Cosa è stato fatto | Dove |
 |---|---|---|
+| 2026-10-28 | Spatial Milano Lab completo: copia integrale dello scratch dal PC (1024 file, sha256 verificati), codice e dati leggeri nel repo, `lab/` rinominata `lab_completo/` | `prove/in_evidenza/2026-10-25_spatial_milano_lab/` |
 | 2026-10-27 | Riorganizzazione del progetto; issue #5–#12 (mappa di ricerca); ricerche MIT/Azadi/riesame; tavole rotonde sulla critica a Spatial Milano Lab; ripresa della sessione del laboratorio | tutto il repo; `secondo_cervello/ricerche/`, `secondo_cervello/tavole_rotonde/`, `giornale/sessioni/` |
 | 2026-10-26 | Valutazione di Spatial Milano; lavoro sul laboratorio (date dei research_notes) | `prove/in_evidenza/2026-10-25_spatial_milano_lab/docs/` |
 | 2026-10-25 | Riformulazione PhD e tavola rotonda; Abitare Cinisello; scheda 37 Azadi + deep research; inizio ricerche del laboratorio Milano (data dei research_notes) | `secondo_cervello/sintesi/`, `secondo_cervello/tavole_rotonde/`, `prove/archivio/2026-10-25_abitare_cinisello/`, `secondo_cervello/schede/37_*` |
@@ -16,4 +17,4 @@ Una riga per giorno, dal più recente. Le date vengono dal registro storico e da
 | 2026-10-10 | Rilettura integrale delle schede 01–24; second brain v1/v2; audit | `secondo_cervello/mappe/`, `secondo_cervello/fonti/AUDIT_CARTELLA_2026-10-10.md` |
 | 2026-10-07 | Gioco "regole comuni" (data del file, non accertata altrimenti) | `prove/archivio/2026-10-07_gioco/` |
 
-Ultimo aggiornamento del giornale: 2026-10-27.
+Ultimo aggiornamento del giornale: 2026-10-28.

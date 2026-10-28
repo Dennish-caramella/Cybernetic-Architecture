@@ -1,0 +1,1 @@
+{"currentVersion":10.91,"folders":["agricoltura","ambiente","ARPA","BaseMap","casa","commercio","cultura","CustomPrint","E015","finlombarda","formazione","geogp","inquadramento","ortofoto","presidenza","protciv","sistemiverdi","tributi","Utilities","viewer33"],"services":[{"name":"SAS","type":"MapServer"}]}

@@ -1,28 +1,25 @@
-# Spatial Milano Lab: cosa è completo e cosa manca (27/10)
+# Spatial Milano Lab: recupero completato (28/10)
 
-Base fondamentale del progetto. Controllo fatto il 27/10 su: cartella `Desktop\TESI\spatial_milano_lab`, cartella condivisa, trascrizione della sessione "Riprogettazione con design sync" e i tre artifact pubblicati. **La sessione originale girava sul PC di Dennis, in una cartella di scratch che questo ambiente non può leggere** (richiesta di accesso rifiutata): finché non viene collegata, la ricostruzione è parziale.
+Base fondamentale del progetto. La sessione originale girava in una cartella di scratch del PC. Il 28/10 una sessione sul PC l'ha copiata per intero in `Desktop\TESI\spatial_milano_lab` (1024 file, sha256 in `INVENTARIO_SCRATCH.txt`, parte 4: nessun file escluso). Da lì è stato portato qui ciò che serve per leggere ed eseguire il lab. **Nessun dato è stato riscaricato da Internet**: tutto viene dallo scratch originale.
 
-## Presente (verificato)
-| Cosa | Dove |
-|---|---|
-| Documenti: README, schema delle particelle, tre proposte A/B/C (model + summary), results.md, paper.md, review1, review2, config.py, tests.py | `lab/` |
-| Report e note di ricerca (Lotti per social housing, Benghazi/ISTAT) | `secondo_cervello/ricerche/spatial_milano/` |
-| **Prototipo "Spatial Milano Lab"** (pagina completa, 309 KB, include i 88 NIL) | `recuperati_da_artifact/spatial-milano-lab_prototipo_index.html` |
-| Modello base protetto "Spatial Milano" (pagina, 273 KB) | `recuperati_da_artifact/spatial-milano-base_index.html` |
-| **Risultati del modello** (`lab.json`: 2.291 siti, 11 portafogli, audit, persone contro PGT, modifiche post hoc, risultati per NIL) | `recuperati_da_artifact/lab.json` |
-| Dati core estratti dalla pagina (88 NIL con indicatori, CAP, OMI, metro, griglia censuaria) | `recuperati_da_artifact/core.json` |
-| PGT e DUSAF (poligoni) | `recuperati_da_artifact/pgt.json`, `dusaf.json` |
-| Tasselli catasto + volumi DBT 2020 (68 file, ~25 MB) e prototipo Monza (1 MB) | solo cartella condivisa: `spatial_milano_lab_recuperato/` (hash in `recuperati_da_artifact/MANIFEST_sha256_file_solo_condivisa.txt`) |
+## Dove sta cosa
+| Cosa | Dove | Verifica |
+|---|---|---|
+| Lab completo: `run.py`, modello (`config`, `criteria`, `demand`, `sites`, `portfolios`, `smaa`, `audit`, `export`, `report`, `tests`), `nil.csv`, `build_parcels.py`, risultati (`model.json`, `sites.csv`, audit, `paper.md`), revisioni, proposte A/B/C con script e risultati, prototipo (`build_proto.py`, `proto.src.html`, sito, `lab.json`, PGT, DUSAF) | `lab_completo/` (repo) | sha256 = inventario |
+| Script di build e fetch di `mi/` (`build_mi.py`, `build_dbt.py`, `build_page_mi.py`, `spatial-mi.src.html`, `fetch_*.py`) | `mi/` (repo) | sha256 = inventario |
+| Resto dello scratch: script di build alla radice, `*_mb.json`, prototipo `spatial-agent-prototype.html`, report e note | `scratch_resto/` (repo, senza dati grezzi) | sha256 = inventario |
+| Come eseguire (ambiente, comandi, dipendenze di posizione) | `RUN_README.txt` | — |
+| `parcels.csv.gz` (119.352 particelle), `base.pkl`, `sens.pkl`, `access_parcels.csv.gz`, `pu_scores.csv.gz`, 8 PNG dei risultati, 68 tasselli `site/data/t/` | cartella condivisa `spatial_milano_lab_recuperato/lab_completo/` (stessi percorsi) | sha256 = inventario |
+| Dati grezzi `mi/raw/` (DBT_2020.zip 569 MB, catasto, PGT, OMI, redditi, popolazione…), `mi/out/`, `mi/site*`, `istat_samples/`, `raw*/`, `shots/` | solo PC: `Desktop\TESI\spatial_milano_lab` | sha256 in `INVENTARIO_SCRATCH.txt` |
+| Copie da artifact (prima del recupero) | `recuperati_da_artifact/` | identiche ai file del lab |
 
 Artifact: Spatial Milano Lab https://claude.ai/artifact/LHHSCseATyEEmS4g7SoTW5 · Spatial Milano (base) https://claude.ai/artifact/GaPJf4tLYL8WZTkokBZkMn · Spatial agent prototipo (Monza) https://claude.ai/artifact/MbDwdncXk3bYQNv41N7U1B
 
-## Mancante (sta solo nella cartella di scratch del PC)
-Da `ripresa_spatial_milano_lab_2026-10-27.md` e dal README del lab:
-- `lab/data/parcels.csv.gz` (119.352 particelle, 78 colonne) e `nil.csv`. Dai tasselli si recuperano solo geometria, area, copertura e indice volumetrico, non le 78 colonne.
-- Script del modello: `lab/model/run.py` (esecuzione ~23 min), `model.json`; script delle proposte A/B/C; `lab/prototype/build_proto.py`, `proto.src.html`; `mi/build_mi.py`, `mi/build_page_mi.py`, `mi/spatial-mi.src.html`.
-- Dati grezzi `mi/raw/` (PGT/DUSAF geojson, OMI, redditi CSV, popolazione NIL 1999–2025, verde/calore, metro, catasto, DBT shapefile), `mi/out/` originale, `istat_samples/`.
-- Librerie Python in `C:/Temp/pl` (numpy, scipy, scikit-learn, highspy, shapely, pyproj, pyshp, openpyxl): ricostruibili, versioni nel README.
-- Cronologia della sessione prima della compattazione: la trascrizione disponibile via API contiene solo gli ultimi eventi.
+## Per eseguirlo
+Sul PC, dalla cartella `spatial_milano_lab`: `$env:PYTHONPATH="C:/Temp/pl"; python lab_completo/model/run.py` (circa 23 min; `--no-sens` salta la sensibilità). Attenzione: scrive in `lab_completo/results` e `model/out`. Dal repo serve prima rimettere `parcels.csv.gz` (cartella condivisa) in `lab_completo/data/`.
+`mi/build_mi.py` (righe 112 e 119) legge `../istat_samples/`: la copia sta in `scratch_resto/istat_samples` sul PC, va copiata accanto a `mi/` prima di lanciarlo.
 
-## Per completarlo
-Dennis deve collegare alla sessione la cartella di scratch (pulsante "Aggiungi cartella" dell'app desktop) oppure copiarla in `Desktop\TESI\spatial_milano_lab\` (cartelle `lab\` e `mi\`, salvo `mi\raw` se troppo pesante). Poi: staging in cloud, controllo checksum, commit degli script e dei dati leggeri nel repo; dati pesanti in cartella condivisa con manifest.
+## Limiti noti
+- Nessuno script è stato eseguito dopo la copia: verificati solo import e hash.
+- Le librerie in `C:\Temp\pl` non sono versionate; versioni in `RUN_README.txt`.
+- La cronologia della sessione originale prima della compattazione non è recuperabile.

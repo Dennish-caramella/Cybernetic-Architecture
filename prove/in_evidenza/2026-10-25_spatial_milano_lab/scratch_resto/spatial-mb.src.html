@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Spatial agent prototipo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Poppins:wght@400;500;600&display=swap">
+<style>
+/* Layout: mappa/globo + dashboard a sinistra, chat a destra, stepper in basso. Tema scuro, accento giallo come nell'Hub di riferimento. */
+:root {
+  --bg: #000; --panel: #0f0f10; --panel2: #18181a; --line: #232326;
+  --fg: #d6d6d6; --muted: #8b8b8b; --white: #fff; --study: #ffd60a; --link: #6aa8ff;
+  --water: #060606; --land: #1a1a1a; --label: #b0b0b0; --nodata: #262626; --comline: #050505;
+  --ocean-a: #262626; --ocean-b: #121212; --g-land: #2f2f2f; --g-line: #4a4a4a; --grat: #1e1e1e;
+  --sans: "Poppins", system-ui, sans-serif; --mono: "Fira Code", ui-monospace, monospace;
+  --chat-w: clamp(300px, 29vw, 410px); --dash-w: 268px;
+  color-scheme: dark;
+}
+.map[data-base="light"] {
+  --water: #cfdbe4; --land: #eef1f3; --label: #3c4650; --nodata: #d8dee3; --comline: #ffffff;
+  --ocean-a: #e6edf2; --ocean-b: #c5d2dc; --g-land: #f5f7f8; --g-line: #aab6bf; --grat: #b9c6d0;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: var(--bg); color: var(--fg); font: 400 13px/1.55 var(--sans);
+  padding-block: calc(env(safe-area-inset-top, 0px) + 10px) env(safe-area-inset-bottom, 0px);
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+}
+button, input, select { font: inherit; color: inherit; }
+button, select { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--white); outline-offset: 2px; }
+svg.i { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+.app { height: 100%; display: grid; grid-template-columns: minmax(0, 1fr) var(--chat-w); grid-template-rows: minmax(0, 1fr) 44px; }
+.app.nochat { grid-template-columns: minmax(0, 1fr) 0; }
+.app.nochat .chat { display: none; }
+
+/* mappa */
+.map { position: relative; overflow: hidden; background: var(--water); border-radius: 4px 0 0 4px; min-width: 0; }
+.map canvas, .map svg.flat { position: absolute; inset: 0 0 0 0; width: 100%; height: 100%; transition: opacity .7s; }
+#c3d { cursor: grab; touch-action: none; }
+#c3d.drag { cursor: grabbing; }
+.map.dash-open svg.flat, .map.dash-open #c3d { right: var(--dash-w); width: calc(100% - var(--dash-w)); }
+.off { opacity: 0; pointer-events: none; }
+.water { fill: var(--water); }
+.comm { stroke: var(--comline); stroke-width: .8px; vector-effect: non-scaling-stroke; cursor: pointer; transition: fill .45s; }
+.comm:hover { stroke: var(--white); }
+.comm.sel { stroke: var(--white); stroke-width: 2.2px; }
+.prov { fill: none; stroke: var(--white); stroke-opacity: .5; stroke-width: 1.4px; vector-effect: non-scaling-stroke; pointer-events: none; }
+.lyr { transition: opacity .5s; pointer-events: none; }
+#green path { fill: #2f8f5b; fill-opacity: .55; }
+#lu path { fill-opacity: .88; }
+#roads path { fill: none; stroke: #d4d4d4; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+#rails path { fill: none; stroke: var(--link); stroke-width: 1.6px; vector-effect: non-scaling-stroke; }
+#stations circle { fill: #fff; stroke: #000; stroke-width: 1px; vector-effect: non-scaling-stroke; }
+.map text.lab { fill: var(--label); font-weight: 500; font-family: var(--sans); paint-order: stroke; stroke: var(--water); stroke-width: 3px; text-anchor: middle; pointer-events: none; }
+.coords { position: absolute; left: 14px; bottom: 12px; font: 11px var(--mono); color: var(--label); max-width: 55%; }
+.pill { position: absolute; bottom: 10px; background: rgb(18 18 19 / .92); border: 1px solid #2c2c30; color: #c9c9c9; border-radius: 999px; transition: color .2s, border-color .2s; }
+.pill:hover { color: var(--white); border-color: #555; }
+.panel-btn { left: 14px; bottom: 36px; padding: 4px 14px; font-size: 11px; display: flex; align-items: center; gap: 6px; min-height: 30px; }
+.base { right: 14px; padding: 3px 10px; font: 10px var(--mono); letter-spacing: .08em; border-radius: 4px; min-height: 26px; }
+.map.dash-open .base { right: calc(var(--dash-w) + 14px); }
+.ctl { position: absolute; right: 14px; bottom: 46px; display: grid; gap: 4px; }
+.map.dash-open .ctl { right: calc(var(--dash-w) + 14px); }
+.ctl button { width: 30px; height: 30px; display: grid; place-items: center; background: rgb(18 18 19 / .92); border: 1px solid #2c2c30; border-radius: 4px; color: #c9c9c9; font-size: 16px; line-height: 1; }
+.ctl button:hover { color: var(--white); border-color: #555; }
+.tip { position: absolute; pointer-events: none; background: rgb(8 8 8 / .94); border: 1px solid #34343a; border-radius: 6px; padding: 5px 9px; font-size: 11.5px; color: var(--white); white-space: nowrap; z-index: 3; }
+.tip small { display: block; color: var(--muted); font-size: 10.5px; }
+
+/* dashboard (come nell'Hub: titolo a tendina, filtri gialli, KPI, istogramma, classifica) */
+.dash { position: absolute; top: 12px; right: 12px; bottom: 44px; width: calc(var(--dash-w) - 12px); display: flex; flex-direction: column; background: rgb(14 14 15 / .96); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; z-index: 2; }
+.dash-h { display: flex; gap: 6px; padding: 8px; border-bottom: 1px solid var(--line); }
+.dash select { flex: 1; min-width: 0; background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; padding: 7px 8px; font-size: 12px; font-weight: 500; color: var(--white); }
+.dash-b { overflow-y: auto; padding: 10px; display: grid; gap: 10px; align-content: start; }
+.fold .dash-b { display: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip-b { background: transparent; border: 1px solid #34343a; border-radius: 4px; padding: 3px 8px; font-size: 11px; color: var(--fg); min-height: 26px; transition: background .15s, color .15s; }
+.chip-b:hover { border-color: #6a6a72; }
+.chip-b[aria-pressed="true"] { background: var(--study); border-color: var(--study); color: #000; font-weight: 600; }
+.kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.kpi b { display: block; font: 600 20px/1.15 var(--sans); color: var(--white); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.kpi small { color: var(--muted); font-size: 11px; display: block; line-height: 1.3; }
+.scale { display: grid; grid-template-columns: repeat(6, 1fr); height: 8px; border-radius: 2px; overflow: hidden; }
+.scale-l { display: flex; justify-content: space-between; font: 10px var(--mono); color: var(--muted); margin-top: 3px; }
+.hist { width: 100%; height: 52px; display: block; }
+.hist rect { fill: #5c5c64; }
+.hist rect.hi { fill: var(--study); }
+.rank { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.rank button { width: 100%; display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; background: none; border: 0; padding: 3px 4px; border-radius: 4px; font-size: 11.5px; text-align: left; position: relative; }
+.rank button:hover, .rank button.on { background: #1d1d20; }
+.rank .bar { position: absolute; left: 0; bottom: 0; height: 2px; background: var(--study); opacity: .8; }
+.rank span.v { font: 11px var(--mono); color: var(--white); font-variant-numeric: tabular-nums; }
+.lay { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.lay span { font-size: 10px; color: var(--muted); letter-spacing: .08em; }
+.src { font-size: 10.5px; color: var(--muted); line-height: 1.4; margin: 0; }
+.h { font: 600 10px var(--sans); letter-spacing: .1em; color: var(--muted); margin: 0 0 4px; display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.h button { background: none; border: 1px solid #34343a; border-radius: 3px; font: 10px var(--mono); padding: 1px 6px; color: var(--fg); }
+.bars { display: grid; gap: 3px; }
+.bars button { display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; gap: 7px; align-items: center; background: none; border: 0; padding: 2px 0; text-align: left; font-size: 11px; min-height: 22px; }
+.bars button[aria-pressed="false"] { opacity: .35; }
+.bars .sw { width: 10px; height: 10px; border-radius: 2px; }
+.bars .tr { position: relative; min-height: 16px; display: flex; align-items: center; gap: 6px; min-width: 0; }
+.bars .fl { height: 10px; border-radius: 1px; flex: none; min-width: 2px; }
+.bars .lb { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bars .vv { font: 10.5px var(--mono); color: var(--white); font-variant-numeric: tabular-nums; }
+.bands { display: grid; gap: 2px; }
+.bands button { display: grid; grid-template-columns: 12px 1fr auto; gap: 8px; align-items: center; background: none; border: 0; border-bottom: 1px solid #1f1f22; padding: 4px 0; font: 11px var(--mono); text-align: left; min-height: 24px; }
+.bands button[aria-pressed="false"] { opacity: .4; }
+.bands .ck { width: 14px; height: 14px; border-radius: 50%; display: grid; place-items: center; background: var(--white); color: #000; font-size: 9px; }
+.ins { background: var(--panel2); border-radius: 6px; padding: 8px 10px; font-size: 12px; display: grid; gap: 6px; }
+.ins .nav { display: flex; gap: 6px; justify-content: flex-end; }
+.ins .nav button { background: none; border: 1px solid #34343a; border-radius: 4px; width: 26px; height: 22px; font-size: 12px; }
+.ins b.big { font: 600 26px/1.1 var(--sans); color: var(--white); }
+.sel-row { display: grid; gap: 4px; }
+.dash select.s2 { width: 100%; }
+.go { width: 100%; background: transparent; border: 1px solid var(--study); color: var(--study); border-radius: 4px; padding: 5px 8px; font-size: 11.5px; font-weight: 500; min-height: 28px; text-align: left; }
+.go:hover { background: var(--study); color: #000; }
+
+/* chat */
+.chat { background: var(--panel); border-left: 1px solid var(--line); display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; min-height: 0; min-width: 0; }
+.chat-h { display: flex; align-items: center; gap: 4px; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+.brand { flex: 1; display: flex; align-items: center; gap: 8px; font: 600 11px var(--sans); letter-spacing: .1em; color: var(--white); background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; }
+.ib { width: 32px; height: 32px; display: grid; place-items: center; background: none; border: 0; border-radius: 6px; color: var(--muted); transition: color .2s, background .2s; }
+.ib:hover { color: var(--white); background: var(--panel2); }
+.status { padding: 6px 14px; font: 11px var(--mono); color: var(--muted); }
+.log { list-style: none; margin: 0; padding: 4px 12px 12px; overflow-y: auto; display: grid; gap: 14px; align-content: start; }
+.msg { display: flex; gap: 8px; min-width: 0; }
+.msg.user { justify-content: flex-end; }
+.av { width: 28px; height: 28px; border-radius: 50%; background: var(--panel2); border: 1px solid var(--line); display: grid; place-items: center; color: var(--muted); flex: none; }
+.bub { background: var(--panel2); border-radius: 12px; padding: 10px 14px; min-width: 0; overflow-wrap: anywhere; }
+.msg.user .bub { background: #26262a; color: var(--white); max-width: 88%; }
+.bub p { margin: 0 0 8px; }
+.bub p:last-child, .bub ul:last-child { margin-bottom: 0; }
+.bub h4 { margin: 10px 0 4px; font-size: 12.5px; font-weight: 600; color: var(--white); }
+.bub h4:first-child { margin-top: 0; }
+.bub ul { margin: 0 0 8px; padding-left: 18px; }
+.bub li { margin-bottom: 4px; }
+.bub b { color: var(--white); font-weight: 600; }
+.key { color: var(--white); font-weight: 600; text-shadow: 0 0 8px rgb(255 255 255 / .35); }
+.note { font-size: 11px; color: var(--muted); }
+.cite { display: flex; align-items: center; gap: 8px; margin: 6px 0; padding: 7px 10px; border: 1px solid #2a2a2e; background: #121214; border-radius: 6px; color: var(--link); font: 11px/1.4 var(--mono); }
+.tbl { border: 1px solid #2a2a2e; border-radius: 6px; margin: 0 0 8px; overflow-x: auto; }
+.tbl .cap { padding: 6px 10px; font: 500 10px var(--mono); letter-spacing: .06em; color: var(--muted); border-bottom: 1px solid #2a2a2e; }
+.tbl table { border-collapse: collapse; width: 100%; font: 11px var(--mono); }
+.tbl th, .tbl td { padding: 5px 10px; text-align: left; white-space: nowrap; }
+.tbl td:last-child, .tbl th:last-child { text-align: right; }
+.tbl th { color: var(--muted); font-weight: 400; }
+.dots { display: flex; gap: 4px; padding: 6px 2px; }
+.dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--muted); animation: blink 1s infinite; }
+.dots i:nth-child(2) { animation-delay: .15s; } .dots i:nth-child(3) { animation-delay: .3s; }
+@keyframes blink { 50% { opacity: .25; } }
+.composer { margin: 4px 12px; display: flex; align-items: center; gap: 8px; background: var(--panel2); border: 1px solid var(--line); border-radius: 12px; padding: 6px 6px 6px 14px; }
+.composer:focus-within { outline: 2px solid var(--white); }
+.composer input { flex: 1; min-width: 0; background: none; border: 0; outline: 0; color: var(--white); }
+.composer input::placeholder { color: var(--muted); }
+.send { width: 36px; height: 36px; border-radius: 50%; background: var(--white); color: #000; border: 0; display: grid; place-items: center; transition: transform .15s; }
+.send:hover { transform: scale(1.06); }
+.fine { margin: 0; padding: 4px 14px 12px; font-size: 11px; color: var(--muted); }
+
+/* stepper */
+.steps { grid-column: 1 / -1; display: flex; align-items: center; justify-content: center; gap: 6px; background: #080808; border-top: 1px solid #161616; overflow-x: auto; scrollbar-width: none; white-space: nowrap; }
+.steps button { background: none; border: 0; min-height: 44px; padding: 0 8px; color: var(--muted); font-size: 12.5px; transition: color .2s; }
+.steps button:hover { color: var(--white); }
+.steps button[aria-current="step"] { color: var(--white); font-weight: 600; }
+.steps .arr { color: #4a4a4a; }
+
+@media (pointer: coarse) { .ib, .send { width: 44px; height: 44px; } .pill { min-height: 44px; } .chip-b { min-height: 36px; } .ctl button { width: 40px; height: 40px; } }
+@media (max-width: 860px) {
+  .app { grid-template-columns: minmax(0, 1fr); grid-template-rows: 46vh minmax(0, 1fr) 44px; }
+  .app.nochat { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) 0 44px; }
+  .chat { border-left: 0; border-top: 1px solid var(--line); }
+  .map { border-radius: 4px; }
+  .steps { justify-content: flex-start; }
+  .map.dash-open svg.flat, .map.dash-open #c3d { right: 0; width: 100%; }
+  .dash { left: 8px; right: 8px; top: auto; bottom: 44px; width: auto; max-height: 72%; }
+  .map.dash-open .base, .map.dash-open .ctl { right: 14px; }
+  .map.dash-open .base { bottom: auto; top: 10px; }
+  .ctl { bottom: 90px; }
+  .coords { display: none; }
+  .pill.base { min-height: 34px; }
+  .panel-btn { bottom: auto; top: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+<main class="app" id="app">
+  <section class="map" id="map" data-base="dark" aria-label="Mappa">
+    <canvas id="globe" role="img" aria-label="Globo centrato sull'Europa"></canvas>
+    <svg id="flat" class="flat off" role="group" aria-label="Mappa dei comuni di Monza e Brianza" preserveAspectRatio="xMidYMid meet">
+      <rect class="water" x="-500" y="-500" width="1500" height="1500"/>
+      <g id="com"></g>
+      <g id="lu" class="lyr off"></g>
+      <g id="green" class="lyr off"></g>
+      <g id="roads" class="lyr off"></g>
+      <g id="rails" class="lyr off"></g>
+      <g id="stations" class="lyr off"></g>
+      <path id="prov" class="prov"/>
+      <g id="labels"></g>
+    </svg>
+    <canvas id="c3d" class="off" role="img" aria-label="Vista 3D trascinabile"></canvas>
+    <div class="tip" id="tip" hidden></div>
+    <div class="ctl" id="ctl" hidden>
+      <button type="button" id="zin" aria-label="Avvicina">+</button>
+      <button type="button" id="zout" aria-label="Allontana">−</button>
+      <button type="button" id="zrst" aria-label="Ripristina la vista">⟳</button>
+      <button type="button" id="ztilt" aria-label="Alterna vista dall'alto e inclinata">≡</button>
+    </div>
+    <div class="dash" id="dash" hidden>
+      <div class="dash-h">
+        <select id="dsel" aria-label="Dashboard"></select>
+        <button class="ib" id="dfold" type="button" aria-label="Apri o chiudi il pannello" aria-expanded="true"><svg class="i" data-i="chev"></svg></button>
+      </div>
+      <div class="dash-b">
+        <div><p class="h">INDICATORE</p><div class="chips" id="mchips" role="group" aria-label="Indicatore"></div></div>
+        <div class="kpis"><div class="kpi"><b id="k1">–</b><small id="k1l">Provincia</small></div><div class="kpi"><b id="k2">–</b><small id="k2l">Seleziona un comune</small></div></div>
+        <div class="sel-row" id="bZoom" hidden><button class="go" id="zoomBtn" type="button"></button><button class="go" id="cityBtn" type="button" hidden>Scendi di scala: edifici 3D di Monza</button></div>
+        <div id="bScale"><div class="scale" id="scale"></div><div class="scale-l"><span id="smin"></span><span id="smax"></span></div></div>
+        <div id="bHist"><p class="h">DISTRIBUZIONE DEI 55 COMUNI</p><svg class="hist" id="hist" viewBox="0 0 220 52" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+        <div id="bDist" class="sel-row" hidden><p class="h">QUARTIERE</p><select id="dist2" class="s2" aria-label="Quartiere"></select></div>
+        <div id="bBands" hidden><p class="h" id="bandT">FASCE</p><div class="bands" id="bands"></div></div>
+        <div id="bBars" hidden><p class="h"><span id="barsT">CLASSI</span><button type="button" id="sortBtn">ORDINA: STANDARD</button></p><div class="bars" id="bars"></div></div>
+        <div id="bIns" class="ins" hidden><span id="insT"></span><b class="big" id="insV"></b><span id="insL"></span><div class="nav"><button type="button" id="insP" aria-label="Precedente">←</button><button type="button" id="insN" aria-label="Successivo">→</button></div></div>
+        <div id="bRank"><p class="h" id="rkh">PRIMI 8 COMUNI</p><ul class="rank" id="rank"></ul></div>
+        <div class="lay" id="lay"><span>STRATI</span></div>
+        <p class="src" id="src"></p>
+      </div>
+    </div>
+    <div class="coords" id="coords"></div>
+    <button class="pill panel-btn" id="panelBtn" type="button"><svg class="i" data-i="up"></svg>Pannello</button>
+    <button class="pill base" id="base" type="button" aria-label="Cambia mappa di base">DARK</button>
+  </section>
+
+  <aside class="chat" id="chat" aria-label="Chat con l'agente">
+    <div class="chat-h">
+      <div class="brand"><svg class="i" data-i="globe"></svg>SPATIAL</div>
+      <button class="ib" id="reset" type="button" aria-label="Nuova conversazione"><svg class="i" data-i="plus"></svg></button>
+      <button class="ib" id="close" type="button" aria-label="Chiudi il pannello chat"><svg class="i" data-i="x"></svg></button>
+    </div>
+    <div class="status" id="status">Nessuna città · res 8</div>
+    <ol class="log" id="log" aria-live="polite"></ol>
+    <div>
+      <form class="composer" id="form">
+        <input id="q" aria-label="Messaggio" placeholder="Chiedi qualcosa, o scrivi il nome di un comune..." autocomplete="off">
+        <button class="send" type="submit" aria-label="Invia"><svg class="i" data-i="send"></svg></button>
+      </form>
+      <p class="fine">L'IA può sbagliare: verifica i dati sulla mappa. Fonti: Istat (CC BY 4.0), MEF (CC BY 3.0 IT), © OpenStreetMap contributors (ODbL).</p>
+    </div>
+  </aside>
+
+  <nav class="steps" id="steps" aria-label="Fasi dell'analisi"></nav>
+</main>
+
+<script>
+// ponytail: i dati sono pre-scaricati e incorporati (Istat/MEF non inviano CORS; Overpass non e' raggiungibile dall'artifact). Rigenera con build_osm_data.py, build_istat_data.py, build_hex_data.py, build_detail_data.py, build_page.py.
+/*__DATA__*/
+const $ = (id) => document.getElementById(id);
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const app = $("app"), map = $("map"), log = $("log"), svg = $("flat"), cv = $("globe");
+const nf = (d) => (v) => v == null || !isFinite(v) ? "n/d" : v.toLocaleString("it-IT", { maximumFractionDigits: d, minimumFractionDigits: d });
+const n0 = nf(0), n1 = nf(1), n2 = nf(2);
+
+/* icone */
+const ICON = {
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>', x: '<path d="M6 6l12 12M18 6L6 18"/>',
+  send: '<path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/>',
+  book: '<path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5zM4 19.5V4.5"/>',
+  chev: '<path d="M6 9l6 6 6-6"/>', up: '<path d="M6 15l6-6 6 6"/>', layers: '<path d="M12 3 3 8l9 5 9-5zM3 13l9 5 9-5"/>'
+};
+const ic = (n) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICON[n]}</svg>`;
+document.querySelectorAll("svg[data-i]").forEach((e) => { e.setAttribute("viewBox", "0 0 24 24"); e.setAttribute("aria-hidden", "true"); e.innerHTML = ICON[e.dataset.i]; });
+
+/* ---------- dati ---------- */
+const U = OSM.unit_km;
+const dec = (a) => { const o = []; let x = 0, y = 0; for (let i = 0; i < a.length; i += 2) { x += a[i]; y += a[i + 1]; o.push([x * U, y * U]); } return o; };
+const dstr = (pts, close) => "M" + pts.map((p) => p[0].toFixed(2) + " " + p[1].toFixed(2)).join("L") + (close ? "Z" : "");
+const pathOf = (a, close) => dstr(dec(a), close);
+const C = OSM.comuni.map((c) => { const i = IST[c.id] || {}; if (i.pop == null) i.pop = c.pop; return { id: c.id, n: c.n, a: c.a, k: c.k, c: c.c, rings: c.rings, poly: c.rings.map(dec), i, cen: HEX.by[c.id] || {} }; });
+const byId = Object.fromEntries(C.map((c, i) => [c.id, i]));
+const S = (f) => C.reduce((s, c) => s + (f(c) || 0), 0);
+const wm = (f, w) => { let s = 0, t = 0; C.forEach((c) => { const v = f(c), x = w(c); if (v != null && isFinite(v) && x) { s += v * x; t += x; } }); return t ? s / t : null; };
+const P = (c) => c.i.pop;
+const inPoly = (x, y, r) => { let c = false; for (let i = 0, j = r.length - 1; i < r.length; j = i++) { const a = r[i], b = r[j]; if ((a[1] > y) !== (b[1] > y) && x < (b[0] - a[0]) * (y - a[1]) / (b[1] - a[1]) + a[0]) c = !c; } return c; };
+const comuneAt = (x, y) => C.findIndex((c) => c.poly.some((r) => inPoly(x, y, r)));
+const M = {
+  pop: { l: "Residenti", u: "", f: (c) => P(c), fmt: n0, agg: () => S(P), src: "Istat · popolazione residente al 1° gennaio 2026 (dato provvisorio)" },
+  density: { l: "Densità", u: "ab/km²", f: (c) => P(c) / c.a, fmt: n0, agg: () => S(P) / S((c) => c.a), src: "Istat (residenti 2026) su superficie dei confini OpenStreetMap" },
+  age65: { l: "Over 65", u: "%", f: (c) => c.i.a65, fmt: n1, agg: () => wm((c) => c.i.a65, P), src: "Istat · popolazione per età al 1° gennaio 2026 (dato provvisorio)" },
+  foreign: { l: "Stranieri", u: "%", f: (c) => c.i.foreign_pct, fmt: n1, agg: () => wm((c) => c.i.foreign_pct, P), src: "Istat · stranieri residenti al 1° gennaio 2026 (dato provvisorio)" },
+  income: { l: "Reddito medio", u: "€", f: (c) => c.i.income, fmt: n0, agg: () => wm((c) => c.i.income, (c) => c.i.taxpayers), src: "MEF · IRPEF per comune, anno d'imposta 2024: reddito complessivo per contribuente" },
+  emp: { l: "Occupazione", u: "%", f: (c) => c.i.emp_rate, fmt: n1, agg: () => wm((c) => c.i.emp_rate, P), src: "Istat · Censimento permanente 2024, occupati sulla popolazione di 15 anni e più (stima)" },
+  unemp: { l: "Disoccupazione", u: "%", f: (c) => c.i.unemp_rate, fmt: n1, agg: () => wm((c) => c.i.unemp_rate, P), src: "Istat · Censimento permanente 2024, in cerca di occupazione sulle forze di lavoro (stima)" },
+  jobs: { l: "Addetti ogni 100 ab.", u: "", f: (c) => c.i.empl / P(c) * 100, fmt: n1, agg: () => S((c) => c.i.empl) / S(P) * 100, src: "Istat · ASIA 2024 (addetti delle unità locali) su residenti 2026" },
+  ind: { l: "Suolo industriale", u: "%", f: (c) => c.k.ind / c.a * 100, fmt: n1, agg: () => S((c) => c.k.ind) / S((c) => c.a) * 100, src: "OpenStreetMap · landuse=industrial, area assegnata al comune del baricentro" },
+  green: { l: "Verde e parchi", u: "%", f: (c) => Math.min(100, c.k.green / c.a * 100), fmt: n1, agg: () => S((c) => c.k.green) / S((c) => c.a) * 100, src: "OpenStreetMap · parchi, boschi e foreste; area assegnata al comune del baricentro" },
+  school: { l: "Scuole ogni 1.000 ab.", u: "", f: (c) => c.k.school / P(c) * 1000, fmt: n2, agg: () => S((c) => c.k.school) / S(P) * 1000, src: "OpenStreetMap · amenity=school e kindergarten (copertura volontaria)" },
+  health: { l: "Sanità ogni 10.000 ab.", u: "", f: (c) => c.k.health / P(c) * 1e4, fmt: n1, agg: () => S((c) => c.k.health) / S(P) * 1e4, src: "OpenStreetMap · ospedali, cliniche e ambulatori (copertura volontaria)" },
+  shop: { l: "Negozi ogni 1.000 ab.", u: "", f: (c) => c.k.shop / P(c) * 1000, fmt: n1, agg: () => S((c) => c.k.shop) / S(P) * 1000, src: "OpenStreetMap · shop=* (copertura volontaria)" },
+  station: { l: "Distanza dalla stazione", u: "km", f: (c) => c.k.dist_station, fmt: n1, agg: () => wm((c) => c.k.dist_station, P), src: "OpenStreetMap · linea retta dal centro del comune alla stazione più vicina dentro la provincia" }
+};
+/* griglia esagonale 3D: sezioni di censimento 2021 ripartite su esagoni */
+const CEN = "Istat · Censimento 2021, sezioni di censimento ripartite su esagoni da 0,53 km² in proporzione all'area (densità uniforme nella sezione)";
+const ORANGE = ["#fff1e0", "#ffd6a8", "#ffb877", "#ff9a4d", "#f77b2e", "#e05a1b", "#b8400f", "#8c2a08"];
+const BLUE = ["#cfe3ff", "#a6caff", "#7db0ff", "#5b97f5", "#3d7be0", "#2a62c4", "#1e4a9a", "#133470"];
+const GREENR = ["#d9f5e3", "#b3ebc9", "#8ddcb0", "#66cb98", "#45b07e", "#2e9366", "#1f7350", "#145539"];
+const HM = {
+  hp: { l: "Residenti", k: "pop", ramp: ORANGE, t: "FASCE DI POPOLAZIONE", c: "Residenti" },
+  he: { l: "Occupati", k: "emp", ramp: BLUE, t: "FASCE DI OCCUPATI", c: "Occupati residenti 15-64" },
+  hf: { l: "Stranieri", k: "for", ramp: GREENR, t: "FASCE DI STRANIERI", c: "Stranieri residenti" },
+  hd: { l: "Abitazioni", k: "dw", ramp: ORANGE, t: "FASCE DI ABITAZIONI", c: "Abitazioni" },
+  hg: { l: "Istruzione terziaria", k: "deg", ramp: BLUE, t: "FASCE DI ISTRUZIONE TERZIARIA", c: "Residenti con istruzione terziaria" }
+};
+const HK = HEX.keys, HC = HEX.cells, HR = HEX.r;
+/* uso del suolo (OpenStreetMap) */
+const LU = DET.lu;
+const MZ = DET.monza;
+const D = {
+  pop: { t: "Popolazione", mode: "choro", m: ["pop", "density", "age65", "foreign"], lay: [] },
+  hex: { t: "Densità 3D (esagoni)", mode: "hex", m: ["hp", "he", "hf", "hd", "hg"], lay: [] },
+  eco: { t: "Economia e servizi", mode: "choro", m: ["income", "emp", "unemp", "jobs", "shop", "school", "health"], lay: [] },
+  land: { t: "Uso del suolo", mode: "cat", m: ["lucat", "green", "ind"], lay: [] },
+  mob: { t: "Mobilità e ferrovia", mode: "choro", m: ["station"], lay: ["rail", "road"] },
+  city: { t: "Comune di Monza · edifici 3D", mode: "city", m: ["ch", "ct", "ca"], lay: [] }
+};
+const MLAB = { lucat: "Categorie", ch: "Altezza", ct: "Tipo", ca: "Superficie" };
+const mlabel = (k) => (M[k] || HM[k] || {}).l || MLAB[k];
+const LAYERS = { road: "Strade", rail: "Ferrovia", green: "Verde" };
+const RAMP = ["#1f3b5c", "#2c6c8f", "#3fa08f", "#9ccc5a", "#e8d44d", "#ffb703"];
+const vals = (m) => C.map((c) => { const v = M[m].f(c); return v != null && isFinite(v) ? v : null; });
+const ranked = (m, desc = true) => { const v = vals(m); return C.map((c, i) => ({ c, v: v[i] })).filter((x) => x.v != null).sort((a, b) => desc ? b.v - a.v : a.v - b.v); };
+const fm = (m, v) => M[m].fmt(v) + (M[m].u ? " " + M[m].u : "");
+
+/* ---------- mappa piatta ---------- */
+const G = (tag, attrs, parent) => { const e = document.createElementNS("http://www.w3.org/2000/svg", tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent && parent.appendChild(e); return e; };
+let bx0 = 1e9, by0 = 1e9, bx1 = -1e9, by1 = -1e9;
+C.forEach((c) => c.poly.forEach((r) => r.forEach(([x, y]) => { bx0 = Math.min(bx0, x); by0 = Math.min(by0, y); bx1 = Math.max(bx1, x); by1 = Math.max(by1, y); })));
+const FULL = [bx0 - 1, by0 - 1, bx1 - bx0 + 2, by1 - by0 + 2];
+const setVB = (b) => svg.setAttribute("viewBox", b.map((v) => +v.toFixed(3)).join(" "));
+setVB(FULL);
+$("prov").setAttribute("d", OSM.province.map((r) => pathOf(r, true)).join(""));
+let sel = -1;
+C.forEach((c, i) => {
+  const p = G("path", { d: c.poly.map((r) => dstr(r, true)).join(""), class: "comm", tabindex: 0, role: "button", "aria-label": c.n }, $("com"));
+  G("title", {}, p).textContent = c.n;
+  p.addEventListener("click", () => select(i));
+  p.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(i); } });
+  c.el = p;
+});
+G("path", { d: OSM.green.map((r) => pathOf(r, true)).join("") }, $("green"));
+[1, 2, 3].forEach((cl) => G("path", { d: OSM.roads.filter((r) => r.c === cl).map((r) => pathOf(r.p)).join(""), "stroke-width": [0, 2.2, 1.4, .7][cl] + "px", "stroke-opacity": [0, .9, .7, .45][cl] }, $("roads")));
+OSM.rails.forEach((r) => G("path", { d: pathOf(r) }, $("rails")));
+OSM.stations.forEach((s) => { const t = G("circle", { cx: s.x, cy: s.y, r: .17 }, $("stations")); G("title", {}, t).textContent = s.n || "Stazione"; });
+LU.cats.forEach((c) => { c.el = G("path", { d: c.p.map((r) => pathOf(r, true)).join(""), fill: c.c }, $("lu")); });
+[...C].sort((a, b) => P(b) - P(a)).slice(0, 6).forEach((c) => { const t = G("text", { x: c.c[0], y: c.c[1], class: "lab" }, $("labels")); t.textContent = c.n; });
+function fitText() {
+  const r = svg.getBoundingClientRect(), vb = svg.viewBox.baseVal, k = Math.min(r.width / vb.width, r.height / vb.height) || 1;
+  document.querySelectorAll("#labels text").forEach((t) => { t.style.fontSize = (11 / k).toFixed(3) + "px"; t.style.strokeWidth = (3 / k).toFixed(3) + "px"; });
+  document.querySelectorAll("#stations circle").forEach((c) => c.setAttribute("r", (4 / k).toFixed(2)));
+}
+new ResizeObserver(fitText).observe(svg);
+let vbAnim = 0;
+function zoomVB(to) {
+  const from = svg.viewBox.baseVal, a = [from.x, from.y, from.width, from.height], t0 = performance.now(), id = ++vbAnim, Dm = reduce ? 0 : 650;
+  const step = (t) => { if (id !== vbAnim) return; const u = Dm ? Math.min(1, (t - t0) / Dm) : 1, e = 1 - Math.pow(1 - u, 3); setVB(a.map((v, i) => v + (to[i] - v) * e)); fitText(); if (u < 1) requestAnimationFrame(step); };
+  requestAnimationFrame(step); setTimeout(() => { if (id === vbAnim) { setVB(to); fitText(); } }, Dm + 150);
+}
+const bboxOf = (c) => { let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9; c.poly.forEach((r) => r.forEach(([x, y]) => { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); })); const m = Math.max(x1 - x0, y1 - y0) * .18; return [x0 - m, y0 - m, x1 - x0 + 2 * m, y1 - y0 + 2 * m]; };
+let zoomed = -1;
+function zoomComune(i) { zoomed = i; zoomVB(i < 0 ? FULL : bboxOf(C[i])); render(); }
+
+/* ---------- vista 3D (prismi estrusi su canvas 2D, senza librerie) ---------- */
+const c3 = $("c3d"), g3 = c3.getContext("2d"), tip = $("tip");
+const V0 = { yaw: -0.35, pitch: 1.0, k: 1, px: 0, py: 0 }, V = { ...V0 };
+let sc3 = null, drag = null, raf3 = 0;
+const rgbOf = (h) => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
+const mkPal = (cols) => cols.map((h) => { const [r, g, b] = rgbOf(h); return { top: h, side: [0, 1, 2, 3, 4, 5].map((l) => `rgb(${r * (.4 + .12 * l) | 0},${g * (.4 + .12 * l) | 0},${b * (.4 + .12 * l) | 0})`), dim: `rgb(${(r * .3 + 36) | 0},${(g * .3 + 36) | 0},${(b * .3 + 36) | 0})` }; });
+function mkItem(ring, h, ci, extra) {
+  const p = ring[0][0] === ring[ring.length - 1][0] && ring[0][1] === ring[ring.length - 1][1] ? ring.slice(0, -1) : ring, n = p.length;
+  let A = 0, cx = 0, cy = 0; for (let i = 0; i < n; i++) { const a = p[i], b = p[(i + 1) % n]; A += a[0] * b[1] - b[0] * a[1]; cx += a[0]; cy += a[1]; }
+  const nx = [], ny = [];
+  for (let i = 0; i < n; i++) { const a = p[i], b = p[(i + 1) % n], dx = b[0] - a[0], dy = b[1] - a[1], l = Math.hypot(dx, dy) || 1; nx.push((A > 0 ? dy : -dy) / l); ny.push((A > 0 ? -dx : dx) / l); }
+  return { p, n, h, ci, nx, ny, cx: cx / n, cy: cy / n, on: true, dim: false, ...extra };
+}
+function setScene(s) {
+  let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+  s.items.forEach((it) => it.p.forEach(([x, y]) => { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); }));
+  s.cx = (x0 + x1) / 2; s.cy = (y0 + y1) / 2; s.rad = Math.hypot(x1 - x0, y1 - y0) / 2 || 1;
+  s.pal = mkPal(s.cols); sc3 = s; queue3();
+}
+const later = (fn) => { let d = 0; const r = () => { if (!d) { d = 1; fn(); } }; requestAnimationFrame(r); setTimeout(r, 100); }; // rAF e' sospeso nelle schede in background
+const queue3 = () => { if (!raf3) { raf3 = 1; later(() => { raf3 = 0; draw3(); }); } };
+function draw3(fast) {
+  const dpr = devicePixelRatio || 1, W = c3.clientWidth, H = c3.clientHeight;
+  if (!W || !H) return;
+  if (c3.width !== Math.round(W * dpr) || c3.height !== Math.round(H * dpr)) { c3.width = Math.round(W * dpr); c3.height = Math.round(H * dpr); }
+  g3.setTransform(dpr, 0, 0, dpr, 0, 0); g3.clearRect(0, 0, W, H);
+  if (!sc3) return;
+  const co = Math.cos(V.yaw), si = Math.sin(V.yaw), cp = Math.cos(V.pitch), sp = Math.sin(V.pitch), Sc = Math.min(W, H) * .46 / sc3.rad * V.k, ox = W / 2 + V.px, oy = H / 2 + V.py;
+  const X = (x, y) => { const dx = x - sc3.cx, dy = y - sc3.cy; return ox + Sc * (dx * co - dy * si); };
+  const Yy = (x, y, z) => { const dx = x - sc3.cx, dy = y - sc3.cy; return oy + Sc * ((dx * si + dy * co) * cp - z * sp); };
+  const cs = getComputedStyle(map), lab = cs.getPropertyValue("--label").trim();
+  (sc3.ground || []).forEach((g) => { g3.beginPath(); g.pts.forEach(([x, y], i) => i ? g3.lineTo(X(x, y), Yy(x, y, 0)) : g3.moveTo(X(x, y), Yy(x, y, 0))); if (g.close) g3.closePath(); g3.strokeStyle = g.stroke; g3.lineWidth = g.w || 1; g3.setLineDash(g.dash || []); g3.stroke(); });
+  g3.setLineDash([]);
+  const list = sc3.items.filter((it) => it.on);
+  list.forEach((it) => { it.d = (it.cx - sc3.cx) * si + (it.cy - sc3.cy) * co; });
+  list.sort((a, b) => a.d - b.d);
+  const tiny = fast && list.length > 6000;
+  for (const it of list) {
+    const pal = sc3.pal[it.ci], hz = it.h;
+    if (!tiny && hz > 0 && sp > .05) {
+      for (let e = 0; e < it.n; e++) {
+        const nyr = it.nx[e] * si + it.ny[e] * co;
+        if (nyr <= 0) continue;
+        const a = it.p[e], b = it.p[(e + 1) % it.n];
+        g3.beginPath(); g3.moveTo(X(a[0], a[1]), Yy(a[0], a[1], 0)); g3.lineTo(X(b[0], b[1]), Yy(b[0], b[1], 0)); g3.lineTo(X(b[0], b[1]), Yy(b[0], b[1], hz)); g3.lineTo(X(a[0], a[1]), Yy(a[0], a[1], hz)); g3.closePath();
+        g3.fillStyle = it.dim ? pal.dim : pal.side[Math.min(5, Math.max(0, (nyr * 5.4) | 0))]; g3.fill();
+      }
+    }
+    g3.beginPath();
+    const top = sc3.pick ? [] : null;
+    for (let i = 0; i < it.n; i++) { const x = X(it.p[i][0], it.p[i][1]), y = Yy(it.p[i][0], it.p[i][1], hz); if (i) g3.lineTo(x, y); else g3.moveTo(x, y); if (top) top.push([x, y]); }
+    g3.closePath(); g3.fillStyle = it.dim ? pal.dim : pal.top; g3.fill();
+    if (it.hot) { g3.strokeStyle = "#fff"; g3.lineWidth = 1.5; g3.stroke(); }
+    it.sx = top;
+  }
+  sc3.order = list;
+  g3.fillStyle = lab; g3.font = "500 11px Poppins, sans-serif"; g3.textAlign = "center"; g3.lineJoin = "round"; g3.strokeStyle = cs.getPropertyValue("--water").trim(); g3.lineWidth = 3;
+  (sc3.labels || []).slice(0, Math.round(5 + V.k * V.k * 3)).forEach((l) => { const x = X(l.x, l.y), y = Yy(l.x, l.y, 0); g3.strokeText(l.t, x, y); g3.fillText(l.t, x, y); });
+}
+c3.addEventListener("pointerdown", (e) => { drag = { x: e.clientX, y: e.clientY, m: false }; c3.setPointerCapture(e.pointerId); c3.classList.add("drag"); });
+c3.addEventListener("pointermove", (e) => {
+  if (drag) { const dx = e.clientX - drag.x, dy = e.clientY - drag.y; if (Math.abs(dx) + Math.abs(dy) > 2) drag.m = true; drag.x = e.clientX; drag.y = e.clientY; if (e.shiftKey) { V.px += dx; V.py += dy; } else { V.yaw += dx * .008; V.pitch = Math.min(1.35, Math.max(0, V.pitch + dy * .006)); } tip.hidden = true; draw3(true); return; }
+  hover3(e);
+});
+const endDrag = (e) => { if (drag && !drag.m) clickPick(e); drag = null; c3.classList.remove("drag"); queue3(); };
+c3.addEventListener("pointerup", endDrag); c3.addEventListener("pointercancel", () => { drag = null; c3.classList.remove("drag"); });
+c3.addEventListener("wheel", (e) => { e.preventDefault(); V.k = Math.min(10, Math.max(.4, V.k * Math.exp(-e.deltaY * .0012))); queue3(); }, { passive: false });
+function pick3(e) {
+  if (!sc3 || !sc3.pick || !sc3.order) return null;
+  const r = c3.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+  for (let i = sc3.order.length - 1; i >= 0; i--) { const it = sc3.order[i]; if (it.sx && inPoly(x, y, it.sx)) return it; }
+  return null;
+}
+function hover3(e) {
+  const it = pick3(e);
+  if (sc3 && sc3.pick) { sc3.items.forEach((o) => o.hot = false); if (it) it.hot = true; queue3(); }
+  if (!it) { tip.hidden = true; return; }
+  const r = map.getBoundingClientRect(); tip.hidden = false; tip.style.left = Math.min(e.clientX - r.left + 12, r.width - 190) + "px"; tip.style.top = e.clientY - r.top + 12 + "px";
+  tip.innerHTML = sc3.tip(it);
+}
+function clickPick(e) { const it = pick3(e); if (it && sc3.click) sc3.click(it); }
+$("zin").onclick = () => { V.k = Math.min(10, V.k * 1.3); queue3(); };
+$("zout").onclick = () => { V.k = Math.max(.4, V.k / 1.3); queue3(); };
+$("zrst").onclick = () => { Object.assign(V, sc3 && sc3.view || V0); queue3(); };
+$("ztilt").onclick = () => { V.pitch = V.pitch > .2 ? 0 : (sc3 && sc3.view ? sc3.view.pitch : 1); queue3(); };
+new ResizeObserver(() => queue3()).observe(c3);
+
+/* ---------- dashboard ---------- */
+let dash = "pop", met = "pop", sortBars = false, insI = 0, distSel = -1;
+const lay = { road: false, rail: false, green: false };
+const luOn = Object.fromEntries(LU.cats.map((c) => [c.k, true]));
+const bandOn = Array(8).fill(true), clsOn = {}, cache3 = {};
+Object.keys(D).forEach((k) => { const o = document.createElement("option"); o.value = k; o.textContent = D[k].t; $("dsel").appendChild(o); });
+const breaks = (v) => { const s = v.filter((x) => x != null).sort((a, b) => a - b); return [1, 2, 3, 4, 5].map((i) => s[Math.floor(i * s.length / 6)]); };
+const colorOf = (v, b) => v == null ? "var(--nodata)" : RAMP[b.filter((t) => v >= t).length];
+const show = (id, b) => { $(id).hidden = !b; };
+let bld = null;
+
+function hexScene(mk) {
+  const hm = HM[mk], ki = HK.indexOf(hm.k), v = HC.map((c) => c[2 + ki]), nz = v.filter((x) => x > 0).sort((a, b) => a - b);
+  const br = [1, 2, 3, 4, 5, 6, 7].map((i) => nz[Math.floor(i * nz.length / 8)]), vmax = nz[nz.length - 1];
+  const band = (x) => br.filter((t) => x >= t).length;
+  const items = HC.map((c, i) => { const a = []; for (let q = 0; q < 6; q++) a.push([c[0] + HR * Math.cos((30 + 60 * q) * Math.PI / 180), c[1] + HR * Math.sin((30 + 60 * q) * Math.PI / 180)]); return mkItem(a, Math.pow(v[i] / vmax, 1.2) * 6, band(v[i]), { v: v[i], x: c[0], y: c[1] }); }).filter((it) => it.v > 0);
+  const ground = [{ pts: dec(OSM.province[0]), close: true, stroke: "rgba(255,255,255,.35)", w: 1.2 }];
+  C.forEach((c) => c.poly.forEach((r) => ground.push({ pts: r, close: true, stroke: "rgba(255,255,255,.1)", w: .7 })));
+  return { items, ground, cols: hm.ramp, pick: true, view: { yaw: -0.35, pitch: 1.0, k: 1.05, px: 0, py: 20 }, br, vmax,
+    tip: (it) => { const ci = comuneAt(it.x, it.y); return `${esc(hm.c)}: <b>${n0(it.v)}</b><small>${ci >= 0 ? esc(C[ci].n) : "fuori provincia"} · esagono da 0,53 km²</small>`; },
+    click: (it) => { const ci = comuneAt(it.x, it.y); if (ci >= 0) select(ci); } };
+}
+const BCOL = ["#d4c21f", "#a5c02b", "#6fb83a", "#38a86b", "#2c8fae", "#3f73d0", "#6a5bd6", "#9d4fd0"];
+const HCLS = { ch: { l: "ALTEZZA DEGLI EDIFICI", cuts: [3, 6, 9, 12, 15, 20, 30], cols: BCOL, f: (b) => b[1], u: "m" },
+  ca: { l: "SUPERFICIE DI BASE", cuts: [50, 100, 200, 400, 800, 1600, 3200], cols: BCOL, f: (b) => b[4], u: "m²" },
+  ct: { l: "TIPO DI EDIFICIO", cuts: null, cols: ["#f7b267", "#e8606a", "#4cc9f0", "#b39ddb", "#52b788", "#8a8a8a"], f: (b) => b[3], u: "" } };
+const clsOf = (m, b) => { const d = HCLS[m]; return d.cuts ? d.cuts.filter((t) => d.f(b) >= t).length : d.f(b); };
+const clsLabel = (m, i) => { const d = HCLS[m]; if (!d.cuts) return MZ.types[i]; const c = d.cuts; return i === 0 ? `< ${c[0]} ${d.u}` : i === c.length ? `≥ ${c[c.length - 1]} ${d.u}` : `${c[i - 1]} – ${c[i]} ${d.u}`; };
+function loadBld() {
+  if (bld) return bld;
+  const ring = dec(MZ.ring), dist = MZ.districts.map((d) => ({ n: d.n, ring: dec(d.ring) }));
+  const b = MZ.b.map((r) => ({ d: r[0], h: r[1], known: r[2], ty: r[3], a: r[4], p: dec(r.slice(5)) }));
+  const sec = HEX.monza_sec.map(([x, y, p]) => ({ d: dist.findIndex((q) => inPoly(x, y, q.ring)), p }));
+  dist.forEach((q, i) => { q.pop = sec.filter((s) => s.d === i).reduce((s, x) => s + x.p, 0); q.cx = q.ring.reduce((s, p) => s + p[0], 0) / q.ring.length; q.cy = q.ring.reduce((s, p) => s + p[1], 0) / q.ring.length; });
+  b.forEach((x) => { x.gfa = x.a * Math.max(1, Math.round(x.h / 3.2)); x.b = [x.d, x.h, x.known, x.ty, x.a]; });
+  bld = { ring, dist, b, totPop: dist.reduce((s, q) => s + q.pop, 0) };
+  return bld;
+}
+function cityScene(m) {
+  const B = loadBld(), d = HCLS[m], EX = 4;
+  const items = B.b.map((x) => mkItem(x.p, x.h / 1000 * EX, clsOf(m, x.b), { d: x.d })).filter((it) => it.n >= 3);
+  const ground = [{ pts: B.ring, close: true, stroke: "rgba(255,255,255,.55)", w: 1.4 }, ...B.dist.map((q) => ({ pts: q.ring, close: true, stroke: "rgba(255,255,255,.22)", w: .8, dash: [4, 4] }))];
+  return { items, ground, cols: d.cols, pick: false, labels: [...B.dist].sort((a, b) => b.pop - a.pop).map((q) => ({ x: q.cx, y: q.cy, t: q.n })), view: { yaw: 0.0, pitch: 0.95, k: 1.5, px: 0, py: 10 } };
+}
+function render() {
+  const d = D[dash], mode = d.mode;
+  const catMode = mode === "cat" && met === "lucat", choro = mode === "choro" || (mode === "cat" && met !== "lucat");
+  const v = choro ? vals(met) : [];
+  $("dsel").value = dash;
+  $("mchips").innerHTML = "";
+  d.m.forEach((k) => { const bt = document.createElement("button"); bt.type = "button"; bt.className = "chip-b"; bt.textContent = mlabel(k); bt.setAttribute("aria-pressed", k === met); bt.onclick = () => { met = k; distSel = -1; render(); }; $("mchips").appendChild(bt); });
+  const flat = mode === "choro" || mode === "cat", three = mode === "hex" || mode === "city";
+  if (cur > 0) { svg.classList.toggle("off", !flat); c3.classList.toggle("off", !three); }
+  $("ctl").hidden = !(three && cur > 0);
+  tip.hidden = true;
+  const on = (id, b) => $(id).classList.toggle("off", !b);
+  const br = choro ? breaks(v) : null;
+  C.forEach((c, i) => { c.el.classList.toggle("sel", i === sel); c.el.style.fill = choro ? colorOf(v[i], br) : catMode ? "var(--land)" : "var(--nodata)"; });
+  if (sel >= 0) $("com").appendChild(C[sel].el);
+  on("lu", catMode); on("green", choro && lay.green); on("roads", choro && lay.road); on("rails", choro && lay.rail); on("stations", choro && lay.rail);
+  LU.cats.forEach((c) => { c.el.style.display = luOn[c.k] ? "" : "none"; });
+  show("bScale", choro); show("bHist", choro); show("bRank", choro || mode === "hex"); show("bBands", mode === "hex"); show("bBars", catMode || mode === "city"); show("bIns", catMode); show("bDist", mode === "city");
+  $("lay").hidden = !choro; $("lay").innerHTML = "<span>STRATI</span>";
+  if (choro) Object.keys(LAYERS).forEach((k) => { const bt = document.createElement("button"); bt.type = "button"; bt.className = "chip-b"; bt.textContent = LAYERS[k]; bt.setAttribute("aria-pressed", lay[k]); bt.onclick = () => { lay[k] = !lay[k]; render(); }; $("lay").appendChild(bt); });
+  $("bZoom").hidden = !(flat && cur > 0 && (sel >= 0 || zoomed >= 0));
+  $("zoomBtn").textContent = zoomed >= 0 ? "← Torna alla provincia" : sel >= 0 ? "Zoom su " + C[sel].n : "";
+  $("zoomBtn").onclick = () => zoomComune(zoomed >= 0 ? -1 : sel);
+  $("cityBtn").hidden = !(flat && sel >= 0 && C[sel].id === MZ.id);
+  if (choro) renderChoro(v);
+  else if (catMode) renderCat();
+  else if (mode === "hex") renderHex();
+  else if (mode === "city") renderCity();
+}
+function renderChoro(v) {
+  const m = M[met];
+  $("k1").textContent = m.fmt(m.agg()) + (m.u ? " " + m.u : ""); $("k1l").textContent = "Provincia · " + m.l;
+  $("k2").textContent = sel >= 0 ? fm(met, v[sel]) : "–"; $("k2l").textContent = sel >= 0 ? C[sel].n : "Seleziona un comune";
+  $("scale").innerHTML = RAMP.map((c) => `<i style="background:${c}"></i>`).join("");
+  const nn = v.filter((x) => x != null);
+  $("smin").textContent = m.fmt(Math.min(...nn)); $("smax").textContent = m.fmt(Math.max(...nn)) + (m.u ? " " + m.u : "");
+  const lo = Math.min(...nn), hi = Math.max(...nn), bins = Array(10).fill(0);
+  nn.forEach((x) => bins[Math.min(9, Math.floor((x - lo) / (hi - lo || 1) * 10))]++);
+  const mx = Math.max(...bins), sb = sel >= 0 && v[sel] != null ? Math.min(9, Math.floor((v[sel] - lo) / (hi - lo || 1) * 10)) : -1;
+  $("hist").innerHTML = bins.map((n, i) => `<rect class="${i === sb ? "hi" : ""}" x="${i * 22 + 1}" width="20" y="${50 - n / mx * 46}" height="${n / mx * 46}"/>`).join("");
+  rankList(ranked(met).map((x) => ({ i: C.indexOf(x.c), n: x.c.n, v: x.v })), m.fmt, "PRIMI 8 COMUNI");
+  $("src").textContent = "Fonte: " + m.src + ".";
+}
+function rankList(rows, fmt, title) {
+  const top = rows.slice(0, 8), vmax = top[0] ? top[0].v : 1;
+  $("rkh").textContent = title;
+  $("rank").innerHTML = top.map((x) => `<li><button type="button" data-i="${x.i}" class="${x.i === sel ? "on" : ""}"><span>${esc(x.n)}</span><span class="v">${fmt(x.v)}</span><i class="bar" style="width:${Math.max(3, x.v / vmax * 100)}%"></i></button></li>`).join("");
+  $("rank").querySelectorAll("button").forEach((bt) => { bt.onclick = () => select(+bt.dataset.i); });
+}
+function renderHex() {
+  const hm = HM[met];
+  if (!cache3[met]) cache3[met] = hexScene(met);
+  const sc = cache3[met];
+  sc.items.forEach((it) => { it.on = bandOn[it.ci]; });
+  if (sc3 !== sc) { Object.assign(V, sc.view); setScene(sc); } else queue3();
+  const tot = HEX.totals[hm.k], bi = sel >= 0 ? C[sel].cen[hm.k] : null;
+  $("k1").textContent = n0(tot); $("k1l").textContent = "Provincia · " + hm.c + " (2021)";
+  $("k2").textContent = bi != null ? n0(bi) : "–"; $("k2l").textContent = sel >= 0 ? C[sel].n : "Seleziona un comune";
+  $("bandT").textContent = hm.t;
+  $("bands").innerHTML = [7, 6, 5, 4, 3, 2, 1, 0].map((i) => { const lo = i === 0 ? 1 : sc.br[i - 1], hi = i === 7 ? sc.vmax : sc.br[i] - 1; return `<button type="button" data-b="${i}" aria-pressed="${bandOn[i]}"><i style="width:12px;height:12px;border-radius:2px;background:${hm.ramp[i]}"></i><span>${n0(lo)} – ${n0(hi)}</span><span class="ck">${bandOn[i] ? "✓" : ""}</span></button>`; }).join("");
+  $("bands").querySelectorAll("button").forEach((bt) => { bt.onclick = () => { bandOn[+bt.dataset.b] = !bandOn[+bt.dataset.b]; render(); }; });
+  rankList(C.map((c, i) => ({ i, n: c.n, v: c.cen[hm.k] })).filter((x) => x.v).sort((a, b) => b.v - a.v), n0, "PRIMI 8 COMUNI · CENSIMENTO 2021");
+  $("src").textContent = "Fonte: " + CEN + ". Altezza proporzionale al valore.";
+}
+function renderCat() {
+  const sel2 = sel >= 0 ? C[sel] : null, den = sel2 ? sel2.a : S((c) => c.a), by = sel2 ? (LU.by[sel2.id] || {}) : LU.totals;
+  $("k1").textContent = n1(den) + " km²"; $("k1l").textContent = sel2 ? sel2.n : "Provincia";
+  const mapped = LU.cats.reduce((s, c) => s + (by[c.k] || 0), 0);
+  $("k2").textContent = n1(Math.min(100, mapped / den * 100)) + "%"; $("k2l").textContent = "del territorio mappato in OSM";
+  $("barsT").textContent = sel2 ? "USO DEL SUOLO · " + sel2.n.toUpperCase() : "USO DEL SUOLO · PROVINCIA";
+  $("sortBtn").textContent = "ORDINA: " + (sortBars ? "VALORE" : "STANDARD");
+  $("sortBtn").onclick = () => { sortBars = !sortBars; render(); };
+  const rows = LU.cats.map((c) => ({ k: c.k, l: c.l, c: c.c, v: (by[c.k] || 0) / den * 100 }));
+  if (sortBars) rows.sort((a, b) => b.v - a.v);
+  const mx = Math.max(...rows.map((r) => r.v), 1);
+  $("bars").innerHTML = rows.map((r) => `<button type="button" data-k="${r.k}" aria-pressed="${luOn[r.k]}"><i class="sw" style="background:${r.c}"></i><span class="tr"><i class="fl" style="width:${Math.max(2, r.v / mx * 60)}%;background:${r.c}"></i><span class="lb">${esc(r.l)}</span></span><span class="vv">${n1(r.v)}%</span></button>`).join("");
+  $("bars").querySelectorAll("button").forEach((bt) => { bt.onclick = () => { luOn[bt.dataset.k] = !luOn[bt.dataset.k]; render(); }; });
+  const list = rows.filter((r) => r.v > 0), r = list[((insI % list.length) + list.length) % list.length];
+  $("insT").textContent = (sel2 ? sel2.n : "Monza e Brianza") + ": uso del suolo"; $("insV").textContent = n1(r.v) + "%"; $("insL").textContent = r.l.toLowerCase() + " (" + n1(r.v / 100 * den) + " km²)";
+  $("insP").onclick = () => { insI--; render(); }; $("insN").onclick = () => { insI++; render(); };
+  $("src").textContent = "Fonte: OpenStreetMap · poligoni di landuse, leisure, amenity, natural. Il resto del territorio non è classificato; le superfici si sovrappongono in parte e il comune è quello del baricentro.";
+}
+function renderCity() {
+  const B = loadBld(), key = "city" + met;
+  if (!cache3[key]) cache3[key] = cityScene(met);
+  const sc = cache3[key], d = HCLS[met], nC = d.cols.length;
+  clsOn[met] = clsOn[met] || Array(nC).fill(true);
+  sc.items.forEach((it) => { it.on = clsOn[met][it.ci]; it.dim = distSel >= 0 && it.d !== distSel; });
+  if (sc3 !== sc) { Object.assign(V, sc.view); setScene(sc); } else queue3();
+  const sub = B.b.filter((x) => distSel < 0 || x.d === distSel), gfa = sub.reduce((s, x) => s + x.gfa, 0);
+  $("k1").textContent = n0(gfa) + " m²"; $("k1l").textContent = "Superficie lorda · " + (distSel >= 0 ? B.dist[distSel].n : "Monza");
+  $("k2").textContent = n0(sub.length); $("k2l").textContent = "Edifici (" + n0(sub.filter((x) => x.known).length / Math.max(1, sub.length) * 100) + "% con altezza in OSM)";
+  const dopt = $("dist2");
+  if (dopt.options.length !== B.dist.length + 1) { dopt.innerHTML = '<option value="-1">Tutti i quartieri</option>' + B.dist.map((q, i) => ({ i, q })).sort((a, b) => a.q.n.localeCompare(b.q.n)).map((o) => `<option value="${o.i}">${esc(o.q.n)}</option>`).join(""); dopt.onchange = () => { distSel = +dopt.value; render(); }; }
+  dopt.value = distSel;
+  const cnt = Array(nC).fill(0); sub.forEach((x) => { cnt[clsOf(met, x.b)]++; });
+  const tot = sub.length || 1, mx = Math.max(...cnt, 1);
+  $("barsT").textContent = d.l; $("sortBtn").textContent = distSel >= 0 ? `${n1(B.dist[distSel].pop / B.totPop * 100)}% DEI RESIDENTI` : "TUTTI I QUARTIERI";
+  $("sortBtn").onclick = null;
+  $("bars").innerHTML = d.cols.map((c, i) => `<button type="button" data-k="${i}" aria-pressed="${clsOn[met][i]}"><i class="sw" style="background:${c}"></i><span class="tr"><i class="fl" style="width:${Math.max(2, cnt[i] / mx * 40)}%;background:${c}"></i><span class="lb">${esc(clsLabel(met, i))}</span></span><span class="vv">${n0(cnt[i])} · ${n1(cnt[i] / tot * 100)}%</span></button>`).join("");
+  $("bars").querySelectorAll("button").forEach((bt) => { bt.onclick = () => { clsOn[met][+bt.dataset.k] = !clsOn[met][+bt.dataset.k]; render(); }; });
+  $("src").textContent = "Fonte: OpenStreetMap · edifici (ODbL); quartieri = aree di influenza dei punti place=suburb/neighbourhood (approssimate); residenti per quartiere da sezioni Istat 2021. Altezza da tag OSM, altrimenti stimata dal tipo. Altezze esagerate ×4.";
+}
+function select(i) { sel = sel === i ? -1 : i; render(); }
+$("dsel").onchange = () => { dash = $("dsel").value; met = D[dash].m[0]; distSel = -1; Object.keys(lay).forEach((k) => { lay[k] = D[dash].lay.includes(k); }); render(); };
+$("dfold").onclick = () => { const f = $("dash").classList.toggle("fold"); $("dfold").setAttribute("aria-expanded", !f); map.classList.toggle("dash-open", !f && !$("dash").hidden); later(() => { fitText(); queue3(); }); };
+$("cityBtn").onclick = () => go(7);
+
+/* ---------- globo (continenti grezzi) ---------- */
+const PG = (s) => s.trim().split(/\s+/).map((p) => p.split(",").map(Number));
+const LAND = [
+  "-5.9,35.8 -2,35.1 3,36.8 10,37.2 11,33.5 15,32.3 20,32.2 25,31.6 32,31.2 34,28 35.5,24 37.3,19 38.8,15 41.5,12.5 43.2,11.8 51.2,11.8 51,10 48,5 44,1.5 41.5,-2 39.5,-5.5 39,-9 40.5,-15 35,-20 35.5,-24 32.5,-26 32.8,-28.5 30,-31.5 27,-33.5 22,-34.2 18.5,-34.2 17.5,-30 15,-27 14.5,-22 12,-17 13.5,-12 12.2,-6 9,-1 9.5,4 5.5,4.5 3,6.3 -2,5 -7.5,4.4 -12,7.5 -15,11 -17.2,14.7 -16.5,19.5 -14.5,26 -10,29.5 -9.8,31 -8,34",
+  "-5.6,36.1 -9,37 -9.4,43 -1.8,43.4 -1.2,46 -4.7,48.4 -1.5,48.7 1.5,50.2 4.5,51.8 8.5,53.8 8.2,57 10.5,57.7 10.5,54.5 14,54.2 19,54.5 21,57 24,58 23,59.5 29,60 34,66 41,67 60,69 80,73 110,77 160,70 180,70 180,65 150,60 135,55 140,50 130,43 125,40 122,40.5 121.5,39 119,35 121,32 122,30 120,26 117,23.5 114.1,22.3 110,21 108,21.5 106,20 108,16 109,12 107,10 104,10 103.5,1.3 101,3 100,7 98.5,10 97,16.5 94,16 92,20.5 90,22 87,21.5 84.5,19 80.3,16 80,13 78,8.3 76.5,9 73,16 72.5,21 68.5,23.5 66.5,25.4 61.5,25.2 57,26.5 56,27 51,28 48.5,30 46,33 42,37 36,36.8 30,36.3 27,37 26,40.2 23.5,40 24,38 22,36.5 21,38.5 19.5,41.5 19,42 16.5,43.5 14.5,44.5 13.7,45.6 13.5,46.5 7,46 7,43.5 3,43.2 3,42.4 0,40 -0.5,38.2 -2,36.7",
+  "5,58.5 5,62 10,64.5 14,67.5 19,70 26,71 30,70 30,67 29,63 30,61 23,60 22,63 25,65.5 21.5,65.5 18,62.5 19,60 17.5,58.5 16,56.2 13,55.5 11,58.5 8,58",
+  "35,29.5 34.8,28 36.5,25 39,21 42.5,15.5 43.5,12.7 45,12.8 52,16 55,17.5 57.5,19 59.8,22.5 57,24 56.3,26.2 54,24.2 51.5,24.5 51,26.2 50,26.8 48.5,29.8 47,30.5 46,33 42,35 38,35 36,34 35,32",
+  "7.5,43.8 10.5,43.5 12.2,41.8 15.7,39.9 15.7,38 17,39 16.5,40.2 18.5,40.2 16,41.9 14,42.5 12.3,44.2 12.5,45.3 13.7,45.6 13.5,46.5 7,46 7,44.2",
+  "-5.5,50 1.5,51 1.7,52.8 -0.2,54 -2,56 -2,57.6 -4,58.6 -6,57.5 -5.5,56 -4.5,54.5 -3,54 -3,53.3 -4.7,52.5 -5.3,51.7 -3.5,51.2",
+  "-10,51.7 -6,52 -6,54 -8,55.3 -10,54", "49.3,-12 50.4,-15.5 49.2,-20 47.2,-25 44.5,-25 43.3,-22 44.4,-16.5 47,-14.5"
+].map(PG);
+const WATER = ["28,41.5 41.5,41.2 41,43 37.5,45 35,45.3 33,46 31,46.5 29.5,45.3 28.5,43", "47,45 53,45.5 54,40 53.5,37 49,37.5 49.5,40.5"].map(PG);
+const HOME = { lon: 12, lat: 30, k: 1 }, TARGET = { lon: 9.27, lat: 45.6, k: 4.2 };
+const view = { ...HOME }, rad = Math.PI / 180, cx = cv.getContext("2d");
+function proj(lo, la, W, H, R) {
+  const l = (lo - view.lon) * rad, f = la * rad, f0 = view.lat * rad;
+  const x = Math.cos(f) * Math.sin(l), y = Math.cos(f0) * Math.sin(f) - Math.sin(f0) * Math.cos(f) * Math.cos(l);
+  return [W / 2 + R * x, H / 2 - R * y, Math.sin(f0) * Math.sin(f) + Math.cos(f0) * Math.cos(f) * Math.cos(l) >= 0, x, y];
+}
+function trace(pts, W, H, R) {
+  let any = false; cx.beginPath();
+  pts.forEach(([lo, la], i) => {
+    let [X, Y, vis, x, y] = proj(lo, la, W, H, R);
+    if (vis) any = true; else { const n = Math.hypot(x, y) || 1; X = W / 2 + R * x / n; Y = H / 2 - R * y / n; }
+    if (i) cx.lineTo(X, Y); else cx.moveTo(X, Y);
+  });
+  cx.closePath(); return any;
+}
+function drawGlobe() {
+  const dpr = devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight;
+  if (!W || !H) return;
+  if (cv.width !== Math.round(W * dpr) || cv.height !== Math.round(H * dpr)) { cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); }
+  cx.setTransform(dpr, 0, 0, dpr, 0, 0); cx.clearRect(0, 0, W, H);
+  const cs = getComputedStyle(map), v = (n) => cs.getPropertyValue(n).trim(), R = Math.min(W, H) * 0.42 * view.k;
+  const g = cx.createRadialGradient(W / 2 - R * .25, H / 2 - R * .25, R * .1, W / 2, H / 2, R);
+  g.addColorStop(0, v("--ocean-a")); g.addColorStop(1, v("--ocean-b"));
+  cx.save(); cx.beginPath(); cx.arc(W / 2, H / 2, R, 0, 7); cx.clip();
+  cx.fillStyle = g; cx.fillRect(0, 0, W, H); cx.strokeStyle = v("--grat"); cx.lineWidth = 1;
+  const line = (pts) => { cx.beginPath(); let pen = false; pts.forEach(([lo, la]) => { const [X, Y, vis] = proj(lo, la, W, H, R); if (vis) { if (pen) cx.lineTo(X, Y); else cx.moveTo(X, Y); pen = true; } else pen = false; }); cx.stroke(); };
+  for (let lo = -180; lo < 180; lo += 30) line(Array.from({ length: 61 }, (_, i) => [lo, -90 + i * 3]));
+  for (let la = -60; la <= 60; la += 30) line(Array.from({ length: 121 }, (_, i) => [-180 + i * 3, la]));
+  cx.fillStyle = v("--g-land"); cx.strokeStyle = v("--g-line");
+  LAND.forEach((p) => { if (trace(p, W, H, R)) { cx.fill(); cx.stroke(); } });
+  cx.fillStyle = v("--ocean-b"); WATER.forEach((p) => { if (trace(p, W, H, R)) cx.fill(); });
+  cx.restore();
+}
+new ResizeObserver(drawGlobe).observe(map);
+function fly(to) {
+  const a = { ...view }, t0 = performance.now(), Dm = reduce ? 0 : 1900;
+  return new Promise((res) => {
+    const step = (t) => {
+      const u = Dm ? Math.min(1, (t - t0) / Dm) : 1, e = u < .5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2;
+      for (const k of ["lon", "lat", "k"]) view[k] = a[k] + (to[k] - a[k]) * e;
+      drawGlobe(); if (u < 1) requestAnimationFrame(step); else res();
+    };
+    requestAnimationFrame(step);
+    setTimeout(() => { Object.assign(view, to); res(); }, Dm + 800); // rAF e' sospeso nelle schede in background
+  });
+}
+
+/* ---------- risposte dell'agente: tutte calcolate sui dati incorporati ---------- */
+const cite = (t) => `<span class="cite">${ic("book")}${t}</span>`;
+const K = (t) => `<span class="key">${t}</span>`;
+const names = (rows, m, n = 3) => rows.slice(0, n).map((x) => `<b>${esc(x.c.n)}</b> (${fm(m, x.v)})`).join(", ");
+const rk = (m, c) => { const r = ranked(m); const i = r.findIndex((x) => x.c === c); return i < 0 ? "n/d" : `${i + 1}° su ${r.length}`; };
+const tbl = (cap, head, rows) => `<div class="tbl"><div class="cap">${cap}</div><table><thead><tr>${head.map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((x) => `<td>${x}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+const median = (a) => { const s = [...a].sort((x, y) => x - y); return s.length ? s[Math.floor(s.length / 2)] : null; };
+const SC = [
+  null,
+  { user: "Profila la provincia di Monza e della Brianza.", d: "pop", m: "pop", html: () => {
+    const tp = S(P), ta = S((c) => c.a), big = ranked("pop")[0], dens = ranked("density");
+    return `<p>La provincia ha <b>${C.length} comuni</b> su <b>${n0(ta)} km²</b> e ${K(n0(tp) + " residenti")} (Istat, 1° gennaio 2026, dato provvisorio).</p>` +
+      `<p>Il comune più grande è <b>${esc(big.c.n)}</b> con ${n0(big.v)} abitanti, il ${n1(big.v / tp * 100)}% del totale. La densità media è ${K(n0(tp / ta) + " ab/km²")}; la più alta è a <b>${esc(dens[0].c.n)}</b> (${n0(dens[0].v)}).</p>` +
+      cite("Istat · popolazione residente al 1.1.2026 · dataflow 22_289") + cite("OpenStreetMap · confini dei comuni (ODbL)") +
+      `<p>Vuoi vedere la <b>struttura per età</b> e gli <b>stranieri residenti</b>?</p>`;
+  } },
+  { user: "Come sono distribuiti residenti, anziani e stranieri?", d: "pop", m: "density", html: () => {
+    const a = ranked("age65"), f = ranked("foreign");
+    return `<h4>1. Densità</h4><ul><li>I comuni più densi: ${names(ranked("density"), "density")}.</li></ul>` +
+      `<h4>2. Età</h4><ul><li>Gli over 65 sono in media ${K(n1(M.age65.agg()) + "%")}, da <b>${esc(a[a.length - 1].c.n)}</b> (${n1(a[a.length - 1].v)}%) a <b>${esc(a[0].c.n)}</b> (${n1(a[0].v)}%).</li></ul>` +
+      `<h4>3. Stranieri</h4><ul><li>La quota media è ${K(n1(M.foreign.agg()) + "%")}; la più alta è a ${names(f, "foreign", 2)}.</li></ul>` +
+      cite("Istat · popolazione per età e stranieri residenti · 1.1.2026 (provvisorio)") +
+      `<p>Vuoi vedere dove si concentrano davvero le persone, in ${K("3D")}?</p>`;
+  } },
+  { user: "Mostrami la densità di popolazione in 3D, senza i confini dei comuni.", d: "hex", m: "hp", html: () => {
+    const ki = HK.indexOf("pop"), cells = [...HC].sort((a, b) => b[2 + ki] - a[2 + ki]), tot = HEX.totals.pop, top = cells[0];
+    let acc = 0, n50 = 0; for (const c of cells) { acc += c[2 + ki]; n50++; if (acc >= tot / 2) break; }
+    const ci = comuneAt(top[0], top[1]), cellA = 2.598 * HR * HR;
+    return `<p>Il Censimento 2021 conta ${K(n0(tot) + " residenti")}, distribuiti su <b>${n0(HC.length)} esagoni</b> da ${n2(cellA)} km². Ogni sezione di censimento è ripartita sugli esagoni in proporzione all'area.</p>` +
+      `<ul><li>Metà dei residenti vive in ${K(n0(n50) + " esagoni")}, il ${n0(n50 / HC.length * 100)}% delle celle abitate (circa ${n0(n50 * cellA)} km²).</li>` +
+      `<li>La cella più popolata ha <b>${n0(top[2 + ki])} residenti</b> ed è ${ci >= 0 ? "a <b>" + esc(C[ci].n) + "</b>" : "fuori provincia"}.</li>` +
+      `<li>Gli occupati residenti (15-64 anni) sono ${n0(HEX.totals.emp)}, gli stranieri ${n0(HEX.totals["for"])}: cambia indicatore dal pannello.</li></ul>` +
+      cite("Istat · Censimento 2021 · basi territoriali e indicatori per sezione") +
+      `<p class="note">Trascina per ruotare, rotella per zoomare, Maiusc+trascina per spostare. Il valore di ogni cella assume densità uniforme dentro la sezione.</p>`;
+  } },
+  { user: "Mostrami redditi, occupazione e servizi per comune.", d: "eco", m: "income", html: () => {
+    const r = ranked("income"), u = ranked("unemp"), j = ranked("jobs");
+    return tbl("REDDITO MEDIO PER CONTRIBUENTE · PRIMI 5 (IRPEF 2024)", ["Comune", "Reddito", "Contrib."], r.slice(0, 5).map((x) => [esc(x.c.n), n0(x.v) + " €", n0(x.c.i.taxpayers)])) +
+      `<ul><li>Il reddito medio provinciale è ${K(n0(M.income.agg()) + " €")}; il più basso è a <b>${esc(r[r.length - 1].c.n)}</b> (${n0(r[r.length - 1].v)} €).</li>` +
+      `<li>Occupazione media ${K(n1(M.emp.agg()) + "%")}, disoccupazione ${K(n1(M.unemp.agg()) + "%")}; la più alta è a <b>${esc(u[0].c.n)}</b> (${n1(u[0].v)}%).</li>` +
+      `<li>Gli addetti ogni 100 abitanti vanno da ${n1(j[j.length - 1].v)} a ${n1(j[0].v)} (<b>${esc(j[0].c.n)}</b>), segno di poli produttivi.</li></ul>` +
+      cite("MEF · IRPEF per comune, anno d'imposta 2024") + cite("Istat · Censimento permanente 2024 e ASIA 2024") +
+      `<p class="note">Il reddito è per contribuente residente e non per abitante. Negozi, scuole e sanità (OSM) sono tra gli indicatori del pannello.</p>`;
+  } },
+  { user: "Com'è usato il suolo? Residenziale, industriale, agricolo, verde.", d: "land", m: "lucat", html: () => {
+    const ta = S((c) => c.a), T = LU.totals, pc = (k) => T[k] / ta * 100, mapped = LU.cats.reduce((s, c) => s + T[c.k], 0) / ta * 100;
+    const share = (k) => C.map((c) => ({ c, v: ((LU.by[c.id] || {})[k] || 0) / c.a * 100 })).sort((a, b) => b.v - a.v);
+    const rs = share("res"), ag = share("agr"), id = share("ind");
+    return `<p>Sul territorio mappato in OSM (${n0(Math.min(100, mapped))}% dei ${n0(ta)} km²):</p>` +
+      `<ul><li>${K("Residenziale " + n1(pc("res")) + "%")}, industriale ${n1(pc("ind"))}%, commerciale ${n1(pc("com"))}%.</li>` +
+      `<li>${K("Agricolo " + n1(pc("agr")) + "%")} e verde e parchi ${n1(pc("green"))}%.</li>` +
+      `<li>Il suolo più residenziale è a <b>${esc(rs[0].c.n)}</b> (${n1(rs[0].v)}%); quello più agricolo a <b>${esc(ag[0].c.n)}</b> (${n1(ag[0].v)}%).</li>` +
+      `<li>Più suolo industriale a <b>${esc(id[0].c.n)}</b> (${n1(id[0].v)}%) e <b>${esc(id[1].c.n)}</b> (${n1(id[1].v)}%).</li></ul>` +
+      cite("OpenStreetMap · landuse, leisure, amenity, natural (ODbL)") +
+      `<p class="note">Le superfici sommano poligoni mappati da volontari: si sovrappongono in parte e il resto è non classificato. Spegni le categorie dalla legenda.</p>`;
+  } },
+  { user: "Quanto è accessibile la ferrovia?", d: "mob", m: "station", html: () => {
+    const far = C.filter((c) => c.k.dist_station > 2), none = C.filter((c) => !c.k.station), pf = S((c) => c.k.dist_station > 2 ? P(c) : 0) / S(P) * 100, r = ranked("station");
+    return `<ul><li>Nella provincia ci sono ${K(OSM.stations.length + " stazioni")} (OpenStreetMap); ${none.length} comuni su ${C.length} non ne hanno una sul proprio territorio.</li>` +
+      `<li>${far.length} comuni distano più di 2 km in linea d'aria dalla stazione più vicina: ${K(n1(pf) + "%")} dei residenti.</li>` +
+      `<li>I più lontani: ${names(r, "station", 4)}.</li></ul>` +
+      cite("OpenStreetMap · railway=station e halt, railway=rail") +
+      `<p class="note">La distanza è in linea d'aria dal centro del comune e conta solo le stazioni dentro la provincia: i comuni di confine risultano più lontani del reale.</p>` +
+      `<p>Vuoi scendere di scala sul ${K("comune di Monza")}?</p>`;
+  } },
+  { user: "Scendi di scala sul comune di Monza: edifici e quartieri.", d: "city", m: "ch", pre: () => { sel = byId[MZ.id]; }, html: () => {
+    const B = loadBld(), h = median(B.b.map((x) => x.h)), known = B.b.filter((x) => x.known).length, tall = B.b.filter((x) => x.h >= 20).length;
+    const g = B.dist.map((q, i) => ({ q, g: B.b.filter((x) => x.d === i).reduce((s, x) => s + x.gfa, 0) })).sort((a, b) => b.g - a.g);
+    const pp = [...B.dist].sort((a, b) => b.pop - a.pop);
+    return `<p>A Monza OpenStreetMap contiene ${K(n0(B.b.length) + " edifici")}. L'altezza è dichiarata per il ${n0(known / B.b.length * 100)}% (tag height o building:levels); per gli altri è stimata dal tipo.</p>` +
+      `<ul><li>Altezza mediana ${K(n0(h) + " m")}; ${n0(tall)} edifici arrivano a 20 m o più.</li>` +
+      `<li>Più superficie lorda a <b>${esc(g[0].q.n)}</b> (${n0(g[0].g)} m²) e <b>${esc(g[1].q.n)}</b> (${n0(g[1].g)} m²).</li>` +
+      `<li>I quartieri più popolosi (Censimento 2021): <b>${esc(pp[0].n)}</b> (${n1(pp[0].pop / B.totPop * 100)}% del comune), <b>${esc(pp[1].n)}</b> (${n1(pp[1].pop / B.totPop * 100)}%).</li></ul>` +
+      cite("OpenStreetMap · building, height, building:levels (ODbL)") + cite("Istat · Censimento 2021 · sezioni di Monza, assegnate al quartiere") +
+      `<p class="note">I quartieri sono le aree di influenza dei punti OSM place=suburb: un'approssimazione, non i confini ufficiali. Scegli un quartiere dal pannello.</p>`;
+  } }
+];
+const NAMES = ["Contesto", "Profilo", "Popolazione", "Densità 3D", "Economia", "Uso del suolo", "Mobilità", "Monza"];
+const NLAYERS = [0, 4, 5, 6, 7, 8, 9, 10];
+const GREET = `<p>Spatial Intelligence è pronto per <b>Monza e Brianza</b>. Chiedi di popolazione, economia, uso del suolo o mobilità, oppure scrivi il nome di un comune. Per scendere di scala: «edifici di Monza».</p><p class="note">Demo: usa le fasi in basso. Dati Istat, MEF e OpenStreetMap, pre-scaricati.</p>`;
+
+function comuneAnswer(c) {
+  const row = (m) => `<li>${M[m].l}: <b>${fm(m, M[m].f(c))}</b> (${rk(m, c)})</li>`;
+  return `<h4>${esc(c.n)}</h4><ul><li>Residenti: <b>${n0(P(c))}</b> su ${n1(c.a)} km² (${rk("pop", c)})</li>${row("density")}${row("age65")}${row("foreign")}${row("income")}${row("emp")}${row("jobs")}${row("green")}${row("ind")}${row("station")}</ul>` +
+    cite("Istat · MEF · OpenStreetMap") + `<p class="note">I conteggi OSM sono indicativi.</p>`;
+}
+
+/* ---------- UI ---------- */
+let cur = 0, busy = false;
+const steps = $("steps");
+NAMES.forEach((n, i) => {
+  if (i) steps.insertAdjacentHTML("beforeend", '<span class="arr" aria-hidden="true">→</span>');
+  const b = document.createElement("button"); b.type = "button"; b.textContent = `0${i + 1} ${n}`;
+  b.addEventListener("click", () => go(i)); steps.appendChild(b);
+});
+const stepBtns = [...steps.querySelectorAll("button")];
+function addMsg(who, html) {
+  const li = document.createElement("li");
+  li.className = "msg " + who;
+  li.innerHTML = (who === "agent" ? `<span class="av">${ic("globe")}</span>` : "") + `<div class="bub">${html}</div>`;
+  log.appendChild(li); log.scrollTop = log.scrollHeight; return li;
+}
+const addUser = (t) => { const li = addMsg("user", ""); li.querySelector(".bub").textContent = t; };
+const typing = () => addMsg("agent", '<div class="dots" aria-label="SPATIAL sta scrivendo"><i></i><i></i><i></i></div>');
+
+function paint(s) {
+  const d = $("dash"); d.hidden = s === 0;
+  cv.classList.toggle("off", s !== 0);
+  if (s === 0) { svg.classList.add("off"); c3.classList.add("off"); $("ctl").hidden = true; }
+  if (s > 0) { const sc = SC[s]; dash = sc.d; met = sc.m; distSel = -1; zoomed = -1; setVB(FULL); Object.keys(lay).forEach((k) => { lay[k] = D[dash].lay.includes(k); }); render(); }
+  map.classList.toggle("dash-open", s > 0 && !d.classList.contains("fold"));
+  $("coords").textContent = s === 0 ? "45.6000° N, 9.2700° E | Zoom 1.8" : "© OpenStreetMap contributors · Istat · MEF";
+  $("status").textContent = "Nessuna città · res 8" + (s ? ` · ${NLAYERS[s]} layer` : "");
+  stepBtns.forEach((b, i) => { if (i === s) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current"); });
+  later(() => { fitText(); queue3(); });
+}
+function reset() {
+  log.innerHTML = ""; addMsg("agent", GREET); Object.assign(view, HOME); sel = -1; cur = 0; paint(0); drawGlobe();
+}
+async function go(i, text, html) {
+  if (busy || (i === cur && !text)) return;
+  if (i === 0) return reset();
+  busy = true;
+  addUser(text || SC[i].user);
+  const t = typing(), jobs = [sleep(reduce ? 0 : 700)];
+  if (cur === 0) jobs.push(fly(TARGET));
+  await Promise.all(jobs);
+  if (SC[i].pre) SC[i].pre();
+  t.remove(); addMsg("agent", html || SC[i].html());
+  cur = i; paint(i); busy = false;
+}
+$("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const text = $("q").value.trim();
+  if (!text || busy) return;
+  $("q").value = "";
+  const lc = text.toLowerCase().replace(/monza e (della )?brianza/g, " ");
+  const cm = C.find((c) => lc.includes(c.n.toLowerCase()));
+  // shortcut: parole chiave verso le analisi; nessun LLM. upgrade: collegare un agente reale con strumenti sui dati.
+  const i = /edific|altezz|quartier|scendi|3d.*monza|monza.*3d/.test(lc) && (!cm || cm.id === MZ.id) ? 7 : /esagon|griglia|3d|concentr/.test(lc) ? 3 : /popol|densit|anzian|stranier|et[àa]|residenti/.test(lc) ? 2 : /reddit|occup|lavoro|econom|addetti|impres|negoz|scuol|sanit|serviz/.test(lc) ? 4 : /suolo|agricol|verde|industr|residenzial|territor|landuse/.test(lc) ? 5 : /stazion|ferrov|trasport|mobil|treno|strad/.test(lc) ? 6 : /profil|comuni|provincia/.test(lc) ? 1 : 0;
+  if (i === 7) go(7, text);
+  else if (cm) {
+    if (cur === 0) { await go(1, text, comuneAnswer(cm)); } else { addUser(text); addMsg("agent", comuneAnswer(cm)); }
+    sel = C.indexOf(cm); if (/zoom|scendi|ingrand/.test(lc) && D[dash].mode !== "hex" && D[dash].mode !== "city") zoomComune(sel); else render();
+  } else if (i) go(i, text);
+  else { addUser(text); addMsg("agent", "<p>In questa demo rispondo a popolazione, densità 3D, economia, uso del suolo, mobilità, edifici di Monza e al nome di un comune. Usa anche le fasi in basso.</p>"); }
+});
+$("reset").addEventListener("click", () => { if (!busy) reset(); });
+$("close").addEventListener("click", () => app.classList.add("nochat"));
+$("panelBtn").addEventListener("click", () => { app.classList.toggle("nochat"); later(() => { drawGlobe(); fitText(); queue3(); }); });
+$("base").addEventListener("click", () => {
+  const light = map.dataset.base !== "light";
+  map.dataset.base = light ? "light" : "dark"; $("base").textContent = light ? "LIGHT" : "DARK"; drawGlobe(); queue3();
+});
+if (innerWidth <= 860) { $("dash").classList.add("fold"); $("dfold").setAttribute("aria-expanded", "false"); }
+reset();
+</script>
+</body>
+</html>

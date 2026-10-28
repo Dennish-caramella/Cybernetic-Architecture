@@ -1,0 +1,123 @@
+{
+ "2a_milp_equals_bruteforce": {
+  "ok": true,
+  "milp": 114.4252,
+  "brute": 114.4252
+ },
+ "2b_diversity_cuts_overlap_le_70pct": {
+  "ok": true,
+  "n": 3,
+  "overlaps": [
+   0.67,
+   0.67
+  ]
+ },
+ "1a_planted_segregation_detected": {
+  "ok": true,
+  "p_size": 0.001,
+  "p_ring": 0.001,
+  "z_size": 3.52
+ },
+ "1b_false_positive_rate": {
+  "ok": true,
+  "fp_rate_1000": 0.031,
+  "ci95": [
+   0.021,
+   0.044
+  ],
+  "fp_rate_first50": 0.08
+ },
+ "1c_clustered_h0_false_positive": {
+  "ok": true,
+  "reps": 1000,
+  "nil_per_set": 3,
+  "site_null": {
+   "fp": 0.238,
+   "ci95": [
+    0.212,
+    0.266
+   ]
+  },
+  "nil_block_null": {
+   "fp": 0.003,
+   "ci95": [
+    0.001,
+    0.009
+   ]
+  }
+ },
+ "5_null_pvalues_uniform": {
+  "ok": true,
+  "ks_p": 0.985,
+  "mean_p": 0.509
+ },
+ "3_weight_recovery_tv": {
+  "ok": true,
+  "tv_mean": 0.136,
+  "tv_max": 0.182,
+  "criteria": 9,
+  "questions": 25
+ },
+ "4a_no_pcu_no_green_in_sites": {
+  "ok": true,
+  "pcu": 0,
+  "green": 0
+ },
+ "4b_parcel_in_one_site": {
+  "ok": true,
+  "parcels_in_sites": 7651
+ },
+ "4c_site_area_equals_parcel_sum": {
+  "ok": true,
+  "rel_diff": 0.0
+ },
+ "4d_served_le_demand": {
+  "ok": true,
+  "violations": 0,
+  "note": "mean over scenarios; per-scenario u<=D is a variable bound"
+ },
+ "4e_kappa_respected": {
+  "ok": true,
+  "violations": 0
+ },
+ "4f_budget_respected": {
+  "ok": true,
+  "violations": 0
+ },
+ "4g_acceptability_columns_sum_to_1": {
+  "ok": true,
+  "max_dev": 1.3322676295501878e-15
+ },
+ "4h_dominated_sites_zero_topk": {
+  "ok": true,
+  "n_dominated": 145
+ },
+ "4i_export_geometry_area_within_2pct": {
+  "ok": true,
+  "share_within": 0.9956,
+  "p99": 0.0132,
+  "max": 0.0557
+ },
+ "4j_no_household_records_in_export": {
+  "ok": true,
+  "forbidden_keys_found": [],
+  "size_mb": 1.44
+ },
+ "6_sensitivity_summary": {
+  "ok": null,
+  "reported": true,
+  "label_stability": {
+   "AT": 0.143,
+   "AMB_DEG": 1.0,
+   "ERP": 1.0
+  },
+  "stable_ge_2_3": {
+   "AT": false,
+   "AMB_DEG": true,
+   "ERP": true
+  },
+  "kendall_tau_median": 0.9815,
+  "p1_overlap_median": 0.598
+ },
+ "_runtime_s": 114.5
+}

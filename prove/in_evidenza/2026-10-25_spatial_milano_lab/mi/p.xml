@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<wfs:FeatureCollection
+   xmlns:CP="http://mapserver.gis.umn.edu/mapserver"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns:wfs="http://www.opengis.net/wfs/2.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://mapserver.gis.umn.edu/mapserver https://wfs.cartografia.agenziaentrate.gov.it/inspire/wfs/owfs01.php?SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;TYPENAME=CP:CadastralParcel&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B%20version%3D3.2 http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd"
+   timeStamp="2026-10-26T08:31:07" numberMatched="unknown" numberReturned="3"
+   next="https://wfs.cartografia.agenziaentrate.gov.it/inspire/wfs/owfs01.php?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;typeNames=CP%3ACadastralParcel&amp;count=3&amp;bbox=45.463%2C9.185%2C45.466%2C9.19%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A6706&amp;STARTINDEX=3">
+      <wfs:boundedBy>
+      	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::6706">
+      		<gml:lowerCorner>45.463694 9.185555</gml:lowerCorner>
+      		<gml:upperCorner>45.464994 9.187771</gml:upperCorner>
+      	</gml:Envelope>
+      </wfs:boundedBy>
+    <wfs:member>
+      <CP:CadastralParcel gml:id="CadastralParcel.IT.AGE.PLA.F205_039000.112">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::6706">
+        		<gml:lowerCorner>45.463694 9.187584</gml:lowerCorner>
+        		<gml:upperCorner>45.463868 9.187771</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <CP:msGeometry>
+          <gml:Polygon gml:id="CadastralParcel.IT.AGE.PLA.F205_039000.112.1" srsName="urn:ogc:def:crs:EPSG::6706">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList srsDimension="2">45.46376609 9.18777067 45.46386803 9.18763599 45.46378134 9.18763899 45.46378645 9.18762528 45.46375942 9.18758425 45.46369430 9.18766518 45.46370729 9.18768494 45.46376609 9.18777067 </gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+          </gml:Polygon>
+        </CP:msGeometry>
+        <CP:INSPIREID_LOCALID>IT.AGE.PLA.F205_039000.112</CP:INSPIREID_LOCALID>
+        <CP:INSPIREID_NAMESPACE>IT.AGE.PLA.</CP:INSPIREID_NAMESPACE>
+        <CP:LABEL>112</CP:LABEL>
+        <CP:NATIONALCADASTRALREFERENCE>F205_039000.112</CP:NATIONALCADASTRALREFERENCE>
+        <CP:ADMINISTRATIVEUNIT>F205</CP:ADMINISTRATIVEUNIT>
+      </CP:CadastralParcel>
+    </wfs:member>
+    <wfs:member>
+      <CP:CadastralParcel gml:id="CadastralParcel.IT.AGE.PLA.F205_039000.137">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::6706">
+        		<gml:lowerCorner>45.464474 9.185555</gml:lowerCorner>
+        		<gml:upperCorner>45.464788 9.185915</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <CP:msGeometry>
+          <gml:Polygon gml:id="CadastralParcel.IT.AGE.PLA.F205_039000.137.1" srsName="urn:ogc:def:crs:EPSG::6706">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList srsDimension="2">45.46459321 9.18588632 45.46464944 9.18581328 45.46471114 9.18573042 45.46474497 9.18577162 45.46478778 9.18571269 45.46472633 9.18562379 45.46473280 9.18561320 45.46472479 9.18560246 45.46471823 9.18561154 45.46469807 9.18558092 45.46470612 9.18557026 45.46469813 9.18555822 45.46469082 9.18556763 45.46468689 9.18555814 45.46467491 9.18555982 45.46467423 9.18556666 45.46466284 9.18556770 45.46466179 9.18555525 45.46464962 9.18555500 45.46464932 9.18556756 45.46462228 9.18556885 45.46462189 9.18555450 45.46461079 9.18555532 45.46460942 9.18556836 45.46459848 9.18557073 45.46459998 9.18556408 45.46458746 9.18556359 45.46458310 9.18557068 45.46457672 9.18556466 45.46456959 9.18557839 45.46458003 9.18559114 45.46456160 9.18562821 45.46455064 9.18561570 45.46454370 9.18562914 45.46455289 9.18564060 45.46447353 9.18579750 45.46457102 9.18591475 45.46459321 9.18588632 </gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+          </gml:Polygon>
+        </CP:msGeometry>
+        <CP:INSPIREID_LOCALID>IT.AGE.PLA.F205_039000.137</CP:INSPIREID_LOCALID>
+        <CP:INSPIREID_NAMESPACE>IT.AGE.PLA.</CP:INSPIREID_NAMESPACE>
+        <CP:LABEL>137</CP:LABEL>
+        <CP:NATIONALCADASTRALREFERENCE>F205_039000.137</CP:NATIONALCADASTRALREFERENCE>
+        <CP:ADMINISTRATIVEUNIT>F205</CP:ADMINISTRATIVEUNIT>
+      </CP:CadastralParcel>
+    </wfs:member>
+    <wfs:member>
+      <CP:CadastralParcel gml:id="CadastralParcel.IT.AGE.PLA.F205_039000.138">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::6706">
+        		<gml:lowerCorner>45.464536 9.185713</gml:lowerCorner>
+        		<gml:upperCorner>45.464994 9.186514</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <CP:msGeometry>
+          <gml:Polygon gml:id="CadastralParcel.IT.AGE.PLA.F205_039000.138.1" srsName="urn:ogc:def:crs:EPSG::6706">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList srsDimension="2">45.46480296 9.18641609 45.46486412 9.18651372 45.46493369 9.18641847 45.46494035 9.18642749 45.46494989 9.18641635 45.46494215 9.18640680 45.46496554 9.18637454 45.46497378 9.18638689 45.46498336 9.18637369 45.46497866 9.18637007 45.46498526 9.18636373 45.46498025 9.18635499 45.46498704 9.18634766 45.46497879 9.18633530 45.46497421 9.18633807 45.46496658 9.18633850 45.46496057 9.18629858 45.46497167 9.18629662 45.46497282 9.18629127 45.46497538 9.18628898 45.46497853 9.18628237 45.46497479 9.18621203 45.46497600 9.18617906 45.46498404 9.18609094 45.46498176 9.18608146 45.46498016 9.18607785 45.46497669 9.18607358 45.46496959 9.18606910 45.46497856 9.18603614 45.46498870 9.18603780 45.46499392 9.18602598 45.46498778 9.18602146 45.46499306 9.18600754 45.46498804 9.18600289 45.46499387 9.18599158 45.46498671 9.18598306 45.46498209 9.18599000 45.46495965 9.18595725 45.46496478 9.18594874 45.46495506 9.18593147 45.46494531 9.18594098 45.46478778 9.18571269 45.46474497 9.18577162 45.46471114 9.18573042 45.46464944 9.18581328 45.46459321 9.18588632 45.46457102 9.18591475 45.46455372 9.18593973 45.46460170 9.18600406 45.46453561 9.18609242 45.46460924 9.18620446 45.46463745 9.18616618 45.46468607 9.18623862 45.46473789 9.18631817 45.46480296 9.18641609 </gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+          </gml:Polygon>
+        </CP:msGeometry>
+        <CP:INSPIREID_LOCALID>IT.AGE.PLA.F205_039000.138</CP:INSPIREID_LOCALID>
+        <CP:INSPIREID_NAMESPACE>IT.AGE.PLA.</CP:INSPIREID_NAMESPACE>
+        <CP:LABEL>138</CP:LABEL>
+        <CP:NATIONALCADASTRALREFERENCE>F205_039000.138</CP:NATIONALCADASTRALREFERENCE>
+        <CP:ADMINISTRATIVEUNIT>F205</CP:ADMINISTRATIVEUNIT>
+      </CP:CadastralParcel>
+    </wfs:member>
+</wfs:FeatureCollection>
+
+

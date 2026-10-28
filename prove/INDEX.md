@@ -5,7 +5,7 @@ Ogni cartella ha come prefisso la data di inizio. Il prefisso è accertato dove 
 ## In evidenza
 | Cartella | Cos'è | Stato |
 |---|---|---|
-| `in_evidenza/2026-10-25_spatial_milano_lab/` | Laboratorio di modelli per più portafogli di lotti di social housing a Milano: proposte A/B/C, modello integrato, due revisioni, paper in italiano | Riesaminato (issue #6): nessun risultato è una prova. Dati e `run.py` non nel repo (STATO.md, avviso 3). Inizio stimato dalle note di ricerca (25/10); ultimo aggiornamento 27/10 |
+| `in_evidenza/2026-10-25_spatial_milano_lab/` | Laboratorio di modelli per più portafogli di lotti di social housing a Milano: proposte A/B/C, modello integrato, due revisioni, paper in italiano | Riesaminato (issue #6): nessun risultato è una prova. Completo dal 28/10: codice e dati leggeri nel repo, pesanti in condivisa/PC (`RECUPERO.md`). Inizio stimato dalle note di ricerca (25/10); ultimo aggiornamento 27/10 |
 | `in_evidenza/2026-10-21_pipeline_milano/` | Pipeline H3 → accessibilità → PCA/K-Means → idoneità multicriterio → lotti, con viewer | Collaudata su dati sintetici (6 test). Esecuzione su dati reali del 22/10 citata nel registro, file non ritrovati |
 
 ## Archivio
