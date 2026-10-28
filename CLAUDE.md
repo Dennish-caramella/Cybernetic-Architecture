@@ -11,3 +11,8 @@ Default vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-
 ### Domain docs
 
 Single-context: one `CONTEXT.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
+
+### Modalità di risposta
+
+- `/ponytail`: sempre attiva in ogni thread (livello full), salvo "stop ponytail".
+- `/caveman`: spenta di default; si attiva solo quando l'utente la chiede ("caveman", "megacave"), e si spegne con "stop caveman".
