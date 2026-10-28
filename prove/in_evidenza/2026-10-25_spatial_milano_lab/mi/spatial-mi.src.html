@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Spatial Milano</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Poppins:wght@400;500;600&display=swap">
+<style>
+/* Layout: mappa/globo + dashboard a sinistra, chat con Claude a destra, stepper in basso. Tema scuro, accento giallo come nell'Hub di riferimento. */
+:root {
+  --bg: #000; --panel: #0f0f10; --panel2: #18181a; --line: #232326;
+  --fg: #d6d6d6; --muted: #8b8b8b; --white: #fff; --study: #ffd60a; --link: #6aa8ff;
+  --water: #060606; --land: #1a1a1a; --label: #b0b0b0; --nodata: #262626; --comline: #050505;
+  --ocean-a: #262626; --ocean-b: #121212; --g-land: #2f2f2f; --g-line: #4a4a4a; --grat: #1e1e1e;
+  --sans: "Poppins", system-ui, sans-serif; --mono: "Fira Code", ui-monospace, monospace;
+  --chat-w: clamp(310px, 30vw, 430px); --dash-w: 280px;
+  color-scheme: dark;
+}
+.map[data-base="light"] {
+  --water: #cfdbe4; --land: #eef1f3; --label: #3c4650; --nodata: #d8dee3; --comline: #ffffff;
+  --ocean-a: #e6edf2; --ocean-b: #c5d2dc; --g-land: #f5f7f8; --g-line: #aab6bf; --grat: #b9c6d0;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: var(--bg); color: var(--fg); font: 400 13px/1.55 var(--sans);
+  padding-block: calc(env(safe-area-inset-top, 0px) + 10px) env(safe-area-inset-bottom, 0px);
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+}
+button, input, select { font: inherit; color: inherit; }
+button, select { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--white); outline-offset: 2px; }
+svg.i { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+.app { height: 100%; display: grid; grid-template-columns: minmax(0, 1fr) var(--chat-w); grid-template-rows: minmax(0, 1fr) 44px; }
+.app.nochat { grid-template-columns: minmax(0, 1fr) 0; }
+.app.nochat .chat { display: none; }
+
+/* mappa */
+.map { position: relative; overflow: hidden; background: var(--water); border-radius: 4px 0 0 4px; min-width: 0; }
+.map canvas, .map svg.flat { position: absolute; inset: 0 0 0 0; width: 100%; height: 100%; transition: opacity .7s; }
+#c3d { cursor: grab; touch-action: none; }
+#c3d.drag { cursor: grabbing; }
+.map.dash-open svg.flat, .map.dash-open #c3d { right: var(--dash-w); width: calc(100% - var(--dash-w)); }
+.off { opacity: 0; pointer-events: none; }
+.water { fill: var(--water); }
+.comm { stroke: var(--comline); stroke-width: .8px; vector-effect: non-scaling-stroke; cursor: pointer; transition: fill .45s; }
+.comm:hover { stroke: var(--white); }
+.comm.sel { stroke: var(--white); stroke-width: 2.2px; }
+.prov { fill: none; stroke: var(--white); stroke-opacity: .55; stroke-width: 1.4px; vector-effect: non-scaling-stroke; pointer-events: none; }
+.lyr { transition: opacity .5s; pointer-events: none; }
+.lu path { fill-opacity: .9; fill-rule: evenodd; }
+#omi path { fill: none; stroke: #fff; stroke-opacity: .5; stroke-width: 1px; stroke-dasharray: 3 3; vector-effect: non-scaling-stroke; }
+#metro path { fill: none; stroke-width: 2.6px; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+#metro circle { fill: #fff; stroke: #000; stroke-width: 1px; vector-effect: non-scaling-stroke; }
+#ats path { fill: none; stroke: var(--study); stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.map text.lab { fill: var(--label); font-weight: 500; font-family: var(--sans); paint-order: stroke; stroke: var(--water); stroke-width: 3px; text-anchor: middle; pointer-events: none; }
+.coords { position: absolute; left: 14px; bottom: 12px; font: 11px var(--mono); color: var(--label); max-width: 55%; }
+.pill { position: absolute; bottom: 10px; background: rgb(18 18 19 / .92); border: 1px solid #2c2c30; color: #c9c9c9; border-radius: 999px; transition: color .2s, border-color .2s; }
+.pill:hover { color: var(--white); border-color: #555; }
+.panel-btn { left: 14px; bottom: 36px; padding: 4px 14px; font-size: 11px; display: flex; align-items: center; gap: 6px; min-height: 30px; }
+.base { right: 14px; padding: 3px 10px; font: 10px var(--mono); letter-spacing: .08em; border-radius: 4px; min-height: 26px; }
+.map.dash-open .base { right: calc(var(--dash-w) + 14px); }
+.ctl { position: absolute; right: 14px; bottom: 46px; display: grid; gap: 4px; }
+.map.dash-open .ctl { right: calc(var(--dash-w) + 14px); }
+.ctl button { width: 30px; height: 30px; display: grid; place-items: center; background: rgb(18 18 19 / .92); border: 1px solid #2c2c30; border-radius: 4px; color: #c9c9c9; font-size: 16px; line-height: 1; }
+.ctl button:hover { color: var(--white); border-color: #555; }
+.tip { position: absolute; pointer-events: none; background: rgb(8 8 8 / .94); border: 1px solid #34343a; border-radius: 6px; padding: 5px 9px; font-size: 11.5px; color: var(--white); white-space: nowrap; z-index: 3; }
+.tip small { display: block; color: var(--muted); font-size: 10.5px; }
+.loading { position: absolute; left: 50%; top: 14px; transform: translateX(-50%); background: rgb(8 8 8 / .9); border: 1px solid #34343a; border-radius: 999px; padding: 4px 12px; font-size: 11px; color: var(--muted); z-index: 3; }
+
+/* dashboard */
+.dash { position: absolute; top: 12px; right: 12px; bottom: 44px; width: calc(var(--dash-w) - 12px); display: flex; flex-direction: column; background: rgb(14 14 15 / .96); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; z-index: 2; }
+.dash-h { display: flex; gap: 6px; padding: 8px; border-bottom: 1px solid var(--line); }
+.dash select { flex: 1; min-width: 0; background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; padding: 7px 8px; font-size: 12px; font-weight: 500; color: var(--white); }
+.dash-b { overflow-y: auto; padding: 10px; display: grid; gap: 10px; align-content: start; }
+.fold .dash-b { display: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip-b { background: transparent; border: 1px solid #34343a; border-radius: 4px; padding: 3px 8px; font-size: 11px; color: var(--fg); min-height: 26px; transition: background .15s, color .15s; }
+.chip-b:hover { border-color: #6a6a72; }
+.chip-b[aria-pressed="true"] { background: var(--study); border-color: var(--study); color: #000; font-weight: 600; }
+.kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.kpi b { display: block; font: 600 20px/1.15 var(--sans); color: var(--white); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.kpi small { color: var(--muted); font-size: 11px; display: block; line-height: 1.3; }
+.slider { display: grid; gap: 2px; }
+.slider label { font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; }
+.slider input { width: 100%; accent-color: var(--study); }
+.scale { display: grid; grid-template-columns: repeat(6, 1fr); height: 8px; border-radius: 2px; overflow: hidden; }
+.scale-l { display: flex; justify-content: space-between; font: 10px var(--mono); color: var(--muted); margin-top: 3px; }
+.hist { width: 100%; height: 52px; display: block; }
+.hist rect { fill: #5c5c64; }
+.hist rect.hi { fill: var(--theme, var(--study)); }
+.rank { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.rank button { width: 100%; display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; background: none; border: 0; padding: 3px 4px; border-radius: 4px; font-size: 11.5px; text-align: left; position: relative; }
+.rank button:hover, .rank button.on { background: #1d1d20; }
+.rank .bar { position: absolute; left: 0; bottom: 0; height: 2px; background: var(--theme, var(--study)); opacity: .9; }
+.rank span.v { font: 11px var(--mono); color: var(--white); font-variant-numeric: tabular-nums; }
+.rank small { color: var(--muted); font-size: 10.5px; }
+.lay { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.lay span { font-size: 10px; color: var(--muted); letter-spacing: .08em; }
+.src { font-size: 10.5px; color: var(--muted); line-height: 1.4; margin: 0; }
+.h { font: 600 10px var(--sans); letter-spacing: .1em; color: var(--muted); margin: 0 0 4px; display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.h button { background: none; border: 1px solid #34343a; border-radius: 3px; font: 10px var(--mono); padding: 1px 6px; color: var(--fg); }
+.bars { display: grid; gap: 3px; }
+.bars button { display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; gap: 7px; align-items: center; background: none; border: 0; padding: 2px 0; text-align: left; font-size: 11px; min-height: 22px; }
+.bars button[aria-pressed="false"] { opacity: .35; }
+.bars .sw { width: 10px; height: 10px; border-radius: 2px; }
+.bars .tr { position: relative; min-height: 16px; display: flex; align-items: center; gap: 6px; min-width: 0; }
+.bars .fl { height: 10px; border-radius: 1px; flex: none; min-width: 2px; }
+.bars .lb { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bars .vv { font: 10.5px var(--mono); color: var(--white); font-variant-numeric: tabular-nums; }
+.bands { display: grid; gap: 2px; }
+.bands button { display: grid; grid-template-columns: 12px 1fr auto; gap: 8px; align-items: center; background: none; border: 0; border-bottom: 1px solid #1f1f22; padding: 4px 0; font: 11px var(--mono); text-align: left; min-height: 24px; }
+.bands button[aria-pressed="false"] { opacity: .4; }
+.bands .ck { width: 14px; height: 14px; border-radius: 50%; display: grid; place-items: center; background: var(--white); color: #000; font-size: 9px; }
+.ins { background: var(--panel2); border-radius: 6px; padding: 8px 10px; font-size: 12px; display: grid; gap: 6px; }
+.ins .nav { display: flex; gap: 6px; justify-content: flex-end; }
+.ins .nav button { background: none; border: 1px solid #34343a; border-radius: 4px; width: 26px; height: 22px; font-size: 12px; }
+.ins b.big { font: 600 26px/1.1 var(--sans); color: var(--white); }
+.sel-row { display: grid; gap: 4px; }
+.dash select.s2 { width: 100%; }
+.go { width: 100%; background: transparent; border: 1px solid var(--study); color: var(--study); border-radius: 4px; padding: 5px 8px; font-size: 11.5px; font-weight: 500; min-height: 28px; text-align: left; }
+.go:hover { background: var(--study); color: #000; }
+
+/* chat */
+.chat { background: var(--panel); border-left: 1px solid var(--line); display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; min-height: 0; min-width: 0; }
+.chat-h { display: flex; align-items: center; gap: 4px; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+.brand { flex: 1; display: flex; align-items: center; gap: 8px; font: 600 11px var(--sans); letter-spacing: .1em; color: var(--white); background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; }
+.brand .mode { margin-left: auto; font: 500 9.5px var(--mono); letter-spacing: .04em; color: #000; background: var(--study); border-radius: 3px; padding: 1px 5px; }
+.brand .mode.demo { background: #3a3a40; color: var(--fg); }
+.ib { width: 32px; height: 32px; display: grid; place-items: center; background: none; border: 0; border-radius: 6px; color: var(--muted); transition: color .2s, background .2s; }
+.ib:hover { color: var(--white); background: var(--panel2); }
+.status { padding: 6px 14px; font: 11px var(--mono); color: var(--muted); }
+.log { list-style: none; margin: 0; padding: 4px 12px 12px; overflow-y: auto; display: grid; gap: 14px; align-content: start; }
+.msg { display: flex; gap: 8px; min-width: 0; }
+.msg.user { justify-content: flex-end; }
+.av { width: 28px; height: 28px; border-radius: 50%; background: var(--panel2); border: 1px solid var(--line); display: grid; place-items: center; color: var(--muted); flex: none; }
+.bub { background: var(--panel2); border-radius: 12px; padding: 10px 14px; min-width: 0; overflow-wrap: anywhere; }
+.msg.user .bub { background: #26262a; color: var(--white); max-width: 88%; }
+.bub p { margin: 0 0 8px; }
+.bub p:last-child, .bub ul:last-child { margin-bottom: 0; }
+.bub h4 { margin: 10px 0 4px; font-size: 12.5px; font-weight: 600; color: var(--white); }
+.bub h4:first-child { margin-top: 0; }
+.bub ul { margin: 0 0 8px; padding-left: 18px; }
+.bub li { margin-bottom: 4px; }
+.bub b { color: var(--white); font-weight: 600; }
+.key { color: var(--white); font-weight: 600; text-shadow: 0 0 8px rgb(255 255 255 / .35); }
+.note { font-size: 11px; color: var(--muted); }
+.act { display: inline-block; margin: 2px 4px 0 0; padding: 2px 8px; border-radius: 999px; background: rgb(255 214 10 / .12); color: var(--study); font: 10.5px var(--mono); }
+.cite { display: flex; align-items: center; gap: 8px; margin: 6px 0; padding: 7px 10px; border: 1px solid #2a2a2e; background: #121214; border-radius: 6px; color: var(--link); font: 11px/1.4 var(--mono); }
+.tbl { border: 1px solid #2a2a2e; border-radius: 6px; margin: 0 0 8px; overflow-x: auto; }
+.tbl .cap { padding: 6px 10px; font: 500 10px var(--mono); letter-spacing: .06em; color: var(--muted); border-bottom: 1px solid #2a2a2e; }
+.tbl table { border-collapse: collapse; width: 100%; font: 11px var(--mono); }
+.tbl th, .tbl td { padding: 5px 10px; text-align: left; white-space: nowrap; }
+.tbl td:last-child, .tbl th:last-child { text-align: right; }
+.tbl th { color: var(--muted); font-weight: 400; }
+.dots { display: flex; gap: 4px; padding: 6px 2px; align-items: center; }
+.dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--muted); animation: blink 1s infinite; }
+.dots i:nth-child(2) { animation-delay: .15s; } .dots i:nth-child(3) { animation-delay: .3s; }
+.dots span { font-size: 11px; color: var(--muted); margin-left: 6px; }
+@keyframes blink { 50% { opacity: .25; } }
+.sugg { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 12px 6px; }
+.sugg button { background: none; border: 1px solid #2c2c30; border-radius: 999px; padding: 3px 10px; font-size: 11px; color: var(--muted); }
+.sugg button:hover { color: var(--white); border-color: #555; }
+.composer { margin: 4px 12px; display: flex; align-items: center; gap: 8px; background: var(--panel2); border: 1px solid var(--line); border-radius: 12px; padding: 6px 6px 6px 14px; }
+.composer:focus-within { outline: 2px solid var(--white); }
+.composer input { flex: 1; min-width: 0; background: none; border: 0; outline: 0; color: var(--white); }
+.composer input::placeholder { color: var(--muted); }
+.send { width: 36px; height: 36px; border-radius: 50%; background: var(--white); color: #000; border: 0; display: grid; place-items: center; transition: transform .15s; }
+.send:hover { transform: scale(1.06); }
+.fine { margin: 0; padding: 4px 14px 12px; font-size: 11px; color: var(--muted); }
+
+/* stepper */
+.steps { grid-column: 1 / -1; display: flex; align-items: center; justify-content: center; gap: 6px; background: #080808; border-top: 1px solid #161616; overflow-x: auto; scrollbar-width: none; white-space: nowrap; }
+.steps button { background: none; border: 0; min-height: 44px; padding: 0 7px; color: var(--muted); font-size: 12px; transition: color .2s; }
+.steps button:hover { color: var(--white); }
+.steps button[aria-current="step"] { color: var(--white); font-weight: 600; }
+.steps .arr { color: #4a4a4a; }
+
+@media (pointer: coarse) { .ib, .send { width: 44px; height: 44px; } .pill { min-height: 44px; } .chip-b { min-height: 36px; } .ctl button { width: 40px; height: 40px; } }
+@media (max-width: 1100px) { .steps { justify-content: flex-start; } }
+@media (max-width: 860px) {
+  .app { grid-template-columns: minmax(0, 1fr); grid-template-rows: 46vh minmax(0, 1fr) 44px; }
+  .app.nochat { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) 0 44px; }
+  .chat { border-left: 0; border-top: 1px solid var(--line); }
+  .map { border-radius: 4px; }
+  .map.dash-open svg.flat, .map.dash-open #c3d { right: 0; width: 100%; }
+  .dash { left: 8px; right: 8px; top: auto; bottom: 44px; width: auto; max-height: 72%; }
+  .map.dash-open .base, .map.dash-open .ctl { right: 14px; }
+  .map.dash-open .base { bottom: auto; top: 10px; }
+  .ctl { bottom: 90px; }
+  .coords { display: none; }
+  .pill.base { min-height: 34px; }
+  .panel-btn { bottom: auto; top: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+<main class="app" id="app">
+  <section class="map" id="map" data-base="dark" aria-label="Mappa">
+    <canvas id="globe" role="img" aria-label="Globo centrato sull'Europa"></canvas>
+    <svg id="flat" class="flat off" role="group" aria-label="Mappa dei NIL di Milano" preserveAspectRatio="xMidYMid meet">
+      <rect class="water" x="-500" y="-500" width="1500" height="1500"/>
+      <g id="com"></g>
+      <g id="lu_dusaf" class="lyr lu off"></g>
+      <g id="lu_pgt" class="lyr lu off"></g>
+      <g id="omi" class="lyr off"></g>
+      <g id="ats" class="lyr off"></g>
+      <g id="metro" class="lyr off"></g>
+      <path id="prov" class="prov"/>
+      <g id="labels"></g>
+    </svg>
+    <canvas id="c3d" class="off" role="img" aria-label="Vista 3D trascinabile"></canvas>
+    <div class="tip" id="tip" hidden></div>
+    <div class="loading" id="loading" hidden>Caricamento…</div>
+    <div class="ctl" id="ctl" hidden>
+      <button type="button" id="zin" aria-label="Avvicina">+</button>
+      <button type="button" id="zout" aria-label="Allontana">−</button>
+      <button type="button" id="zrst" aria-label="Ripristina la vista">⟳</button>
+      <button type="button" id="ztilt" aria-label="Alterna vista dall'alto e inclinata">≡</button>
+    </div>
+    <div class="dash" id="dash" hidden>
+      <div class="dash-h">
+        <select id="dsel" aria-label="Dashboard"></select>
+        <button class="ib" id="dfold" type="button" aria-label="Apri o chiudi il pannello" aria-expanded="true"><svg class="i" data-i="chev"></svg></button>
+      </div>
+      <div class="dash-b">
+        <div><p class="h">INDICATORE</p><div class="chips" id="mchips" role="group" aria-label="Indicatore"></div></div>
+        <div class="kpis"><div class="kpi"><b id="k1">–</b><small id="k1l">Milano</small></div><div class="kpi"><b id="k2">–</b><small id="k2l">Seleziona un NIL</small></div></div>
+        <div class="slider" id="bSlide" hidden><label for="m2">Superficie dell'alloggio in affitto <b id="m2v">70 m²</b></label><input type="range" id="m2" min="30" max="130" step="5" value="70"></div>
+        <div class="sel-row" id="bZoom" hidden><button class="go" id="zoomBtn" type="button"></button><button class="go" id="cityBtn" type="button">Scendi di scala: lotti ed edifici 3D</button></div>
+        <div id="bScale"><div class="scale" id="scale"></div><div class="scale-l"><span id="smin"></span><span id="smax"></span></div></div>
+        <div id="bHist"><p class="h">DISTRIBUZIONE DEGLI 88 NIL</p><svg class="hist" id="hist" viewBox="0 0 220 52" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+        <div id="bDist" class="sel-row" hidden><p class="h">NIL</p><select id="dist2" class="s2" aria-label="NIL"></select></div>
+        <div id="bBands" hidden><p class="h" id="bandT">FASCE</p><div class="bands" id="bands"></div></div>
+        <div id="bBars" hidden><p class="h"><span id="barsT">CLASSI</span><button type="button" id="sortBtn">ORDINA: STANDARD</button></p><div class="bars" id="bars"></div></div>
+        <div id="bIns" class="ins" hidden><span id="insT"></span><b class="big" id="insV"></b><span id="insL"></span><div class="nav"><button type="button" id="insP" aria-label="Precedente">←</button><button type="button" id="insN" aria-label="Successivo">→</button></div></div>
+        <div id="bAts" hidden><p class="h">AMBITI DI TRASFORMAZIONE (PGT)</p><ul class="rank" id="ats_l"></ul></div>
+        <div id="bRank"><p class="h" id="rkh">PRIMI 8 NIL</p><ul class="rank" id="rank"></ul></div>
+        <div class="lay" id="lay"><span>STRATI</span></div>
+        <p class="src" id="src"></p>
+      </div>
+    </div>
+    <div class="coords" id="coords"></div>
+    <button class="pill panel-btn" id="panelBtn" type="button"><svg class="i" data-i="up"></svg>Pannello</button>
+    <button class="pill base" id="base" type="button" aria-label="Cambia mappa di base">DARK</button>
+  </section>
+
+  <aside class="chat" id="chat" aria-label="Chat con l'agente">
+    <div class="chat-h">
+      <div class="brand"><svg class="i" data-i="globe"></svg>SPATIAL<span class="mode demo" id="mode">DEMO</span></div>
+      <button class="ib" id="reset" type="button" aria-label="Nuova conversazione"><svg class="i" data-i="plus"></svg></button>
+      <button class="ib" id="close" type="button" aria-label="Chiudi il pannello chat"><svg class="i" data-i="x"></svg></button>
+    </div>
+    <div class="status" id="status">Milano · 88 NIL</div>
+    <ol class="log" id="log" aria-live="polite"></ol>
+    <div>
+      <div class="sugg" id="sugg"></div>
+      <form class="composer" id="form">
+        <input id="q" aria-label="Messaggio" placeholder="Chiedi dei dati di Milano o di un quartiere…" autocomplete="off">
+        <button class="send" type="submit" id="sendBtn" aria-label="Invia"><svg class="i" data-i="send"></svg></button>
+      </form>
+      <p class="fine">L'IA può sbagliare: verifica i dati sulla mappa. Fonti: Comune di Milano open data, Regione Lombardia (PGT, DUSAF), Istat, MEF, OMI-Agenzia Entrate, © OpenStreetMap contributors.</p>
+    </div>
+  </aside>
+
+  <nav class="steps" id="steps" aria-label="Fasi dell'analisi"></nav>
+</main>
+
+<script>
+// ponytail: i dati principali sono incorporati; PGT, DUSAF ed edifici sono file JSON pubblicati accanto alla pagina e caricati su richiesta. Rigenera con mi/build_mi.py e mi/build_page_mi.py.
+const CORE = /*__CORE__*/;
+const $ = (id) => document.getElementById(id);
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const later = (fn) => { let d = 0; const r = () => { if (!d) { d = 1; fn(); } }; requestAnimationFrame(r); setTimeout(r, 100); }; // rAF e' sospeso nelle schede in background
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const app = $("app"), map = $("map"), log = $("log"), svg = $("flat"), cv = $("globe");
+const nf = (d) => (v) => v == null || !isFinite(v) ? "n/d" : v.toLocaleString("it-IT", { maximumFractionDigits: d, minimumFractionDigits: d });
+const n0 = nf(0), n1 = nf(1), n2 = nf(2);
+const ICON = {
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>', x: '<path d="M6 6l12 12M18 6L6 18"/>',
+  send: '<path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/>', stop: '<rect x="7" y="7" width="10" height="10" rx="1"/>',
+  book: '<path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5zM4 19.5V4.5"/>',
+  chev: '<path d="M6 9l6 6 6-6"/>', up: '<path d="M6 15l6-6 6 6"/>'
+};
+const ic = (n) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICON[n]}</svg>`;
+document.querySelectorAll("svg[data-i]").forEach((e) => { e.setAttribute("viewBox", "0 0 24 24"); e.setAttribute("aria-hidden", "true"); e.innerHTML = ICON[e.dataset.i]; });
+
+/* ---------- dati ---------- */
+const U = CORE.meta.unit_km;
+const dec = (a) => { const o = []; let x = 0, y = 0; for (let i = 0; i < a.length; i += 2) { x += a[i]; y += a[i + 1]; o.push([x * U, y * U]); } return o; };
+const dstr = (pts, close) => "M" + pts.map((p) => p[0].toFixed(3) + " " + p[1].toFixed(3)).join("L") + (close ? "Z" : "");
+const pathOf = (a, close) => dstr(dec(a), close);
+const C = CORE.nil.map((n) => ({ id: n.id, n: n.n, a: n.a, c: n.c, poly: n.rings.map(dec), i: n.ind }));
+const byId = Object.fromEntries(C.map((c, i) => [c.id, i]));
+const S = (f) => C.reduce((s, c) => s + (f(c) || 0), 0);
+const wm = (f, w) => { let s = 0, t = 0; C.forEach((c) => { const v = f(c), x = w(c); if (v != null && isFinite(v) && x) { s += v * x; t += x; } }); return t ? s / t : null; };
+const P = (c) => c.i.pop;
+const inPoly = (x, y, r) => { let c = false; for (let i = 0, j = r.length - 1; i < r.length; j = i++) { const a = r[i], b = r[j]; if ((a[1] > y) !== (b[1] > y) && x < (b[0] - a[0]) * (y - a[1]) / (b[1] - a[1]) + a[0]) c = !c; } return c; };
+const nilAt = (x, y) => C.findIndex((c) => c.poly.some((r) => inPoly(x, y, r)));
+const CI = CORE.city.inc;
+let M2 = 70;
+const rentOf = (c) => c.i.rent;
+const M = {
+  pop: { g: "pop", l: "Residenti", u: "", f: P, fmt: n0, agg: () => S(P), src: "Comune di Milano · residenti per NIL, anagrafe 2025" },
+  dens: { g: "pop", l: "Densità", u: "ab/km²", f: (c) => c.i.dens, fmt: n0, agg: () => S(P) / S((c) => c.a), src: "Comune di Milano · residenti 2025 su superficie dei NIL (PGT 2030)" },
+  a65: { g: "pop", l: "Over 65", u: "%", f: (c) => c.i.a65, fmt: n1, agg: () => wm((c) => c.i.a65, P), src: "Comune di Milano · residenti per età, 2025" },
+  a014: { g: "pop", l: "Under 15", u: "%", f: (c) => c.i.a014, fmt: n1, agg: () => wm((c) => c.i.a014, P), src: "Comune di Milano · residenti per età, 2025" },
+  for_: { g: "pop", l: "Stranieri", u: "%", f: (c) => c.i.for_, fmt: n1, agg: () => wm((c) => c.i.for_, P), src: "Comune di Milano · residenti per cittadinanza, 2025" },
+  trend: { g: "pop", l: "Variazione 2015-25", u: "%", f: (c) => c.i.trend, fmt: n1, agg: () => null, src: "Comune di Milano · residenti per NIL 2015 e 2025" },
+  deg: { g: "pop", l: "Istruzione terziaria", u: "%", f: (c) => c.i.deg, fmt: n1, agg: () => wm((c) => c.i.deg, (c) => c.i.pop21), src: "Istat · Censimento 2021 per sezione: residenti con titolo terziario sul totale" },
+  net_m: { g: "eco", l: "Stipendio netto mensile", u: "€", f: (c) => c.i.net_m, fmt: n0, agg: () => CI.net_m, src: "Stima su MEF · IRPEF 2024 per CAP: reddito da lavoro dipendente meno IRPEF e addizionali medie del CAP, diviso 12. I CAP sono riportati ai NIL con gli indirizzi OSM" },
+  wage_m: { g: "eco", l: "Stipendio imponibile mensile", u: "€", f: (c) => c.i.wage_m, fmt: n0, agg: () => CI.wage_m, src: "MEF · IRPEF 2024 per CAP: reddito da lavoro dipendente per dipendente, diviso 12 (al netto dei contributi, prima delle imposte)" },
+  rent: { g: "eco", l: "Affitto €/m²", u: "€/m² mese", f: rentOf, fmt: n1, agg: () => wm(rentOf, P), src: "OMI · Agenzia Entrate, 2° semestre 2024, abitazioni civili stato normale, media del min-max; zone OMI 2021 riportate ai NIL per area" },
+  rentAbs: { g: "eco", l: "Affitto mensile", u: "€", f: (c) => c.i.rent ? c.i.rent * M2 : null, fmt: n0, agg: () => wm(rentOf, P) * M2, src: "OMI 2024 €/m² per la superficie scelta" },
+  burden: { g: "eco", l: "Affitto / stipendio", u: "%", f: (c) => c.i.rent && c.i.net_m ? c.i.rent * M2 / c.i.net_m * 100 : null, fmt: n0, agg: () => wm(rentOf, P) * M2 / CI.net_m * 100, src: "Affitto OMI 2024 per la superficie scelta diviso lo stipendio netto mensile stimato (un solo reddito)" },
+  inc: { g: "eco", l: "Reddito medio annuo", u: "€", f: (c) => c.i.inc, fmt: n0, agg: () => CI.inc, src: "MEF · IRPEF 2024 per CAP: reddito complessivo per contribuente" },
+  rich: { g: "eco", l: "Redditi oltre 75k", u: "%", f: (c) => c.i.rich, fmt: n1, agg: () => CI.rich, src: "MEF · IRPEF 2024 per CAP: contribuenti con reddito complessivo oltre 75.000 €" },
+  poor: { g: "eco", l: "Redditi sotto 15k", u: "%", f: (c) => c.i.poor, fmt: n1, agg: () => CI.poor, src: "MEF · IRPEF 2024 per CAP: contribuenti con reddito complessivo fino a 15.000 €" },
+  price: { g: "eco", l: "Prezzo vendita €/m²", u: "€/m²", f: (c) => c.i.price, fmt: n0, agg: () => wm((c) => c.i.price, P), src: "OMI · Agenzia Entrate, 2° semestre 2024, abitazioni civili stato normale" },
+  green: { g: "env", l: "Indice di verde", u: "", f: (c) => c.i.green, fmt: n1, agg: () => wm((c) => c.i.green, (c) => c.a), src: "Comune di Milano · Spotted, indice di verde urbano per NIL, luglio 2024" },
+  heatrisk: { g: "heat", l: "Rischio ondate di calore", u: "/100", f: (c) => c.i.heatrisk, fmt: n1, agg: () => wm((c) => c.i.heatrisk, (c) => c.a), src: "Comune di Milano · Spotted, rischio ondata di calore per NIL, luglio 2024" },
+  heatexp: { g: "heat", l: "Esposizione al calore", u: "/100", f: (c) => c.i.heatexp, fmt: n1, agg: () => wm((c) => c.i.heatexp, (c) => c.a), src: "Comune di Milano · Spotted, esposizione al calore urbano per NIL, luglio 2024" },
+  metro_pop: { g: "mob", l: "Residenti a 500 m da metro", u: "%", f: (c) => c.i.metro_pop, fmt: n0, agg: () => CORE.city.metro_pop, src: "Istat · sezioni 2021 entro 500 m in linea d'aria da una fermata metro (Comune di Milano · ATM)" },
+  metro_area: { g: "mob", l: "Area a 500 m da metro", u: "%", f: (c) => c.i.metro_area, fmt: n0, agg: () => wm((c) => c.i.metro_area, (c) => c.a), src: "Comune di Milano · fermate metro ATM, buffer di 500 m" },
+  metro_km: { g: "mob", l: "Distanza dalla metro", u: "km", f: (c) => c.i.metro_km, fmt: n2, agg: () => wm((c) => c.i.metro_km, P), src: "Dal centro del NIL alla fermata metro più vicina, in linea d'aria" },
+  metro_n: { g: "mob", l: "Fermate metro", u: "", f: (c) => c.i.metro_n, fmt: n0, agg: () => CORE.metro.st.length, src: "Comune di Milano · fermate linee metropolitane ATM" },
+  dbt_h: { g: "bld", l: "Altezza mediana", u: "m", f: (c) => c.i.dbt_h, fmt: n1, agg: () => null, src: "Comune di Milano · DBT 2020, unità volumetriche fuori terra, altezza mediana pesata sull'impronta" },
+  dbt_vol: { g: "bld", l: "Densità volumetrica", u: "m³/m²", f: (c) => c.i.dbt_vol, fmt: n2, agg: () => S((c) => (c.i.dbt_vol || 0) * c.a) / S((c) => c.a), src: "Comune di Milano · DBT 2020, volume costruito fuori terra sulla superficie del NIL" },
+  dbt_cov: { g: "bld", l: "Copertura edificata", u: "%", f: (c) => c.i.dbt_cov, fmt: n1, agg: () => S((c) => (c.i.dbt_cov || 0) * c.a) / S((c) => c.a), src: "Comune di Milano · DBT 2020, impronta degli edifici sulla superficie del NIL" },
+  dbt_tall: { g: "bld", l: "Edifici oltre 30 m", u: "", f: (c) => c.i.dbt_tall, fmt: n0, agg: () => S((c) => c.i.dbt_tall), src: "Comune di Milano · DBT 2020, unità volumetriche alte almeno 30 m" },
+  lot_a: { g: "bld", l: "Superficie media dei lotti", u: "m²", f: (c) => c.i.lot_a, fmt: n0, agg: () => null, src: "Agenzia delle Entrate · particelle catastali (INSPIRE, CC BY 4.0)" }
+};
+const CEN = "Istat · Censimento 2021, sezioni ripartite su esagoni da 0,16 km² in proporzione all'area";
+const ORANGE = ["#fff1e0", "#ffd6a8", "#ffb877", "#ff9a4d", "#f77b2e", "#e05a1b", "#b8400f", "#8c2a08"];
+const BLUE = ["#cfe3ff", "#a6caff", "#7db0ff", "#5b97f5", "#3d7be0", "#2a62c4", "#1e4a9a", "#133470"];
+const GREENR = ["#d9f5e3", "#b3ebc9", "#8ddcb0", "#66cb98", "#45b07e", "#2e9366", "#1f7350", "#145539"];
+const HM = {
+  hp: { l: "Residenti", k: "pop", ramp: ["#2a0822", "#4e0f3e", "#78175f", "#a32382", "#cc37a5", "#e660c3", "#f78fdb", "#ffc4ee"], t: "FASCE DI POPOLAZIONE", c: "Residenti" },
+  he: { l: "Occupati", k: "emp", ramp: ["#2c1f04", "#4d3606", "#704f09", "#94690c", "#b8840f", "#dba21c", "#f2c14a", "#ffe399"], t: "FASCE DI OCCUPATI", c: "Occupati residenti 15-64" },
+  hf: { l: "Stranieri", k: "for", ramp: ["#2a0822", "#4e0f3e", "#78175f", "#a32382", "#cc37a5", "#e660c3", "#f78fdb", "#ffc4ee"], t: "FASCE DI STRANIERI", c: "Stranieri residenti" },
+  hd: { l: "Abitazioni", k: "dw", ramp: ["#170d33", "#271657", "#38207a", "#4b2c9c", "#6040bd", "#7b5cd6", "#a185ea", "#cdb8ff"], t: "FASCE DI ABITAZIONI", c: "Abitazioni" },
+  hg: { l: "Istruzione terziaria", k: "deg", ramp: ["#2a0822", "#4e0f3e", "#78175f", "#a32382", "#cc37a5", "#e660c3", "#f78fdb", "#ffc4ee"], t: "FASCE DI ISTRUZIONE TERZIARIA", c: "Residenti con istruzione terziaria" }
+};
+const HK = CORE.hex.keys, HC = CORE.hex.cells, HR = CORE.hex.r;
+const LAYERS_META = {
+  dusaf: { file: "data/dusaf.json", g: "lu_dusaf", t: "USO DEL SUOLO", src: "Regione Lombardia · DUSAF 2024 (8.0), uso e copertura del suolo reale, ritagliato al confine comunale" },
+  pgt: { file: "data/pgt.json", g: "lu_pgt", t: "PGT MILANO 2030", src: "Regione Lombardia · Tavola delle previsioni di piano (mosaico dei PGT): servizi, ambiti di rigenerazione e trasformazione, aree dismesse, nuclei storici, aree agricole e di valore paesaggistico" }
+};
+const CATMETA = {
+  dusaf: [["resd", "Residenziale denso", "#f4a582"], ["resr", "Residenziale discontinuo", "#f7c9a6"], ["prod", "Produttivo e commerciale", "#b39ddb"], ["serv", "Servizi e ospedali", "#22b8cf"], ["infra", "Strade e ferrovie", "#bdbdbd"], ["vac", "Cantieri e aree degradate", "#8d8577"], ["green", "Parchi e sport", "#52b788"], ["unk", "Verde incolto", "#a3c585"], ["agr", "Agricolo", "#d9d27a"], ["wood", "Boschi e vegetazione", "#2d6a4f"], ["wat", "Acque", "#4cc9f0"]],
+  pgt: [["srv_verde", "Servizi: aree a verde", "#52b788"], ["srv_erp", "Servizi: edilizia residenziale pubblica", "#f28482"], ["srv_ist", "Servizi: istruzione e università", "#5eead4"], ["srv_alt", "Servizi: altri", "#74a7e0"], ["rig", "Ambiti di rigenerazione", "#ffd166"], ["dism", "Aree dismesse e degradate", "#8d8577"], ["tras", "Ambiti di trasformazione", "#e5484d"], ["naf", "Nuclei di antica formazione", "#c08497"], ["pae", "Aree di valore paesaggistico", "#2d6a4f"], ["agr", "Aree agricole", "#d9d27a"]]
+};
+const D = {
+  pop: { t: "Popolazione", mode: "choro", m: ["pop", "dens", "a65", "a014", "for_", "trend", "deg"], lay: [] },
+  hex: { t: "Densità 3D (esagoni)", mode: "hex", m: ["hp", "he", "hf", "hd", "hg"], lay: [] },
+  eco: { t: "Stipendi e affitti", mode: "choro", m: ["net_m", "wage_m", "rent", "rentAbs", "burden", "price", "inc", "rich", "poor"], lay: [], slider: true },
+  land: { t: "Uso del suolo · DUSAF 2024", mode: "cat", src: "dusaf", m: ["lucat"], lay: [] },
+  pgt: { t: "PGT Milano 2030", mode: "cat", src: "pgt", m: ["lucat"], lay: [] },
+  env: { t: "Verde e calore", mode: "choro", m: ["green", "heatrisk", "heatexp"], lay: [] },
+  mob: { t: "Metropolitana", mode: "choro", m: ["metro_pop", "metro_area", "metro_km", "metro_n"], lay: ["metro"] },
+  bld: { t: "Edificato · DBT 2020", mode: "choro", m: ["dbt_vol", "dbt_cov", "dbt_h", "dbt_tall", "lot_a"], lay: [] },
+  city: { t: "Lotti ed edifici 3D", mode: "city", m: ["ch", "ct", "ca"], lay: [] }
+};
+const MLAB = { lucat: "Categorie", ch: "Altezza", ct: "Uso", ca: "Lotti (copertura)" };
+const mlabel = (k) => (M[k] || HM[k] || {}).l || MLAB[k];
+const LAYERS = { metro: "Metro", omi: "Zone OMI" };
+const HUE = { // una tinta per tema: scuro = basso, brillante = alto
+  pop: ["#3a0b30", "#64124f", "#931c74", "#c02d99", "#e35ebe", "#ffa6e2"],
+  eco: ["#3a2a05", "#644807", "#93690a", "#c48c10", "#ecb52c", "#ffe08a"],
+  env: ["#0b2d1a", "#11492a", "#18693c", "#238c52", "#3fb26f", "#8fe0ad"],
+  heat: ["#3a1205", "#661f08", "#94300c", "#c44612", "#ee6a2a", "#ffae80"],
+  mob: ["#06283a", "#0a4463", "#0f6690", "#178bbd", "#3cb2e0", "#9fe0ff"],
+  bld: ["#1f1240", "#341e6a", "#4c2b96", "#6640bf", "#8a66e0", "#c7b3ff"] };
+let RAMP = HUE.pop;
+const vals = (m) => C.map((c) => { const v = M[m].f(c); return v != null && isFinite(v) ? v : null; });
+const ranked = (m, desc = true) => { const v = vals(m); return C.map((c, i) => ({ c, v: v[i] })).filter((x) => x.v != null).sort((a, b) => desc ? b.v - a.v : a.v - b.v); };
+const fm = (m, v) => M[m].fmt(v) + (M[m].u ? " " + M[m].u : "");
+
+/* ---------- mappa piatta ---------- */
+const G = (tag, attrs, parent) => { const e = document.createElementNS("http://www.w3.org/2000/svg", tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent && parent.appendChild(e); return e; };
+let bx0 = 1e9, by0 = 1e9, bx1 = -1e9, by1 = -1e9;
+C.forEach((c) => c.poly.forEach((r) => r.forEach(([x, y]) => { bx0 = Math.min(bx0, x); by0 = Math.min(by0, y); bx1 = Math.max(bx1, x); by1 = Math.max(by1, y); })));
+const FULL = [bx0 - .6, by0 - .6, bx1 - bx0 + 1.2, by1 - by0 + 1.2];
+const setVB = (b) => svg.setAttribute("viewBox", b.map((v) => +v.toFixed(3)).join(" "));
+setVB(FULL);
+$("prov").setAttribute("d", CORE.city.ring.map((r) => pathOf(r, true)).join(""));
+let sel = -1;
+C.forEach((c, i) => {
+  const p = G("path", { d: c.poly.map((r) => dstr(r, true)).join(""), class: "comm", tabindex: 0, role: "button", "aria-label": c.n }, $("com"));
+  G("title", {}, p).textContent = c.n;
+  p.addEventListener("click", () => select(i));
+  p.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(i); } });
+  c.el = p;
+});
+CORE.omi.forEach((z) => { const p = G("path", { d: z.rings.map((r) => pathOf(r, true)).join("") }, $("omi")); G("title", {}, p).textContent = `${z.z} ${z.d}: ${n1(z.rent)} €/m² mese`; });
+CORE.metro.lines.forEach((l) => l.p.forEach((p) => G("path", { d: pathOf(p), stroke: l.c }, $("metro"))));
+CORE.metro.st.forEach((s) => { const t = G("circle", { cx: s.x, cy: s.y, r: .08 }, $("metro")); G("title", {}, t).textContent = `${s.n} (M${s.l})`; });
+["Duomo", "Brera", "Isola", "Bovisa", "Lambrate", "Niguarda", "Gratosoglio", "San Siro", "Quarto Oggiaro", "Città Studi", "Corvetto"].forEach((n) => { const c = C.find((x) => x.n.toLowerCase().startsWith(n.toLowerCase())); if (c) { const t = G("text", { x: c.c[0], y: c.c[1], class: "lab" }, $("labels")); t.textContent = c.n.split(" - ")[0]; } });
+function fitText() {
+  const r = svg.getBoundingClientRect(), vb = svg.viewBox.baseVal, k = Math.min(r.width / vb.width, r.height / vb.height) || 1;
+  document.querySelectorAll("#labels text").forEach((t) => { t.style.fontSize = (11 / k).toFixed(3) + "px"; t.style.strokeWidth = (3 / k).toFixed(3) + "px"; });
+  document.querySelectorAll("#metro circle").forEach((c) => c.setAttribute("r", (3.2 / k).toFixed(3)));
+}
+new ResizeObserver(fitText).observe(svg);
+let vbAnim = 0;
+function zoomVB(to) {
+  const from = svg.viewBox.baseVal, a = [from.x, from.y, from.width, from.height], t0 = performance.now(), id = ++vbAnim, Dm = reduce ? 0 : 650;
+  const step = (t) => { if (id !== vbAnim) return; const u = Dm ? Math.min(1, (t - t0) / Dm) : 1, e = 1 - Math.pow(1 - u, 3); setVB(a.map((v, i) => v + (to[i] - v) * e)); fitText(); if (u < 1) requestAnimationFrame(step); };
+  requestAnimationFrame(step); setTimeout(() => { if (id === vbAnim) { setVB(to); fitText(); } }, Dm + 150);
+}
+const bboxOf = (c) => { let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9; c.poly.forEach((r) => r.forEach(([x, y]) => { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); })); const m = Math.max(x1 - x0, y1 - y0) * .35; return [x0 - m, y0 - m, x1 - x0 + 2 * m, y1 - y0 + 2 * m]; };
+let zoomed = -1;
+function zoomNil(i) { zoomed = i; zoomVB(i < 0 ? FULL : bboxOf(C[i])); render(); }
+
+/* strati caricati su richiesta (file JSON pubblicati con la pagina) */
+const LAY = {};
+async function loadLayer(k) {
+  if (LAY[k]) return LAY[k];
+  $("loading").hidden = false; $("loading").textContent = "Caricamento " + LAYERS_META[k].t.toLowerCase() + "…";
+  try {
+    const d = await (await fetch(LAYERS_META[k].file)).json();
+    d.cats.forEach((c) => { c.el = G("path", { d: c.p.map((r) => pathOf(r, true)).join(""), fill: c.c }, $(LAYERS_META[k].g)); });
+    if (d.ats) d.ats.forEach((a) => { a.i = nilAt(a.x, a.y); });
+    LAY[k] = d;
+  } catch (e) { LAY[k] = { cats: [], err: true }; }
+  $("loading").hidden = true;
+  return LAY[k];
+}
+const TILES = {}, BLD = {}, TIX = new Set(CORE.tiles.index.map((t) => t[0] + "_" + t[1]));
+const decU = (a, u) => { const o = []; let x = 0, y = 0; for (let i = 0; i < a.length; i += 2) { x += a[i]; y += a[i + 1]; o.push([x * u, y * u]); } return o; };
+function tile(k) {
+  if (!TILES[k]) TILES[k] = fetch(`data/t/${k}.json`).then((r) => r.json()).catch(() => ({ v: [], p: [], u: 1 }));
+  return TILES[k];
+}
+async function loadBld(i) { // edifici (DBT) e lotti (catasto) dei tasselli da 1 km che toccano il NIL
+  if (BLD[i]) return BLD[i];
+  const c = C[i], T = CORE.tiles.tile; let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+  c.poly.forEach((r) => r.forEach(([x, y]) => { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); }));
+  const keys = [];
+  for (let tx = Math.floor(x0 / T); tx <= Math.floor(x1 / T); tx++) for (let ty = Math.floor(y0 / T); ty <= Math.floor(y1 / T); ty++) if (TIX.has(tx + "_" + ty)) keys.push(tx + "_" + ty);
+  $("loading").hidden = false; $("loading").textContent = `Caricamento lotti ed edifici (${keys.length} tasselli)…`;
+  const ts = await Promise.all(keys.map(tile));
+  const inside = (p) => { let sx = 0, sy = 0; p.forEach(([x, y]) => { sx += x; sy += y; }); return c.poly.some((r) => inPoly(sx / p.length, sy / p.length, r)); };
+  const v = [], lots = [];
+  ts.forEach((t) => {
+    t.v.forEach((r) => { const p = decU(r.slice(4), t.u); if (inside(p)) v.push({ h: r[0], u: r[1], q: r[2], ref: r[3], p }); });
+    t.p.forEach((r) => { const p = decU(r.slice(4), t.u); if (inside(p)) lots.push({ ref: r[0], a: r[1], cov: r[2], vi: r[3], p }); });
+  });
+  $("loading").hidden = true;
+  return (BLD[i] = { v, lots });
+}
+
+/* ---------- vista 3D (prismi estrusi su canvas 2D, senza librerie) ---------- */
+const c3 = $("c3d"), g3 = c3.getContext("2d"), tip = $("tip");
+const V0 = { yaw: -0.35, pitch: 1.0, k: 1, px: 0, py: 0 }, V = { ...V0 };
+let sc3 = null, drag = null, raf3 = 0;
+const rgbOf = (h) => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
+const mkPal = (cols) => cols.map((h) => { const [r, g, b] = rgbOf(h); return { top: h, side: [0, 1, 2, 3, 4, 5].map((l) => `rgb(${r * (.4 + .12 * l) | 0},${g * (.4 + .12 * l) | 0},${b * (.4 + .12 * l) | 0})`), dim: `rgb(${(r * .3 + 36) | 0},${(g * .3 + 36) | 0},${(b * .3 + 36) | 0})` }; });
+function mkItem(ring, h, ci, extra) {
+  const p = ring[0][0] === ring[ring.length - 1][0] && ring[0][1] === ring[ring.length - 1][1] ? ring.slice(0, -1) : ring, n = p.length;
+  let A = 0, cx = 0, cy = 0; for (let i = 0; i < n; i++) { const a = p[i], b = p[(i + 1) % n]; A += a[0] * b[1] - b[0] * a[1]; cx += a[0]; cy += a[1]; }
+  const nx = [], ny = [];
+  for (let i = 0; i < n; i++) { const a = p[i], b = p[(i + 1) % n], dx = b[0] - a[0], dy = b[1] - a[1], l = Math.hypot(dx, dy) || 1; nx.push((A > 0 ? dy : -dy) / l); ny.push((A > 0 ? -dx : dx) / l); }
+  return { p, n, h, ci, nx, ny, cx: cx / n, cy: cy / n, on: true, dim: false, ...extra };
+}
+function setScene(s) {
+  let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+  (s.items.length ? s.items : [{ p: (s.ground[0] || { pts: [[0, 0]] }).pts }]).forEach((it) => it.p.forEach(([x, y]) => { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); }));
+  s.cx = (x0 + x1) / 2; s.cy = (y0 + y1) / 2; s.rad = Math.hypot(x1 - x0, y1 - y0) / 2 || 1;
+  s.pal = mkPal(s.cols); sc3 = s; queue3();
+}
+const queue3 = () => { if (!raf3) { raf3 = 1; later(() => { raf3 = 0; draw3(); }); } };
+function draw3(fast) {
+  const dpr = devicePixelRatio || 1, W = c3.clientWidth, H = c3.clientHeight;
+  if (!W || !H) return;
+  if (c3.width !== Math.round(W * dpr) || c3.height !== Math.round(H * dpr)) { c3.width = Math.round(W * dpr); c3.height = Math.round(H * dpr); }
+  g3.setTransform(dpr, 0, 0, dpr, 0, 0); g3.clearRect(0, 0, W, H);
+  if (!sc3) return;
+  const co = Math.cos(V.yaw), si = Math.sin(V.yaw), cp = Math.cos(V.pitch), sp = Math.sin(V.pitch), Sc = Math.min(W, H) * .46 / sc3.rad * V.k, ox = W / 2 + V.px, oy = H / 2 + V.py;
+  const X = (x, y) => { const dx = x - sc3.cx, dy = y - sc3.cy; return ox + Sc * (dx * co - dy * si); };
+  const Yy = (x, y, z) => { const dx = x - sc3.cx, dy = y - sc3.cy; return oy + Sc * ((dx * si + dy * co) * cp - z * sp); };
+  const cs = getComputedStyle(map), lab = cs.getPropertyValue("--label").trim();
+  (sc3.ground || []).forEach((g) => { g3.beginPath(); g.pts.forEach(([x, y], i) => i ? g3.lineTo(X(x, y), Yy(x, y, 0)) : g3.moveTo(X(x, y), Yy(x, y, 0))); if (g.close) g3.closePath(); if (g.fill) { g3.fillStyle = g.fill; g3.fill(); } g3.strokeStyle = g.stroke; g3.lineWidth = g.w || 1; g3.setLineDash(g.dash || []); g3.stroke(); });
+  g3.setLineDash([]);
+  const list = sc3.items.filter((it) => it.on);
+  list.forEach((it) => { it.d = (it.cx - sc3.cx) * si + (it.cy - sc3.cy) * co; });
+  list.sort((a, b) => a.d - b.d);
+  const tiny = fast && list.length > 6000;
+  for (const it of list) {
+    const pal = sc3.pal[it.ci], hz = it.h;
+    if (!tiny && hz > 0 && sp > .05) {
+      for (let e = 0; e < it.n; e++) {
+        const nyr = it.nx[e] * si + it.ny[e] * co;
+        if (nyr <= 0) continue;
+        const a = it.p[e], b = it.p[(e + 1) % it.n];
+        g3.beginPath(); g3.moveTo(X(a[0], a[1]), Yy(a[0], a[1], 0)); g3.lineTo(X(b[0], b[1]), Yy(b[0], b[1], 0)); g3.lineTo(X(b[0], b[1]), Yy(b[0], b[1], hz)); g3.lineTo(X(a[0], a[1]), Yy(a[0], a[1], hz)); g3.closePath();
+        g3.fillStyle = it.dim ? pal.dim : pal.side[Math.min(5, Math.max(0, (nyr * 5.4) | 0))]; g3.fill();
+      }
+    }
+    g3.beginPath();
+    const top = sc3.pick ? [] : null;
+    for (let i = 0; i < it.n; i++) { const x = X(it.p[i][0], it.p[i][1]), y = Yy(it.p[i][0], it.p[i][1], hz); if (i) g3.lineTo(x, y); else g3.moveTo(x, y); if (top) top.push([x, y]); }
+    g3.closePath(); g3.fillStyle = it.dim ? pal.dim : pal.top; g3.fill();
+    if (it.hot) { g3.strokeStyle = "#fff"; g3.lineWidth = 1.5; g3.stroke(); }
+    it.sx = top;
+  }
+  sc3.order = list;
+  g3.fillStyle = lab; g3.font = "500 11px Poppins, sans-serif"; g3.textAlign = "center"; g3.lineJoin = "round"; g3.strokeStyle = cs.getPropertyValue("--water").trim(); g3.lineWidth = 3;
+  (sc3.labels || []).slice(0, Math.round(5 + V.k * V.k * 3)).forEach((l) => { const x = X(l.x, l.y), y = Yy(l.x, l.y, 0); g3.strokeText(l.t, x, y); g3.fillText(l.t, x, y); });
+}
+c3.addEventListener("pointerdown", (e) => { drag = { x: e.clientX, y: e.clientY, m: false }; c3.setPointerCapture(e.pointerId); c3.classList.add("drag"); });
+c3.addEventListener("pointermove", (e) => {
+  if (drag) { const dx = e.clientX - drag.x, dy = e.clientY - drag.y; if (Math.abs(dx) + Math.abs(dy) > 2) drag.m = true; drag.x = e.clientX; drag.y = e.clientY; if (e.shiftKey) { V.px += dx; V.py += dy; } else { V.yaw += dx * .008; V.pitch = Math.min(1.35, Math.max(0, V.pitch + dy * .006)); } tip.hidden = true; draw3(true); return; }
+  hover3(e);
+});
+const endDrag = (e) => { if (drag && !drag.m) clickPick(e); drag = null; c3.classList.remove("drag"); queue3(); };
+c3.addEventListener("pointerup", endDrag); c3.addEventListener("pointercancel", () => { drag = null; c3.classList.remove("drag"); });
+c3.addEventListener("wheel", (e) => { e.preventDefault(); V.k = Math.min(12, Math.max(.4, V.k * Math.exp(-e.deltaY * .0012))); queue3(); }, { passive: false });
+function pick3(e) {
+  if (!sc3 || !sc3.pick || !sc3.order) return null;
+  const r = c3.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+  for (let i = sc3.order.length - 1; i >= 0; i--) { const it = sc3.order[i]; if (it.sx && inPoly(x, y, it.sx)) return it; }
+  return null;
+}
+function hover3(e) {
+  const it = pick3(e);
+  if (sc3 && sc3.pick) { sc3.items.forEach((o) => { o.hot = false; }); if (it) it.hot = true; queue3(); }
+  if (!it) { tip.hidden = true; return; }
+  const r = map.getBoundingClientRect(); tip.hidden = false; tip.style.left = Math.min(e.clientX - r.left + 12, r.width - 200) + "px"; tip.style.top = e.clientY - r.top + 12 + "px";
+  tip.innerHTML = sc3.tip(it);
+}
+function clickPick(e) { const it = pick3(e); if (it && sc3.click) sc3.click(it); }
+$("zin").onclick = () => { V.k = Math.min(12, V.k * 1.3); queue3(); };
+$("zout").onclick = () => { V.k = Math.max(.4, V.k / 1.3); queue3(); };
+$("zrst").onclick = () => { Object.assign(V, sc3 && sc3.view || V0); queue3(); };
+$("ztilt").onclick = () => { V.pitch = V.pitch > .2 ? 0 : (sc3 && sc3.view ? sc3.view.pitch : 1); queue3(); };
+new ResizeObserver(() => queue3()).observe(c3);
+
+/* ---------- dashboard ---------- */
+let dash = "pop", met = "pop", sortBars = false, insI = 0, cityNil = byId[1] ?? 0;
+const lay = { metro: false, omi: false };
+const catOn = { dusaf: {}, pgt: {} };
+const bandOn = Array(8).fill(true), clsOn = {}, cache3 = {};
+Object.keys(D).forEach((k) => { const o = document.createElement("option"); o.value = k; o.textContent = D[k].t; $("dsel").appendChild(o); });
+$("dist2").innerHTML = [...C].map((c, i) => ({ c, i })).sort((a, b) => a.c.n.localeCompare(b.c.n)).map((o) => `<option value="${o.i}">${esc(o.c.n)}</option>`).join("");
+const breaks = (v) => { const s = v.filter((x) => x != null).sort((a, b) => a - b); return [1, 2, 3, 4, 5].map((i) => s[Math.floor(i * s.length / 6)]); };
+const colorOf = (v, b) => v == null ? "var(--nodata)" : RAMP[b.filter((t) => v >= t).length];
+const show = (id, b) => { $(id).hidden = !b; };
+function hexScene(mk) {
+  const hm = HM[mk], ki = HK.indexOf(hm.k), v = HC.map((c) => c[2 + ki]), nz = v.filter((x) => x > 0).sort((a, b) => a - b);
+  const br = [1, 2, 3, 4, 5, 6, 7].map((i) => nz[Math.floor(i * nz.length / 8)]), vmax = nz[nz.length - 1];
+  const band = (x) => br.filter((t) => x >= t).length;
+  const items = HC.map((c, i) => { const a = []; for (let q = 0; q < 6; q++) a.push([c[0] + HR * Math.cos((30 + 60 * q) * Math.PI / 180), c[1] + HR * Math.sin((30 + 60 * q) * Math.PI / 180)]); return mkItem(a, Math.pow(v[i] / vmax, 1.2) * 4, band(v[i]), { v: v[i], x: c[0], y: c[1] }); }).filter((it) => it.v > 0);
+  const ground = [{ pts: dec(CORE.city.ring[0]), close: true, stroke: "rgba(255,255,255,.4)", w: 1.2 }];
+  C.forEach((c) => c.poly.forEach((r) => ground.push({ pts: r, close: true, stroke: "rgba(255,255,255,.08)", w: .6 })));
+  return { items, ground, cols: hm.ramp, pick: true, view: { yaw: -0.35, pitch: 1.0, k: 1.05, px: 0, py: 20 }, br, vmax,
+    tip: (it) => { const ci = nilAt(it.x, it.y); return `${esc(hm.c)}: <b>${n0(it.v)}</b><small>${ci >= 0 ? esc(C[ci].n) : "—"} · esagono da 0,16 km²</small>`; },
+    click: (it) => { const ci = nilAt(it.x, it.y); if (ci >= 0) select(ci); } };
+}
+const BCOL = ["#251650", "#35206f", "#472b8f", "#5a37ad", "#7049c8", "#8a66dc", "#a98aed", "#d0bfff"];
+const TYPES = CORE.tiles.uses;
+const HCLS = { ch: { l: "ALTEZZA DEGLI EDIFICI (DBT)", cuts: [7, 10, 14, 18, 24, 30, 45], cols: BCOL, f: (b) => b.h, u: "m" },
+  ca: { l: "COPERTURA DEI LOTTI", cuts: [.1, .2, .3, .45, .6, .75, .9], cols: BCOL, f: (b) => b.cov, u: "", pct: true },
+  ct: { l: "USO DEGLI EDIFICI (DBT)", cuts: null, cols: ["#c7b3ff", "#9fe0ff", "#5eead4", "#f78fdb", "#bdbdbd", "#ffd166", "#b39ddb", "#d9d27a", "#6b6b73"], f: (b) => b.u, u: "" } };
+const clsOf = (m, b) => { const d = HCLS[m]; return d.cuts ? d.cuts.filter((t) => d.f(b) >= t).length : d.f(b); };
+const clsLabel = (m, i) => { const d = HCLS[m]; if (!d.cuts) return TYPES[i]; const c = d.pct ? d.cuts.map((x) => Math.round(x * 100) + "%") : d.cuts.map((x) => x + " " + d.u); return i === 0 ? `< ${c[0]}` : i === c.length ? `≥ ${c[c.length - 1]}` : `${c[i - 1]} – ${c[i]}`; };
+function render() {
+  const d = D[dash], mode = d.mode, choro = mode === "choro", catMode = mode === "cat";
+  const v = choro ? vals(met) : [];
+  $("dsel").value = dash;
+  $("mchips").innerHTML = "";
+  d.m.forEach((k) => { const bt = document.createElement("button"); bt.type = "button"; bt.className = "chip-b"; bt.textContent = mlabel(k); bt.setAttribute("aria-pressed", k === met); bt.onclick = () => { met = k; render(); }; $("mchips").appendChild(bt); });
+  const flat = choro || catMode, three = mode === "hex" || mode === "city";
+  if (cur > 0) { svg.classList.toggle("off", !flat); c3.classList.toggle("off", !three); }
+  $("ctl").hidden = !(three && cur > 0);
+  tip.hidden = true;
+  const on = (id, b) => $(id).classList.toggle("off", !b);
+  if (choro) RAMP = HUE[M[met].g] || HUE.pop;
+  const br = choro ? breaks(v) : null;
+  C.forEach((c, i) => { c.el.classList.toggle("sel", i === sel); c.el.style.fill = choro ? colorOf(v[i], br) : catMode ? "var(--land)" : "var(--nodata)"; });
+  if (sel >= 0) $("com").appendChild(C[sel].el);
+  on("lu_dusaf", catMode && d.src === "dusaf"); on("lu_pgt", catMode && d.src === "pgt"); on("ats", catMode && d.src === "pgt");
+  on("metro", lay.metro || dash === "mob"); on("omi", lay.omi);
+  show("bScale", choro); show("bHist", choro); show("bRank", choro || mode === "hex"); show("bBands", mode === "hex"); show("bBars", catMode || mode === "city"); show("bIns", catMode); show("bDist", mode === "city"); show("bAts", catMode && d.src === "pgt"); show("bSlide", !!d.slider);
+  $("lay").hidden = !flat; $("lay").innerHTML = "<span>STRATI</span>";
+  if (flat) Object.keys(LAYERS).forEach((k) => { const bt = document.createElement("button"); bt.type = "button"; bt.className = "chip-b"; bt.textContent = LAYERS[k]; bt.setAttribute("aria-pressed", lay[k] || (k === "metro" && dash === "mob")); bt.onclick = () => { lay[k] = !lay[k]; render(); }; $("lay").appendChild(bt); });
+  $("bZoom").hidden = !(flat && cur > 0 && (sel >= 0 || zoomed >= 0));
+  $("zoomBtn").textContent = zoomed >= 0 ? "← Torna a tutta Milano" : sel >= 0 ? "Zoom su " + C[sel].n : "";
+  $("zoomBtn").onclick = () => zoomNil(zoomed >= 0 ? -1 : sel);
+  $("cityBtn").hidden = !(flat && sel >= 0);
+  if (choro) renderChoro(v);
+  else if (catMode) renderCat(d.src);
+  else if (mode === "hex") renderHex();
+  else if (mode === "city") renderCity();
+}
+function renderChoro(v) {
+  const m = M[met], agg = m.agg();
+  RAMP = HUE[m.g] || HUE.pop; document.documentElement.style.setProperty("--theme", RAMP[4]);
+  $("k1").textContent = agg == null ? "—" : m.fmt(agg) + (m.u ? " " + m.u : ""); $("k1l").textContent = "Milano · " + m.l;
+  $("k2").textContent = sel >= 0 ? fm(met, v[sel]) : "–"; $("k2l").textContent = sel >= 0 ? C[sel].n : "Seleziona un NIL";
+  $("scale").innerHTML = RAMP.map((c) => `<i style="background:${c}"></i>`).join("");
+  const nn = v.filter((x) => x != null);
+  $("smin").textContent = m.fmt(Math.min(...nn)); $("smax").textContent = m.fmt(Math.max(...nn)) + (m.u ? " " + m.u : "");
+  const lo = Math.min(...nn), hi = Math.max(...nn), bins = Array(10).fill(0);
+  nn.forEach((x) => bins[Math.min(9, Math.floor((x - lo) / (hi - lo || 1) * 10))]++);
+  const mx = Math.max(...bins), sb = sel >= 0 && v[sel] != null ? Math.min(9, Math.floor((v[sel] - lo) / (hi - lo || 1) * 10)) : -1;
+  $("hist").innerHTML = bins.map((n, i) => `<rect class="${i === sb ? "hi" : ""}" x="${i * 22 + 1}" width="20" y="${50 - n / mx * 46}" height="${n / mx * 46}"/>`).join("");
+  rankList(ranked(met).map((x) => ({ i: C.indexOf(x.c), n: x.c.n, v: x.v })), m.fmt, "PRIMI 8 NIL");
+  $("src").textContent = "Fonte: " + m.src + ".";
+}
+function rankList(rows, fmt, title) {
+  const top = rows.slice(0, 8), vmax = top[0] ? Math.abs(top[0].v) || 1 : 1;
+  $("rkh").textContent = title;
+  $("rank").innerHTML = top.map((x) => `<li><button type="button" data-i="${x.i}" class="${x.i === sel ? "on" : ""}"><span>${esc(x.n)}</span><span class="v">${fmt(x.v)}</span><i class="bar" style="width:${Math.max(3, Math.abs(x.v) / vmax * 100)}%"></i></button></li>`).join("");
+  $("rank").querySelectorAll("button").forEach((bt) => { bt.onclick = () => select(+bt.dataset.i); });
+}
+function renderHex() {
+  const hm = HM[met];
+  if (!cache3[met]) cache3[met] = hexScene(met);
+  const sc = cache3[met], ki = HK.indexOf(hm.k);
+  sc.items.forEach((it) => { it.on = bandOn[it.ci]; });
+  if (sc3 !== sc) { Object.assign(V, sc.view); setScene(sc); } else queue3();
+  const tot = HC.reduce((s, c) => s + c[2 + ki], 0);
+  $("k1").textContent = n0(tot); $("k1l").textContent = "Milano · " + hm.c + " (2021)";
+  const selV = sel >= 0 ? HC.filter((c) => C[sel].poly.some((r) => inPoly(c[0], c[1], r))).reduce((s, c) => s + c[2 + ki], 0) : null;
+  $("k2").textContent = selV != null ? n0(selV) : "–"; $("k2l").textContent = sel >= 0 ? C[sel].n : "Seleziona un NIL";
+  $("bandT").textContent = hm.t;
+  $("bands").innerHTML = [7, 6, 5, 4, 3, 2, 1, 0].map((i) => { const lo = i === 0 ? 1 : sc.br[i - 1], hi = i === 7 ? sc.vmax : sc.br[i] - 1; return `<button type="button" data-b="${i}" aria-pressed="${bandOn[i]}"><i style="width:12px;height:12px;border-radius:2px;background:${hm.ramp[i]}"></i><span>${n0(lo)} – ${n0(hi)}</span><span class="ck">${bandOn[i] ? "✓" : ""}</span></button>`; }).join("");
+  $("bands").querySelectorAll("button").forEach((bt) => { bt.onclick = () => { bandOn[+bt.dataset.b] = !bandOn[+bt.dataset.b]; render(); }; });
+  const key = { pop: "pop21", emp: "emp21" }[hm.k];
+  if (key) rankList(C.map((c, i) => ({ i, n: c.n, v: c.i[key] })).filter((x) => x.v).sort((a, b) => b.v - a.v), n0, "PRIMI 8 NIL · CENSIMENTO 2021");
+  else rankList(ranked("dens").map((x) => ({ i: C.indexOf(x.c), n: x.c.n, v: x.v })), n0, "PRIMI 8 NIL PER DENSITÀ (2025)");
+  $("src").textContent = "Fonte: " + CEN + ". Altezza proporzionale al valore.";
+}
+function catShares(src, i) {
+  if (i >= 0) return C[i].i[src] || {};
+  const out = {}, ta = S((c) => c.a);
+  C.forEach((c) => Object.entries(c.i[src] || {}).forEach(([k, v]) => { out[k] = (out[k] || 0) + v * c.a / ta; }));
+  return out;
+}
+async function renderCat(src) {
+  const meta = CATMETA[src], d = LAYERS_META[src];
+  loadLayer(src).then((L) => { if (D[dash].src === src) L.cats.forEach((c) => { c.el && (c.el.style.display = catOn[src][c.k] === false ? "none" : ""); }); if (L.ats && D[dash].src === src) renderAts(L.ats); });
+  const sh = catShares(src, sel), den = sel >= 0 ? C[sel].a : S((c) => c.a);
+  $("k1").textContent = n1(den) + " km²"; $("k1l").textContent = sel >= 0 ? C[sel].n : "Milano";
+  const tot = Object.values(sh).reduce((s, x) => s + x, 0);
+  if (src === "pgt") { const srv = ["srv_verde", "srv_erp", "srv_ist", "srv_alt"].reduce((s, k) => s + (sh[k] || 0), 0); $("k2").textContent = n1(srv) + "%"; $("k2l").textContent = "della superficie a servizi (PGT)"; }
+  else { $("k2").textContent = n0(Math.min(100, tot)) + "%"; $("k2l").textContent = "del territorio classificato"; }
+  $("barsT").textContent = d.t + " · " + (sel >= 0 ? C[sel].n.toUpperCase() : "MILANO");
+  $("sortBtn").textContent = "ORDINA: " + (sortBars ? "VALORE" : "STANDARD"); $("sortBtn").onclick = () => { sortBars = !sortBars; render(); };
+  const rows = meta.map(([k, l, c]) => ({ k, l, c, v: sh[k] || 0 }));
+  if (sortBars) rows.sort((a, b) => b.v - a.v);
+  const mx = Math.max(...rows.map((r) => r.v), 1);
+  $("bars").innerHTML = rows.map((r) => `<button type="button" data-k="${r.k}" aria-pressed="${catOn[src][r.k] !== false}"><i class="sw" style="background:${r.c}"></i><span class="tr"><i class="fl" style="width:${Math.max(2, r.v / mx * 55)}%;background:${r.c}"></i><span class="lb">${esc(r.l)}</span></span><span class="vv">${n1(r.v)}%</span></button>`).join("");
+  $("bars").querySelectorAll("button").forEach((bt) => { bt.onclick = () => { catOn[src][bt.dataset.k] = catOn[src][bt.dataset.k] === false; render(); }; });
+  const list = rows.filter((r) => r.v > 0), r = list.length ? list[((insI % list.length) + list.length) % list.length] : null;
+  $("insT").textContent = (sel >= 0 ? C[sel].n : "Milano") + (src === "pgt" ? ": previsioni del PGT" : ": uso del suolo");
+  $("insV").textContent = r ? n1(r.v) + "%" : "—"; $("insL").textContent = r ? r.l.toLowerCase() + " (" + n2(r.v / 100 * den) + " km²)" : "";
+  $("insP").onclick = () => { insI--; render(); }; $("insN").onclick = () => { insI++; render(); };
+  $("src").textContent = "Fonte: " + d.src + ". Quote sulla superficie del NIL o del comune; le categorie si sovrappongono in parte.";
+}
+function renderAts(ats) {
+  $("ats_l").innerHTML = [...ats].sort((a, b) => b.st - a.st).map((a, k) => `<li><button type="button" data-i="${a.i}"><span>${esc(a.n || "Ambito")}<br><small>${esc(a.f)} · ${a.i >= 0 ? esc(C[a.i].n) : ""}</small></span><span class="v">${n1(a.st)} ha</span></button></li>`).join("");
+  $("ats_l").querySelectorAll("button").forEach((bt) => { bt.onclick = () => { const i = +bt.dataset.i; if (i >= 0) { sel = i; zoomNil(i); } }; });
+  const g = $("ats"); if (!g.childNodes.length) { const L = LAY.pgt, c = L && L.cats.find((x) => x.k === "tras"); if (c) G("path", { d: c.p.map((r) => pathOf(r, true)).join("") }, g); }
+}
+async function renderCity() {
+  const i = cityNil, n = C[i], key = "city" + met + "_" + n.id;
+  $("dist2").value = i; $("dist2").onchange = () => { cityNil = +$("dist2").value; sel = cityNil; render(); };
+  const B = await loadBld(i);
+  if (D[dash].mode !== "city" || cityNil !== i) return;
+  const d = HCLS[met], nC = d.cols.length, lotMode = met === "ca";
+  if (!cache3[key]) {
+    const EX = 2; // altezze reali esagerate x2 per leggibilita'
+    const vol = lotMode ? [] : B.v.map((x) => mkItem(x.p, x.h / 1000 * EX, clsOf(met, x), { kind: "v", b: x })); // in vista lotti gli edifici coprirebbero le particelle
+    const lots = lotMode ? B.lots.map((x) => mkItem(x.p, 0, clsOf("ca", x), { kind: "l", b: x })) : [];
+    const ground = n.poly.map((r) => ({ pts: r, close: true, stroke: "rgba(255,255,255,.6)", w: 1.4, fill: "rgba(255,255,255,.03)" }));
+    if (!lotMode) B.lots.forEach((x) => ground.push({ pts: x.p, close: true, stroke: "rgba(255,255,255,.12)", w: .5 }));
+    cache3[key] = { items: [...lots, ...vol], ground, cols: [...d.cols, "#4a4a52"], pick: true, labels: [], view: { yaw: 0, pitch: lotMode ? .55 : .95, k: 1.25, px: 0, py: 10 },
+      tip: (it) => it.kind === "v" ? `Edificio: <b>${n1(it.b.h)} m</b> · ${esc(TYPES[it.b.u])}<small>quota ${n0(it.b.q)} m s.l.m.${it.b.ref ? " · particella " + esc(it.b.ref.replace(".", " / ")) : ""}</small>`
+        : `Lotto <b>${esc(it.b.ref.replace(".", " / "))}</b><small>${n0(it.b.a)} m² · copertura ${n0(it.b.cov * 100)}% · indice volumetrico ${n1(it.b.vi)} m³/m²</small>` };
+  }
+  const sc = cache3[key];
+  clsOn[met] = clsOn[met] || Array(nC).fill(true);
+  sc.items.forEach((it) => { it.on = it.ci >= nC || clsOn[met][it.ci]; });
+  if (sc3 !== sc) { Object.assign(V, sc.view); setScene(sc); } else queue3();
+  const fa = B.v.reduce((s, x) => s + polyArea(x.p), 0) * 1e6, vol = B.v.reduce((s, x) => s + polyArea(x.p) * 1e6 * x.h, 0);
+  $("k1").textContent = n0(vol / 1e3) + " mila m³"; $("k1l").textContent = "Volume costruito · " + n.n;
+  $("k2").textContent = n0(B.v.length); $("k2l").textContent = `unità volumetriche · ${n0(B.lots.length)} lotti`;
+  const src = lotMode ? B.lots : B.v, cnt = Array(nC).fill(0); src.forEach((x) => { cnt[clsOf(met, x)]++; });
+  const tot = src.length || 1, mx = Math.max(...cnt, 1);
+  $("barsT").textContent = d.l; $("sortBtn").textContent = "COPERTURA " + n0(fa / (n.a * 1e6) * 100) + "%"; $("sortBtn").onclick = null;
+  $("bars").innerHTML = d.cols.map((c, k) => `<button type="button" data-k="${k}" aria-pressed="${clsOn[met][k]}"><i class="sw" style="background:${c}"></i><span class="tr"><i class="fl" style="width:${Math.max(2, cnt[k] / mx * 40)}%;background:${c}"></i><span class="lb">${esc(clsLabel(met, k))}</span></span><span class="vv">${n0(cnt[k])} · ${n1(cnt[k] / tot * 100)}%</span></button>`).join("");
+  $("bars").querySelectorAll("button").forEach((bt) => { bt.onclick = () => { clsOn[met][+bt.dataset.k] = !clsOn[met][+bt.dataset.k]; render(); }; });
+  $("src").textContent = "Fonte: Comune di Milano · DBT 2020 (volo 2020, scala 1:1.000), unità volumetriche fuori terra con altezza reale; Agenzia delle Entrate · particelle catastali (CC BY 4.0). Altezze esagerate ×2. Passa sopra un edificio o un lotto per i dettagli.";
+}
+const polyArea = (p) => { let A = 0; for (let i = 0, j = p.length - 1; i < p.length; j = i++) A += (p[j][0] + p[i][0]) * (p[j][1] - p[i][1]); return Math.abs(A / 2); };
+function select(i) { sel = sel === i ? -1 : i; if (sel >= 0) cityNil = sel; render(); }
+$("dsel").onchange = () => { dash = $("dsel").value; met = D[dash].m[0]; Object.keys(lay).forEach((k) => { lay[k] = D[dash].lay.includes(k); }); if (cur === 0) go(1, null, null, true); else render(); };
+$("dfold").onclick = () => { const f = $("dash").classList.toggle("fold"); $("dfold").setAttribute("aria-expanded", !f); map.classList.toggle("dash-open", !f && !$("dash").hidden); later(() => { fitText(); queue3(); }); };
+$("cityBtn").onclick = () => { cityNil = sel; go(9); };
+$("m2").oninput = () => { M2 = +$("m2").value; $("m2v").textContent = M2 + " m²"; render(); };
+
+/* ---------- globo (continenti grezzi) ---------- */
+const PG = (s) => s.trim().split(/\s+/).map((p) => p.split(",").map(Number));
+const LAND = [
+  "-5.9,35.8 -2,35.1 3,36.8 10,37.2 11,33.5 15,32.3 20,32.2 25,31.6 32,31.2 34,28 35.5,24 37.3,19 38.8,15 41.5,12.5 43.2,11.8 51.2,11.8 51,10 48,5 44,1.5 41.5,-2 39.5,-5.5 39,-9 40.5,-15 35,-20 35.5,-24 32.5,-26 32.8,-28.5 30,-31.5 27,-33.5 22,-34.2 18.5,-34.2 17.5,-30 15,-27 14.5,-22 12,-17 13.5,-12 12.2,-6 9,-1 9.5,4 5.5,4.5 3,6.3 -2,5 -7.5,4.4 -12,7.5 -15,11 -17.2,14.7 -16.5,19.5 -14.5,26 -10,29.5 -9.8,31 -8,34",
+  "-5.6,36.1 -9,37 -9.4,43 -1.8,43.4 -1.2,46 -4.7,48.4 -1.5,48.7 1.5,50.2 4.5,51.8 8.5,53.8 8.2,57 10.5,57.7 10.5,54.5 14,54.2 19,54.5 21,57 24,58 23,59.5 29,60 34,66 41,67 60,69 80,73 110,77 160,70 180,70 180,65 150,60 135,55 140,50 130,43 125,40 122,40.5 121.5,39 119,35 121,32 122,30 120,26 117,23.5 114.1,22.3 110,21 108,21.5 106,20 108,16 109,12 107,10 104,10 103.5,1.3 101,3 100,7 98.5,10 97,16.5 94,16 92,20.5 90,22 87,21.5 84.5,19 80.3,16 80,13 78,8.3 76.5,9 73,16 72.5,21 68.5,23.5 66.5,25.4 61.5,25.2 57,26.5 56,27 51,28 48.5,30 46,33 42,37 36,36.8 30,36.3 27,37 26,40.2 23.5,40 24,38 22,36.5 21,38.5 19.5,41.5 19,42 16.5,43.5 14.5,44.5 13.7,45.6 13.5,46.5 7,46 7,43.5 3,43.2 3,42.4 0,40 -0.5,38.2 -2,36.7",
+  "5,58.5 5,62 10,64.5 14,67.5 19,70 26,71 30,70 30,67 29,63 30,61 23,60 22,63 25,65.5 21.5,65.5 18,62.5 19,60 17.5,58.5 16,56.2 13,55.5 11,58.5 8,58",
+  "35,29.5 34.8,28 36.5,25 39,21 42.5,15.5 43.5,12.7 45,12.8 52,16 55,17.5 57.5,19 59.8,22.5 57,24 56.3,26.2 54,24.2 51.5,24.5 51,26.2 50,26.8 48.5,29.8 47,30.5 46,33 42,35 38,35 36,34 35,32",
+  "7.5,43.8 10.5,43.5 12.2,41.8 15.7,39.9 15.7,38 17,39 16.5,40.2 18.5,40.2 16,41.9 14,42.5 12.3,44.2 12.5,45.3 13.7,45.6 13.5,46.5 7,46 7,44.2",
+  "-5.5,50 1.5,51 1.7,52.8 -0.2,54 -2,56 -2,57.6 -4,58.6 -6,57.5 -5.5,56 -4.5,54.5 -3,54 -3,53.3 -4.7,52.5 -5.3,51.7 -3.5,51.2",
+  "-10,51.7 -6,52 -6,54 -8,55.3 -10,54", "49.3,-12 50.4,-15.5 49.2,-20 47.2,-25 44.5,-25 43.3,-22 44.4,-16.5 47,-14.5"
+].map(PG);
+const WATER = ["28,41.5 41.5,41.2 41,43 37.5,45 35,45.3 33,46 31,46.5 29.5,45.3 28.5,43", "47,45 53,45.5 54,40 53.5,37 49,37.5 49.5,40.5"].map(PG);
+const HOME = { lon: 12, lat: 30, k: 1 }, TARGET = { lon: 9.19, lat: 45.465, k: 4.6 };
+const view = { ...HOME }, rad = Math.PI / 180, cx = cv.getContext("2d");
+function proj(lo, la, W, H, R) {
+  const l = (lo - view.lon) * rad, f = la * rad, f0 = view.lat * rad;
+  const x = Math.cos(f) * Math.sin(l), y = Math.cos(f0) * Math.sin(f) - Math.sin(f0) * Math.cos(f) * Math.cos(l);
+  return [W / 2 + R * x, H / 2 - R * y, Math.sin(f0) * Math.sin(f) + Math.cos(f0) * Math.cos(f) * Math.cos(l) >= 0, x, y];
+}
+function trace(pts, W, H, R) {
+  let any = false; cx.beginPath();
+  pts.forEach(([lo, la], i) => {
+    let [X, Y, vis, x, y] = proj(lo, la, W, H, R);
+    if (vis) any = true; else { const n = Math.hypot(x, y) || 1; X = W / 2 + R * x / n; Y = H / 2 - R * y / n; }
+    if (i) cx.lineTo(X, Y); else cx.moveTo(X, Y);
+  });
+  cx.closePath(); return any;
+}
+function drawGlobe() {
+  const dpr = devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight;
+  if (!W || !H) return;
+  if (cv.width !== Math.round(W * dpr) || cv.height !== Math.round(H * dpr)) { cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); }
+  cx.setTransform(dpr, 0, 0, dpr, 0, 0); cx.clearRect(0, 0, W, H);
+  const cs = getComputedStyle(map), v = (n) => cs.getPropertyValue(n).trim(), R = Math.min(W, H) * 0.42 * view.k;
+  const g = cx.createRadialGradient(W / 2 - R * .25, H / 2 - R * .25, R * .1, W / 2, H / 2, R);
+  g.addColorStop(0, v("--ocean-a")); g.addColorStop(1, v("--ocean-b"));
+  cx.save(); cx.beginPath(); cx.arc(W / 2, H / 2, R, 0, 7); cx.clip();
+  cx.fillStyle = g; cx.fillRect(0, 0, W, H); cx.strokeStyle = v("--grat"); cx.lineWidth = 1;
+  const line = (pts) => { cx.beginPath(); let pen = false; pts.forEach(([lo, la]) => { const [X, Y, vis] = proj(lo, la, W, H, R); if (vis) { if (pen) cx.lineTo(X, Y); else cx.moveTo(X, Y); pen = true; } else pen = false; }); cx.stroke(); };
+  for (let lo = -180; lo < 180; lo += 30) line(Array.from({ length: 61 }, (_, i) => [lo, -90 + i * 3]));
+  for (let la = -60; la <= 60; la += 30) line(Array.from({ length: 121 }, (_, i) => [-180 + i * 3, la]));
+  cx.fillStyle = v("--g-land"); cx.strokeStyle = v("--g-line");
+  LAND.forEach((p) => { if (trace(p, W, H, R)) { cx.fill(); cx.stroke(); } });
+  cx.fillStyle = v("--ocean-b"); WATER.forEach((p) => { if (trace(p, W, H, R)) cx.fill(); });
+  cx.restore();
+}
+new ResizeObserver(drawGlobe).observe(map);
+function fly(to) {
+  const a = { ...view }, t0 = performance.now(), Dm = reduce ? 0 : 1900;
+  return new Promise((res) => {
+    const step = (t) => {
+      const u = Dm ? Math.min(1, (t - t0) / Dm) : 1, e = u < .5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2;
+      for (const k of ["lon", "lat", "k"]) view[k] = a[k] + (to[k] - a[k]) * e;
+      drawGlobe(); if (u < 1) requestAnimationFrame(step); else res();
+    };
+    requestAnimationFrame(step);
+    setTimeout(() => { Object.assign(view, to); res(); }, Dm + 800);
+  });
+}
+
+/* ---------- risposte predefinite (fasi), calcolate sui dati ---------- */
+const cite = (t) => `<span class="cite">${ic("book")}${t}</span>`;
+const K = (t) => `<span class="key">${t}</span>`;
+const names = (rows, m, n = 3) => rows.slice(0, n).map((x) => `<b>${esc(x.c.n)}</b> (${fm(m, x.v)})`).join(", ");
+const rk = (m, c) => { const r = ranked(m); const i = r.findIndex((x) => x.c === c); return i < 0 ? "n/d" : `${i + 1}° su ${r.length}`; };
+const tbl = (cap, head, rows) => `<div class="tbl"><div class="cap">${cap}</div><table><thead><tr>${head.map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((x) => `<td>${x}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+const SC = [
+  null,
+  { user: "Profila Milano: residenti, età e stranieri per quartiere.", d: "pop", m: "dens", html: () => {
+    const tp = S(P), ta = S((c) => c.a), dn = ranked("dens"), f = ranked("for_"), t = ranked("trend");
+    return `<p>Milano ha ${K(n0(tp) + " residenti")} (2025) in <b>88 NIL</b> su ${n0(ta)} km²: ${K(n0(tp / ta) + " ab/km²")} in media.</p><ul><li>I NIL più densi: ${names(dn, "dens")}.</li><li>Over 65 in media ${n1(M.a65.agg())}%, stranieri ${n1(M.for_.agg())}%; la quota più alta di stranieri è a ${names(f, "for_", 2)}.</li><li>Dal 2015 è cresciuto di più ${names(t, "trend", 2)}.</li></ul>` + cite("Comune di Milano · residenti per NIL 1999-2025") + `<p>Vuoi vedere dove vivono le persone, in ${K("3D")}?</p>`;
+  } },
+  { user: "Mostrami la densità di popolazione in 3D.", d: "hex", m: "hp", html: () => {
+    const ki = HK.indexOf("pop"), cells = [...HC].sort((a, b) => b[2 + ki] - a[2 + ki]), tot = HC.reduce((s, c) => s + c[2 + ki], 0), top = cells[0];
+    let acc = 0, n50 = 0; for (const c of cells) { acc += c[2 + ki]; n50++; if (acc >= tot / 2) break; }
+    const ci = nilAt(top[0], top[1]), cellA = 2.598 * HR * HR;
+    return `<p>Il Censimento 2021 conta ${K(n0(tot) + " residenti")} su <b>${n0(HC.length)} esagoni</b> da ${n2(cellA)} km².</p><ul><li>Metà dei residenti vive in ${K(n0(n50) + " esagoni")}, il ${n0(n50 / HC.length * 100)}% delle celle abitate.</li><li>La cella più popolata ha <b>${n0(top[2 + ki])} residenti</b>${ci >= 0 ? ", a <b>" + esc(C[ci].n) + "</b>" : ""}.</li></ul>` + cite("Istat · Censimento 2021 · sezioni di censimento") + `<p class="note">Trascina per ruotare, rotella per zoomare.</p>`;
+  } },
+  { user: "Quanto si guadagna e quanto costa l'affitto nei quartieri?", d: "eco", m: "burden", html: () => {
+    const b = ranked("burden"), rent = M.rent.agg();
+    return `<p>A Milano lo stipendio medio da lavoro dipendente è ${K(n0(CI.wage_m) + " € al mese")} imponibili, circa ${K(n0(CI.net_m) + " € netti")} (IRPEF 2024, stima su 12 mensilità).</p>` +
+      `<p>L'affitto medio OMI è ${K(n1(rent) + " €/m² al mese")}: per ${M2} m² sono ${K(n0(rent * M2) + " €")}, il ${K(n0(rent * M2 / CI.net_m * 100) + "%")} dello stipendio netto medio.</p>` +
+      tbl(`AFFITTO DI ${M2} M² SU STIPENDIO NETTO · NIL PIÙ ONEROSI`, ["NIL", "Affitto", "Quota"], b.slice(0, 5).map((x) => [esc(x.c.n), n0(x.c.i.rent * M2) + " €", n0(x.v) + "%"])) +
+      cite("MEF · IRPEF 2024 per CAP") + cite("OMI · Agenzia Entrate, 2° semestre 2024") + `<p class="note">Cambia la superficie con il cursore nel pannello. La quota assume un solo stipendio per alloggio.</p>`;
+  } },
+  { user: "Com'è usato il suolo a Milano?", d: "land", m: "lucat", html: () => {
+    const sh = catShares("dusaf", -1), g = (k) => n1(sh[k] || 0) + "%";
+    return `<p>Secondo il DUSAF 2024 di Regione Lombardia:</p><ul><li>${K("Residenziale " + n1((sh.resd || 0) + (sh.resr || 0)) + "%")} (denso ${g("resd")}).</li><li>Produttivo e commerciale ${g("prod")}, servizi ${g("serv")}, strade e ferrovie ${g("infra")}.</li><li>${K("Parchi e sport " + g("green"))}, agricolo ${g("agr")}, boschi ${g("wood")}.</li></ul>` + cite("Regione Lombardia · DUSAF 2024") + `<p class="note">Spegni le categorie dalla legenda del pannello.</p>`;
+  } },
+  { user: "Cosa prevede il PGT Milano 2030?", d: "pgt", m: "lucat", html: () => {
+    const sh = catShares("pgt", -1), rig = ranked("pop").map((x) => ({ c: x.c, v: (x.c.i.pgt || {}).rig || 0 })).sort((a, b) => b.v - a.v);
+    return `<p>Dalla Tavola delle previsioni del PGT (mosaico regionale):</p><ul><li>Le aree a servizi coprono ${K(n1((sh.srv_verde || 0) + (sh.srv_erp || 0) + (sh.srv_ist || 0) + (sh.srv_alt || 0)) + "%")} del comune, il verde ${n1(sh.srv_verde || 0)}%.</li><li>Gli ambiti di rigenerazione coprono ${n1(sh.rig || 0)}%; i più estesi sono a <b>${esc(rig[0].c.n)}</b> (${n1(rig[0].v)}% del NIL) e <b>${esc(rig[1].c.n)}</b>.</li><li>Gli ambiti di trasformazione sono elencati nel pannello: tocca un ambito per andarci.</li></ul>` + cite("Regione Lombardia · Tavola delle previsioni di piano, PGT Milano 2030");
+  } },
+  { user: "Dove fa più caldo e dove c'è più verde?", d: "env", m: "heatrisk", html: () => {
+    const h = ranked("heatrisk"), g = ranked("green");
+    return `<ul><li>Il rischio di ondate di calore è più alto a ${names(h, "heatrisk")}.</li><li>L'indice di verde è più alto a ${names(g, "green")}; il più basso a <b>${esc(g[g.length - 1].c.n)}</b>.</li></ul>` + cite("Comune di Milano · Spotted, luglio 2024");
+  } },
+  { user: "Quanto è accessibile la metropolitana?", d: "mob", m: "metro_pop", html: () => {
+    const r = ranked("metro_pop", false).filter((x) => x.c.i.pop > 2000);
+    return `<p>Il ${K(n0(CORE.city.metro_pop) + "% dei residenti")} vive entro 500 m in linea d'aria da una fermata delle ${CORE.metro.st.length} della metropolitana.</p><ul><li>I NIL abitati meno serviti: ${names(r, "metro_pop", 4)}.</li></ul>` + cite("Comune di Milano · fermate ATM") + cite("Istat · sezioni di censimento 2021");
+  } },
+  { user: "Com'è costruita la città? Altezze e densità edilizia.", d: "bld", m: "dbt_vol", html: () => {
+    const g = ranked("dbt_vol"), h = ranked("dbt_h"), tall = ranked("dbt_tall");
+    return `<ul><li>La densità volumetrica è più alta a ${names(g, "dbt_vol")}.</li><li>Gli edifici più alti (mediana) sono a ${names(h, "dbt_h")}.</li><li>Più edifici oltre 30 m: ${names(tall, "dbt_tall")}.</li></ul>` + cite("Comune di Milano · DBT 2020 (altezze reali)") + `<p class="note">Scegli un NIL e scendi di scala per vedere lotti ed edifici in 3D.</p>`;
+  } },
+  { user: "Scendi di scala: edifici 3D del quartiere.", d: "city", m: "ch", pre: () => { if (sel >= 0) cityNil = sel; }, html: () => {
+    const n = C[cityNil];
+    return `<p>Ecco lotti ed edifici di ${K(esc(n.n))}: ${n0(n.i.dbt_n)} unità volumetriche con altezza reale (mediana ${n1(n.i.dbt_h)} m, ${n0(n.i.dbt_tall)} oltre i 30 m) e ${n0(n.i.lot_n)} particelle catastali.</p><p class="note">Passa sopra un edificio o un lotto per i dettagli. «Lotti (copertura)» colora le particelle per quota coperta da edifici.</p>` + cite("Comune di Milano · DBT 2020") + cite("Agenzia delle Entrate · particelle catastali");
+  } }
+];
+const NAMES = ["Contesto", "Popolazione", "Densità 3D", "Stipendi e affitti", "Uso del suolo", "PGT", "Verde e calore", "Metro", "Edificato", "Lotti ed edifici"];
+const SUGG = ["Qual è lo stipendio medio e quanto incide l'affitto?", "Mostrami i quartieri con più stranieri", "Confronta Isola e Quarto Oggiaro", "Dove sono gli ambiti di trasformazione?"];
+const GREET = () => `<p>Ciao, sono <b>SPATIAL</b> per il <b>Comune di Milano</b>. Posso rispondere sui dati dei 88 quartieri (NIL) e mostrarli sulla mappa: popolazione, stipendi e affitti, uso del suolo, PGT, verde e calore, metro, edifici.</p><p class="note">${AI ? "Scrivi una domanda: Claude legge i dati della pagina e cambia mappa e dashboard per te." : "Modalità demo: rispondo con parole chiave. In un artifact Claude, la chat usa Claude."}</p>`;
+
+function nilAnswer(c) {
+  const row = (m) => `<li>${M[m].l}: <b>${fm(m, M[m].f(c))}</b> (${rk(m, c)})</li>`;
+  return `<h4>${esc(c.n)}</h4><ul><li>Residenti 2025: <b>${n0(P(c))}</b> su ${n2(c.a)} km²</li>${row("dens")}${row("a65")}${row("for_")}${row("net_m")}${row("rent")}${row("burden")}${row("green")}${row("metro_pop")}</ul>` + cite("Comune di Milano · MEF · OMI · Istat · OSM");
+}
+
+/* ---------- Claude nella chat: capability "sample" con strumenti della pagina ---------- */
+let AI = null, turns = [], ctl = null;
+const norm = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+function findNil(q) {
+  const t = norm(q); if (!t) return -1;
+  let i = C.findIndex((c) => norm(c.n) === t); if (i >= 0) return i;
+  i = C.findIndex((c) => norm(c.n).includes(t)); if (i >= 0) return i;
+  return C.findIndex((c) => norm(c.n).split(" ").filter((w) => w.length > 3).some((w) => t.includes(w)));
+}
+const profile = (c) => Object.fromEntries(Object.keys(M).map((k) => [k, M[k].f(c) == null ? null : +(+M[k].f(c)).toFixed(2)]).concat([["area_km2", c.a], ["cap", c.i.cap], ["dusaf_pct", c.i.dusaf], ["pgt_pct", c.i.pgt]]));
+const IND_LIST = Object.entries(M).map(([k, m]) => `${k}: ${m.l}${m.u ? " (" + m.u + ")" : ""} [${Object.keys(D).find((d) => D[d].m.includes(k))}]`).join("\n");
+function rules() {
+  return `Sei SPATIAL, l'assistente di analisi urbana di una dashboard sul Comune di Milano. Parli italiano, in modo chiaro e conciso (massimo 150 parole), per persone non esperte.
+Usa SEMPRE gli strumenti per leggere i dati: non inventare numeri. Quando l'utente chiede di vedere, mostrare, dove, mappa o confrontare, chiama show_on_map con la dashboard e l'indicatore più adatti (e il NIL se citato), così la mappa si aggiorna. Per gli edifici di un quartiere usa show_buildings.
+Formato: frasi brevi, elenchi con "- ", numeri in **grassetto**. Chiudi con una riga "Fonte: ..." presa dal campo source degli strumenti. Se un dato è una stima (stipendio netto, quota affitto), dillo.
+Unità territoriale: 88 NIL (quartieri del PGT 2030). Dashboard: ${Object.entries(D).map(([k, d]) => `${k}=${d.t}`).join("; ")}.
+Indicatori (id: nome (unità) [dashboard]):
+${IND_LIST}
+Dati città: residenti 2025 ${n0(S(P))}; stipendio imponibile mensile medio ${n0(CI.wage_m)} €; netto stimato ${n0(CI.net_m)} €; affitto medio OMI ${n1(M.rent.agg())} €/m² mese; superficie affitto scelta ${M2} m²; residenti a 500 m dalla metro ${n0(CORE.city.metro_pop)}%.
+Stato attuale della pagina: dashboard ${dash}, indicatore ${met}, NIL selezionato ${sel >= 0 ? C[sel].n : "nessuno"}.`;
+}
+const TOOLS = () => [
+  { name: "get_ranking", description: "Classifica dei NIL per un indicatore. Restituisce [{nil, value}] e la fonte. Usalo per 'dove è più alto/basso', 'quali quartieri'.", inputSchema: { type: "object", properties: { indicator: { type: "string", description: "id indicatore" }, order: { type: "string", enum: ["desc", "asc"] }, n: { type: "number" }, min_pop: { type: "number", description: "escludi NIL con meno residenti" } }, required: ["indicator"] },
+    execute: (a) => { const m = M[String(a.indicator)]; if (!m) throw new Error("indicatore sconosciuto"); let r = ranked(String(a.indicator), a.order !== "asc"); if (a.min_pop) r = r.filter((x) => P(x.c) >= Number(a.min_pop)); return { indicator: m.l, unit: m.u, city_value: m.agg(), source: m.src, rows: r.slice(0, Math.min(15, Number(a.n) || 8)).map((x) => ({ nil: x.c.n, value: +x.v.toFixed(2) })) }; } },
+  { name: "get_nil_profile", description: "Tutti gli indicatori di un NIL (quartiere) per nome, con valore medio della città. Usalo per domande su un quartiere o per confronti.", inputSchema: { type: "object", properties: { nil: { type: "string" } }, required: ["nil"] },
+    execute: (a) => { const i = findNil(a.nil); if (i < 0) throw new Error("NIL non trovato: usa list_nils"); return { nil: C[i].n, values: profile(C[i]), city: Object.fromEntries(Object.keys(M).map((k) => [k, M[k].agg() == null ? null : +(+M[k].agg()).toFixed(2)])), rent_m2_used: M2 }; } },
+  { name: "list_nils", description: "Elenco dei nomi dei 88 NIL.", execute: () => C.map((c) => c.n) },
+  { name: "show_on_map", description: "Aggiorna la mappa e il pannello: apre una dashboard, sceglie l'indicatore e opzionalmente seleziona e zooma su un NIL. Restituisce lo stato.", inputSchema: { type: "object", properties: { dashboard: { type: "string", enum: Object.keys(D) }, indicator: { type: "string" }, nil: { type: "string" }, zoom: { type: "boolean" } }, required: ["dashboard"] },
+    execute: async (a) => { const dk = String(a.dashboard); if (!D[dk]) throw new Error("dashboard sconosciuta"); await ensureMap(); dash = dk; met = D[dk].m.includes(String(a.indicator)) ? String(a.indicator) : D[dk].m[0]; Object.keys(lay).forEach((k) => { lay[k] = D[dk].lay.includes(k); }); const i = a.nil ? findNil(a.nil) : -1; if (i >= 0) { sel = i; cityNil = i; } if (dk === "city") { cur = 9; } else if (cur === 9 || cur === 0) cur = 1; paint(cur, true); if (i >= 0 && a.zoom && (D[dk].mode === "choro" || D[dk].mode === "cat")) zoomNil(i); act(`${D[dk].t} · ${mlabel(met)}${i >= 0 ? " · " + C[i].n : ""}`); return { ok: true, dashboard: D[dk].t, indicator: mlabel(met), nil: i >= 0 ? C[i].n : null }; } },
+  { name: "show_buildings", description: "Mostra in 3D lotti catastali ed edifici con altezza reale (DBT 2020) di un NIL; passando il mouse si vedono altezza, uso e particella.", inputSchema: { type: "object", properties: { nil: { type: "string" } }, required: ["nil"] },
+    execute: async (a) => { const i = findNil(a.nil); if (i < 0) throw new Error("NIL non trovato"); await ensureMap(); sel = i; cityNil = i; dash = "city"; met = "ch"; cur = 9; paint(9, true); act("Edifici 3D · " + C[i].n); return { nil: C[i].n, volumes: C[i].i.dbt_n, parcels: C[i].i.lot_n, median_height_m: C[i].i.dbt_h, over_30m: C[i].i.dbt_tall, source: M.dbt_h.src }; } },
+  { name: "set_rent_size", description: "Imposta la superficie (m²) usata per calcolare affitto mensile e quota affitto/stipendio.", inputSchema: { type: "object", properties: { m2: { type: "number" } }, required: ["m2"] },
+    execute: (a) => { M2 = Math.max(20, Math.min(200, Number(a.m2) || 70)); $("m2").value = M2; $("m2v").textContent = M2 + " m²"; render(); act("Superficie " + M2 + " m²"); return { m2: M2, rent_month_city: Math.round(M.rent.agg() * M2), burden_city_pct: Math.round(M.burden.agg()) }; } },
+  { name: "get_transformation_areas", description: "Elenco degli ambiti di trasformazione del PGT con funzione prevista, superficie (ha) e NIL.", execute: async () => { const L = await loadLayer("pgt"); return (L.ats || []).map((a) => ({ name: a.n, function: a.f, ha: a.st, nil: a.i >= 0 ? C[a.i].n : null })); } }
+];
+async function ensureMap() { if (cur === 0) { await fly(TARGET); } }
+const act = (t) => { const last = log.lastElementChild; if (last && last.dataset.live) { const b = last.querySelector(".acts"); b && b.insertAdjacentHTML("beforeend", `<span class="act">↳ ${esc(t)}</span>`); } };
+function md(t) {
+  const lines = esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").split(/\n/);
+  let html = "", inList = false;
+  for (const l of lines) {
+    const m = l.match(/^\s*[-•*]\s+(.*)/);
+    if (m) { if (!inList) { html += "<ul>"; inList = true; } html += `<li>${m[1]}</li>`; continue; }
+    if (inList) { html += "</ul>"; inList = false; }
+    if (/^fonte:/i.test(l.trim())) html += `<span class="cite">${ic("book")}${l.trim().replace(/^fonte:\s*/i, "")}</span>`;
+    else if (l.trim()) html += `<p>${l}</p>`;
+  }
+  return html + (inList ? "</ul>" : "");
+}
+async function askAI(text) {
+  turns.push({ role: "user", content: text });
+  addUser(text);
+  const li = addMsg("agent", '<div class="dots"><i></i><i></i><i></i><span>Claude sta ragionando…</span></div><div class="ans"></div><div class="acts"></div>');
+  li.dataset.live = "1";
+  const ans = li.querySelector(".ans"), dots = li.querySelector(".dots");
+  ctl = new AbortController(); busy = true; setSend(true);
+  try {
+    const { text: out } = await AI([{ role: "user", content: rules() }, ...turns.slice(-8)], {
+      tools: TOOLS(), modelTier: "quick", signal: ctl.signal,
+      onText: ({ text: t }) => { dots.hidden = true; ans.innerHTML = md(t); log.scrollTop = log.scrollHeight; }
+    });
+    dots.hidden = true; ans.innerHTML = md(out);
+    turns.push({ role: "assistant", content: out });
+  } catch (e) {
+    dots.hidden = true;
+    if (e && e.text) ans.innerHTML = md(e.text);
+    const msg = { cancelled: "Interrotto.", not_granted: "Claude non è autorizzato per questa pagina: rispondo in modalità demo.", rate_limited: "Troppe richieste: riprova tra poco.", sampling_disabled: "Claude non è disponibile per questo account: modalità demo.", tools_unavailable: "Questa vista non supporta gli strumenti: modalità demo." }[e && e.code] || "Risposta interrotta. Riprova.";
+    ans.insertAdjacentHTML("beforeend", `<p class="note">${msg}</p>`);
+    if (["not_granted", "sampling_disabled", "not_declared", "capability_disabled", "tools_unavailable"].includes(e && e.code)) { AI = null; setMode(); fallback(text, true); }
+    turns.pop();
+  }
+  delete li.dataset.live; busy = false; setSend(false); ctl = null;
+}
+function setSend(on) { $("sendBtn").innerHTML = ic(on ? "stop" : "send"); $("sendBtn").setAttribute("aria-label", on ? "Ferma" : "Invia"); }
+function setMode() { $("mode").textContent = AI ? "CLAUDE" : "DEMO"; $("mode").classList.toggle("demo", !AI); }
+
+/* ---------- UI ---------- */
+let cur = 0, busy = false;
+const steps = $("steps");
+NAMES.forEach((n, i) => {
+  if (i) steps.insertAdjacentHTML("beforeend", '<span class="arr" aria-hidden="true">→</span>');
+  const b = document.createElement("button"); b.type = "button"; b.textContent = `${String(i + 1).padStart(2, "0")} ${n}`;
+  b.addEventListener("click", () => go(i)); steps.appendChild(b);
+});
+const stepBtns = [...steps.querySelectorAll("button")];
+function addMsg(who, html) {
+  const li = document.createElement("li");
+  li.className = "msg " + who;
+  li.innerHTML = (who === "agent" ? `<span class="av">${ic("globe")}</span>` : "") + `<div class="bub">${html}</div>`;
+  log.appendChild(li); log.scrollTop = log.scrollHeight; return li;
+}
+const addUser = (t) => { const li = addMsg("user", ""); li.querySelector(".bub").textContent = t; };
+const typing = () => addMsg("agent", '<div class="dots" aria-label="SPATIAL sta scrivendo"><i></i><i></i><i></i></div>');
+function paint(s, keep) {
+  const d = $("dash"); d.hidden = s === 0;
+  cv.classList.toggle("off", s !== 0);
+  if (s === 0) { svg.classList.add("off"); c3.classList.add("off"); $("ctl").hidden = true; }
+  if (s > 0 && !keep) { const sc = SC[s]; dash = sc.d; met = sc.m; zoomed = -1; setVB(FULL); Object.keys(lay).forEach((k) => { lay[k] = D[dash].lay.includes(k); }); }
+  if (s > 0) render();
+  map.classList.toggle("dash-open", s > 0 && !d.classList.contains("fold"));
+  $("coords").textContent = s === 0 ? "45.4650° N, 9.1900° E | Zoom 1.8" : "© OpenStreetMap contributors · Regione Lombardia · Comune di Milano · Istat · MEF · OMI";
+  $("status").textContent = "Milano · 88 NIL" + (s ? " · " + D[dash].t : "");
+  stepBtns.forEach((b, i) => { if (i === s) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current"); });
+  later(() => { fitText(); queue3(); });
+}
+function reset() {
+  if (ctl) ctl.abort();
+  log.innerHTML = ""; turns = []; addMsg("agent", GREET()); Object.assign(view, HOME); sel = -1; cur = 0; paint(0); drawGlobe();
+  $("sugg").innerHTML = SUGG.map((s) => `<button type="button">${esc(s)}</button>`).join("");
+  $("sugg").querySelectorAll("button").forEach((b) => { b.onclick = () => { $("q").value = b.textContent; $("form").requestSubmit(); }; });
+}
+async function go(i, text, html, silent) {
+  if (busy || (i === cur && !text)) return;
+  if (i === 0) return reset();
+  busy = true;
+  if (!silent) addUser(text || SC[i].user);
+  const t = silent ? null : typing(), jobs = [sleep(reduce || silent ? 0 : 600)];
+  if (cur === 0) jobs.push(fly(TARGET));
+  await Promise.all(jobs);
+  if (SC[i].pre) SC[i].pre();
+  if (t) { t.remove(); addMsg("agent", html || SC[i].html()); }
+  cur = i; paint(i); busy = false;
+}
+function fallback(text, already) {
+  const lc = norm(text), ni = findNil(text);
+  const i = /edific|altezz|3d.*quart|scendi/.test(lc) ? 9 : /esagon|griglia|3d|concentr/.test(lc) ? 2 : /stipend|salari|reddit|affitt|canon|guadagn|casa|prezz/.test(lc) ? 3 : /suolo|dusaf|agricol|copertura/.test(lc) ? 4 : /pgt|piano|trasformaz|rigeneraz|servizi/.test(lc) ? 5 : /verde|calore|caldo|parchi|alberi/.test(lc) ? 6 : /metro|fermat|trasport|mobil/.test(lc) ? 7 : /edificat|costruit|densita edil/.test(lc) ? 8 : /popol|residenti|stranier|anzian|eta|giovani/.test(lc) ? 1 : 0;
+  if (ni >= 0 && i !== 9) { if (!already) addUser(text); addMsg("agent", nilAnswer(C[ni])); sel = ni; cityNil = ni; if (cur === 0) go(1, null, null, true); else render(); return; }
+  if (i === 9 && ni >= 0) { sel = ni; cityNil = ni; }
+  if (i) { if (already) { busy = false; go(i, text, null); } else go(i, text); }
+  else { if (!already) addUser(text); addMsg("agent", "<p>Prova a chiedere di stipendi e affitti, popolazione, uso del suolo, PGT, verde e calore, metro, edifici o di un quartiere (es. «Isola»).</p>"); }
+}
+$("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (ctl) { ctl.abort(); return; }
+  const text = $("q").value.trim();
+  if (!text || busy) return;
+  $("q").value = ""; $("sugg").innerHTML = "";
+  if (AI) askAI(text); else fallback(text);
+});
+$("reset").addEventListener("click", () => { if (!busy || ctl) reset(); });
+$("close").addEventListener("click", () => app.classList.add("nochat"));
+$("panelBtn").addEventListener("click", () => { app.classList.toggle("nochat"); later(() => { drawGlobe(); fitText(); queue3(); }); });
+$("base").addEventListener("click", () => {
+  const light = map.dataset.base !== "light";
+  map.dataset.base = light ? "light" : "dark"; $("base").textContent = light ? "LIGHT" : "DARK"; drawGlobe(); queue3();
+});
+if (innerWidth <= 860) { $("dash").classList.add("fold"); $("dfold").setAttribute("aria-expanded", "false"); }
+reset();
+(async () => {
+  try { const s = window.claude && await window.claude.use("sample"); if (s) { const lim = await s.limits().catch(() => null); if (!lim || lim.tools) { AI = s; setMode(); if (cur === 0 && log.children.length === 1) log.firstElementChild.querySelector(".bub").innerHTML = GREET(); } } } catch (e) { /* demo */ }
+})();
+</script>
+</body>
+</html>

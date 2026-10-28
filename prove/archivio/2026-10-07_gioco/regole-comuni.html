@@ -1,0 +1,498 @@
+<title>Regole Comuni</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: tavolo di progetto. A sinistra il lotto in 3D e il quadro del quartiere; a destra la fase in corso (regole, turni, bilancio). */
+:root{
+  --bg:#E8ECE7;--panel:#F6F8F4;--ink:#18201D;--muted:#5A6661;--line:#C6CFC8;--soft:#DCE2DC;
+  --accent:#2F55C8;--accent-ink:#FFFFFF;--good:#2E7D4F;--warn:#C08A1E;--bad:#B5432D;
+  --ground:#D7DCD3;--lot:#EFF2EC;--vac:#A9B1AB;--trace:#D27A3A;--green:#4C9A5E;
+  --f-display:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#101513;--panel:#18201C;--ink:#E3E9E4;--muted:#97A39D;--line:#2D3833;--soft:#222B27;
+  --accent:#86A2FF;--accent-ink:#0D1324;--good:#6CC48D;--warn:#E2B14E;--bad:#E8806A;
+  --ground:#18201C;--lot:#232D28;--vac:#56605A;--trace:#E08A4C;--green:#5DB373;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101513;--panel:#18201C;--ink:#E3E9E4;--muted:#97A39D;--line:#2D3833;--soft:#222B27;
+  --accent:#86A2FF;--accent-ink:#0D1324;--good:#6CC48D;--warn:#E2B14E;--bad:#E8806A;
+  --ground:#18201C;--lot:#232D28;--vac:#56605A;--trace:#E08A4C;--green:#5DB373;color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--f-body);padding-inline:16px;padding-block:14px 40px}
+.app{max-width:1300px;margin-inline:auto;display:flex;flex-direction:column;gap:16px}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.brand h1{font:800 clamp(34px,5vw,54px)/.9 var(--f-display);letter-spacing:-.02em;margin:0 0 6px}
+.brand h1 span{color:var(--accent)}
+.brand p{margin:0;color:var(--muted);font-size:13.5px;max-width:64ch}
+.steps{display:flex;gap:4px;flex-wrap:wrap}
+.step{display:flex;gap:8px;align-items:center;border:1px solid var(--line);background:var(--panel);padding:6px 12px;cursor:pointer;font-size:13px;font-weight:500}
+.step b{font:500 12px var(--f-mono);color:var(--muted)}
+.step[aria-current="step"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.step[aria-current="step"] b{color:var(--bg);opacity:.7}
+.step:disabled{opacity:.45;cursor:not-allowed}
+.main{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:920px){.main{grid-template-columns:minmax(0,1fr)}}
+.stage{position:sticky;top:calc(env(safe-area-inset-top,0px) + 10px);display:flex;flex-direction:column;gap:12px}
+@media (max-width:920px){.stage{position:static}}
+.view{position:relative;height:min(60vh,560px);min-height:320px;background:var(--panel);border:1px solid var(--line);overflow:hidden}
+#view3d{position:absolute;inset:0}
+#view3d canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}
+.viewtag{position:absolute;left:12px;top:10px;font:500 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);pointer-events:none;display:flex;flex-direction:column;gap:2px}
+.viewtag strong{font:800 24px var(--f-display);color:var(--ink);letter-spacing:0;text-transform:none}
+.viewhint{position:absolute;right:12px;top:10px;font-size:11px;color:var(--muted);pointer-events:none}
+.legend{position:absolute;left:10px;right:10px;bottom:8px;display:flex;flex-wrap:wrap;gap:4px 12px;font-size:11.5px;color:var(--muted);pointer-events:none}
+.legend i{display:inline-block;width:10px;height:10px;margin-right:5px;vertical-align:-1px}
+.nogl{position:absolute;inset:0;display:grid;place-items:center;padding:24px;text-align:center;color:var(--muted)}
+.score{background:var(--panel);border:1px solid var(--line);padding:14px 16px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 18px;align-items:center}
+.total{grid-row:span 6;display:flex;flex-direction:column;padding-right:18px;border-right:1px solid var(--line)}
+.total .num{font:800 64px/.85 var(--f-display);font-variant-numeric:tabular-nums}
+.lab{font:500 11px var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.meter{display:grid;grid-template-columns:150px minmax(0,1fr) 44px;gap:10px;align-items:center;font-size:12.5px}
+.meter .bar{height:8px;background:var(--soft);position:relative}
+.meter .bar span{position:absolute;inset:0 auto 0 0;background:var(--ink);transition:width .35s}
+.meter .bar.inv span{background:var(--bad)}
+.meter .v{font:500 12px var(--f-mono);text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:480px){.score{grid-template-columns:minmax(0,1fr)}.total{grid-row:auto;border-right:0;border-bottom:1px solid var(--line);padding:0 0 10px;flex-direction:row;align-items:baseline;gap:12px}.meter{grid-template-columns:110px minmax(0,1fr) 40px}}
+.panel{display:flex;flex-direction:column;gap:14px;min-width:0}
+.card{background:var(--panel);border:1px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:14px}
+.ph{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.ph h2{font:800 28px/1 var(--f-display);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.lead{color:var(--muted);margin:0;max-width:62ch;font-size:14px}
+.sl{display:grid;grid-template-columns:minmax(0,1fr) 40px;gap:0 8px;align-items:center;font-size:13.5px}
+.sl small{grid-column:1/-1;color:var(--muted);font-size:12px}
+.sl output{font:500 13px var(--f-mono);text-align:right}
+.sl input{grid-column:1/-1;width:100%;accent-color:var(--accent)}
+.sl .d{font:500 11px var(--f-mono);color:var(--accent)}
+.chk{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--muted)}
+.chk input{accent-color:var(--accent);margin-top:3px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px}
+@media (max-width:520px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--bg);padding:9px 16px;cursor:pointer;font-weight:600;font-size:14px}
+.btn.alt{background:transparent;color:var(--ink)}
+.btn.acc{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.res{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (max-width:520px){.res{grid-template-columns:minmax(0,1fr)}}
+.rc{text-align:left;border:1px solid var(--line);background:var(--bg);padding:10px;display:flex;flex-direction:column;gap:5px;font-size:12.5px;cursor:pointer}
+.rc[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.rc.gone{opacity:.55}
+.rc .h{display:flex;justify-content:space-between;gap:6px;align-items:baseline}
+.rc .h strong{font-size:14px}
+.rc .h em{font:400 11px var(--f-mono);font-style:normal;color:var(--muted)}
+.rc .job{color:var(--muted)}
+.wants{display:flex;flex-wrap:wrap;gap:4px}
+.want{font-size:11px;padding:1px 6px;border:1px solid var(--line);display:inline-flex;gap:4px;align-items:center}
+.want b{font:500 10px var(--f-mono);letter-spacing:1px;color:var(--accent)}
+.st{font:400 11px var(--f-mono);display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid var(--soft);padding-top:5px;color:var(--muted)}
+.st .g{color:var(--good)}.st .w{color:var(--warn)}.st .b{color:var(--bad)}
+.satbar{height:4px;background:var(--soft)}.satbar i{display:block;height:100%}
+.prop{border:2px solid var(--accent);padding:14px;display:flex;flex-direction:column;gap:10px;background:var(--bg)}
+.prop .who{font:800 20px/1.1 var(--f-display)}
+.prop .ask{font-size:15px}
+.prop .ask b{color:var(--accent)}
+.opts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+@media (max-width:560px){.opts{grid-template-columns:minmax(0,1fr)}}
+.opt{text-align:left;border:1px solid var(--ink);background:var(--panel);padding:9px 10px;cursor:pointer;display:flex;flex-direction:column;gap:3px}
+.opt strong{font-size:14px}.opt span{font-size:12px;color:var(--muted)}
+.opt:hover{background:var(--ink);color:var(--bg)}.opt:hover span{color:var(--bg);opacity:.8}
+.next{display:flex;flex-direction:column;gap:8px;border:1px dashed var(--line);padding:12px}
+#log{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;max-height:220px;overflow:auto;font:12px/1.45 var(--f-mono)}
+#log li{border-left:2px solid var(--line);padding-left:8px}
+#log li.e{border-color:var(--bad)}#log li.g{border-color:var(--green)}
+#chart{display:block;width:100%;height:230px;border:1px solid var(--line);background:var(--bg)}
+.verdict{font:800 26px/1.05 var(--f-display);margin:0;text-wrap:balance}
+.cmp{width:100%;border-collapse:collapse;font-size:13.5px}
+.cmpw{overflow-x:auto}
+.cmp th,.cmp td{padding:6px 4px;border-bottom:1px solid var(--soft);text-align:right;font-variant-numeric:tabular-nums}
+.cmp th:first-child,.cmp td:first-child{text-align:left}
+.cmp th{font:400 11px var(--f-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--line)}
+.cmp td.win{font-weight:600;color:var(--accent)}
+.cmp tr.tot td{font:800 22px var(--f-display);border-bottom:0}
+.refl{border-left:3px solid var(--accent);padding-left:12px;margin:0;max-width:62ch}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;font-size:13.5px;max-width:calc(100% - 32px);z-index:10}
+.foot{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.foot p{margin:0 0 6px;max-width:90ch}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <h1>Regole <span>Comuni</span></h1>
+      <p>Non disegni le case: scrivi le regole con cui il sistema le assegna. Quindici futuri abitanti arrivano tre alla volta, lasciano tracce, chiedono di cambiare le regole. Tu decidi quanto lasciarglielo fare.</p>
+    </div>
+    <nav class="steps" aria-label="Fasi del gioco">
+      <button class="step" data-go="1" type="button"><b>01</b>Regole</button>
+      <button class="step" data-go="2" type="button"><b>02</b>Abitare</button>
+      <button class="step" data-go="3" type="button"><b>03</b>Bilancio</button>
+    </nav>
+  </header>
+
+  <div class="main">
+    <section class="stage" aria-label="Lotto in 3D e quadro del quartiere">
+      <div class="view">
+        <div id="view3d"></div>
+        <div class="viewtag"><span id="vtMeta"></span><strong id="vtTitle"></strong></div>
+        <div class="viewhint">Trascina per ruotare · rotella o pizzico per lo zoom · tocca una casa</div>
+        <div class="legend">
+          <span><i style="background:var(--good)"></i>soddisfatto</span><span><i style="background:var(--warn)"></i>a metà</span><span><i style="background:var(--bad)"></i>scontento</span>
+          <span><i style="background:var(--vac)"></i>alloggio sfitto</span><span><i style="background:var(--green)"></i>spazio comune</span><span><i style="background:var(--trace)"></i>traccia dei percorsi</span><span><i style="background:var(--accent)"></i>ingresso</span>
+        </div>
+      </div>
+      <div class="score" id="score"></div>
+    </section>
+
+    <section class="panel">
+      <div class="card" id="rulesCard">
+        <div class="ph"><h2>Regole del sistema</h2><span class="lab" id="rulesTag">pesi da 0 a 10</span></div>
+        <p class="lead" id="rulesHint"></p>
+        <div class="grid2" id="rules"></div>
+        <div class="grid2">
+          <label class="sl">Piani massimi <output id="hOut"></output><input type="range" id="hmax" min="2" max="6"><small>Vincolo strutturale semplificato: più piani, meno suolo occupato.</small></label>
+          <label class="chk"><input type="checkbox" id="protect"> Proteggi gli spazi comuni: dove le tracce aprono un cortile non si costruisce più.</label>
+        </div>
+      </div>
+
+      <div class="card" id="p1">
+        <div class="ph"><h2>Chi arriverà</h2><span class="lab">15 abitanti immaginari</span></div>
+        <p class="lead">Ognuno ha preferenze proprie. Il sistema non le conosce: assegna le case solo secondo i tuoi pesi. Arrivano in ordine casuale, tre per turno, per cinque turni.</p>
+        <div class="res" id="pers"></div>
+        <div class="row"><button class="btn acc" id="go2" type="button">Apri il cantiere</button></div>
+      </div>
+
+      <div class="card" id="p2" hidden>
+        <div class="ph"><h2 id="p2h"></h2><span class="lab" id="p2tag"></span></div>
+        <div id="act"></div>
+        <div><p class="lab" style="margin:0 0 6px">Abitanti</p><div class="res" id="resList"></div></div>
+        <div><p class="lab" style="margin:0 0 6px">Registro del sistema</p><ul id="log"></ul></div>
+      </div>
+
+      <div class="card" id="p3" hidden>
+        <div class="ph"><h2>Bilancio</h2><span class="lab">stessi abitanti, stesso ordine di arrivo</span></div>
+        <p class="lead">Il quartiere che hai governato, confrontato con due versioni rigiocate dal computer: una in cui ogni richiesta viene respinta e le regole restano le tue, una in cui ogni richiesta va al voto dell'assemblea.</p>
+        <canvas id="chart" aria-label="Indice di quartiere per turno nei tre scenari"></canvas>
+        <p class="verdict" id="verdict"></p>
+        <div class="cmpw"><table class="cmp" id="cmp"></table></div>
+        <p class="refl" id="refl"></p>
+        <div class="row">
+          <button class="btn" id="replay" type="button">Rigioca con le stesse regole</button>
+          <button class="btn alt" id="newRules" type="button">Cambia le regole</button>
+          <button class="btn alt" id="newSeed" type="button">Altri arrivi</button>
+        </div>
+      </div>
+
+      <div class="foot">
+        <p><b>Da dove vengono le meccaniche</b>, secondo le schede della tesi: progettare il sistema che genera invece dell'oggetto (Alexander, «Systems Generating Systems»); l'architetto come progettista di sistemi che includono persone, con un controllore non autoritario (Pask, «The Architectural Relevance of Cybernetics»); la fiducia che nasce dalla conversazione con il sistema (Pask, «An Approach to Cybernetics»); tracce degli agenti che orientano gli altri (Meyboom e Reeves, «Stigmergic Space»); valutatori pesati e il potere di chi sceglie i pesi (OptiMixer, MVRDV).</p>
+        <p>Abitanti, punteggi e soglie sono inventati per il gioco e non sono misure validate.</p>
+      </div>
+    </section>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+"use strict";
+const $=s=>document.querySelector(s), css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
+const rng=a=>()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- dati ---------- */
+const G=10, PER=3, ROUNDS=5, FH=.8;
+const CRIT=[
+ {l:'Luce',h:'Premia i lati liberi e l\'assenza di vicini molto più alti.'},
+ {l:'Vicinato',h:'Premia le case circondate da altre case.'},
+ {l:'Verde comune',h:'Premia la vicinanza agli spazi comuni emersi.'},
+ {l:'Quiete',h:'Premia le case con pochi vicini.'},
+ {l:'Compattezza',h:'Premia i piani alti: costruisci in altezza e lasci suolo libero. Nessun abitante lo chiede.'}];
+const FLOOR={'1':'vuole un piano alto','-1':'vuole un piano basso','0':'piano indifferente'};
+const PERS=[
+ {n:'Giulia',a:27,j:'UX designer da remoto',p:[3,1,1,2],f:1},
+ {n:'Famiglia Okafor',a:39,j:'due genitori, una bimba',p:[2,2,3,1],f:-1},
+ {n:'Tomás',a:25,j:'studente e barista',p:[1,3,1,0],f:0},
+ {n:'Aiko',a:31,j:'illustratrice',p:[3,0,2,2],f:1},
+ {n:'Ben',a:44,j:'infermiere a turni di notte',p:[1,0,1,3],f:0},
+ {n:'Lena e Noor',a:42,j:'coppia con un cane',p:[1,1,3,1],f:-1},
+ {n:'Rafael',a:36,j:'chef a chiamata',p:[1,3,1,0],f:0},
+ {n:'Chiara',a:28,j:'dottoranda',p:[2,1,1,3],f:1},
+ {n:'Signora Pinna',a:71,j:'vedova, vive sola',p:[2,3,2,1],f:-1},
+ {n:'Dev',a:29,j:'sviluppatore',p:[2,1,0,2],f:1},
+ {n:'Marco e Sara',a:34,j:'turni in ospedale',p:[1,1,2,3],f:0},
+ {n:'Yara',a:26,j:'content creator',p:[3,2,1,0],f:1},
+ {n:'Paolo e Ines',a:33,j:'un figlio in arrivo',p:[2,2,2,1],f:-1},
+ {n:'Samir',a:52,j:'artigiano, bottega in casa',p:[1,2,1,1],f:-1},
+ {n:'Elsa',a:23,j:'studentessa fuori sede',p:[1,3,1,0],f:0}];
+const ENTR=[[0,4],[G-1,6]];
+const norm=w=>{const s=w.reduce((a,b)=>a+b,0)||1;return w.map(v=>v/s)};
+const dot=(a,b)=>a.reduce((s,v,k)=>s+v*b[k],0);
+const lbl=c=>String.fromCharCode(65+c%G)+((c/G|0)+1);
+const pct=v=>Math.round(v*100)+'%';
+
+/* ---------- mondo ---------- */
+function newWorld(cfg,seed){
+  const r=rng(seed), q=[...PERS.keys()];
+  for(let i=q.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[q[i],q[j]]=[q[j],q[i]]}
+  const S={cfg:{...cfg,w:cfg.w.slice()},w:cfg.w.slice(),r,h:new Array(G*G).fill(0),tr:new Float32Array(G*G),com:new Uint8Array(G*G),
+    res:[],queue:q,round:0,fid:60,hist:[],log:[],pending:null,asked:new Set(),born:[]};
+  for(let x=0;x<G;x++)S.tr[x+5*G]=1.5; // un sentiero già battuto tra i due ingressi
+  return S;
+}
+function feat(S,x,z,y){
+  let open=0,shade=0,occ=0,gr=0;
+  for(const [dx,dz] of [[1,0],[-1,0],[0,1],[0,-1]]){const a=x+dx,b=z+dz;
+    if(a<0||b<0||a>=G||b>=G){open++;continue}const hh=S.h[a+b*G];if(hh<=y)open++;if(hh>y+2)shade++}
+  for(let dz=-2;dz<=2;dz++)for(let dx=-2;dx<=2;dx++){const a=x+dx,b=z+dz;if(a<0||b<0||a>=G||b>=G||(!dx&&!dz))continue;const c=a+b*G;
+    if(S.com[c])gr++;
+    if(Math.abs(dx)<2&&Math.abs(dz)<2)occ+=clamp(Math.min(S.h[c],y+2)-Math.max(0,y-1),0,3)}
+  const vic=Math.min(1,occ/10);
+  return [open/4*(1-.12*shade),vic,Math.min(1,gr/3)*(1-y/(S.cfg.hmax+2)),1-vic,S.cfg.hmax>1?y/(S.cfg.hmax-1):0];
+}
+const home=(S,r)=>feat(S,r.c%G,r.c/G|0,r.y);
+const floorOk=(P,y)=>P.f>0?y>=2:P.f<0?y<=1:true;
+function sat(S,r){const P=PERS[r.pid];return .7*dot(norm(P.p),home(S,r).slice(0,4))+.3*(floorOk(P,r.y)?1:0)}
+function log(S,t,k){S.log.unshift({t:'T'+S.round+' · '+t,k})}
+function walk(S,x,z,tx,tz){
+  const at=(a,b)=>a<0||b<0||a>=G||b>=G?0:S.tr[a+b*G];let n=0;
+  while((x!==tx||z!==tz)&&n++<40){const dx=Math.sign(tx-x),dz=Math.sign(tz-z);
+    // stigmergia: a ogni passo si preferisce la traccia già più marcata
+    if(dx&&(!dz||at(x+dx,z)+S.r()*.8>at(x,z+dz)+S.r()*.8))x+=dx;else z+=dz;
+    const c=x+z*G;if(!S.h[c])S.tr[c]+=1}
+}
+function place(S,pid){
+  const W=norm(S.w),P=PERS[pid];let best=-1,bs=-1e9;
+  for(let c=0;c<G*G;c++){if(S.h[c]>=S.cfg.hmax||(S.com[c]&&S.cfg.protect))continue;
+    const s=dot(W,feat(S,c%G,c/G|0,S.h[c]))+S.r()*.03;if(s>bs){bs=s;best=c}}
+  if(best<0){log(S,`${P.n} non trova posto: il lotto è saturo.`,'e');return null}
+  if(S.com[best]){S.com[best]=0;log(S,`Per ${P.n} il sistema costruisce sopra lo spazio comune in ${lbl(best)}.`,'e')}
+  const r={id:S.res.length,pid,c:best,y:S.h[best]++,st:'in'};S.res.push(r);
+  const x=best%G,z=best/G|0,e=ENTR.reduce((a,b)=>Math.abs(a[0]-x)+Math.abs(a[1]-z)<=Math.abs(b[0]-x)+Math.abs(b[1]-z)?a:b);
+  walk(S,x,z,e[0],e[1]);
+  const others=S.res.filter(o=>o.st==='in'&&o!==r);
+  if(others.length){const o=others[Math.floor(S.r()*others.length)];walk(S,x,z,o.c%G,o.c/G|0)}
+  return r.id;
+}
+const present=S=>S.res.filter(r=>r.st==='in');
+function proposal(S){
+  const c=present(S).filter(r=>!S.asked.has(r.id)).map(r=>({r,s:sat(S,r)})).filter(o=>o.s<.5).sort((a,b)=>a.s-b.s)[0];
+  if(!c)return null;
+  const P=PERS[c.r.pid],f=home(S,c.r),np=norm(P.p);let k=0,m=-1;
+  for(let i=0;i<4;i++){const v=np[i]*(1-f[i]);if(v>m){m=v;k=i}}
+  if(S.w[k]>=10)return null;
+  return {who:c.r.id,k,from:S.w[k],to:Math.min(10,S.w[k]+3),s:c.s,f};
+}
+function vote(S,p){const v=present(S),yes=v.filter(r=>norm(PERS[r.pid].p)[p.k]>=.25||sat(S,r)<.4).length;return {yes,n:v.length,pass:yes*2>v.length}}
+function doRound(S){
+  if(S.round>=ROUNDS||S.pending)return;
+  S.round++;S.born=[];
+  for(let i=0;i<PER&&S.queue.length;i++){const id=place(S,S.queue.shift());if(id!=null){S.born.push(id);log(S,`Arriva ${PERS[S.res[id].pid].n}: il sistema le assegna ${lbl(S.res[id].c)}, piano ${S.res[id].y+1}.`)}}
+  for(let c=0;c<G*G;c++){if(!S.h[c]&&!S.com[c]&&S.tr[c]>=3.5){S.com[c]=1;log(S,`Le tracce dei percorsi aprono uno spazio comune in ${lbl(c)}.`,'g')}S.tr[c]*=.8}
+  for(const r of present(S))if(sat(S,r)<.4&&S.fid<45){r.st='via';log(S,`${PERS[r.pid].n} se ne va: casa scomoda e nessuna fiducia nel sistema. L'alloggio resta sfitto.`,'e')}
+  S.pending=proposal(S);S.hist.push(metrics(S));
+}
+function decide(S,ch){
+  const p=S.pending;if(!p)return;const n=PERS[S.res[p.who].pid].n,L=CRIT[p.k].l;
+  if(ch==='si'){const v=vote(S,p),d=Math.round(10-14*(1-v.yes/v.n));S.w[p.k]=p.to;S.fid=clamp(S.fid+d,0,100);log(S,`Accolta la richiesta di ${n}: «${L}» da ${p.from} a ${p.to}. ${v.yes} abitanti su ${v.n} erano d'accordo, fiducia ${d>=0?'+':''}${d}.`,d>=0?'g':'e')}
+  if(ch==='no'){S.fid=Math.max(0,S.fid-12);log(S,`Respinta la richiesta di ${n} su «${L}». Fiducia ${S.fid}.`,'e')}
+  if(ch==='voto'){const v=vote(S,p);if(v.pass)S.w[p.k]=p.to;S.fid=Math.min(100,S.fid+4);log(S,`Assemblea sulla richiesta di ${n}: ${v.yes} sì su ${v.n}. ${v.pass?`Approvata, «${L}» passa a ${p.to}.`:'Respinta.'}`,v.pass?'g':'e')}
+  S.asked.add(p.who);S.pending=null;S.hist[S.hist.length-1]=metrics(S);
+}
+function metrics(S){
+  const pr=present(S),s=pr.map(r=>sat(S,r)),n=s.length,m=n?s.reduce((a,b)=>a+b,0)/n:0;
+  const sd=n?Math.sqrt(s.reduce((a,b)=>a+(b-m)**2,0)/n):0,eq=n?clamp(1-2.5*sd):1;
+  const com=S.com.reduce((a,b)=>a+b,0),free=S.h.filter(v=>!v).length/(G*G);
+  const W=norm(S.w),mp=[0,0,0,0,0];pr.forEach(r=>norm(PERS[r.pid].p).forEach((v,k)=>mp[k]+=v/n));
+  const gap=n?W.reduce((t,v,k)=>t+Math.abs(v-mp[k]),0)/2:0;
+  const via=S.res.filter(r=>r.st==='via').length,idx=Math.max(0,Math.round(100*(.4*m+.2*eq+.2*S.fid/100+.2*Math.min(1,com/5)))-5*via);
+  return {m,eq,fid:S.fid,com,free,gap,idx,n,via};
+}
+function runPolicy(cfg,seed,pol){const S=newWorld(cfg,seed);while(S.round<ROUNDS){doRound(S);if(S.pending)decide(S,pol)}return S}
+
+/* ---------- stato dell'interfaccia ---------- */
+let cfg={w:[5,3,2,2,6],hmax:4,protect:true},seed=(Date.now()&0xffffff),S=newWorld(cfg,seed),phase=1,sel=null,base=null;
+let tt;function toast(m){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(tt);tt=setTimeout(()=>t.hidden=true,2600)}
+
+function renderRules(){
+  const W=phase===1?cfg.w:S.w;
+  $('#rules').innerHTML=CRIT.map((c,k)=>{const d=phase>1?W[k]-S.cfg.w[k]:0;
+    return `<label class="sl">${c.l} <output>${W[k]}${d?` <span class="d">${d>0?'+':''}${d}</span>`:''}</output><input type="range" min="0" max="10" value="${W[k]}" data-k="${k}" ${phase===3?'disabled':''}><small>${c.h}</small></label>`}).join('');
+  $('#hmax').value=cfg.hmax;$('#hOut').textContent=cfg.hmax;$('#protect').checked=cfg.protect;
+  $('#hmax').disabled=$('#protect').disabled=phase!==1;
+  $('#rulesHint').textContent=phase===1?'Per ogni lotto libero il sistema calcola un punteggio con questi pesi e assegna al nuovo abitante il migliore. Tu progetti il criterio, non la casa.'
+    :phase===2?'Puoi ancora cambiare i pesi da solo, ma ogni modifica unilaterale costa 5 punti di fiducia. Il modo condiviso è rispondere alle richieste.'
+    :'Regole finali. In blu lo scarto rispetto a quelle che avevi scritto.';
+  $('#rulesTag').textContent=phase===1?'pesi da 0 a 10':'in vigore';
+  $('#rulesCard').style.order=phase===1?0:2;
+}
+$('#rules').addEventListener('input',e=>{const i=e.target.closest('input');if(!i)return;i.previousElementSibling.textContent=i.value;if(phase===1)cfg.w[+i.dataset.k]=+i.value});
+$('#rules').addEventListener('change',e=>{const i=e.target.closest('input');if(!i||phase!==2)return;const k=+i.dataset.k,v=+i.value,o=S.w[k];if(v===o)return;
+  S.w[k]=v;S.fid=Math.max(0,S.fid-5);log(S,`Hai cambiato da solo «${CRIT[k].l}» da ${o} a ${v}. Fiducia −5.`,'e');if(S.hist.length)S.hist[S.hist.length-1]=metrics(S);renderAll()});
+$('#hmax').addEventListener('input',e=>{cfg.hmax=+e.target.value;$('#hOut').textContent=cfg.hmax;S=newWorld(cfg,seed);renderScene()});
+$('#protect').addEventListener('change',e=>{cfg.protect=e.target.checked});
+
+const pips=v=>'●'.repeat(v)+'○'.repeat(3-v);
+const wants=P=>P.p.map((v,k)=>v?`<span class="want">${CRIT[k].l}<b>${pips(v)}</b></span>`:'').join('');
+function satColor(s){return s>=.6?'var(--good)':s>=.42?'var(--warn)':'var(--bad)'}
+function renderP1(){$('#pers').innerHTML=PERS.map(P=>`<div class="rc"><span class="h"><strong>${P.n}</strong><em>${P.a} anni</em></span><span class="job">${P.j}</span><span class="wants">${wants(P)}</span><span class="st">${FLOOR[P.f]}</span></div>`).join('')}
+function renderP2(){
+  $('#p2h').textContent=S.round?`Turno ${S.round} di ${ROUNDS}`:'Cantiere aperto';
+  $('#p2tag').textContent=`${present(S).length} abitanti · ${S.queue.length} in arrivo`;
+  let a='';
+  if(S.pending){const p=S.pending;p.v=vote(S,p);p.dfid=Math.round(10-14*(1-p.v.yes/p.v.n));const r=S.res[p.who],P=PERS[r.pid];
+    a=`<div class="prop"><span class="lab">Richiesta al sistema</span><span class="who">${P.n}, ${P.a} anni</span>
+    <span class="ask">Chiede più peso a <b>${CRIT[p.k].l}</b>: da ${p.from} a ${p.to}.</span>
+    <span class="lead">Soddisfazione ${pct(p.s)}. Nella sua casa (${lbl(r.c)}, piano ${r.y+1}): luce ${pct(p.f[0])}, vicinato ${pct(p.f[1])}, verde ${pct(p.f[2])}, quiete ${pct(p.f[3])}. La regola cambierà le case dei prossimi, non la sua. Secondo i sondaggi, ${p.v.yes} abitanti su ${p.v.n} la sostengono.</span>
+    <div class="opts"><button class="opt" data-d="si" type="button"><strong>Accogli</strong><span>Il peso cambia subito. Fiducia ${p.dfid>=0?'+':''}${p.dfid}: chi non è d'accordo la perde.</span></button>
+    <button class="opt" data-d="no" type="button"><strong>Respingi</strong><span>Le regole restano tue. Fiducia −12.</span></button>
+    <button class="opt" data-d="voto" type="button"><strong>Metti ai voti</strong><span>Decide l'assemblea a maggioranza. Fiducia +4.</span></button></div></div>`}
+  else if(S.round<ROUNDS){const nx=S.queue.slice(0,PER).map(i=>PERS[i].n).join(', ');
+    a=`<div class="next"><span class="lab">Prossimi ad arrivare</span><span>${nx}</span><div class="row"><button class="btn acc" id="arrive" type="button">Fai arrivare ${Math.min(PER,S.queue.length)} abitanti</button></div></div>`}
+  else a=`<div class="next"><span>Tutti i turni sono finiti. ${present(S).length} abitanti, ${metrics(S).com} spazi comuni.</span><div class="row"><button class="btn acc" id="toP3" type="button">Vai al bilancio</button></div></div>`;
+  $('#act').innerHTML=a;
+  $('#resList').innerHTML=S.res.length?S.res.map(r=>{const P=PERS[r.pid],s=sat(S,r),f=home(S,r);
+    return `<button type="button" class="rc${r.st!=='in'?' gone':''}" data-r="${r.id}" aria-pressed="${sel===r.id}"><span class="h"><strong>${P.n}</strong><em>${r.st==='in'?pct(s):'andato via'}</em></span>
+    <span class="satbar"><i style="width:${pct(s)};background:${satColor(s)}"></i></span><span class="wants">${wants(P)}</span>
+    <span class="st"><span>${lbl(r.c)} · piano ${r.y+1}</span><span class="${floorOk(P,r.y)?'g':'b'}">${floorOk(P,r.y)?'piano ok':'piano sbagliato'}</span><span class="${f[0]>=.75?'g':f[0]>=.5?'w':'b'}">luce ${pct(f[0])}</span><span class="${f[2]>=.5?'g':f[2]>0?'w':'b'}">verde ${pct(f[2])}</span></span></button>`}).join('')
+    :'<p class="lead">Ancora nessuno. Fai arrivare i primi tre.</p>';
+  $('#log').innerHTML=S.log.slice(0,60).map(l=>`<li class="${l.k||''}">${l.t}</li>`).join('');
+}
+$('#act').addEventListener('click',e=>{
+  const d=e.target.closest('[data-d]');if(d){decide(S,d.dataset.d);renderAll();return}
+  if(e.target.closest('#arrive')){doRound(S);renderAll();return}
+  if(e.target.closest('#toP3'))setPhase(3)});
+$('#resList').addEventListener('click',e=>{const b=e.target.closest('[data-r]');if(!b)return;sel=sel===+b.dataset.r?null:+b.dataset.r;renderAll()});
+
+function renderScore(){
+  if(phase===1){$('#score').innerHTML=`<div class="total"><span class="lab">Indice</span><span class="num">—</span><span class="lab">su 100</span></div><p class="lead" style="margin:0">Il quadro del quartiere si accende quando arrivano i primi abitanti. L'indice somma soddisfazione media (40%), equità (20%), fiducia nel sistema (20%) e spazi comuni emersi (20%), meno 5 punti per ogni abitante che se ne va. Attenzione: se gli scontenti se ne vanno, la soddisfazione media di chi resta sale.</p>`;return}
+  const M=metrics(S),rows=[['Soddisfazione media',M.m,pct(M.m)],['Equità tra abitanti',M.eq,pct(M.eq)],['Fiducia nel sistema',M.fid/100,M.fid],['Spazi comuni',Math.min(1,M.com/5),M.com],['Suolo libero',M.free,pct(M.free)],['Scarto regole/abitanti',M.gap,pct(M.gap),1]];
+  $('#score').innerHTML=`<div class="total"><span class="lab">Indice</span><span class="num">${M.idx}</span><span class="lab">su 100</span></div>`+
+    rows.map(([l,v,t,inv])=>`<div class="meter"><span>${l}</span><span class="bar${inv?' inv':''}"><span style="width:${pct(clamp(v))}"></span></span><span class="v">${t}</span></div>`).join('');
+}
+
+/* ---------- bilancio ---------- */
+function renderP3(){
+  if(!base)base={no:runPolicy(S.cfg,seed,'no'),voto:runPolicy(S.cfg,seed,'voto')};
+  const A=metrics(S),B=metrics(base.no),C=metrics(base.voto);
+  const rows=[['Soddisfazione media',A.m,B.m,C.m,pct],['Equità',A.eq,B.eq,C.eq,pct],['Fiducia',A.fid,B.fid,C.fid,v=>v],['Spazi comuni',A.com,B.com,C.com,v=>v],['Suolo libero',A.free,B.free,C.free,pct],['Andati via',A.via,B.via,C.via,v=>v,1],['Scarto regole/abitanti',A.gap,B.gap,C.gap,pct,1]];
+  const win=(v,a,inv)=>(inv?v<=Math.min(...a):v>=Math.max(...a))?' class="win"':'';
+  $('#cmp').innerHTML=`<tr><th>Criterio</th><th>Tu</th><th>Regole fisse</th><th>Sempre ai voti</th></tr>`+
+    rows.map(([l,a,b,c,f,inv])=>`<tr><td>${l}</td>${[a,b,c].map(v=>`<td${win(v,[a,b,c],inv)}>${f(v)}</td>`).join('')}</tr>`).join('')+
+    `<tr class="tot"><td>Indice</td><td>${A.idx}</td><td>${B.idx}</td><td>${C.idx}</td></tr>`;
+  const best=Math.max(B.idx,C.idx);
+  $('#verdict').textContent=A.idx>best?`Il tuo governo batte entrambi gli scenari di ${A.idx-best} punti`:A.idx===best?'Pari con il miglior scenario automatico':`Uno scenario automatico fa meglio di ${best-A.idx} punti`;
+  const moved=norm(S.w).reduce((t,v,k)=>t+Math.abs(v-norm(S.cfg.w)[k]),0)/2;
+  $('#refl').textContent=`Le regole si sono spostate del ${pct(moved)} rispetto a quelle che avevi scritto. `+(moved<.08?'Gli abitanti hanno abitato le tue scelte senza poterle toccare: chi ha progettato questo quartiere sei tu.':moved>.25?'Buona parte del sistema è stata riscritta da chi lo abita: il tuo progetto è stato il modo in cui le regole potevano cambiare.':'Le regole finali sono un compromesso tra te e chi abita il quartiere.');
+  drawChart([S,base.no,base.voto]);
+}
+function drawChart(W){
+  const cv=$('#chart'),w=cv.clientWidth||500,h=230,dpr=Math.min(2,devicePixelRatio||1);cv.width=w*dpr;cv.height=h*dpr;
+  const g=cv.getContext('2d');g.setTransform(dpr,0,0,dpr,0,0);g.fillStyle=css('--bg');g.fillRect(0,0,w,h);
+  const L=36,R=112,T=14,B=26,X=i=>L+(w-L-R)*(i-1)/(ROUNDS-1),Y=v=>T+(h-T-B)*(1-v/100);
+  g.font='11px "IBM Plex Mono",monospace';g.fillStyle=css('--muted');g.textAlign='right';g.textBaseline='middle';
+  for(let v=0;v<=100;v+=25){g.strokeStyle=css('--soft');g.lineWidth=1;g.beginPath();g.moveTo(L,Y(v));g.lineTo(w-R,Y(v));g.stroke();g.fillText(v,L-6,Y(v))}
+  g.textAlign='center';g.textBaseline='top';for(let i=1;i<=ROUNDS;i++)g.fillText('T'+i,X(i),h-B+6);
+  const ser=[[W[0],css('--ink'),'tu',[]],[W[1],css('--bad'),'regole fisse',[6,4]],[W[2],css('--accent'),'sempre ai voti',[]]];
+  const ends=[];
+  ser.forEach(([S2,c,name,dash])=>{const v=S2.hist.map(m=>m.idx);if(!v.length)return;g.setLineDash(dash);g.strokeStyle=c;g.lineWidth=name==='tu'?3:2;g.beginPath();
+    v.forEach((y,i)=>i?g.lineTo(X(i+1),Y(y)):g.moveTo(X(1),Y(y)));g.stroke();g.setLineDash([]);
+    const li=v.length;g.fillStyle=c;g.beginPath();g.arc(X(li),Y(v[li-1]),4,0,7);g.fill();ends.push({y:Y(v[li-1]),c,t:name+' · '+v[li-1],x:X(li)})});
+  ends.sort((a,b)=>a.y-b.y);for(let i=1;i<ends.length;i++)if(ends[i].y-ends[i-1].y<14)ends[i].y=ends[i-1].y+14;
+  g.textAlign='left';g.textBaseline='middle';ends.forEach(e=>{g.fillStyle=e.c;g.fillText(e.t,e.x+8,e.y)});
+}
+$('#replay').addEventListener('click',()=>{cfg={...S.cfg,w:S.cfg.w.slice()};startGame()});
+$('#newRules').addEventListener('click',()=>{cfg={...S.cfg,w:S.cfg.w.slice()};S=newWorld(cfg,seed);setPhase(1)});
+$('#newSeed').addEventListener('click',()=>{seed=(Date.now()&0xffffff);cfg={...S.cfg,w:S.cfg.w.slice()};S=newWorld(cfg,seed);setPhase(1);toast('Nuovo ordine di arrivo. Riscrivi le regole o apri il cantiere.')});
+
+/* ---------- fasi ---------- */
+function startGame(){S=newWorld(cfg,seed);base=null;sel=null;setPhase(2)}
+$('#go2').addEventListener('click',startGame);
+function setPhase(p){
+  if(p===2&&phase===1&&!S.round&&!S.res.length){S=newWorld(cfg,seed);base=null}
+  if(p===3&&(S.round<ROUNDS||S.pending)){toast('Il bilancio si apre alla fine del quinto turno.');return}
+  if(p===1&&phase!==1){cfg={...S.cfg,w:S.cfg.w.slice()};S=newWorld(cfg,seed);base=null;sel=null}
+  phase=p;renderAll();
+  if(innerWidth<920&&p>1)document.querySelector('.panel').scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});
+}
+document.querySelectorAll('.step').forEach(b=>b.addEventListener('click',()=>setPhase(+b.dataset.go)));
+function renderAll(){
+  document.querySelectorAll('.step').forEach(b=>{const p=+b.dataset.go;b.setAttribute('aria-current',p===phase?'step':'false');b.disabled=(p===3&&(S.round<ROUNDS||!!S.pending))||(p===2&&phase===1)});
+  $('#p1').hidden=phase!==1;$('#p2').hidden=phase!==2;$('#p3').hidden=phase!==3;
+  $('#vtMeta').textContent=`Lotto 10 × 10 · max ${S.cfg.hmax} piani`;
+  $('#vtTitle').textContent=phase===1?'Lotto vuoto':phase===2?(S.round?`Turno ${S.round} di ${ROUNDS}`:'Cantiere aperto'):'Quartiere finito';
+  renderRules();renderScore();
+  if(phase===1)renderP1();if(phase===2)renderP2();if(phase===3)renderP3();
+  renderScene();
+}
+
+/* ---------- 3D ---------- */
+const V={th:.9,ph:.95,rad:19,ty:1.2,idle:0,ok:false};
+function init3d(){
+  const el=$('#view3d');
+  if(!window.THREE){el.innerHTML='<div class="nogl">La vista 3D non si è caricata. Il gioco funziona lo stesso: segui le schede degli abitanti a destra.</div>';return}
+  const T=THREE;V.ok=true;
+  V.r=new T.WebGLRenderer({antialias:true});V.r.setPixelRatio(Math.min(2,devicePixelRatio||1));V.r.shadowMap.enabled=true;V.r.shadowMap.type=T.PCFSoftShadowMap;el.appendChild(V.r.domElement);
+  V.s=new T.Scene();V.cam=new T.PerspectiveCamera(36,1,.1,300);
+  V.s.add(new T.HemisphereLight(0xffffff,0x7a8078,.7));
+  const sun=new T.DirectionalLight(0xffffff,.8);sun.position.set(-7,14,6);sun.castShadow=true;sun.shadow.mapSize.set(1536,1536);
+  Object.assign(sun.shadow.camera,{left:-10,right:10,top:10,bottom:-10,near:1,far:40});sun.shadow.bias=-.0008;V.s.add(sun);
+  V.ground=new T.Mesh(new T.PlaneGeometry(80,80),new T.MeshStandardMaterial({roughness:1}));V.ground.rotation.x=-Math.PI/2;V.ground.position.y=-.02;V.ground.receiveShadow=true;V.s.add(V.ground);
+  V.lot=new T.Mesh(new T.BoxGeometry(G,.04,G),new T.MeshStandardMaterial({roughness:1}));V.lot.receiveShadow=true;V.s.add(V.lot);
+  const gp=[];for(let i=0;i<=G;i++){gp.push(i-G/2,.03,-G/2,i-G/2,.03,G/2,-G/2,.03,i-G/2,G/2,.03,i-G/2)}
+  const gg=new T.BufferGeometry();gg.setAttribute('position',new T.Float32BufferAttribute(gp,3));
+  V.grid=new T.LineSegments(gg,new T.LineBasicMaterial({transparent:true,opacity:.35}));V.s.add(V.grid);
+  V.dyn=new T.Group();V.s.add(V.dyn);
+  V.box=new T.BoxGeometry(.92,FH*.92,.92);V.edges=new T.EdgesGeometry(V.box);V.tile=new T.BoxGeometry(.96,.05,.96);
+  V.trunk=new T.CylinderGeometry(.04,.05,.35,6);V.crown=new T.IcosahedronGeometry(.26,0);V.post=new T.CylinderGeometry(.08,.08,1.2,10);
+  V.mats={};
+  const cv=V.r.domElement,pts=new Map();let down=null;
+  cv.addEventListener('pointerdown',e=>{cv.setPointerCapture(e.pointerId);pts.set(e.pointerId,{x:e.clientX,y:e.clientY});down=[e.clientX,e.clientY];V.idle=performance.now();cv.style.cursor='grabbing'});
+  cv.addEventListener('pointermove',e=>{if(!pts.has(e.pointerId))return;const p=pts.get(e.pointerId);
+    if(pts.size===1){V.th-=(e.clientX-p.x)*.008;V.ph=clamp(V.ph-(e.clientY-p.y)*.006,.25,1.45)}
+    else{const a=[...pts.values()],d0=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);p.x=e.clientX;p.y=e.clientY;const b=[...pts.values()],d1=Math.hypot(b[0].x-b[1].x,b[0].y-b[1].y);if(d0>0)V.rad=clamp(V.rad*d0/d1,8,40)}
+    p.x=e.clientX;p.y=e.clientY;V.idle=performance.now()});
+  const up=e=>{pts.delete(e.pointerId);cv.style.cursor='grab';
+    if(down&&Math.hypot(e.clientX-down[0],e.clientY-down[1])<6&&phase>1){const r=cv.getBoundingClientRect(),ray=new T.Raycaster();
+      ray.setFromCamera(new T.Vector2((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1),V.cam);
+      const hit=ray.intersectObjects(V.dyn.children.filter(o=>o.userData.rid!=null))[0];
+      if(hit){sel=hit.object.userData.rid;renderAll()}}down=null};
+  cv.addEventListener('pointerup',up);cv.addEventListener('pointercancel',up);
+  cv.addEventListener('wheel',e=>{e.preventDefault();V.rad=clamp(V.rad*(1+e.deltaY*.001),8,40);V.idle=performance.now()},{passive:false});
+  new ResizeObserver(resize).observe(el);resize();
+  const loop=t=>{if(!reduced&&t-V.idle>5000)V.th+=.0015;
+    V.cam.position.set(V.rad*Math.sin(V.ph)*Math.cos(V.th),V.ty+V.rad*Math.cos(V.ph),V.rad*Math.sin(V.ph)*Math.sin(V.th));V.cam.lookAt(0,V.ty,0);
+    V.dyn.children.forEach(o=>{if(o.userData.ty!=null){o.position.y+=(o.userData.ty-o.position.y)*(reduced?1:.12)}});
+    V.r.render(V.s,V.cam);requestAnimationFrame(loop)};
+  requestAnimationFrame(loop);
+}
+function resize(){const el=$('#view3d'),w=el.clientWidth,h=el.clientHeight;if(!w||!h||!V.ok)return;V.r.setSize(w,h,false);V.cam.aspect=w/h;V.cam.updateProjectionMatrix()}
+function mat(key,o={}){const k=key+JSON.stringify(o);if(!V.mats[k]){const T=THREE;V.mats[k]=o.line?new T.LineBasicMaterial({color:new T.Color(css(key)),transparent:true,opacity:o.op??1}):new T.MeshStandardMaterial({color:new T.Color(css(key)),roughness:.85,transparent:o.op!=null,opacity:o.op??1,emissive:o.em?new T.Color(css(key)):0x000000,emissiveIntensity:o.em||0})}return V.mats[k]}
+function renderScene(){
+  if(!V.ok)return;const T=THREE;
+  V.s.background=new T.Color(css('--panel'));V.ground.material.color=new T.Color(css('--ground'));V.lot.material.color=new T.Color(css('--lot'));V.grid.material.color=new T.Color(css('--line'));
+  const prev=new Map();V.dyn.children.forEach(o=>{if(o.userData.rid!=null)prev.set(o.userData.rid,o.position.y)});
+  while(V.dyn.children.length)V.dyn.remove(V.dyn.children[0]);
+  const P=(x,z)=>[x-G/2+.5,z-G/2+.5];
+  for(let c=0;c<G*G;c++){const [x,z]=P(c%G,c/G|0);
+    if(S.com[c]){const m=new T.Mesh(V.tile,mat('--green'));m.position.set(x,.03,z);m.receiveShadow=true;V.dyn.add(m);
+      if(!S.h[c]){const t=new T.Mesh(V.trunk,mat('--muted'));t.position.set(x,.2,z);const cr=new T.Mesh(V.crown,mat('--green'));cr.position.set(x,.5,z);cr.castShadow=true;V.dyn.add(t,cr)}}
+    else if(S.tr[c]>.4&&!S.h[c]){const m=new T.Mesh(V.tile,mat('--trace',{op:Math.min(.85,S.tr[c]/4)}));m.position.set(x,.03,z);V.dyn.add(m)}}
+  ENTR.forEach(([ex,ez])=>{const [x,z]=P(ex,ez),m=new T.Mesh(V.post,mat('--accent'));m.position.set(x+(ex?.62:-.62),.6,z);V.dyn.add(m)});
+  for(const r of S.res){const [x,z]=P(r.c%G,r.c/G|0),s=sat(S,r),gone=r.st!=='in';
+    const key=gone?'--vac':s>=.6?'--good':s>=.42?'--warn':'--bad';
+    const m=new T.Mesh(V.box,mat(key,sel===r.id?{em:.35}:gone?{op:.55}:{}));const ty=r.y*FH+FH/2+.04;
+    m.position.set(x,prev.has(r.id)?prev.get(r.id):(S.born.includes(r.id)&&!reduced?ty+6:ty),z);m.userData={rid:r.id,ty};m.castShadow=m.receiveShadow=true;
+    const e=new T.LineSegments(V.edges,sel===r.id?mat('--accent',{line:1}):mat('--ink',{line:1,op:.25}));m.add(e);V.dyn.add(m)}
+}
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{V.mats={};renderAll()});
+new MutationObserver(()=>{V.mats={};renderAll()}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+addEventListener('resize',()=>{if(phase===3&&base)drawChart([S,base.no,base.voto])});
+
+init3d();renderAll();
+})();
+</script>

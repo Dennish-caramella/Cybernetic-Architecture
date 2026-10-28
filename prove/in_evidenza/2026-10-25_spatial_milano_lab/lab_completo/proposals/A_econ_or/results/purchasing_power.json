@@ -1,0 +1,189 @@
+{
+ "constants": {
+  "pov_single": 1256.37,
+  "pov_single_2022": 1175.0,
+  "rent_share_in_threshold": 0.4,
+  "p_milan": 1.047,
+  "p_milan_hi": 1.1,
+  "nic": {
+   "2020": -0.2,
+   "2021": 1.9,
+   "2022": 8.1,
+   "2023": 5.7,
+   "2024": 1.0,
+   "2025": 1.7
+  },
+  "g_income": [
+   0.1,
+   0.15,
+   0.2
+  ]
+ },
+ "nonhousing_basket_single": 753.8219999999999,
+ "omi_last_period": "2024/2 semestre",
+ "erosion": [
+  {
+   "g_income_nominal": 0.1,
+   "cpi_2019_24": 0.1736180502495397,
+   "real_income_change": -0.06272743524512647,
+   "omi_rent_change": 0.41414141414141414,
+   "income_vs_rent": -0.2221428571428571
+  },
+  {
+   "g_income_nominal": 0.15,
+   "cpi_2019_24": 0.1736180502495397,
+   "real_income_change": -0.020124136847177843,
+   "omi_rent_change": 0.41414141414141414,
+   "income_vs_rent": -0.18678571428571433
+  },
+  {
+   "g_income_nominal": 0.2,
+   "cpi_2019_24": 0.1736180502495397,
+   "real_income_change": 0.0224791615507709,
+   "omi_rent_change": 0.41414141414141414,
+   "income_vs_rent": -0.15142857142857147
+  }
+ ],
+ "variants": {
+  "base_tau30_or_resid750": {
+   "D_total": 9793.609731769562,
+   "share_target": 0.04382686444014783,
+   "share_erp": 0.46254706091731074,
+   "share_mkt_fail": 0.46433973650444876,
+   "target_net_p10_p50_p90": [
+    1934.4637208411664,
+    2417.803112536136,
+    4052.352181820843
+   ]
+  },
+  "ratio_only_tau30": {
+   "D_total": 9793.609731769562,
+   "share_target": 0.04382686444014783,
+   "share_erp": 0.46254706091731074,
+   "share_mkt_fail": 0.4639694753334042,
+   "target_net_p10_p50_p90": [
+    1934.4637208411664,
+    2417.803112536136,
+    4052.352181820843
+   ]
+  },
+  "residual_istat": {
+   "D_total": 102.94441605671047,
+   "share_target": 0.00046068110645168856,
+   "share_erp": 0.46254706091731074,
+   "share_mkt_fail": 0.3145605659670987,
+   "target_net_p10_p50_p90": [
+    1853.072085811357,
+    2688.740275555884,
+    3553.5651668092214
+   ]
+  },
+  "residual_istat_hi_rentshare30": {
+   "D_total": 307.7201299367227,
+   "share_target": 0.0013770620628768529,
+   "share_erp": 0.46254706091731074,
+   "share_mkt_fail": 0.3544425032074996,
+   "target_net_p10_p50_p90": [
+    1874.5928279797274,
+    2422.446942074568,
+    3535.9823052543893
+   ]
+  },
+  "residual_istat_x1.5": {
+   "D_total": 2067.28812847736,
+   "share_target": 0.009251211662192052,
+   "share_erp": 0.46254706091731074,
+   "share_mkt_fail": 0.4356000592539706,
+   "target_net_p10_p50_p90": [
+    1919.3881740742293,
+    2534.5351505645776,
+    3589.3668049782623
+   ]
+  },
+  "base_2019_relative_rents": {
+   "D_total": 2796.238358186258,
+   "share_target": 0.012513298244775737,
+   "share_erp": 0.4525852846305443,
+   "share_mkt_fail": 0.36466898028400724,
+   "target_net_p10_p50_p90": [
+    1908.6736087263857,
+    2425.931060488602,
+    3901.1141475908094
+   ]
+  }
+ },
+ "share_D_in_top20_rent_nil": {
+  "base_tau30_or_resid750": 0.8489344754675482,
+  "ratio_only_tau30": 0.8489344754675482,
+  "residual_istat": 1.0000000000000002,
+  "residual_istat_hi_rentshare30": 0.9944801753965417,
+  "residual_istat_x1.5": 0.7404161125957438,
+  "base_2019_relative_rents": 0.9972242848292983
+ },
+ "residual_istat_D_boot": [
+  13.025896599057424,
+  153.22163253692892,
+  412.44994686670907
+ ],
+ "portfolios": {
+  "P2r": {
+   "budget": 1000000000.0,
+   "beta": 0.5,
+   "gini_max": null,
+   "status": "Optimal",
+   "obj": 89.57745496252493,
+   "gap": 0.00017659025948192934,
+   "sec": 6.5,
+   "n_var": 21957,
+   "n_row": 5377,
+   "sites": 21,
+   "dwellings": 576.8626900932766,
+   "cost_eur": 183600469.9749242,
+   "served_mean": 153.0421035465982,
+   "served_cvar": 26.1128063784516,
+   "served_p05": 13.025896599057425,
+   "demand_mean": 153.22163253692892,
+   "gini_cov": 0.00016456975811866175,
+   "nil_served_any": 7,
+   "site_overlap_with_P2": 0.11504424778761062,
+   "top_nil": {
+    "Brera": 171.0,
+    "Duomo": 144.0,
+    "Guastalla": 60.0,
+    "Buenos Aires - Porta Venezia - Porta Monforte": 48.0,
+    "Tre Torri": 26.0,
+    "Isola": 24.0
+   }
+  },
+  "P6r": {
+   "budget": 1000000000.0,
+   "beta": 0.5,
+   "gini_max": 0.08,
+   "status": "Optimal",
+   "obj": 89.48227484988803,
+   "gap": 0.0012394450894384547,
+   "sec": 6.4,
+   "n_var": 21978,
+   "n_row": 5420,
+   "sites": 20,
+   "dwellings": 576.8626900932763,
+   "cost_eur": 217637883.5749242,
+   "served_mean": 152.85174332132448,
+   "served_cvar": 26.1128063784516,
+   "served_p05": 13.025896599057425,
+   "demand_mean": 153.22163253692892,
+   "gini_cov": 0.00043801790068886655,
+   "nil_served_any": 7,
+   "site_overlap_with_P6": 0.10256410256410256,
+   "top_nil": {
+    "Brera": 150.0,
+    "Duomo": 128.0,
+    "Guastalla": 84.0,
+    "Porta Ticinese - Conca Del Naviglio": 52.0,
+    "Buenos Aires - Porta Venezia - Porta Monforte": 48.0,
+    "Tre Torri": 25.0
+   }
+  }
+ },
+ "runtime_min": 0.8
+}

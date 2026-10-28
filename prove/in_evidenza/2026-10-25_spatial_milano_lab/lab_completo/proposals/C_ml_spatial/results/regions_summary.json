@@ -1,0 +1,49 @@
+{
+ "n_hex": 1077,
+ "pop_total": 1349888,
+ "income_downscaling": {
+  "slope_log_net_on_deg_share": 2.763,
+  "r2_across_nil": 0.752,
+  "n_nil_fit": 81
+ },
+ "flat_m2": 50,
+ "pop_min_region": 5000,
+ "pressure_quantiles": {
+  "0.05": 0.202,
+  "0.25": 0.264,
+  "0.5": 0.293,
+  "0.75": 0.322,
+  "0.95": 0.362
+ },
+ "moran_I_global": 0.57,
+ "lisa": {
+  "sig_raw_p05": 377,
+  "sig_fdr_q05": 193,
+  "fdr_by_quadrant": {
+   "LL": 111,
+   "HH": 74,
+   "LH": 4,
+   "HL": 4
+  },
+  "fdr_HH_pop": 63026,
+  "fdr_HH_in_nil_at_or_below_median": 2,
+  "nils_with_hidden_HH": [
+   "Parco Delle Abbazie"
+  ]
+ },
+ "maxp": {
+  "p_regions": 195,
+  "constructions": 60,
+  "constructions_reaching_pmax": 1,
+  "r2_maxp": 0.868,
+  "r2_nil_partition_88": 0.495,
+  "region_pop_min_median_max": [
+   5009,
+   6491,
+   13878
+  ],
+  "ari_top10_mean": 0.709,
+  "ari_top10_min": 0.631,
+  "regions_crossing_nil_borders": 125
+ }
+}

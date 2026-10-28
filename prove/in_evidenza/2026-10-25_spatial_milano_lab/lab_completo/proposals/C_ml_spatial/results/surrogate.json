@@ -1,0 +1,34 @@
+{
+ "n_candidates": 15718,
+ "n_criteria": 6,
+ "criteria": [
+  "A_jobs",
+  "A_school",
+  "A_services",
+  "A_green",
+  "metro_close",
+  "headroom"
+ ],
+ "numpy_ms": {
+  "wlc_all_candidates": 0.082,
+  "mc1000_acceptability_topK": 221.0,
+  "exact_shortlist500": 0.002,
+  "mlp_shortlist500": 0.1693
+ },
+ "mlp": {
+  "train_s": 3.7,
+  "spearman_median": 0.9998,
+  "spearman_p5": 0.9992,
+  "top20_overlap_mean": 0.967,
+  "top20_overlap_p5": 0.9
+ },
+ "acceptability": {
+  "K": 100,
+  "candidates_with_P_topK_gt_0.5": 96,
+  "candidates_with_P_topK_gt_0": 326
+ },
+ "node_ms": {
+  "wlc_ms": 0.18322899999999998,
+  "mc1000_ms": 1383.0501
+ }
+}

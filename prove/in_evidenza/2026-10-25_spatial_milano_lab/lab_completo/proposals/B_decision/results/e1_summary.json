@@ -1,0 +1,186 @@
+{
+ "n_pool": 11429,
+ "n_reduced": 3723,
+ "n_nil_reduced": 76,
+ "top_by_holistic_uniform": [
+  {
+   "ref": "015400.27",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "holistic_uniform": 0.38328500000000004,
+   "b1_uniform": 0.11365,
+   "top10_uniform": 0.502,
+   "confidence_sd05": 0.283
+  },
+  {
+   "ref": "015200.208",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "holistic_uniform": 0.368345,
+   "b1_uniform": 0.14805,
+   "top10_uniform": 0.4798,
+   "confidence_sd05": 0.214
+  },
+  {
+   "ref": "015200.232",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "holistic_uniform": 0.33297000000000004,
+   "b1_uniform": 0.0787,
+   "top10_uniform": 0.45635000000000003,
+   "confidence_sd05": 0.197
+  },
+  {
+   "ref": "039600.314",
+   "nil_name": "Parco Forlanini - Cavriano",
+   "holistic_uniform": 0.25583,
+   "b1_uniform": 0.1379,
+   "top10_uniform": 0.32355,
+   "confidence_sd05": 0.426
+  },
+  {
+   "ref": "061900.177",
+   "nil_name": "Triulzo Superiore",
+   "holistic_uniform": 0.18122,
+   "b1_uniform": 0.08395,
+   "top10_uniform": 0.23520000000000002,
+   "confidence_sd05": 0.29
+  },
+  {
+   "ref": "039700.144",
+   "nil_name": "Parco Forlanini - Cavriano",
+   "holistic_uniform": 0.15319000000000002,
+   "b1_uniform": 0.03445,
+   "top10_uniform": 0.21690000000000004,
+   "confidence_sd05": 0.19
+  },
+  {
+   "ref": "024100.57",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "holistic_uniform": 0.13844,
+   "b1_uniform": 0.0,
+   "top10_uniform": 0.26945,
+   "confidence_sd05": NaN
+  },
+  {
+   "ref": "011700.231",
+   "nil_name": "Q.re Gallaratese - Q.re San Leonardo - Lampugnano",
+   "holistic_uniform": 0.12719,
+   "b1_uniform": 0.06,
+   "top10_uniform": 0.17184999999999997,
+   "confidence_sd05": 0.17
+  },
+  {
+   "ref": "016400.116",
+   "nil_name": "Parco Bosco in Citta'",
+   "holistic_uniform": 0.123875,
+   "b1_uniform": 0.07245,
+   "top10_uniform": 0.15660000000000002,
+   "confidence_sd05": 0.344
+  },
+  {
+   "ref": "061900.60",
+   "nil_name": "Triulzo Superiore",
+   "holistic_uniform": 0.11369000000000001,
+   "b1_uniform": 0.0,
+   "top10_uniform": 0.17470000000000002,
+   "confidence_sd05": NaN
+  }
+ ],
+ "top_by_min_archetype_top10": [
+  {
+   "ref": "015200.232",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "top10_min_archetypes": 0.8389500000000001,
+   "top10_young_worker": 0.9897499999999999,
+   "top10_family_children": 0.88785,
+   "top10_elderly": 0.8389500000000001,
+   "top10_commuter": 0.8784500000000001
+  },
+  {
+   "ref": "015400.27",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "top10_min_archetypes": 0.7624500000000001,
+   "top10_young_worker": 0.9925,
+   "top10_family_children": 0.82085,
+   "top10_elderly": 0.7624500000000001,
+   "top10_commuter": 0.916
+  },
+  {
+   "ref": "015200.208",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "top10_min_archetypes": 0.3786,
+   "top10_young_worker": 0.8391,
+   "top10_family_children": 0.8962000000000001,
+   "top10_elderly": 0.58375,
+   "top10_commuter": 0.3786
+  },
+  {
+   "ref": "024100.85",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "top10_min_archetypes": 0.22775,
+   "top10_young_worker": 0.8742999999999999,
+   "top10_family_children": 0.22775,
+   "top10_elderly": 0.24835000000000002,
+   "top10_commuter": 0.56555
+  },
+  {
+   "ref": "039600.314",
+   "nil_name": "Parco Forlanini - Cavriano",
+   "top10_min_archetypes": 0.20614999999999997,
+   "top10_young_worker": 0.26105,
+   "top10_family_children": 0.30050000000000004,
+   "top10_elderly": 0.71885,
+   "top10_commuter": 0.20614999999999997
+  },
+  {
+   "ref": "015000.791",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "top10_min_archetypes": 0.17204999999999998,
+   "top10_young_worker": 0.6533,
+   "top10_family_children": 0.17204999999999998,
+   "top10_elderly": 0.25395,
+   "top10_commuter": 0.2345
+  },
+  {
+   "ref": "015200.57",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "top10_min_archetypes": 0.09365,
+   "top10_young_worker": 0.6364500000000001,
+   "top10_family_children": 0.09365,
+   "top10_elderly": 0.32699999999999996,
+   "top10_commuter": 0.38730000000000003
+  },
+  {
+   "ref": "020400.224",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "top10_min_archetypes": 0.0822,
+   "top10_young_worker": 0.17059999999999997,
+   "top10_family_children": 0.17875000000000002,
+   "top10_elderly": 0.4492,
+   "top10_commuter": 0.0822
+  },
+  {
+   "ref": "020400.213",
+   "nil_name": "Cimiano - Rottole - Q.re Feltre",
+   "top10_min_archetypes": 0.06755,
+   "top10_young_worker": 0.14859999999999998,
+   "top10_family_children": 0.24715000000000004,
+   "top10_elderly": 0.48624999999999996,
+   "top10_commuter": 0.06755
+  },
+  {
+   "ref": "039600.241",
+   "nil_name": "Parco Forlanini - Cavriano",
+   "top10_min_archetypes": 0.036699999999999997,
+   "top10_young_worker": 0.06425,
+   "top10_family_children": 0.063,
+   "top10_elderly": 0.44935,
+   "top10_commuter": 0.036699999999999997
+  }
+ ],
+ "n_parcels_with_b1_gt0_uniform": 123,
+ "overlap_top10_by_archetype": {
+  "young_worker": 6,
+  "family_children": 6,
+  "elderly": 4,
+  "commuter": 6
+ }
+}

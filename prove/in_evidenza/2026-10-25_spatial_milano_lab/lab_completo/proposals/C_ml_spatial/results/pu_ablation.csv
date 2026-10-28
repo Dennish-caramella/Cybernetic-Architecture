@@ -1,0 +1,6 @@
+features,pr_auc,base_rate,roc_auc,recall@1%,recall@5%,recall@10%,c_mean
+physical,0.02,0.0128,0.626,0.036,0.099,0.159,0.021
+physical+context,0.099,0.0128,0.737,0.163,0.394,0.501,0.06
+physical+context+nil,0.256,0.0128,0.73,0.281,0.474,0.524,0.214
+all(+dusaf2024),0.326,0.0128,0.775,0.31,0.531,0.589,0.256
+context+nil only (no parcel physics),0.244,0.0128,0.723,0.277,0.453,0.508,0.223

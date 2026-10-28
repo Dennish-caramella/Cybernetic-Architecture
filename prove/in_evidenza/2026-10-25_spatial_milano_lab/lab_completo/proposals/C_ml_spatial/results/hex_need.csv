@@ -1,0 +1,1078 @@
+x,y,pop,nil,rent_omi,deg_share,net_m_est,pressure,lisa_I,lisa_p,lisa_quad,sig_raw05,sig_fdr05,region
+-1.716,-7.709,166.0,Bruzzano,10.15,0.1785,1741.0,0.2915,-0.0121,0.2413,HL,False,False,R27
+-1.283,-7.709,122.0,Bruzzano,10.15,0.2091,1895.0,0.2679,0.1628,0.2563,LL,False,False,R27
+-2.366,-7.334,365.0,Comasina,10.15,0.1997,1984.0,0.2558,-0.1803,0.337,LH,False,False,R27
+-1.933,-7.334,222.0,Bruzzano,10.15,0.1809,1753.0,0.2896,0.002,0.2997,LL,False,False,R27
+-1.5,-7.334,1568.0,Bruzzano,10.15,0.2287,2000.0,0.2537,0.0369,0.4442,LL,False,False,R27
+-1.067,-7.334,235.0,Bruzzano,10.15,0.203,1863.0,0.2724,-0.0638,0.3441,LH,False,False,R27
+-0.633,-7.334,12.0,Parco Nord,11.7,0.1739,1718.0,0.3405,0.4015,0.2415,HH,False,False,R84
+1.532,-7.334,2.0,Bicocca,11.7,0.317,2079.0,0.2814,-0.1407,0.0755,LH,False,False,R57
+1.965,-7.334,72.0,Bicocca,11.7,0.2538,1746.0,0.3351,0.6206,0.1113,HH,False,False,R96
+-7.778,-6.959,5.0,Cascina Merlata,8.0,0.0974,1304.0,0.3068,0.1019,0.3518,HH,False,False,R29
+-7.345,-6.959,208.0,Cascina Merlata,8.0,0.1004,1315.0,0.3043,0.0917,0.295,HH,False,False,R29
+-2.582,-6.959,1386.0,Comasina,10.15,0.1279,1627.0,0.3119,-0.013,0.4772,HL,False,False,R138
+-2.149,-6.959,2889.0,Comasina,10.15,0.1346,1658.0,0.3062,0.013,0.471,HH,False,False,R09
+-1.716,-6.959,1215.0,Bruzzano,10.15,0.1826,1761.0,0.2882,-0.0013,0.47,LH,False,False,R27
+-1.283,-6.959,2886.0,Bruzzano,10.15,0.1492,1606.0,0.3161,0.0314,0.4464,HH,False,False,R84
+-0.85,-6.959,926.0,Bruzzano,10.15,0.1504,1611.0,0.315,0.3232,0.0581,HH,False,False,R84
+-0.417,-6.959,5.0,Parco Nord,11.7,0.1749,1723.0,0.3395,0.768,0.0572,HH,False,False,R84
+0.449,-6.959,2.0,Parco Nord,11.7,0.1775,1735.0,0.3371,0.3613,0.2493,HH,False,False,R57
+0.882,-6.959,19.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.194,1837.0,0.3184,0.3799,0.0881,HH,False,False,R57
+1.315,-6.959,1305.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.2143,1943.0,0.3011,0.1512,0.0582,HH,False,False,R57
+1.748,-6.959,1213.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1596,1670.0,0.3502,0.4648,0.1756,HH,False,False,R96
+2.181,-6.959,280.0,Bicocca,12.4,0.273,1841.0,0.3368,0.1168,0.4167,HH,False,False,R96
+-7.562,-6.584,100.0,Cascina Merlata,8.0,0.0999,1313.0,0.3047,0.0935,0.2931,HH,False,False,R29
+-7.129,-6.584,419.0,Cascina Merlata,8.0,0.1001,1314.0,0.3045,0.0928,0.2578,HH,False,False,R29
+-6.696,-6.584,34.0,Cascina Merlata,8.0,0.0981,1306.0,0.3062,0.1037,0.2659,HH,False,False,R29
+-6.263,-6.584,20.0,Cascina Merlata,8.0,0.0998,1313.0,0.3048,0.0935,0.2885,HH,False,False,R29
+-2.799,-6.584,89.0,Comasina,10.15,0.1759,1858.0,0.2732,-0.2647,0.0583,LH,False,False,R138
+-2.366,-6.584,2211.0,Comasina,10.15,0.1194,1589.0,0.3193,0.1129,0.3213,HH,False,False,R138
+-1.933,-6.584,1626.0,Comasina,10.15,0.1582,1769.0,0.2869,-0.0139,0.305,LH,False,False,R09
+-1.5,-6.584,2598.0,Bruzzano,10.15,0.171,1705.0,0.2976,0.0508,0.2047,HH,False,False,R27
+-1.067,-6.584,3141.0,Bruzzano,10.15,0.133,1535.0,0.3305,0.3379,0.156,HH,False,False,R84
+-0.633,-6.584,105.0,Parco Nord,11.7,0.1897,1795.0,0.326,0.4164,0.0771,HH,False,False,R84
+-0.2,-6.584,90.0,Parco Nord,11.7,0.1892,1792.0,0.3264,0.3721,0.1259,HH,False,False,R84
+0.233,-6.584,595.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.2295,2027.0,0.2886,-0.0156,0.1095,LH,False,False,R120
+0.666,-6.584,8.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1947,1840.0,0.3179,0.2941,0.0989,HH,False,False,R57
+1.099,-6.584,1452.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1795,1765.0,0.3315,0.5803,0.0487,HH,True,False,R96
+1.532,-6.584,1338.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1798,1766.0,0.3312,0.3521,0.1487,HH,False,False,R96
+1.965,-6.584,492.0,Bicocca,12.4,0.3599,2341.0,0.2649,-0.0789,0.3539,LH,False,False,R62
+2.398,-6.584,236.0,Bicocca,10.95,0.3601,2343.0,0.2337,-0.039,0.4777,LH,False,False,R62
+2.831,-6.584,237.0,Bicocca,10.95,0.2609,1781.0,0.3074,-0.1189,0.2465,HL,False,False,R08
+3.264,-6.584,5.0,Gorla - Precotto,10.95,0.2446,1932.0,0.2834,-0.0116,0.4445,LH,False,False,R08
+-6.912,-6.209,64.0,Cascina Merlata,8.0,0.0983,1307.0,0.306,0.104,0.2876,HH,False,False,R29
+-6.479,-6.209,13.0,Cascina Merlata,8.0,0.0984,1307.0,0.3059,0.1001,0.2698,HH,False,False,R29
+-6.046,-6.209,85.0,Cascina Merlata,8.0,0.1016,1319.0,0.3032,0.0817,0.283,HH,False,False,R29
+-5.613,-6.209,19.0,Roserio,8.0,0.1152,1309.0,0.3056,0.0842,0.3268,HH,False,False,R29
+-4.747,-6.209,528.0,Roserio,8.0,0.1157,1311.0,0.3052,0.1687,0.1644,HH,False,False,R29
+-4.314,-6.209,1525.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.0859,1243.0,0.3218,0.3176,0.152,HH,False,False,R103
+-3.881,-6.209,881.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.1009,1296.0,0.3087,0.3076,0.0497,HH,True,False,R103
+-3.448,-6.209,154.0,Bovisasca,10.15,0.1251,1521.0,0.3337,0.749,0.04,HH,True,False,R112
+-3.015,-6.209,587.0,Bovisasca,10.15,0.1045,1437.0,0.3532,0.7164,0.1004,HH,False,False,R112
+-2.582,-6.209,115.0,Bovisasca,10.15,0.1342,1560.0,0.3254,0.2462,0.1937,HH,False,False,R138
+-2.149,-6.209,164.0,Bovisasca,10.15,0.1738,1740.0,0.2917,0.0052,0.357,HH,False,False,R09
+-1.716,-6.209,2166.0,Affori,10.15,0.2167,1689.0,0.3005,0.0171,0.4251,HH,False,False,R09
+-1.283,-6.209,1485.0,Affori,10.15,0.201,1617.0,0.3139,0.0791,0.3466,HH,False,False,R84
+-0.85,-6.209,779.0,Parco Nord,10.15,0.1796,1745.0,0.2908,0.0077,0.1142,HH,False,False,R123
+-0.417,-6.209,100.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.2116,1929.0,0.3033,0.165,0.0647,HH,False,False,R120
+0.016,-6.209,1450.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1985,1860.0,0.3145,0.1451,0.2302,HH,False,False,R120
+0.449,-6.209,1446.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.2354,2060.0,0.284,-0.0598,0.1177,LH,False,False,R120
+0.882,-6.209,120.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1797,1766.0,0.3313,0.5339,0.0614,HH,False,False,R57
+1.315,-6.209,1166.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1702,1720.0,0.3401,0.5236,0.098,HH,False,False,R96
+1.748,-6.209,120.0,Bicocca,12.4,0.347,2259.0,0.2745,-0.0275,0.4147,LH,False,False,R62
+2.181,-6.209,397.0,Bicocca,12.4,0.3686,2398.0,0.2586,0.2301,0.1852,LL,False,False,R62
+2.614,-6.209,1750.0,Gorla - Precotto,10.95,0.2355,1883.0,0.2907,-0.0029,0.2941,HL,False,False,R08
+3.047,-6.209,772.0,Gorla - Precotto,10.95,0.2399,1907.0,0.2872,0.0003,0.484,LL,False,False,R08
+3.48,-6.209,10.0,Gorla - Precotto,10.95,0.2388,1901.0,0.288,0.01,0.2827,LL,False,False,R08
+3.913,-6.209,9.0,Adriano,10.95,0.2087,1887.0,0.2901,-0.0005,0.2295,HL,False,False,R08
+4.779,-6.209,109.0,Adriano,10.95,0.2091,1889.0,0.2898,-0.0006,0.4247,LH,False,False,R20
+5.212,-6.209,37.0,Adriano,10.95,0.2052,1869.0,0.293,-0.0005,0.4939,HL,False,False,R20
+-5.83,-5.834,74.0,Cascina Merlata,8.0,0.102,1321.0,0.3029,-0.0348,0.3774,HL,False,False,R29
+-5.397,-5.834,21.0,Roserio,8.0,0.1187,1322.0,0.3026,0.0898,0.2125,HH,False,False,R29
+-4.964,-5.834,1356.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.0971,1282.0,0.312,0.1803,0.1806,HH,False,False,R29
+-4.531,-5.834,1644.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.0928,1267.0,0.3157,0.2173,0.1506,HH,False,False,R103
+-4.098,-5.834,2906.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.0815,1228.0,0.3257,0.3477,0.1163,HH,False,False,R103
+-3.665,-5.834,2936.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.0705,1191.0,0.3358,0.627,0.0498,HH,True,False,R112
+-3.232,-5.834,489.0,Bovisasca,10.15,0.1339,1558.0,0.3257,0.7112,0.0087,HH,True,True,R138
+-2.799,-5.834,724.0,Bovisasca,10.15,0.1323,1551.0,0.3271,0.4632,0.0656,HH,False,False,R138
+-2.366,-5.834,735.0,Bovisasca,10.15,0.1949,1845.0,0.2751,-0.0433,0.3684,LH,False,False,R150
+-1.933,-5.834,751.0,Affori,10.15,0.2457,1830.0,0.2774,0.0129,0.4481,LL,False,False,R150
+-1.5,-5.834,2876.0,Affori,10.15,0.2223,1715.0,0.296,0.009,0.4283,HH,False,False,R09
+-1.067,-5.834,1766.0,Affori,10.15,0.2526,1865.0,0.2721,-0.1276,0.1884,LH,False,False,R123
+-0.633,-5.834,25.0,Parco Nord,11.7,0.1772,1734.0,0.3375,0.271,0.2368,HH,False,False,R53
+-0.2,-5.834,1794.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1893,1813.0,0.3226,0.4348,0.0511,HH,False,False,R53
+0.233,-5.834,2576.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.2156,1950.0,0.3,0.1236,0.0662,HH,False,False,R120
+0.666,-5.834,2794.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1819,1777.0,0.3293,0.0473,0.4358,HH,False,False,R53
+1.099,-5.834,1994.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1898,1816.0,0.3221,0.1496,0.2962,HH,False,False,R57
+1.532,-5.834,1349.0,Bicocca,11.7,0.295,1957.0,0.2989,0.0236,0.3756,HH,False,False,R57
+1.965,-5.834,690.0,Bicocca,12.4,0.3506,2281.0,0.2718,0.101,0.2596,LL,False,False,R62
+2.398,-5.834,841.0,Gorla - Precotto,10.95,0.224,1825.0,0.3001,-0.0754,0.1827,HL,False,False,R08
+2.831,-5.834,2277.0,Gorla - Precotto,10.95,0.235,1881.0,0.291,-0.005,0.2665,HL,False,False,R08
+3.264,-5.834,115.0,Gorla - Precotto,10.95,0.2513,1968.0,0.2783,0.0754,0.2214,LL,False,False,R08
+3.697,-5.834,501.0,Adriano,10.95,0.2591,2169.0,0.2524,0.2568,0.2027,LL,False,False,R111
+4.13,-5.834,1333.0,Adriano,10.95,0.2346,2027.0,0.2701,0.1119,0.2689,LL,False,False,R111
+4.563,-5.834,1790.0,Adriano,10.95,0.1852,1768.0,0.3096,-0.0217,0.4423,HL,False,False,R20
+4.996,-5.834,483.0,Adriano,10.95,0.2161,1926.0,0.2843,-0.0239,0.3029,LH,False,False,R20
+5.429,-5.834,5.0,Adriano,10.95,0.203,1858.0,0.2947,0.0135,0.3976,HH,False,False,R20
+-7.345,-5.459,3.0,Maggiore - Musocco - Certosa,11.05,0.2471,2008.0,0.2751,0.5987,0.0051,LL,True,True,R15
+-6.912,-5.459,56.0,Maggiore - Musocco - Certosa,8.0,0.278,2187.0,0.1829,3.3245,0.0028,LL,True,True,R15
+-6.479,-5.459,26.0,Maggiore - Musocco - Certosa,8.0,0.2618,2092.0,0.1912,4.2747,0.0001,LL,True,True,R15
+-6.046,-5.459,17.0,Maggiore - Musocco - Certosa,8.0,0.2404,1971.0,0.2029,2.0191,0.0065,LL,True,True,R15
+-5.613,-5.459,6.0,Stephenson,8.0,0.126,1317.0,0.3037,-0.1201,0.1429,HL,False,False,R29
+-5.18,-5.459,381.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.0983,1286.0,0.311,0.1354,0.2164,HH,False,False,R29
+-4.747,-5.459,1758.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.0956,1277.0,0.3133,0.1243,0.2586,HH,False,False,R29
+-4.314,-5.459,1857.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.1323,1413.0,0.2831,-0.0464,0.2131,LH,False,False,R45
+-3.881,-5.459,1867.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.0944,1273.0,0.3143,0.1506,0.2259,HH,False,False,R103
+-3.448,-5.459,2840.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.0793,1221.0,0.3277,0.4023,0.0964,HH,False,False,R112
+-3.015,-5.459,1567.0,Bovisasca,10.15,0.1105,1461.0,0.3474,0.6236,0.0892,HH,False,False,R138
+-2.582,-5.459,1264.0,Bovisasca,10.15,0.1737,1739.0,0.2918,0.0159,0.1395,HH,False,False,R150
+-2.149,-5.459,458.0,Affori,10.15,0.2578,1892.0,0.2682,-0.0378,0.4185,LH,False,False,R150
+-1.716,-5.459,2079.0,Affori,10.15,0.2245,1726.0,0.2941,-0.0065,0.4187,HL,False,False,R09
+-1.283,-5.459,3526.0,Affori,10.15,0.2127,1670.0,0.3038,0.0108,0.4644,HH,False,False,R123
+-0.85,-5.459,1159.0,Affori,10.15,0.2175,1693.0,0.2998,0.1076,0.0883,HH,False,False,R123
+-0.417,-5.459,416.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1777,1756.0,0.3331,0.5943,0.0461,HH,True,False,R53
+0.016,-5.459,2026.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1678,1709.0,0.3424,0.8312,0.0293,HH,True,False,R53
+0.449,-5.459,1565.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.1872,1803.0,0.3244,0.3377,0.1174,HH,False,False,R53
+0.882,-5.459,371.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.7,0.3704,2991.0,0.1956,-1.1781,0.0644,LH,False,False,R187
+1.315,-5.459,1796.0,Bicocca,11.7,0.2801,1878.0,0.3116,-0.0438,0.4047,HL,False,False,R57
+1.748,-5.459,1666.0,Bicocca,12.4,0.3693,2402.0,0.2581,-0.1038,0.3507,LH,False,False,R62
+2.181,-5.459,494.0,Gorla - Precotto,10.95,0.261,2021.0,0.2709,0.1537,0.1609,LL,False,False,R62
+2.614,-5.459,1827.0,Gorla - Precotto,10.95,0.2897,2188.0,0.2503,0.2483,0.2221,LL,False,False,R111
+3.047,-5.459,1268.0,Gorla - Precotto,10.95,0.276,2107.0,0.2599,0.175,0.2424,LL,False,False,R111
+3.48,-5.459,974.0,Adriano,10.95,0.2348,2028.0,0.27,0.1927,0.127,LL,False,False,R111
+3.913,-5.459,989.0,Adriano,10.95,0.268,2223.0,0.2463,0.2956,0.205,LL,False,False,R111
+4.346,-5.459,872.0,Adriano,10.95,0.2151,1921.0,0.285,-0.0068,0.4373,LH,False,False,R20
+4.779,-5.459,1709.0,Adriano,10.95,0.1873,1779.0,0.3078,0.1588,0.1336,HH,False,False,R20
+5.212,-5.459,254.0,Adriano,10.95,0.1908,1796.0,0.3049,0.2171,0.0387,HH,True,False,R20
+5.645,-5.459,124.0,Adriano,10.95,0.1902,1793.0,0.3054,0.2397,0.057,HH,False,False,R20
+6.078,-5.459,3.0,Adriano,10.95,0.2001,1843.0,0.2971,0.0535,0.3021,HH,False,False,R20
+-7.129,-5.084,333.0,Maggiore - Musocco - Certosa,11.05,0.3511,2677.0,0.2064,1.9295,0.0072,LL,True,True,R15
+-6.696,-5.084,734.0,Maggiore - Musocco - Certosa,11.05,0.377,2876.0,0.1921,3.9274,0.0001,LL,True,True,R15
+-6.263,-5.084,104.0,Maggiore - Musocco - Certosa,8.0,0.3032,2345.0,0.1706,4.5926,0.0002,LL,True,True,R15
+-5.83,-5.084,18.0,Maggiore - Musocco - Certosa,8.0,0.2347,1941.0,0.2061,1.9534,0.0086,LL,True,True,R15
+-5.397,-5.084,71.0,Stephenson,8.0,0.1437,1383.0,0.2892,0.0113,0.051,LL,False,False,R29
+-4.964,-5.084,476.0,Stephenson,8.0,0.1168,1284.0,0.3116,-0.1573,0.1911,HL,False,False,R29
+-4.531,-5.084,1766.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.1323,1413.0,0.2831,0.0211,0.3492,LL,False,False,R45
+-4.098,-5.084,1116.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.1315,1410.0,0.2837,0.0136,0.3856,LL,False,False,R45
+-3.665,-5.084,2182.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.1457,1466.0,0.2728,-0.0033,0.4977,LH,False,False,R188
+-3.232,-5.084,781.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.1153,1348.0,0.2967,0.0444,0.218,HH,False,False,R118
+-2.799,-5.084,313.0,Bovisasca,10.15,0.1331,1555.0,0.3264,0.4929,0.0485,HH,True,False,R138
+-2.366,-5.084,242.0,Affori,10.15,0.1893,1565.0,0.3242,0.124,0.3247,HH,False,False,R138
+-1.933,-5.084,148.0,Affori,10.15,0.2145,1679.0,0.3023,-0.0382,0.352,HL,False,False,R150
+-1.5,-5.084,1136.0,Affori,10.15,0.2557,1881.0,0.2698,-0.1003,0.2741,LH,False,False,R150
+-1.067,-5.084,3538.0,Affori,10.15,0.1944,1588.0,0.3196,0.1609,0.2462,HH,False,False,R72
+-0.633,-5.084,326.0,Parco Nord,11.35,0.1727,1712.0,0.3314,0.3865,0.126,HH,False,False,R53
+-0.2,-5.084,52.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.35,0.2004,1870.0,0.3035,0.2751,0.0086,HH,True,True,R70
+0.233,-5.084,1503.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.35,0.116,1481.0,0.3832,1.3234,0.038,HH,True,False,R193
+0.666,-5.084,2436.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.35,0.1701,1720.0,0.33,0.1097,0.372,HH,False,False,R53
+1.099,-5.084,3048.0,Greco - Segnano,11.7,0.2569,1944.0,0.3009,-0.0301,0.3657,HL,False,False,R187
+1.532,-5.084,132.0,Bicocca,12.4,0.2742,1847.0,0.3356,-0.0112,0.474,HL,False,False,R57
+1.965,-5.084,890.0,Gorla - Precotto,10.95,0.2267,1839.0,0.2978,0.0063,0.4646,HH,False,False,R131
+2.398,-5.084,2214.0,Gorla - Precotto,10.95,0.2938,2213.0,0.2474,0.0284,0.4633,LL,False,False,R62
+2.831,-5.084,2527.0,Gorla - Precotto,10.95,0.2468,1944.0,0.2817,0.0753,0.1372,LL,False,False,R03
+3.264,-5.084,1085.0,Gorla - Precotto,10.95,0.2414,1914.0,0.286,0.0134,0.3454,LL,False,False,R03
+3.697,-5.084,746.0,Adriano,10.95,0.2216,1955.0,0.28,0.015,0.4238,LL,False,False,R03
+4.13,-5.084,1010.0,Adriano,10.95,0.2137,1913.0,0.2862,-0.0085,0.3988,LH,False,False,R03
+4.563,-5.084,3034.0,Adriano,10.95,0.152,1613.0,0.3394,0.4962,0.1119,HH,False,False,R13
+4.996,-5.084,1240.0,Padova - Turro - Crescenzago,10.95,0.1748,1589.0,0.3446,1.4004,0.0025,HH,True,True,R13
+5.429,-5.084,169.0,Cimiano - Rottole - Q.re Feltre,11.7,0.1947,1420.0,0.4119,2.638,0.0095,HH,True,False,R13
+6.295,-5.084,5.0,Adriano,11.7,0.2079,1883.0,0.3107,0.2368,0.1598,HH,False,False,R20
+-7.345,-4.709,55.0,Maggiore - Musocco - Certosa,11.05,0.2045,1786.0,0.3094,-0.2821,0.0774,HL,False,False,R30
+-6.912,-4.709,617.0,Maggiore - Musocco - Certosa,11.05,0.3343,2556.0,0.2162,1.2501,0.0235,LL,True,False,R15
+-6.479,-4.709,450.0,Maggiore - Musocco - Certosa,11.05,0.3618,2757.0,0.2004,2.126,0.0056,LL,True,True,R15
+-5.613,-4.709,15.0,Maggiore - Musocco - Certosa,8.0,0.2333,1933.0,0.2069,1.1102,0.0718,LL,False,False,R15
+-5.18,-4.709,56.0,Maggiore - Musocco - Certosa,8.0,0.2311,1922.0,0.2082,0.477,0.2352,LL,False,False,R15
+-4.747,-4.709,858.0,Maggiore - Musocco - Certosa,8.0,0.193,1729.0,0.2313,0.5809,0.1125,LL,False,False,R15
+-4.314,-4.709,1074.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.1445,1462.0,0.2737,0.2816,0.0223,LL,True,False,R45
+-3.881,-4.709,862.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.1329,1415.0,0.2826,0.132,0.0186,LL,True,False,R45
+-3.448,-4.709,487.0,Quarto Oggiaro - Vialba - Musocco,8.0,0.1952,1681.0,0.2379,0.0537,0.4467,LL,False,False,R188
+-3.015,-4.709,1.0,Bovisa,11.5,0.2321,1780.0,0.3231,0.3833,0.0752,HH,False,False,R118
+-2.582,-4.709,203.0,Bovisa,11.5,0.2026,1641.0,0.3505,0.6776,0.0863,HH,False,False,R129
+-2.149,-4.709,902.0,Bovisa,11.5,0.3209,2275.0,0.2528,-0.3943,0.0949,LH,False,False,R150
+-1.716,-4.709,452.0,Dergano,11.5,0.2743,2005.0,0.2867,-0.0034,0.4584,LH,False,False,R150
+-1.283,-4.709,2063.0,Affori,10.15,0.212,1667.0,0.3045,0.0957,0.2077,HH,False,False,R72
+-0.85,-4.709,2014.0,Affori,10.15,0.2072,1645.0,0.3086,0.2299,0.0706,HH,False,False,R70
+-0.417,-4.709,45.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.35,0.1938,1836.0,0.309,0.1714,0.13,HH,False,False,R70
+0.016,-4.709,982.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.35,0.1671,1705.0,0.3328,0.3538,0.1561,HH,False,False,R193
+0.449,-4.709,2960.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.35,0.1929,1831.0,0.3099,0.155,0.1751,HH,False,False,R193
+0.882,-4.709,3815.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.35,0.2489,2138.0,0.2654,-0.004,0.4958,LH,False,False,R61
+1.315,-4.709,1617.0,Greco - Segnano,11.35,0.2953,2162.0,0.2625,-0.0881,0.356,LH,False,False,R187
+1.748,-4.709,366.0,Greco - Segnano,10.95,0.2271,1790.0,0.3058,0.0576,0.3358,HH,False,False,R131
+2.181,-4.709,310.0,Greco - Segnano,10.95,0.1952,1639.0,0.334,-0.1318,0.3607,HL,False,False,R131
+2.614,-4.709,1959.0,Gorla - Precotto,10.95,0.2289,1850.0,0.296,-0.0138,0.3875,HL,False,False,R59
+3.047,-4.709,2004.0,Gorla - Precotto,10.95,0.26,2016.0,0.2716,-0.0822,0.2998,LH,False,False,R03
+3.48,-4.709,2652.0,Gorla - Precotto,10.95,0.1901,1662.0,0.3295,0.1628,0.3111,HH,False,False,R42
+3.913,-4.709,2087.0,Adriano,10.95,0.1957,1820.0,0.3008,0.0958,0.1383,HH,False,False,R88
+4.346,-4.709,2927.0,Padova - Turro - Crescenzago,10.95,0.2011,1708.0,0.3205,0.5533,0.0149,HH,True,False,R161
+4.779,-4.709,1857.0,Cimiano - Rottole - Q.re Feltre,10.95,0.2406,1612.0,0.3396,1.5541,0.001,HH,True,True,R13
+5.212,-4.709,342.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2027,1452.0,0.403,3.166,0.0023,HH,True,True,R13
+5.645,-4.709,16.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2539,1673.0,0.3498,2.0318,0.0019,HH,True,True,R20
+6.078,-4.709,4.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2737,1767.0,0.3311,0.6496,0.0541,HH,False,False,R20
+6.511,-4.709,30.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2819,1807.0,0.3237,0.4342,0.0981,HH,False,False,R20
+-10.16,-4.334,1.0,Parco Bosco in Citta',11.05,0.1586,1687.0,0.3275,0.5663,0.1347,HH,False,False,R30
+-7.562,-4.334,315.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1308,1881.0,0.2937,0.0058,0.4494,HH,False,False,R30
+-7.129,-4.334,1626.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1169,1810.0,0.3052,-0.0889,0.2374,HL,False,False,R30
+-6.696,-4.334,2146.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1417,1939.0,0.285,0.0674,0.0568,LL,False,False,R31
+-6.263,-4.334,873.0,Maggiore - Musocco - Certosa,11.05,0.2108,1817.0,0.3041,-0.1829,0.0792,HL,False,False,R31
+-5.83,-4.334,66.0,Maggiore - Musocco - Certosa,11.05,0.2337,1935.0,0.2855,0.0522,0.0994,LL,False,False,R31
+-5.397,-4.334,613.0,Maggiore - Musocco - Certosa,11.05,0.213,1828.0,0.3023,-0.1332,0.0952,HL,False,False,R31
+-4.964,-4.334,2330.0,Maggiore - Musocco - Certosa,11.05,0.1973,1750.0,0.3157,-0.2776,0.0993,HL,False,False,R31
+-4.531,-4.334,358.0,Villapizzone - Cagnola - Boldinasco,8.0,0.1765,1935.0,0.2067,1.1506,0.0502,LL,False,False,R15
+-4.098,-4.334,505.0,Villapizzone - Cagnola - Boldinasco,8.0,0.1766,1936.0,0.2067,1.7693,0.007,LL,True,True,R15
+-3.665,-4.334,979.0,Villapizzone - Cagnola - Boldinasco,8.0,0.1675,1888.0,0.2119,0.5878,0.1824,LL,False,False,R188
+-3.232,-4.334,379.0,Bovisa,11.5,0.2153,1699.0,0.3384,-0.0309,0.4633,HL,False,False,R118
+-2.799,-4.334,62.0,Bovisa,11.5,0.1971,1616.0,0.3558,1.0084,0.0317,HH,True,False,R129
+-2.366,-4.334,555.0,Bovisa,11.5,0.2379,1809.0,0.3179,0.3906,0.0403,HH,True,False,R129
+-1.933,-4.334,1805.0,Bovisa,11.5,0.2472,1856.0,0.3098,0.1474,0.1827,HH,False,False,R129
+-1.5,-4.334,2134.0,Dergano,11.5,0.2394,1821.0,0.3157,0.2468,0.1246,HH,False,False,R129
+-1.067,-4.334,4435.0,Dergano,11.5,0.2187,1720.0,0.3343,0.3488,0.1639,HH,False,False,R129
+-0.633,-4.334,2413.0,Dergano,11.35,0.2319,1784.0,0.3182,0.1908,0.2076,HH,False,False,R139
+-0.2,-4.334,2018.0,Maciachini - Maggiolina,11.35,0.2113,2066.0,0.2747,-0.0551,0.3318,LH,False,False,R70
+0.233,-4.334,2441.0,Maciachini - Maggiolina,11.35,0.207,2042.0,0.278,0.0833,0.2037,LL,False,False,R70
+0.666,-4.334,1886.0,Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi,11.35,0.2534,2164.0,0.2622,0.3901,0.048,LL,True,False,R61
+1.099,-4.334,987.0,Greco - Segnano,11.35,0.2759,2049.0,0.277,0.2023,0.0319,LL,True,False,R61
+1.532,-4.334,1435.0,Greco - Segnano,11.35,0.2456,1884.0,0.3012,-0.0594,0.2565,HL,False,False,R131
+1.965,-4.334,73.0,Greco - Segnano,10.95,0.284,2095.0,0.2613,-0.1825,0.2244,LH,False,False,R158
+2.398,-4.334,2142.0,Gorla - Precotto,10.95,0.2375,1894.0,0.2891,0.0005,0.4731,LL,False,False,R59
+2.831,-4.334,2513.0,Gorla - Precotto,10.95,0.2448,1933.0,0.2833,-0.0092,0.4469,LH,False,False,R59
+3.264,-4.334,2535.0,Gorla - Precotto,10.95,0.1924,1672.0,0.3274,0.2863,0.1812,HH,False,False,R42
+3.697,-4.334,3919.0,Padova - Turro - Crescenzago,10.95,0.1869,1643.0,0.3333,0.5837,0.0511,HH,False,False,R126
+4.13,-4.334,3298.0,Padova - Turro - Crescenzago,10.95,0.204,1723.0,0.3178,0.6525,0.0036,HH,True,True,R88
+4.563,-4.334,1769.0,Cimiano - Rottole - Q.re Feltre,11.7,0.1914,1407.0,0.4157,3.4565,0.0023,HH,True,True,R161
+5.429,-4.334,2.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2666,1732.0,0.3377,1.349,0.0041,HH,True,True,R20
+6.295,-4.334,29.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2788,1792.0,0.3265,0.5336,0.0673,HH,False,False,R20
+6.728,-4.334,80.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2923,1860.0,0.3146,0.3789,0.0838,HH,False,False,R20
+-10.376,-3.959,2.0,Parco Bosco in Citta',11.05,0.1578,1683.0,0.3282,0.5812,0.0878,HH,False,False,R30
+-9.943,-3.959,2.0,Parco Bosco in Citta',11.05,0.1628,1707.0,0.3238,0.535,0.0791,HH,False,False,R30
+-7.778,-3.959,2.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1751,2126.0,0.2599,-0.2871,0.1708,LH,False,False,R30
+-7.345,-3.959,768.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1223,1837.0,0.3007,-0.0495,0.2855,HL,False,False,R30
+-6.912,-3.959,1546.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1869,2197.0,0.2515,0.1633,0.3047,LL,False,False,R22
+-6.479,-3.959,2055.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1589,2033.0,0.2718,0.1328,0.19,LL,False,False,R22
+-6.046,-3.959,1180.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1851,2185.0,0.2528,0.2671,0.1906,LL,False,False,R02
+-5.613,-3.959,267.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1935,2237.0,0.247,0.2451,0.2444,LL,False,False,R02
+-5.18,-3.959,810.0,Maggiore - Musocco - Certosa,11.05,0.1903,1717.0,0.3219,-0.1386,0.2931,HL,False,False,R31
+-4.747,-3.959,631.0,Maggiore - Musocco - Certosa,11.05,0.1975,1751.0,0.3154,-0.2797,0.0942,HL,False,False,R31
+-4.314,-3.959,1229.0,Villapizzone - Cagnola - Boldinasco,8.0,0.1879,1997.0,0.2003,1.3703,0.036,LL,True,False,R15
+-3.881,-3.959,1548.0,Villapizzone - Cagnola - Boldinasco,11.5,0.2222,2196.0,0.2619,0.5591,0.0094,LL,True,False,R188
+-3.448,-3.959,2376.0,Villapizzone - Cagnola - Boldinasco,11.5,0.1667,1884.0,0.3053,-0.0727,0.2822,HL,False,False,R118
+-3.015,-3.959,2753.0,Villapizzone - Cagnola - Boldinasco,11.5,0.1766,1936.0,0.2971,0.0826,0.0768,HH,False,False,R118
+-2.582,-3.959,55.0,Bovisa,11.5,0.2221,1732.0,0.3321,0.4688,0.0839,HH,False,False,R129
+-2.149,-3.959,2266.0,Bovisa,11.5,0.2144,1695.0,0.3393,0.9555,0.0123,HH,True,False,R179
+-1.716,-3.959,4291.0,Bovisa,11.5,0.2197,1720.0,0.3343,0.8251,0.0111,HH,True,False,R179
+-1.283,-3.959,2306.0,Dergano,11.5,0.2485,1868.0,0.3079,0.2112,0.0727,HH,False,False,R98
+-0.85,-3.959,3161.0,Dergano,11.5,0.2606,1931.0,0.2978,0.1127,0.038,HH,True,False,R98
+-0.417,-3.959,2023.0,Dergano,11.35,0.2383,1816.0,0.3125,0.0491,0.399,HH,False,False,R139
+0.016,-3.959,2850.0,Maciachini - Maggiolina,11.35,0.2585,2354.0,0.241,0.5248,0.1022,LL,False,False,R117
+0.449,-3.959,2730.0,Maciachini - Maggiolina,11.35,0.2903,2570.0,0.2208,1.6348,0.0028,LL,True,True,R32
+0.882,-3.959,1761.0,Maciachini - Maggiolina,11.35,0.3465,3002.0,0.189,2.3213,0.0033,LL,True,True,R32
+1.315,-3.959,1297.0,Greco - Segnano,11.35,0.3304,2381.0,0.2383,0.7425,0.0444,LL,True,False,R35
+1.748,-3.959,2348.0,Greco - Segnano,11.35,0.2243,1777.0,0.3194,-0.3991,0.0499,HL,True,False,R131
+2.181,-3.959,1411.0,Padova - Turro - Crescenzago,10.95,0.2481,1946.0,0.2814,0.0408,0.273,LL,False,False,R158
+2.614,-3.959,3623.0,Padova - Turro - Crescenzago,10.95,0.255,1983.0,0.2761,-0.0073,0.49,LH,False,False,R158
+3.047,-3.959,632.0,Padova - Turro - Crescenzago,10.95,0.2256,1828.0,0.2995,0.0667,0.1924,HH,False,False,R06
+3.48,-3.959,3019.0,Padova - Turro - Crescenzago,10.95,0.1878,1647.0,0.3324,0.5202,0.0634,HH,False,False,R25
+3.913,-3.959,2992.0,Padova - Turro - Crescenzago,10.95,0.196,1685.0,0.3249,0.632,0.0151,HH,True,False,R126
+4.346,-3.959,1254.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2234,1537.0,0.3805,2.5493,0.0009,HH,True,True,R161
+4.779,-3.959,181.0,Cimiano - Rottole - Q.re Feltre,11.7,0.1886,1396.0,0.419,4.1554,0.0022,HH,True,True,R161
+5.212,-3.959,4.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2639,1720.0,0.3402,1.4403,0.0039,HH,True,True,R20
+5.645,-3.959,1.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2679,1738.0,0.3365,0.9634,0.0371,HH,True,False,R20
+6.511,-3.959,14.0,Cimiano - Rottole - Q.re Feltre,11.7,0.275,1773.0,0.33,0.5126,0.1748,HH,False,False,R20
+-10.16,-3.584,1.0,Parco Bosco in Citta',11.05,0.1586,1687.0,0.3275,0.5763,0.0891,HH,False,False,R30
+-8.861,-3.584,2.0,Parco Bosco in Citta',11.05,0.1578,1683.0,0.3282,0.5726,0.091,HH,False,False,R30
+-8.428,-3.584,2.0,Parco Bosco in Citta',11.05,0.1578,1683.0,0.3282,0.5552,0.0725,HH,False,False,R30
+-7.995,-3.584,1.0,Parco Bosco in Citta',11.05,0.1586,1687.0,0.3275,0.3786,0.1322,HH,False,False,R30
+-7.562,-3.584,3.0,Parco Bosco in Citta',11.05,0.1571,1680.0,0.3289,-0.015,0.4779,HL,False,False,R30
+-7.129,-3.584,741.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.2119,2353.0,0.2348,0.1002,0.4092,LL,False,False,R22
+-6.696,-3.584,2557.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1452,1958.0,0.2822,0.1103,0.0442,LL,True,False,R92
+-6.263,-3.584,1577.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1741,2120.0,0.2606,0.2967,0.1188,LL,False,False,R22
+-5.83,-3.584,1215.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1628,2055.0,0.2688,0.3585,0.0194,LL,True,False,R02
+-5.397,-3.584,1877.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.2231,2428.0,0.2276,0.6858,0.0897,LL,False,False,R180
+-4.964,-3.584,660.0,Maggiore - Musocco - Certosa,11.05,0.2537,2045.0,0.2701,0.2229,0.09,LL,False,False,R85
+-4.531,-3.584,1504.0,Villapizzone - Cagnola - Boldinasco,11.05,0.1992,2061.0,0.2681,0.3451,0.0325,LL,True,False,R85
+-4.098,-3.584,624.0,Villapizzone - Cagnola - Boldinasco,11.05,0.2057,2098.0,0.2634,0.389,0.0418,LL,True,False,R85
+-3.665,-3.584,3973.0,Villapizzone - Cagnola - Boldinasco,11.5,0.2127,2138.0,0.2689,0.015,0.4644,LL,False,False,R85
+-3.232,-3.584,2591.0,Villapizzone - Cagnola - Boldinasco,11.5,0.1804,1956.0,0.294,0.0185,0.2892,HH,False,False,R75
+-2.799,-3.584,2831.0,Villapizzone - Cagnola - Boldinasco,11.5,0.1961,2043.0,0.2815,-0.0861,0.1097,LH,False,False,R75
+-2.366,-3.584,157.0,Villapizzone - Cagnola - Boldinasco,11.5,0.1638,1869.0,0.3077,0.3107,0.0188,HH,True,False,R102
+-1.933,-3.584,958.0,Farini,14.0,0.2044,1686.0,0.4153,1.7101,0.0469,HH,True,False,R71
+-1.5,-3.584,3155.0,Bovisa,11.5,0.2374,1806.0,0.3183,0.5799,0.0082,HH,True,True,R71
+-1.067,-3.584,1519.0,Dergano,11.5,0.2477,1863.0,0.3086,0.31,0.024,HH,True,False,R98
+-0.633,-3.584,2356.0,Dergano,14.75,0.2761,2016.0,0.3659,0.568,0.1795,HH,False,False,R139
+-0.2,-3.584,2159.0,Isola,11.35,0.2775,2073.0,0.2738,-0.0225,0.4321,LH,False,False,R117
+0.233,-3.584,2667.0,Maciachini - Maggiolina,11.35,0.2792,2493.0,0.2276,1.1143,0.0175,LL,True,False,R74
+0.666,-3.584,1747.0,Maciachini - Maggiolina,11.35,0.3167,2765.0,0.2053,2.4668,0.0004,LL,True,True,R32
+1.099,-3.584,2749.0,Greco - Segnano,11.35,0.3786,2721.0,0.2086,2.3673,0.0002,LL,True,True,R32
+1.532,-3.584,1816.0,Greco - Segnano,11.35,0.3276,2364.0,0.2401,1.084,0.0057,LL,True,True,R35
+1.965,-3.584,842.0,Stazione Centrale - Ponte Seveso,11.35,0.2875,2535.0,0.2239,0.2831,0.2956,LL,False,False,R35
+2.398,-3.584,2813.0,Loreto - Casoretto - Nolo,11.35,0.2823,1874.0,0.3029,-0.0458,0.3287,HL,False,False,R06
+2.831,-3.584,2064.0,Padova - Turro - Crescenzago,10.95,0.2353,1878.0,0.2915,0.0171,0.0742,HH,False,False,R06
+3.264,-3.584,4069.0,Padova - Turro - Crescenzago,10.95,0.1904,1659.0,0.3301,0.5007,0.0668,HH,False,False,R25
+3.697,-3.584,2422.0,Padova - Turro - Crescenzago,10.95,0.2245,1823.0,0.3003,0.1602,0.0321,HH,True,False,R93
+4.13,-3.584,44.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2699,1748.0,0.3347,0.8062,0.0162,HH,True,False,R126
+4.563,-3.584,69.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2745,1771.0,0.3304,1.1876,0.0019,HH,True,True,R126
+5.429,-3.584,4.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2639,1720.0,0.3402,1.0187,0.0718,HH,False,False,R20
+-9.51,-3.209,2.0,Figino,11.05,0.1266,1685.0,0.3279,0.6209,0.05,HH,True,False,R30
+-9.077,-3.209,915.0,Figino,11.05,0.1189,1649.0,0.335,0.6404,0.0567,HH,False,False,R30
+-8.644,-3.209,317.0,Figino,11.05,0.1423,1759.0,0.314,0.3809,0.0271,HH,True,False,R30
+-8.211,-3.209,3.0,Parco Bosco in Citta',11.05,0.1571,1680.0,0.3289,0.5518,0.0463,HH,True,False,R30
+-7.778,-3.209,3.0,Parco Bosco in Citta',11.05,0.162,1703.0,0.3245,0.429,0.0658,HH,False,False,R30
+-7.345,-3.209,479.0,Parco Bosco in Citta',11.05,0.206,1923.0,0.2873,-0.0087,0.3431,LH,False,False,R22
+-6.912,-3.209,1386.0,Trenno,11.05,0.2001,2095.0,0.2637,0.2088,0.165,LL,False,False,R22
+-6.479,-3.209,1691.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1795,2152.0,0.2568,0.312,0.1317,LL,False,False,R92
+-6.046,-3.209,1695.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1696,2094.0,0.2639,0.3403,0.0665,LL,False,False,R22
+-5.613,-3.209,496.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1931,2234.0,0.2473,0.7585,0.0176,LL,True,False,R02
+-5.18,-3.209,1816.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.2219,2420.0,0.2283,1.0569,0.0217,LL,True,False,R180
+-4.747,-3.209,588.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.2365,2519.0,0.2193,0.7219,0.1095,LL,False,False,R180
+-4.314,-3.209,977.0,Villapizzone - Cagnola - Boldinasco,12.0,0.2587,2428.0,0.2471,0.3344,0.1686,LL,False,False,R180
+-3.881,-3.209,1657.0,Villapizzone - Cagnola - Boldinasco,12.0,0.2065,2102.0,0.2854,0.0209,0.2977,LL,False,False,R46
+-3.448,-3.209,3992.0,Villapizzone - Cagnola - Boldinasco,14.0,0.2208,2187.0,0.3201,0.064,0.3993,HH,False,False,R65
+-3.015,-3.209,4262.0,Villapizzone - Cagnola - Boldinasco,14.0,0.2056,2097.0,0.3338,0.3298,0.1792,HH,False,False,R65
+-2.582,-3.209,2895.0,Villapizzone - Cagnola - Boldinasco,14.0,0.2215,2191.0,0.3195,0.1909,0.215,HH,False,False,R102
+-2.149,-3.209,2669.0,Ghisolfa,14.0,0.298,2305.0,0.3036,0.1622,0.0739,HH,False,False,R102
+-1.716,-3.209,657.0,Farini,14.0,0.2855,2109.0,0.3319,0.502,0.0721,HH,False,False,R102
+-1.283,-3.209,508.0,Farini,14.0,0.2821,2089.0,0.3351,0.5953,0.0548,HH,False,False,R71
+-0.85,-3.209,680.0,Farini,14.75,0.2815,2086.0,0.3536,1.37,0.0068,HH,True,True,R71
+-0.417,-3.209,3423.0,Isola,14.75,0.3383,2452.0,0.3008,0.1725,0.027,HH,True,False,R100
+0.016,-3.209,2364.0,Isola,14.75,0.3248,2362.0,0.3122,-0.2528,0.0885,HL,False,False,R100
+0.449,-3.209,2125.0,Maciachini - Maggiolina,14.75,0.3667,3174.0,0.2323,0.8432,0.0416,LL,True,False,R74
+0.882,-3.209,2140.0,Maciachini - Maggiolina,14.75,0.3455,2994.0,0.2463,1.1332,0.0015,LL,True,True,R104
+1.315,-3.209,4891.0,Stazione Centrale - Ponte Seveso,11.35,0.3171,2752.0,0.2062,1.8205,0.0054,LL,True,True,R32
+1.748,-3.209,2019.0,Stazione Centrale - Ponte Seveso,11.35,0.2715,2426.0,0.2339,0.9752,0.0205,LL,True,False,R35
+2.181,-3.209,4997.0,Loreto - Casoretto - Nolo,11.35,0.2841,1883.0,0.3014,-0.0774,0.2063,HL,False,False,R06
+2.614,-3.209,1635.0,Loreto - Casoretto - Nolo,11.35,0.268,1801.0,0.3151,0.2858,0.0814,HH,False,False,R164
+3.047,-3.209,2976.0,Loreto - Casoretto - Nolo,10.95,0.1844,1430.0,0.383,0.9813,0.0984,HH,False,False,R137
+3.48,-3.209,2105.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2954,1876.0,0.3119,0.3536,0.0254,HH,True,False,R93
+3.913,-3.209,571.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2761,1778.0,0.329,0.4714,0.0694,HH,False,False,R126
+4.346,-3.209,101.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2719,1758.0,0.3328,0.6303,0.0365,HH,True,False,R126
+4.779,-3.209,2.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2715,1756.0,0.3332,0.6366,0.0703,HH,False,False,R126
+-9.727,-2.834,1.0,Parco Bosco in Citta',11.05,0.1586,1687.0,0.3275,0.3417,0.2191,HH,False,False,R30
+-9.294,-2.834,419.0,Figino,11.05,0.1286,1694.0,0.3262,0.3458,0.1142,HH,False,False,R30
+-8.861,-2.834,563.0,Figino,11.05,0.1318,1709.0,0.3233,0.3975,0.0726,HH,False,False,R30
+-8.428,-2.834,78.0,Figino,11.05,0.1316,1708.0,0.3235,0.4913,0.0345,HH,True,False,R30
+-7.995,-2.834,4.0,Parco Bosco in Citta',11.05,0.1612,1699.0,0.3252,0.5269,0.03,HH,True,False,R30
+-7.562,-2.834,3.0,Parco Bosco in Citta',11.05,0.1669,1726.0,0.3201,0.3433,0.0853,HH,False,False,R30
+-7.129,-2.834,808.0,Parco Bosco in Citta',11.05,0.1745,1763.0,0.3135,0.1072,0.2867,HH,False,False,R30
+-6.696,-2.834,857.0,Trenno,11.05,0.216,2189.0,0.2524,-0.0801,0.4066,LH,False,False,R22
+-6.263,-2.834,574.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,12.0,0.1736,2117.0,0.2834,0.0764,0.1078,LL,False,False,R92
+-5.83,-2.834,1178.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.2078,2327.0,0.2374,0.0192,0.4733,LL,False,False,R02
+-5.397,-2.834,2248.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1738,2118.0,0.2608,0.2765,0.1333,LL,False,False,R02
+-4.964,-2.834,164.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,11.05,0.1604,2041.0,0.2707,0.3226,0.0223,LL,True,False,R02
+-4.531,-2.834,16.0,Qt 8,12.0,0.3435,1935.0,0.3102,-0.2037,0.1159,HL,False,False,R01
+-4.098,-2.834,238.0,Qt 8,12.0,0.3771,2123.0,0.2826,-0.0055,0.4679,LH,False,False,R46
+-3.665,-2.834,190.0,Villapizzone - Cagnola - Boldinasco,12.0,0.1961,2043.0,0.2937,-0.0032,0.4557,HL,False,False,R46
+-3.232,-2.834,3374.0,Villapizzone - Cagnola - Boldinasco,14.0,0.2506,2374.0,0.2948,0.0108,0.3949,HH,False,False,R46
+-2.799,-2.834,2781.0,Ghisolfa,14.0,0.2593,2072.0,0.3379,-0.2827,0.2376,HL,False,False,R65
+-2.366,-2.834,1605.0,Ghisolfa,14.0,0.3429,2610.0,0.2682,0.0849,0.3253,LL,False,False,R55
+-1.933,-2.834,4260.0,Ghisolfa,14.0,0.3428,2609.0,0.2683,0.1253,0.2403,LL,False,False,R55
+-1.5,-2.834,1258.0,Ghisolfa,14.0,0.3395,2585.0,0.2708,-0.035,0.4123,LH,False,False,R55
+-1.067,-2.834,13.0,Farini,14.0,0.2709,2025.0,0.3456,0.3219,0.2466,HH,False,False,R71
+-0.633,-2.834,1906.0,Isola,19.0,0.3341,2424.0,0.3919,0.9818,0.1233,HH,False,False,R77
+-0.2,-2.834,3391.0,Isola,14.75,0.3753,2716.0,0.2715,-0.3797,0.0079,LH,True,True,R52
+0.233,-2.834,1709.0,Isola,14.75,0.3754,2717.0,0.2714,-0.0629,0.3513,LH,False,False,R52
+0.666,-2.834,1396.0,Isola,14.75,0.3789,2743.0,0.2689,0.3075,0.0411,LL,True,False,R74
+1.099,-2.834,3783.0,Stazione Centrale - Ponte Seveso,14.75,0.3438,2962.0,0.249,0.9129,0.0042,LL,True,True,R104
+1.532,-2.834,1831.0,Stazione Centrale - Ponte Seveso,14.75,0.339,2923.0,0.2523,0.8088,0.0064,LL,True,True,R130
+1.965,-2.834,5295.0,Loreto - Casoretto - Nolo,11.35,0.3262,2115.0,0.2683,0.2343,0.0995,LL,False,False,R173
+2.398,-2.834,4626.0,Loreto - Casoretto - Nolo,11.35,0.2871,1899.0,0.2989,0.0288,0.3493,HH,False,False,R164
+2.831,-2.834,3768.0,Loreto - Casoretto - Nolo,11.35,0.2565,1745.0,0.3253,0.4217,0.0731,HH,False,False,R137
+3.264,-2.834,4057.0,Loreto - Casoretto - Nolo,11.35,0.2658,1790.0,0.317,0.3173,0.0769,HH,False,False,R93
+3.697,-2.834,1596.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2956,1877.0,0.3117,0.2182,0.1092,HH,False,False,R156
+4.13,-2.834,1329.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2844,1820.0,0.3215,0.3198,0.106,HH,False,False,R156
+4.563,-2.834,870.0,Cimiano - Rottole - Q.re Feltre,11.7,0.3073,1939.0,0.3018,0.1786,0.0334,HH,True,False,R134
+4.996,-2.834,56.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2689,1743.0,0.3355,0.7465,0.0499,HH,True,False,R126
+-9.51,-2.459,16.0,Figino,9.5,0.1277,1690.0,0.2811,-0.0392,0.3119,LH,False,False,R40
+-9.077,-2.459,136.0,Figino,9.5,0.1267,1685.0,0.2819,-0.0518,0.2192,LH,False,False,R40
+-8.644,-2.459,6.0,Figino,11.05,0.1242,1673.0,0.3302,0.2366,0.2421,HH,False,False,R30
+-8.211,-2.459,2.0,Parco Bosco in Citta',11.05,0.1578,1683.0,0.3282,0.4897,0.0564,HH,False,False,R30
+-7.778,-2.459,3.0,Parco Bosco in Citta',11.05,0.1571,1680.0,0.3289,0.6079,0.0303,HH,True,False,R30
+-7.345,-2.459,2.0,Parco Bosco in Citta',11.05,0.1628,1707.0,0.3238,0.5601,0.0201,HH,True,False,R30
+-6.912,-2.459,203.0,Parco Bosco in Citta',11.05,0.1263,1543.0,0.3581,0.5065,0.1997,HH,False,False,R30
+-6.046,-2.459,7.0,Stadio - Ippodromi,12.0,0.3006,1983.0,0.3026,0.0694,0.2653,HH,False,False,R92
+-5.613,-2.459,882.0,Stadio - Ippodromi,12.0,0.2211,1592.0,0.377,-0.8492,0.1267,HL,False,False,R92
+-5.18,-2.459,414.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,12.0,0.227,2454.0,0.2445,-0.1231,0.3749,LH,False,False,R02
+-4.747,-2.459,804.0,Q.re Gallaratese - Q.re San Leonardo - Lampugnano,12.0,0.2354,2512.0,0.2389,-0.2149,0.3071,LH,False,False,R02
+-4.314,-2.459,200.0,Qt 8,12.0,0.313,1778.0,0.3374,-0.0611,0.4401,HL,False,False,R01
+-3.881,-2.459,1470.0,Qt 8,12.0,0.3845,2167.0,0.2769,-0.0471,0.3361,LH,False,False,R46
+-3.448,-2.459,623.0,Villapizzone - Cagnola - Boldinasco,16.0,0.3335,2986.0,0.2679,0.1938,0.1416,LL,False,False,R46
+-3.015,-2.459,1921.0,Portello,16.0,0.3802,3650.0,0.2192,0.8222,0.0832,LL,False,False,R17
+-2.582,-2.459,3992.0,Portello,16.0,0.3782,3630.0,0.2204,1.2653,0.017,LL,True,False,R175
+-2.149,-2.459,4148.0,Sarpi,14.0,0.3616,2978.0,0.235,1.1954,0.0052,LL,True,True,R163
+-1.716,-2.459,3622.0,Sarpi,14.0,0.3415,2818.0,0.2484,0.807,0.012,LL,True,False,R163
+-1.283,-2.459,648.0,Sarpi,14.0,0.3587,2955.0,0.2369,0.4887,0.1318,LL,False,False,R125
+-0.85,-2.459,2.0,Sarpi,14.0,0.3622,2983.0,0.2346,-0.7424,0.0504,LH,False,False,R125
+-0.417,-2.459,1625.0,Isola,19.0,0.3532,2555.0,0.3717,0.7459,0.1329,HH,False,False,R77
+0.016,-2.459,3425.0,Isola,19.0,0.3409,2470.0,0.3847,0.4535,0.2872,HH,False,False,R77
+0.449,-2.459,1427.0,Porta Garibaldi - Porta Nuova,18.0,0.3452,2823.0,0.3188,-0.0389,0.4311,HL,False,False,R52
+0.882,-2.459,946.0,Stazione Centrale - Ponte Seveso,14.75,0.3975,3436.0,0.2147,0.9061,0.0735,LL,False,False,R147
+1.315,-2.459,1031.0,Stazione Centrale - Ponte Seveso,14.75,0.366,3149.0,0.2342,1.2465,0.0046,LL,True,True,R147
+1.748,-2.459,3604.0,Buenos Aires - Porta Venezia - Porta Monforte,14.75,0.4091,3040.0,0.2426,0.5267,0.0895,LL,False,False,R130
+2.181,-2.459,2563.0,Loreto - Casoretto - Nolo,11.35,0.3416,2207.0,0.2572,0.1877,0.2436,LL,False,False,R190
+2.614,-2.459,2893.0,Loreto - Casoretto - Nolo,12.95,0.3109,2028.0,0.3193,-0.2394,0.163,HL,False,False,R190
+3.047,-2.459,3779.0,Loreto - Casoretto - Nolo,12.95,0.3616,2332.0,0.2776,-0.0158,0.4475,LH,False,False,R195
+3.48,-2.459,3067.0,Loreto - Casoretto - Nolo,12.95,0.3351,2168.0,0.2987,-0.0027,0.4932,HL,False,False,R156
+3.913,-2.459,3265.0,Cimiano - Rottole - Q.re Feltre,11.7,0.3024,1912.0,0.3059,0.0778,0.2771,HH,False,False,R134
+4.346,-2.459,1773.0,Cimiano - Rottole - Q.re Feltre,11.7,0.3045,1924.0,0.3041,0.1487,0.0929,HH,False,False,R134
+4.779,-2.459,32.0,Cimiano - Rottole - Q.re Feltre,11.7,0.2752,1774.0,0.3298,0.581,0.036,HH,True,False,R126
+5.212,-2.459,35.0,Lambrate - Ortica,13.0,0.2585,1848.0,0.3516,1.0074,0.0705,HH,False,False,R126
+-9.727,-2.084,2.0,Figino,9.5,0.1266,1685.0,0.2819,0.0259,0.3836,LL,False,False,R40
+-9.294,-2.084,13.0,Parco Bosco in Citta',9.5,0.1544,1667.0,0.2849,0.0164,0.3429,LL,False,False,R40
+-8.861,-2.084,14.0,Parco Bosco in Citta',9.5,0.1537,1664.0,0.2854,-0.0046,0.4635,LH,False,False,R40
+-8.428,-2.084,2.0,Quinto Romano,9.5,0.134,1684.0,0.282,-0.0763,0.1457,LH,False,False,R40
+-7.995,-2.084,23.0,Parco Bosco in Citta',11.05,0.1519,1656.0,0.3336,0.3457,0.1614,HH,False,False,R30
+-7.562,-2.084,28.0,Parco Bosco in Citta',11.05,0.153,1661.0,0.3326,0.4019,0.1284,HH,False,False,R30
+-7.129,-2.084,2.0,Parco Bosco in Citta',11.05,0.1628,1707.0,0.3238,0.4243,0.0613,HH,False,False,R30
+-6.696,-2.084,4.0,Parco Bosco in Citta',11.05,0.1612,1699.0,0.3252,0.606,0.0274,HH,True,False,R30
+-6.263,-2.084,1.0,Parco Bosco in Citta',12.0,0.1586,1687.0,0.3557,0.195,0.3781,HH,False,False,R30
+-5.83,-2.084,658.0,Stadio - Ippodromi,12.0,0.3523,2287.0,0.2624,-0.3006,0.088,LH,False,False,R01
+-5.397,-2.084,182.0,Stadio - Ippodromi,12.0,0.3121,2047.0,0.2931,0.0108,0.3431,HH,False,False,R92
+-4.964,-2.084,189.0,Stadio - Ippodromi,12.0,0.2602,1773.0,0.3383,-0.2783,0.2303,HL,False,False,R92
+-4.531,-2.084,493.0,Stadio - Ippodromi,12.0,0.3048,2006.0,0.2991,0.0427,0.2857,HH,False,False,R01
+-4.098,-2.084,848.0,Qt 8,12.0,0.3389,1910.0,0.3141,0.0743,0.3554,HH,False,False,R01
+-3.665,-2.084,1647.0,Qt 8,12.0,0.3607,2029.0,0.2957,-0.0439,0.1863,HL,False,False,R01
+-3.232,-2.084,1099.0,Portello,16.0,0.3552,3406.0,0.2349,0.998,0.0162,LL,True,False,R17
+-2.799,-2.084,1952.0,Portello,16.0,0.3812,3660.0,0.2186,1.0703,0.0337,LL,True,False,R67
+-2.366,-2.084,2294.0,Portello,16.0,0.41,3962.0,0.2019,1.6564,0.0145,LL,True,False,R175
+-1.933,-2.084,3331.0,Sarpi,14.0,0.3807,3140.0,0.2229,2.0992,0.0003,LL,True,True,R125
+-1.5,-2.084,2981.0,Sarpi,14.0,0.3701,3049.0,0.2296,1.1328,0.0152,LL,True,False,R125
+-1.067,-2.084,1976.0,Sarpi,14.0,0.2983,2501.0,0.2799,0.1043,0.1098,LL,False,False,R60
+-0.633,-2.084,1529.0,Porta Garibaldi - Porta Nuova,19.0,0.3804,3111.0,0.3054,0.0201,0.4459,HH,False,False,R60
+-0.2,-2.084,650.0,Porta Garibaldi - Porta Nuova,18.0,0.389,3186.0,0.2825,-0.0442,0.2393,LH,False,False,R60
+0.233,-2.084,461.0,Porta Garibaldi - Porta Nuova,18.0,0.3762,3075.0,0.2927,-0.0009,0.4787,HL,False,False,R52
+0.666,-2.084,1680.0,Stazione Centrale - Ponte Seveso,19.0,0.3822,3293.0,0.2885,0.0195,0.0642,LL,False,False,R52
+1.099,-2.084,1005.0,Stazione Centrale - Ponte Seveso,14.75,0.4071,3528.0,0.2091,0.9111,0.0848,LL,False,False,R147
+1.532,-2.084,3707.0,Buenos Aires - Porta Venezia - Porta Monforte,14.75,0.3927,2905.0,0.2538,0.2617,0.1973,LL,False,False,R147
+1.965,-2.084,3021.0,Buenos Aires - Porta Venezia - Porta Monforte,19.0,0.4052,3008.0,0.3159,-0.4356,0.0247,HL,True,False,R171
+2.398,-2.084,2893.0,Buenos Aires - Porta Venezia - Porta Monforte,12.95,0.4081,3032.0,0.2136,0.967,0.0642,LL,False,False,R143
+2.831,-2.084,3545.0,Citta' Studi,12.95,0.4069,2582.0,0.2508,0.6148,0.0306,LL,True,False,R145
+3.264,-2.084,4934.0,Citta' Studi,12.95,0.4119,2618.0,0.2473,0.3018,0.1978,LL,False,False,R195
+3.697,-2.084,2287.0,Citta' Studi,12.95,0.3719,2344.0,0.2763,0.0254,0.4044,LL,False,False,R128
+4.13,-2.084,1846.0,Lambrate - Ortica,13.0,0.3185,2182.0,0.2979,0.052,0.2169,HH,False,False,R141
+4.563,-2.084,23.0,Lambrate - Ortica,13.0,0.2769,1945.0,0.3342,0.4755,0.0912,HH,False,False,R126
+4.996,-2.084,2.0,Lambrate - Ortica,13.0,0.2908,2021.0,0.3216,0.575,0.0347,HH,True,False,R126
+-9.51,-1.709,1.0,Figino,9.5,0.1273,1688.0,0.2814,0.0246,0.3951,LL,False,False,R40
+-9.077,-1.709,4.0,Quinto Romano,9.5,0.1327,1678.0,0.283,0.0209,0.3767,LL,False,False,R40
+-8.211,-1.709,172.0,Quinto Romano,9.5,0.1292,1662.0,0.2858,-0.0076,0.4237,LH,False,False,R40
+-7.778,-1.709,513.0,Quinto Romano,9.5,0.1165,1605.0,0.296,0.0184,0.3557,HH,False,False,R40
+-7.345,-1.709,131.0,Quinto Romano,9.5,0.1513,1767.0,0.2689,-0.0823,0.3177,LH,False,False,R82
+-6.912,-1.709,70.0,Parco Bosco in Citta',11.05,0.1774,1777.0,0.311,-0.0046,0.4806,HL,False,False,R30
+-6.479,-1.709,24.0,Parco Bosco in Citta',11.05,0.1825,1802.0,0.3066,0.0931,0.2388,HH,False,False,R01
+-6.046,-1.709,125.0,Stadio - Ippodromi,12.0,0.3176,2078.0,0.2887,-0.0025,0.4178,LH,False,False,R01
+-5.613,-1.709,880.0,Stadio - Ippodromi,12.0,0.3308,2155.0,0.2784,-0.0132,0.4426,LH,False,False,R01
+-5.18,-1.709,171.0,Stadio - Ippodromi,12.0,0.316,2069.0,0.29,-0.0002,0.2262,LH,False,False,R01
+-4.747,-1.709,136.0,Stadio - Ippodromi,12.0,0.3132,2053.0,0.2923,0.0048,0.4083,HH,False,False,R01
+-4.314,-1.709,297.0,Stadio - Ippodromi,12.0,0.3204,2094.0,0.2865,0.0015,0.4779,LL,False,False,R01
+-3.881,-1.709,84.0,Stadio - Ippodromi,12.0,0.3177,2079.0,0.2887,0.0056,0.3051,LL,False,False,R01
+-3.448,-1.709,1852.0,De Angeli - Monte Rosa,16.0,0.3698,3239.0,0.247,0.6324,0.0423,LL,True,False,R17
+-3.015,-1.709,184.0,De Angeli - Monte Rosa,16.0,0.3903,3428.0,0.2334,0.2789,0.2715,LL,False,False,R17
+-2.582,-1.709,665.0,Portello,29.5,0.3693,3541.0,0.4165,-2.5283,0.0087,HL,True,True,R67
+-2.149,-1.709,3248.0,Pagano,16.0,0.4343,5048.0,0.1585,2.0538,0.032,LL,True,False,R44
+-1.716,-1.709,3368.0,Sarpi,14.0,0.3849,3176.0,0.2204,2.0969,0.0003,LL,True,True,R172
+-1.283,-1.709,4736.0,Sarpi,14.0,0.3193,2650.0,0.2641,0.234,0.1362,LL,False,False,R24
+-0.85,-1.709,3678.0,Sarpi,18.95,0.3564,2936.0,0.3227,-0.1906,0.2413,HL,False,False,R186
+-0.417,-1.709,2536.0,Brera,24.0,0.3949,4486.0,0.2675,0.1908,0.1466,LL,False,False,R60
+0.016,-1.709,1597.0,Brera,19.0,0.412,4703.0,0.202,0.9515,0.0982,LL,False,False,R66
+0.449,-1.709,1574.0,Porta Garibaldi - Porta Nuova,18.0,0.4209,3480.0,0.2587,0.4034,0.061,LL,False,False,R191
+0.882,-1.709,2889.0,Stazione Centrale - Ponte Seveso,19.0,0.4136,3592.0,0.2645,0.0898,0.3305,LL,False,False,R191
+1.315,-1.709,2521.0,Buenos Aires - Porta Venezia - Porta Monforte,19.0,0.3962,2934.0,0.3238,-0.1216,0.33,HL,False,False,R68
+1.748,-1.709,3645.0,Buenos Aires - Porta Venezia - Porta Monforte,19.0,0.4102,3049.0,0.3115,-0.0147,0.4713,HL,False,False,R171
+2.181,-1.709,3746.0,Buenos Aires - Porta Venezia - Porta Monforte,12.95,0.3956,2929.0,0.2211,0.9542,0.0494,LL,True,False,R143
+2.614,-1.709,3732.0,Buenos Aires - Porta Venezia - Porta Monforte,12.95,0.4405,3316.0,0.1953,2.3863,0.0017,LL,True,True,R162
+3.047,-1.709,1614.0,Citta' Studi,12.95,0.3891,2458.0,0.2634,0.4733,0.0189,LL,True,False,R145
+3.48,-1.709,2359.0,Citta' Studi,12.95,0.3766,2375.0,0.2726,0.1234,0.1944,LL,False,False,R128
+3.913,-1.709,571.0,Lambrate - Ortica,13.0,0.3265,2231.0,0.2914,0.0021,0.4289,HH,False,False,R141
+4.346,-1.709,1449.0,Lambrate - Ortica,13.0,0.2897,2015.0,0.3226,0.2607,0.1635,HH,False,False,R126
+4.779,-1.709,1545.0,Lambrate - Ortica,13.0,0.295,2044.0,0.3179,0.2987,0.123,HH,False,False,R141
+-8.861,-1.334,5.0,Parco Bosco in Citta',9.5,0.1604,1695.0,0.2802,0.0393,0.3518,LL,False,False,R40
+-8.428,-1.334,82.0,Parco Bosco in Citta',9.5,0.1627,1706.0,0.2784,0.014,0.4369,LL,False,False,R40
+-7.995,-1.334,1432.0,Quinto Romano,9.5,0.1349,1688.0,0.2814,0.0055,0.464,LL,False,False,R40
+-7.562,-1.334,1292.0,Quinto Romano,9.5,0.1341,1685.0,0.2819,0.0443,0.2516,LL,False,False,R40
+-7.129,-1.334,134.0,Quinto Romano,9.5,0.1769,1896.0,0.2505,0.2473,0.2229,LL,False,False,R82
+-6.696,-1.334,782.0,Quarto Cagnino,11.5,0.2926,2194.0,0.2621,0.0395,0.433,LL,False,False,R82
+-6.263,-1.334,656.0,Parco Bosco in Citta',11.05,0.2183,1990.0,0.2777,-0.0715,0.2448,LH,False,False,R82
+-5.83,-1.334,960.0,Stadio - Ippodromi,12.0,0.3209,2097.0,0.2861,-0.0562,0.041,LH,True,False,R01
+-5.397,-1.334,433.0,Stadio - Ippodromi,12.0,0.2626,1785.0,0.3361,0.4111,0.1313,HH,False,False,R140
+-4.964,-1.334,65.0,Stadio - Ippodromi,12.0,0.3141,2058.0,0.2916,0.0102,0.2194,HH,False,False,R01
+-4.531,-1.334,833.0,Stadio - Ippodromi,12.0,0.3487,2265.0,0.265,-0.2088,0.1512,LH,False,False,R50
+-4.098,-1.334,1200.0,Stadio - Ippodromi,12.0,0.3352,2181.0,0.2751,-0.0534,0.3313,LH,False,False,R50
+-3.665,-1.334,981.0,De Angeli - Monte Rosa,16.0,0.3479,3049.0,0.2624,0.3177,0.0941,LL,False,False,R50
+-3.232,-1.334,3287.0,De Angeli - Monte Rosa,16.0,0.4195,3716.0,0.2153,1.3957,0.0139,LL,True,False,R154
+-2.799,-1.334,474.0,Tre Torri,29.5,0.3874,4370.0,0.3376,-0.8203,0.022,HL,True,False,R67
+-2.366,-1.334,2159.0,Tre Torri,29.5,0.4244,4839.0,0.3048,-0.3737,0.0019,HL,True,True,R67
+-1.933,-1.334,1386.0,Pagano,16.0,0.4523,5305.0,0.1508,4.2387,0.0002,LL,True,True,R44
+-1.5,-1.334,2817.0,Sarpi,18.95,0.4021,3331.0,0.2844,0.1677,0.0004,LL,True,True,R172
+-1.067,-1.334,2002.0,Sarpi,18.95,0.4152,3454.0,0.2744,0.1746,0.0938,LL,False,False,R24
+-0.633,-1.334,2108.0,Brera,24.0,0.3975,4518.0,0.2656,0.2727,0.0908,LL,False,False,R186
+-0.2,-1.334,2545.0,Brera,24.0,0.4326,4978.0,0.2411,0.8806,0.0159,LL,True,False,R66
+0.233,-1.334,2031.0,Brera,24.0,0.4291,4931.0,0.2434,0.8196,0.0193,LL,True,False,R66
+0.666,-1.334,996.0,Giardini P.ta Venezia,24.0,0.4301,4523.0,0.2653,0.1405,0.2444,LL,False,False,R191
+1.099,-1.334,4470.0,Buenos Aires - Porta Venezia - Porta Monforte,19.0,0.3737,2757.0,0.3446,-0.0126,0.4867,HL,False,False,R68
+1.532,-1.334,3295.0,Buenos Aires - Porta Venezia - Porta Monforte,19.0,0.4175,3112.0,0.3053,0.1689,0.0855,HH,False,False,R194
+1.965,-1.334,4027.0,Buenos Aires - Porta Venezia - Porta Monforte,19.0,0.4114,3060.0,0.3105,-0.2621,0.0606,HL,False,False,R189
+2.398,-1.334,3961.0,Buenos Aires - Porta Venezia - Porta Monforte,12.95,0.4396,3307.0,0.1958,1.9143,0.0083,LL,True,True,R162
+2.831,-1.334,760.0,Citta' Studi,12.95,0.429,2745.0,0.2359,1.0113,0.0121,LL,True,False,R145
+3.264,-1.334,10.0,Citta' Studi,12.95,0.3611,2275.0,0.2846,0.0479,0.144,LL,False,False,R128
+3.697,-1.334,20.0,Citta' Studi,12.95,0.372,2345.0,0.2762,-0.0476,0.3452,LH,False,False,R128
+4.13,-1.334,537.0,Lambrate - Ortica,13.0,0.2968,2055.0,0.3163,0.2894,0.0908,HH,False,False,R141
+4.563,-1.334,1434.0,Lambrate - Ortica,13.0,0.3199,2190.0,0.2968,0.1477,0.0061,HH,True,True,R141
+4.996,-1.334,74.0,Lambrate - Ortica,13.0,0.3129,2149.0,0.3025,0.2385,0.0265,HH,True,False,R141
+-8.644,-0.959,5.0,Parco Bosco in Citta',9.5,0.1604,1695.0,0.2802,0.0216,0.3968,LL,False,False,R40
+-8.211,-0.959,125.0,Parco Bosco in Citta',9.5,0.1258,1541.0,0.3083,-0.0871,0.2753,HL,False,False,R40
+-7.778,-0.959,663.0,Quinto Romano,9.5,0.1357,1692.0,0.2807,-0.0242,0.3778,LH,False,False,R40
+-7.345,-0.959,52.0,Parco Bosco in Citta',9.5,0.1543,1667.0,0.2849,0.028,0.2553,LL,False,False,R40
+-6.912,-0.959,301.0,Quarto Cagnino,9.5,0.2521,1962.0,0.2421,0.2569,0.2609,LL,False,False,R82
+-6.479,-0.959,2083.0,Quarto Cagnino,11.5,0.2069,1731.0,0.3321,0.1447,0.3397,HH,False,False,R140
+-6.046,-0.959,2220.0,Quarto Cagnino,11.5,0.1906,1655.0,0.3474,1.2002,0.0079,HH,True,True,R140
+-5.613,-0.959,1791.0,Stadio - Ippodromi,13.75,0.2347,1652.0,0.416,1.8679,0.0363,HH,True,False,R140
+-5.18,-0.959,1818.0,Stadio - Ippodromi,13.75,0.3465,2251.0,0.3055,0.3491,0.0037,HH,True,True,R01
+-4.747,-0.959,1349.0,Stadio - Ippodromi,13.75,0.3036,1999.0,0.3439,0.4565,0.1457,HH,False,False,R28
+-4.314,-0.959,3620.0,San Siro,13.75,0.1433,1859.0,0.3699,0.6718,0.1527,HH,False,False,R176
+-3.881,-0.959,4613.0,San Siro,13.75,0.1971,2156.0,0.3188,-0.0008,0.4888,HL,False,False,R176
+-3.448,-0.959,2733.0,De Angeli - Monte Rosa,16.0,0.3937,3461.0,0.2312,1.3225,0.0041,LL,True,True,R50
+-3.015,-0.959,2360.0,Tre Torri,16.0,0.4317,4938.0,0.162,3.0278,0.0029,LL,True,True,R154
+-2.582,-0.959,1998.0,Tre Torri,16.0,0.4318,4940.0,0.162,3.539,0.0006,LL,True,True,R44
+-2.149,-0.959,1696.0,Pagano,16.0,0.4458,5212.0,0.1535,5.9353,0.0001,LL,True,True,R44
+-1.716,-0.959,1377.0,Pagano,18.95,0.4415,5150.0,0.184,4.068,0.0001,LL,True,True,R101
+-1.283,-0.959,7.0,Parco Sempione,18.95,0.3995,4278.0,0.2215,1.5165,0.005,LL,True,True,R101
+-0.85,-0.959,121.0,Parco Sempione,18.95,0.3978,4258.0,0.2225,0.9939,0.0422,LL,True,False,R101
+-0.417,-0.959,2381.0,Brera,24.0,0.4155,4749.0,0.2527,0.4864,0.0615,LL,False,False,R101
+0.016,-0.959,1624.0,Brera,24.0,0.4163,4760.0,0.2521,0.4121,0.0971,LL,False,False,R66
+0.449,-0.959,708.0,Brera,24.0,0.3914,4443.0,0.2701,0.1033,0.266,LL,False,False,R73
+0.882,-0.959,96.0,Giardini P.ta Venezia,24.0,0.4133,4319.0,0.2778,-0.0619,0.2744,LH,False,False,R73
+1.315,-0.959,2404.0,Buenos Aires - Porta Venezia - Porta Monforte,19.0,0.4236,3165.0,0.3002,0.0632,0.2189,HH,False,False,R194
+1.748,-0.959,4272.0,Buenos Aires - Porta Venezia - Porta Monforte,19.0,0.4148,3089.0,0.3076,0.0278,0.4284,HH,False,False,R189
+2.181,-0.959,3500.0,Buenos Aires - Porta Venezia - Porta Monforte,12.95,0.4038,2996.0,0.2161,0.6515,0.1442,LL,False,False,R153
+2.614,-0.959,2768.0,Buenos Aires - Porta Venezia - Porta Monforte,12.95,0.3215,2387.0,0.2713,0.4567,0.0016,LL,True,True,R105
+3.047,-0.959,2439.0,Citta' Studi,12.95,0.3895,2461.0,0.2631,0.0657,0.372,LL,False,False,R128
+3.48,-0.959,2590.0,Citta' Studi,12.95,0.3383,2136.0,0.3031,0.0629,0.2903,HH,False,False,R12
+3.913,-0.959,534.0,Lambrate - Ortica,13.0,0.2912,2023.0,0.3213,0.3771,0.0688,HH,False,False,R12
+4.346,-0.959,1255.0,Lambrate - Ortica,13.0,0.2218,1670.0,0.3892,1.3691,0.0445,HH,True,False,R12
+4.779,-0.959,565.0,Lambrate - Ortica,13.0,0.2088,1611.0,0.4034,1.4317,0.0604,HH,False,False,R12
+5.212,-0.959,4.0,Lambrate - Ortica,13.0,0.288,2005.0,0.3241,0.5287,0.0412,HH,True,False,R12
+5.645,-0.959,1.0,Parco Forlanini - Cavriano,13.0,0.191,2088.0,0.3114,0.2275,0.1442,HH,False,False,R12
+6.078,-0.959,111.0,Parco Forlanini - Cavriano,13.0,0.1749,1997.0,0.3255,0.4045,0.1322,HH,False,False,R12
+6.511,-0.959,43.0,Parco Forlanini - Cavriano,13.0,0.1827,2040.0,0.3186,0.4984,0.0992,HH,False,False,R12
+-8.861,-0.584,7.0,Parco Bosco in Citta',9.5,0.1589,1688.0,0.2814,-0.022,0.4262,LH,False,False,R40
+-8.428,-0.584,46.0,Parco Bosco in Citta',9.5,0.1662,1723.0,0.2757,-0.0482,0.3327,LH,False,False,R40
+-7.995,-0.584,446.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1499,1723.0,0.2757,-0.066,0.2961,LH,False,False,R40
+-7.562,-0.584,1127.0,Parco Bosco in Citta',9.5,0.0851,1377.0,0.345,-0.3635,0.2121,HL,False,False,R86
+-7.129,-0.584,54.0,Parco Bosco in Citta',9.5,0.1846,1812.0,0.2621,0.1115,0.3046,LL,False,False,R82
+-6.696,-0.584,1292.0,Forze Armate,11.5,0.2469,2114.0,0.272,-0.1028,0.248,LH,False,False,R82
+-6.263,-0.584,1781.0,Quarto Cagnino,11.5,0.1506,1482.0,0.388,1.1905,0.0675,HH,False,False,R140
+-5.83,-0.584,400.0,Forze Armate,11.5,0.1672,1696.0,0.339,1.2951,0.0022,HH,True,True,R28
+-5.397,-0.584,1179.0,Forze Armate,11.5,0.1685,1702.0,0.3378,0.8495,0.0172,HH,True,False,R28
+-4.964,-0.584,2384.0,Stadio - Ippodromi,13.75,0.3108,2040.0,0.3371,0.4866,0.1013,HH,False,False,R28
+-4.531,-0.584,4226.0,San Siro,13.75,0.2288,2354.0,0.2921,0.0455,0.0058,HH,True,True,R148
+-4.098,-0.584,5151.0,San Siro,13.75,0.1477,1881.0,0.3654,0.2249,0.3567,HH,False,False,R167
+-3.665,-0.584,2963.0,San Siro,13.75,0.3062,2915.0,0.2358,0.1607,0.357,LL,False,False,R79
+-3.232,-0.584,3073.0,De Angeli - Monte Rosa,16.0,0.4036,3556.0,0.225,1.5926,0.0022,LL,True,True,R79
+-2.799,-0.584,2650.0,De Angeli - Monte Rosa,16.0,0.3933,3456.0,0.2315,2.5983,0.0001,LL,True,True,R79
+-2.366,-0.584,1780.0,Pagano,16.0,0.4396,5122.0,0.1562,6.5342,0.0001,LL,True,True,R44
+-1.933,-0.584,2177.0,Pagano,16.0,0.4267,4944.0,0.1618,5.8332,0.0001,LL,True,True,R90
+-1.5,-0.584,1762.0,Magenta - s. Vittore,18.95,0.4302,4296.0,0.2205,2.4977,0.0001,LL,True,True,R101
+-1.067,-0.584,191.0,Duomo,23.25,0.3674,4874.0,0.2385,1.3815,0.0011,LL,True,True,R101
+-0.633,-0.584,1070.0,Brera,26.5,0.4176,4777.0,0.2774,0.1859,0.0384,LL,True,False,R73
+-0.2,-0.584,1164.0,Brera,26.5,0.3947,4484.0,0.2955,0.0877,0.0263,HH,True,False,R73
+0.233,-0.584,896.0,Duomo,26.5,0.3537,4693.0,0.2823,-0.1859,0.004,LH,True,True,R73
+0.666,-0.584,724.0,Guastalla,24.0,0.3758,3475.0,0.3453,0.0778,0.4364,HH,False,False,R11
+1.099,-0.584,1950.0,Guastalla,21.0,0.3945,3659.0,0.2869,-0.0154,0.2762,LH,False,False,R11
+1.532,-0.584,2758.0,Buenos Aires - Porta Venezia - Porta Monforte,19.0,0.4159,3098.0,0.3067,-0.0529,0.3564,HL,False,False,R11
+1.965,-0.584,4000.0,Buenos Aires - Porta Venezia - Porta Monforte,19.0,0.396,2932.0,0.324,-0.7668,0.0042,HL,True,True,R11
+2.398,-0.584,3047.0,Buenos Aires - Porta Venezia - Porta Monforte,12.95,0.4226,3156.0,0.2052,1.6894,0.0094,LL,True,False,R153
+2.831,-0.584,3559.0,Citta' Studi,12.95,0.3721,2346.0,0.2761,0.2102,0.0372,LL,True,False,R105
+3.264,-0.584,4616.0,Citta' Studi,12.95,0.3027,1936.0,0.3344,-0.1107,0.3842,HL,False,False,R183
+3.697,-0.584,2057.0,Citta' Studi,12.95,0.3083,1966.0,0.3293,0.2742,0.206,HH,False,False,R183
+4.13,-0.584,969.0,Parco Forlanini - Cavriano,13.0,0.2065,2179.0,0.2983,0.1296,0.0302,HH,True,False,R12
+4.563,-0.584,536.0,Parco Forlanini - Cavriano,13.0,0.203,2158.0,0.3012,0.2386,0.0061,HH,True,True,R12
+4.996,-0.584,143.0,Parco Forlanini - Cavriano,13.0,0.1965,2119.0,0.3067,0.2695,0.0247,HH,True,False,R12
+5.429,-0.584,63.0,Parco Forlanini - Cavriano,13.0,0.1916,2091.0,0.3108,0.1638,0.1615,HH,False,False,R12
+5.862,-0.584,53.0,Parco Forlanini - Cavriano,13.0,0.2031,2159.0,0.3011,0.1281,0.0798,HH,False,False,R12
+6.295,-0.584,359.0,Parco Forlanini - Cavriano,13.0,0.1617,1925.0,0.3376,0.4821,0.1531,HH,False,False,R12
+-8.644,-0.209,600.0,Parco Bosco in Citta',9.5,0.0986,1429.0,0.3324,-0.043,0.4381,HL,False,False,R86
+-8.211,-0.209,1731.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1071,1531.0,0.3102,-0.0078,0.47,HL,False,False,R86
+-7.778,-0.209,2435.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1365,1661.0,0.286,0.0039,0.4527,LL,False,False,R86
+-7.345,-0.209,350.0,Parco Bosco in Citta',9.5,0.1925,1853.0,0.2564,0.0716,0.4028,LL,False,False,R82
+-6.912,-0.209,3.0,Parco Bosco in Citta',9.5,0.1571,1680.0,0.2828,0.0741,0.1097,LL,False,False,R37
+-6.479,-0.209,28.0,Forze Armate,11.5,0.1943,1828.0,0.3145,0.1321,0.2525,HH,False,False,R37
+-6.046,-0.209,105.0,Forze Armate,11.5,0.201,1862.0,0.3087,0.3886,0.0084,HH,True,True,R37
+-5.613,-0.209,62.0,Forze Armate,11.5,0.1882,1798.0,0.3199,0.3594,0.069,HH,False,False,R28
+-5.18,-0.209,333.0,Forze Armate,11.5,0.2407,2078.0,0.2766,-0.1588,0.0739,LH,False,False,R87
+-4.747,-0.209,3468.0,Bande Nere,13.75,0.2641,2072.0,0.3319,0.1079,0.3844,HH,False,False,R148
+-4.314,-0.209,3658.0,Bande Nere,13.75,0.2925,2241.0,0.3068,0.1174,0.1923,HH,False,False,R108
+-3.881,-0.209,3440.0,Bande Nere,13.75,0.3532,2650.0,0.2594,-0.0828,0.3671,LH,False,False,R124
+-3.448,-0.209,3883.0,Bande Nere,16.0,0.3577,2683.0,0.2981,-0.1313,0.0269,HL,True,False,R124
+-3.015,-0.209,3379.0,De Angeli - Monte Rosa,16.0,0.3925,3449.0,0.232,1.061,0.0145,LL,True,False,R169
+-2.582,-0.209,2352.0,Pagano,16.0,0.4104,4726.0,0.1693,3.2323,0.0005,LL,True,True,R90
+-2.149,-0.209,2726.0,Pagano,16.0,0.4194,4845.0,0.1651,4.7598,0.0001,LL,True,True,R90
+-1.716,-0.209,2225.0,Magenta - s. Vittore,18.95,0.4454,4480.0,0.2115,3.0372,0.0001,LL,True,True,R41
+-1.283,-0.209,1984.0,Magenta - s. Vittore,18.95,0.4479,4511.0,0.2101,2.3153,0.0004,LL,True,True,R41
+-0.85,-0.209,1285.0,Duomo,23.25,0.4213,5657.0,0.2055,1.5633,0.0152,LL,True,False,R41
+-0.417,-0.209,748.0,Brera,30.0,0.416,4756.0,0.3154,0.1976,0.1692,HH,False,False,R73
+0.016,-0.209,8771.0,Duomo,30.0,0.1322,2545.0,0.5894,1.5579,0.2589,HH,False,False,R151
+0.449,-0.209,482.0,Duomo,30.0,0.3411,4533.0,0.3309,1.0935,0.0017,HH,True,True,R11
+0.882,-0.209,1219.0,Guastalla,21.0,0.3638,3362.0,0.3123,0.0329,0.4363,HH,False,False,R11
+1.315,-0.209,2838.0,Guastalla,21.0,0.4194,3920.0,0.2679,0.1961,0.1468,LL,False,False,R184
+1.748,-0.209,3804.0,Xxii Marzo,14.2,0.4112,3409.0,0.2083,0.9012,0.0874,LL,False,False,R184
+2.181,-0.209,2474.0,Xxii Marzo,12.95,0.4429,3721.0,0.174,2.8789,0.0016,LL,True,True,R81
+2.614,-0.209,3267.0,Xxii Marzo,12.95,0.4027,3330.0,0.1944,2.6072,0.0015,LL,True,True,R81
+3.047,-0.209,4165.0,Corsica,12.95,0.3665,2524.0,0.2565,0.2882,0.1435,LL,False,False,R149
+3.48,-0.209,2584.0,Corsica,12.95,0.3393,2342.0,0.2765,-0.0684,0.2719,LH,False,False,R97
+3.913,-0.209,27.0,Parco Forlanini - Cavriano,12.95,0.1955,2114.0,0.3063,0.0852,0.2645,HH,False,False,R12
+4.346,-0.209,53.0,Parco Forlanini - Cavriano,12.95,0.1833,2044.0,0.3168,0.1965,0.1934,HH,False,False,R12
+4.779,-0.209,323.0,Parco Forlanini - Cavriano,13.0,0.169,1965.0,0.3309,0.3048,0.2041,HH,False,False,R12
+5.212,-0.209,18.0,Parco Forlanini - Cavriano,13.0,0.2036,2162.0,0.3007,0.1062,0.1353,HH,False,False,R12
+5.645,-0.209,3.0,Parco Forlanini - Cavriano,13.0,0.194,2105.0,0.3088,0.1344,0.2173,HH,False,False,R12
+6.078,-0.209,1.0,Parco Forlanini - Cavriano,13.0,0.191,2088.0,0.3114,0.2317,0.1749,HH,False,False,R12
+-11.459,0.166,6.0,Assiano,9.5,0.1477,1695.0,0.2803,0.0437,0.3616,LL,False,False,R49
+-11.026,0.166,6.0,Assiano,9.5,0.1477,1695.0,0.2803,0.0416,0.3467,LL,False,False,R49
+-10.16,0.166,3.0,Assiano,9.5,0.1449,1682.0,0.2824,0.021,0.4077,LL,False,False,R49
+-9.294,0.166,8.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1433,1692.0,0.2807,0.0507,0.3117,LL,False,False,R49
+-8.861,0.166,119.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1467,1708.0,0.2781,0.0045,0.4803,LL,False,False,R49
+-8.428,0.166,298.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1281,1623.0,0.2927,0.0043,0.4243,HH,False,False,R86
+-7.995,0.166,990.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1545,1745.0,0.2722,0.0141,0.4617,LL,False,False,R51
+-7.562,0.166,1891.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1616,1780.0,0.2669,0.1616,0.204,LL,False,False,R121
+-7.129,0.166,249.0,Parco Bosco in Citta',9.5,0.1779,1779.0,0.267,0.2714,0.0816,LL,False,False,R82
+-6.696,0.166,204.0,Parco Bosco in Citta',9.5,0.2448,2140.0,0.2219,-0.2038,0.3586,LH,False,False,R82
+-6.263,0.166,1741.0,Forze Armate,11.5,0.1619,1672.0,0.3439,0.4701,0.1445,HH,False,False,R36
+-5.83,0.166,678.0,Forze Armate,11.5,0.1746,1731.0,0.3321,0.9217,0.007,HH,True,True,R37
+-5.397,0.166,43.0,Forze Armate,11.5,0.1905,1809.0,0.3178,0.2678,0.111,HH,False,False,R37
+-4.964,0.166,1568.0,Forze Armate,11.5,0.257,2174.0,0.2645,-0.0472,0.4141,LH,False,False,R87
+-4.531,0.166,2545.0,Bande Nere,13.75,0.3008,2293.0,0.2999,-0.0065,0.4577,HL,False,False,R108
+-4.098,0.166,4222.0,Bande Nere,13.75,0.3111,2359.0,0.2915,-0.0017,0.4481,HL,False,False,R174
+-3.665,0.166,2036.0,Bande Nere,13.75,0.3241,2445.0,0.2812,0.0309,0.3309,LL,False,False,R124
+-3.232,0.166,2277.0,Porta Magenta,16.0,0.4138,2916.0,0.2744,0.0817,0.2689,LL,False,False,R169
+-2.799,0.166,2990.0,Porta Magenta,16.0,0.4053,2848.0,0.2809,0.1314,0.0485,LL,True,False,R64
+-2.366,0.166,3328.0,Porta Magenta,16.0,0.3909,2737.0,0.2923,-0.0616,0.0012,HL,True,True,R64
+-1.933,0.166,1924.0,Magenta - s. Vittore,17.25,0.4224,4204.0,0.2052,2.2754,0.0008,LL,True,True,R78
+-1.5,0.166,1441.0,Magenta - s. Vittore,18.95,0.4224,4204.0,0.2254,2.2506,0.0002,LL,True,True,R78
+-1.067,0.166,1606.0,Duomo,23.25,0.388,5159.0,0.2253,2.3099,0.0002,LL,True,True,R78
+-0.633,0.166,1643.0,Duomo,23.25,0.4143,5550.0,0.2095,1.9998,0.0021,LL,True,True,R78
+-0.2,0.166,642.0,Duomo,30.0,0.4093,5473.0,0.2741,-0.0465,0.3596,LH,False,False,R73
+0.233,0.166,381.0,Duomo,30.0,0.3574,4742.0,0.3163,0.2186,0.1518,HH,False,False,R11
+0.666,0.166,1437.0,Duomo,30.0,0.406,5423.0,0.2766,0.0771,0.2468,LL,False,False,R89
+1.099,0.166,1545.0,Guastalla,21.0,0.4391,4139.0,0.2537,0.3477,0.1301,LL,False,False,R89
+1.532,0.166,2936.0,Xxii Marzo,14.2,0.3512,2888.0,0.2458,0.7691,0.0205,LL,True,False,R135
+1.965,0.166,3419.0,Xxii Marzo,14.2,0.3248,2685.0,0.2644,0.824,0.0001,LL,True,True,R135
+2.398,0.166,3394.0,Xxii Marzo,12.95,0.4116,3413.0,0.1897,2.6855,0.0011,LL,True,True,R81
+2.831,0.166,2792.0,Corsica,12.95,0.3766,2596.0,0.2495,0.8067,0.0095,LL,True,False,R149
+3.264,0.166,4796.0,Corsica,12.95,0.3264,2260.0,0.2866,0.019,0.2525,LL,False,False,R97
+3.697,0.166,1151.0,Corsica,12.95,0.3107,2163.0,0.2993,0.0239,0.38,HH,False,False,R97
+4.13,0.166,184.0,Parco Forlanini - Cavriano,12.95,0.2093,2196.0,0.2948,0.0459,0.1186,HH,False,False,R12
+4.563,0.166,9.0,Parco Forlanini - Cavriano,13.0,0.1884,2073.0,0.3135,0.3626,0.0429,HH,True,False,R12
+5.429,0.166,1.0,Parco Forlanini - Cavriano,13.0,0.191,2088.0,0.3114,0.3856,0.0337,HH,True,False,R12
+-11.242,0.541,16.0,Assiano,9.5,0.1501,1706.0,0.2784,0.0498,0.3358,LL,False,False,R49
+-10.809,0.541,14.0,Assiano,9.5,0.1468,1691.0,0.2809,0.0353,0.325,LL,False,False,R49
+-10.376,0.541,12.0,Assiano,9.5,0.1435,1675.0,0.2835,0.0196,0.3628,LL,False,False,R49
+-9.943,0.541,5.0,Assiano,9.5,0.1435,1675.0,0.2835,0.0198,0.3722,LL,False,False,R49
+-9.51,0.541,2.0,Assiano,9.5,0.1457,1685.0,0.2818,0.034,0.3188,LL,False,False,R49
+-9.077,0.541,56.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1555,1750.0,0.2714,0.0855,0.286,LL,False,False,R49
+-8.644,0.541,282.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1594,1769.0,0.2685,0.0525,0.3695,LL,False,False,R49
+-8.211,0.541,1660.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1171,1574.0,0.3018,-0.0561,0.2721,HL,False,False,R86
+-7.778,0.541,3056.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1557,1751.0,0.2713,0.065,0.341,LL,False,False,R51
+-7.345,0.541,2801.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1346,1652.0,0.2876,0.0224,0.132,LL,False,False,R121
+-6.912,0.541,912.0,Forze Armate,9.5,0.199,1852.0,0.2564,-0.0021,0.4939,LH,False,False,R82
+-6.479,0.541,3560.0,Forze Armate,11.5,0.19,1807.0,0.3183,0.3356,0.0683,HH,False,False,R36
+-6.046,0.541,2322.0,Forze Armate,11.5,0.1361,1557.0,0.3693,1.5263,0.0116,HH,True,False,R23
+-5.613,0.541,1198.0,Forze Armate,11.5,0.1132,1461.0,0.3934,0.9542,0.1303,HH,False,False,R23
+-5.18,0.541,207.0,Forze Armate,11.5,0.2219,1973.0,0.2914,0.002,0.4337,HH,False,False,R37
+-4.747,0.541,1949.0,Forze Armate,11.5,0.2789,2310.0,0.249,0.1003,0.3771,LL,False,False,R87
+-4.314,0.541,2651.0,Bande Nere,13.75,0.3166,2395.0,0.2871,0.0037,0.4363,LL,False,False,R10
+-3.881,0.541,1377.0,Bande Nere,13.75,0.3143,2380.0,0.2889,0.0016,0.4245,LL,False,False,R174
+-3.448,0.541,1758.0,Bande Nere,13.75,0.3282,2473.0,0.278,0.0152,0.4389,LL,False,False,R159
+-3.015,0.541,3195.0,Porta Magenta,16.0,0.3871,2708.0,0.2954,-0.0298,0.2518,HL,False,False,R64
+-2.582,0.541,3063.0,Porta Magenta,16.0,0.4177,2947.0,0.2714,0.1094,0.2321,LL,False,False,R142
+-2.149,0.541,3241.0,Porta Magenta,16.0,0.433,3074.0,0.2602,0.5509,0.0157,LL,True,False,R142
+-1.716,0.541,2177.0,Magenta - s. Vittore,17.25,0.4266,4254.0,0.2028,2.4399,0.0008,LL,True,True,R170
+-1.283,0.541,2606.0,Magenta - s. Vittore,17.25,0.4537,4584.0,0.1882,3.1251,0.0003,LL,True,True,R170
+-0.85,0.541,2613.0,Duomo,23.25,0.4457,6051.0,0.1921,3.0136,0.0002,LL,True,True,R170
+-0.417,0.541,2149.0,Duomo,20.75,0.4417,5986.0,0.1733,3.754,0.0001,LL,True,True,R165
+0.016,0.541,1144.0,Duomo,20.75,0.432,5827.0,0.178,2.4956,0.0047,LL,True,True,R165
+0.449,0.541,447.0,Duomo,21.0,0.3766,5000.0,0.21,1.1229,0.0506,LL,False,False,R114
+0.882,0.541,857.0,Guastalla,21.0,0.4667,4466.0,0.2351,0.8978,0.0263,LL,True,False,R114
+1.315,0.541,2442.0,Guastalla,21.0,0.4221,3949.0,0.2659,0.5494,0.0042,LL,True,True,R89
+1.748,0.541,2488.0,Xxii Marzo,14.2,0.3725,3063.0,0.2318,1.1736,0.0089,LL,True,True,R48
+2.181,0.541,984.0,Umbria - Molise - Calvairate,12.95,0.3857,2795.0,0.2317,1.2062,0.0081,LL,True,True,R48
+2.614,0.541,1557.0,Umbria - Molise - Calvairate,12.95,0.3669,2653.0,0.2441,0.7822,0.0243,LL,True,False,R48
+3.047,0.541,1686.0,Corsica,12.95,0.3286,2273.0,0.2848,0.0277,0.2635,LL,False,False,R97
+3.48,0.541,919.0,Corsica,12.95,0.3161,2196.0,0.2948,0.0218,0.2894,HH,False,False,R97
+3.913,0.541,1700.0,Taliedo - Morsenchio - Q.re Forlanini,12.95,0.2417,2036.0,0.318,0.2272,0.1642,HH,False,False,R12
+4.346,0.541,1826.0,Taliedo - Morsenchio - Q.re Forlanini,12.95,0.2351,1999.0,0.3239,0.5404,0.0297,HH,True,False,R04
+4.779,0.541,541.0,Taliedo - Morsenchio - Q.re Forlanini,12.95,0.1892,1762.0,0.3676,1.4848,0.018,HH,True,False,R21
+5.212,0.541,11.0,Monlue' - Ponte Lambro,13.0,0.1262,1807.0,0.3597,1.7487,0.0047,HH,True,True,R21
+5.645,0.541,8.0,Monlue' - Ponte Lambro,13.0,0.1232,1792.0,0.3627,1.7886,0.0083,HH,True,True,R21
+6.078,0.541,4.0,Monlue' - Ponte Lambro,13.0,0.1207,1780.0,0.3652,2.3856,0.0125,HH,True,False,R21
+6.511,0.541,1.0,Monlue' - Ponte Lambro,13.0,0.1175,1764.0,0.3684,2.4756,0.0458,HH,True,False,R21
+-11.026,0.916,15.0,Assiano,9.5,0.1508,1709.0,0.2779,0.0451,0.3606,LL,False,False,R49
+-10.593,0.916,13.0,Assiano,9.5,0.1428,1672.0,0.2841,0.0215,0.3302,LL,False,False,R49
+-10.16,0.916,12.0,Assiano,9.5,0.1435,1675.0,0.2835,0.0206,0.3628,LL,False,False,R49
+-9.727,0.916,4.0,Assiano,9.5,0.1442,1679.0,0.283,0.026,0.3239,LL,False,False,R49
+-9.294,0.916,3.0,Assiano,9.5,0.1449,1682.0,0.2824,0.0369,0.2786,LL,False,False,R49
+-8.861,0.916,60.0,Assiano,9.5,0.1439,1677.0,0.2832,0.0202,0.3581,LL,False,False,R49
+-8.428,0.916,58.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1465,1707.0,0.2782,-0.0312,0.373,LH,False,False,R49
+-7.995,0.916,2168.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1325,1642.0,0.2892,-0.0009,0.4598,LH,False,False,R49
+-7.562,0.916,1872.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1534,1740.0,0.273,0.0382,0.3839,LL,False,False,R51
+-7.129,0.916,1216.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,11.5,0.2209,2097.0,0.2742,0.0151,0.4426,LL,False,False,R121
+-6.696,0.916,2943.0,Forze Armate,11.5,0.1334,1545.0,0.3721,0.2414,0.3649,HH,False,False,R23
+-6.263,0.916,1030.0,Forze Armate,11.5,0.1596,1661.0,0.3461,0.8863,0.0262,HH,True,False,R23
+-5.83,0.916,1830.0,Forze Armate,11.5,0.2346,2044.0,0.2813,-0.1577,0.0149,LH,True,False,R37
+-5.397,0.916,2567.0,Lorenteggio,11.5,0.2734,2053.0,0.2801,-0.0539,0.2534,LH,False,False,R37
+-4.964,0.916,1479.0,Lorenteggio,11.5,0.3059,2245.0,0.2561,0.0399,0.4387,LL,False,False,R87
+-4.531,0.916,1436.0,Bande Nere,13.75,0.2932,2245.0,0.3063,-0.0366,0.3807,HL,False,False,R16
+-4.098,0.916,2402.0,Bande Nere,13.75,0.3169,2397.0,0.2868,-0.0338,0.1071,LH,False,False,R10
+-3.665,0.916,1534.0,Bande Nere,13.75,0.3066,2330.0,0.2951,0.0268,0.2609,HH,False,False,R174
+-3.232,0.916,1986.0,Bande Nere,13.75,0.3164,2394.0,0.2872,0.0178,0.2233,LL,False,False,R159
+-2.799,0.916,4683.0,Porta Magenta,16.0,0.4211,2974.0,0.269,0.2072,0.1201,LL,False,False,R159
+-2.366,0.916,3221.0,Porta Genova,16.45,0.4019,3181.0,0.2586,0.3743,0.078,LL,False,False,R56
+-1.933,0.916,2894.0,Porta Genova,16.45,0.4195,3339.0,0.2463,0.8615,0.0109,LL,True,False,R56
+-1.5,0.916,3499.0,Magenta - s. Vittore,17.25,0.4045,4001.0,0.2156,1.6382,0.0053,LL,True,True,R160
+-1.067,0.916,3560.0,Porta Ticinese - Conca Del Naviglio,17.25,0.4278,3580.0,0.2409,1.11,0.0047,LL,True,True,R160
+-0.633,0.916,1776.0,Porta Ticinese - Conca Del Naviglio,19.5,0.4394,3698.0,0.2637,0.8118,0.0001,LL,True,True,R127
+-0.2,0.916,2200.0,Duomo,20.75,0.4624,6337.0,0.1637,2.8212,0.0034,LL,True,True,R165
+0.233,0.916,1458.0,Porta Vigentina - Porta Lodovica,19.5,0.4593,3424.0,0.2848,0.1425,0.001,LL,True,True,R63
+0.666,0.916,1335.0,Guastalla,21.0,0.4458,4216.0,0.2491,0.6446,0.0344,LL,True,False,R63
+1.099,0.916,2985.0,Guastalla,21.0,0.4422,4174.0,0.2516,0.8981,0.0037,LL,True,True,R114
+1.532,0.916,3094.0,Xxii Marzo,14.2,0.4309,3600.0,0.1972,1.9073,0.0067,LL,True,True,R133
+1.965,0.916,4421.0,Xxii Marzo,14.2,0.3487,2868.0,0.2475,0.9847,0.0031,LL,True,True,R133
+2.398,0.916,4045.0,Umbria - Molise - Calvairate,11.25,0.2828,2103.0,0.2675,0.2041,0.1428,LL,False,False,R155
+2.831,0.916,405.0,Ortomercato,12.95,0.2355,2364.0,0.2739,-0.0269,0.425,LH,False,False,R97
+3.264,0.916,9.0,Ortomercato,12.95,0.184,2051.0,0.3157,-0.0265,0.4527,HL,False,False,R12
+3.697,0.916,195.0,Ortomercato,12.95,0.2012,2150.0,0.3011,0.2274,0.0131,HH,True,False,R12
+4.13,0.916,1940.0,Taliedo - Morsenchio - Q.re Forlanini,12.95,0.2151,1892.0,0.3423,1.0386,0.0112,HH,True,False,R04
+4.563,0.916,1502.0,Taliedo - Morsenchio - Q.re Forlanini,12.95,0.2263,1952.0,0.3318,0.9783,0.0046,HH,True,True,R04
+4.996,0.916,136.0,Monlue' - Ponte Lambro,12.95,0.1358,1855.0,0.349,1.6802,0.0011,HH,True,True,R04
+5.429,0.916,24.0,Monlue' - Ponte Lambro,13.0,0.1278,1815.0,0.3581,2.0043,0.0019,HH,True,True,R21
+-10.809,1.291,8.0,Assiano,9.5,0.1463,1688.0,0.2814,0.0321,0.3511,LL,False,False,R49
+-10.376,1.291,8.0,Assiano,9.5,0.1463,1688.0,0.2814,0.0293,0.342,LL,False,False,R49
+-9.943,1.291,5.0,Assiano,9.5,0.1484,1698.0,0.2797,0.0358,0.3383,LL,False,False,R49
+-9.51,1.291,996.0,Assiano,9.5,0.1525,1718.0,0.2765,0.0594,0.2947,LL,False,False,R49
+-9.077,1.291,594.0,Muggiano,9.5,0.1698,1725.0,0.2753,0.0291,0.4059,LL,False,False,R49
+-8.644,1.291,2370.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.0933,1474.0,0.3223,-0.012,0.475,HL,False,False,R49
+-8.211,1.291,1766.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1042,1519.0,0.3128,0.1296,0.2688,HH,False,False,R49
+-7.778,1.291,103.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,11.5,0.1677,1810.0,0.3177,0.038,0.4436,HH,False,False,R49
+-7.345,1.291,948.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,11.5,0.2289,2144.0,0.2682,0.022,0.4486,LL,False,False,R121
+-6.912,1.291,1027.0,Forze Armate,11.5,0.2504,2135.0,0.2693,0.0128,0.4581,LL,False,False,R121
+-6.479,1.291,545.0,Lorenteggio,11.5,0.2276,1809.0,0.3179,0.1354,0.278,HH,False,False,R16
+-6.046,1.291,23.0,Lorenteggio,11.5,0.2403,1873.0,0.307,0.1207,0.1942,HH,False,False,R16
+-5.613,1.291,851.0,Lorenteggio,11.5,0.246,1903.0,0.3021,0.0347,0.3615,HH,False,False,R37
+-5.18,1.291,2143.0,Lorenteggio,11.5,0.2568,1960.0,0.2933,0.024,0.1796,HH,False,False,R16
+-4.747,1.291,2006.0,Lorenteggio,11.5,0.2446,1896.0,0.3033,0.2307,0.0187,HH,True,False,R16
+-4.314,1.291,2857.0,Bande Nere,13.75,0.2707,2110.0,0.3258,0.615,0.0165,HH,True,False,R107
+-3.881,1.291,4070.0,Bande Nere,13.75,0.209,1779.0,0.3864,0.405,0.2997,HH,False,False,R107
+-3.448,1.291,3321.0,Bande Nere,13.75,0.3149,2384.0,0.2884,0.0005,0.4827,LL,False,False,R94
+-3.015,1.291,4044.0,Giambellino,13.75,0.3217,3058.0,0.2249,0.8391,0.061,LL,False,False,R47
+-2.582,1.291,3485.0,Porta Genova,16.45,0.397,3138.0,0.2621,0.417,0.0385,LL,True,False,R99
+-2.149,1.291,1349.0,Porta Genova,16.45,0.3982,3149.0,0.2612,0.2606,0.1366,LL,False,False,R99
+-1.716,1.291,2248.0,Porta Genova,16.45,0.399,3156.0,0.2606,0.3334,0.0894,LL,False,False,R99
+-1.283,1.291,2314.0,Porta Ticinese - Conchetta,16.45,0.4092,2864.0,0.2872,0.0303,0.0997,LL,False,False,R166
+-0.85,1.291,1997.0,Porta Ticinese - Conca Del Naviglio,17.25,0.3852,3183.0,0.2709,0.1893,0.1227,LL,False,False,R127
+-0.417,1.291,2258.0,Porta Ticinese - Conca Del Naviglio,19.5,0.4456,3761.0,0.2592,0.6709,0.0067,LL,True,True,R127
+0.016,1.291,2937.0,Porta Vigentina - Porta Lodovica,19.5,0.4888,3715.0,0.2624,0.4415,0.0302,LL,True,False,R39
+0.449,1.291,2620.0,Porta Vigentina - Porta Lodovica,19.5,0.4548,3381.0,0.2883,0.0227,0.0609,LL,False,False,R63
+0.882,1.291,3434.0,Guastalla,21.0,0.4508,4275.0,0.2456,0.7262,0.028,LL,True,False,R91
+1.315,1.291,2612.0,Pta Romana,14.2,0.4437,3323.0,0.2137,1.6143,0.0067,LL,True,True,R114
+1.748,1.291,2432.0,Pta Romana,14.2,0.4072,3004.0,0.2364,1.463,0.0012,LL,True,True,R119
+2.181,1.291,4191.0,Umbria - Molise - Calvairate,11.25,0.3144,2295.0,0.2451,0.5099,0.087,LL,False,False,R155
+2.614,1.291,4146.0,Umbria - Molise - Calvairate,11.25,0.1668,1526.0,0.3686,-0.8266,0.1087,HL,False,False,R69
+3.047,1.291,1329.0,Ortomercato,11.25,0.1723,1985.0,0.2833,-0.0319,0.3058,LH,False,False,R69
+3.913,1.291,1320.0,Taliedo - Morsenchio - Q.re Forlanini,12.95,0.1377,1527.0,0.4239,2.2271,0.0292,HH,True,False,R21
+4.346,1.291,606.0,Taliedo - Morsenchio - Q.re Forlanini,12.95,0.2335,1991.0,0.3252,0.8725,0.0036,HH,True,True,R04
+4.779,1.291,22.0,Taliedo - Morsenchio - Q.re Forlanini,12.95,0.1902,1766.0,0.3666,1.197,0.0288,HH,True,False,R21
+5.212,1.291,176.0,Monlue' - Ponte Lambro,12.95,0.1213,1783.0,0.3632,1.5569,0.0057,HH,True,True,R21
+5.645,1.291,16.0,Monlue' - Ponte Lambro,12.95,0.1186,1770.0,0.3659,1.5509,0.0224,HH,True,False,R21
+-10.593,1.666,1.0,Assiano,9.5,0.1464,1689.0,0.2813,0.0312,0.3672,LL,False,False,R49
+-10.16,1.666,2.0,Assiano,9.5,0.1457,1685.0,0.2818,0.0283,0.3414,LL,False,False,R49
+-9.727,1.666,274.0,Assiano,9.5,0.1422,1670.0,0.2845,0.0296,0.2615,LL,False,False,R49
+-9.294,1.666,1063.0,Muggiano,9.5,0.1732,1742.0,0.2727,0.0935,0.2551,LL,False,False,R49
+-8.861,1.666,130.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,9.5,0.1509,1728.0,0.2749,-0.0152,0.4586,LH,False,False,R49
+-8.428,1.666,226.0,Muggiano,9.5,0.1263,1530.0,0.3105,0.1144,0.3208,HH,False,False,R49
+-7.562,1.666,84.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,11.5,0.1613,1778.0,0.3233,0.1138,0.3765,HH,False,False,R49
+-7.129,1.666,638.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,11.5,0.2289,2144.0,0.2683,0.0262,0.4458,LL,False,False,R121
+-6.696,1.666,538.0,Lorenteggio,11.5,0.3436,2492.0,0.2307,0.0861,0.4294,LL,False,False,R121
+-6.263,1.666,56.0,Lorenteggio,11.5,0.2679,2022.0,0.2844,-0.0032,0.4819,LH,False,False,R121
+-5.83,1.666,1.0,Lorenteggio,11.5,0.2367,1855.0,0.31,0.0901,0.3222,HH,False,False,R16
+-5.397,1.666,9.0,Lorenteggio,11.5,0.2372,1857.0,0.3096,0.3002,0.0445,HH,True,False,R16
+-4.964,1.666,1775.0,Lorenteggio,11.5,0.1502,1460.0,0.3938,1.6622,0.0282,HH,True,False,R33
+-4.531,1.666,1289.0,Lorenteggio,11.5,0.1327,1391.0,0.4132,1.8738,0.032,HH,True,False,R33
+-4.098,1.666,4694.0,Giambellino,13.75,0.2299,2373.0,0.2897,-0.0073,0.0058,LH,True,True,R177
+-3.665,1.666,4253.0,Giambellino,13.75,0.2003,2187.0,0.3144,-0.121,0.2663,HL,False,False,R94
+-3.232,1.666,3945.0,Giambellino,13.75,0.3168,3017.0,0.2279,1.2074,0.013,LL,True,False,R115
+-2.799,1.666,1869.0,Giambellino,13.75,0.3268,3101.0,0.2217,1.4599,0.0065,LL,True,True,R47
+-2.366,1.666,1318.0,Porta Genova,16.45,0.3583,2820.0,0.2917,-0.021,0.066,HL,False,False,R110
+-1.933,1.666,935.0,Porta Ticinese - Conchetta,16.45,0.4034,2818.0,0.2919,-0.0048,0.3781,HL,False,False,R110
+-1.5,1.666,1548.0,Porta Ticinese - Conchetta,16.45,0.4232,2977.0,0.2763,-0.0707,0.2642,LH,False,False,R99
+-1.067,1.666,3143.0,Porta Ticinese - Conchetta,16.45,0.3664,2544.0,0.3233,-0.179,0.2566,HL,False,False,R166
+-0.633,1.666,2485.0,Porta Ticinese - Conca Del Naviglio,15.5,0.4143,3449.0,0.2247,0.7162,0.0947,LL,False,False,R106
+-0.2,1.666,1786.0,Porta Vigentina - Porta Lodovica,15.5,0.4317,3173.0,0.2442,0.8235,0.0156,LL,True,False,R106
+0.233,1.666,2191.0,Porta Vigentina - Porta Lodovica,15.5,0.3929,2850.0,0.2719,0.2619,0.0442,LL,True,False,R39
+0.666,1.666,3016.0,Pta Romana,15.5,0.434,3235.0,0.2396,0.737,0.0445,LL,True,False,R91
+1.099,1.666,3585.0,Pta Romana,15.5,0.3981,2929.0,0.2646,0.6829,0.0015,LL,True,True,R152
+1.532,1.666,3230.0,Pta Romana,14.2,0.3973,2923.0,0.2429,1.2398,0.0014,LL,True,True,R119
+1.965,1.666,2314.0,Umbria - Molise - Calvairate,11.25,0.3802,2752.0,0.2044,1.8349,0.0059,LL,True,True,R18
+2.398,1.666,4364.0,Umbria - Molise - Calvairate,11.25,0.3019,2217.0,0.2538,0.3934,0.0985,LL,False,False,R155
+2.831,1.666,1200.0,Ortomercato,11.25,0.1946,2112.0,0.2664,-0.1809,0.1758,LH,False,False,R144
+3.264,1.666,29.0,Ortomercato,11.75,0.1898,2084.0,0.282,-0.1535,0.0177,LH,True,False,R144
+3.697,1.666,139.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.1806,1720.0,0.3416,1.528,0.0018,HH,True,True,R21
+4.13,1.666,262.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.1845,1739.0,0.3379,1.3498,0.001,HH,True,True,R04
+4.563,1.666,403.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.2375,2013.0,0.2919,0.0464,0.0022,HH,True,True,R21
+4.996,1.666,268.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.2249,1944.0,0.3023,0.2492,0.0098,HH,True,False,R14
+5.429,1.666,164.0,Monlue' - Ponte Lambro,11.75,0.1528,1945.0,0.3021,0.247,0.007,HH,True,True,R14
+5.862,1.666,23.0,Monlue' - Ponte Lambro,11.75,0.1194,1773.0,0.3313,0.7582,0.0334,HH,True,False,R14
+-9.943,2.041,3.0,Assiano,9.5,0.1449,1682.0,0.2824,0.0314,0.3181,LL,False,False,R49
+-9.51,2.041,21.0,Assiano,9.5,0.1603,1755.0,0.2707,0.0736,0.3322,LL,False,False,R49
+-9.077,2.041,1.0,Assiano,9.5,0.1464,1689.0,0.2813,0.0551,0.2623,LL,False,False,R49
+-7.345,2.041,6.0,Baggio - Q.re Degli Olmi - Q.re Valsesia,11.5,0.1447,1699.0,0.3385,0.0984,0.4325,HH,False,False,R49
+-6.912,2.041,164.0,Lorenteggio,11.5,0.2571,1962.0,0.293,-0.0135,0.3364,HL,False,False,R49
+-5.18,2.041,787.0,Lorenteggio,11.5,0.2103,1724.0,0.3335,0.3494,0.1824,HH,False,False,R146
+-4.747,2.041,2812.0,Giambellino,11.5,0.1338,1820.0,0.316,0.4867,0.013,HH,True,False,R146
+-4.314,2.041,2363.0,Giambellino,11.5,0.1195,1749.0,0.3288,0.3044,0.1673,HH,False,False,R33
+-3.881,2.041,1041.0,Giambellino,13.75,0.2362,2415.0,0.2847,0.034,0.2207,LL,False,False,R177
+-3.448,2.041,783.0,Giambellino,11.75,0.3216,3057.0,0.1922,1.2843,0.058,LL,False,False,R115
+-3.015,2.041,587.0,Moncucco - San Cristoforo,11.75,0.325,2656.0,0.2212,1.9586,0.0008,LL,True,True,R115
+-2.582,2.041,1057.0,Moncucco - San Cristoforo,11.75,0.3483,2833.0,0.2074,1.2028,0.0417,LL,True,False,R115
+-2.149,2.041,3038.0,Porta Ticinese - Conchetta,16.45,0.3752,2607.0,0.3156,-0.3472,0.0559,HL,False,False,R116
+-1.716,2.041,1060.0,Porta Ticinese - Conchetta,16.45,0.3959,2760.0,0.298,-0.0434,0.2489,HL,False,False,R110
+-1.283,2.041,1782.0,Porta Ticinese - Conchetta,16.45,0.3349,2332.0,0.3527,-0.7818,0.0718,HL,False,False,R110
+-0.85,2.041,3452.0,Porta Ticinese - Conca Del Naviglio,15.5,0.3733,3080.0,0.2516,0.574,0.0372,LL,True,False,R106
+-0.417,2.041,814.0,Porta Ticinese - Conca Del Naviglio,15.5,0.3988,3305.0,0.2345,1.3919,0.0017,LL,True,True,R106
+0.016,2.041,363.0,Porta Vigentina - Porta Lodovica,15.5,0.4519,3355.0,0.231,1.0367,0.0203,LL,True,False,R152
+0.449,2.041,1512.0,Porta Vigentina - Porta Lodovica,15.5,0.3975,2886.0,0.2685,0.4978,0.004,LL,True,True,R39
+0.882,2.041,758.0,Pta Romana,11.3,0.3985,2933.0,0.1927,1.8763,0.0108,LL,True,False,R152
+1.315,2.041,1383.0,Scalo Romana,11.3,0.3641,2541.0,0.2224,1.6179,0.0025,LL,True,True,R18
+1.748,2.041,1631.0,Umbria - Molise - Calvairate,11.25,0.3483,2520.0,0.2232,1.6493,0.0026,LL,True,True,R18
+2.181,2.041,1292.0,Umbria - Molise - Calvairate,11.25,0.3329,2415.0,0.2329,1.2303,0.0059,LL,True,True,R18
+2.614,2.041,911.0,Umbria - Molise - Calvairate,11.25,0.2824,2100.0,0.2678,0.0732,0.3441,LL,False,False,R144
+3.047,2.041,831.0,Lodi - Corvetto,11.75,0.1403,1491.0,0.394,0.4719,0.2877,HH,False,False,R21
+3.48,2.041,241.0,Lodi - Corvetto,11.75,0.1421,1498.0,0.3921,1.8152,0.0145,HH,True,False,R21
+3.913,2.041,790.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.1548,1602.0,0.3668,2.1594,0.0013,HH,True,True,R21
+4.346,2.041,2227.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.1295,1493.0,0.3934,2.1692,0.007,HH,True,True,R21
+4.779,2.041,2310.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.1515,1587.0,0.3702,1.2994,0.0275,HH,True,False,R21
+5.212,2.041,381.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.1863,1747.0,0.3363,0.7392,0.0254,HH,True,False,R14
+5.645,2.041,19.0,Monlue' - Ponte Lambro,11.75,0.117,1762.0,0.3335,0.6741,0.0315,HH,True,False,R14
+6.078,2.041,2.0,Monlue' - Ponte Lambro,11.75,0.117,1761.0,0.3335,0.8147,0.0514,HH,False,False,R14
+-10.16,2.416,6.0,Assiano,9.5,0.1477,1695.0,0.2803,0.0299,0.3883,LL,False,False,R49
+-9.727,2.416,41.0,Assiano,9.5,0.1428,1672.0,0.284,0.0285,0.3136,LL,False,False,R49
+-8.861,2.416,2.0,Assiano,9.5,0.1457,1685.0,0.2818,0.0294,0.3749,LL,False,False,R49
+-5.83,2.416,32.0,Lorenteggio,11.5,0.2267,1804.0,0.3188,0.0365,0.4755,HH,False,False,R146
+-5.397,2.416,325.0,Giambellino,11.5,0.1889,2118.0,0.2714,-0.056,0.3773,LH,False,False,R146
+-4.964,2.416,1792.0,Giambellino,11.5,0.2114,2255.0,0.255,-0.012,0.4943,LH,False,False,R58
+-4.531,2.416,1545.0,Giambellino,11.5,0.1732,2028.0,0.2835,-0.0169,0.3769,LH,False,False,R58
+-4.098,2.416,1619.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.2058,2215.0,0.2652,-0.1167,0.2852,LH,False,False,R182
+-3.665,2.416,1917.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.2146,2270.0,0.2588,0.4555,0.0423,LL,True,False,R182
+-3.232,2.416,1051.0,Moncucco - San Cristoforo,11.75,0.2868,2390.0,0.2458,1.0805,0.0026,LL,True,True,R182
+-2.799,2.416,1992.0,Moncucco - San Cristoforo,11.75,0.2969,2458.0,0.239,1.0145,0.0093,LL,True,False,R157
+-2.366,2.416,869.0,Moncucco - San Cristoforo,11.75,0.2907,2416.0,0.2432,0.3835,0.1603,LL,False,False,R116
+-1.933,2.416,613.0,Moncucco - San Cristoforo,11.75,0.3367,2744.0,0.2141,0.0474,0.4708,LL,False,False,R178
+-1.5,2.416,999.0,Porta Ticinese - Conchetta,11.75,0.3977,2774.0,0.2118,0.1633,0.4004,LL,False,False,R178
+-1.067,2.416,2245.0,Porta Ticinese - Conca Del Naviglio,11.3,0.34,2810.0,0.2011,0.6953,0.1704,LL,False,False,R54
+-0.633,2.416,3021.0,Porta Ticinese - Conca Del Naviglio,11.3,0.3593,2963.0,0.1907,1.7215,0.0222,LL,True,False,R54
+-0.2,2.416,929.0,Tibaldi,11.3,0.3617,2352.0,0.2402,1.0085,0.0077,LL,True,True,R106
+0.233,2.416,880.0,Morivione,11.3,0.3856,2454.0,0.2302,0.6455,0.1008,LL,False,False,R152
+0.666,2.416,478.0,Morivione,11.3,0.3634,2308.0,0.2448,0.7126,0.0326,LL,True,False,R152
+1.099,2.416,349.0,Scalo Romana,11.3,0.3596,2510.0,0.2251,1.2581,0.0117,LL,True,False,R18
+1.532,2.416,1858.0,Scalo Romana,11.3,0.3214,2258.0,0.2502,0.7113,0.0167,LL,True,False,R18
+1.965,2.416,4159.0,Lodi - Corvetto,11.3,0.3131,2403.0,0.2351,0.7242,0.0558,LL,False,False,R18
+2.398,2.416,3676.0,Lodi - Corvetto,11.25,0.2914,2264.0,0.2485,0.3302,0.167,LL,False,False,R144
+2.831,2.416,3349.0,Lodi - Corvetto,11.75,0.2419,1974.0,0.2976,0.0471,0.2261,HH,False,False,R19
+3.264,2.416,136.0,Lodi - Corvetto,11.75,0.24,1964.0,0.2991,0.1824,0.0092,HH,True,False,R34
+3.697,2.416,294.0,Rogoredo - Santa Giulia,11.75,0.2758,1891.0,0.3106,0.4261,0.0079,HH,True,True,R34
+4.13,2.416,2105.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.1554,1604.0,0.3662,1.2633,0.0218,HH,True,False,R21
+4.563,2.416,366.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.2195,1915.0,0.3068,0.4503,0.0024,HH,True,True,R14
+4.996,2.416,44.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.1813,1723.0,0.3409,0.9217,0.0353,HH,True,False,R14
+5.429,2.416,234.0,Monlue' - Ponte Lambro,11.75,0.1328,1840.0,0.3193,0.6057,0.0149,HH,True,False,R14
+5.862,2.416,1680.0,Monlue' - Ponte Lambro,11.75,0.111,1733.0,0.3391,0.8567,0.0252,HH,True,False,R14
+-9.943,2.791,2.0,Assiano,9.5,0.1457,1685.0,0.2818,0.0273,0.3953,LL,False,False,R49
+-9.077,2.791,2.0,Assiano,9.5,0.1457,1685.0,0.2818,0.0309,0.3723,LL,False,False,R49
+-5.613,2.791,572.0,Lorenteggio,11.5,0.2313,1827.0,0.3147,0.087,0.3606,HH,False,False,R146
+-5.18,2.791,357.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.5,0.1998,2179.0,0.2639,-0.0802,0.3549,LH,False,False,R58
+-4.747,2.791,1840.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.1903,2123.0,0.2768,0.0036,0.4702,LL,False,False,R58
+-4.314,2.791,912.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.1208,1752.0,0.3354,-0.1313,0.3485,HL,False,False,R58
+-3.881,2.791,1904.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.1423,1859.0,0.3161,-0.1811,0.2007,HL,False,False,R58
+-3.448,2.791,1917.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.2604,2576.0,0.228,0.3507,0.2438,LL,False,False,R182
+-3.015,2.791,2366.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.2238,2328.0,0.2523,0.2136,0.2488,LL,False,False,R157
+-2.582,2.791,1848.0,Moncucco - San Cristoforo,11.75,0.2313,2051.0,0.2865,0.0054,0.4155,LL,False,False,R43
+-2.149,2.791,1609.0,Moncucco - San Cristoforo,11.75,0.148,1629.0,0.3607,-0.6019,0.156,HL,False,False,R116
+-1.716,2.791,1118.0,Moncucco - San Cristoforo,11.75,0.2123,1945.0,0.302,0.0033,0.4875,HH,False,False,R116
+-1.283,2.791,2061.0,Tibaldi,11.75,0.2474,1715.0,0.3425,-0.3826,0.1875,HL,False,False,R178
+-0.85,2.791,3035.0,Tibaldi,11.3,0.3071,2023.0,0.2793,0.0887,0.1595,LL,False,False,R178
+-0.417,2.791,2274.0,Tibaldi,11.3,0.2984,1975.0,0.2861,0.0497,0.0676,LL,False,False,R83
+0.016,2.791,1616.0,Morivione,11.3,0.3163,2027.0,0.2788,0.0526,0.2783,LL,False,False,R83
+0.449,2.791,1732.0,Morivione,11.3,0.2632,1750.0,0.3229,-0.2298,0.2036,HL,False,False,R113
+0.882,2.791,1336.0,Scalo Romana,11.3,0.2861,2048.0,0.2759,0.0859,0.2251,LL,False,False,R95
+1.315,2.791,323.0,Scalo Romana,11.3,0.2838,2035.0,0.2776,0.0676,0.2639,LL,False,False,R95
+1.748,2.791,3080.0,Scalo Romana,11.3,0.2535,1872.0,0.3019,0.0371,0.357,HH,False,False,R136
+2.181,2.791,2861.0,Lodi - Corvetto,11.3,0.2305,1913.0,0.2953,0.0643,0.0696,HH,False,False,R136
+2.614,2.791,3780.0,Lodi - Corvetto,11.3,0.2273,1896.0,0.298,0.127,0.026,HH,True,False,R136
+3.047,2.791,2700.0,Lodi - Corvetto,11.75,0.2137,1826.0,0.3217,0.3323,0.0938,HH,False,False,R19
+3.48,2.791,69.0,Lodi - Corvetto,11.75,0.2255,1886.0,0.3114,0.1468,0.1984,HH,False,False,R19
+3.913,2.791,815.0,Rogoredo - Santa Giulia,11.75,0.2879,1956.0,0.3004,0.0704,0.2054,HH,False,False,R34
+4.346,2.791,308.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.2288,1965.0,0.299,0.0574,0.2439,HH,False,False,R34
+5.645,2.791,1174.0,Monlue' - Ponte Lambro,11.75,0.1031,1695.0,0.3466,0.9448,0.0432,HH,True,False,R14
+6.078,2.791,438.0,Monlue' - Ponte Lambro,11.75,0.1264,1808.0,0.325,0.7411,0.034,HH,True,False,R14
+-8.861,3.166,1.0,Muggiano,9.5,0.1632,1694.0,0.2804,0.0333,0.3901,LL,False,False,R49
+-5.397,3.166,396.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.1163,1730.0,0.3396,0.243,0.3491,HH,False,False,R146
+-4.964,3.166,356.0,Parco Dei Navigli,11.75,0.217,1799.0,0.3265,-0.03,0.4538,HL,False,False,R146
+-4.531,3.166,127.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.1967,2160.0,0.272,-0.0622,0.3582,LH,False,False,R58
+-4.098,3.166,75.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.1793,2059.0,0.2853,-0.0014,0.4878,LH,False,False,R58
+-3.665,3.166,253.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.2016,2190.0,0.2683,-0.1539,0.1972,LH,False,False,R157
+-3.232,3.166,1602.0,Barona,11.75,0.1781,1847.0,0.3182,0.146,0.2572,HH,False,False,R157
+-2.799,3.166,2370.0,Barona,11.75,0.1521,1719.0,0.3419,0.1141,0.3973,HH,False,False,R38
+-2.366,3.166,2307.0,Barona,11.75,0.223,2090.0,0.2811,-0.1509,0.0202,LH,True,False,R43
+-1.933,3.166,425.0,Barona,11.75,0.2096,2014.0,0.2917,0.0296,0.0188,HH,True,False,R43
+-1.5,3.166,1376.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.2176,1817.0,0.3233,0.5138,0.0333,HH,True,False,R192
+-1.067,3.166,3906.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.2228,1844.0,0.3186,0.3564,0.0629,HH,False,False,R192
+-0.633,3.166,4169.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.2655,2075.0,0.2832,-0.0067,0.4526,LH,False,False,R83
+-0.2,3.166,770.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.2597,2042.0,0.2877,0.0033,0.4265,LL,False,False,R83
+0.233,3.166,1186.0,Vigentino - Q.re Fatima,11.75,0.2528,1918.0,0.3063,0.0857,0.2604,HH,False,False,R113
+0.666,3.166,1965.0,Vigentino - Q.re Fatima,11.75,0.2552,1930.0,0.3044,0.0349,0.3868,HH,False,False,R113
+1.099,3.166,1062.0,Vigentino - Q.re Fatima,11.75,0.2872,2109.0,0.2786,-0.003,0.4987,LH,False,False,R95
+1.532,3.166,1150.0,Scalo Romana,11.75,0.2344,1776.0,0.3309,0.3094,0.1798,HH,False,False,R168
+1.965,3.166,3395.0,Scalo Romana,11.75,0.1695,1484.0,0.3958,2.9493,0.0015,HH,True,True,R185
+2.398,3.166,4051.0,Lodi - Corvetto,11.75,0.1044,1350.0,0.4352,4.5655,0.0003,HH,True,True,R185
+2.831,3.166,2365.0,Lodi - Corvetto,11.75,0.1636,1590.0,0.3695,1.8597,0.005,HH,True,True,R168
+3.264,3.166,375.0,Lodi - Corvetto,11.75,0.222,1868.0,0.3144,0.3463,0.0422,HH,True,False,R19
+3.697,3.166,780.0,Lodi - Corvetto,11.75,0.2486,2011.0,0.2921,0.016,0.1729,HH,False,False,R34
+4.13,3.166,2929.0,Rogoredo - Santa Giulia,11.75,0.3433,2279.0,0.2578,-0.4123,0.0625,LH,False,False,R34
+4.563,3.166,1069.0,Taliedo - Morsenchio - Q.re Forlanini,11.75,0.2334,1990.0,0.2952,0.1093,0.0204,HH,True,False,R34
+5.862,3.166,512.0,Monlue' - Ponte Lambro,11.75,0.1146,1750.0,0.3357,0.8783,0.0765,HH,False,False,R14
+-4.314,3.541,33.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.203,2199.0,0.2672,-0.0104,0.4854,LH,False,False,R58
+-3.881,3.541,36.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.1793,2059.0,0.2853,-0.0414,0.1421,LH,False,False,R58
+-3.448,3.541,1293.0,Barona,11.75,0.0877,1438.0,0.4084,1.368,0.0785,HH,False,False,R38
+-3.015,3.541,1062.0,Barona,11.75,0.1814,1864.0,0.3153,0.696,0.002,HH,True,True,R38
+-2.582,3.541,766.0,Barona,11.75,0.178,1846.0,0.3182,0.7225,0.002,HH,True,True,R43
+-2.149,3.541,1099.0,Barona,11.75,0.1116,1537.0,0.3823,1.5595,0.0199,HH,True,False,R38
+-1.716,3.541,468.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.1945,1705.0,0.3445,1.201,0.0057,HH,True,True,R26
+-1.283,3.541,2654.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.1773,1626.0,0.3614,1.1857,0.0245,HH,True,False,R76
+-0.85,3.541,2927.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.2117,1788.0,0.3286,0.1888,0.2736,HH,False,False,R192
+-0.417,3.541,2108.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.305,2314.0,0.2539,-0.0142,0.5,LH,False,False,R83
+0.016,3.541,38.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.2309,1885.0,0.3116,-0.016,0.454,HL,False,False,R113
+0.449,3.541,727.0,Vigentino - Q.re Fatima,11.75,0.2486,1895.0,0.31,0.0214,0.4501,HH,False,False,R109
+0.882,3.541,2582.0,Vigentino - Q.re Fatima,11.75,0.2838,2089.0,0.2812,0.0369,0.3015,LL,False,False,R95
+1.315,3.541,954.0,Vigentino - Q.re Fatima,11.75,0.2933,2144.0,0.274,-0.0938,0.2464,LH,False,False,R109
+1.748,3.541,5.0,Scalo Romana,11.75,0.246,1833.0,0.3204,0.8808,0.0013,HH,True,True,R168
+2.181,3.541,775.0,Scalo Romana,11.75,0.1194,1292.0,0.4546,5.6564,0.0006,HH,True,True,R185
+2.614,3.541,2087.0,Lodi - Corvetto,11.75,0.1573,1562.0,0.376,2.9993,0.0002,HH,True,True,R168
+3.047,3.541,22.0,Lodi - Corvetto,11.75,0.2056,1786.0,0.329,0.732,0.0132,HH,True,False,R19
+3.48,3.541,11.0,Lodi - Corvetto,11.75,0.2163,1840.0,0.3194,0.3783,0.0587,HH,False,False,R19
+3.913,3.541,387.0,Rogoredo - Santa Giulia,11.75,0.2356,1692.0,0.3472,0.6679,0.0769,HH,False,False,R80
+4.346,3.541,2902.0,Rogoredo - Santa Giulia,11.75,0.1945,1511.0,0.3889,2.241,0.0055,HH,True,True,R80
+4.779,3.541,888.0,Rogoredo - Santa Giulia,11.75,0.1703,1413.0,0.4158,3.4296,0.0025,HH,True,True,R80
+5.212,3.541,3.0,Triulzo Superiore,11.75,0.1516,1756.0,0.3346,1.3585,0.0069,HH,True,True,R80
+-4.964,3.916,8.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.2082,2230.0,0.2634,-0.5364,0.0702,LH,False,False,R58
+-4.531,3.916,5.0,Parco Dei Navigli,11.75,0.2031,1732.0,0.3393,-0.0996,0.425,HL,False,False,R58
+-4.098,3.916,28.0,Ronchetto Sul Naviglio - Q.re Lodovico il Moro,11.75,0.1943,2146.0,0.2737,-0.2164,0.0687,LH,False,False,R58
+-3.665,3.916,199.0,Parco Dei Navigli,11.75,0.1795,1622.0,0.3621,1.3685,0.011,HH,True,False,R38
+-3.232,3.916,1357.0,Barona,11.75,0.1374,1650.0,0.356,1.9309,0.0014,HH,True,True,R26
+-2.799,3.916,2191.0,Barona,11.75,0.1037,1503.0,0.3908,2.3539,0.0034,HH,True,True,R38
+-2.366,3.916,1302.0,Barona,11.75,0.0999,1487.0,0.395,2.8277,0.0014,HH,True,True,R38
+-1.933,3.916,556.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.1878,1674.0,0.351,1.3571,0.0045,HH,True,True,R26
+-1.5,3.916,1441.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.1938,1702.0,0.3453,0.9155,0.0236,HH,True,False,R76
+-1.067,3.916,1434.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.2246,1853.0,0.3171,0.4948,0.0159,HH,True,False,R192
+-0.633,3.916,1258.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.275,2130.0,0.2759,-0.0542,0.3352,LH,False,False,R83
+-0.2,3.916,209.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.2982,2270.0,0.2588,-0.0518,0.4185,LH,False,False,R113
+0.233,3.916,57.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.2294,1877.0,0.3129,-0.0993,0.2869,HL,False,False,R113
+0.666,3.916,1086.0,Vigentino - Q.re Fatima,11.75,0.3425,2457.0,0.2391,0.0757,0.4235,LL,False,False,R109
+1.099,3.916,2002.0,Vigentino - Q.re Fatima,11.75,0.2927,2141.0,0.2744,-0.0067,0.4851,LH,False,False,R109
+1.532,3.916,576.0,Vigentino - Q.re Fatima,11.75,0.217,1737.0,0.3382,0.3795,0.1672,HH,False,False,R168
+1.965,3.916,184.0,Parco Delle Abbazie,11.75,0.1137,1628.0,0.3608,1.6015,0.0043,HH,True,True,R168
+2.398,3.916,145.0,Parco Delle Abbazie,11.75,0.1323,1714.0,0.3427,1.3277,0.0021,HH,True,True,R168
+2.831,3.916,25.0,Parco Delle Abbazie,11.75,0.1718,1912.0,0.3073,0.2844,0.0225,HH,True,False,R05
+3.264,3.916,9.0,Lodi - Corvetto,11.75,0.2136,1826.0,0.3218,0.3564,0.0873,HH,False,False,R19
+3.697,3.916,2.0,Lodi - Corvetto,11.75,0.2161,1838.0,0.3196,0.4655,0.0414,HH,True,False,R05
+4.13,3.916,459.0,Triulzo Superiore,11.75,0.1575,1785.0,0.3292,1.2928,0.0024,HH,True,True,R05
+4.563,3.916,558.0,Rogoredo - Santa Giulia,11.75,0.1679,1404.0,0.4186,3.8216,0.002,HH,True,True,R80
+4.996,3.916,7.0,Triulzo Superiore,11.75,0.1487,1742.0,0.3373,1.5337,0.001,HH,True,True,R80
+5.429,3.916,3.0,Triulzo Superiore,11.75,0.1516,1756.0,0.3346,0.86,0.0769,HH,False,False,R80
+-4.747,4.291,7.0,Parco Dei Navigli,11.75,0.206,1745.0,0.3366,0.2215,0.3889,HH,False,False,R58
+-3.881,4.291,43.0,Parco Dei Navigli,11.75,0.1878,1660.0,0.3539,1.1436,0.0247,HH,True,False,R26
+-3.448,4.291,9.0,Parco Dei Navigli,11.75,0.2088,1759.0,0.334,1.1284,0.0021,HH,True,True,R26
+-3.015,4.291,904.0,Parco Dei Navigli,11.75,0.1944,1690.0,0.3475,1.4652,0.0025,HH,True,True,R26
+-2.582,4.291,1428.0,Barona,11.75,0.1523,1719.0,0.3417,1.525,0.0011,HH,True,True,R26
+-2.149,4.291,92.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.1984,1724.0,0.3408,1.0543,0.0074,HH,True,True,R26
+-1.716,4.291,1674.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.3105,2350.0,0.2501,-0.8764,0.0062,LH,True,True,R132
+-1.283,4.291,1959.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.1862,1666.0,0.3526,0.7761,0.0667,HH,False,False,R76
+-0.85,4.291,1393.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.2021,1741.0,0.3374,0.6324,0.0599,HH,False,False,R132
+0.016,4.291,3.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.2263,1862.0,0.3156,-0.1981,0.2599,HL,False,False,R113
+0.449,4.291,122.0,Parco Delle Abbazie,11.75,0.2567,2417.0,0.2431,0.0674,0.4331,LL,False,False,R109
+0.882,4.291,1467.0,Vigentino - Q.re Fatima,11.75,0.2636,1976.0,0.2974,-0.0489,0.2129,HL,False,False,R05
+1.315,4.291,1610.0,Vigentino - Q.re Fatima,11.75,0.2411,1857.0,0.3164,0.1078,0.3194,HH,False,False,R05
+1.748,4.291,644.0,Parco Delle Abbazie,11.75,0.1726,1916.0,0.3067,0.2011,0.0884,HH,False,False,R05
+2.181,4.291,4.0,Parco Delle Abbazie,11.75,0.1797,1954.0,0.3007,0.1427,0.0655,HH,False,False,R05
+2.614,4.291,4.0,Parco Delle Abbazie,11.75,0.1797,1954.0,0.3007,0.0847,0.1724,HH,False,False,R05
+3.047,4.291,16.0,Parco Delle Abbazie,11.75,0.1743,1925.0,0.3052,0.1111,0.182,HH,False,False,R05
+3.48,4.291,7.0,Lodi - Corvetto,11.75,0.2157,1836.0,0.3199,0.2585,0.1986,HH,False,False,R05
+4.779,4.291,1106.0,Triulzo Superiore,11.75,0.1537,1766.0,0.3326,1.3059,0.0056,HH,True,True,R80
+-4.098,4.666,6.0,Parco Dei Navigli,11.75,0.1973,1704.0,0.3448,1.3296,0.0098,HH,True,False,R26
+-3.665,4.666,5.0,Parco Dei Navigli,11.75,0.1933,1685.0,0.3486,1.3299,0.0041,HH,True,True,R26
+-3.232,4.666,14.0,Parco Dei Navigli,11.75,0.2039,1735.0,0.3385,1.0904,0.0058,HH,True,True,R26
+-2.799,4.666,115.0,Cantalupa,11.75,0.1987,1712.0,0.3432,1.163,0.0047,HH,True,True,R26
+-2.366,4.666,51.0,Cantalupa,11.75,0.1975,1706.0,0.3443,1.2308,0.0044,HH,True,True,R26
+-1.933,4.666,60.0,Cantalupa,11.75,0.1868,1657.0,0.3546,0.061,0.456,HH,False,False,R26
+-1.5,4.666,337.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,11.75,0.176,1900.0,0.3092,-0.0943,0.2765,HL,False,False,R132
+-1.067,4.666,1440.0,Stadera - Chiesa Rossa - Q.re Torretta - Conca Fallata,11.75,0.1805,1640.0,0.3582,0.0157,0.4976,HH,False,False,R132
+-0.633,4.666,412.0,Parco Delle Abbazie,11.75,0.1743,1925.0,0.3052,0.1312,0.195,HH,False,False,R132
+0.666,4.666,142.0,Parco Delle Abbazie,11.75,0.2212,2191.0,0.2681,0.025,0.4546,LL,False,False,R109
+1.099,4.666,550.0,Vigentino - Q.re Fatima,11.75,0.2552,1931.0,0.3043,0.0166,0.452,HH,False,False,R05
+1.532,4.666,153.0,Parco Delle Abbazie,11.75,0.2086,2117.0,0.2776,-0.0926,0.2311,LH,False,False,R05
+2.398,4.666,1.0,Parco Delle Abbazie,11.75,0.1824,1968.0,0.2985,0.0362,0.3628,HH,False,False,R05
+2.831,4.666,2.0,Parco Delle Abbazie,11.75,0.1815,1963.0,0.2992,0.038,0.3202,HH,False,False,R05
+3.264,4.666,3.0,Parco Delle Abbazie,11.75,0.1855,1985.0,0.2959,0.0354,0.2536,HH,False,False,R05
+4.996,4.666,1.0,Triulzo Superiore,11.75,0.1531,1763.0,0.3332,0.7722,0.1554,HH,False,False,R80
+-4.747,5.041,1.0,Parco Dei Navigli,11.75,0.1972,1703.0,0.3449,1.2213,0.0484,HH,True,False,R26
+-4.314,5.041,5.0,Parco Dei Navigli,11.75,0.1982,1708.0,0.3439,1.2113,0.0071,HH,True,True,R26
+-3.881,5.041,6.0,Parco Dei Navigli,11.75,0.1973,1704.0,0.3448,1.2734,0.0076,HH,True,True,R26
+-3.448,5.041,10.0,Parco Dei Navigli,11.75,0.1935,1686.0,0.3484,1.3316,0.0072,HH,True,True,R26
+-3.015,5.041,40.0,Cantalupa,11.75,0.2024,1730.0,0.3397,1.1289,0.005,HH,True,True,R26
+-2.582,5.041,300.0,Cantalupa,11.75,0.2012,1724.0,0.3408,1.1258,0.0066,HH,True,True,R26
+-2.149,5.041,14.0,Parco Dei Navigli,11.75,0.1992,1713.0,0.3429,0.0403,0.461,HH,False,False,R26
+-1.716,5.041,151.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.2379,2254.0,0.1664,1.2047,0.1163,LL,False,False,R122
+-1.283,5.041,992.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1934,1993.0,0.1881,1.1924,0.0831,LL,False,False,R122
+-0.85,5.041,1301.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,11.75,0.2515,2341.0,0.251,0.1318,0.3342,LL,False,False,R122
+-0.417,5.041,3.0,Parco Delle Abbazie,11.75,0.1855,1985.0,0.2959,-0.0254,0.3256,HL,False,False,R132
+0.449,5.041,6.0,Parco Delle Abbazie,11.75,0.1828,1971.0,0.2981,-0.0103,0.4497,HL,False,False,R05
+0.882,5.041,16.0,Parco Delle Abbazie,11.75,0.1882,2000.0,0.2937,0.0071,0.4234,HH,False,False,R05
+1.315,5.041,8.0,Parco Delle Abbazie,11.75,0.1762,1935.0,0.3036,0.0104,0.4827,HH,False,False,R05
+3.047,5.041,2.0,Parco Delle Abbazie,11.75,0.1815,1963.0,0.2992,0.0308,0.3655,HH,False,False,R05
+3.48,5.041,1.0,Parco Delle Abbazie,11.75,0.1824,1968.0,0.2985,0.0511,0.2558,HH,False,False,R05
+3.913,5.041,216.0,Chiaravalle,11.75,0.203,1886.0,0.3115,0.2381,0.1311,HH,False,False,R05
+4.346,5.041,9.0,Chiaravalle,11.75,0.1934,1837.0,0.3198,0.3874,0.1698,HH,False,False,R05
+-4.531,5.416,3.0,Parco Dei Navigli,11.75,0.2002,1718.0,0.3421,1.1656,0.0276,HH,True,False,R26
+-4.098,5.416,2.0,Parco Dei Navigli,11.75,0.2012,1722.0,0.3411,1.1496,0.0249,HH,True,False,R26
+-3.232,5.416,17.0,Parco Dei Navigli,11.75,0.1919,1679.0,0.35,1.3592,0.0247,HH,True,False,R26
+-2.799,5.416,20.0,Parco Dei Navigli,11.75,0.1983,1709.0,0.3438,1.2048,0.0147,HH,True,False,R26
+-2.366,5.416,19.0,Parco Dei Navigli,11.75,0.1992,1713.0,0.3429,-0.0776,0.4275,HL,False,False,R26
+-1.933,5.416,502.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1674,1855.0,0.2021,1.5935,0.0162,LL,True,False,R122
+-1.5,5.416,1465.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1637,1836.0,0.2042,2.58,0.0006,LL,True,True,R07
+-1.067,5.416,1952.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,11.75,0.2065,2067.0,0.2842,0.1559,0.0009,LL,True,True,R122
+-0.633,5.416,739.0,Parco Delle Abbazie,11.75,0.2318,2256.0,0.2604,0.209,0.1932,LL,False,False,R122
+-0.2,5.416,12.0,Parco Delle Abbazie,11.75,0.1776,1943.0,0.3024,-0.0253,0.4278,HL,False,False,R132
+0.666,5.416,2.0,Parco Delle Abbazie,11.75,0.1815,1963.0,0.2992,0.0268,0.4088,HH,False,False,R05
+3.264,5.416,1.0,Parco Delle Abbazie,11.75,0.1824,1968.0,0.2985,0.0455,0.3044,HH,False,False,R05
+3.697,5.416,285.0,Chiaravalle,11.75,0.1968,1854.0,0.3169,0.1707,0.2241,HH,False,False,R05
+4.13,5.416,458.0,Chiaravalle,11.75,0.1815,1778.0,0.3305,0.354,0.1885,HH,False,False,R05
+-2.149,5.791,298.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1656,1846.0,0.2031,1.6984,0.0323,LL,True,False,R122
+-1.716,5.791,763.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1334,1689.0,0.222,1.9935,0.0002,LL,True,True,R122
+-1.283,5.791,2185.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.0929,1510.0,0.2483,0.9904,0.0025,LL,True,True,R07
+-0.85,5.791,42.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1591,1813.0,0.2068,1.1772,0.0482,LL,True,False,R07
+-0.417,5.791,2.0,Parco Delle Abbazie,11.75,0.1815,1963.0,0.2992,-0.1652,0.0445,HL,True,False,R132
+0.882,5.791,2.0,Parco Delle Abbazie,11.75,0.1815,1963.0,0.2992,-0.0817,0.1871,HL,False,False,R05
+1.315,5.791,8.0,Parco Delle Abbazie,11.75,0.1858,1987.0,0.2956,0.0089,0.4406,HH,False,False,R05
+1.748,5.791,13.0,Parco Delle Abbazie,11.75,0.1909,2015.0,0.2915,0.0033,0.453,HH,False,False,R05
+3.48,5.791,4.0,Parco Delle Abbazie,11.75,0.1846,1980.0,0.2967,0.0348,0.3122,HH,False,False,R05
+3.913,5.791,61.0,Parco Delle Abbazie,11.75,0.1864,1990.0,0.2952,0.0535,0.1824,HH,False,False,R05
+-1.933,6.166,81.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1583,1810.0,0.2072,1.7655,0.0124,LL,True,False,R122
+-1.5,6.166,2219.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.0804,1459.0,0.257,0.7453,0.0039,LL,True,True,R181
+-1.067,6.166,548.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.125,1650.0,0.2272,1.4855,0.0026,LL,True,True,R07
+-0.633,6.166,6.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1383,1712.0,0.219,1.5579,0.021,LL,True,False,R07
+0.666,6.166,2.0,Parco Delle Abbazie,7.5,0.1815,1963.0,0.191,2.0513,0.0207,LL,True,False,R07
+1.099,6.166,8.0,Quintosole,11.75,0.1307,2029.0,0.2895,0.007,0.062,LL,False,False,R05
+1.532,6.166,2.0,Parco Delle Abbazie,11.75,0.1864,1990.0,0.2952,0.0035,0.4704,HH,False,False,R05
+2.831,6.166,2.0,Parco Delle Abbazie,11.75,0.1815,1963.0,0.2992,0.0353,0.4471,HH,False,False,R05
+3.264,6.166,2.0,Parco Delle Abbazie,11.75,0.1815,1963.0,0.2992,0.0305,0.4231,HH,False,False,R05
+-2.582,6.541,9.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1363,1703.0,0.2202,1.6965,0.0237,LL,True,False,R07
+-2.149,6.541,270.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.084,1474.0,0.2545,0.9444,0.0021,LL,True,True,R181
+-1.716,6.541,1303.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.0762,1442.0,0.26,0.62,0.0091,LL,True,False,R181
+-1.283,6.541,1607.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.0855,1480.0,0.2534,0.8604,0.0038,LL,True,True,R181
+-0.85,6.541,4.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1397,1719.0,0.2182,2.1536,0.0005,LL,True,True,R07
+0.016,6.541,1.0,Parco Delle Abbazie,7.5,0.1824,1968.0,0.1905,4.1498,0.0005,LL,True,True,R07
+0.449,6.541,2.0,Parco Delle Abbazie,7.5,0.1815,1963.0,0.191,4.1853,0.0001,LL,True,True,R07
+0.882,6.541,11.0,Quintosole,7.5,0.1336,2045.0,0.1833,3.0773,0.0002,LL,True,True,R07
+1.315,6.541,9.0,Quintosole,11.75,0.1301,2026.0,0.29,0.0009,0.0023,LL,True,True,R05
+-2.799,6.916,3.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1354,1699.0,0.2208,2.0146,0.0242,LL,True,False,R07
+-2.366,6.916,27.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1343,1693.0,0.2214,1.7267,0.0094,LL,True,False,R07
+-1.933,6.916,178.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.1283,1665.0,0.2252,1.3437,0.0144,LL,True,False,R07
+-1.5,6.916,1137.0,Gratosoglio - Q.re Missaglia - Q.re Terrazze,7.5,0.0931,1511.0,0.2482,1.0471,0.004,LL,True,True,R07
+-1.067,6.916,112.0,Parco Delle Abbazie,7.5,0.1752,1930.0,0.1943,2.6513,0.0011,LL,True,True,R07
+-0.633,6.916,553.0,Parco Delle Abbazie,7.5,0.1655,1879.0,0.1996,3.4273,0.0002,LL,True,True,R07
+-0.2,6.916,2.0,Parco Delle Abbazie,7.5,0.1815,1963.0,0.191,4.0065,0.0001,LL,True,True,R07
+0.233,6.916,1.0,Parco Delle Abbazie,7.5,0.1824,1968.0,0.1905,4.1366,0.0002,LL,True,True,R07
+0.666,6.916,21.0,Parco Delle Abbazie,7.5,0.1794,1952.0,0.1921,4.2269,0.0001,LL,True,True,R07
+1.099,6.916,167.0,Quintosole,7.5,0.1504,2143.0,0.175,4.1248,0.0001,LL,True,True,R07
+1.532,6.916,51.0,Parco Delle Abbazie,7.5,0.1938,2032.0,0.1846,3.3042,0.0052,LL,True,True,R07
+-1.716,7.291,3.0,Ronchetto Delle Rane,7.5,0.0,1708.0,0.2195,1.5811,0.0674,LL,False,False,R07
+-0.85,7.291,44.0,Parco Delle Abbazie,7.5,0.1625,1863.0,0.2013,3.5544,0.0001,LL,True,True,R07
+-0.417,7.291,44.0,Parco Delle Abbazie,7.5,0.1748,1928.0,0.1945,3.7234,0.0009,LL,True,True,R07
+0.882,7.291,68.0,Parco Delle Abbazie,7.5,0.1703,1904.0,0.1969,4.1064,0.0001,LL,True,True,R07
+1.315,7.291,180.0,Quintosole,7.5,0.1373,2067.0,0.1814,4.7006,0.0001,LL,True,True,R07
+-1.067,7.666,1.0,Parco Delle Abbazie,7.5,0.1824,1968.0,0.1905,3.712,0.0468,LL,True,False,R07
+1.099,7.666,366.0,Quintosole,7.5,0.1169,1953.0,0.192,4.2081,0.0002,LL,True,True,R07
+1.532,7.666,62.0,Quintosole,7.5,0.1267,2007.0,0.1869,4.4834,0.0002,LL,True,True,R07
+1.315,8.041,60.0,Quintosole,7.5,0.1276,2012.0,0.1864,4.381,0.0011,LL,True,True,R07

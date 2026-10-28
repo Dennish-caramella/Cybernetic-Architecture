@@ -1,0 +1,22 @@
+{
+ "excluded_share_employees_model": 0.0371888433469959,
+ "excluded_share_employees_model_no_rent_deduction": 0.1645506348095571,
+ "employees_market_fail_model": 0.5364224066113499,
+ "ansa_ceto_medio_escluso": 0.375,
+ "target_net_income_p10_p50_p90": [
+  1934.4637208411664,
+  2417.803112536136,
+  4052.352181820843
+ ],
+ "piano_casa_band": [
+  1500,
+  2500
+ ],
+ "unmet_demand_households": [
+  4346.284845589282,
+  10502.778613381282,
+  19259.38756967551
+ ],
+ "piano_casa_target_dwellings": 10000,
+ "runtime_min": 8.9
+}

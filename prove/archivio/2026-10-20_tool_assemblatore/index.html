@@ -1,0 +1,546 @@
+<!doctype html>
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Assemblatore di tessere</title>
+<style>
+/* Layout: colonna di lavoro a sinistra per la griglia, pannelli di parametri e confronto in sequenza sotto. Un solo asse di lettura. */
+:root {
+  --bg: #eef1ed;
+  --surface: #f8faf7;
+  --fg: #1c2622;
+  --muted: #5b6963;
+  --line: #c9d3cc;
+  --accent: #2c6659;
+  --accent-soft: #d5e7e1;
+  --warn: #9a4a24;
+  --src: #3a5a8c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111916;
+    --surface: #17211d;
+    --fg: #e4ece7;
+    --muted: #9db0a5;
+    --line: #2e3d36;
+    --accent: #7fc1b0;
+    --accent-soft: #1f3a33;
+    --warn: #e39a72;
+    --src: #9cb8e6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111916;
+  --surface: #17211d;
+  --fg: #e4ece7;
+  --muted: #9db0a5;
+  --line: #2e3d36;
+  --accent: #7fc1b0;
+  --accent-soft: #1f3a33;
+  --warn: #e39a72;
+  --src: #9cb8e6;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 15px/1.6 "IBM Plex Sans", system-ui, sans-serif;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px 48px;
+}
+main { max-width: 980px; margin: 0 auto; display: grid; gap: 28px; }
+h1, h2, h3 { text-wrap: balance; line-height: 1.2; margin: 0; font-family: "Source Serif 4", Georgia, serif; font-weight: 600; }
+h1 { font-size: clamp(26px, 6vw, 34px); }
+h2 { font-size: 20px; }
+h3 { font-size: 15px; font-family: "IBM Plex Sans", system-ui, sans-serif; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+.label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); font-size: 14px; }
+.src { font-size: 13px; color: var(--src); border-left: 2px solid var(--src); padding-left: 10px; max-width: 68ch; }
+.inf { font-size: 13px; color: var(--muted); border-left: 2px dashed var(--muted); padding-left: 10px; max-width: 68ch; }
+.grid2 { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 820px) { .grid2 { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: start; } }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 14px; min-width: 0; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: end; }
+.controls label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); min-width: 0; }
+input[type="range"] { width: 150px; accent-color: var(--accent); }
+input[type="number"], select {
+  font: inherit; font-size: 14px; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 4px; padding: 4px 6px; width: 96px;
+}
+input[type="checkbox"] { accent-color: var(--accent); }
+button {
+  font: inherit; font-size: 14px; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 4px; padding: 6px 12px; cursor: pointer;
+}
+button.primary { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+button:focus-visible, input:focus-visible, select:focus-visible, canvas:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+canvas { width: 100%; max-width: 100%; height: auto; display: block; background: var(--bg); border: 1px solid var(--line); border-radius: 4px; cursor: crosshair; }
+.tablewrap { overflow-x: auto; min-width: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { text-align: left; padding: 5px 6px; border-bottom: 1px solid var(--line); vertical-align: middle; white-space: nowrap; }
+th { font-weight: 500; color: var(--muted); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; }
+td.num, .num { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px 16px; }
+.stats div { display: grid; gap: 2px; min-width: 0; }
+.stats strong { font-size: 19px; font-weight: 600; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 13px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+.best { color: var(--accent); font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<main>
+  <header style="display:grid;gap:10px">
+    <span class="label">Prova di assemblaggio · replica di Assembler, con metodi aggiunti</span>
+    <h1>Assemblatore di tessere</h1>
+    <p class="muted">Tessere quadrate con quattro porte (N, E, S, W). Due tessere si collegano solo se le porte sul lato comune hanno la stessa lettera. La crescita parte da un seme e aggiunge una tessera alla volta, scelta con una strategia. Il pannello in basso confronta le strategie su più semi.</p>
+    <div class="src">Dichiarato nelle fonti (pagina co-de-iT e README del repository GitHub): parti, regole di connessione, criteri di crescita, interazione con geometrie e dati, calcoli locali (parte) e globali (assemblaggio). Non dichiarati: algoritmo, nomi delle strategie, formule, parametri.</div>
+    <div class="inf">Tutto ciò che segue, dalle regole di porta alle cinque strategie e alle metriche, è una implementazione proposta da noi. Non replica il codice di Assembler, che non è stato letto.</div>
+  </header>
+
+  <div class="grid2">
+    <section class="panel" aria-labelledby="h-run">
+      <h2 id="h-run">Crescita</h2>
+      <div class="controls">
+        <label>Strategia
+          <select id="strat">
+            <option value="random">Casuale</option>
+            <option value="attract">Attrattore (clic sulla griglia)</option>
+            <option value="field">Campo scalare</option>
+            <option value="entropy">Minima entropia</option>
+            <option value="mixed">Partecipativa (pesi dei portatori)</option>
+          </select>
+        </label>
+        <label>Seme
+          <input id="seed" type="number" min="1" max="99999" value="1">
+        </label>
+        <label>Seme del campo
+          <input id="fseed" type="number" min="1" max="99999" value="7">
+        </label>
+        <label>Quota di copertura
+          <input id="frac" type="range" min="0.2" max="1" step="0.05" value="0.6">
+        </label>
+        <label style="grid-template-columns:auto auto;align-items:center">
+          <input id="rot" type="checkbox" checked> Rotazioni (4 orientamenti)
+        </label>
+      </div>
+      <div class="controls">
+        <button class="primary" id="newseed" type="button">Nuovo seme</button>
+        <span class="muted" id="clickhint">Clic sulla griglia per spostare l'attrattore.</span>
+      </div>
+      <canvas id="cv" width="720" height="540" role="img" aria-label="Griglia con le tessere assemblate"></canvas>
+      <div class="legend" id="legend"></div>
+      <div class="stats" id="stats" aria-live="polite"></div>
+      <p class="inf" id="runnote"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="h-ports">
+      <h2 id="h-ports">Libreria delle tessere</h2>
+      <p class="muted">Ogni riga è una tessera. Le lettere indicano il tipo di porta su ciascun lato. I nomi sono di prova.</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Tessera</th><th>N</th><th>E</th><th>S</th><th>W</th></tr></thead>
+          <tbody id="ports"></tbody>
+        </table>
+      </div>
+      <h3>Pesi dei portatori di interesse</h3>
+      <p class="muted">Usati solo dalla strategia partecipativa: a = attrazione, f = campo, c = compattezza, d = diversità. La strategia usa la media dei tre profili. Valori di prova.</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Portatore</th><th>a</th><th>f</th><th>c</th><th>d</th></tr></thead>
+          <tbody id="stake"></tbody>
+          <tfoot><tr><th>Media usata</th><td class="num" id="wa">–</td><td class="num" id="wf">–</td><td class="num" id="wc">–</td><td class="num" id="wd">–</td></tr></tfoot>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <section class="panel" aria-labelledby="h-cmp">
+    <h2 id="h-cmp">Confronto tra strategie</h2>
+    <div class="controls">
+      <label>Semi per strategia
+        <input id="k" type="number" min="5" max="60" value="20">
+      </label>
+      <button class="primary" id="batch" type="button">Esegui confronto</button>
+      <span class="muted" id="batchmsg">Stesso campo e stessa griglia per tutte le strategie; cambia solo il seme di crescita.</span>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Strategia</th><th>Copertura media</th><th>Compattezza</th><th>Diversità</th><th>Celle bloccate</th><th>Porte libere per tessera</th></tr></thead>
+        <tbody id="cmp"><tr><td colspan="6" class="muted">Premi «Esegui confronto».</td></tr></tbody>
+      </table>
+    </div>
+    <p class="inf">Definizioni (inferenza nostra): copertura = tessere / celle; compattezza = porte libere / (4 · √n), dove un blocco quadrato dà 1 e valori più alti indicano una forma più sfrangiata; diversità = entropia di Shannon dei tipi di tessera, normalizzata su log₂ 4; celle bloccate = celle vuote adiacenti a una tessera per cui nessuna tessera è compatibile. Non sono misure dichiarate in Assembler.</p>
+  </section>
+
+  <footer class="muted" style="max-width:68ch">
+    <p>Stato: prototipo di lavoro, non verificato sul plugin originale. Per le strategie, il confronto dice quale metodo produce forme diverse con le stesse regole. Non dice quale sia corretto: questo dipende dalle regole che scegli e dai pesi di chi le fissa.</p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  var W = 24, H = 18, T = 4;
+  var DIRS = [[0, -1], [1, 0], [0, 1], [-1, 0]];
+  var STRATS = [
+    ["random", "Casuale"],
+    ["attract", "Attrattore"],
+    ["field", "Campo scalare"],
+    ["entropy", "Minima entropia"],
+    ["mixed", "Partecipativa"]
+  ];
+  var TILE_COL = ["#7fc1b0", "#d9a86a", "#9cb8e6", "#c9a0c8"];
+  var TILE_NAME = ["T0 corridoio", "T1 angolo", "T2 testata", "T3 croce"];
+  var PORT_COL = { a: "#2c6659", b: "#9a4a24", c: "#3a5a8c", d: "#8c6fb0" };
+  var PORT_LETTERS = ["a", "b", "c", "d"];
+  var ports = [
+    ["a", "b", "a", "b"],
+    ["a", "a", "c", "c"],
+    ["c", "c", "c", "b"],
+    ["b", "b", "b", "b"]
+  ];
+  var STAKE = [
+    { name: "Residente", w: { a: 0.2, f: 0.2, c: 0.4, d: 0.2 } },
+    { name: "Costruttore", w: { a: 0.1, f: 0.3, c: 0.5, d: 0.1 } },
+    { name: "Comune", w: { a: 0.4, f: 0.3, c: 0.1, d: 0.2 } }
+  ];
+
+  function $(id) { return document.getElementById(id); }
+  function num(el, fb) { var v = parseInt(el.value, 10); return isNaN(v) ? fb : v; }
+
+  // Generatore pseudo-casuale con seme (mulberry32): stesso seme, stessa crescita
+  function rng(a) {
+    return function () {
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      var t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+
+  // Porta della tessera opt (tipo*4 + rotazione) sul lato d, dopo la rotazione
+  function rp(opt, d) {
+    return ports[opt >> 2][(d - (opt & 3) + 4) % 4];
+  }
+
+  function compat(grid, x, y, opt) {
+    for (var d = 0; d < 4; d++) {
+      var nx = x + DIRS[d][0], ny = y + DIRS[d][1];
+      if (nx < 0 || ny < 0 || nx >= W || ny >= H) continue;
+      var nb = grid[ny * W + nx];
+      if (nb < 0) continue;
+      if (rp(opt, d) !== rp(nb, (d + 2) % 4)) return false;
+    }
+    return true;
+  }
+
+  function neighbourCount(grid, x, y) {
+    var k = 0;
+    for (var d = 0; d < 4; d++) {
+      var nx = x + DIRS[d][0], ny = y + DIRS[d][1];
+      if (nx >= 0 && ny >= 0 && nx < W && ny < H && grid[ny * W + nx] >= 0) k++;
+    }
+    return k;
+  }
+
+  // Campo scalare normalizzato 0..1: somma di onde con fase dal seme del campo
+  function makeField(seed) {
+    var r = rng(seed), p = [];
+    for (var k = 0; k < 3; k++) p.push([r() * 6.28, 0.5 + r() * 1.5, 0.5 + r() * 1.5]);
+    var f = new Float32Array(W * H), mn = Infinity, mx = -Infinity;
+    for (var y = 0; y < H; y++) for (var x = 0; x < W; x++) {
+      var v = 0;
+      for (var j = 0; j < 3; j++) {
+        v += Math.sin(p[j][1] * x * 0.45 + p[j][0]) * Math.cos(p[j][2] * y * 0.45 - p[j][0]);
+      }
+      f[y * W + x] = v;
+      if (v < mn) mn = v;
+      if (v > mx) mx = v;
+    }
+    for (var i = 0; i < f.length; i++) f[i] = (f[i] - mn) / (mx - mn || 1);
+    return f;
+  }
+
+  function measure(grid, n, typeCount, opts) {
+    var free = 0, adj2 = 0, blocked = 0;
+    for (var y = 0; y < H; y++) for (var x = 0; x < W; x++) {
+      var i = y * W + x;
+      if (grid[i] >= 0) {
+        for (var d = 0; d < 4; d++) {
+          var nx = x + DIRS[d][0], ny = y + DIRS[d][1];
+          if (nx < 0 || ny < 0 || nx >= W || ny >= H || grid[ny * W + nx] < 0) free++;
+          else adj2++;
+        }
+      } else if (neighbourCount(grid, x, y) > 0) {
+        var any = false;
+        for (var q = 0; q < opts.length && !any; q++) if (compat(grid, x, y, opts[q])) any = true;
+        if (!any) blocked++;
+      }
+    }
+    var H2 = 0;
+    for (var t = 0; t < T; t++) {
+      var p = typeCount[t] / n;
+      if (p > 0) H2 -= p * Math.log(p) / Math.LN2;
+    }
+    return {
+      n: n,
+      cov: n / (W * H),
+      comp: free / (4 * Math.sqrt(n)),
+      div: H2 / (Math.log(T) / Math.LN2),
+      blocked: blocked,
+      freePer: free / n,
+      adj: adj2 / 2
+    };
+  }
+
+  // Crescita: seme al centro, poi una tessera alla volta sulla frontiera
+  function grow(c) {
+    var R = rng(c.seed);
+    var grid = new Int16Array(W * H).fill(-1);
+    var opts = [];
+    for (var t = 0; t < T; t++) for (var r = 0; r < (c.rot ? 4 : 1); r++) opts.push(t * 4 + r);
+    var target = Math.max(1, Math.round(c.frac * W * H));
+    var F = c.field;
+    var maxD = Math.hypot(W, H);
+    var typeCount = [0, 0, 0, 0];
+    var first = opts[Math.floor(R() * opts.length)];
+    var cx = Math.floor(W / 2), cy = Math.floor(H / 2);
+    grid[cy * W + cx] = first;
+    typeCount[first >> 2]++;
+    var n = 1;
+    var wsum = c.w.a + c.w.f + c.w.c + c.w.d || 1;
+
+    while (n < target) {
+      var best = null, bestS = -Infinity;
+      for (var y = 0; y < H; y++) for (var x = 0; x < W; x++) {
+        var i = y * W + x;
+        if (grid[i] >= 0) continue;
+        var near = neighbourCount(grid, x, y);
+        if (!near) continue;
+        var cl = [];
+        for (var q = 0; q < opts.length; q++) if (compat(grid, x, y, opts[q])) cl.push(opts[q]);
+        if (!cl.length) continue;
+        var pick = cl[Math.floor(R() * cl.length)];
+        var s;
+        var dist = Math.hypot(x - c.A.x, y - c.A.y) / maxD;
+        if (c.strat === "random") {
+          s = R();
+        } else if (c.strat === "attract") {
+          s = -dist + 0.02 * R();
+        } else if (c.strat === "field") {
+          s = F[i] + 0.02 * R();
+        } else if (c.strat === "entropy") {
+          s = -cl.length + 0.01 * R();
+        } else {
+          // Partecipativa: sceglie la tessera meno usata e pesa attrazione, campo, compattezza, diversità
+          var minC = Infinity;
+          for (var u = 0; u < cl.length; u++) minC = Math.min(minC, typeCount[cl[u] >> 2]);
+          var pool = cl.filter(function (o) { return typeCount[o >> 2] === minC; });
+          pick = pool[Math.floor(R() * pool.length)];
+          var rarity = 1 - typeCount[pick >> 2] / Math.max(1, n);
+          s = (c.w.a * (-dist) + c.w.f * F[i] + c.w.c * (near / 4) + c.w.d * rarity) / wsum + 0.02 * R();
+        }
+        if (s > bestS) { bestS = s; best = { i: i, opt: pick }; }
+      }
+      if (!best) break;
+      grid[best.i] = best.opt;
+      typeCount[best.opt >> 2]++;
+      n++;
+    }
+    var m = measure(grid, n, typeCount, opts);
+    m.typeCount = typeCount;
+    m.grid = grid;
+    return m;
+  }
+
+  // Stato corrente della UI
+  var A = { x: 6, y: 9 };
+  var canvas = $("cv"), ctx = canvas.getContext("2d");
+
+  function readConfig(strat) {
+    var w = mixWeights();
+    return {
+      strat: strat || $("strat").value,
+      seed: num($("seed"), 1),
+      field: makeField(num($("fseed"), 7)),
+      A: A,
+      w: w,
+      frac: parseFloat($("frac").value),
+      rot: $("rot").checked
+    };
+  }
+
+  function mixWeights() {
+    var s = { a: 0, f: 0, c: 0, d: 0 };
+    STAKE.forEach(function (p) { for (var k in s) s[k] += p.w[k] / STAKE.length; });
+    return s;
+  }
+
+  function drawRun(res) {
+    var cs = canvas.width / W;
+    var bg = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim() || "#eef1ed";
+    var fg = getComputedStyle(document.documentElement).getPropertyValue("--fg").trim() || "#1c2622";
+    var line = getComputedStyle(document.documentElement).getPropertyValue("--line").trim() || "#c9d3cc";
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = line;
+    ctx.lineWidth = 1;
+    for (var y = 0; y < H; y++) for (var x = 0; x < W; x++) {
+      var i = y * W + x, px = x * cs, py = y * cs;
+      if (res.grid[i] < 0) { ctx.strokeRect(px + 0.5, py + 0.5, cs - 1, cs - 1); continue; }
+      var o = res.grid[i], t = o >> 2;
+      ctx.fillStyle = TILE_COL[t];
+      ctx.fillRect(px + 1, py + 1, cs - 2, cs - 2);
+      // Porte: piccoli segmenti colorati per tipo di lettera, sul lato corrispondente
+      for (var d = 0; d < 4; d++) {
+        var L = rp(o, d);
+        ctx.fillStyle = PORT_COL[L];
+        var m = cs * 0.18, th = cs * 0.14;
+        if (d === 0) ctx.fillRect(px + cs / 2 - m / 2, py + 1, m, th);
+        if (d === 1) ctx.fillRect(px + cs - 1 - th, py + cs / 2 - m / 2, th, m);
+        if (d === 2) ctx.fillRect(px + cs / 2 - m / 2, py + cs - 1 - th, m, th);
+        if (d === 3) ctx.fillRect(px + 1, py + cs / 2 - m / 2, th, m);
+      }
+    }
+    // Attrattore
+    ctx.strokeStyle = fg;
+    ctx.lineWidth = 2;
+    var ax = A.x * cs + cs / 2, ay = A.y * cs + cs / 2;
+    ctx.beginPath();
+    ctx.moveTo(ax - cs * 0.35, ay); ctx.lineTo(ax + cs * 0.35, ay);
+    ctx.moveTo(ax, ay - cs * 0.35); ctx.lineTo(ax, ay + cs * 0.35);
+    ctx.stroke();
+  }
+
+  function renderLegend() {
+    var html = TILE_NAME.map(function (n, t) {
+      return '<span><i class="sw" style="background:' + TILE_COL[t] + '"></i>' + n + "</span>";
+    }).join("");
+    html += '<span>Porte: ' + PORT_LETTERS.map(function (L) {
+      return '<i class="sw" style="background:' + PORT_COL[L] + '"></i>' + L;
+    }).join(" ") + "</span>";
+    $("legend").innerHTML = html;
+  }
+
+  function renderStats(m) {
+    var f = function (v, d) { return v.toFixed(d).replace(".", ","); };
+    $("stats").innerHTML = [
+      ["Tessere", m.n],
+      ["Copertura", f(m.cov * 100, 1) + "%"],
+      ["Compattezza", f(m.comp, 2)],
+      ["Diversità", f(m.div, 2)],
+      ["Celle bloccate", m.blocked],
+      ["Porte libere / tessera", f(m.freePer, 2)],
+      ["Collegamenti interni", m.adj]
+    ].map(function (r) {
+      return '<div><span class="label">' + r[0] + '</span><strong class="num">' + r[1] + "</strong></div>";
+    }).join("");
+  }
+
+  function run() {
+    var c = readConfig();
+    var res = grow(c);
+    drawRun(res);
+    renderStats(res);
+    var label = STRATS.filter(function (s) { return s[0] === c.strat; })[0][1];
+    $("runnote").textContent = "Strategia: " + label + ". Seme " + c.seed + ", campo " + $("fseed").value + ". Le tessere sono ordinate per tipo solo nella legenda. Con lo stesso seme e gli stessi parametri il risultato è identico.";
+  }
+
+  function renderPorts() {
+    var rows = ports.map(function (row, t) {
+      var cells = row.map(function (L, d) {
+        return '<td><select data-t="' + t + '" data-d="' + d + '" aria-label="' + TILE_NAME[t] + " lato " + "NESW"[d] + '">' +
+          PORT_LETTERS.map(function (x) { return '<option value="' + x + '"' + (x === L ? " selected" : "") + ">" + x + "</option>"; }).join("") +
+          "</select></td>";
+      }).join("");
+      return '<tr><td><i class="sw" style="background:' + TILE_COL[t] + '"></i> ' + TILE_NAME[t] + "</td>" + cells + "</tr>";
+    }).join("");
+    $("ports").innerHTML = rows;
+    $("ports").querySelectorAll("select").forEach(function (sel) {
+      sel.addEventListener("change", function () {
+        ports[+sel.dataset.t][+sel.dataset.d] = sel.value;
+        run();
+      });
+    });
+  }
+
+  function renderStake() {
+    $("stake").innerHTML = STAKE.map(function (p, k) {
+      return "<tr><td>" + p.name + "</td>" + ["a", "f", "c", "d"].map(function (key) {
+        return '<td><input type="number" min="0" max="1" step="0.05" data-k="' + k + '" data-w="' + key + '" value="' + p.w[key] + '" style="width:64px" aria-label="' + p.name + " peso " + key + '"></td>';
+      }).join("") + "</tr>";
+    }).join("");
+    $("stake").querySelectorAll("input").forEach(function (inp) {
+      inp.addEventListener("input", function () {
+        STAKE[+inp.dataset.k].w[inp.dataset.w] = parseFloat(inp.value) || 0;
+        showMix();
+        run();
+      });
+    });
+    showMix();
+  }
+
+  function showMix() {
+    var m = mixWeights();
+    $("wa").textContent = m.a.toFixed(2);
+    $("wf").textContent = m.f.toFixed(2);
+    $("wc").textContent = m.c.toFixed(2);
+    $("wd").textContent = m.d.toFixed(2);
+  }
+
+  function batch() {
+    var K = num($("k"), 20);
+    var rows = STRATS.map(function (s) {
+      var acc = { cov: [], comp: [], div: [], blocked: [], freePer: [] };
+      for (var k = 1; k <= K; k++) {
+        var c = readConfig(s[0]);
+        c.seed = k;
+        var r = grow(c);
+        acc.cov.push(r.cov); acc.comp.push(r.comp); acc.div.push(r.div);
+        acc.blocked.push(r.blocked); acc.freePer.push(r.freePer);
+      }
+      var mean = function (a) { return a.reduce(function (x, y) { return x + y; }, 0) / a.length; };
+      var sd = function (a) { var m = mean(a); return Math.sqrt(mean(a.map(function (v) { return (v - m) * (v - m); }))); };
+      var f = function (v, d) { return v.toFixed(d).replace(".", ","); };
+      return { label: s[1], mc: mean(acc.cov), mp: mean(acc.comp), mdiv: mean(acc.div), mb: mean(acc.blocked), mf: mean(acc.freePer), sc: sd(acc.cov), sd: sd(acc.div), html: null, f: f };
+    });
+    var bestCov = Math.max.apply(null, rows.map(function (r) { return r.mc; }));
+    $("cmp").innerHTML = rows.map(function (r) {
+      var cls = r.mc === bestCov ? ' class="best"' : "";
+      return "<tr><td" + cls + ">" + r.label + '</td><td class="num">' + r.f(r.mc * 100, 1) + "% ± " + r.f(r.sc * 100, 1) + '</td><td class="num">' + r.f(r.mp, 2) + '</td><td class="num">' + r.f(r.mdiv, 2) + " ± " + r.f(r.sd, 2) + '</td><td class="num">' + r.f(r.mb, 1) + '</td><td class="num">' + r.f(r.mf, 2) + "</td></tr>";
+    }).join("");
+    $("batchmsg").textContent = "Media su " + K + " semi, stesso campo e stessa griglia. Il segno ± è la deviazione standard tra semi.";
+  }
+
+  // Eventi
+  ["strat", "seed", "fseed", "frac", "rot"].forEach(function (id) {
+    $(id).addEventListener("input", run);
+    $(id).addEventListener("change", run);
+  });
+  $("newseed").addEventListener("click", function () {
+    $("seed").value = 1 + Math.floor(Math.random() * 9999);
+    run();
+  });
+  $("batch").addEventListener("click", batch);
+  canvas.addEventListener("click", function (e) {
+    var r = canvas.getBoundingClientRect();
+    var x = Math.floor((e.clientX - r.left) / r.width * W);
+    var y = Math.floor((e.clientY - r.top) / r.height * H);
+    if (x < 0 || y < 0 || x >= W || y >= H) return;
+    A = { x: x, y: y };
+    run();
+  });
+
+  renderLegend();
+  renderPorts();
+  renderStake();
+  run();
+})();
+</script>

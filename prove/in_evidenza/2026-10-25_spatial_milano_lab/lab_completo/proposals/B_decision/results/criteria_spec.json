@@ -1,0 +1,81 @@
+{
+ "pool_filter": "kind==land & area>=1000 m2 & (soft_site | max(pgt_rig,pgt_dism,pgt_tras)>0.3) & max(pgt_srv_verde,pgt_agr,pgt_pae,dusaf_wat)<0.5 & gfa_headroom>0 & NIL rent/income known & inside city",
+ "n_pool": 11429,
+ "n_reduced_depth_lt_k": 3723,
+ "k": 10,
+ "normalisation": "robust min-max on pool p2-p98, clipped to [0,1], cost criteria reversed",
+ "criteria": {
+  "access": "metro_km (parcel, km), lower better",
+  "need": "nil_rent*60/nil_net_m: OMI rent of a 60 m2 flat / net monthly income per taxpayer (NIL), higher = more affordability need",
+  "green": "0.5*nil_green (higher better) + 0.5*green_srv_km (parcel, lower better)",
+  "heat": "nil_heatrisk, lower better",
+  "capacity": "log10(gfa_headroom_m2) (assumption-based proxy), higher better",
+  "mix": "nil_poor (% taxpayers <= 15k), lower better (poverty deconcentration; policy assumption)",
+  "cost": "nil_price OMI EUR/m2, lower better (land cost proxy)"
+ },
+ "spearman_pool": {
+  "access": {
+   "access": 1.0,
+   "need": -0.097,
+   "green": -0.143,
+   "heat": -0.444,
+   "capacity": 0.11,
+   "mix": 0.197,
+   "cost": -0.455
+  },
+  "need": {
+   "access": -0.097,
+   "need": 1.0,
+   "green": 0.232,
+   "heat": 0.351,
+   "capacity": -0.057,
+   "mix": -0.449,
+   "cost": 0.188
+  },
+  "green": {
+   "access": -0.143,
+   "need": 0.232,
+   "green": 1.0,
+   "heat": 0.346,
+   "capacity": -0.058,
+   "mix": -0.138,
+   "cost": 0.515
+  },
+  "heat": {
+   "access": -0.444,
+   "need": 0.351,
+   "green": 0.346,
+   "heat": 1.0,
+   "capacity": -0.151,
+   "mix": -0.152,
+   "cost": 0.558
+  },
+  "capacity": {
+   "access": 0.11,
+   "need": -0.057,
+   "green": -0.058,
+   "heat": -0.151,
+   "capacity": 1.0,
+   "mix": 0.109,
+   "cost": -0.198
+  },
+  "mix": {
+   "access": 0.197,
+   "need": -0.449,
+   "green": -0.138,
+   "heat": -0.152,
+   "capacity": 0.109,
+   "mix": 1.0,
+   "cost": -0.292
+  },
+  "cost": {
+   "access": -0.455,
+   "need": 0.188,
+   "green": 0.515,
+   "heat": 0.558,
+   "capacity": -0.198,
+   "mix": -0.292,
+   "cost": 1.0
+  }
+ }
+}

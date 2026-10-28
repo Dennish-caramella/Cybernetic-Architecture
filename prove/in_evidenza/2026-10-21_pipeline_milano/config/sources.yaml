@@ -1,0 +1,56 @@
+# Registro delle fonti e adattatori di colonne.
+#
+# STATO: nessuna fonte è stata scaricata né verificata nella sessione che ha scritto questo file
+# (la rete della sessione bloccava i portali dei dati). I nomi delle colonne reali NON sono noti:
+# 'col: null' significa "da compilare dopo aver aperto il file reale". Un attributo con col null
+# viene saltato e il manifest lo segnala. Non inventare nomi di colonna.
+#
+# kind:
+#   extensive  = conteggio/quantità che si somma (residenti, famiglie): ripartito per area di sovrapposizione
+#   intensive  = media/densità/prezzo: media pesata per area (e per 'peso' se indicato)
+#   coverage   = poligoni di cui si vuole la quota di cella coperta (ambiti PGT, vincoli)
+
+osm:                      # scaricato in automatico da osm_fetch.py (OpenStreetMap, licenza ODbL)
+  stato_verifica: "da verificare al primo scarico: completezza dei tag a Milano non nota"
+
+fonti:
+  popolazione:            # NIL (Comune di Milano) oppure sezioni di censimento ISTAT
+    file: data_raw/popolazione.gpkg
+    ente: "Comune di Milano / ISTAT (da scegliere e verificare)"
+    stato_verifica: "da scaricare e verificare: granularità, anno, licenza"
+    attributi:
+      pop_total:   {col: null, kind: extensive}
+      pop_over65:  {col: null, kind: extensive}
+      households:  {col: null, kind: extensive}
+      income_mean: {col: null, kind: intensive, peso: pop_total}   # verificare se esiste a questa scala
+  omi:
+    file: data_raw/omi.gpkg      # zone OMI (geometrie) con quotazioni già unite
+    ente: "Agenzia delle Entrate - OMI"
+    stato_verifica: "da scaricare e verificare: le quotazioni sono intervalli stimati, non transazioni"
+    attributi:
+      omi_rent_min:  {col: null, kind: intensive}   # €/m2/mese, locazione residenziale
+      omi_rent_max:  {col: null, kind: intensive}
+      omi_price_min: {col: null, kind: intensive}   # €/m2, compravendita residenziale
+      omi_price_max: {col: null, kind: intensive}
+  pgt_ambiti:
+    file: data_raw/pgt_ambiti.gpkg
+    ente: "Comune di Milano - PGT"
+    stato_verifica: "da scaricare: verificare nomi e perimetri degli ambiti (rigenerazione, trasformazione, scali)"
+    attributi:
+      transformable_share_pgt: {kind: coverage}
+  vincolo_protetta:
+    file: data_raw/vincolo_protetta.gpkg
+    ente: "Regione Lombardia / Comune (parchi, aree tutelate)"
+    stato_verifica: "da scaricare e verificare"
+    attributi:
+      c_protetta: {kind: coverage, soglia_overlap: 0.2}
+  vincolo_idraulico:
+    file: data_raw/vincolo_idraulico.gpkg
+    ente: "Autorità di bacino / Regione Lombardia (PGRA) / Comune"
+    stato_verifica: "da scaricare e verificare: scenario e tempo di ritorno da scegliere"
+    attributi:
+      c_idraulico: {kind: coverage, soglia_overlap: 0.2}
+  lotti_pgt:              # opzionale: poligoni dei lotti candidati dichiarati dal piano
+    file: data_raw/lotti_pgt.gpkg
+    ente: "Comune di Milano - PGT"
+    stato_verifica: "opzionale; se assente i lotti candidati derivano da OSM (landuse dismessi/ferroviari)"

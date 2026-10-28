@@ -1,0 +1,46 @@
+{
+ "households": 744871.1239004415,
+ "share_erp": 0.46254706091731074,
+ "share_target": 0.04382686444014783,
+ "share_grey": 0.0,
+ "share_mkt_fail": 0.46433973650444876,
+ "D_total_base": 9793.609731769562,
+ "target_net_month_p10_p50_p90": [
+  1934.4637208411664,
+  2417.803112536136,
+  4052.352181820843
+ ],
+ "earners_city": 1.4044023327186341,
+ "individual_employee_check": {
+  "share_mkt_fail": 0.5364224066113499,
+  "share_erp": 0.49923356326435403,
+  "share_excluded_not_erp": 0.0371888433469959,
+  "share_target": 0.0371888433469959,
+  "share_net_1500_2500": 0.30142623879502817
+ },
+ "D_total_mean": 10502.778613381282,
+ "D_total_p05": 4346.284845589282,
+ "D_total_p95": 19259.38756967551,
+ "gap_total_mean_eur": 19974033.57700271,
+ "gap_p05": 7066178.823667191,
+ "gap_p95": 39472577.20925711,
+ "fit_best_counts": {
+  "Dagum": 36,
+  "LN": 2
+ },
+ "tax_calib_range": [
+  0.8295592429138531,
+  0.9310226543650194
+ ],
+ "params": {
+  "tau": 0.3,
+  "basket1": 750.0,
+  "isee_erp": 16000.0,
+  "social_rent": 90.0,
+  "renter": 0.3,
+  "earn_k": 1.0,
+  "rho": 0.3,
+  "isee_rent_ded": 1.0,
+  "isp": 0.0
+ }
+}

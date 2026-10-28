@@ -1,0 +1,77 @@
+pool 11429, reduced 3723, build 2s
+E1 {"n_pool": 11429, "n_reduced": 3723, "n_nil_reduced": 76, "n_parcels_with_b1_gt0_uniform": 123, "overlap_top10_by_archetype": {"young_worker": 6, "family_children": 6, "elderly": 4, "commuter": 6}}
+E2 done 263s
+         noise strategy q_top10_ge_0_7  q_regret10_le_0_05  q_tv_le_0_15     tv_q0  top10_q0  regret10_q0    tv_q10  top10_q10  regret_q10  regret10_q10    tv_q25  top10_q25  regret_q25  regret10_q25  tv_q25_se  regret10_q25_se
+0   flip20_b50   random           None                 NaN           NaN  0.296348  0.378125     0.120704  0.288401   0.368750    0.155262      0.165968  0.258915   0.375000    0.099570      0.154990   0.015344         0.025651
+1   flip20_b50      top           None                 NaN           NaN  0.296348  0.378125     0.120704  0.222751   0.484375    0.066997      0.094868  0.166040   0.603125    0.064413      0.050823   0.011425         0.010892
+2   flip20_b50        w           None                 NaN           NaN  0.296348  0.378125     0.120704  0.236389   0.481250    0.091285      0.110560  0.180576   0.493750    0.082310      0.093956   0.017609         0.018301
+3      high_b5   random           None                 NaN           NaN  0.296348  0.378125     0.120704  0.305391   0.353125    0.166203      0.148481  0.289698   0.346875    0.101743      0.167691   0.014183         0.022379
+4      high_b5      top           None                 NaN           NaN  0.296348  0.378125     0.120704  0.280716   0.400000    0.110629      0.162846  0.252752   0.443750    0.106886      0.123221   0.015782         0.017015
+5      high_b5        w           None                 NaN           NaN  0.296348  0.378125     0.120704  0.257994   0.418750    0.096179      0.130194  0.230488   0.365625    0.128663      0.150933   0.014217         0.027112
+6      low_b50   random           None                 NaN           NaN  0.296348  0.378125     0.120704  0.231151   0.487500    0.053642      0.079038  0.180763   0.546875    0.043067      0.056839   0.011812         0.008698
+7      low_b50      top           None                14.0          14.0  0.296348  0.378125     0.120704  0.165656   0.531250    0.053544      0.060127  0.117884   0.646875    0.023548      0.038177   0.007897         0.009649
+8      low_b50        w           None                11.0          10.0  0.296348  0.378125     0.120704  0.142676   0.568750    0.059569      0.055959  0.090884   0.650000    0.032908      0.032424   0.005099         0.006769
+9      mid_b15   random           None                 NaN           NaN  0.296348  0.378125     0.120704  0.260088   0.434375    0.105148      0.104695  0.222093   0.490625    0.074993      0.083139   0.013423         0.012863
+10     mid_b15      top           None                 NaN           NaN  0.296348  0.378125     0.120704  0.203481   0.484375    0.113463      0.111677  0.163373   0.521875    0.070286      0.083356   0.011834         0.020585
+11     mid_b15        w           None                 NaN          23.0  0.296348  0.378125     0.120704  0.200283   0.500000    0.040014      0.075381  0.137445   0.531250    0.067558      0.060777   0.010181         0.009485
+E3 done 72s
+         prior  minority   late  q        tv     top10    regret  regret10
+2   population     False  False  4  0.186592  0.625000  0.028254  0.045178
+3   population     False  False  8  0.173718  0.630000  0.039512  0.043224
+6   population     False   True  4  0.161185  0.639474  0.014438  0.036697
+7   population     False   True  8  0.154572  0.650000  0.014239  0.030613
+10  population      True  False  4  0.258928  0.420000  0.132341  0.099296
+11  population      True  False  8  0.236214  0.470000  0.082379  0.067315
+14  population      True   True  4  0.234904  0.433333  0.082388  0.097996
+15  population      True   True  8  0.231805  0.450000  0.124508  0.096229
+18     uniform     False  False  4  0.227294  0.577500  0.052522  0.059105
+19     uniform     False  False  8  0.175758  0.652500  0.043579  0.045100
+22     uniform     False   True  4  0.219531  0.542105  0.067073  0.083967
+23     uniform     False   True  8  0.191336  0.571053  0.046540  0.057111
+26     uniform      True  False  4  0.299964  0.410000  0.124340  0.123427
+27     uniform      True  False  8  0.243044  0.440000  0.051142  0.078320
+30     uniform      True   True  4  0.255729  0.300000  0.148195  0.226739
+31     uniform      True   True  8  0.212147  0.516667  0.016243  0.119318
+E4 done 125s
+     scenario  weights  minority_share        method  n_groups_found  sat_all  sat_majority  sat_family  sat_minority  worst_group   JR  pct_minority_with_own_topk
+0   polarised  learned             0.1         borda             2.0    0.888         0.898       0.936         0.660        0.660  0.0                         0.0
+1   polarised  learned             0.1           gic             2.0    0.867         0.914       0.860         0.555        0.555  0.0                         0.0
+2   polarised  learned             0.1        kemeny             2.0    0.892         0.910       0.927         0.650        0.650  0.0                         0.0
+3   polarised  learned             0.1  mean_weights             2.0    0.888         0.896       0.937         0.662        0.662  0.0                         0.0
+4   polarised  learned             0.1       seq_pav             2.0    0.848         0.871       0.857         0.588        0.588  0.5                        25.0
+5   polarised  learned             0.2         borda             3.0    0.884         0.899       0.952         0.763        0.763  0.0                        25.0
+6   polarised  learned             0.2           gic             3.0    0.853         0.850       0.940         0.760        0.760  0.5                        50.0
+7   polarised  learned             0.2        kemeny             3.0    0.878         0.902       0.938         0.743        0.743  0.0                        25.0
+8   polarised  learned             0.2  mean_weights             3.0    0.881         0.907       0.941         0.744        0.744  0.0                        25.0
+9   polarised  learned             0.2       seq_pav             3.0    0.795         0.793       0.870         0.716        0.716  0.5                        71.0
+10  polarised  learned             0.3         borda             2.0    0.826         0.876       0.966         0.730        0.730  0.0                        17.5
+11  polarised  learned             0.3           gic             2.0    0.807         0.839       0.950         0.724        0.724  0.0                        47.5
+12  polarised  learned             0.3        kemeny             2.0    0.822         0.857       0.967         0.735        0.735  0.0                        17.5
+13  polarised  learned             0.3  mean_weights             2.0    0.827         0.874       0.966         0.732        0.732  0.0                        17.5
+14  polarised  learned             0.3       seq_pav             2.0    0.750         0.648       0.914         0.761        0.606  0.5                        80.5
+30  realistic  learned             0.1         borda             3.5    0.940         0.960       0.913         0.884        0.884  1.0                        83.0
+31  realistic  learned             0.1           gic             3.5    0.929         0.957       0.884         0.884        0.865  1.0                        83.0
+32  realistic  learned             0.1        kemeny             3.5    0.935         0.958       0.895         0.882        0.882  1.0                        83.0
+33  realistic  learned             0.1  mean_weights             3.5    0.933         0.954       0.906         0.875        0.875  1.0                        83.0
+34  realistic  learned             0.1       seq_pav             3.5    0.923         0.948       0.878         0.888        0.858  1.0                        83.0
+35  realistic  learned             0.2         borda             5.0    0.936         0.957       0.931         0.888        0.888  1.0                        93.5
+36  realistic  learned             0.2           gic             5.0    0.922         0.956       0.878         0.884        0.867  1.0                       100.0
+37  realistic  learned             0.2        kemeny             5.0    0.938         0.954       0.930         0.902        0.902  1.0                       100.0
+38  realistic  learned             0.2  mean_weights             5.0    0.937         0.953       0.934         0.899        0.899  1.0                       100.0
+39  realistic  learned             0.2       seq_pav             5.0    0.922         0.961       0.856         0.891        0.856  1.0                       100.0
+40  realistic  learned             0.3         borda             5.0    0.931         0.954       0.923         0.922        0.905  1.0                       100.0
+41  realistic  learned             0.3           gic             5.0    0.910         0.925       0.859         0.926        0.859  1.0                       100.0
+42  realistic  learned             0.3        kemeny             5.0    0.926         0.942       0.888         0.929        0.888  1.0                       100.0
+43  realistic  learned             0.3  mean_weights             5.0    0.931         0.954       0.923         0.922        0.905  1.0                       100.0
+44  realistic  learned             0.3       seq_pav             5.0    0.894         0.898       0.850         0.911        0.850  1.0                       100.0
+E5 consensus: ['015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)', '015400.27 (Cimiano - Rottole - Q.re Feltre, 0.06 km to Cascina Gobba)', '015200.208 (Cimiano - Rottole - Q.re Feltre, 0.26 km to Crescenzago)', '039600.314 (Parco Forlanini - Cavriano, 0.18 km to Stazione Forlanini)', '024100.85 (Cimiano - Rottole - Q.re Feltre, 0.19 km to Cimiano)']
+E5 consensus one per NIL: [('015200.232 (Cimiano - Rottole - Q.re Feltre, 0.07 km to Crescenzago)', 0.2216), ('039600.314 (Parco Forlanini - Cavriano, 0.18 km to Stazione Forlanini)', 0.012), ('011700.231 (Q.re Gallaratese - Q.re San Leonardo - Lampugnano, 0.04 km to Molino Dorino)', 0.0034), ('061900.177 (Triulzo Superiore, 0.01 km to San Donato)', 0.0004), ('001400.24 (Comasina, 0.15 km to Comasina)', 0.0), ('057800.153 (Barona, 0.03 km to Famagosta)', 0.0), ('003900.920 (Bovisasca, 0.14 km to Affori Fn)', 0.0), ('030400.342 (Tre Torri, 0.01 km to Tre Torri)', 0.0), ("007900.69 (Niguarda - Ca' Granda - Prato Centenaro - Q.re Fulvio Testi, 0.15 km to Bicocca)", 0.0), ('042400.72 (Forze Armate, 0.21 km to Inganni)', 0.0)]
+   young_worker {'access': np.float64(0.303), 'need': np.float64(0.154), 'green': np.float64(0.115), 'heat': np.float64(0.113), 'capacity': np.float64(0.077), 'mix': np.float64(0.149), 'cost': np.float64(0.087)} {'tv': np.float64(0.13127548364400074), 'top10': 0.9, 'top1': 1.0, 'regret': np.float64(0.0), 'regret10': np.float64(0.006341286958421796), 'q': 12}
+   family_children {'access': np.float64(0.154), 'need': np.float64(0.076), 'green': np.float64(0.205), 'heat': np.float64(0.152), 'capacity': np.float64(0.068), 'mix': np.float64(0.221), 'cost': np.float64(0.123)} {'tv': np.float64(0.10057774867128405), 'top10': 0.6, 'top1': 0.0, 'regret': np.float64(0.2796261052946599), 'regret10': np.float64(0.07485843343916702), 'q': 12}
+   elderly {'access': np.float64(0.215), 'need': np.float64(0.075), 'green': np.float64(0.28), 'heat': np.float64(0.096), 'capacity': np.float64(0.105), 'mix': np.float64(0.119), 'cost': np.float64(0.11)} {'tv': np.float64(0.24437064476008596), 'top10': 0.5, 'top1': 1.0, 'regret': np.float64(0.0), 'regret10': np.float64(0.05008190581243233), 'q': 12}
+   commuter {'access': np.float64(0.582), 'need': np.float64(0.044), 'green': np.float64(0.051), 'heat': np.float64(0.076), 'capacity': np.float64(0.087), 'mix': np.float64(0.055), 'cost': np.float64(0.105)} {'tv': np.float64(0.21383016728208631), 'top10': 0.7, 'top1': 1.0, 'regret': np.float64(0.0), 'regret10': np.float64(0.018627274953072696), 'q': 12}
+   young_worker 0.6 '015200.232' would overtake '015400.27' if 'green' rose from 11.5% to 12.2% of your weight (others shrinking proportionally).
+   family_children 0.7 '015200.232' would overtake '039600.314' if 'green' rose from 20.5% to 21.1% of your weight (others shrinking proportionally).
+   elderly 4.9 '015200.208' would overtake '015200.232' if 'capacity' rose from 10.5% to 15.1% of your weight (others shrinking proportionally).
+   commuter 6.8 '015200.232' would overtake '015400.27' if 'green' rose from 5.1% to 12.8% of your weight (others shrinking proportionally).
+total 486s
