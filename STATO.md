@@ -12,8 +12,8 @@ Aggiornato 2026-11-09. Decisioni di impianto: `tesi/DECISIONI.md`. Storia: `gior
 
 ## In corso (F0)
 1. Riordino del repo: proposta in `tesi/GESTIONE_FILE.md`, **da approvare da Dennis** (niente spostato).
-2. Accesso alle cartelle del PC (`TESI`, `PROVA PROGETTO`): aggiornare l'app Claude desktop e abilitarle in Remote Control.
-3. Letture nuove: link di `bibliografia_consigliata.md` (Notion, Box), Philippe Morel, Yona Friedman, Cybersyn, Jacobs.
+2. Accesso alle cartelle del PC (`TESI`, `PROVA PROGETTO`): ancora non offerte al cloud al 09/11 sera. Alternativa: fare il riordino locale in una sessione Claude sul PC.
+3. Letture nuove: Notion a3-aM estratto (`secondo_cervello/fonti/NOTION_A3AM_RIFERIMENTI.md`); Morel RC11 schedato (`secondo_cervello/ricerche/09_morel_rc11_la_defense_housing_prime.md`). Restano: PDF Box nuovi (Dovey, Habraken, Hertzberger, Hillier, Kipnis, Vidler), Friedman, Cybersyn, Jacobs, testi teorici di Morel.
 4. Schede di caso studio dagli artifact di analisi (escluso Albero Conflitti).
 5. Mappa critica dei modelli di analisi.
 6. Domanda, sottodomande, ipotesi con soglie.

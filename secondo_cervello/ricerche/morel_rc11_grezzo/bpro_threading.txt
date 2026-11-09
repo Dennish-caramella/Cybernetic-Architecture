@@ -1,0 +1,46 @@
+https://bpro2021.bartlettarchucl.com/rc11-ai-and-the-case-of-la-defense/threading-city
+
+Close
+Project sections
+1 / 1
+ 
+Threading City
+Project details
+Programme
+Research Cluster
+RC11
+
+With urban economic accumulation and population growth, La Défense will inevitably face density problems. Although top-down planning can control density, it is difficult to have organic interactions on urban streets. Organic urbanism advocates “spatial democracy”, in which urban designers create a framework with sufficient freedom for a bottom-up autonomous design to occur. The advent of new urban science in the era of big data has brought new possibilities for urban design. Digital, Verification and Computational Urban Design derived from urban new science are supported by quantitative human-based analysis that allows us to achieve a balance between bottom-up autonomous urban renewal and top-down planning.
+
+
+
+
+This experimental and forward-looking case study combines urban and participatory design through a series of research methods and tools brought by the New Urban Science. The workflow uses Python as the main data acquisition and analysis tool, along with Mathematica and Grasshopper, pioneering new combinations of tools for future urban design. The study shows that using digital and participatory design to carry out organic urbanism in La Défense helps to simulate possible solutions for new design proposals for recent urban development trends to effectively predict a city development trajectory.
+
+Students
+Zhichen Liu
+ 
+Yiming Liu
+ 
+Yichen Xie
+ 
+Yuhao Zheng
+01
+
+The Workflow of Space Quality
+
+Collecting Street Views
+
+Workflow of Plan Generation
+
+02
+
+03
+
+04
+
+Share on Facebook, LinkedIn or Twitter
+
+The Bartlett
+B-Pro Show 2021
+30 October – November 13

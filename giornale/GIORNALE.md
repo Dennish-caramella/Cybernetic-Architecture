@@ -4,7 +4,7 @@ Una riga per giorno, dal più recente. Le date vengono dal registro storico e da
 
 | Giorno | Cosa è stato fatto | Dove |
 |---|---|---|
-| 2026-11-09 | Ripartenza: intervista di impianto (natura della tesi, visione, domanda di base, due scale, basi, calendario fino a inizio 2028, cinque categorie di file); rete cloud sbloccata per i portali dati e Notion/Box; proposta di riordino da approvare | `tesi/`, `STATO.md` |
+| 2026-11-09 | Ripartenza: intervista di impianto (natura della tesi, visione, domanda di base, due scale, basi, calendario fino a inizio 2028, cinque categorie di file); rete cloud sbloccata per i portali dati e Notion/Box; proposta di riordino da approvare. Estratto il Notion a3-aM della bibliografia consigliata (88 housing, progetti, letture); trovato e schedato Morel RC11 (La Défense 2021, Housing Prime 2020) | `tesi/`, `STATO.md`, `secondo_cervello/fonti/`, `secondo_cervello/ricerche/09_*` |
 | 2026-10-28 | Spatial Milano Lab completo: copia integrale dello scratch dal PC (1024 file, sha256 verificati), codice e dati leggeri nel repo, `lab/` rinominata `lab_completo/` | `prove/in_evidenza/2026-10-25_spatial_milano_lab/` |
 | 2026-10-27 | Riorganizzazione del progetto; issue #5–#12 (mappa di ricerca); ricerche MIT/Azadi/riesame; tavole rotonde sulla critica a Spatial Milano Lab; ripresa della sessione del laboratorio | tutto il repo; `secondo_cervello/ricerche/`, `secondo_cervello/tavole_rotonde/`, `giornale/sessioni/` |
 | 2026-10-26 | Valutazione di Spatial Milano; lavoro sul laboratorio (date dei research_notes) | `prove/in_evidenza/2026-10-25_spatial_milano_lab/docs/` |
