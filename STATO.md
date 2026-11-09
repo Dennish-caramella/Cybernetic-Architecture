@@ -12,10 +12,10 @@ Aggiornato 2026-11-09. Decisioni di impianto: `tesi/DECISIONI.md`. Storia: `gior
 
 ## In corso (F0)
 1. Riordino del repo: proposta in `tesi/GESTIONE_FILE.md`, **da approvare da Dennis** (niente spostato).
-2. Accesso alle cartelle del PC (`TESI`, `PROVA PROGETTO`): ancora non offerte al cloud al 09/11 sera. Alternativa: fare il riordino locale in una sessione Claude sul PC.
+2. Accesso alle cartelle del PC (`TESI`, `PROVA PROGETTO`): ancora non offerte al cloud al 09/11 sera. Alternativa pronta: `tesi/PROMPT_INVENTARIO_PC.md` (inventario in sola lettura da una sessione Claude sul PC).
 3. Letture nuove: Notion a3-aM estratto (`secondo_cervello/fonti/NOTION_A3AM_RIFERIMENTI.md`); Morel RC11 schedato (`secondo_cervello/ricerche/09_morel_rc11_la_defense_housing_prime.md`). Restano: PDF Box nuovi (Dovey, Habraken, Hertzberger, Hillier, Kipnis, Vidler), Friedman, Cybersyn, Jacobs, testi teorici di Morel.
 4. Schede di caso studio dagli artifact di analisi (escluso Albero Conflitti).
-5. Mappa critica dei modelli di analisi.
+5. Mappa critica dei modelli di analisi: prima versione in `secondo_cervello/modelli/MAPPA_MODELLI_ANALISI.md`; da decidere il nucleo di F1 (Parte 3); verificare i riferimenti [DV].
 6. Domanda, sottodomande, ipotesi con soglie.
 
 ## Avvisi ancora aperti (dal 28/10)
