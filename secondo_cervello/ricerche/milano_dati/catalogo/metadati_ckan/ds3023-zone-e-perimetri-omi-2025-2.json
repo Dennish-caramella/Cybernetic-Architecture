@@ -1,0 +1,235 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 5,
+ "id": "02d8344e-9d79-4048-99bc-a5fbbd68e846",
+ "metadata_created": "2026-10-14T15:24:38.374333",
+ "metadata_modified": "2026-10-27T11:18:43.102962",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "02d8344e-9d79-4048-99bc-a5fbbd68e846",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "11045f0a-37ba-42ef-8be7-674355b5155a",
+   "size": 5690,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS3023_Zone_OMI_2025_2.csv",
+   "created": "2026-10-26T14:47:41.673178",
+   "url": "https://dati.comune.milano.it/dataset/02d8344e-9d79-4048-99bc-a5fbbd68e846/resource/11045f0a-37ba-42ef-8be7-674355b5155a/download/zone_omi_2025_2.csv",
+   "last_modified": "2026-10-26T14:47:41.634630",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "2a7f98b5-542a-4d08-859c-fe5e4aed1b1f",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "02d8344e-9d79-4048-99bc-a5fbbd68e846",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "56f22b86-9ead-4890-9473-bf2fe15df16d",
+   "size": 19965,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "DS3023_Zone_OMI_2025_2.json",
+   "created": "2026-10-26T14:49:44.808989",
+   "url": "https://dati.comune.milano.it/dataset/02d8344e-9d79-4048-99bc-a5fbbd68e846/resource/56f22b86-9ead-4890-9473-bf2fe15df16d/download/zone_omi_2025_2.json",
+   "last_modified": "2026-10-26T14:49:44.763158",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "7cf0eff4-3b4d-4a1d-9404-f5539d6693ca",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "02d8344e-9d79-4048-99bc-a5fbbd68e846",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "ad93f018-fa80-4b6f-844f-e07936db1b94",
+   "size": 277573,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "DS3023_Zone e Perimetri Omi_2025_2.geojson",
+   "created": "2026-10-26T14:51:10.868343",
+   "url": "https://dati.comune.milano.it/dataset/02d8344e-9d79-4048-99bc-a5fbbd68e846/resource/ad93f018-fa80-4b6f-844f-e07936db1b94/download/zone_omi_2025_2.geojson",
+   "last_modified": "2026-10-26T14:51:10.826615",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "fb38d8eb-410a-4158-a376-05555aef99c5",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "OMI",
+   "id": "4cb06e92-262b-47c3-9166-df3cd1aafb84",
+   "name": "OMI"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_pubblicazione",
+   "id": "55a8a82c-eaab-49f6-8579-856e76e52e98",
+   "name": "serie_pubblicazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "zone OMI",
+   "id": "df621276-1fb3-49da-b62d-de0aa0bc029f",
+   "name": "zone OMI"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "6460702c-a06d-4ef6-a381-82a1837d5370",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds3023-zone-e-perimetri-omi-2025-2",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset espone le Zone ed i Perimetri OMI (Osservatorio del Mercato Immobiliare) riguardanti il Comune di Milano.\r\n\r\nLe quotazioni immobiliari semestrali, gestite dall’Agenzia delle Entrate, individuano, per ogni delimitata zona territoriale omogenea (zona OMI) un intervallo minimo/massimo, per unità di superficie in euro a metro quadro.\r\n\r\nLe informazioni rese sono di proprietà esclusiva dell’Agenzia. Non è consentito al cliente vendere, affittare, noleggiare, trasferire, cedere i contenuti della Banca Dati o assumere alcune altre obbligazioni verso terzi.\r\n\r\nLe informazioni contenute nella banca dati possono essere utilizzate dal cliente, anche ai fini della loro elaborazione purché, nel caso di pubblicazione, venga citata la relativa fonte. Per ogni ulteriore condizione contrattuale e di utilizzo è possibile collegarsi al link https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi/banche-dati/quotazioni-immobiliari/condizioni-contrattuali-qi.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS3023",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100186\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Agenzia delle Entrate",
+   "key": "publisher_name"
+  },
+  {
+   "value": "06363391001",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "2026-10-26",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2025-12-31\", \"temporal_start\": \"2025-07-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "https://www1.agenziaentrate.gov.it/servizi/Consultazione/ricerca.htm",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Zone e Perimetri OMI: 2025/2",
+ "revision_id": "6df8df34-199a-46e4-9d3f-04afd2279e4d"
+}

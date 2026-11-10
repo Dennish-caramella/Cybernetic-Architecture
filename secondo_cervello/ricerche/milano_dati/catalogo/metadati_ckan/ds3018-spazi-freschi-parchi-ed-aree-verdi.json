@@ -1,0 +1,221 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "AMAT - Agenzia Mobilità Ambiente Territorio",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 3,
+ "id": "417ac74c-8906-443d-9d16-72a8b454bb35",
+ "metadata_created": "2026-09-25T13:16:38.216804",
+ "metadata_modified": "2026-09-28T09:27:55.064486",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "417ac74c-8906-443d-9d16-72a8b454bb35",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "7322ed32-4d9a-4cfd-9562-fd76f5a30008",
+   "size": 8483,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds3018_spazi_aperti.csv",
+   "created": "2026-09-25T13:16:39.946246",
+   "url": "https://dati.comune.milano.it/dataset/417ac74c-8906-443d-9d16-72a8b454bb35/resource/7322ed32-4d9a-4cfd-9562-fd76f5a30008/download/ds3018_spazi_aperti.csv",
+   "last_modified": "2026-09-25T13:16:39.911810",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "b2883bb5-2a9c-49ae-a9eb-15ca26f8b2ca",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "417ac74c-8906-443d-9d16-72a8b454bb35",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "7ee7f9e1-6640-4ce6-a303-2b082a28471f",
+   "size": 17730,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "ds3018_spazi_aperti.json",
+   "created": "2026-09-25T13:16:48.098766",
+   "url": "https://dati.comune.milano.it/dataset/417ac74c-8906-443d-9d16-72a8b454bb35/resource/7ee7f9e1-6640-4ce6-a303-2b082a28471f/download/ds3018_spazi_aperti.json",
+   "last_modified": "2026-09-25T13:16:48.063065",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "3bd9b824-1d24-43df-b349-a03e6e95f84d",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "417ac74c-8906-443d-9d16-72a8b454bb35",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "66f1237d-e456-4432-9cdc-4f1384a15069",
+   "size": 42941,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "ds3018_spazi_aperti.geojson",
+   "created": "2026-09-25T13:16:56.688682",
+   "url": "https://dati.comune.milano.it/dataset/417ac74c-8906-443d-9d16-72a8b454bb35/resource/66f1237d-e456-4432-9cdc-4f1384a15069/download/ds3018_spazi_aperti.geojson",
+   "last_modified": "2026-09-25T13:16:56.652813",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "4b87e019-a048-433a-b433-156ac964745a",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato",
+   "id": "cc3cd9cd-97a9-4528-88f6-edfecee069d9",
+   "name": "GEOreferenziato"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "spazi_freschi",
+   "id": "bf13e6f1-aa54-4d17-a6cd-1dec5def9cd9",
+   "name": "spazi_freschi"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Istruzione, cultura e sport",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091631.329628istruzione.png",
+   "title": "Istruzione, cultura e sport",
+   "id": "1e6a0f2e-e335-4a52-a64f-c62d0e40caa6",
+   "name": "educ"
+  }
+ ],
+ "creator_user_id": "6460702c-a06d-4ef6-a381-82a1837d5370",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds3018-spazi-freschi-parchi-ed-aree-verdi",
+ "isopen": true,
+ "url": "",
+ "notes": "Gli Spazi Freschi sono una misura finalizzata a ridurre la vulnerabilità della popolazione durante le ondate di calore, offrendo spazi pubblici ad accesso libero e gratuito pensati per offrire riparo dal caldo estremo.\r\n\r\nIl dataset contiene la lista dei soli spazi aperti con aree verdi fruibili di almeno 5000 mq caratterizzate da elevata copertura arborea (più del 50% dell'area verde), attrezzate con fontanelle e sedute in aree ombreggiate\r\n\r\nPer maggiori informazioni riguardo gli spazi freschi consultare il seguente link: https://www.comune.milano.it/w/ambiente.-la-mappa-degli-spazi-freschi-in-citt%C3%A0.-116-luoghi-tra-aree-verdi-case-di-quartiete-e-biblioteche",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS3018",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100212\"], \"theme\": \"EDUC\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Verde e Ambiente",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "25-09-2026",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2026-12-31\", \"temporal_start\": \"2026-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "ANNUAL",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Spazi freschi: parchi ed aree verdi",
+ "revision_id": "44382d64-07c6-4606-961c-0831a29d39db"
+}

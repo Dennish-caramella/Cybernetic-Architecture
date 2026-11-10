@@ -1,0 +1,235 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità SIT e Sviluppo del Gemello Digitale Urbano",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 5,
+ "id": "8920bbea-fe1a-4061-8c6e-0746d95316c1",
+ "metadata_created": "2017-11-13T11:58:55.037401",
+ "metadata_modified": "2026-05-08T10:33:35.839735",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "8920bbea-fe1a-4061-8c6e-0746d95316c1",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "7cba11e7-c236-49a7-aef4-4db6329eec5d",
+   "size": 5019311,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "ds89_infogeo_parchi_giardini_localizzazione.geojson",
+   "created": "2018-03-12T09:58:35.063162",
+   "url": "https://dati.comune.milano.it/dataset/8920bbea-fe1a-4061-8c6e-0746d95316c1/resource/7cba11e7-c236-49a7-aef4-4db6329eec5d/download/parchi.geojson",
+   "last_modified": "2024-05-06T12:56:46.615086",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "4149d386-3851-4e12-91d7-5189178c4b8c",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "8920bbea-fe1a-4061-8c6e-0746d95316c1",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "aaa805a3-2541-43ef-b849-0b32f20befb1",
+   "size": 1202757,
+   "state": "active",
+   "hash": "",
+   "description": "Il sistema di coordinate utilizzato è **EPSG:32632 WGS 84 / UTM zone 32N**",
+   "format": "SHP",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/zip",
+   "cache_url": null,
+   "name": "ds89_infogeo_parchi_giardini_localizzazione_shp.zip",
+   "created": "2018-06-15T09:50:41.828983",
+   "url": "https://dati.comune.milano.it/dataset/8920bbea-fe1a-4061-8c6e-0746d95316c1/resource/aaa805a3-2541-43ef-b849-0b32f20befb1/download/parchi.zip",
+   "last_modified": "2021-03-02T11:57:20.905899",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "e2e30a9e-5da8-48be-85e3-a3e0c2626abf",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "8920bbea-fe1a-4061-8c6e-0746d95316c1",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "819e1725-7ffb-44d6-987d-ab48175d0e22",
+   "size": 139763,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds89_infogeo_parchi_giardini_localizzazione.csv",
+   "created": "2020-07-06T12:23:10.929679",
+   "url": "https://dati.comune.milano.it/dataset/8920bbea-fe1a-4061-8c6e-0746d95316c1/resource/819e1725-7ffb-44d6-987d-ab48175d0e22/download/parchi_4326.csv",
+   "last_modified": "2021-03-02T11:53:04.602558",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "9ea8d802-9bc9-4b8a-8690-10c8bfa73548",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "zona",
+   "id": "319a3afb-c83e-4bd7-a22a-8c6af6415c2a",
+   "name": "zona"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Ambiente",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091724.388254governo.png",
+   "title": "Ambiente",
+   "id": "3126650a-3186-4171-9c48-722058e3b5bf",
+   "name": "envi"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds89_infogeo_parchi_giardini_localizzazione_",
+ "isopen": true,
+ "url": "",
+ "notes": "Il presente dato riusabile consiste nella localizzazione georeferenziata dei parchi e giardini sul territorio del Comune di Milano. Ogni parco o giardino è rappresentato da un poligono.\r\n\r\n\r\nLa risorsa csv scaricabile contiene delle colonne di punti georeferenziati, che corrispondono al centroide della geometria utilizzata nella relativa risorsa GeoJSON.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS89",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100243\"], \"theme\": \"ENVI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Innovazione Tecnologica e Digitale",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "30-04-2012",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2012-04-30\", \"temporal_start\": \"2012-04-30\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 SIT e Sviluppo del Gemello Digitale Urbano\", \"it\": \"Comune di Milano - Unit\\u00e0 SIT e Sviluppo del Gemello Digitale Urbano\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Territorio: localizzazione dei parchi e giardini",
+ "revision_id": "242ddd40-924b-4596-bd1b-2bbdbbe64699"
+}

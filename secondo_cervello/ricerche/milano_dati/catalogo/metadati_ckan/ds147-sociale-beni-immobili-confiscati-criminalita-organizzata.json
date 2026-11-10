@@ -1,0 +1,218 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 6,
+ "id": "2c48e7c0-6e86-4a0a-95de-b9ea0564efcd",
+ "metadata_created": "2017-11-13T16:15:24.380400",
+ "metadata_modified": "2026-06-18T01:32:01.219921",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "2c48e7c0-6e86-4a0a-95de-b9ea0564efcd",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "f0db7ac6-d29a-4cc7-ae97-c05b7908c99e",
+   "size": 128528,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS147_Elenco beni immobili confiscati 06_2026.csv",
+   "created": "2017-11-13T16:15:32.918701",
+   "url": "https://dati.comune.milano.it/dataset/2c48e7c0-6e86-4a0a-95de-b9ea0564efcd/resource/f0db7ac6-d29a-4cc7-ae97-c05b7908c99e/download/ds147_elenco-beni-immobili-confiscati-06_2026.csv",
+   "last_modified": "2026-06-18T01:30:03.158578",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "09379043-98fd-429e-b7fc-897d603ee9ef",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "2c48e7c0-6e86-4a0a-95de-b9ea0564efcd",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "03a7adcd-ace2-43d7-a448-d2bb9000bcd8",
+   "size": 222723,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "DS147_Elenco beni immobili confiscati 06_2026.json",
+   "created": "2018-07-04T14:18:19.996257",
+   "url": "https://dati.comune.milano.it/dataset/2c48e7c0-6e86-4a0a-95de-b9ea0564efcd/resource/03a7adcd-ace2-43d7-a448-d2bb9000bcd8/download/ds147_elenco-beni-immobili-confiscati-06_2026.json",
+   "last_modified": "2026-06-18T01:32:01.179183",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "b46cd35f-d1b3-489c-8c20-5befa9f43a3b",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "atto_pubblico",
+   "id": "b4557f08-d19b-4b2d-9399-bd72c8a65a23",
+   "name": "atto_pubblico"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "mese",
+   "id": "d563dd30-5092-4a49-b566-0cbb17312a84",
+   "name": "mese"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "portale_istituzionale",
+   "id": "aba4adb0-fd05-4b96-8455-89bfc2c0c320",
+   "name": "portale_istituzionale"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Giustizia, sistema giuridico e sicurezza pubblica",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092044.345117giustizia.png",
+   "title": "Giustizia, sistema giuridico e sicurezza pubblica",
+   "id": "d9a1e0f5-657a-4605-8225-3a08d2371077",
+   "name": "just"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds147-sociale-beni-immobili-confiscati-criminalita-organizzata",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset contiene l'elenco delle unità immobiliari confiscate alla criminalità organizzata, trasferite al patrimonio del Comune di Milano ai sensi dell'art.48 del D. Lgs. 159/2011 e destinate a finalità sociali e/o istituzionali.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS147",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100180\"], \"theme\": \"JUST\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Politiche Sociali",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "18-06-2026",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2026-06-30\", \"temporal_start\": \"2026-06-16\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "MONTHLY",
+   "key": "frequency"
+  },
+  {
+   "value": "https://www.comune.milano.it/argomenti/welfare/beni-immobili-confiscati-alla-criminalita-organizzata",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Sociale: Beni immobili confiscati alla criminalità organizzata",
+ "revision_id": "89096123-3f9e-47fa-a710-c4f7efb1f7f6"
+}

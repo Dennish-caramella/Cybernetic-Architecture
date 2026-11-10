@@ -1,0 +1,197 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 3,
+ "id": "60569cc3-0b12-469f-ae40-1df27f5ddec5",
+ "metadata_created": "2018-02-21T13:36:54.523730",
+ "metadata_modified": "2026-07-01T13:19:36.312882",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "60569cc3-0b12-469f-ae40-1df27f5ddec5",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "633f9758-2292-4d20-94e1-0e08ecf80be6",
+   "size": 5707,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds531_classi_reddito_complessivo.csv",
+   "created": "2018-02-21T13:58:07.459184",
+   "url": "https://dati.comune.milano.it/dataset/60569cc3-0b12-469f-ae40-1df27f5ddec5/resource/633f9758-2292-4d20-94e1-0e08ecf80be6/download/ds531_classi_reddito_complessivo.csv",
+   "last_modified": "2026-07-01T13:17:49.372252",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "7b40c9f6-973f-40ac-ad55-8c7ea58a52aa",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "60569cc3-0b12-469f-ae40-1df27f5ddec5",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "5d8f2401-5ec5-4efd-afb7-6ae543fd1029",
+   "size": 23012,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "ds531_classi_reddito_complessivo.json",
+   "created": "2018-04-09T12:39:42.674674",
+   "url": "https://dati.comune.milano.it/dataset/60569cc3-0b12-469f-ae40-1df27f5ddec5/resource/5d8f2401-5ec5-4efd-afb7-6ae543fd1029/download/ds531_classi_reddito_complessivo.json",
+   "last_modified": "2026-07-01T13:19:36.291280",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "0fe5ce82-f643-49fa-8366-3fc7ce7db6c3",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno",
+   "id": "06f45323-db95-4566-a9ed-b1cf032e873f",
+   "name": "anno"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "reddito",
+   "id": "574deed1-8ae3-4231-b2da-a77d9f0808c9",
+   "name": "reddito"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_storica",
+   "id": "8f0a452b-66b9-45c8-be58-04ebe8c304e9",
+   "name": "serie_storica"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "1407380c-1480-4712-9c17-7fd55e3e2528",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds531_distribuzione-del-reddito-complessivo-delle-persone-fisiche-2008-avanti",
+ "isopen": true,
+ "url": "",
+ "notes": "Informazioni sulle dichiarazioni dei redditi delle persone fisiche rese disponibili dal Ministero dell'Economia e delle Finanze in ottemperanza al Dpcm del 10 luglio 2012, secondo le disposizioni dell’art. 1, comma 12-ter, lettera e, decreto legge n. 138 del 13 agosto 2011, sulla partecipazione dei comuni all'attività di accertamento tributario e contributivo. Le informazioni statistiche riguardano la distribuzione del reddito complessivo su base comunale, con riferimento al comune di residenza del soggetto.\r\n\r\nIl presente dataset è stato rilasciato dal comune di Milano.\r\n\r\nIl percorso da utilizzare per reperire il dataset originale su https://milanostatistica.comune.milano.it è: **https://milanostatistica.comune.milano.it - Prezzi e dati economici - Redditi - Reddito Complessivo**",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS531",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100206\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Innovazione Tecnologica e Digitale",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "30-06-2026",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2024-12-31\", \"temporal_start\": \"2008-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "ANNUAL",
+   "key": "frequency"
+  },
+  {
+   "value": "https://milanostatistica.comune.milano.it/",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\", \"it\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Redditi: distribuzione del reddito complessivo delle persone fisiche - serie storica",
+ "revision_id": "b95b199b-ae77-4670-91c2-27cbda0e7e5e"
+}

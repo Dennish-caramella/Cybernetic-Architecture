@@ -1,0 +1,239 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 9,
+ "id": "c7f2f543-00bb-4d9e-8a07-d26c7b874765",
+ "metadata_created": "2017-11-14T16:20:15.920220",
+ "metadata_modified": "2026-09-08T10:50:24.967330",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "c7f2f543-00bb-4d9e-8a07-d26c7b874765",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "99ee9737-365c-4705-bd52-a968c4218df6",
+   "size": 246543,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds270_edilizia_nuovi_fabbricati_uso_residenziale.csv",
+   "created": "2026-09-01T15:06:57.727299",
+   "url": "https://dati.comune.milano.it/dataset/c7f2f543-00bb-4d9e-8a07-d26c7b874765/resource/99ee9737-365c-4705-bd52-a968c4218df6/download/ds270_edilizia_nuovi_fabbricati_uso_residenziale.csv",
+   "last_modified": "2026-09-01T15:06:57.635848",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "fb8f3630-3766-4e1d-99a2-b89f7cd7dce0",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "c7f2f543-00bb-4d9e-8a07-d26c7b874765",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "6aff977b-1d4e-41e6-a8a3-52eedb90f0e9",
+   "size": 1551654,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "ds270_edilizia_nuovi_fabbricati_uso_residenziale.json",
+   "created": "2026-09-01T15:07:06.239935",
+   "url": "https://dati.comune.milano.it/dataset/c7f2f543-00bb-4d9e-8a07-d26c7b874765/resource/6aff977b-1d4e-41e6-a8a3-52eedb90f0e9/download/ds270_edilizia_nuovi_fabbricati_uso_residenziale.json",
+   "last_modified": "2026-09-01T15:07:06.189879",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "bbf3515a-d8c6-4bf8-83f8-fa4a3b3ad098",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "abitazione",
+   "id": "3e527b2e-261c-4fa9-bbfc-7c57fd7486e6",
+   "name": "abitazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno",
+   "id": "06f45323-db95-4566-a9ed-b1cf032e873f",
+   "name": "anno"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "atto_pubblico",
+   "id": "b4557f08-d19b-4b2d-9399-bd72c8a65a23",
+   "name": "atto_pubblico"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "fabbricati",
+   "id": "f00d22bf-bdc0-42af-bbf4-f301e7d3efc3",
+   "name": "fabbricati"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "fotovoltaico",
+   "id": "cc8ebbb1-91f1-4fa8-9ebd-a3433179d847",
+   "name": "fotovoltaico"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_storica",
+   "id": "8f0a452b-66b9-45c8-be58-04ebe8c304e9",
+   "name": "serie_storica"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds270-edilizia-nuovi-fabbricati-con-destinazione-uso-residenziale",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset espone le caratteristiche dei nuovi fabbricati residenziali sul territorio del Comune di Milano, per i quali è stato presentato un permesso di costruire, una SCIA, una SCIA alternativa, o che rientrano in interventi di edilizia pubblica (DPR 380/2001, art.7).\r\n\r\nUn fabbricato è considerato residenziale quando più del 50% della superficie totale è destinata ad uso\r\nabitativo; sono compresi nei nuovi fabbricati anche quelli ricostruiti in caso di completa demolizione.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS270",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100273\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Urbanistica",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "2026-09-01",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2024-12-31\", \"temporal_start\": \"2014-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "ANNUAL",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\", \"it\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Edilizia: nuovi fabbricati con destinazione d'uso residenziale - serie storica",
+ "revision_id": "97f6fc92-896d-486f-abfd-400bd110ec86"
+}

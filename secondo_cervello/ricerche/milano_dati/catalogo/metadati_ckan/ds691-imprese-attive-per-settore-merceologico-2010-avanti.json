@@ -1,0 +1,197 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 3,
+ "id": "8d8a4d19-0004-48a8-9425-e892deffde10",
+ "metadata_created": "2019-02-05T14:18:04.271163",
+ "metadata_modified": "2026-06-19T13:44:58.932007",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "8d8a4d19-0004-48a8-9425-e892deffde10",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "68ebcbed-a736-4f0a-b654-17232b18deb0",
+   "size": 19764,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds691_imprese-settore-merceologico.csv",
+   "created": "2019-02-05T14:18:41.665723",
+   "url": "https://dati.comune.milano.it/dataset/8d8a4d19-0004-48a8-9425-e892deffde10/resource/68ebcbed-a736-4f0a-b654-17232b18deb0/download/ds691_imprese-settore-merceologico.csv",
+   "last_modified": "2026-06-19T13:44:13.988143",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "a38bc2eb-2a76-426e-8aa3-e8748736cec4",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "8d8a4d19-0004-48a8-9425-e892deffde10",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "66b40dd1-68a0-4e74-affc-f4003ad68a69",
+   "size": 42529,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "ds691_imprese-settore-merceologico.json",
+   "created": "2019-02-07T09:15:32.859175",
+   "url": "https://dati.comune.milano.it/dataset/8d8a4d19-0004-48a8-9425-e892deffde10/resource/66b40dd1-68a0-4e74-affc-f4003ad68a69/download/ds691_imprese-settore-merceologico.json",
+   "last_modified": "2026-06-19T13:44:58.893781",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "426baf27-129a-41fa-95cb-ca29b927794f",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno",
+   "id": "06f45323-db95-4566-a9ed-b1cf032e873f",
+   "name": "anno"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "impresa",
+   "id": "cf02bef3-54fa-49ad-a7f6-e215051b4025",
+   "name": "impresa"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_storica",
+   "id": "8f0a452b-66b9-45c8-be58-04ebe8c304e9",
+   "name": "serie_storica"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "6ca67bde-4744-4414-9c53-a10b1ea37298",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds691-imprese-attive-per-settore-merceologico-2010-avanti",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset contiene la classificazione delle imprese attive nel Comune di Milano, suddivise per settore merceologico e anno a partire dal 2010 in avanti.\r\n\r\nFonte: fino al 2020 ASR Lombardia-Annuario Statistico Regionale - dal 2021 https://ester.milomb.camcom.it/\r\n\r\nNote:\r\n\r\n* La voce \"Attività di famiglie e convivenze come datori di lavoro per personale domestico\" è presente fino al 2022\r\n* Le voci \"Servizi di informazione e comunicazione\" e \"Commercio all'ingrosso e al dettaglio; riparazione di autoveicoli e motocicli\" sono presenti fino al 2024; la riparazione di autoveicoli e motocicli è confluita nella voce \"Altre attività di servizi\"\r\n* Le voci \"Commercio all'ingrosso e al dettaglio\", \"Attività editoriali, trasmissioni radiofoniche e produzione e distribuzione di contenuti\", \"Telecomunicazioni, programmazione e consulenza informatica, infrastrutture informatiche e altre attività dei servizi d'informazione\" e \"Attività amministrative e di servizi di supporto\" sono presenti a partire dal 2025\r\n\r\nIl percorso da utilizzare per reperire il dataset originale su https://milanostatistica.comune.milano.it è: **https://milanostatistica.comune.milano.it - Lavoro e Impresa - Imprese e Istituzioni - Registro Imprese Camera di Commercio**",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS691",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100226\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Unità Servizi Statistici",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "19-06-2026",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2025-12-31\", \"temporal_start\": \"2010-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "ANNUAL",
+   "key": "frequency"
+  },
+  {
+   "value": "https://milanostatistica.comune.milano.it/",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Imprese attive per settore merceologico - serie storica",
+ "revision_id": "55aa4284-cb95-48bd-8ce5-689449001142"
+}

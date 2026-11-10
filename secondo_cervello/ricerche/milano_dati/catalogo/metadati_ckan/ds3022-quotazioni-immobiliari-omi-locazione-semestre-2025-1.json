@@ -1,0 +1,204 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 4,
+ "id": "eca3667c-d916-49e6-bb09-dfcd8db79975",
+ "metadata_created": "2026-10-14T15:24:31.982581",
+ "metadata_modified": "2026-10-27T11:15:01.929969",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "eca3667c-d916-49e6-bb09-dfcd8db79975",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "278b3a95-2d0a-49a6-acc4-d0d2ee8c7aac",
+   "size": 46794,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS3022_Quotazioni_OMI_Locazione_2025_1.csv",
+   "created": "2026-10-26T14:42:15.449934",
+   "url": "https://dati.comune.milano.it/dataset/eca3667c-d916-49e6-bb09-dfcd8db79975/resource/278b3a95-2d0a-49a6-acc4-d0d2ee8c7aac/download/quotazioni_omi_locazione_2025_1.csv",
+   "last_modified": "2026-10-26T14:42:15.413323",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "97403c84-0c81-423c-b0f6-b53ad28c733f",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "eca3667c-d916-49e6-bb09-dfcd8db79975",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "b75ee684-0ef3-4d40-9a89-4cca21c7a7e9",
+   "size": 208859,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "DS3022_Quotazioni_OMI_Locazione_2025_1.json",
+   "created": "2026-10-26T14:44:18.716415",
+   "url": "https://dati.comune.milano.it/dataset/eca3667c-d916-49e6-bb09-dfcd8db79975/resource/b75ee684-0ef3-4d40-9a89-4cca21c7a7e9/download/quotazioni_omi_locazione_2025_1.json",
+   "last_modified": "2026-10-26T14:44:18.673708",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "d2891ecf-a6cd-4267-bd50-2dabf4341a45",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "OMI",
+   "id": "4cb06e92-262b-47c3-9166-df3cd1aafb84",
+   "name": "OMI"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "locazione OMI",
+   "id": "359a64db-506c-4c6b-b1c6-01f8dfd0ca24",
+   "name": "locazione OMI"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_pubblicazione",
+   "id": "55a8a82c-eaab-49f6-8579-856e76e52e98",
+   "name": "serie_pubblicazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "6460702c-a06d-4ef6-a381-82a1837d5370",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds3022-quotazioni-immobiliari-omi-locazione-semestre-2025-1",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset espone la quotazione immobiliare, del primo semestre 2025, rilevata attraverso l'Osservatorio del Mercato Immobiliare (OMI) gestito dall’Agenzia delle Entrate che nello specifico elabora e analizza tutti i dati e le informazioni tecnico economiche che riguardano il valore di un immobile e il mercato degli affitti rilevati nel Comune di Milano.\r\n\r\nI dati esposti nel Dataset sono suddivisi in:\r\n\r\nLo Stato conservativo indicato con lettere maiuscole si riferisce a quello più frequente di ZONA\r\nIl Valore di Mercato è espresso in Euro/mq riferito alla superficie Netta (N) ovvero Lorda (L)\r\nLa presenza del carattere asterisco (*) accanto alla tipologia segnala che i relativi Valori di Mercato o di Locazione sono stati oggetto di rettifica.\r\nPer le tipologie Box, Posti auto ed Autorimesse non risulta significativo il diverso apprezzamento del mercato secondo lo stato conservativo\r\nPer la tipologia Negozi il giudizio O/ N /S è da intendersi riferito alla posizione commerciale e non allo stato conservativo dell'unità immobiliare\r\nL'OMI è da considerarsi come uno strumento a tutti gli effetti, tramite il quale l’Agenzia delle Entrate assicura la trasparenza del mercato immobiliare.\r\nLe informazioni rese sono di proprietà esclusiva dell’Agenzia. Non è consentito al cliente vendere, affittare, noleggiare, trasferire, cedere i contenuti della Banca Dati o assumere alcune altre obbligazioni verso terzi.\r\n\r\nLe informazioni contenute nella banca dati possono essere utilizzate dal cliente, anche ai fini della loro elaborazione purché, nel caso di pubblicazione, venga citata la relativa fonte. Per ogni ulteriore condizione contrattuale e di utilizzo è possibile collegarsi al link https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi/banche-dati/quotazioni-immobiliari/condizioni-contrattuali-qi.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS3022",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100186\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Agenzia delle Entrate",
+   "key": "publisher_name"
+  },
+  {
+   "value": "06363391001",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "2026-10-26",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2025-06-30\", \"temporal_start\": \"2025-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "https://www1.agenziaentrate.gov.it/servizi/Consultazione/ricerca.htm",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Quotazioni Immobiliari OMI: Locazione - Semestre 2025/1",
+ "revision_id": "f632b44a-b73e-4342-aa2e-a6b8d0a881e0"
+}

@@ -1,0 +1,221 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità SIT e Sviluppo del Gemello Digitale Urbano",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 3,
+ "id": "e5a0d956-2eff-454d-b0ea-659cb7b55c0b",
+ "metadata_created": "2017-11-09T14:36:56.074139",
+ "metadata_modified": "2026-05-08T10:34:02.588582",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "e5a0d956-2eff-454d-b0ea-659cb7b55c0b",
+   "distribution_format": "XML",
+   "datastore_active": false,
+   "id": "f56d94f8-0ec6-42da-b6e1-142a4254eafb",
+   "size": 0,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima NON disponibile",
+   "format": "SHP",
+   "mimetype_inner": null,
+   "url_type": null,
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds61_infogeo_nil_localizzazione_NIL_Service.xml",
+   "created": "2019-01-18T08:17:21.048227",
+   "url": "https://geoportale.comune.milano.it/ATOM/SIT/NIL/NIL_Service.xml",
+   "last_modified": null,
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "04ee047e-1398-46d5-80c6-ed3ccb5d585d",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "e5a0d956-2eff-454d-b0ea-659cb7b55c0b",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "af78bd3f-ea45-403a-8882-91cca05087f0",
+   "size": 313818,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds61_infogeo_nil_localizzazione_.geojson",
+   "created": "2018-03-05T14:29:14.419320",
+   "url": "https://dati.comune.milano.it/dataset/e5a0d956-2eff-454d-b0ea-659cb7b55c0b/resource/af78bd3f-ea45-403a-8882-91cca05087f0/download/nilzone.geojson",
+   "last_modified": "2019-05-21T13:13:33.319759",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "3aa5470e-16f7-442e-aa64-9fd16529af25",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "e5a0d956-2eff-454d-b0ea-659cb7b55c0b",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "4888f702-3b5a-4908-b80e-f51a64402936",
+   "size": 76023,
+   "state": "active",
+   "hash": "",
+   "description": "Il sistema di coordinate utilizzato è **EPSG:3003 Monte Mario / Italy zone 1**",
+   "format": "SHP",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/zip",
+   "cache_url": null,
+   "name": "ds61_infogeo_nil_localizzazione_shp.zip",
+   "created": "2018-06-15T10:04:59.382232",
+   "url": "https://dati.comune.milano.it/dataset/e5a0d956-2eff-454d-b0ea-659cb7b55c0b/resource/4888f702-3b5a-4908-b80e-f51a64402936/download/ds61_infogeo_nil_localizzazione_shp.zip",
+   "last_modified": "2018-06-15T10:04:59.284087",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "880a4dec-e6ad-47ec-84a9-f153a489926a",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds61_infogeo_nil_localizzazione_",
+ "isopen": true,
+ "url": "",
+ "notes": "**Questo dataset è obsoleto, quello aggiornato è consultabile a questo link**: http://dati.comune.milano.it/dataset/e8e765fc-d882-40b8-95d8-16ff3d39eb7c\r\n\r\nI NIL - Nuclei d'Identità Locale rappresentano aree definibili come quartieri di Milano, in cui è possibile riconoscere quartieri storici e di progetto, con caratteristiche differenti gli uni dagli altri. Vengono introdotti dal PGT (Piano di Governo del Territorio) come un insieme di ambiti, connessi tra loro da infrastrutture e servizi per la mobilità, il verde. \r\nSono sistemi di vitalità urbana: concentrazioni di attività commerciali locali, giardini, luoghi di aggregazione, servizi; ma sono anche 88 nuclei di identità locale da potenziare e progettare ed attraverso cui organizzare piccoli e grandi servizi (Piano dei Servizi).",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS61",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100273\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Urbanistica",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "27-08-2019",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2020-02-05\", \"temporal_start\": \"2011-04-30\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "https://geoportale.comune.milano.it/arcgis/rest/services/OperationalLayers/NIL/MapServer/0/",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 SIT e Sviluppo del Gemello Digitale Urbano\", \"it\": \"Comune di Milano - Unit\\u00e0 SIT e Sviluppo del Gemello Digitale Urbano\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Territorio: Nuclei d'Identità Locale (NIL) - OBSOLETI",
+ "revision_id": "6040fab4-b155-4be4-8f71-daf9160aeb8c"
+}

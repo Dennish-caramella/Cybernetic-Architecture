@@ -1,0 +1,270 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 10,
+ "id": "9dc038a8-b020-4cd2-8e26-0165b41784d4",
+ "metadata_created": "2022-09-26T13:50:34.257308",
+ "metadata_modified": "2026-05-08T10:07:04.552082",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "9dc038a8-b020-4cd2-8e26-0165b41784d4",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "e6d6ef4f-10ea-49b4-a4c2-c3d745c7f0a9",
+   "size": 200,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": "text/csv",
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS1546_CSV_SPORTELLI_DI_QUARTIERE_EDIT_1_cartolib_tabaccherie_sportelli_mm.csv",
+   "created": "2022-09-26T13:50:37.198174",
+   "url": "https://dati.comune.milano.it/dataset/9dc038a8-b020-4cd2-8e26-0165b41784d4/resource/e6d6ef4f-10ea-49b4-a4c2-c3d745c7f0a9/download/csv_sportelli_di_quartiere_edit_1_cartolib_tabaccherie_sportelli_mm_direct_2026-04-08-1.csv",
+   "last_modified": "2026-04-13T13:01:40.539802",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "be60816d-3195-4bce-a4f4-ebce347cbf52",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "9dc038a8-b020-4cd2-8e26-0165b41784d4",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "103cc9d3-6447-4c30-8844-2647f6868197",
+   "size": 463,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "DS1546_json_SPORTELLI_DI_QUARTIERE_EDIT_1_cartolib_tabaccherie_sportelli_mm.json",
+   "created": "2022-09-26T13:50:40.699253",
+   "url": "https://dati.comune.milano.it/dataset/9dc038a8-b020-4cd2-8e26-0165b41784d4/resource/103cc9d3-6447-4c30-8844-2647f6868197/download/csv_sportelli_di_quartiere_edit_1_cartolib_tabaccherie_sportelli_mm_direct_2026-04-08.json",
+   "last_modified": "2026-04-08T04:32:52.793377",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "b84f0c13-2e34-41b1-b1ce-6314f63d874a",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "9dc038a8-b020-4cd2-8e26-0165b41784d4",
+   "distribution_format": "GeoJSON",
+   "datastore_active": false,
+   "id": "544f43e6-a825-4f02-a916-5491435d7f25",
+   "size": 851,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": "application/geo+json",
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "DS1546_GEOJSON_SPORTELLI_DI_QUARTIERE_EDIT_1_cartolib_tabaccherie_sportelli_mm.geojson",
+   "created": "2022-09-26T13:50:43.666779",
+   "url": "https://dati.comune.milano.it/dataset/9dc038a8-b020-4cd2-8e26-0165b41784d4/resource/544f43e6-a825-4f02-a916-5491435d7f25/download/geojson_sportelli_di_quartiere_edit_1_cartolib_tabaccherie_sportelli_mm_direct_2026-04-08.geojson",
+   "last_modified": "2026-04-08T04:32:41.229831",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "8ce80a97-6887-4f73-879b-daaea29ac39a",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "CAP",
+   "id": "13072b3c-f1c6-4820-9204-5644f8a75076",
+   "name": "CAP"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "atto_pubblico",
+   "id": "b4557f08-d19b-4b2d-9399-bd72c8a65a23",
+   "name": "atto_pubblico"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "certificati",
+   "id": "c08664a3-9195-448b-8ec2-d03cee8dfa8b",
+   "name": "certificati"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "orari",
+   "id": "980b9fd8-760e-450d-811a-95677f55583f",
+   "name": "orari"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "portale_istituzionale",
+   "id": "aba4adb0-fd05-4b96-8455-89bfc2c0c320",
+   "name": "portale_istituzionale"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Governo e settore pubblico",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092026.089449governo.png",
+   "title": "Governo e settore pubblico",
+   "id": "6af9996b-468b-451f-bb67-af0d26639b3f",
+   "name": "gove"
+  }
+ ],
+ "creator_user_id": "5ec07a00-219e-4537-9f10-8c475acf5f5f",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds1546-sportelli-di-quartiere-sportelli-mm",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset espone l'elenco degli Sportelli MM Casa presenti sul territorio di Milano e abilitati al servizio di prenotazione appuntamenti per il rilascio di certificati anagrafici.\r\n\r\nGli esercizi aderenti permettono di prenotare appuntamenti per il rilascio dei seguenti certificati:\r\n\r\n* Contestuale (Nascita, Residenza),\r\n* Cittadinanza, Esistenza in vita),\r\n* Contestuale AIRE,\r\n* Contestuale e stato di famiglia,\r\n* Cittadinanza,\r\n* Convivenza di fatto,\r\n* Esistenza in vita,\r\n* Matrimonio,\r\n* Morte,\r\n* Nascita,\r\n* Residenza,\r\n* Stato di famiglia,\r\n* Stato libero,\r\n* Unione civile,\r\n* Certificato di Contratto di convivenza.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS1546",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100169\"], \"theme\": \"GOVE\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Innovazione Tecnologica e Digitale",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "08-04-2026",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2026-04-08\", \"temporal_start\": \"2026-04-08\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "DAILY",
+   "key": "frequency"
+  },
+  {
+   "value": "https://geoportale.comune.milano.it/arcgisportal/rest/services/OperationalLayers",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Sportelli di quartiere: sportelli MM",
+ "revision_id": "bf0ad3f0-f72c-46c7-b76d-fe429ea6d1e3"
+}

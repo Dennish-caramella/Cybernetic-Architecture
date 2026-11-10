@@ -1,0 +1,235 @@
+{
+ "license_title": "Creative Commons CCZero",
+ "maintainer": "Regione Lombardia",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "admin@dati.lombardia.it",
+ "num_tags": 5,
+ "id": "4c2248f9-c5b8-4f5a-b1fa-45766daf1275",
+ "metadata_created": "2018-05-07T08:02:21.814131",
+ "metadata_modified": "2026-10-12T23:45:02.857263",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-zero",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "4c2248f9-c5b8-4f5a-b1fa-45766daf1275",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "be58d7da-bd8d-4cad-9217-e85a072a0cd5",
+   "size": 201924,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds600_aree_del_territorio_del__c6at-33q9_final.csv",
+   "created": "2018-05-07T08:02:22.911918",
+   "url": "https://dati.comune.milano.it/dataset/4c2248f9-c5b8-4f5a-b1fa-45766daf1275/resource/be58d7da-bd8d-4cad-9217-e85a072a0cd5/download/ds600_aree_del_territorio_del__c6at-33q9_final.csv",
+   "last_modified": "2026-10-12T23:27:01.500913",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A11_CCO10",
+   "position": 0,
+   "revision_id": "4f1b3657-1755-49f7-a9c2-8b03ff46ca8a",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "4c2248f9-c5b8-4f5a-b1fa-45766daf1275",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "f8fd4387-eeb1-4b7b-ba20-f8ec80ae998e",
+   "size": 396927,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds600_aree_del_territorio_del__c6at-33q9_final.json",
+   "created": "2018-05-07T08:02:22.359656",
+   "url": "https://dati.comune.milano.it/dataset/4c2248f9-c5b8-4f5a-b1fa-45766daf1275/resource/f8fd4387-eeb1-4b7b-ba20-f8ec80ae998e/download/ds600_aree_del_territorio_del__c6at-33q9_final.json",
+   "last_modified": "2026-10-12T23:45:02.814773",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A11_CCO10",
+   "position": 1,
+   "revision_id": "f8ee709f-d791-4162-aeea-25a8e3168d84",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "4c2248f9-c5b8-4f5a-b1fa-45766daf1275",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "83475a4a-f9fa-4512-b823-70d9238e4539",
+   "size": 557510,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds600_aree_del_territorio_del__c6at-33q9_final.geojson",
+   "created": "2020-12-10T23:10:40.941814",
+   "url": "https://dati.comune.milano.it/dataset/4c2248f9-c5b8-4f5a-b1fa-45766daf1275/resource/83475a4a-f9fa-4512-b823-70d9238e4539/download/ds600_aree_del_territorio_del__c6at-33q9_final.geojson",
+   "last_modified": "2026-10-12T23:26:56.784979",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A11_CCO10",
+   "position": 2,
+   "revision_id": "84fcd793-1150-4915-bb32-5c4ae27b7c5d",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Ambiente",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091724.388254governo.png",
+   "title": "Ambiente",
+   "id": "3126650a-3186-4171-9c48-722058e3b5bf",
+   "name": "envi"
+  }
+ ],
+ "creator_user_id": "5ec07a00-219e-4537-9f10-8c475acf5f5f",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds600_aree_del_territorio_del_comune_di_milano_dove_sono_in_corso_",
+ "isopen": true,
+ "url": "",
+ "notes": "Aree del territorio del comune di Milano dove sono in corso interventi di bonifica da contaminazioni ambientali ai sensi del D.Lgs. 152/06 e dell'art. 17 dell'ex D.lgs- 22/97 e dell'ex DM 471/99 individuate attraverso i centroidi (posizione del baricentro geometrico) dei siti.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS600",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100244\"], \"theme\": \"ENVI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Città Metropolitana di Milano",
+   "key": "publisher_name"
+  },
+  {
+   "value": "08911820960",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "13-10-2026",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2026-10-13\", \"temporal_start\": \"2018-05-07\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "WEEKLY",
+   "key": "frequency"
+  },
+  {
+   "value": "https://www.dati.lombardia.it/Ambiente/Aree-del-territorio-del-comune-di-Milano-dove-sono/c6at-33q9",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"80050050154\", \"creator_name\": {\"en\": \"Regione Lombardia\", \"it\": \"Regione Lombardia\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-zero",
+ "title": "Interventi di bonifica da contaminazioni ambientali nel comune di Milano",
+ "revision_id": "94979113-55ca-4b76-b118-3e6d65ce626e"
+}

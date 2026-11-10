@@ -1,0 +1,204 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 4,
+ "id": "dc7944cf-339d-418a-921b-ffadf075bef9",
+ "metadata_created": "2024-08-29T14:00:16.722688",
+ "metadata_modified": "2026-05-08T09:54:15.137178",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "dc7944cf-339d-418a-921b-ffadf075bef9",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "41396b21-2029-4fa5-b91c-1259d3edee3d",
+   "size": 1094985,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "ds2812_Spotted-Milan-UrbanHeatWaveRisk-NIL-01072024_31072024.geojson",
+   "created": "2024-08-29T14:37:39.825294",
+   "url": "https://dati.comune.milano.it/dataset/dc7944cf-339d-418a-921b-ffadf075bef9/resource/41396b21-2029-4fa5-b91c-1259d3edee3d/download/ds2812_spotted-milan-urbanheatwaverisk-nil-01072024_31072024.geojson",
+   "last_modified": "2024-09-10T12:16:36.426164",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "519cc97d-9aa2-4435-9085-00ae65fdecfe",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "dc7944cf-339d-418a-921b-ffadf075bef9",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "dd308cbd-4b2e-4bfa-92d5-745c3f1b50d8",
+   "size": 7173,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds2812_Spotted-Milan-UrbanHeatWaveRisk-NIL-01072024_31072024.csv",
+   "created": "2024-08-29T14:37:40.996143",
+   "url": "https://dati.comune.milano.it/dataset/dc7944cf-339d-418a-921b-ffadf075bef9/resource/dd308cbd-4b2e-4bfa-92d5-745c3f1b50d8/download/ds2812_spotted-milan-urbanheatwaverisk-nil-01072024_31072024.csv",
+   "last_modified": "2024-09-10T12:16:54.617334",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "6e92b5d6-8082-46c2-b4fb-77021499544a",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "SPOTTED",
+   "id": "cbaf68ef-090e-4dda-810f-39c145a304fb",
+   "name": "SPOTTED"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "rischio_ondata_calore_urbano",
+   "id": "8141cb84-f202-47cd-a4bd-c0fd07f71ecc",
+   "name": "rischio_ondata_calore_urbano"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Ambiente",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091724.388254governo.png",
+   "title": "Ambiente",
+   "id": "3126650a-3186-4171-9c48-722058e3b5bf",
+   "name": "envi"
+  }
+ ],
+ "creator_user_id": "c278a760-81f3-4a68-9e83-2a8a3d812dcd",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds2812-rischio-ondata-calore-urbano-nil-07-2024",
+ "isopen": true,
+ "url": "",
+ "notes": "Il presente dato geografico riusabile consiste nell'indice di rischio ondata di calore urbano (campo value) calcolato per i NIL (Nuclei di Identità Locale) del Comune di Milano, aggiornato al mese di luglio 2024.\r\n\r\nL'indice è riferito al rischio legato all'esposizione al calore in relazione alle fasce di popolazione vulnerabile (bambini &lt;10 e adulti &gt;65).\r\n\r\nIl servizio di calcolo dell'indice è fornito dal portale del Progetto Europeo SPOTTED https://portal.cef-spotted.eu/pages/home, ove è possibile scaricare anche le note metodologiche all'indirizzo https://portal.cef-spotted.eu/assets/data/Spotted_NoteMetodologiche.pdf. Il portale SPOTTED è accessibile previa registrazione.\r\n\r\nLa mappa dei NIL utilizzata per l'elaborazione è reperibile su questo portale al seguente link https://dati.comune.milano.it/dataset/ds964-nil-vigenti-pgt-2030\r\n\r\nUlteriori informazioni sul contenuto delle colonne sono disponibili nella tabella *Data Dictionary* presente sotto l'anteprima del file CSV.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS2812",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100243\"], \"theme\": \"ENVI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Unità Analytics e Open Data",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "10-09-2024",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2024-07-31\", \"temporal_start\": \"2024-07-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Rischio ondata di calore urbano dei NIL (Nuclei di Identità Locale) - Luglio 2024",
+ "revision_id": "8fc6c745-67f6-40b1-b036-d984f22ec95a"
+}

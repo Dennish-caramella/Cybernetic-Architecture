@@ -1,0 +1,242 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 6,
+ "id": "3c8efe59-e5a2-4d65-b742-9f5178903b36",
+ "metadata_created": "2023-10-26T13:32:21.492340",
+ "metadata_modified": "2026-05-08T09:59:18.969510",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "3c8efe59-e5a2-4d65-b742-9f5178903b36",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "d1e7afaa-3acd-49e6-8f97-c6b634dffa6e",
+   "size": 3316,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS2485_Direzioni_comune_di_Milano.csv",
+   "created": "2023-10-26T13:33:39.537893",
+   "url": "https://dati.comune.milano.it/dataset/3c8efe59-e5a2-4d65-b742-9f5178903b36/resource/d1e7afaa-3acd-49e6-8f97-c6b634dffa6e/download/direzioni.csv",
+   "last_modified": "2023-10-30T11:28:18.182376",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "564a40ab-7770-4076-ab02-427d91c4a7ea",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "3c8efe59-e5a2-4d65-b742-9f5178903b36",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "54216c40-8f38-4b7b-b758-36f6d73764d6",
+   "size": 6288,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "DS2485_Direzioni_comune_di_Milano.json",
+   "created": "2023-10-26T13:37:15.499414",
+   "url": "https://dati.comune.milano.it/dataset/3c8efe59-e5a2-4d65-b742-9f5178903b36/resource/54216c40-8f38-4b7b-b758-36f6d73764d6/download/direzioni.json",
+   "last_modified": "2023-11-23T13:50:06.353896",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "6282ce88-dbda-481d-9822-465b366a608c",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "3c8efe59-e5a2-4d65-b742-9f5178903b36",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "10b07cc8-b780-42da-bdb1-1db59c6cd96a",
+   "size": 9966,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "DS2485_Direzioni_comune_di_Milano.geojson",
+   "created": "2023-10-26T13:34:27.429660",
+   "url": "https://dati.comune.milano.it/dataset/3c8efe59-e5a2-4d65-b742-9f5178903b36/resource/10b07cc8-b780-42da-bdb1-1db59c6cd96a/download/direzioni.geojson",
+   "last_modified": "2023-11-03T15:49:12.187956",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "482cb22c-3fda-4079-8c92-334bbbac35a9",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "CAP",
+   "id": "13072b3c-f1c6-4820-9204-5644f8a75076",
+   "name": "CAP"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Governo e settore pubblico",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092026.089449governo.png",
+   "title": "Governo e settore pubblico",
+   "id": "6af9996b-468b-451f-bb67-af0d26639b3f",
+   "name": "gove"
+  }
+ ],
+ "creator_user_id": "6ca67bde-4744-4414-9c53-a10b1ea37298",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds2484-direzioni-del-comune-di-milano",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset contiene l'elenco delle Direzioni del Comune di Milano. \r\n\r\nPer ciascuna direzione vengono indicati I'indirizzo, il Municipio i NIL e coordinate geografiche.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS2485",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100169\"], \"theme\": \"GOVE\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Unità Analytics e Open Data",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "26-10-2023",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2024-10-26\", \"temporal_start\": \"2023-10-26\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "IRREG",
+   "key": "frequency"
+  },
+  {
+   "value": "http://www.comune.milano.it",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Direzioni del Comune di Milano",
+ "revision_id": "36e9257d-c5b0-44a3-924d-3e1bfa4ca469"
+}

@@ -1,0 +1,256 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 8,
+ "id": "f7c744ab-0b92-450f-a76c-536e86a78b30",
+ "metadata_created": "2026-09-22T14:20:07.149686",
+ "metadata_modified": "2026-10-26T16:23:49.227971",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "f7c744ab-0b92-450f-a76c-536e86a78b30",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "0dd0037a-b29a-42f1-88f1-92f4e4f9937f",
+   "size": 54885,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds3014_dst_an_statistica_totale_scuola-dellinfanzia_2025-2026.csv",
+   "created": "2026-10-26T15:02:19.904087",
+   "url": "https://dati.comune.milano.it/dataset/f7c744ab-0b92-450f-a76c-536e86a78b30/resource/0dd0037a-b29a-42f1-88f1-92f4e4f9937f/download/ds3014_dst_an_statistica_totale_scuola-dellinfanzia_2025-2026.csv",
+   "last_modified": "2026-10-26T15:02:19.860583",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "8b43baf7-9e81-4520-b624-dfbea82a2e8e",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "f7c744ab-0b92-450f-a76c-536e86a78b30",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "77d29269-928d-43f5-8196-c284fa71d231",
+   "size": 139097,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "ds3014_dst_an_statistica_totale_scuola-dellinfanzia_2025-2026.json",
+   "created": "2026-10-26T15:04:39.436793",
+   "url": "https://dati.comune.milano.it/dataset/f7c744ab-0b92-450f-a76c-536e86a78b30/resource/77d29269-928d-43f5-8196-c284fa71d231/download/ds3014_dst_an_statistica_totale_scuola-dellinfanzia_2025-2026.json",
+   "last_modified": "2026-10-26T15:04:39.393616",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "ebbc5635-6a88-40bc-9339-de21b384c08f",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "f7c744ab-0b92-450f-a76c-536e86a78b30",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "bcc976ce-c366-4eff-bf86-863d7e5a1b0c",
+   "size": 266472,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "ds3014_dst_an_statistica_totale_scuola-dellinfanzia_2025-2026.geojson",
+   "created": "2026-10-26T15:06:11.338135",
+   "url": "https://dati.comune.milano.it/dataset/f7c744ab-0b92-450f-a76c-536e86a78b30/resource/bcc976ce-c366-4eff-bf86-863d7e5a1b0c/download/ds3014_dst_an_statistica_totale_scuola-dellinfanzia_2025-2026.geojson",
+   "last_modified": "2026-10-26T15:06:11.290235",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "4655e954-fe74-4e72-b043-d5bae4501ff0",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno_scolastico",
+   "id": "882ab597-6905-48f4-b7cf-4f68b606ff5e",
+   "name": "anno_scolastico"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "scuola",
+   "id": "e84d4900-3349-4e11-8764-369f1a5b6041",
+   "name": "scuola"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_pubblicazione",
+   "id": "55a8a82c-eaab-49f6-8579-856e76e52e98",
+   "name": "serie_pubblicazione"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Istruzione, cultura e sport",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091631.329628istruzione.png",
+   "title": "Istruzione, cultura e sport",
+   "id": "1e6a0f2e-e335-4a52-a64f-c62d0e40caa6",
+   "name": "educ"
+  }
+ ],
+ "creator_user_id": "6460702c-a06d-4ef6-a381-82a1837d5370",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds3014-infogeo-scuole-infanzia-localizzazione-2025-2026",
+ "isopen": true,
+ "url": "",
+ "notes": "Il presente dato riusabile consiste nella localizzazione georeferenziata delle Scuole dell'Infanzia sul territorio del Comune di Milano. La localizzazione puntuale avviene per via e numero civico; oltre alla denominazione della scuola sono presenti alcuni campi relativi alla scuola come servizio al cittadino, quindi se pubblico/privato e la tipologia di gestione.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS3014",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100219\"], \"theme\": \"EDUC\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Educazione",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "2026-10-26",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2026-08-31\", \"temporal_start\": \"2025-09-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Istruzione: localizzazione delle scuole dell'Infanzia - anno scolastico 2025/2026",
+ "revision_id": "54a99f57-3c81-4610-a5a0-1a55a0170470"
+}

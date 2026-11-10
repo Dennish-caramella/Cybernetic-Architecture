@@ -1,0 +1,218 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 6,
+ "id": "b0be8c6b-0fa9-4e58-b424-702f295df74a",
+ "metadata_created": "2020-10-15T08:09:43.558901",
+ "metadata_modified": "2026-05-08T10:15:36.954419",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "b0be8c6b-0fa9-4e58-b424-702f295df74a",
+   "distribution_format": "ZIP",
+   "datastore_active": true,
+   "id": "9d311de2-a5d4-415e-89a6-900485221489",
+   "size": 6291550,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/zip",
+   "cache_url": null,
+   "name": "ds1441_popolazione_famiglie_tipologia_quartiere.zip",
+   "created": "2020-10-15T08:14:24.419770",
+   "url": "https://dati.comune.milano.it/dataset/b0be8c6b-0fa9-4e58-b424-702f295df74a/resource/9d311de2-a5d4-415e-89a6-900485221489/download/ds1441_popolazione_famiglie_tipologia_quartiere.zip",
+   "last_modified": "2026-03-31T08:30:56.207586",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "4a804acb-a38d-4119-b2aa-3bc008441521",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "b0be8c6b-0fa9-4e58-b424-702f295df74a",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "162b16b1-3ba6-4ea9-870b-6120afbcc4a9",
+   "size": 7444160,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima NON disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/zip",
+   "cache_url": null,
+   "name": "DS1441_popolazione_residenti_famiglia_quartiere_json.zip",
+   "created": "2020-10-15T09:00:35.054323",
+   "url": "https://dati.comune.milano.it/dataset/b0be8c6b-0fa9-4e58-b424-702f295df74a/resource/162b16b1-3ba6-4ea9-870b-6120afbcc4a9/download/ds1441_popolazione_famiglie_tipologia_quartiere__json.zip",
+   "last_modified": "2024-02-16T19:20:54.503618",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "e4513502-fa35-4d9b-93a0-643b3c646b03",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno",
+   "id": "06f45323-db95-4566-a9ed-b1cf032e873f",
+   "name": "anno"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "famiglia",
+   "id": "5710a21a-ecb6-47fc-b221-28ff6f23671d",
+   "name": "famiglia"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "genere_sesso",
+   "id": "42adf2a4-2d55-435a-beee-a05ce7b10910",
+   "name": "genere_sesso"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "popolazione",
+   "id": "438fd337-07f3-43ef-9ffc-2f2bf715c18a",
+   "name": "popolazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_storica",
+   "id": "8f0a452b-66b9-45c8-be58-04ebe8c304e9",
+   "name": "serie_storica"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Popolazione e società",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092127.298147popolazione.png",
+   "title": "Popolazione e società",
+   "id": "2f9121d1-d927-4605-ae5f-249553b8c1d0",
+   "name": "soci"
+  }
+ ],
+ "creator_user_id": "6ca67bde-4744-4414-9c53-a10b1ea37298",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds1441-famiglie-tipologie-per-quartiere",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset espone, a partire dal 1999, la distribuzione delle famiglie anagrafiche residenti suddivise per NIL, tipologia di famiglia ed età del capofamiglia; la definizione di quest'ultimo coincide con l'intestatario del Foglio di famiglia, cioè la persona cui è intestata la scheda di famiglia in anagrafe (maggiori informazioni in merito sono reperibili su https://www.istat.it/it/files/2011/02/GuidaShortForm1.pdf ).\r\n\r\nI dati riguardano il numero di famiglie residenti a Milano e iscritte nell’Anagrafe della popolazione, a partire dal 1999.\r\nLa famiglia anagrafica è un insieme di persone legate da vincoli di matrimonio, parentela, affinità, adozione, tutela o da vincoli affettivi. La composizione della famiglia anagrafica risulta dallo stato di famiglia.\r\n\r\nIl percorso da utilizzare per reperire il dataset originale su https://milanostatistica.comune.milano.it è: **https://milanostatistica.comune.milano.it - Popolazione e famiglie - Popolazione residente - Famiglie registrate in Anagrafe - Famiglie serie storica (dal 1999)**\r\n\r\nIl presente dataset è stato rilasciato dal comune di Milano.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS1441",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100210\"], \"theme\": \"SOCI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Unità Anagrafe e Messi Civici",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "31-03-2026",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2025-12-31\", \"temporal_start\": \"1999-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "ANNUAL",
+   "key": "frequency"
+  },
+  {
+   "value": "https://milanostatistica.comune.milano.it/",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\", \"it\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Famiglie anagrafiche: tipologie per NIL (1999-2025)",
+ "revision_id": "31186a35-e446-4d21-81a9-a9db9100eb8a"
+}

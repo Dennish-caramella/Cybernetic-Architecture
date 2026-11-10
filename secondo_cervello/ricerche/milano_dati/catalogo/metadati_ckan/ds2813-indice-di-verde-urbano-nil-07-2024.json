@@ -1,0 +1,204 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 4,
+ "id": "49d2896c-abba-44e5-9a53-c19332a275b3",
+ "metadata_created": "2024-08-29T14:02:09.247918",
+ "metadata_modified": "2026-05-08T09:54:14.242484",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "49d2896c-abba-44e5-9a53-c19332a275b3",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "bbc7d511-f52d-4fe0-a7c7-aa7e5f5dceb5",
+   "size": 1093254,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "ds2813_Spotted-Milan-UrbanGreenIndex-NIL-01072024_31072024.geojson",
+   "created": "2024-08-29T14:38:12.767646",
+   "url": "https://dati.comune.milano.it/dataset/49d2896c-abba-44e5-9a53-c19332a275b3/resource/bbc7d511-f52d-4fe0-a7c7-aa7e5f5dceb5/download/ds2813_spotted-milan-urbangreenindex-nil-01072024_31072024.geojson",
+   "last_modified": "2024-09-10T12:18:41.377611",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "5878b6a4-9e5e-4c2f-9b8b-11722f26fe70",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "49d2896c-abba-44e5-9a53-c19332a275b3",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "2848da75-9ed1-4e6a-93b3-c899e1c19b71",
+   "size": 5631,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds2813_Spotted-Milan-UrbanGreenIndex-NIL-01072024_31072024.csv",
+   "created": "2024-08-29T14:38:14.000039",
+   "url": "https://dati.comune.milano.it/dataset/49d2896c-abba-44e5-9a53-c19332a275b3/resource/2848da75-9ed1-4e6a-93b3-c899e1c19b71/download/ds2813_spotted-milan-urbangreenindex-nil-01072024_31072024.csv",
+   "last_modified": "2024-09-10T12:19:03.894140",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "35c6b2e8-5f19-41e3-85f9-38419ba44ab3",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "SPOTTED",
+   "id": "cbaf68ef-090e-4dda-810f-39c145a304fb",
+   "name": "SPOTTED"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indice_verde_urbano",
+   "id": "b25ea1fc-04c5-4b3d-b87c-4f0357624fd5",
+   "name": "indice_verde_urbano"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Ambiente",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091724.388254governo.png",
+   "title": "Ambiente",
+   "id": "3126650a-3186-4171-9c48-722058e3b5bf",
+   "name": "envi"
+  }
+ ],
+ "creator_user_id": "c278a760-81f3-4a68-9e83-2a8a3d812dcd",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds2813-indice-di-verde-urbano-nil-07-2024",
+ "isopen": true,
+ "url": "",
+ "notes": "Il presente dato geografico riusabile consiste nell'indice di verde urbano (campo value) calcolato per i NIL (Nuclei di Identità Locale) del Comune di Milano, aggiornato al mese di luglio 2024.\r\n\r\nL'indice di verde urbano esprime la quantità di aree verdi/verdura nella città.\r\n\r\nIl servizio di calcolo dell'indice è fornito dal portale del Progetto Europeo SPOTTED https://portal.cef-spotted.eu/pages/home, ove è possibile scaricare anche le note metodologiche all'indirizzo https://portal.cef-spotted.eu/assets/data/Spotted_NoteMetodologiche.pdf. Il portale SPOTTED è accessibile previa registrazione.\r\n\r\nLa mappa dei NIL utilizzata per l'elaborazione è reperibile su questo portale al seguente link https://dati.comune.milano.it/dataset/ds964-nil-vigenti-pgt-2030\r\n\r\nUlteriori informazioni sul contenuto delle colonne sono disponibili nella tabella *Data Dictionary* presente sotto l'anteprima del file CSV.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS2813",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100243\"], \"theme\": \"ENVI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Unità Analytics e Open Data",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "10-09-2024",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2024-07-31\", \"temporal_start\": \"2024-07-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Indice di verde urbano dei NIL (Nuclei di Identità Locale) - Luglio 2024",
+ "revision_id": "075e29b9-4e39-4783-aa1b-51bf7e525b19"
+}

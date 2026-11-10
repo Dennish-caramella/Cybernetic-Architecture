@@ -1,0 +1,242 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità SIT e Sviluppo del Gemello Digitale Urbano",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 6,
+ "id": "5b4aee8b-8e80-447b-ac91-623544e1c654",
+ "metadata_created": "2017-11-13T11:56:26.997937",
+ "metadata_modified": "2026-05-08T10:33:41.300406",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "5b4aee8b-8e80-447b-ac91-623544e1c654",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "a1fa4ea2-31bb-4725-9ca3-89ef0f03a8c8",
+   "size": 145943,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds78_infogeo_scuole_secondarie_ii_grado_localizzazione.geojson",
+   "created": "2018-03-06T08:14:35.545630",
+   "url": "https://dati.comune.milano.it/dataset/5b4aee8b-8e80-447b-ac91-623544e1c654/resource/a1fa4ea2-31bb-4725-9ca3-89ef0f03a8c8/download/ds78_scuolesecondariesecondogrado_final.geojson",
+   "last_modified": "2020-12-17T15:46:57.372204",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "2e796490-e581-44b9-a4a0-711987b9e572",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "5b4aee8b-8e80-447b-ac91-623544e1c654",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "f9c26453-cc96-4231-b36d-672cb9651290",
+   "size": 24586,
+   "state": "active",
+   "hash": "",
+   "description": "Il sistema di coordinate utilizzato è **EPSG:3003 Monte Mario / Italy zone 1**",
+   "format": "SHP",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds78_infogeo_scuole_secondarie_ii_grado_localizzazione_shp.zip",
+   "created": "2018-06-11T12:25:37.190937",
+   "url": "https://dati.comune.milano.it/dataset/5b4aee8b-8e80-447b-ac91-623544e1c654/resource/f9c26453-cc96-4231-b36d-672cb9651290/download/ds78_scuolesecondariesecondogrado.zip",
+   "last_modified": "2020-12-17T15:47:01.543557",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "d930f7d0-afd1-4fdb-bfbd-4d3b2a27086b",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "5b4aee8b-8e80-447b-ac91-623544e1c654",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "20e2f522-3112-4fa3-989c-0cc77a85cfc5",
+   "size": 59993,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds78_infogeo_scuole_secondarie_ii_grado_localizzazione.csv",
+   "created": "2020-07-06T12:23:28.270078",
+   "url": "https://dati.comune.milano.it/dataset/5b4aee8b-8e80-447b-ac91-623544e1c654/resource/20e2f522-3112-4fa3-989c-0cc77a85cfc5/download/ds78_scuolesecondariesecondogrado_final.csv",
+   "last_modified": "2020-12-17T15:47:05.803951",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "d50b7bf9-5ed2-4504-9ddf-42c8faa45b94",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "scuola",
+   "id": "e84d4900-3349-4e11-8764-369f1a5b6041",
+   "name": "scuola"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Istruzione, cultura e sport",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091631.329628istruzione.png",
+   "title": "Istruzione, cultura e sport",
+   "id": "1e6a0f2e-e335-4a52-a64f-c62d0e40caa6",
+   "name": "educ"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds78_infogeo_scuole_secondarie_ii_grado_localizzazione_",
+ "isopen": true,
+ "url": "",
+ "notes": "Il presente dato riusabile consiste nella localizzazione georeferenziata delle scuole Secondarie di Secondo Grado sul territorio del Comune di Milano. La localizzazione puntuale avviene per via e numero civico; oltre alla denominazione della scuola sono presenti alcuni campi relativi alla tipologia di gestione, se servizio pubblico o privato.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS78",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100219\"], \"theme\": \"EDUC\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Educazione",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "31-01-2010",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2010-01-31\", \"temporal_start\": \"2010-01-31\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 SIT e Sviluppo del Gemello Digitale Urbano\", \"it\": \"Comune di Milano - Unit\\u00e0 SIT e Sviluppo del Gemello Digitale Urbano\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Istruzione: localizzazione delle scuole secondarie di II grado",
+ "revision_id": "86157940-c009-4886-9fee-ef9d76b2dee8"
+}

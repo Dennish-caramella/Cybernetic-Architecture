@@ -1,0 +1,253 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Servizi Statistici",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 11,
+ "id": "56da8127-9e28-4bbe-bfd7-3fe35e39aca5",
+ "metadata_created": "2017-11-16T10:22:25.130883",
+ "metadata_modified": "2026-05-08T10:30:42.317736",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "56da8127-9e28-4bbe-bfd7-3fe35e39aca5",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "ed813fc3-4d97-4b0c-b3fc-6f7b991ac8a8",
+   "size": 1206195,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds385_popolazione_indicatori_popolazione_famiglie_2011.csv",
+   "created": "2018-10-26T07:43:40.675695",
+   "url": "https://dati.comune.milano.it/dataset/56da8127-9e28-4bbe-bfd7-3fe35e39aca5/resource/ed813fc3-4d97-4b0c-b3fc-6f7b991ac8a8/download/ds385_popolazione_indicatori_popolazione_famiglie_2011_breve.csv",
+   "last_modified": "2018-10-26T07:58:28.427311",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "379ab14a-8ac0-478a-8a6e-c91a8e31de8f",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "56da8127-9e28-4bbe-bfd7-3fe35e39aca5",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "4807fdc8-772b-4169-ad81-a1dd42e4b26c",
+   "size": 17669113,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds385_popolazione_indicatori_popolazione_famiglie_2011.json",
+   "created": "2018-06-18T11:43:54.726623",
+   "url": "https://dati.comune.milano.it/dataset/56da8127-9e28-4bbe-bfd7-3fe35e39aca5/resource/4807fdc8-772b-4169-ad81-a1dd42e4b26c/download/ds385_popolazione_indicatori_popolazione_famiglie_2011_breve.json",
+   "last_modified": "2019-03-01T11:34:38.049418",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "29cf81cc-b962-4786-8340-efe8d52aeda7",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "Censimento 2011",
+   "id": "71cd40d8-afcc-4967-9756-96d43e796709",
+   "name": "Censimento 2011"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "abitazione",
+   "id": "3e527b2e-261c-4fa9-bbfc-7c57fd7486e6",
+   "name": "abitazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "alloggi",
+   "id": "c327ea48-197d-484c-8136-cc965a623e87",
+   "name": "alloggi"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "censimento",
+   "id": "7c401201-816a-4857-85a7-635200876d68",
+   "name": "censimento"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "edificio",
+   "id": "3c98dbe3-3f2d-4b6b-9e60-4f2e37925c83",
+   "name": "edificio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "famiglia",
+   "id": "5710a21a-ecb6-47fc-b221-28ff6f23671d",
+   "name": "famiglia"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "genere_sesso",
+   "id": "42adf2a4-2d55-435a-beee-a05ce7b10910",
+   "name": "genere_sesso"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indice",
+   "id": "094db972-9587-4bec-80d0-661b1b819a21",
+   "name": "indice"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "popolazione",
+   "id": "438fd337-07f3-43ef-9ffc-2f2bf715c18a",
+   "name": "popolazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_pubblicazione",
+   "id": "55a8a82c-eaab-49f6-8579-856e76e52e98",
+   "name": "serie_pubblicazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Popolazione e società",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092127.298147popolazione.png",
+   "title": "Popolazione e società",
+   "id": "2f9121d1-d927-4605-ae5f-249553b8c1d0",
+   "name": "soci"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds385-popolazione-indicatori-popolazione-famiglie-alloggi-edifici-sezione-censimento-2011",
+ "isopen": true,
+ "url": "",
+ "notes": "Nel dataset sono contenuti 43 indicatori statistici calcolati sulla base dei dati del Censimento 2011 per le sezioni di Censimento. Gli indicatori sono così definiti:\r\n\r\n * 1) Numero medio di residenti per edificio ad uso residenziale;\r\n * 2) Numero medio di abitazioni per edificio ad uso residenziale;\r\n * 3) Numero medio di abitazioni occupate da residenti per edificio ad uso residenziale;\r\n * 4) Percentuale di edifici ad uso residenziale in pessimo o mediocre stato di conservazione;\r\n * 5) Età media degli edifici ad uso residenziale;\r\n * 6) Percentuale di edifici ad uso residenziale di 4 o più piani con ascensore;\r\n * 7) Popolazione over 65 ogni 100 giovani (0-14 anni) (Indice di vecchiaia);\r\n * 8) Percentuale di bambini in età prescolare;\r\n * 9) Percentuale di anziani over 85;\r\n * 10) Giovani (0-14 anni) e over65 enni ogni 100 in età attiva (15-64 anni) (indice di dipendenza);\r\n * 11) Percentuale di residenti di più di 5 anni che 5 anni prima abitavano fuori Milano (indicatore di attrattività);\r\n * 12) Percentuale di abitazioni in edifici costruiti negli ultimi 20 anni (indicatore di espansione edilizia);\r\n * 13) Percentuale di abitazioni non occupate;\r\n * 14) Percentuale di famiglie monogenitore;\r\n * 15) Percentuale di famiglie senza percettore di reddito;\r\n * 16) Percentuale di famiglie di 5 o più componenti con al massimo un reddito;\r\n * 17) Percentuale di over65 enni che vivono soli;\r\n * 18) Percentuale di abitazioni occupate con meno di 15 mq per occupante (indicatore di sovraffollamento);\r\n * 19) Percentuale di maschi;\r\n * 20) Percentuale di celibi/nubili;\r\n * 21) Percentuali di vedovi/e;\r\n * 22) Popolazione in età 55-64 anni ogni 100 giovani in età 15- 24 anni (Indice di ricambio della popolazione attiva);\r\n * 23) Popolazione in età 40-64 anni ogni 100 persone in età 15- 39 anni (Indice di struttura della popolazione attiva);\r\n * 24) Bambini di 0-4 anni ogni donna in età 15-49 anni (Carico di figli in età prescolare per donna feconda);\r\n * 25) Giovani (0-14 anni) ogni 100 in età attiva (15-64anni) (Indice di dipendenza giovani);\r\n * 26) Over65 enni ogni 100 persone in età attiva (15-64 anni) (indice di dipendenza anziani);\r\n * 27) Percentuale di popolazione di 15 anni e più che percepisce un reddito sul totale della popolazione 15 anni e più;\r\n * 28) Percentuale di analfabeti sul totale popolazione di 6 anni o più;\r\n * 29) Percentuale popolazione con titoli universitari o para universitari di 30-34 anni sul totale della popolazione di 30-34 anni;\r\n * 30) Percentuale di stranieri e apolidi;\r\n * 31) Percentuale di africani sul totale degli stranieri e apolidi;\r\n * 32) Percentuale di asiatici sul totale degli stranieri e apolidi;\r\n * 33) Percentuale di stranieri di altre aree (no Africa e no Asia) sul totale degli stranieri e apolidi ;\r\n * 34) Percentuale di popolazione residente che si sposta giornalmente per studio o lavoro;\r\n * 35) Percentuale popolazione residente che si sposta giornalmente per studio o lavoro a Milano sul totale della popolazione che si sposta giornalmente per studio o lavoro;\r\n * 36) Percentuale popolazione residente che si sposta giornalmente per studio o lavoro fuori Milano sul totale della popolazione che si sposta giornalmente per studio o lavoro;\r\n * 37) Percentuale di famiglie residenti in alloggi in affitto;\r\n * 38) Percentuale famiglie residenti in alloggi di proprietà;\r\n * 39) Numero medio di componenti delle famiglie;\r\n * 40) Percentuale di famiglie di un componente;\r\n * 41) Superfice media (mq) delle abitazioni occupate da almeno un residente;\r\n * 42) Percentuale edifici ad uso residenziale costruiti prima del 1946;\r\n * 43) Percentuale edifici ad uso residenziale con un solo interno abitativo.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS385",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100211\"], \"theme\": \"SOCI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Innovazione Tecnologica e Digitale",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "27-02-2017",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2011-12-31\", \"temporal_start\": \"2011-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\", \"it\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Censimento 2011: Indicatori relativi alla popolazione residente, alle famiglie, agli alloggi e agli edifici per sezione di censimento",
+ "revision_id": "60b23f91-e79a-44b2-8f7f-f61ab999b802"
+}

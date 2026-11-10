@@ -1,0 +1,262 @@
+{
+ "license_title": "Other (Attribution)",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 9,
+ "id": "3808b466-1082-419c-9815-ea14b6dbebe0",
+ "metadata_created": "2022-05-27T12:33:40.136409",
+ "metadata_modified": "2026-05-08T10:08:51.432333",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "other-at",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "3808b466-1082-419c-9815-ea14b6dbebe0",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "b9088e14-1037-4a3f-b57f-8eeb9158bb11",
+   "size": 136050,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS1863_Elenco_e_localizzazioni_edifici_scolastici_as2020-2021.csv",
+   "created": "2022-05-27T12:35:55.289960",
+   "url": "https://dati.comune.milano.it/dataset/3808b466-1082-419c-9815-ea14b6dbebe0/resource/b9088e14-1037-4a3f-b57f-8eeb9158bb11/download/ds1863_elenco_e_localizzazioni_edifici_scolastici_as2020-2021.csv",
+   "last_modified": "2023-06-16T10:13:04.742623",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A29_IODL20",
+   "position": 0,
+   "revision_id": "8f9405c5-9470-4888-a052-fe8215b1cde6",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "3808b466-1082-419c-9815-ea14b6dbebe0",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "37128849-827f-423c-91ae-292cffe118b7",
+   "size": 279104,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "DS1863_Elenco_e_localizzazioni_edifici_scolastici_as2020-2021.json",
+   "created": "2022-05-27T12:51:02.752205",
+   "url": "https://dati.comune.milano.it/dataset/3808b466-1082-419c-9815-ea14b6dbebe0/resource/37128849-827f-423c-91ae-292cffe118b7/download/ds1863_elenco_e_localizzazioni_edifici_scolastici_as2020-2021.json",
+   "last_modified": "2023-06-20T10:08:29.263727",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A29_IODL20",
+   "position": 1,
+   "revision_id": "c46fbc99-7005-47a7-8524-5016a6660709",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "3808b466-1082-419c-9815-ea14b6dbebe0",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "003a7ddd-3a83-4c07-b59a-75809992fb20",
+   "size": 346145,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "DS1863_Elenco_e_localizzazioni_edifici_scolastici_as2020-2021.geojson",
+   "created": "2023-06-20T10:03:26.433206",
+   "url": "https://dati.comune.milano.it/dataset/3808b466-1082-419c-9815-ea14b6dbebe0/resource/003a7ddd-3a83-4c07-b59a-75809992fb20/download/ds1863_elenco_e_localizzazioni_edifici_scolastici_as2020-2021.geojson",
+   "last_modified": "2023-06-20T10:03:26.284376",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A29_IODL20",
+   "position": 2,
+   "revision_id": "f65d1419-abd3-4446-a45f-23ace7c299ba",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "CAP",
+   "id": "13072b3c-f1c6-4820-9204-5644f8a75076",
+   "name": "CAP"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno",
+   "id": "06f45323-db95-4566-a9ed-b1cf032e873f",
+   "name": "anno"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "contatto",
+   "id": "b7179f99-7bc7-4015-9952-20b04b2e4760",
+   "name": "contatto"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "scuola",
+   "id": "e84d4900-3349-4e11-8764-369f1a5b6041",
+   "name": "scuola"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Istruzione, cultura e sport",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091631.329628istruzione.png",
+   "title": "Istruzione, cultura e sport",
+   "id": "1e6a0f2e-e335-4a52-a64f-c62d0e40caa6",
+   "name": "educ"
+  }
+ ],
+ "creator_user_id": "6ca67bde-4744-4414-9c53-a10b1ea37298",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds1863-elenco-e-localizzazione-degli-edifici-scolastici-attivi-scuole-statali-as-2020-2021",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset espone informazioni relative all'anagrafica e alla localizzazione delle Scuole Statali presenti nel Comune di Milano. I dati rilevati hanno come riferimento l'anno scolastico 2020-2021 e nello specifico sono state riportate:\r\n\r\n* Scuola dell'infanzia;\r\n* Scuola Primaria:\r\n* Scuola Secondaria di primo grado;\r\n* Istituto Tecnico;\r\n* Istituto Professionale;\r\n* Istituto Commerciale;\r\n* Istituto Magistrale;\r\n* Istituto Comprensivo;\r\n* Licei;\r\n* Convitto Nazionale;\r\n* Educandato;\r\n\r\nI dati che specificatamente si trovano all'interno del dataset sono:\r\n\r\n* AnnoScolastico: Numerico Anno scolastico di riferimento anagrafe scuola;\r\n* CodiceScuola: Testo Codice della scuola (plesso);\r\n* CodiceEdificio: Testo Codice numerico che identifica univocamente l'edificio;;\r\n* IndirizzoScuola: Indirizzo di recapito della scuola;\r\n* DenominazioneScuola: Nome Scuola (plesso);\r\n* TipologiaGradoScuola: Tipologia Istituto;\r\n* IndirizzoEmail: indirizzo di posta elettronica della scuola\r\n* SitoWeb: Sito Web della scuola\r\n* CAP: Codice di avviamento postale\r\n* MUNICIPIO: Municipio\t\r\n* ID_NIL: Identificativo Nucleo identità locale\r\n* NIL:Nucleo d'identità locale\t\r\n* LONG_X_4326: Longitudine\t\r\n* LAT_Y_4326: Latitudine\t\r\n* Location: Latitudine e Longitudine\r\n",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS1863",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100219\"], \"theme\": \"EDUC\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Ministero dell'Istruzione e del Merito",
+   "key": "publisher_name"
+  },
+  {
+   "value": "80185250588",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "16-06-2023",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2021-06-30\", \"temporal_start\": \"2020-09-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "https://dati.istruzione.it/opendata/opendata/catalogo/elements1/?area=Edilizia%20Scolastica",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "title": "Elenco e localizzazione degli edifici scolastici attivi - Scuole Statali - 2020/2021",
+ "revision_id": "a5a59e73-a9c4-4902-aa6d-2464c90838c4"
+}

@@ -1,0 +1,232 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Servizi Statistici",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 8,
+ "id": "1d2cbc7c-e9ee-4ef3-9047-cc346cb3c0f9",
+ "metadata_created": "2017-11-16T10:28:35.056014",
+ "metadata_modified": "2026-05-08T10:30:37.824563",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "1d2cbc7c-e9ee-4ef3-9047-cc346cb3c0f9",
+   "distribution_format": "ZIP",
+   "datastore_active": true,
+   "id": "590fd7ea-58c6-4815-abcd-2716a52372ea",
+   "size": 2172770,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds390_pendolarismo_movimenti_interni_censimento_origine_destinazione_2011csv.zip",
+   "created": "2017-11-16T10:28:39.845490",
+   "url": "https://dati.comune.milano.it/dataset/1d2cbc7c-e9ee-4ef3-9047-cc346cb3c0f9/resource/590fd7ea-58c6-4815-abcd-2716a52372ea/download/ds390_popolazione_pendolari_movimenti_interni_sezione_censimento_origine_destinazione_2011c.zip",
+   "last_modified": "2017-12-20T19:41:35.381022",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "1d345500-4df5-4a4f-8270-1448c37484b3",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "1d2cbc7c-e9ee-4ef3-9047-cc346cb3c0f9",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "fe563835-8a06-4b13-a931-92aa9ec5e3da",
+   "size": 3708674,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima NON disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds390_pendolarismo_movimenti_interni_censimento_origine_destinazione_2011json.zip",
+   "created": "2018-06-06T08:01:09.461924",
+   "url": "https://dati.comune.milano.it/dataset/1d2cbc7c-e9ee-4ef3-9047-cc346cb3c0f9/resource/fe563835-8a06-4b13-a931-92aa9ec5e3da/download/ds390_pendolarismo_movimenti_interni_censimento_origine_destinazione_2011json.zip",
+   "last_modified": "2018-06-06T08:01:09.377912",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "143cb964-92af-46d8-9e84-f2b652711cb9",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "ACE",
+   "id": "636ae951-cdec-420d-b2c0-2d3883c4bb9c",
+   "name": "ACE"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "Censimento 2011",
+   "id": "71cd40d8-afcc-4967-9756-96d43e796709",
+   "name": "Censimento 2011"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "censimento",
+   "id": "7c401201-816a-4857-85a7-635200876d68",
+   "name": "censimento"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "pendolarismo",
+   "id": "fb019441-289f-4f20-8209-f1793eb81eaa",
+   "name": "pendolarismo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "popolazione",
+   "id": "438fd337-07f3-43ef-9ffc-2f2bf715c18a",
+   "name": "popolazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_pubblicazione",
+   "id": "55a8a82c-eaab-49f6-8579-856e76e52e98",
+   "name": "serie_pubblicazione"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Popolazione e società",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092127.298147popolazione.png",
+   "title": "Popolazione e società",
+   "id": "2f9121d1-d927-4605-ae5f-249553b8c1d0",
+   "name": "soci"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds390-popolazione-pendolari-movimenti-interni-sezione-censimento-origine-destinazione-2011c",
+ "isopen": true,
+ "url": "",
+ "notes": "Numerosità dei residenti a Milano che si spostano quotidianamente per ragione di studio o di lavoro entro Milano partendo dall'alloggio di dimora abituale e rientrando giornalmente nello stesso per sezione di origine e di destinazione dello spostamento. I dati sono stati rilevati attraverso il 15° Censimento generale della popolazione e delle abitazioni, svolto da ISTAT  nel 2011. Per approfondimenti vedere www.istat.it\r\n",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS390",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100211\"], \"theme\": \"SOCI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Innovazione Tecnologica e Digitale",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "27-02-2017",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2011-12-31\", \"temporal_start\": \"2011-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\", \"it\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Censimento 2011: Movimenti pendolari interni a Milano per sezione di origine e di destinazione",
+ "revision_id": "def44387-b0d5-44ff-99ad-f38495ef717d"
+}

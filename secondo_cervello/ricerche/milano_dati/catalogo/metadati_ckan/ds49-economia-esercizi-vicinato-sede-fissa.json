@@ -1,0 +1,256 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 8,
+ "id": "f6764e63-4a8c-46f0-9dc8-7a671e0a3950",
+ "metadata_created": "2017-11-09T16:07:36.072636",
+ "metadata_modified": "2026-08-31T15:12:42.305770",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "f6764e63-4a8c-46f0-9dc8-7a671e0a3950",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "95ef10f2-c825-451d-aa3d-6ff4ed7fd267",
+   "size": 6225924,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS49_commercio_esercizi_vicinato_sede_fissa.csv",
+   "created": "2026-08-31T14:36:48.125983",
+   "url": "https://dati.comune.milano.it/dataset/f6764e63-4a8c-46f0-9dc8-7a671e0a3950/resource/95ef10f2-c825-451d-aa3d-6ff4ed7fd267/download/ds49_commercio_esercizi_vicinato_sede_fissa.csv",
+   "last_modified": "2026-08-31T14:36:48.082899",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "df06232f-f7a2-4e1c-befb-c71f7b255066",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "f6764e63-4a8c-46f0-9dc8-7a671e0a3950",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "d38b7330-03d1-4590-8d35-892924b028dc",
+   "size": 16708170,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "DS49_commercio_esercizi_vicinato_sede_fissa.json",
+   "created": "2026-08-31T14:37:08.041833",
+   "url": "https://dati.comune.milano.it/dataset/f6764e63-4a8c-46f0-9dc8-7a671e0a3950/resource/d38b7330-03d1-4590-8d35-892924b028dc/download/ds49_commercio_esercizi_vicinato_sede_fissa.json",
+   "last_modified": "2026-08-31T14:37:07.948505",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "99e26d17-8061-43ce-b898-28b4254735ac",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "f6764e63-4a8c-46f0-9dc8-7a671e0a3950",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "93fab8c9-873b-4678-9ef5-dc6cd80fa4ae",
+   "size": 17792173,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "DS49_commercio_esercizi_vicinato_sede_fissa.geojson",
+   "created": "2026-08-31T14:37:26.171248",
+   "url": "https://dati.comune.milano.it/dataset/f6764e63-4a8c-46f0-9dc8-7a671e0a3950/resource/93fab8c9-873b-4678-9ef5-dc6cd80fa4ae/download/ds49_commercio_esercizi_vicinato_sede_fissa.geojson",
+   "last_modified": "2026-08-31T14:37:26.115341",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "6da9f9df-4618-4809-a268-6094def3d403",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "CAP",
+   "id": "13072b3c-f1c6-4820-9204-5644f8a75076",
+   "name": "CAP"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "fare_impresa",
+   "id": "edd1dfa5-69ec-4215-82b8-e62f0a770d1b",
+   "name": "fare_impresa"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds49-economia-esercizi-vicinato-sede-fissa",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset contiene l'elenco degli esercizi di vicinato in sede fissa, dove per esercizio di vicinato si intende un'attività commerciale con superficie di vendita non superiore a 250 mq (esclusi magazzini, servizi, etc..). Oltre a localizzazione per via e numero civico e superficie di vendita, sono presenti altre informazioni desunte dall'archivio amministrativo. Per l'interpretazione del dato bisogna considerare che la normativa relativa al commercio ha subito nel tempo numerose modifiche, sia rispetto alla nomenclatura e alla classificazione delle attività, sia rispetto al tipo e numero di informazioni rilevate. In alcuni casi le novità normative hanno introdotto variabili non presenti negli archivi, andando ad arricchire di informazioni il dataset. Queste variazioni tuttavia non si ripercuotono in modo retroattivo nell'archivio, ma vengono aggiornate alla prima occasione in cui il titolare si rivolge agli uffici per comunicare una qualsiasi variazione (trasloco, subentro, variazione di superficie di vendita, cumulo attività....).  Pertanto le informazioni contenute nel dataset non sono necessariamente omogenee, perchè riferite al momento dell'ultima comunicazione. \r\n\r\nPer approfondimenti: https://fareimpresa.comune.milano.it/\r\n\r\nIl campo _codice_via_ è direttamente riferibile all'omologo campo presente nel dataset dei civici georeferenziati raggiungibile a https://dati.comune.milano.it/dataset/5c6519f6-6d26-41c9-b53b-6106e08d1b90\r\n",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS49",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100195\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Economia Urbana e Lavoro",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "2026-08-31",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2025-06-30\", \"temporal_start\": \"2025-06-30\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "ANNUAL",
+   "key": "frequency"
+  },
+  {
+   "value": "https://fareimpresa.comune.milano.it/",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Attività commerciali: esercizi di vicinato in sede fissa",
+ "revision_id": "8fbdb443-b0b5-46a2-94ae-d933f6f0ace6"
+}

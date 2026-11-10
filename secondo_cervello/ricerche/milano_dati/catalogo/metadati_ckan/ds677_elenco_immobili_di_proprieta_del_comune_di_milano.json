@@ -1,0 +1,242 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 6,
+ "id": "b021d942-4590-473c-9aa3-27efc4d11e2e",
+ "metadata_created": "2018-12-10T13:26:06.880270",
+ "metadata_modified": "2026-05-08T10:28:40.050201",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "b021d942-4590-473c-9aa3-27efc4d11e2e",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "2ed02494-0e09-4d91-a414-cf84d3fe9bcb",
+   "size": 3855841,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds677_PatrimonioImmobiliareMilano.csv",
+   "created": "2018-12-10T13:26:11.436461",
+   "url": "https://dati.comune.milano.it/dataset/b021d942-4590-473c-9aa3-27efc4d11e2e/resource/2ed02494-0e09-4d91-a414-cf84d3fe9bcb/download/patrimonio_immobiliare_2019__final.csv",
+   "last_modified": "2019-08-28T11:21:59.711854",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "5cbed707-1fcd-4b90-95ce-f935d6242d02",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "b021d942-4590-473c-9aa3-27efc4d11e2e",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "c937e7eb-690f-42b9-a7b0-cf13e18e23a9",
+   "size": 11090677,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "ds677_PatrimonioImmobiliareMilano.json",
+   "created": "2020-07-07T09:00:59.263394",
+   "url": "https://dati.comune.milano.it/dataset/b021d942-4590-473c-9aa3-27efc4d11e2e/resource/c937e7eb-690f-42b9-a7b0-cf13e18e23a9/download/patrimonio_immobiliare_2019__final.json",
+   "last_modified": "2020-07-07T09:00:59.188863",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "6fc7b38a-e36f-46cf-8afd-1b79a8e923d9",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "b021d942-4590-473c-9aa3-27efc4d11e2e",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "2bf474bd-88b5-4c9e-9504-35d0cab592ec",
+   "size": 12904195,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima NON disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds677_PatrimonioImmobiliareMilano.geojson",
+   "created": "2018-12-10T13:26:10.138407",
+   "url": "https://dati.comune.milano.it/dataset/b021d942-4590-473c-9aa3-27efc4d11e2e/resource/2bf474bd-88b5-4c9e-9504-35d0cab592ec/download/patrimonio_immobiliare_2019__final.geojson",
+   "last_modified": "2020-06-15T11:22:10.775992",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "8fe4f2c4-c8d1-4670-8327-9c542fc1bbd6",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "amministrazione_trasparente",
+   "id": "4c2241e0-7b80-4123-a59a-80eb1de0764b",
+   "name": "amministrazione_trasparente"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "5ec07a00-219e-4537-9f10-8c475acf5f5f",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds677_elenco_immobili_di_proprieta_del_comune_di_milano",
+ "isopen": true,
+ "url": "",
+ "notes": "Localizzazione dei fabbricati e dei terreni appartenenti al patrimonio immobiliare del Comune di Milano, pubblicata anche su https://www.comune.milano.it/comune/amministrazione-trasparente/beni-immobili-e-gestione-patrimonio/patrimonio-immobiliare",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS677",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100273\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Partecipate e Patrimonio Immobiliare",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "28-08-2019",
+   "key": "modified"
+  },
+  {
+   "value": "{ITA_BGO,ITA_GOA,ITA_MIL,ITA_NVR,ITA_OMO,ITA_RMI,ITA_SVN,ITA_VRN}",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2019-12-31\", \"temporal_start\": \"2019-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "IRREG",
+   "key": "frequency"
+  },
+  {
+   "value": "https://geoportale.comune.milano.it/arcgis/rest/services/OperationalLayers/Patrimonio_Immobiliare/MapServer/",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Elenco immobili di proprietà del Comune di Milano",
+ "revision_id": "b421798e-5e56-4b18-9e4d-84d1436dce1a"
+}

@@ -1,0 +1,235 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 5,
+ "id": "5c6519f6-6d26-41c9-b53b-6106e08d1b90",
+ "metadata_created": "2018-05-24T15:35:18.018873",
+ "metadata_modified": "2026-10-04T21:30:40.189526",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "5c6519f6-6d26-41c9-b53b-6106e08d1b90",
+   "distribution_format": "ZIP",
+   "datastore_active": true,
+   "id": "533b4e63-3d78-4bb5-aeb4-6c5f648f7f21",
+   "size": 4520295,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds634_civici_coordinategeografiche_20261001_final_csv.zip",
+   "created": "2018-07-27T13:51:20.032934",
+   "url": "https://dati.comune.milano.it/dataset/5c6519f6-6d26-41c9-b53b-6106e08d1b90/resource/533b4e63-3d78-4bb5-aeb4-6c5f648f7f21/download/ds634_civici_coordinategeografiche_20261001_final_csv.zip",
+   "last_modified": "2026-10-04T21:30:21.631467",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "02b949c0-628c-4bac-9b48-b08a5372fd7d",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "5c6519f6-6d26-41c9-b53b-6106e08d1b90",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "cc9a206d-aac1-42c7-a8cc-ba11e500e488",
+   "size": 5767479,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima NON disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds634_civici_coordinategeografiche_20261001_final_json.zip",
+   "created": "2018-06-19T09:22:34.976265",
+   "url": "https://dati.comune.milano.it/dataset/5c6519f6-6d26-41c9-b53b-6106e08d1b90/resource/cc9a206d-aac1-42c7-a8cc-ba11e500e488/download/ds634_civici_coordinategeografiche_20261001_final_json.zip",
+   "last_modified": "2026-10-04T21:30:29.215767",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "02b949c0-628c-4bac-9b48-b08a5372fd7d",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "5c6519f6-6d26-41c9-b53b-6106e08d1b90",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "3f0a3479-2836-4699-a840-b52619cd901c",
+   "size": 6350647,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima NON disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds634_civici_coordinategeografiche_20261001_final_geojson.zip",
+   "created": "2018-07-18T16:32:42.837880",
+   "url": "https://dati.comune.milano.it/dataset/5c6519f6-6d26-41c9-b53b-6106e08d1b90/resource/3f0a3479-2836-4699-a840-b52619cd901c/download/ds634_civici_coordinategeografiche_20261001_final_geojson.zip",
+   "last_modified": "2026-10-04T21:30:35.913873",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "6bbd40e5-7451-4ccc-a5d0-e7a45f1529a5",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "1537f76f-31d0-427e-9c36-ee897d344a56",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds634-numeri-civici-coordinate",
+ "isopen": true,
+ "url": "",
+ "notes": "I numeri civici sono indicatori numerici o alfanumerici assegnati ad ogni accesso di un edificio su pubblica via allo scopo di identificarlo in modo univoco nel contesto di una certa località.\r\nIl dataset riporta le informazioni relative ai numeri civici del comune di Milano, includendo la denominazione di ogni via, numero civico e relativo codice, lo stato del civico, municipio e NIL associati, oltre alle informazioni relative alla rappresentazione geografica per quattro sistemi differenti di proiezione. \r\nUlteriori informazioni sul contenuto delle colonne sono disponibili nella tabella *Data Dictionary* presente sotto l'anteprima del file CSV.\r\n\r\nI numeri civici sono indicatori numerici o alfanumerici assegnati ad ogni accesso di un edificio su pubblica via allo scopo di identificarlo in modo univoco nel contesto di una certa località.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS634",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100273\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Unità SIT e Sviluppo del Gemello Digitale Urbano",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "2026-10-04",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2026-10-04\", \"temporal_start\": \"2018-07-18\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "MONTHLY",
+   "key": "frequency"
+  },
+  {
+   "value": "https://geoportale.comune.milano.it/sit/open-data-toponomastica/",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Numeri civici con coordinate geografiche",
+ "revision_id": "87217ac6-8d41-4b5c-bf8f-c64eb6d6d681"
+}

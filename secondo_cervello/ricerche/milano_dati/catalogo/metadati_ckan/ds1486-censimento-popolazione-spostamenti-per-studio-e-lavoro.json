@@ -1,0 +1,204 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 4,
+ "id": "06fafc33-c6b2-4a6b-8c21-b19149a1e992",
+ "metadata_created": "2021-01-08T11:45:38.704981",
+ "metadata_modified": "2026-05-08T10:14:53.717430",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "06fafc33-c6b2-4a6b-8c21-b19149a1e992",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "0233f674-f2d5-40b7-ad76-fad6e51c67b7",
+   "size": 8062,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS1486_Spostamenti_per_studio_e_lavoro.csv",
+   "created": "2021-01-08T11:47:33.115758",
+   "url": "https://dati.comune.milano.it/dataset/06fafc33-c6b2-4a6b-8c21-b19149a1e992/resource/0233f674-f2d5-40b7-ad76-fad6e51c67b7/download/ds1486_motivo-di-spostamento-per-studio.csv",
+   "last_modified": "2021-02-01T10:11:16.139550",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "21528d4b-5446-4082-913f-96db487ac117",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "06fafc33-c6b2-4a6b-8c21-b19149a1e992",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "530b74d3-7112-49b9-9a02-c10d1650fe54",
+   "size": 18117,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "DS1486_Spostamenti_per_studio_e_lavoro.json",
+   "created": "2021-01-08T11:48:12.715043",
+   "url": "https://dati.comune.milano.it/dataset/06fafc33-c6b2-4a6b-8c21-b19149a1e992/resource/530b74d3-7112-49b9-9a02-c10d1650fe54/download/ds1486_motivo-di-spostamento-per-studio.json",
+   "last_modified": "2021-02-08T16:29:13.887228",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "a5d9c43f-3fa8-46fa-86cf-d1eb730b1994",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "Censimento 2011",
+   "id": "71cd40d8-afcc-4967-9756-96d43e796709",
+   "name": "Censimento 2011"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno",
+   "id": "06f45323-db95-4566-a9ed-b1cf032e873f",
+   "name": "anno"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "censimento",
+   "id": "7c401201-816a-4857-85a7-635200876d68",
+   "name": "censimento"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Popolazione e società",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092127.298147popolazione.png",
+   "title": "Popolazione e società",
+   "id": "2f9121d1-d927-4605-ae5f-249553b8c1d0",
+   "name": "soci"
+  }
+ ],
+ "creator_user_id": "6ca67bde-4744-4414-9c53-a10b1ea37298",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds1486-censimento-popolazione-spostamenti-per-studio-e-lavoro",
+ "isopen": true,
+ "url": "",
+ "notes": "il dataset espone, per ciascun NIL, in numero di spostamenti per studio e per lavoro effettuati  a partire da quel NIL. \r\nIl dataset è frutto delle elaborazioni del Censimento Generale della Popolazione del 2011\r\n\r\nIl presente dataset è stato rilasciato dal comune di Milano.\r\n\r\nIl percorso da utilizzare per reperire il dataset originale su https://milanostatistica.comune.milano.it è: **https://milanostatistica.comune.milano.it - Censimenti (Popolazione e Abitazioni) - Censimento 2011 - Popolazione - Spostamenti per studio e lavoro**",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS1486",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100211\"], \"theme\": \"SOCI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Unità Servizi Statistici",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "01-02-2021",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2011-12-31\", \"temporal_start\": \"2011-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "https://milanostatistica.comune.milano.it/",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Censimento: Popolazione - Spostamenti per studio e lavoro",
+ "revision_id": "0dda0e82-5421-45bb-9341-9f4f9fce50c8"
+}

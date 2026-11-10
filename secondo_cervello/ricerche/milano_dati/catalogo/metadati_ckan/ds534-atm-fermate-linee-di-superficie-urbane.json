@@ -1,0 +1,228 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "AMAT - Agenzia Mobilità Ambiente Territorio",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 4,
+ "id": "ac494f5d-acd3-4fd3-8cfc-ed24f5c3d923",
+ "metadata_created": "2018-02-21T15:15:31.786706",
+ "metadata_modified": "2026-07-24T14:01:46.857050",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "1.0.0",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "ac494f5d-acd3-4fd3-8cfc-ed24f5c3d923",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "7d21bd77-3ad1-4235-9a40-8a8cdfeb65a0",
+   "size": 1024819,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds534_tpl_fermate.geojson",
+   "created": "2018-04-27T13:04:49.329680",
+   "url": "https://dati.comune.milano.it/dataset/ac494f5d-acd3-4fd3-8cfc-ed24f5c3d923/resource/7d21bd77-3ad1-4235-9a40-8a8cdfeb65a0/download/tpl_fermate.geojson",
+   "last_modified": "2026-07-24T14:01:10.019601",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "055be333-3232-4bd5-9d55-d1141c43ac58",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "ac494f5d-acd3-4fd3-8cfc-ed24f5c3d923",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "c98fd782-12da-4722-a017-facfeb79a272",
+   "size": 165618,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima NON disponibile",
+   "format": "SHP",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds534_tpl_fermate.zip",
+   "created": "2018-06-20T12:19:41.138937",
+   "url": "https://dati.comune.milano.it/dataset/ac494f5d-acd3-4fd3-8cfc-ed24f5c3d923/resource/c98fd782-12da-4722-a017-facfeb79a272/download/tpl_fermate_shp.zip",
+   "last_modified": "2026-07-24T14:01:14.322129",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "241142d2-6c6e-41c4-b3ac-c9334d8cae30",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "ac494f5d-acd3-4fd3-8cfc-ed24f5c3d923",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "2a52d51d-66fe-480b-a101-983aa2f6cbc3",
+   "size": 577061,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds534_tpl_fermate.csv",
+   "created": "2020-04-01T20:05:17.736472",
+   "url": "https://dati.comune.milano.it/dataset/ac494f5d-acd3-4fd3-8cfc-ed24f5c3d923/resource/2a52d51d-66fe-480b-a101-983aa2f6cbc3/download/tpl_fermate.csv",
+   "last_modified": "2026-07-24T14:01:18.591305",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "8ec0e72b-613f-471b-88e7-b6f419ae742d",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "TPL",
+   "id": "3faa0f63-b172-42fb-ac4d-42fa4e1129de",
+   "name": "TPL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Trasporti",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091616.002973trasporti.png",
+   "title": "Trasporti",
+   "id": "32bbfe8c-ca16-4ec3-bd6f-c12380ca3a11",
+   "name": "tran"
+  }
+ ],
+ "creator_user_id": "1407380c-1480-4712-9c17-7fd55e3e2528",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds534-atm-fermate-linee-di-superficie-urbane",
+ "isopen": true,
+ "url": "",
+ "notes": "<p>ATM - Fermate delle linee di superficie urbane.</p>\r\n\r\n## Informazioni supplementari\r\n\r\n<p>No information provided</p>\r\n\r\n## Campi del dataset\r\n\r\n* id (ID): Codice numerico univoco ATM della fermata\r\n* ubicazione (Ubicazione): Descrizione dell'ubicazione / nome della fermata\r\n* linee (Linee): Linee che transitano sulla fermata\r\n* geom (Geometria): Geometria (Point)\r\n\r\nIl presente dataset è stato rilasciato dal comune di Milano.\r\n\r\n",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS534",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100239\"], \"theme\": \"TRAN\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Mobilità, Ambiente e Energia",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "2026-07-24",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2028-07-23\", \"temporal_start\": \"2026-07-24\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "ANNUAL_2",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "ATM - Fermate linee di superficie urbane",
+ "revision_id": "bca549bd-7205-4b04-bd9c-e4f98007c5fd"
+}

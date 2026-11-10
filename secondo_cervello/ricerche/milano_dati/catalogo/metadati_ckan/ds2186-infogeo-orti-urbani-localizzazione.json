@@ -1,0 +1,242 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 6,
+ "id": "8f85ebf9-73c7-45cc-a428-66d56b7b46a4",
+ "metadata_created": "2023-02-03T12:14:12.171764",
+ "metadata_modified": "2026-11-05T09:57:04.473306",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "8f85ebf9-73c7-45cc-a428-66d56b7b46a4",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "382c78d7-8125-4869-bb1e-e9f7e7b07a74",
+   "size": 33330,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS2186_aree_orti_comunali.csv",
+   "created": "2023-02-03T12:15:56.240223",
+   "url": "https://dati.comune.milano.it/dataset/8f85ebf9-73c7-45cc-a428-66d56b7b46a4/resource/382c78d7-8125-4869-bb1e-e9f7e7b07a74/download/ds2186_aree_orti_comunali.csv",
+   "last_modified": "2026-11-05T09:54:25.084149",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "fb61e592-5adc-4c79-9d57-3c1b7286e51b",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "8f85ebf9-73c7-45cc-a428-66d56b7b46a4",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "0b209dfb-d0f2-48ae-9649-fb8be890ee25",
+   "size": 78030,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "DS2186_aree_orti_comunali.json",
+   "created": "2023-02-03T12:17:05.122808",
+   "url": "https://dati.comune.milano.it/dataset/8f85ebf9-73c7-45cc-a428-66d56b7b46a4/resource/0b209dfb-d0f2-48ae-9649-fb8be890ee25/download/ds2186_aree_orti_comunali.json",
+   "last_modified": "2026-11-05T09:55:59.158532",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "0f517ba0-fb68-4302-b368-2d7dae3024c1",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "8f85ebf9-73c7-45cc-a428-66d56b7b46a4",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "3c052ee5-47d8-4902-b2be-85e053a4ed41",
+   "size": 130887,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "DS2186_aree_orti_comunali.geojson",
+   "created": "2023-02-03T12:17:42.150827",
+   "url": "https://dati.comune.milano.it/dataset/8f85ebf9-73c7-45cc-a428-66d56b7b46a4/resource/3c052ee5-47d8-4902-b2be-85e053a4ed41/download/ds2186_aree_orti_comunali.geojson",
+   "last_modified": "2026-11-05T09:56:24.509717",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "027e72b9-6ac4-47cc-96a5-a3b6a19d97d8",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "gestione_verde",
+   "id": "7a4f970a-b093-4a14-8060-3d7ce1955fc8",
+   "name": "gestione_verde"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "verde urbano",
+   "id": "877a64cb-8518-43d8-80a5-b2d643c82933",
+   "name": "verde urbano"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Ambiente",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091724.388254governo.png",
+   "title": "Ambiente",
+   "id": "3126650a-3186-4171-9c48-722058e3b5bf",
+   "name": "envi"
+  }
+ ],
+ "creator_user_id": "6ca67bde-4744-4414-9c53-a10b1ea37298",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds2186-infogeo-orti-urbani-localizzazione",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset contiene l'elenco degli orti urbani attrezzati gestiti dal Comune di Milano, che favoriscono un uso costruttivo del tempo libero e contribuiscono a riqualificare aree urbane dismesse.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS2186",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100243\"], \"theme\": \"ENVI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Verde e Ambiente",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "2026-11-05",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2026-10-31\", \"temporal_start\": \"2026-10-31\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "ANNUAL",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Territorio: localizzazione degli orti urbani",
+ "revision_id": "8b712dbe-dfb4-40ae-a209-cce14ddc7f6c"
+}

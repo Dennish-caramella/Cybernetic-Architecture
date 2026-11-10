@@ -1,0 +1,249 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 7,
+ "id": "6aeb0372-477f-462c-80f3-63191db0ad9d",
+ "metadata_created": "2019-03-11T10:41:46.361685",
+ "metadata_modified": "2026-05-08T10:27:55.479698",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "6aeb0372-477f-462c-80f3-63191db0ad9d",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "9078a3c2-4316-4179-9cc1-6b72de1842f8",
+   "size": 2874,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS709_servizi_infanzia.csv",
+   "created": "2019-03-11T10:42:45.829175",
+   "url": "https://dati.comune.milano.it/dataset/6aeb0372-477f-462c-80f3-63191db0ad9d/resource/9078a3c2-4316-4179-9cc1-6b72de1842f8/download/ds709_servizi_infanzia_final.csv",
+   "last_modified": "2023-12-01T14:03:06.396730",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "edc65aad-678b-41fa-973c-8d0f6c0222d7",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "6aeb0372-477f-462c-80f3-63191db0ad9d",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "b9478ad7-d556-4f67-82a1-4ad651053850",
+   "size": 5461,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "DS709_servizi_infanzia.json",
+   "created": "2019-03-11T10:49:10.411862",
+   "url": "https://dati.comune.milano.it/dataset/6aeb0372-477f-462c-80f3-63191db0ad9d/resource/b9478ad7-d556-4f67-82a1-4ad651053850/download/ds709_servizi_infanzia_final.json",
+   "last_modified": "2023-12-01T14:06:29.529531",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "adadda99-bd42-45c4-bc64-8082d958e012",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "6aeb0372-477f-462c-80f3-63191db0ad9d",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "24560b51-2681-4a5b-a824-4907ceef8267",
+   "size": 7150,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "DS709_servizi_infanzia.geojson",
+   "created": "2023-12-01T14:12:13.216439",
+   "url": "https://dati.comune.milano.it/dataset/6aeb0372-477f-462c-80f3-63191db0ad9d/resource/24560b51-2681-4a5b-a824-4907ceef8267/download/ds709_servizi_infanzia_final.geojson",
+   "last_modified": "2023-12-01T14:12:13.048458",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "5e997347-f349-4e54-8334-c0c1554a0b19",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "CAP",
+   "id": "13072b3c-f1c6-4820-9204-5644f8a75076",
+   "name": "CAP"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "contatto",
+   "id": "b7179f99-7bc7-4015-9952-20b04b2e4760",
+   "name": "contatto"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Istruzione, cultura e sport",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091631.329628istruzione.png",
+   "title": "Istruzione, cultura e sport",
+   "id": "1e6a0f2e-e335-4a52-a64f-c62d0e40caa6",
+   "name": "educ"
+  }
+ ],
+ "creator_user_id": "6ca67bde-4744-4414-9c53-a10b1ea37298",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds709-istruzione-servizi-integrativi-all-infanzia",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset contiene i servizi integrativi all'infanzia, tali servizi hanno caratteristiche educative, ludiche e rivolte alla famiglia, distribuite nelle diverse zone di Milano.\r\nAll'interno del dataset è possibile anche trovare gli indirizzi ed i numeri di telefono delle sedi.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS709",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100219\"], \"theme\": \"EDUC\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Educazione",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "01-12-2023",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2019-12-31\", \"temporal_start\": \"2019-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Istruzione: Servizi integrativi all'infanzia",
+ "revision_id": "f35ec1e1-b682-4328-901d-3c7b96a836b8"
+}

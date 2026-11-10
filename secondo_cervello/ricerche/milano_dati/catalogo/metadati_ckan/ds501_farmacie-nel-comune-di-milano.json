@@ -1,0 +1,256 @@
+{
+ "license_title": "Creative Commons CCZero",
+ "maintainer": "Regione Lombardia",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "admin@dati.lombardia.it",
+ "num_tags": 8,
+ "id": "7e18f0d3-b7f1-49b7-969d-da2c04131dd6",
+ "metadata_created": "2017-11-29T13:40:27.283301",
+ "metadata_modified": "2026-10-14T23:03:31.235751",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-zero",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "7e18f0d3-b7f1-49b7-969d-da2c04131dd6",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "0c9f45b3-373e-4528-ac40-c8e474aad605",
+   "size": 71569,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds501_farmacie-nel-comune-di-m_dr8f-cz2h_final.csv",
+   "created": "2019-10-04T11:31:41.308483",
+   "url": "https://dati.comune.milano.it/dataset/7e18f0d3-b7f1-49b7-969d-da2c04131dd6/resource/0c9f45b3-373e-4528-ac40-c8e474aad605/download/ds501_farmacie-nel-comune-di-m_dr8f-cz2h_final.csv",
+   "last_modified": "2026-10-14T23:02:04.317767",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A11_CCO10",
+   "position": 0,
+   "revision_id": "a2361a0b-e041-4c76-9c20-91abde4b45cd",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "7e18f0d3-b7f1-49b7-969d-da2c04131dd6",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "1d71ca1e-a6b2-4984-8e35-a0bd9163bbca",
+   "size": 169929,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds501_farmacie-nel-comune-di-m_dr8f-cz2h_final.json",
+   "created": "2019-10-11T14:45:39.672863",
+   "url": "https://dati.comune.milano.it/dataset/7e18f0d3-b7f1-49b7-969d-da2c04131dd6/resource/1d71ca1e-a6b2-4984-8e35-a0bd9163bbca/download/ds501_farmacie-nel-comune-di-m_dr8f-cz2h_final.json",
+   "last_modified": "2026-10-14T23:03:31.190262",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A11_CCO10",
+   "position": 1,
+   "revision_id": "31cb9f4b-2391-4d3f-a2af-a52eb17cab01",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "7e18f0d3-b7f1-49b7-969d-da2c04131dd6",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "8cc1abb8-fe10-4f50-b7b4-e673250f34c6",
+   "size": 231416,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "ds501_farmacie-nel-comune-di-m_dr8f-cz2h_final.geojson",
+   "created": "2020-12-04T16:55:06.879333",
+   "url": "https://dati.comune.milano.it/dataset/7e18f0d3-b7f1-49b7-969d-da2c04131dd6/resource/8cc1abb8-fe10-4f50-b7b4-e673250f34c6/download/ds501_farmacie-nel-comune-di-m_dr8f-cz2h_final.geojson",
+   "last_modified": "2026-10-14T23:02:09.700065",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A11_CCO10",
+   "position": 2,
+   "revision_id": "3f0c2ac7-db2d-4809-85f0-c996755856a1",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "CAP",
+   "id": "13072b3c-f1c6-4820-9204-5644f8a75076",
+   "name": "CAP"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "contatto",
+   "id": "b7179f99-7bc7-4015-9952-20b04b2e4760",
+   "name": "contatto"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "farmaci",
+   "id": "b5392005-c54b-41ea-9994-301c653b8b18",
+   "name": "farmaci"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Salute",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-103739.155123saluteprova.png",
+   "title": "Salute",
+   "id": "e6528afc-bd2c-417b-99a8-d7704f942a42",
+   "name": "heal"
+  }
+ ],
+ "creator_user_id": "1407380c-1480-4712-9c17-7fd55e3e2528",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds501_farmacie-nel-comune-di-milano",
+ "isopen": true,
+ "url": "",
+ "notes": "Elenco, riferito al territorio del comune di Milano, delle farmacie aperte al pubblico (incluse succursali, dispensari e dispensari stagionali), in particolare: dati anagrafici della farmacia (Codice Identificativo Ministeriale, Denominazione, Partita IVA), dati di localizzazione (Indirizzo comprensivo di Via, CAP, Frazione, Comune, Provincia, Regione).",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS501",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100215\"], \"theme\": \"HEAL\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Regione Lombardia",
+   "key": "publisher_name"
+  },
+  {
+   "value": "80050050154",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "15-10-2026",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2026-10-15\", \"temporal_start\": \"2017-09-05\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "MONTHLY",
+   "key": "frequency"
+  },
+  {
+   "value": "https://www.dati.lombardia.it/Sanit-/Elenco-Farmacie-nel-Comune-di-Milano/dr8f-cz2h",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"80050050154\", \"creator_name\": {\"en\": \"Regione Lombardia\", \"it\": \"Regione Lombardia\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-zero",
+ "title": "Farmacie nel Comune di Milano",
+ "revision_id": "de88f3ec-f30b-4be3-80bd-394b5a9ab2a3"
+}

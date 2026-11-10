@@ -1,0 +1,218 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Servizi Statistici",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 6,
+ "id": "c9157fa5-75cd-4b73-a720-25376fb4f2a6",
+ "metadata_created": "2017-11-09T14:23:33.754613",
+ "metadata_modified": "2026-05-08T10:34:11.943161",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "c9157fa5-75cd-4b73-a720-25376fb4f2a6",
+   "distribution_format": "ZIP",
+   "datastore_active": true,
+   "id": "c3daebb7-0c97-43c7-b682-1b88e14cc127",
+   "size": 1498880,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/zip",
+   "cache_url": null,
+   "name": "ds25_pop_pro_quartiere_csv.zip",
+   "created": "2017-11-09T14:23:34.545363",
+   "url": "https://dati.comune.milano.it/dataset/c9157fa5-75cd-4b73-a720-25376fb4f2a6/resource/c3daebb7-0c97-43c7-b682-1b88e14cc127/download/ds25_pop_pro_quartiere.zip",
+   "last_modified": "2023-11-15T18:10:07.247849",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "c8c74776-ca9f-4bd8-b5be-0773439a2c29",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "c9157fa5-75cd-4b73-a720-25376fb4f2a6",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "7abeb015-ed43-4507-938e-89b87dbd9476",
+   "size": 2215789,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima NON disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/zip",
+   "cache_url": null,
+   "name": "ds25_pop_pro_quartiere_json.zip",
+   "created": "2022-11-10T11:15:04.870252",
+   "url": "https://dati.comune.milano.it/dataset/c9157fa5-75cd-4b73-a720-25376fb4f2a6/resource/7abeb015-ed43-4507-938e-89b87dbd9476/download/ds25_pop_pro_quartiere_json.zip",
+   "last_modified": "2024-02-13T15:56:23.489469",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "02f42191-e74b-469a-b09f-b2735973f4eb",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno",
+   "id": "06f45323-db95-4566-a9ed-b1cf032e873f",
+   "name": "anno"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "genere_sesso",
+   "id": "42adf2a4-2d55-435a-beee-a05ce7b10910",
+   "name": "genere_sesso"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "popolazione",
+   "id": "438fd337-07f3-43ef-9ffc-2f2bf715c18a",
+   "name": "popolazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "proiezione",
+   "id": "92097c93-ab81-434e-aab7-c3581d204608",
+   "name": "proiezione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_storica",
+   "id": "8f0a452b-66b9-45c8-be58-04ebe8c304e9",
+   "name": "serie_storica"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Popolazione e società",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092127.298147popolazione.png",
+   "title": "Popolazione e società",
+   "id": "2f9121d1-d927-4605-ae5f-249553b8c1d0",
+   "name": "soci"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds25-popolazione-proiezione-popolazione-quartiere",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset presenta le nuove proiezioni elaborate secondo le diverse ipotesi evolutive dell'andamento della fecondità e dei movimenti migratori, seguendo la metodologia Cohort Component Model. Le previsioni sono articolate secondo tre differenti ipotesi: -l'ipotesi media che prevede un protrarsi degli attuali livelli di fecondità e migratorietà; -l'ipotesi alta che elabora uno scenario di crescita sia nei livelli di fecondità sia nell'intensità dei flussi migratori; -l'ipotesi bassa che si differenzia rispetto all'ipotesi media per un andamento decrescente nel tempo dei livelli di fecondità.\r\n\r\nIl presente dataset è stato rilasciato dal comune di Milano.\r\n\r\nIl percorso da utilizzare per reperire il dataset originale su https://milanostatistica.comune.milano.it è: **https://milanostatistica.comune.milano.it - Popolazione e famiglie - Stime Previsionali - Proiezioni della Popolazione**",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS25",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100210\"], \"theme\": \"SOCI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Unità Anagrafe e Messi Civici",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "15-11-2023",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2039-12-31\", \"temporal_start\": \"2023-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "ANNUAL",
+   "key": "frequency"
+  },
+  {
+   "value": "https://milanostatistica.comune.milano.it/",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\", \"it\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Proiezioni della popolazione per quartiere: Anni 2023-2039 (proiezioni 2022 su base 2019)",
+ "revision_id": "e440aa07-7d34-47f6-9752-3033f3b84e96"
+}

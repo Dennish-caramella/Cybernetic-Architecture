@@ -1,0 +1,190 @@
+{
+ "license_title": "Creative Commons CCZero",
+ "maintainer": "Regione Lombardia",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "admin@dati.lombardia.it",
+ "num_tags": 2,
+ "id": "fdfaa532-c8d1-4477-a35d-cf305c1d15bc",
+ "metadata_created": "2021-01-27T12:09:47.514361",
+ "metadata_modified": "2022-10-31T14:54:09.313961",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-zero",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "fdfaa532-c8d1-4477-a35d-cf305c1d15bc",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "fd020f96-c097-41a1-85c4-abed67cdf2a9",
+   "size": 1534,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds558_canoni-di-locazione-versati-e-percepiti-da-regione_rpk5-kd8d.csv",
+   "created": "2021-01-27T12:09:49.095452",
+   "url": "https://dati.comune.milano.it/dataset/fdfaa532-c8d1-4477-a35d-cf305c1d15bc/resource/fd020f96-c097-41a1-85c4-abed67cdf2a9/download/ds558_canoni-di-locazione-versati-e-percepiti-da-regione_rpk5-kd8d.csv",
+   "last_modified": "2021-01-27T12:09:49.006797",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A11_CCO10",
+   "position": 0,
+   "revision_id": "69df9a3e-2e05-4b04-b808-c4c30071da47",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "fdfaa532-c8d1-4477-a35d-cf305c1d15bc",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "e6dade9f-3114-4cb0-9aef-fc6196cd751c",
+   "size": 4110,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "ds558_canoni-di-locazione-versati-e-percepiti-da-regione_rpk5-kd8d.json",
+   "created": "2021-01-27T12:09:50.959277",
+   "url": "https://dati.comune.milano.it/dataset/fdfaa532-c8d1-4477-a35d-cf305c1d15bc/resource/e6dade9f-3114-4cb0-9aef-fc6196cd751c/download/ds558_canoni-di-locazione-versati-e-percepiti-da-regione_rpk5-kd8d.json",
+   "last_modified": "2021-01-27T12:25:08.789485",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A11_CCO10",
+   "position": 1,
+   "revision_id": "69998e5a-f532-4c09-b77d-e279f58e9599",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "imposte",
+   "id": "2179433b-de75-46fe-bdb7-e592d0ec4447",
+   "name": "imposte"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "5ec07a00-219e-4537-9f10-8c475acf5f5f",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds558_canoni-di-locazione-versati-e-percepiti-da-regione-lombardia-nel-comune-di-milano",
+ "isopen": true,
+ "url": "",
+ "notes": "L'art.30 del Dlgs. 33/2013 \"Riordino della disciplina riguardante gli obblighi di pubblicità, trasparenza e diffusione di informazioni da parte delle pubbliche amministrazioni\" prevede che le pubbliche amministrazioni pubblichino le informazioni relative ai canoni di locazione o di affitto versati o percepiti.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS558",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100204\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Regione Lombardia",
+   "key": "publisher_name"
+  },
+  {
+   "value": "80050050154",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "27-01-2021",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2017-12-31\", \"temporal_start\": \"2017-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "https://www.dati.lombardia.it/Trasparenza/Canoni-di-locazione-versati-e-percepiti-da-Regione/rpk5-kd8d",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"80050050154\", \"creator_name\": {\"en\": \"Regione Lombardia\", \"it\": \"Regione Lombardia\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-zero",
+ "title": "Canoni di locazione versati e percepiti da Regione Lombardia nel Comune di Milano",
+ "revision_id": "5c801c4b-82ab-4c1d-9bc0-9cb2d9672012"
+}

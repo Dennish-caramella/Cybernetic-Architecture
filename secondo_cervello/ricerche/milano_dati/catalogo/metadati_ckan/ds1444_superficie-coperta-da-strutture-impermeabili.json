@@ -1,0 +1,187 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 5,
+ "id": "588ecbc0-6edc-4814-888e-8790fdba1e35",
+ "metadata_created": "2021-10-11T12:22:08.733238",
+ "metadata_modified": "2026-05-08T10:12:38.713560",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "588ecbc0-6edc-4814-888e-8790fdba1e35",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "5b99d27e-2bc6-47e2-82cf-2f986f9480c7",
+   "size": 1127149,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima NON disponibile",
+   "format": "ZIP",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/zip",
+   "cache_url": null,
+   "name": "ds1444_imperviousness.zip",
+   "created": "2021-10-11T12:22:46.337133",
+   "url": "https://dati.comune.milano.it/dataset/588ecbc0-6edc-4814-888e-8790fdba1e35/resource/5b99d27e-2bc6-47e2-82cf-2f986f9480c7/download/ds1444_imperviousness.zip",
+   "last_modified": "2021-10-11T12:22:46.196475",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "04ce251e-11d5-45e8-8b28-f76e15d0d96f",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "clevercities",
+   "id": "c29fbca9-1e02-470d-a67e-b839bc2b3d5b",
+   "name": "clevercities"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "decumanus_fp7",
+   "id": "ffb56d9c-cfd3-4e17-9fc1-9b492cf0e86a",
+   "name": "decumanus_fp7"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Ambiente",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091724.388254governo.png",
+   "title": "Ambiente",
+   "id": "3126650a-3186-4171-9c48-722058e3b5bf",
+   "name": "envi"
+  }
+ ],
+ "creator_user_id": "5ec07a00-219e-4537-9f10-8c475acf5f5f",
+ "relationships_as_subject": [],
+ "num_resources": 1,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds1444_superficie-coperta-da-strutture-impermeabili",
+ "isopen": true,
+ "url": "",
+ "notes": "I dati sono stati rilasciati nell'ambito del progetto europeo DECUMANUS FP7-SPACE (Development and Consolidation of Geospatial Sustainability Services for Adaptation and Climate Change Urban Impacts). Si tratta di un file raster in cui ogni pixel è associato con l’importo corrispondente (%) di superficie coperta da strutture impermeabili, con una risoluzione spaziale di 30metri",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS1444",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100242\"], \"theme\": \"ENVI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "German Aerospace Center DLR",
+   "key": "publisher_name"
+  },
+  {
+   "value": "0000000089837915",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "25-01-2016",
+   "key": "issued"
+  },
+  {
+   "value": "10-01-2018",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2016-01-10\", \"temporal_start\": \"2015-11-10\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Superficie coperta da strutture impermeabili a Milano",
+ "revision_id": "b2cc033b-c3df-4a7d-bf7c-d9be9debbaa0"
+}

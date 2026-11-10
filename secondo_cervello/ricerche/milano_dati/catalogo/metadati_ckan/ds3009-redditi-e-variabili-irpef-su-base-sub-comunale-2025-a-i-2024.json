@@ -1,0 +1,242 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 6,
+ "id": "e2abd355-2b2a-422e-9f83-aa9c1c1aecc0",
+ "metadata_created": "2026-06-30T09:02:14.504691",
+ "metadata_modified": "2026-08-26T13:33:28.221841",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "e2abd355-2b2a-422e-9f83-aa9c1c1aecc0",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "aecc4ba6-af02-4b84-a83e-05d647d42cf4",
+   "size": 128157,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds3009_redditi_e_principali_variabili_irpef_su_base_subcomunale_csv_2024.csv",
+   "created": "2026-06-30T09:02:16.702624",
+   "url": "https://dati.comune.milano.it/dataset/e2abd355-2b2a-422e-9f83-aa9c1c1aecc0/resource/aecc4ba6-af02-4b84-a83e-05d647d42cf4/download/redditi_e_principali_variabili_irpef_su_base_subcomunale_csv_2024.csv",
+   "last_modified": "2026-06-30T09:02:16.660404",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "618612d5-cdf5-4e09-a0b1-bb62f9a801b8",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "e2abd355-2b2a-422e-9f83-aa9c1c1aecc0",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "409f2a52-11af-4a0f-9100-bd88461baffb",
+   "size": 290695,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "ds3009_redditi_e_principali_variabili_irpef_su_base_subcomunale_csv_2024.json",
+   "created": "2026-06-30T09:02:19.887740",
+   "url": "https://dati.comune.milano.it/dataset/e2abd355-2b2a-422e-9f83-aa9c1c1aecc0/resource/409f2a52-11af-4a0f-9100-bd88461baffb/download/redditi_e_principali_variabili_irpef_su_base_subcomunale_csv_2024.json",
+   "last_modified": "2026-06-30T09:02:19.846504",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "14815e32-fb88-496f-a58c-6819ed838e5b",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "e2abd355-2b2a-422e-9f83-aa9c1c1aecc0",
+   "distribution_format": "RDF",
+   "datastore_active": false,
+   "id": "a541f73d-bf41-4090-83bc-869170acbb67",
+   "size": 37133,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "RDF",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/rdf+xml",
+   "cache_url": null,
+   "name": "ds3009_redditi_e_principali_variabili_IRPEF_su_base_subcomunale_RDF_2024.rdf",
+   "created": "2026-06-30T09:02:21.725883",
+   "url": "https://dati.comune.milano.it/dataset/e2abd355-2b2a-422e-9f83-aa9c1c1aecc0/resource/a541f73d-bf41-4090-83bc-869170acbb67/download/redditi_e_principali_variabili_irpef_su_base_subcomunale_rdf_2024_milano.rdf",
+   "last_modified": "2026-06-30T09:02:21.682782",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "093ea02a-f9aa-4fc4-b3d6-4b4b138ec74e",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "CAP",
+   "id": "13072b3c-f1c6-4820-9204-5644f8a75076",
+   "name": "CAP"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "IRPEF",
+   "id": "bb706edf-5303-496c-8906-5cc2b558185b",
+   "name": "IRPEF"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno",
+   "id": "06f45323-db95-4566-a9ed-b1cf032e873f",
+   "name": "anno"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "imposte",
+   "id": "2179433b-de75-46fe-bdb7-e592d0ec4447",
+   "name": "imposte"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "reddito",
+   "id": "574deed1-8ae3-4231-b2da-a77d9f0808c9",
+   "name": "reddito"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_storica",
+   "id": "8f0a452b-66b9-45c8-be58-04ebe8c304e9",
+   "name": "serie_storica"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "6460702c-a06d-4ef6-a381-82a1837d5370",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds3009-redditi-e-variabili-irpef-su-base-sub-comunale-2025-a-i-2024",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset espone i redditi e le principali variabili Irpef su base sub-comunale (CAP - Codice di Avviamento Postale) per tutte le tipologie di contribuenti - anno d'imposta 2024, anno di dichiarazione 2025.\r\n\r\nIl presente dataset è stato rilasciato dal comune di Milano.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS3009",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100206\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Ministero dell'Economia e delle Finanze",
+   "key": "publisher_name"
+  },
+  {
+   "value": "80415740580",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "2026-06-30",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2024-12-31\", \"temporal_start\": \"2024-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "https://www1.finanze.gov.it/finanze3/analisi_stat/index.php?search_class%5B0%5D=cCOMUNE&opendata=yes",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Redditi e variabili Irpef su base sub-comunale: 2025 a.i. 2024",
+ "revision_id": "77359fb4-391a-44a3-ba2b-143dc472ceaa"
+}

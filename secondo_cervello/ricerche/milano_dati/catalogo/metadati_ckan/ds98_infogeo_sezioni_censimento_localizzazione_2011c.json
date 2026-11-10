@@ -1,0 +1,249 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Servizi Statistici",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 7,
+ "id": "fc445f33-c94a-4332-9555-5b7568a44192",
+ "metadata_created": "2017-11-13T12:00:05.018637",
+ "metadata_modified": "2026-05-08T10:33:34.632560",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "fc445f33-c94a-4332-9555-5b7568a44192",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "d75587b9-2d4d-4a32-b297-d08635a88b79",
+   "size": 4374260,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds98_infogeo_sezioni_censimento_localizzazione_2011c.geojson",
+   "created": "2018-03-12T10:03:59.392720",
+   "url": "https://dati.comune.milano.it/dataset/fc445f33-c94a-4332-9555-5b7568a44192/resource/d75587b9-2d4d-4a32-b297-d08635a88b79/download/sezioni_censimento_2011.geojson",
+   "last_modified": "2020-07-06T13:27:53.901759",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "f95806f6-82ef-4655-95d7-968fde072356",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "fc445f33-c94a-4332-9555-5b7568a44192",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "10349776-09a9-4989-9d99-4138801e7b52",
+   "size": 748410,
+   "state": "active",
+   "hash": "",
+   "description": "Il sistema di coordinate utilizzato è **EPSG:3003 Monte Mario / Italy zone 1**",
+   "format": "SHP",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds98_infogeo_sezioni_censimento_localizzazione_2011shp.zip",
+   "created": "2018-06-15T09:48:05.331965",
+   "url": "https://dati.comune.milano.it/dataset/fc445f33-c94a-4332-9555-5b7568a44192/resource/10349776-09a9-4989-9d99-4138801e7b52/download/ds98_infogeo_sezioni_censimento_localizzazione_2011shp.zip",
+   "last_modified": "2018-06-15T09:48:05.277256",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "3b8cdb00-1f32-44f3-a367-279bcbb50065",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "fc445f33-c94a-4332-9555-5b7568a44192",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "d817684e-cd93-4f91-9074-3b5ce63cca4f",
+   "size": 948510,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds98_infogeo_sezioni_censimento_localizzazione_2011c.csv",
+   "created": "2020-07-06T12:23:30.574600",
+   "url": "https://dati.comune.milano.it/dataset/fc445f33-c94a-4332-9555-5b7568a44192/resource/d817684e-cd93-4f91-9074-3b5ce63cca4f/download/sezioni_censimento_2011_4326.csv",
+   "last_modified": "2021-02-12T11:44:52.268225",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "d9bc8d20-a369-4498-92b4-f2834c34fe65",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "ACE",
+   "id": "636ae951-cdec-420d-b2c0-2d3883c4bb9c",
+   "name": "ACE"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "Censimento 2011",
+   "id": "71cd40d8-afcc-4967-9756-96d43e796709",
+   "name": "Censimento 2011"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "censimento",
+   "id": "7c401201-816a-4857-85a7-635200876d68",
+   "name": "censimento"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "popolazione",
+   "id": "438fd337-07f3-43ef-9ffc-2f2bf715c18a",
+   "name": "popolazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "sezione_censimento",
+   "id": "a9190952-582f-45f5-94a8-df0e6338a8e1",
+   "name": "sezione_censimento"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Popolazione e società",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092127.298147popolazione.png",
+   "title": "Popolazione e società",
+   "id": "2f9121d1-d927-4605-ae5f-249553b8c1d0",
+   "name": "soci"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds98_infogeo_sezioni_censimento_localizzazione_2011c",
+ "isopen": true,
+ "url": "",
+ "notes": "La base dati riusabile contiene la rappresentazione geografica vettoriale delle sezioni di censimento 2011\r\n\r\n* 1) Per Sezione di Censimento si definisce l'unità minima di rilevazione del Comune di Milano sulla cui base è organizzata la rilevazione censuaria, relativa al 15 °Censimento Generale della Popolazione e delle Abitazioni. E' costituita da un solo corpo delimitato da una linea spezzata chiusa; a partire dalle sezioni di censimento sono ricostruibili, per somma, le entità geografiche ed amministrative di livello superiore (aree di censimento - ACE, località abitate, aree sub-comunali, collegi elettorali ed altre). Ciascuna sezione di censimento deve essere completamente contenuta all'interno di una ed una sola località. Il territorio comunale deve essere esaustivamente suddiviso in sezioni di censimento. Il campo TIPO_LOC identifica la  tipologia di località 2011 e può assumere i seguenti valori: 1.  centro abitato: aggregato di case contigue o vicine con interposte strade, piazze e simili, o comunque brevi soluzioni di continuità caratterizzato dall'esistenza di servizi od esercizi pubblici (scuola, ufficio pubblico, farmacia, negozio o simili) che costituiscono una forma autonoma di vita sociale e, generalmente, anche un luogo di raccolta per gli abitanti delle zone limitrofe in modo da manifestare l'esistenza di una forma di vita sociale coordinata dal centro stesso. \r\n* 2) nucleo abitato: località abitata, priva del luogo di raccolta che caratterizza il centro abitato, costituita da un gruppo di almeno quindici edifici contigui e vicini, con almeno quindici famiglie, con interposte strade, sentieri, piazze, aie, piccoli orti, piccoli incolti e simili, purché l'intervallo tra casa e casa non superi una trentina di metri e sia in ogni modo inferiore a quello intercorrente tra il nucleo stesso e la più vicina delle case manifestamente sparse. \r\n* 3) località produttiva: area in ambito extraurbano non compresa nei centri o nuclei abitati nella quale siano presenti unità locali in numero superiore a 10, o il cui numero totale di addetti sia superiore a 200, contigue o vicine con interposte strade, piazze e simili, o comunque brevi soluzioni di continuità non superiori a 200 metri; la superficie minima deve corrispondere a 5 ettari. \r\n* 4) case sparse: case disseminate nel territorio comunale a distanza tale da non poter costituire nemmeno un nucleo abitato. Sono riportati inoltre: i codici delle Aree di Censimento - ACE a cui appartengono; la popolazione residente al 31.12.2010.\r\n\r\nLa risorsa csv scaricabile contiene delle colonne di punti georeferenziati, che corrispondono al centroide della geometria utilizzata nella relativa risorsa GeoJSON.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS98",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100211\"], \"theme\": \"SOCI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Innovazione Tecnologica e Digitale",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "30-05-2011",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2011-12-31\", \"temporal_start\": \"2010-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\", \"it\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Territorio: localizzazione delle sezioni di Censimento 2011",
+ "revision_id": "7583c99a-97c5-4739-a9dc-46951856df95"
+}

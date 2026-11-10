@@ -1,0 +1,270 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 10,
+ "id": "9f4191c6-9bcc-45a9-a62d-88ffc995078d",
+ "metadata_created": "2024-02-21T13:31:41.781985",
+ "metadata_modified": "2026-05-08T09:56:06.176927",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "9f4191c6-9bcc-45a9-a62d-88ffc995078d",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "d8d1da05-40ad-4555-9d13-809c9a5685c0",
+   "size": 156186,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds2689_fabbricati_del_demanio_statale_2023.csv",
+   "created": "2024-02-21T13:32:17.589781",
+   "url": "https://dati.comune.milano.it/dataset/9f4191c6-9bcc-45a9-a62d-88ffc995078d/resource/d8d1da05-40ad-4555-9d13-809c9a5685c0/download/ds2689_fabbricati_de_demanio_statale_2023.csv",
+   "last_modified": "2024-02-21T13:34:59.611235",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A23_CCBY30IT",
+   "position": 0,
+   "revision_id": "f884a989-8de9-44bd-8678-1f172e82e161",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "9f4191c6-9bcc-45a9-a62d-88ffc995078d",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "1c3f2b75-8dfb-4a9f-8ed9-6e658281fce5",
+   "size": 334040,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "ds2689_fabbricati_del_demanio_statale_2023.json",
+   "created": "2024-02-21T13:32:44.432578",
+   "url": "https://dati.comune.milano.it/dataset/9f4191c6-9bcc-45a9-a62d-88ffc995078d/resource/1c3f2b75-8dfb-4a9f-8ed9-6e658281fce5/download/ds2689_fabbricati_de_demanio_statale_2023.json",
+   "last_modified": "2024-02-21T16:17:57.796978",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A23_CCBY30IT",
+   "position": 1,
+   "revision_id": "ad209dd4-f2ed-4391-817b-dd96c3b29cf8",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "9f4191c6-9bcc-45a9-a62d-88ffc995078d",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "0915324e-379e-4d50-ba80-69be66b6c984",
+   "size": 400299,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "ds2689_fabbricati_del_demanio_statale_2023.geojson",
+   "created": "2024-02-21T13:33:06.971367",
+   "url": "https://dati.comune.milano.it/dataset/9f4191c6-9bcc-45a9-a62d-88ffc995078d/resource/0915324e-379e-4d50-ba80-69be66b6c984/download/ds2689_fabbricati_de_demanio_statale_2023.geojson",
+   "last_modified": "2024-02-21T16:18:18.927747",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A23_CCBY30IT",
+   "position": 2,
+   "revision_id": "a2b13ca8-a0ed-43a5-be50-cf53e47037cb",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "CAP",
+   "id": "13072b3c-f1c6-4820-9204-5644f8a75076",
+   "name": "CAP"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "demanio",
+   "id": "7a340615-9450-4238-8cb2-829182ed91ce",
+   "name": "demanio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "fabbricati",
+   "id": "f00d22bf-bdc0-42af-bbf4-f301e7d3efc3",
+   "name": "fabbricati"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_pubblicazione",
+   "id": "55a8a82c-eaab-49f6-8579-856e76e52e98",
+   "name": "serie_pubblicazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "6ca67bde-4744-4414-9c53-a10b1ea37298",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds2689-fabbricati-del-demanio-statale-anno-2023",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset espone l'elenco dei Fabbricati del patrimonio immobiliare dello Stato in gestione all’Agenzia del Demanio sul territorio del Comune di Milano.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS2689",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100273\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Agenzia del Demanio",
+   "key": "publisher_name"
+  },
+  {
+   "value": "06340981007",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "21-02-2024",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2023-12-31\", \"temporal_start\": \"2023-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "https://dati.agenziademanio.it/#/opendata",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Fabbricati del Demanio Statale - Anno 2023",
+ "revision_id": "bb013711-5f00-4ec0-ba06-0d14c154dc0a"
+}

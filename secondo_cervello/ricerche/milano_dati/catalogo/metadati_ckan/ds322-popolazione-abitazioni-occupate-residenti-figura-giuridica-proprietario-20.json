@@ -1,0 +1,218 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Servizi Statistici",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 6,
+ "id": "aeb3e1f8-5df5-48eb-895a-8c0e91814a9a",
+ "metadata_created": "2017-11-15T15:59:10.674422",
+ "metadata_modified": "2026-05-08T10:31:15.068057",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "aeb3e1f8-5df5-48eb-895a-8c0e91814a9a",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "e63d8091-6b1f-4e93-bc66-6289c76f799d",
+   "size": 268,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds322_popolazione_abitazioni_occupate_residenti_figura_giuridica_proprietario_2011c.csv",
+   "created": "2017-11-15T15:59:13.978257",
+   "url": "https://dati.comune.milano.it/dataset/aeb3e1f8-5df5-48eb-895a-8c0e91814a9a/resource/e63d8091-6b1f-4e93-bc66-6289c76f799d/download/ds322_popolazione_abitazioni_occupate_residenti_figura_giuridica_proprietario_2011c.csv",
+   "last_modified": "2026-02-03T08:17:50.581142",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "7850a9ba-2f90-4165-b737-92b888b87c17",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "aeb3e1f8-5df5-48eb-895a-8c0e91814a9a",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "504fff01-eb87-4760-924e-04aa4b00f62f",
+   "size": 897,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds322_popolazione_abitazioni_occupate_residenti_figura_giuridica_proprietario_2011c.json",
+   "created": "2018-02-09T15:08:11.657107",
+   "url": "https://dati.comune.milano.it/dataset/aeb3e1f8-5df5-48eb-895a-8c0e91814a9a/resource/504fff01-eb87-4760-924e-04aa4b00f62f/download/ds322_popolazione_abitazioni_occupate_residenti_figura_giuridica_proprietario_2011c.json",
+   "last_modified": "2018-02-09T15:08:11.614620",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "3dbaa771-1128-43bb-baa8-c3a4324c00f4",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "Censimento 2011",
+   "id": "71cd40d8-afcc-4967-9756-96d43e796709",
+   "name": "Censimento 2011"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "abitazione",
+   "id": "3e527b2e-261c-4fa9-bbfc-7c57fd7486e6",
+   "name": "abitazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "censimento",
+   "id": "7c401201-816a-4857-85a7-635200876d68",
+   "name": "censimento"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "edificio",
+   "id": "3c98dbe3-3f2d-4b6b-9e60-4f2e37925c83",
+   "name": "edificio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "popolazione",
+   "id": "438fd337-07f3-43ef-9ffc-2f2bf715c18a",
+   "name": "popolazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_pubblicazione",
+   "id": "55a8a82c-eaab-49f6-8579-856e76e52e98",
+   "name": "serie_pubblicazione"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Popolazione e società",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092127.298147popolazione.png",
+   "title": "Popolazione e società",
+   "id": "2f9121d1-d927-4605-ae5f-249553b8c1d0",
+   "name": "soci"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds322-popolazione-abitazioni-occupate-residenti-figura-giuridica-proprietario-2011c",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset contiene il numero delle abitazioni occupate da almeno una persona residente per figura giuridica del proprietario. I dati sono stati rilevati attraverso il 15° Censimento generale della popolazione e delle abitazioni, svolto da ISTAT nel 2011, con l'obiettivo di conteggiare la totalità della popolazione, delle abitazioni e degli edifici sul territorio. In questo censimento, per la prima volta, alcune informazioni di carattere socio-economico sono state rilevate su base campionaria. La figura giuridica del proprietario dell'abitazione è una delle informazioni raccolte su base campionaria. Per approfondimenti vedere www.istat.it\r\n\r\n\r\nIl presente dataset è stato rilasciato dal comune di Milano.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS322",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100211\"], \"theme\": \"SOCI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Innovazione Tecnologica e Digitale",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "14-04-2015",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2011-12-31\", \"temporal_start\": \"2011-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\", \"it\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Censimento 2011: Abitazioni occupate da persone residenti per figura giuridica del proprietario",
+ "revision_id": "68442de1-9b58-4762-a58f-aaf189eeb4f8"
+}

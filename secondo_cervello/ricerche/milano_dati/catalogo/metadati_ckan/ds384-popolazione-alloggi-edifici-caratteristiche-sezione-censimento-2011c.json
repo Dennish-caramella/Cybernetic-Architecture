@@ -1,0 +1,239 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Servizi Statistici",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 9,
+ "id": "a85c84f8-8ca3-49ab-ac3c-b0bb86e0af18",
+ "metadata_created": "2017-11-16T10:21:36.133676",
+ "metadata_modified": "2026-05-08T10:30:43.245931",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "a85c84f8-8ca3-49ab-ac3c-b0bb86e0af18",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "44b322c5-11af-4111-ac99-100d09b754f1",
+   "size": 484749,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds384_popolazione_alloggi_edifici_caratteristiche_sezione_censimento_2011.csv",
+   "created": "2017-11-16T10:21:41.098413",
+   "url": "https://dati.comune.milano.it/dataset/a85c84f8-8ca3-49ab-ac3c-b0bb86e0af18/resource/44b322c5-11af-4111-ac99-100d09b754f1/download/ds384_popolazione_alloggi_edifici_caratteristiche_sezione_censimento_2011_.csv",
+   "last_modified": "2021-08-20T12:09:00.481276",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "6b8ef3b4-c18c-40d4-aa94-29f1cf505071",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "a85c84f8-8ca3-49ab-ac3c-b0bb86e0af18",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "646733b9-eb4b-4b9e-8391-49f20c5c2d9a",
+   "size": 358277,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima NON disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds384_popolazione_alloggi_edifici_caratteristiche_sezione_censimento_2011.json",
+   "created": "2018-06-19T09:30:12.756616",
+   "url": "https://dati.comune.milano.it/dataset/a85c84f8-8ca3-49ab-ac3c-b0bb86e0af18/resource/646733b9-eb4b-4b9e-8391-49f20c5c2d9a/download/ds384_popolazione_alloggi_edifici_caratteristiche_sezione_censimento_2011__json.zip",
+   "last_modified": "2025-09-26T17:47:01.721525",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "0c36a8ce-eb27-4d09-93ef-e42a8993a756",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "Censimento 2011",
+   "id": "71cd40d8-afcc-4967-9756-96d43e796709",
+   "name": "Censimento 2011"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "abitazione",
+   "id": "3e527b2e-261c-4fa9-bbfc-7c57fd7486e6",
+   "name": "abitazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "alloggi",
+   "id": "c327ea48-197d-484c-8136-cc965a623e87",
+   "name": "alloggi"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "censimento",
+   "id": "7c401201-816a-4857-85a7-635200876d68",
+   "name": "censimento"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "edificio",
+   "id": "3c98dbe3-3f2d-4b6b-9e60-4f2e37925c83",
+   "name": "edificio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "popolazione",
+   "id": "438fd337-07f3-43ef-9ffc-2f2bf715c18a",
+   "name": "popolazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_pubblicazione",
+   "id": "55a8a82c-eaab-49f6-8579-856e76e52e98",
+   "name": "serie_pubblicazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "sezione_censimento",
+   "id": "a9190952-582f-45f5-94a8-df0e6338a8e1",
+   "name": "sezione_censimento"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Popolazione e società",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092127.298147popolazione.png",
+   "title": "Popolazione e società",
+   "id": "2f9121d1-d927-4605-ae5f-249553b8c1d0",
+   "name": "soci"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds384-popolazione-alloggi-edifici-caratteristiche-sezione-censimento-2011c",
+ "isopen": true,
+ "url": "",
+ "notes": "Nel dataset sono descritte le principali caratteristiche degli alloggi e degli edifici di Milano per sezioni di Censimento. I dati sono stati rilevati attraverso il 15° Censimento generale della popolazione e delle abitazioni, svolto da ISTAT nel 2011. Le variabili analizzate sono le seguenti:\r\n\r\n * 1) Stato di occupazione delle abitazioni;\r\n * 2) Superficie delle abitazioni occupate da almeno una persona residente;\r\n * 3) Stato di utilizzazione degli edifici;\r\n * 3) Tipologia degli edifici utilizzati;\r\n * 4) Materiale della struttura portante degli edifici residenziali;\r\n * 5) Anno di costruzione degli edifici residenziali;\r\n * 6) Numero di piani degli edifici residenziali;\r\n * 7) Numero di interni degli edifici residenziali;\r\n * 8) Stato di conservazione degli edifici residenziali.\r\n",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS384",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100211\"], \"theme\": \"SOCI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Innovazione Tecnologica e Digitale",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "27-02-2017",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2011-12-31\", \"temporal_start\": \"2011-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\", \"it\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Censimento 2011: Principali caratteristiche degli alloggi e degli edifici per sezione",
+ "revision_id": "33c7db38-4553-4e95-a8f6-259b2975b872"
+}

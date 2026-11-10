@@ -1,0 +1,211 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Servizi Statistici",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 5,
+ "id": "806829b9-134b-40cf-b0e0-03e66c4f76d7",
+ "metadata_created": "2017-11-13T11:58:54.455527",
+ "metadata_modified": "2026-05-08T10:33:36.750394",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "806829b9-134b-40cf-b0e0-03e66c4f76d7",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "3e355dd1-a8b8-483d-ac4d-03a62232ef38",
+   "size": 1072203,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "ds95_infogeo_aree_censimento_localizzazione_2011c.geojson",
+   "created": "2018-03-12T10:03:52.882988",
+   "url": "https://dati.comune.milano.it/dataset/806829b9-134b-40cf-b0e0-03e66c4f76d7/resource/3e355dd1-a8b8-483d-ac4d-03a62232ef38/download/ace_2011.geojson",
+   "last_modified": "2019-05-08T16:18:30.157137",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "cf6eb679-7aed-47ae-9599-9c1d645ec62e",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "806829b9-134b-40cf-b0e0-03e66c4f76d7",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "07d01ebb-91cc-432a-9c88-726631497b3f",
+   "size": 293537,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "SHP",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/zip",
+   "cache_url": null,
+   "name": "ds95_infogeo_aree_censimento_localizzazione_2011shp.zip",
+   "created": "2018-06-15T09:54:21.221418",
+   "url": "https://dati.comune.milano.it/dataset/806829b9-134b-40cf-b0e0-03e66c4f76d7/resource/07d01ebb-91cc-432a-9c88-726631497b3f/download/ace_2011.zip",
+   "last_modified": "2018-06-15T09:54:21.174425",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "d33caf5d-3674-4af6-999c-e35b7aeee6cb",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "ACE",
+   "id": "636ae951-cdec-420d-b2c0-2d3883c4bb9c",
+   "name": "ACE"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "Censimento 2011",
+   "id": "71cd40d8-afcc-4967-9756-96d43e796709",
+   "name": "Censimento 2011"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "censimento",
+   "id": "7c401201-816a-4857-85a7-635200876d68",
+   "name": "censimento"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "popolazione",
+   "id": "438fd337-07f3-43ef-9ffc-2f2bf715c18a",
+   "name": "popolazione"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Popolazione e società",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092127.298147popolazione.png",
+   "title": "Popolazione e società",
+   "id": "2f9121d1-d927-4605-ae5f-249553b8c1d0",
+   "name": "soci"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds95_infogeo_aree_censimento_localizzazione_2011c",
+ "isopen": true,
+ "url": "",
+ "notes": "Il presente dato riusabile consiste nella georeferenziazione di poligoni chiamati Aree di Censimento - ACE. Sono 85 unità territoriali intermedie fra le sezioni di censimento e le località di centro abitato: tali aree verranno utilizzate come zone di riferimento per la diffusione dei dati risultanti dal Censimento Popolazione 2011. All'identificativo univoco, si associa anche la popolazione residente al 31.12.2010.\r\n\r\nIl presente dataset è stato rilasciato dal comune di Milano.\r\n\r\nLa risorsa csv scaricabile contiene delle colonne di punti georeferenziati, che corrispondono al centroide della geometria utilizzata nella relativa risorsa GeoJSON.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS95",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100211\"], \"theme\": \"SOCI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Innovazione Tecnologica e Digitale",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "27-08-2019",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2011-05-30\", \"temporal_start\": \"2011-05-30\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "https://geoportale.comune.milano.it/arcgis/rest/services/OperationalLayers/ACE/MapServer/0",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\", \"it\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Territorio: localizzazione delle Aree di Censimento (ACE) 2011",
+ "revision_id": "12efd772-3b48-444f-8fa0-e4dbb489d810"
+}

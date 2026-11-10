@@ -1,0 +1,256 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 8,
+ "id": "79d639c5-f833-47de-b05f-3a6e3f9dc79e",
+ "metadata_created": "2026-09-22T14:21:01.320996",
+ "metadata_modified": "2026-10-26T16:26:24.203102",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "79d639c5-f833-47de-b05f-3a6e3f9dc79e",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "b4eb45ae-834e-481f-a1bf-123cb8ffd16e",
+   "size": 39713,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds3015_dst_an_statistica_totale_scuola-primaria_2025-2026.csv",
+   "created": "2026-10-26T15:08:12.054949",
+   "url": "https://dati.comune.milano.it/dataset/79d639c5-f833-47de-b05f-3a6e3f9dc79e/resource/b4eb45ae-834e-481f-a1bf-123cb8ffd16e/download/ds3015_dst_an_statistica_totale_scuola-primaria_2025-2026.csv",
+   "last_modified": "2026-10-26T15:08:12.013539",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "4f022081-6ad8-477a-a03e-3dc55b96b491",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "79d639c5-f833-47de-b05f-3a6e3f9dc79e",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "b626ba7c-8d9e-4e4d-9899-033cb1cf7f13",
+   "size": 101539,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "ds3015_dst_an_statistica_totale_scuola-primaria_2025-2026.json",
+   "created": "2026-10-26T15:10:26.704725",
+   "url": "https://dati.comune.milano.it/dataset/79d639c5-f833-47de-b05f-3a6e3f9dc79e/resource/b626ba7c-8d9e-4e4d-9899-033cb1cf7f13/download/ds3015_dst_an_statistica_totale_scuola-primaria_2025-2026.json",
+   "last_modified": "2026-10-26T15:10:26.659702",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "ae3f206c-0fe8-4e37-b6c4-5679f53aa76e",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "79d639c5-f833-47de-b05f-3a6e3f9dc79e",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "2ae4d976-eefb-4c0c-a973-62bb6ad15147",
+   "size": 195275,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "ds3015_dst_an_statistica_totale_scuola-primaria_2025-2026.geojson",
+   "created": "2026-10-26T15:12:01.934841",
+   "url": "https://dati.comune.milano.it/dataset/79d639c5-f833-47de-b05f-3a6e3f9dc79e/resource/2ae4d976-eefb-4c0c-a973-62bb6ad15147/download/ds3015_dst_an_statistica_totale_scuola-primaria_2025-2026.geojson",
+   "last_modified": "2026-10-26T15:12:01.889596",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "01c4693f-3862-4cce-ac9e-88d9e89cf4fb",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno_scolastico",
+   "id": "882ab597-6905-48f4-b7cf-4f68b606ff5e",
+   "name": "anno_scolastico"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "indirizzo",
+   "id": "3178c41c-912c-4a66-9634-edf1141d6096",
+   "name": "indirizzo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "municipio",
+   "id": "4d0dbf73-edd2-44b6-a492-23f107745f23",
+   "name": "municipio"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "scuola",
+   "id": "e84d4900-3349-4e11-8764-369f1a5b6041",
+   "name": "scuola"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_pubblicazione",
+   "id": "55a8a82c-eaab-49f6-8579-856e76e52e98",
+   "name": "serie_pubblicazione"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Istruzione, cultura e sport",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091631.329628istruzione.png",
+   "title": "Istruzione, cultura e sport",
+   "id": "1e6a0f2e-e335-4a52-a64f-c62d0e40caa6",
+   "name": "educ"
+  }
+ ],
+ "creator_user_id": "6460702c-a06d-4ef6-a381-82a1837d5370",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds3015-infogeo-scuole-primarie-localizzazione-2025-2026",
+ "isopen": true,
+ "url": "",
+ "notes": "Il presente dato riusabile consiste nella localizzazione georeferenziata delle Scuole Primarie sul territorio del Comune di Milano. La localizzazione puntuale avviene per via e numero civico; oltre alla denominazione della scuola sono presenti alcuni campi relativi alla scuola come servizio al cittadino, quindi se pubblico/privato e la tipologia di gestione.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS3015",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100219\"], \"theme\": \"EDUC\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Educazione",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "2026-10-26",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2026-08-31\", \"temporal_start\": \"2025-09-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Istruzione: localizzazione delle scuole primarie - anno scolastico 2025/2026",
+ "revision_id": "967ea260-1e6d-4da6-94d1-518d884be26e"
+}

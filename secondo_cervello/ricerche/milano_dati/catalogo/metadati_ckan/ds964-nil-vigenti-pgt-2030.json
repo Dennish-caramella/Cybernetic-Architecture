@@ -1,0 +1,228 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità SIT e Sviluppo del Gemello Digitale Urbano",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 4,
+ "id": "e8e765fc-d882-40b8-95d8-16ff3d39eb7c",
+ "metadata_created": "2020-04-01T08:26:21.031830",
+ "metadata_modified": "2026-05-08T10:22:55.728611",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "e8e765fc-d882-40b8-95d8-16ff3d39eb7c",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "9c4e0776-56fc-4f3d-8a90-f4992a3be426",
+   "size": 1023545,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds964_NIL_WM.geojson",
+   "created": "2020-04-01T09:15:04.362087",
+   "url": "https://dati.comune.milano.it/dataset/e8e765fc-d882-40b8-95d8-16ff3d39eb7c/resource/9c4e0776-56fc-4f3d-8a90-f4992a3be426/download/ds964_nil_wm.geojson",
+   "last_modified": "2020-04-01T09:15:04.274270",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "e9543132-9f1b-49df-8c0f-f5d5c4d3a335",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "e8e765fc-d882-40b8-95d8-16ff3d39eb7c",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "f5a2ea4b-3d9e-458c-a11f-a3815553db18",
+   "size": 291318,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "SHP",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds964_NIL_WM.zip",
+   "created": "2020-04-01T09:15:57.810938",
+   "url": "https://dati.comune.milano.it/dataset/e8e765fc-d882-40b8-95d8-16ff3d39eb7c/resource/f5a2ea4b-3d9e-458c-a11f-a3815553db18/download/ds964_nil_wm.zip",
+   "last_modified": "2020-04-01T09:15:57.557970",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "c2c30ab0-a889-462f-b7fe-9375f8fb2ae6",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "e8e765fc-d882-40b8-95d8-16ff3d39eb7c",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "3fce7202-0076-4a7b-ac2c-d2ab9b5dc658",
+   "size": 16408,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds964_NIL_WM.csv",
+   "created": "2020-04-01T09:20:10.810389",
+   "url": "https://dati.comune.milano.it/dataset/e8e765fc-d882-40b8-95d8-16ff3d39eb7c/resource/3fce7202-0076-4a7b-ac2c-d2ab9b5dc658/download/ds964_nil_wm_4326.csv",
+   "last_modified": "2021-02-12T11:44:34.822680",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "a55a310b-5119-4264-939a-fc7ef2a9ead3",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "5ec07a00-219e-4537-9f10-8c475acf5f5f",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds964-nil-vigenti-pgt-2030",
+ "isopen": true,
+ "url": "",
+ "notes": "I **NIL** - Nuclei d'Identità Locale rappresentano aree definibili come quartieri di Milano, in cui è possibile riconoscere quartieri storici e di progetto, con caratteristiche differenti gli uni dagli altri. Vengono introdotti dal PGT (Piano di Governo del Territorio) come un insieme di ambiti, connessi tra loro da infrastrutture e servizi per la mobilità, il verde. Sono sistemi di vitalità urbana: concentrazioni di attività commerciali locali, giardini, luoghi di aggregazione, servizi; ma sono anche 88 nuclei di identità locale da potenziare e progettare ed attraverso cui organizzare piccoli e grandi servizi (Piano dei Servizi).\r\n\r\nI NIL rappresentano un vero e proprio atlante territoriale, strumento di verifica e consultazione per la programmazione dei servizi, ma soprattutto di conoscenza dei quartieri che compongono le diverse realtà locali, evidenziando caratteristiche uniche e differenti per ogni nucleo e restituendo in modo sintetico le componenti socio-demografiche e territoriali. Inoltre, esprimono i fenomeni territoriali rappresentativi della dinamicità locale, e raccolgono dati provenienti da fonti eterogenee anagrafiche e censuarie, relazionati mediante elaborazioni con i dati di tipo geografico territoriale.\r\n\r\nLa risorsa csv scaricabile contiene delle colonne di punti georeferenziati, che corrispondono al centroide della geometria utilizzata nella relativa risorsa GeoJSON.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS964",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100273\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Urbanistica",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "12-02-2021",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2030-12-31\", \"temporal_start\": \"2020-02-05\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "IRREG",
+   "key": "frequency"
+  },
+  {
+   "value": "https://geoportale.comune.milano.it/arcgisportal/rest/services/OperationalLayers/NIL_WM/MapServer/0",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Nuclei d'Identità Locale (NIL) VIGENTI - PGT 2030",
+ "revision_id": "4be4ccf9-aba8-49c4-9ac0-69821fa312a1"
+}

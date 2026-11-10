@@ -1,0 +1,218 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 6,
+ "id": "1ad8ecfd-5d4a-487d-b2e3-7d45fe9e1274",
+ "metadata_created": "2022-10-10T14:03:31.006749",
+ "metadata_modified": "2026-10-28T10:12:21.468069",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "1ad8ecfd-5d4a-487d-b2e3-7d45fe9e1274",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "90df91fa-9bc9-4100-9192-cb3a2f46fd44",
+   "size": 3664073,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS1996_quotazioni_omi_compravendita_e_locazione_riepilogo.csv",
+   "created": "2024-10-23T19:35:13.161088",
+   "url": "https://dati.comune.milano.it/dataset/1ad8ecfd-5d4a-487d-b2e3-7d45fe9e1274/resource/90df91fa-9bc9-4100-9192-cb3a2f46fd44/download/ds1996_quotazioni_omi_compravendita_e_locazione_riepilogo.csv",
+   "last_modified": "2026-10-28T10:12:21.436281",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "1f62019b-2f54-4207-a630-960a5730f7fa",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "1ad8ecfd-5d4a-487d-b2e3-7d45fe9e1274",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "c41009ad-e15b-4f2b-9972-f1590e50a227",
+   "size": 16206524,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "DS1996_quotazioni_omi_compravendita_e_locazione_riepilogo.json",
+   "created": "2022-11-10T09:25:23.799750",
+   "url": "https://dati.comune.milano.it/dataset/1ad8ecfd-5d4a-487d-b2e3-7d45fe9e1274/resource/c41009ad-e15b-4f2b-9972-f1590e50a227/download/ds1996_quotazioni_omi_compravendita_e_locazione_riepilogo.json",
+   "last_modified": "2026-10-28T10:08:56.394394",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "2a405076-2f74-4952-a233-77945ad4f00c",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "OMI",
+   "id": "4cb06e92-262b-47c3-9166-df3cd1aafb84",
+   "name": "OMI"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno",
+   "id": "06f45323-db95-4566-a9ed-b1cf032e873f",
+   "name": "anno"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "compravendita OMI",
+   "id": "8f0485ee-28ba-4f36-b0c0-a32d740fe0eb",
+   "name": "compravendita OMI"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "locazione OMI",
+   "id": "359a64db-506c-4c6b-b1c6-01f8dfd0ca24",
+   "name": "locazione OMI"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "serie_pubblicazione",
+   "id": "55a8a82c-eaab-49f6-8579-856e76e52e98",
+   "name": "serie_pubblicazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "6ca67bde-4744-4414-9c53-a10b1ea37298",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds1996-quotazioni-immobiliari-omi-compravendita-e-locazione-riepilogo",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset espone il riepilogo delle quotazioni immobiliari, rilevate attraverso l'Osservatorio del Mercato Immobiliare (OMI) gestito dall’Agenzia delle Entrate, che nello specifico elabora e analizza tutti i dati e le informazioni tecnico economiche che riguardano il valore di un immobile e il mercato degli affitti rilevati nel Comune di Milano.\r\n\r\nI dati esposti nel Dataset sono suddivisi in:\r\n\r\n* Lo stato conservativo indicato con lettere maiuscole si riferisce a quello più frequente di ZONA\r\n* Il Valore di Mercato è espresso in Euro/mq riferito alla superficie Netta (N) ovvero Lorda (L)\r\n* Il Valore di Locazione è espresso in Euro/mq per mese riferito alla superficie Netta (N) ovvero Lorda (L)\r\n* Per la tipologia Negozi il giudizio O/ N /S è da intendersi riferito alla posizione commerciale e non allo stato conservativo dell'unità immobiliare.\r\n\r\nL'OMI è da considerarsi come uno strumento a tutti gli effetti, tramite il quale l’Agenzia delle Entrate assicura la trasparenza del mercato immobiliare.\r\n\r\n\r\n\r\nLe informazioni rese sono di proprietà esclusiva dell’Agenzia. Non è consentito al cliente vendere, affittare, noleggiare, trasferire, cedere i contenuti della Banca Dati o assumere alcune altre obbligazioni verso terzi.\r\n\r\nLe informazioni contenute nella banca dati possono essere utilizzate dal cliente, anche ai fini della loro elaborazione purché, nel caso di pubblicazione, venga citata la relativa fonte. Per ogni ulteriore condizione contrattuale e di utilizzo è possibile collegarsi al link https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi/banche-dati/quotazioni-immobiliari/condizioni-contrattuali-qi.",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS1996",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100186\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Agenzia delle Entrate",
+   "key": "publisher_name"
+  },
+  {
+   "value": "06363391001",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "26-10-2026",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2025-12-31\", \"temporal_start\": \"2025-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "ANNUAL_2",
+   "key": "frequency"
+  },
+  {
+   "value": "https://www1.agenziaentrate.gov.it/servizi/Consultazione/ricerca.htm",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Quotazioni Immobiliari OMI: Compravendita e Locazione - Riepilogo",
+ "revision_id": "fa8ceabf-ee2d-41ae-b98a-c765552e9a37"
+}

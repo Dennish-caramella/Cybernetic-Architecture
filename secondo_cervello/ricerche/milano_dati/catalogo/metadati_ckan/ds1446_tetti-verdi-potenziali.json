@@ -1,0 +1,242 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 6,
+ "id": "43414fd3-fa2e-46f0-98f8-85916d635829",
+ "metadata_created": "2021-10-11T10:36:16.696064",
+ "metadata_modified": "2026-05-08T10:12:39.586156",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "43414fd3-fa2e-46f0-98f8-85916d635829",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "eb3ba499-bfcb-46ce-a0d5-d4137855b1da",
+   "size": 8668504,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "ds1446_Tetti_verdi_potenziali_4326.csv",
+   "created": "2021-10-11T10:39:25.463105",
+   "url": "https://dati.comune.milano.it/dataset/43414fd3-fa2e-46f0-98f8-85916d635829/resource/eb3ba499-bfcb-46ce-a0d5-d4137855b1da/download/ds1446_tetti_verdi_potenziali_4326.csv",
+   "last_modified": "2021-10-11T10:39:25.353725",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "f90bd394-ee0a-496d-9694-c12db289e1c8",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "43414fd3-fa2e-46f0-98f8-85916d635829",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "cc81b313-e02d-4ad9-9f6f-b0e3df3bf517",
+   "size": 56720554,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima NON disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "ds1446_Tetti_verdi_potenziali.geojson",
+   "created": "2021-10-11T10:59:05.660666",
+   "url": "https://dati.comune.milano.it/dataset/43414fd3-fa2e-46f0-98f8-85916d635829/resource/cc81b313-e02d-4ad9-9f6f-b0e3df3bf517/download/ds1446_tetti_verdi_potenziali.geojson",
+   "last_modified": "2021-10-11T10:59:05.589306",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "d98adc68-94e0-4a2d-a939-75fda8b51cb4",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "43414fd3-fa2e-46f0-98f8-85916d635829",
+   "distribution_format": "ZIP",
+   "datastore_active": false,
+   "id": "53b81258-77ec-4c02-bbe0-d79ec3faf88e",
+   "size": 10422880,
+   "state": "active",
+   "hash": "",
+   "description": "Il sistema di coordinate utilizzato è **EPSG:6707 RDN2008 / UTM zone 32N (N-E)**",
+   "format": "SHP",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/zip",
+   "cache_url": null,
+   "name": "ds1446_tetti_verdi_potenziali.zip",
+   "created": "2021-10-11T11:02:48.339021",
+   "url": "https://dati.comune.milano.it/dataset/43414fd3-fa2e-46f0-98f8-85916d635829/resource/53b81258-77ec-4c02-bbe0-d79ec3faf88e/download/ds1446_tetti_verdi_potenziali.zip",
+   "last_modified": "2021-10-11T11:02:48.240908",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "658f62e8-b1f2-4039-8a60-2e77efda36ed",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "GEOreferenziato_CSV",
+   "id": "f3f19586-5f4e-44b3-9d8e-2fb3b44b1a67",
+   "name": "GEOreferenziato_CSV"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "clevercities",
+   "id": "c29fbca9-1e02-470d-a67e-b839bc2b3d5b",
+   "name": "clevercities"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "decumanus_fp7",
+   "id": "ffb56d9c-cfd3-4e17-9fc1-9b492cf0e86a",
+   "name": "decumanus_fp7"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "superficie",
+   "id": "2248feb8-dea9-4cf3-8f3a-7e37d07fcbe1",
+   "name": "superficie"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "tetti verdi",
+   "id": "2744c674-e63b-4d5d-81a6-54f2cd887677",
+   "name": "tetti verdi"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Energia",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-103720.288260energia.png",
+   "title": "Energia",
+   "id": "e07d20ee-56b1-439a-9e33-93b166b2b186",
+   "name": "ener"
+  }
+ ],
+ "creator_user_id": "5ec07a00-219e-4537-9f10-8c475acf5f5f",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds1446_tetti-verdi-potenziali",
+ "isopen": true,
+ "url": "",
+ "notes": "Per tetto verde si intende l'inverdimento dell'estradosso dei solai di copertura dei fabbricati.\r\n\r\nI dati sono stati rilasciati nell'ambito del progetto europeo **DECUMANUS FP7-SPACE** (*Development and Consolidation of Geospatial Sustainability Services for Adaptation and Climate Change Urban Impacts*). \r\n\r\n\r\nL'algoritmo sviluppato per mappare i tetti verdi esistenti e potenziali è strutturato in più fasi:\r\n\r\n * FASE 1: Identificare quali tetti hanno porzioni significative con pendenze adatte a diventare verdi,\r\n * FASE 2: Classificare i tetti così identificati ed elaborare i risultati finali,\r\n * FASE 3: Classificare gli edifici in base al loro utilizzo (residenza, uffici, servizi ecc)",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS1446",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100267\"], \"theme\": \"ENER\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "German Aerospace Center DLR",
+   "key": "publisher_name"
+  },
+  {
+   "value": "0000000089837915",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "25-01-2016",
+   "key": "issued"
+  },
+  {
+   "value": "11-10-2021",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2016-01-10\", \"temporal_start\": \"2015-11-10\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Tetti verdi potenziali a Milano",
+ "revision_id": "af3a6306-2300-4ca8-971e-60426cba4e09"
+}

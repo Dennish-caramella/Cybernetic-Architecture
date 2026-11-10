@@ -1,0 +1,204 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Servizi Statistici",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 4,
+ "id": "aa53c90a-45ca-44e1-a2a5-ea615bd19745",
+ "metadata_created": "2017-11-14T15:39:23.151589",
+ "metadata_modified": "2026-05-08T10:32:33.075060",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "aa53c90a-45ca-44e1-a2a5-ea615bd19745",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "a4f717e9-7422-456e-b10e-c49d0f7a63af",
+   "size": 2181495,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds201_economia_numero_unita_locali_settore_attivita_quartiere_2010.csv",
+   "created": "2017-11-14T15:39:48.447419",
+   "url": "https://dati.comune.milano.it/dataset/aa53c90a-45ca-44e1-a2a5-ea615bd19745/resource/a4f717e9-7422-456e-b10e-c49d0f7a63af/download/ds201_economia_numero_unita_locali_settore_attivita_quartiere_2010.csv",
+   "last_modified": "2017-12-20T18:27:35.963432",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "cb874d46-9b91-4510-8bce-93e80915d5ba",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "aa53c90a-45ca-44e1-a2a5-ea615bd19745",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "9f96b986-b65a-4fe3-96ae-39dcb2b56e74",
+   "size": 4720231,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": null,
+   "cache_url": null,
+   "name": "ds201_economia_numero_unita_locali_settore_attivita_quartiere_2010.json",
+   "created": "2018-08-22T08:55:23.463860",
+   "url": "https://dati.comune.milano.it/dataset/aa53c90a-45ca-44e1-a2a5-ea615bd19745/resource/9f96b986-b65a-4fe3-96ae-39dcb2b56e74/download/ds201_economia_numero_unita_locali_settore_attivita_quartiere_2010.json",
+   "last_modified": "2018-08-22T08:55:23.418211",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "db1c58cc-fe75-42d9-b79d-dc2f1feca92d",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "ATECO",
+   "id": "e298cc84-8921-4aab-911f-4e5a8abe5859",
+   "name": "ATECO"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "NIL",
+   "id": "0c667352-a9c8-47d6-a74b-5da7b9459ca7",
+   "name": "NIL"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "anno",
+   "id": "06f45323-db95-4566-a9ed-b1cf032e873f",
+   "name": "anno"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "impresa",
+   "id": "cf02bef3-54fa-49ad-a7f6-e215051b4025",
+   "name": "impresa"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Economia e finanze",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-091523.218282economia.png",
+   "title": "Economia e finanze",
+   "id": "4c36407a-c4de-4e28-b74b-5c239389c91b",
+   "name": "econ"
+  }
+ ],
+ "creator_user_id": "eb48acb0-0539-47ff-b432-8faaef443e48",
+ "relationships_as_subject": [],
+ "num_resources": 2,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds201-economia-numero-unita-locali-settore-attivita-quartiere-2010",
+ "isopen": true,
+ "url": "",
+ "notes": "Il dataset contiene il numero di unità locali (UL) presenti sul territorio del Comune di Milano e i relativi addetti, classificate per codice Ateco 2007 UL (a 5 cifre) e per NIL.\r\n\r\nNOTA 1: NIL=Nucleo di Identità Locale, i NIL sono 88 e corrispondono ai quartieri.\r\n\r\nNOTA 2: l'unità locale è il luogo fisico in cui l'impresa svolge la propria attività, pertanto può coincidere con l'impresa o con una parte di essa. (Alcuni esempi: agenzia, bar, deposito, negozio, laboratorio, magazzino, studio professionale, ufficio, ambulatorio, albergo...).\r\n\r\nNOTA 3: per una parte delle UL (circa il 2%) il dato sul NIL non è disponibile, a causa di indirizzo non presente o mancato aggancio con l'archivio dei toponimi. Per quest'ultima casistica l'aggancio è in fase di verifica/completamento.  L'aggancio è in fase di completamento.\r\n\r\nNOTA 4: i dati sugli occupati sono calcolati come unità di lavoro. A questo proposito si ricorda che le unità di lavoro a tempo pieno (ULA) si possono riferire al lavoro prestato nell'anno da un occupato a tempo pieno, oppure alla quantità di lavoro equivalente prestata da lavoratori a tempo parziale o da lavoratori che svolgono un doppio lavoro.(es. due lavoratori part-time al 50% risultano come 1 unità di lavoro). L'unità di lavoro non è dunque legata alla singola persona fisica, ma si riferisce convenzionalmente a una quantità di lavoro standard a tempo pieno definita dai contratti nazionali. Ciò spiega la presenza di valori con cifre decimali.\r\n\r\nFonte: ASIA (Archivio Statistico Imprese Attive, 2010)\r\n",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS201",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100227\"], \"theme\": \"ECON\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Innovazione Tecnologica e Digitale",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "06-12-2013",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2010-12-31\", \"temporal_start\": \"2010-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\", \"it\": \"Comune di Milano - Unit\\u00e0 Servizi Statistici\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Imprese: numero di unità locali per settore di attività e quartiere",
+ "revision_id": "72a733bb-1b04-41b2-8c2f-1ad5c07058d9"
+}

@@ -1,0 +1,235 @@
+{
+ "license_title": "Creative Commons Attribution",
+ "maintainer": "Comune di Milano - Unità Analytics e Open Data",
+ "dataset_is_local": true,
+ "private": false,
+ "maintainer_email": "opendatamilano@comune.milano.it",
+ "num_tags": 5,
+ "id": "799c2f11-e1aa-40db-95af-1ae403ed344a",
+ "metadata_created": "2024-11-06T09:46:32.226827",
+ "metadata_modified": "2026-05-08T09:53:49.235133",
+ "author": "",
+ "author_email": "",
+ "state": "active",
+ "version": "",
+ "relationships_as_object": [],
+ "license_id": "cc-by",
+ "type": "dataset",
+ "resources": [
+  {
+   "cache_last_updated": null,
+   "package_id": "799c2f11-e1aa-40db-95af-1ae403ed344a",
+   "distribution_format": "CSV",
+   "datastore_active": true,
+   "id": "92b0979a-d768-4c54-9821-7095464ddfed",
+   "size": 840668,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "CSV",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "text/csv",
+   "cache_url": null,
+   "name": "DS2845_Sezioni_censimento_2021.csv",
+   "created": "2024-11-06T09:47:19.436540",
+   "url": "https://dati.comune.milano.it/dataset/799c2f11-e1aa-40db-95af-1ae403ed344a/resource/92b0979a-d768-4c54-9821-7095464ddfed/download/sezioni_censimento_2021.csv",
+   "last_modified": "2024-11-06T09:47:19.302207",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 0,
+   "revision_id": "125ca5f5-5e54-463e-a635-1fb5456aa86d",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "799c2f11-e1aa-40db-95af-1ae403ed344a",
+   "distribution_format": "JSON",
+   "datastore_active": false,
+   "id": "637ffab3-b438-4e5d-8ce7-290b6a0d89ef",
+   "size": 3373925,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "JSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/json",
+   "cache_url": null,
+   "name": "DS2845_Sezioni_censimento_2021.json",
+   "created": "2024-11-06T09:52:14.359740",
+   "url": "https://dati.comune.milano.it/dataset/799c2f11-e1aa-40db-95af-1ae403ed344a/resource/637ffab3-b438-4e5d-8ce7-290b6a0d89ef/download/sezioni_censimento_2021.json",
+   "last_modified": "2024-11-06T09:52:14.287595",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 1,
+   "revision_id": "536885e9-ad3f-4931-9d30-06166396b660",
+   "resource_type": null
+  },
+  {
+   "cache_last_updated": null,
+   "package_id": "799c2f11-e1aa-40db-95af-1ae403ed344a",
+   "distribution_format": "GEOJSON",
+   "datastore_active": false,
+   "id": "7dbd7943-db13-4046-ae89-4124591b153c",
+   "size": 7492973,
+   "state": "active",
+   "hash": "",
+   "description": "anteprima disponibile",
+   "format": "GeoJSON",
+   "mimetype_inner": null,
+   "url_type": "upload",
+   "mimetype": "application/geo+json",
+   "cache_url": null,
+   "name": "DS2845_Sezioni_censimento_2021.geojson",
+   "created": "2024-11-06T09:49:33.215742",
+   "url": "https://dati.comune.milano.it/dataset/799c2f11-e1aa-40db-95af-1ae403ed344a/resource/7dbd7943-db13-4046-ae89-4124591b153c/download/sezioni_censimento_2021.geojson",
+   "last_modified": "2024-11-06T10:07:12.590681",
+   "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+   "position": 2,
+   "revision_id": "43f8b43b-7d7b-40d0-b793-304087d6e7de",
+   "resource_type": null
+  }
+ ],
+ "holder_name": "Comune di Milano",
+ "tags": [
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "Censimento 2021",
+   "id": "02ff157a-913f-4a81-ba95-d5edbbcb6395",
+   "name": "Censimento 2021"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "censimento",
+   "id": "7c401201-816a-4857-85a7-635200876d68",
+   "name": "censimento"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "geo",
+   "id": "18add329-6daa-4b28-9e3d-3cd2c9d18ea4",
+   "name": "geo"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "popolazione",
+   "id": "438fd337-07f3-43ef-9ffc-2f2bf715c18a",
+   "name": "popolazione"
+  },
+  {
+   "vocabulary_id": null,
+   "state": "active",
+   "display_name": "sezione_censimento",
+   "id": "a9190952-582f-45f5-94a8-df0e6338a8e1",
+   "name": "sezione_censimento"
+  }
+ ],
+ "holder_identifier": "c_f205",
+ "groups": [
+  {
+   "display_name": "Popolazione e società",
+   "description": "",
+   "image_display_url": "https://dati.comune.milano.it/uploads/group/2017-11-21-092127.298147popolazione.png",
+   "title": "Popolazione e società",
+   "id": "2f9121d1-d927-4605-ae5f-249553b8c1d0",
+   "name": "soci"
+  }
+ ],
+ "creator_user_id": "6ca67bde-4744-4414-9c53-a10b1ea37298",
+ "relationships_as_subject": [],
+ "num_resources": 3,
+ "organization": {
+  "description": "Dataset inseriti dal personale per conto del Comune di Milano",
+  "created": "2017-11-09T11:54:32.736470",
+  "title": "Comune di Milano",
+  "name": "comunedimilano",
+  "is_organization": true,
+  "state": "active",
+  "image_url": "2017-11-15-122315.733556MarchioComuneMilanoVerticale4Colori.png",
+  "revision_id": "b6f66242-d57a-4067-ba80-9501c05bc1b7",
+  "type": "organization",
+  "id": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+  "approval_status": "approved"
+ },
+ "name": "ds2845-territorio-localizzazione-delle-sezioni-di-censimento-anno-2021",
+ "isopen": true,
+ "url": "",
+ "notes": "La base dati riusabile contiene la rappresentazione geografica vettoriale delle sezioni di censimento 2021 del Comune di Milano.\r\n\r\nSi intende per sezione di censimento l'unità territoriale minima di rilevazione del comune sulla cui base è organizzata la rilevazione censuaria. È costituita da un solo corpo delimitato da una linea spezzata chiusa. A partire dalle sezioni di censimento sono ricostruibili, per somma, le entità geografiche ed amministrative di livello superiore (località abitate, aree sub-comunali, collegi elettorali e altre). Ciascuna sezione di censimento deve essere completamente contenuta all’interno di una ed una sola località. Il territorio comunale deve essere esaustivamente suddiviso in sezioni di censimento; la somma di tutte le sezioni di censimento ricostruisce l’intero territorio nazionale.\r\n\r\nPer la descrizione delle colonne, consultare il data dictionary all'interno della risorsa in formato csv.\r\n\r\nPer approfondimenti: https://www.istat.it/notizia/basi-territoriali-e-variabili-censuarie/?mtm_kwd=03_2023",
+ "owner_org": "da720f96-c055-4abb-bcce-d26eb8cf436a",
+ "extras": [
+  {
+   "value": "DS2845",
+   "key": "identifier"
+  },
+  {
+   "value": "[]",
+   "key": "alternate_identifier"
+  },
+  {
+   "value": "[{\"subthemes\": [\"http://eurovoc.europa.eu/100211\"], \"theme\": \"SOCI\"}]",
+   "key": "theme"
+  },
+  {
+   "value": "Comune di Milano - Direzione Innovazione Tecnologica e Digitale",
+   "key": "publisher_name"
+  },
+  {
+   "value": "01199250158",
+   "key": "publisher_identifier"
+  },
+  {
+   "value": "",
+   "key": "issued"
+  },
+  {
+   "value": "06-11-2024",
+   "key": "modified"
+  },
+  {
+   "value": "ITA_MIL",
+   "key": "geographical_name"
+  },
+  {
+   "value": "https://www.geonames.org/3173435",
+   "key": "geographical_geonames_url"
+  },
+  {
+   "value": "ITA",
+   "key": "language"
+  },
+  {
+   "value": "[{\"temporal_end\": \"2021-12-31\", \"temporal_start\": \"2021-01-01\"}]",
+   "key": "temporal_coverage"
+  },
+  {
+   "value": "Comune di Milano",
+   "key": "holder_name"
+  },
+  {
+   "value": "c_f205",
+   "key": "holder_identifier"
+  },
+  {
+   "value": "NEVER",
+   "key": "frequency"
+  },
+  {
+   "value": "https://www.istat.it/notizia/basi-territoriali-e-variabili-censuarie/?mtm_kwd=03_2023",
+   "key": "is_version_of"
+  },
+  {
+   "value": "[]",
+   "key": "conforms_to"
+  },
+  {
+   "value": "[{\"creator_identifier\": \"01199250158\", \"creator_name\": {\"en\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\", \"it\": \"Comune di Milano - Unit\\u00e0 Analytics e Open Data\"}}]",
+   "key": "creator"
+  }
+ ],
+ "license_url": "http://www.opendefinition.org/licenses/cc-by",
+ "title": "Territorio: localizzazione delle sezioni di Censimento anno 2021",
+ "revision_id": "4c816ce1-2183-4d44-a54c-7dac6bd88cf6"
+}
