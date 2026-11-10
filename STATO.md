@@ -24,7 +24,7 @@ Aggiornato 2026-11-09. Decisioni di impianto: `tesi/DECISIONI.md`. Storia: `gior
 Allocazione: raccomandazione spiegabile + accettazione differita con riserve + feedback personale, senza veto d'ingresso. Confronto critico e protocollo empirico (B0–B6): `tesi/CONFRONTO_APPROCCI_ALLOCAZIONE.md`.
 
 ## Dati Milano (10/11)
-Audit dei dati online, mercato e accessibilità, pancia della gaussiana: `secondo_cervello/ricerche/milano_dati/` (01–03). Bozza di accesso civico al Comune (non inviata): `milano_dati/04_bozza_richiesta_accesso_civico.md`. Scheda 11 (Sanchez, "belly of the bell curve") inaffidabile: frase non trovata; fonte citabile alternativa: DGR Lombardia XII/5248 del 3/11/2025 ("fascia grigia").
+Audit dei dati online, mercato e accessibilità, pancia della gaussiana: `secondo_cervello/ricerche/milano_dati/` (01–03). Fasce di reddito e strumenti (05), famiglie, studenti e nuovi arrivi (06): quota famiglie in affitto 32,4% (censimento 2021). Bozza di accesso civico al Comune (non inviata, 7 punti): `milano_dati/04_bozza_richiesta_accesso_civico.md`. Scheda 11 (Sanchez, "belly of the bell curve") inaffidabile: frase non trovata; fonte citabile alternativa: DGR Lombardia XII/5248 del 3/11/2025 ("fascia grigia").
 
 ## Avvisi ancora aperti (dal 28/10)
 - Pipeline Milano su dati reali (22/10): risultati sul PC, non ritrovati. Se non riemergono, si riparte dai dati del Lab riscaricati in cloud.
