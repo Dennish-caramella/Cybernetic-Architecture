@@ -1,0 +1,56 @@
+dimensione,modalita,famiglie_2025,quota_%
+Tipologia_familiare,Altre tipologie,11162,1.4
+Tipologia_familiare,Capofamiglia con almeno un convivente,26244,3.4
+Tipologia_familiare,Coppia sposata con figli,111121,14.2
+Tipologia_familiare,Coppia sposata senza figli,81561,10.4
+Tipologia_familiare,In convivenza,14191,1.8
+Tipologia_familiare,Monocomponente,435044,55.7
+Tipologia_familiare,Monogenitore con uno o piu figli,72252,9.3
+Tipologia_familiare,Monogenitore con uno o piu figli e almeno un convivente,29360,3.8
+Numero_componenti,1,449235,57.5
+Numero_componenti,2,159194,20.4
+Numero_componenti,3,88676,11.4
+Numero_componenti,4,62066,7.9
+Numero_componenti,5 e piu,21764,2.8
+Classe_eta_capofamiglia,35-64 anni,420387,53.8
+Classe_eta_capofamiglia,65-79 anni,138495,17.7
+Classe_eta_capofamiglia,80 anni e piu,94875,12.1
+Classe_eta_capofamiglia,Meno di 35 anni,127178,16.3
+capofamiglia_straniero,False,606155,77.6
+capofamiglia_straniero,True,174780,22.4
+monocomponente_per_eta,35-64 anni,207958,47.8
+monocomponente_per_eta,65-79 anni,71049,16.3
+monocomponente_per_eta,80 anni e piu,56788,13.1
+monocomponente_per_eta,Meno di 35 anni,99249,22.8
+eta_x_tipologia,35-64 anni | Altre tipologie,5233,
+eta_x_tipologia,35-64 anni | Capofamiglia con almeno un convivente,15841,
+eta_x_tipologia,35-64 anni | Coppia sposata con figli,90415,
+eta_x_tipologia,35-64 anni | Coppia sposata senza figli,22185,
+eta_x_tipologia,35-64 anni | In convivenza,4389,
+eta_x_tipologia,35-64 anni | Monocomponente,207958,
+eta_x_tipologia,35-64 anni | Monogenitore con uno o piu figli,48968,
+eta_x_tipologia,35-64 anni | Monogenitore con uno o piu figli e almeno un convivente,25398,
+eta_x_tipologia,65-79 anni | Altre tipologie,1807,
+eta_x_tipologia,65-79 anni | Capofamiglia con almeno un convivente,2827,
+eta_x_tipologia,65-79 anni | Coppia sposata con figli,14354,
+eta_x_tipologia,65-79 anni | Coppia sposata senza figli,35343,
+eta_x_tipologia,65-79 anni | In convivenza,1149,
+eta_x_tipologia,65-79 anni | Monocomponente,71049,
+eta_x_tipologia,65-79 anni | Monogenitore con uno o piu figli,10924,
+eta_x_tipologia,65-79 anni | Monogenitore con uno o piu figli e almeno un convivente,1042,
+eta_x_tipologia,80 anni e piu | Altre tipologie,1063,
+eta_x_tipologia,80 anni e piu | Capofamiglia con almeno un convivente,629,
+eta_x_tipologia,80 anni e piu | Coppia sposata con figli,3019,
+eta_x_tipologia,80 anni e piu | Coppia sposata senza figli,21656,
+eta_x_tipologia,80 anni e piu | In convivenza,2529,
+eta_x_tipologia,80 anni e piu | Monocomponente,56788,
+eta_x_tipologia,80 anni e piu | Monogenitore con uno o piu figli,9034,
+eta_x_tipologia,80 anni e piu | Monogenitore con uno o piu figli e almeno un convivente,157,
+eta_x_tipologia,Meno di 35 anni | Altre tipologie,3059,
+eta_x_tipologia,Meno di 35 anni | Capofamiglia con almeno un convivente,6947,
+eta_x_tipologia,Meno di 35 anni | Coppia sposata con figli,3333,
+eta_x_tipologia,Meno di 35 anni | Coppia sposata senza figli,2377,
+eta_x_tipologia,Meno di 35 anni | In convivenza,6124,
+eta_x_tipologia,Meno di 35 anni | Monocomponente,99249,
+eta_x_tipologia,Meno di 35 anni | Monogenitore con uno o piu figli,3326,
+eta_x_tipologia,Meno di 35 anni | Monogenitore con uno o piu figli e almeno un convivente,2763,

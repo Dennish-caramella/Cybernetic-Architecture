@@ -30,6 +30,8 @@ Il sottoscritto [NOME COGNOME], nato a [LUOGO] il [DATA], studente del corso di 
 
 6. **Edifici e aree in stato di degrado.** Aggiornamento successivo al 2017 del censimento degli edifici abbandonati o degradati pubblicato sul portale open data.
 
+7. **Composizione delle graduatorie SAP.** Per gli ultimi avvisi SAP sul territorio comunale, numero di domande in graduatoria e di assegnazioni per fascia ISEE (per esempio 0–3.000, 3.000–8.000, 8.000–14.000, 14.000–16.000 €) e per composizione del nucleo, in forma aggregata.
+
 I dati saranno usati esclusivamente per una tesi di laurea e per eventuali pubblicazioni scientifiche, citando la fonte.
 
 Distinti saluti,
