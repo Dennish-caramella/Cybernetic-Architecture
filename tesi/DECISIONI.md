@@ -36,3 +36,11 @@ Vedi `tesi/DOMANDA_DI_RICERCA.md`. Formula: scelta (c) — **il metodo è il con
 
 ### Calcolo
 - In cloud. Rete dell'ambiente sbloccata il 2026-11-09 per i portali dati (Comune di Milano, Regione Lombardia, ISTAT, Agenzia Entrate, MEF, Overpass) e per Notion e Box.
+
+## 2026-11-10 — Allocazione: raccomandazione spiegabile + matching con scelta (sostituisce "individui → gruppi → lotti")
+
+- **Decisione:** individui → lotti → comunità sul lotto. Ogni famiglia ha un vettore dei desideri (ancore di lavoro, scuola e cura; pesi sui criteri; budget). Il sistema propone i lotti migliori spiegando il perché; la famiglia sceglie; l'assegnazione usa l'accettazione differita con riserve di capacità per categoria; il feedback aggiorna solo i pesi della famiglia, le regole comuni cambiano solo per decisione collettiva.
+- **Niente veto di ingresso** tra persone (scartata la stabilità individuale come regola d'ingresso): rischio di esclusione e discriminazione, e nessuna stabilità garantita con più di due tipi di famiglia. Dopo l'assegnazione: fase di conoscenza e uscita libera senza penalità.
+- **Diversità** senza imposizione tra persone: raggruppamento per esigenze di luogo (non per somiglianza personale) e riserve di capacità sul lotto.
+- **Perché, e confronto con gli approcci esistenti:** `tesi/CONFRONTO_APPROCCI_ALLOCAZIONE.md`. La scelta va dimostrata empiricamente con un confronto pre-registrato tra sette approcci (B0–B6) su popolazioni simulate, poi con un contrasto su persone reali in F2.
+- **Chiarito:** il confronto economico cooperativa/developer va tarato su casi reali e riportato come gap fondiario ΔL (regione di parametri), non come stima puntuale.

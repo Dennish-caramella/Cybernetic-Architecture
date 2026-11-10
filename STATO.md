@@ -20,6 +20,9 @@ Aggiornato 2026-11-09. Decisioni di impianto: `tesi/DECISIONI.md`. Storia: `gior
 7. Revisione della letteratura (09/11): `secondo_cervello/ricerche/reports/Lotti ideali partecipazione e digital twin.md` (6 filoni, quasi tutto da abstract: vedi le tabelle finali di letture e verifiche).
 8. Frontiere dei modelli e revisione critica (10/11 notte): `secondo_cervello/ricerche/reports/Frontiere modelli matching e scelta sociale.md` (7 filoni + 3 revisori: formulario, falle, ipotesi H1–H8, costituzione minima, MVP F1, indice prima parte).
 
+## Decisione del 10/11
+Allocazione: raccomandazione spiegabile + accettazione differita con riserve + feedback personale, senza veto d'ingresso. Confronto critico e protocollo empirico (B0–B6): `tesi/CONFRONTO_APPROCCI_ALLOCAZIONE.md`.
+
 ## Avvisi ancora aperti (dal 28/10)
 - Pipeline Milano su dati reali (22/10): risultati sul PC, non ritrovati. Se non riemergono, si riparte dai dati del Lab riscaricati in cloud.
 - Dati numerici non verificati nelle schede 08, 14, 20, 23; incoerenza scheda 13; residui PDF scheda 10; scheda 24 (De Carlo) da verificare sul libro; voci [S]/[L] del Report fondativo da verificare.
