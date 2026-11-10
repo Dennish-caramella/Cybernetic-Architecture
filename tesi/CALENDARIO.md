@@ -4,11 +4,14 @@ Obiettivo: laurea nei primi mesi del 2028. Ritmo: un paio d'ore le sere dei gior
 
 | Fase | Periodo | Contenuto | Cancello per passare oltre |
 |---|---|---|---|
-| **F0 Fondamenta** | nov–dic 2026 | riordino repo e PC (5 categorie); nuove letture (bibliografia consigliata, Morel, Friedman, Cybersyn, Jacobs) e schede dei casi studio dagli artifact; domanda e ipotesi definitive; mappa critica dei modelli di analisi (Lab, consolidati, frontiera) | domanda e ipotesi scritte, con soglie fissate prima delle prove |
-| **F1 Scala urbana con agenti** | gen–apr 2027 | base del Lab ripulita e riproducibile in cloud; lotti verificati; modello economico per lotto; formazione dei gruppi e abbinamento gruppi–lotti; simulazione con agenti | lotti che reggono una verifica tecnica; abbinamento confrontato con una linea di base → bozza paper 1 |
-| **F2 Prova reale** | mag–lug 2027 | test con persone reali (partner da scegliere quando il sistema funziona) | dati umani raccolti con consenso |
+| **F0 Fondamenta** | 9 nov – 5 dic 2026 (anticipata il 10/11) | riordino repo e PC (5 categorie); nuove letture (bibliografia consigliata, Morel, Friedman, Cybersyn, Jacobs) e schede dei casi studio dagli artifact; domanda e ipotesi definitive; mappa critica dei modelli di analisi (Lab, consolidati, frontiera) | domanda e ipotesi scritte, con soglie fissate prima delle prove |
+| **F1 Scala urbana con agenti** | dic 2026 – mar 2027: **collaudata entro marzo** | base del Lab ripulita e riproducibile in cloud; lotti verificati; modello economico per lotto; formazione dei gruppi e abbinamento gruppi–lotti; simulazione con agenti | lotti che reggono una verifica tecnica; abbinamento confrontato con una linea di base → bozza paper 1 |
+| **F2 Prova reale** | strutturata entro marzo 2027; svolta apr–lug 2027 | test con persone reali (partner da scegliere quando il sistema funziona) | dati umani raccolti con consenso |
 | **F3 Scala edificio** | ago–nov 2027 | un lotto, un gruppo; Villaggio Verticale come base | configurazioni distinte e tecnicamente credibili → paper 2 |
 | **F4 Scrittura** | dic 2027–feb 2028 | tesi, consegna, paper | — |
+
+## Revisione del 10/11
+Dennis chiede di chiudere F0 entro fine novembre / inizio dicembre, per arrivare a marzo 2027 con la scala urbana collaudata e la Fase 2 già strutturata. Da aprile il lavoro si intensifica.
 
 ## F0 in dettaglio
 1. Rete sbloccata (fatto 09/11).
