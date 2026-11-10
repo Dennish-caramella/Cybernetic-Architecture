@@ -23,6 +23,9 @@ Aggiornato 2026-11-09. Decisioni di impianto: `tesi/DECISIONI.md`. Storia: `gior
 ## Decisione del 10/11
 Allocazione: raccomandazione spiegabile + accettazione differita con riserve + feedback personale, senza veto d'ingresso. Confronto critico e protocollo empirico (B0–B6): `tesi/CONFRONTO_APPROCCI_ALLOCAZIONE.md`.
 
+## Dati Milano (10/11)
+Audit dei dati online, mercato e accessibilità, pancia della gaussiana: `secondo_cervello/ricerche/milano_dati/` (01–03). Bozza di accesso civico al Comune (non inviata): `milano_dati/04_bozza_richiesta_accesso_civico.md`. Scheda 11 (Sanchez, "belly of the bell curve") inaffidabile: frase non trovata; fonte citabile alternativa: DGR Lombardia XII/5248 del 3/11/2025 ("fascia grigia").
+
 ## Avvisi ancora aperti (dal 28/10)
 - Pipeline Milano su dati reali (22/10): risultati sul PC, non ritrovati. Se non riemergono, si riparte dai dati del Lab riscaricati in cloud.
 - Dati numerici non verificati nelle schede 08, 14, 20, 23; incoerenza scheda 13; residui PDF scheda 10; scheda 24 (De Carlo) da verificare sul libro; voci [S]/[L] del Report fondativo da verificare.
