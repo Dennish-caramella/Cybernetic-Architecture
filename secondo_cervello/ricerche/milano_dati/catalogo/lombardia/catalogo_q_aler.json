@@ -1,0 +1,2444 @@
+{
+  "results" :
+    [
+      {
+        "resource" :
+          {
+            "name" : "Dati Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2020-2021",
+            "id" : "pzpi-qcfg",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2021. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2022-09-23T15:13:42.000Z",
+            "createdAt" : "2022-05-26T13:38:30.000Z",
+            "metadata_updated_at" : "2022-09-23T15:13:42.000Z",
+            "data_updated_at" : "2022-05-26T13:59:31.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 7,
+                "page_views_last_month" : 23,
+                "page_views_total" : 653,
+                "page_views_last_week_log" : 3.0,
+                "page_views_last_month_log" : 4.584962500721157,
+                "page_views_total_log" : 9.353146825498083
+              },
+            "columns_name" :
+              [
+                "RISULTATI_BILANCIO_2018",
+                "RISULTATI_BILANCIO_2020",
+                "RISULTATI_BILANCIO_2019",
+                "DETTAGLI_SOCIETA",
+                "NOTE",
+                "NUMERO_RAPPRESENTANTI_AMMINISTRAZIONE",
+                "RAGIONE_SOCIALE",
+                "ONERE_COMPLESSIVO_2020",
+                "DETTAGLI_RAPPRESENTANTI_AMMINISTRAZIONE",
+                "TRATTAMENTO_ECONOMICO_RAPPRESENTANTI_AMMINISTRAZIONE"
+              ],
+            "columns_field_name" :
+              [
+                "risultati_bilancio_2018",
+                "risultati_bilancio_2020",
+                "risultati_bilancio_2019",
+                "dettagli_societa",
+                "note",
+                "numero_rappresentanti",
+                "ragione_sociale",
+                "onere_complessivo_2020",
+                "dettagli_rappresentanti",
+                "trattamento_economico"
+              ],
+            "columns_datatype" :
+              [
+                "Number",
+                "Number",
+                "Number",
+                "URL",
+                "Text",
+                "Number",
+                "Text",
+                "Number",
+                "URL",
+                "Number"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                { "noCommas" : "true", "precision" : "2", "align" : "right" },
+                { "noCommas" : "true", "precision" : "2", "align" : "right" },
+                { "noCommas" : "true", "precision" : "2", "align" : "right" },
+                {},
+                {},
+                { "align" : "right" },
+                {},
+                { "noCommas" : "true", "precision" : "2", "align" : "right" },
+                {},
+                { "noCommas" : "true", "precision" : "2", "align" : "right" }
+              ],
+            "download_count" : 34,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2022-05-26T13:59:37.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2021",
+                "pubblici",
+                "enti",
+                "vigilati",
+                "2021",
+                "16dati_ale"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/pzpi-qcfg",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Dati-Aziende-Lombarde-per-l-Edilizia-Residenziale-/pzpi-qcfg",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Dati Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2024",
+            "id" : "9yqu-ax4h",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2024. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2024-11-11T14:57:52.000Z",
+            "createdAt" : "2024-11-02T22:03:33.000Z",
+            "metadata_updated_at" : "2024-11-11T14:57:52.000Z",
+            "data_updated_at" : "2024-11-11T11:18:07.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 3,
+                "page_views_last_month" : 22,
+                "page_views_total" : 446,
+                "page_views_last_week_log" : 2.0,
+                "page_views_last_month_log" : 4.523561956057013,
+                "page_views_total_log" : 8.804131021183318
+              },
+            "columns_name" :
+              [
+                "NUMERO RAPPRESENTANTI AMMINISTRAZIONE",
+                "RISULTATI BILANCIO ANNO 2021",
+                "TRATTAMENTO ECONOMICO AMMINISTRAZIONE",
+                "RISULTATI BILANCIO ANNO 2023",
+                "DETTAGLI RAPPRESENTANTI AMMINISTRAZIONE",
+                "ONERE COMPLESSIVO ANNO 2023",
+                "NOTE",
+                "RAGIONE SOCIALE",
+                "RISULTATI BILANCIO ANNO 2022",
+                "DETTAGLI SOCIETA"
+              ],
+            "columns_field_name" :
+              [
+                "numero_rappresentanti",
+                "risultati_bilancio_anno_2021",
+                "trattamento_economico",
+                "risultati_bilancio_anno_2023",
+                "dettagli_rappresentanti",
+                "onere_complessivo_anno_2023",
+                "note",
+                "ragione_sociale",
+                "risultati_bilancio_anno_2022",
+                "dettagli_societa"
+              ],
+            "columns_datatype" :
+              [
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "URL",
+                "Number",
+                "Text",
+                "Text",
+                "Number",
+                "URL"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {
+                  "decimalSeparator" : ",",
+                  "precision" : "2",
+                  "groupSeparator" : "."
+                },
+                { "decimalSeparator" : ",", "groupSeparator" : "." },
+                {
+                  "decimalSeparator" : ",",
+                  "precision" : "2",
+                  "groupSeparator" : "."
+                },
+                {},
+                { "decimalSeparator" : ",", "groupSeparator" : "." },
+                {},
+                {},
+                {
+                  "decimalSeparator" : ",",
+                  "precision" : "2",
+                  "groupSeparator" : "."
+                },
+                {}
+              ],
+            "download_count" : 21,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-11-02T22:20:58.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2024",
+                "enti",
+                "pubblici",
+                "vigilati",
+                "2024",
+                "3amminist"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Link-alla-Serie",
+                  "value" : "https://dati.lombardia.it/browse?tags=art.22aler2024"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/9yqu-ax4h",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Dati-Aziende-Lombarde-per-l-Edilizia-Residenziale-/9yqu-ax4h",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Elenco Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2020-2021",
+            "id" : "3nec-5ccy",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2021. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2022-09-23T15:13:59.000Z",
+            "createdAt" : "2022-05-26T13:53:17.000Z",
+            "metadata_updated_at" : "2022-09-23T15:13:59.000Z",
+            "data_updated_at" : "2022-05-26T13:57:18.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 5,
+                "page_views_last_month" : 28,
+                "page_views_total" : 798,
+                "page_views_last_week_log" : 2.584962500721156,
+                "page_views_last_month_log" : 4.857980995127573,
+                "page_views_total_log" : 9.642051692927977
+              },
+            "columns_name" :
+              [
+                "DURATA_IMPEGNO",
+                "DENOMINAZIONE",
+                "ATTIVITA_SVOLTE",
+                "SITO_ISTITUZIONALE",
+                "FUNZIONI_ATTRIBUITE",
+                "DETTAGLI_SOCIETA",
+                "EVENTUALE_MISURA_DI_PARTECIPAZIONE",
+                "NOTE"
+              ],
+            "columns_field_name" :
+              [
+                "durata_impegno",
+                "denominazione",
+                "attivita_svolte",
+                "sito_istituzionale",
+                "funzioni_attribuite",
+                "dettagli_societa",
+                "eventuale_misura_di",
+                "note"
+              ],
+            "columns_datatype" :
+              [ "Text", "Text", "Text", "URL", "Text", "URL", "Text", "Text" ],
+            "columns_description" : [ "", "", "", "", "", "", "", "" ],
+            "columns_format" : [ {}, {}, {}, {}, {}, {}, {}, {} ],
+            "download_count" : 43,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2022-05-26T13:57:24.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2021",
+                "pubblici",
+                "enti",
+                "vigilati",
+                "2021",
+                "32elenco_a"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/3nec-5ccy",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Elenco-Aziende-Lombarde-per-l-Edilizia-Residenzial/3nec-5ccy",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Dati Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2022-2023 - SMAF",
+            "id" : "eu6i-hshu",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2023. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2023-11-20T20:27:33.000Z",
+            "createdAt" : "2023-11-14T11:44:34.000Z",
+            "metadata_updated_at" : "2023-11-20T20:27:32.000Z",
+            "data_updated_at" : "2023-11-20T20:27:33.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 4,
+                "page_views_last_month" : 29,
+                "page_views_total" : 665,
+                "page_views_last_week_log" : 2.321928094887362,
+                "page_views_last_month_log" : 4.906890595608519,
+                "page_views_total_log" : 9.379378367071263
+              },
+            "columns_name" :
+              [
+                "DETTAGLI RAPPRESENTANTI AMMINISTRAZIONE",
+                "RISULTATI BILANCIO ANNO 2020",
+                "TRATTAMENTO ECONOMICO AMMINISTRAZIONE",
+                "NOTE",
+                "RAGIONE SOCIALE",
+                "RISULTATI BILANCIO ANNO 2022",
+                "NUMERO RAPPRESENTANTI AMMINISTRAZIONE",
+                "ONERE COMPLESSIVO ANNO 2022",
+                "DETTAGLI SOCIETA",
+                "RISULTATI BILANCIO ANNO 2021"
+              ],
+            "columns_field_name" :
+              [
+                "dettagli_rappresentanti",
+                "risultati_bilancio_anno_2020",
+                "trattamento_economico",
+                "note",
+                "ragione_sociale",
+                "risultati_bilancio_anno_2022",
+                "numero_rappresentanti",
+                "onere_complessivo_anno_2022",
+                "dettagli_societa",
+                "risultati_bilancio_anno_2021"
+              ],
+            "columns_datatype" :
+              [
+                "URL",
+                "Number",
+                "Number",
+                "Text",
+                "Text",
+                "Number",
+                "Number",
+                "Number",
+                "URL",
+                "Number"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                {},
+                {
+                  "noCommas" : "true",
+                  "precision" : "2",
+                  "decimalSeparator" : ".",
+                  "align" : "right",
+                  "groupSeparator" : ","
+                },
+                {
+                  "noCommas" : "true",
+                  "precision" : "2",
+                  "decimalSeparator" : ".",
+                  "align" : "right",
+                  "groupSeparator" : ","
+                },
+                {},
+                {},
+                {
+                  "noCommas" : "true",
+                  "precision" : "2",
+                  "decimalSeparator" : ".",
+                  "align" : "right",
+                  "groupSeparator" : ","
+                },
+                {
+                  "decimalSeparator" : ".",
+                  "groupSeparator" : ",",
+                  "align" : "right"
+                },
+                {
+                  "noCommas" : "true",
+                  "precision" : "2",
+                  "decimalSeparator" : ".",
+                  "align" : "right",
+                  "groupSeparator" : ","
+                },
+                {},
+                {
+                  "noCommas" : "true",
+                  "precision" : "2",
+                  "decimalSeparator" : ".",
+                  "align" : "right",
+                  "groupSeparator" : ","
+                }
+              ],
+            "download_count" : 20,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2023-11-17T13:58:48.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2023",
+                "pubblici",
+                "enti",
+                "vigilati",
+                "2023",
+                "16dati_ale"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/eu6i-hshu",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Dati-Aziende-Lombarde-per-l-Edilizia-Residenziale-/eu6i-hshu",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Elenco Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2022-2023 - SMAF",
+            "id" : "4gnh-f5vz",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2023. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2023-11-21T17:38:21.000Z",
+            "createdAt" : "2023-11-14T11:42:39.000Z",
+            "metadata_updated_at" : "2023-11-21T17:38:20.000Z",
+            "data_updated_at" : "2023-11-21T17:38:21.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 4,
+                "page_views_last_month" : 23,
+                "page_views_total" : 590,
+                "page_views_last_week_log" : 2.321928094887362,
+                "page_views_last_month_log" : 4.584962500721157,
+                "page_views_total_log" : 9.207014320177533
+              },
+            "columns_name" :
+              [
+                "SITO ISTITUZIONALE",
+                "DURATA IMPEGNO",
+                "DETTAGLI SOCIETA",
+                "DENOMINAZIONE",
+                "EVENTUALE MISURA \nDI PARTECIPAZIONE",
+                "NOTE",
+                "FUNZIONI ATTRIBUITE",
+                "ATTIVITA SVOLTE"
+              ],
+            "columns_field_name" :
+              [
+                "sito_istituzionale",
+                "durata_impegno",
+                "dettagli_societa",
+                "denominazione",
+                "eventuale_misura_di",
+                "note",
+                "funzioni_attribuite",
+                "attivita_svolte"
+              ],
+            "columns_datatype" :
+              [ "URL", "Text", "URL", "Text", "Text", "Text", "Text", "Text" ],
+            "columns_description" : [ "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                { "align" : "right" },
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                {}
+              ],
+            "download_count" : 45,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2023-11-17T13:58:00.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2023",
+                "pubblici",
+                "enti",
+                "vigilati",
+                "2023",
+                "32elenco_a"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/4gnh-f5vz",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Elenco-Aziende-Lombarde-per-l-Edilizia-Residenzial/4gnh-f5vz",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Elenco Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2021-2022",
+            "id" : "3mnc-wu2c",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2022. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2022-10-17T16:48:03.000Z",
+            "createdAt" : "2022-10-17T16:35:23.000Z",
+            "metadata_updated_at" : "2022-10-17T16:48:03.000Z",
+            "data_updated_at" : "2022-10-17T16:45:16.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 4,
+                "page_views_last_month" : 17,
+                "page_views_total" : 735,
+                "page_views_last_week_log" : 2.321928094887362,
+                "page_views_last_month_log" : 4.169925001442312,
+                "page_views_total_log" : 9.523561956057014
+              },
+            "columns_name" :
+              [
+                "NOTE",
+                "FUNZIONI ATTRIBUITE",
+                "DENOMINAZIONE",
+                "DURATA IMPEGNO",
+                "ATTIVITA SVOLTE",
+                "DETTAGLI SOCIETA",
+                "EVENTUALE MISURA \nDI PARTECIPAZIONE",
+                "SITO ISTITUZIONALE"
+              ],
+            "columns_field_name" :
+              [
+                "note",
+                "funzioni_attribuite",
+                "denominazione",
+                "durata_impegno",
+                "attivita_svolte",
+                "dettagli_societa",
+                "eventuale_misura_di",
+                "sito_istituzionale"
+              ],
+            "columns_datatype" :
+              [ "Text", "Text", "Text", "Text", "Text", "URL", "Text", "URL" ],
+            "columns_description" : [ "", "", "", "", "", "", "", "" ],
+            "columns_format" : [ {}, {}, {}, {}, {}, {}, {}, {} ],
+            "download_count" : 42,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2022-10-17T16:45:35.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2022",
+                "pubblici",
+                "enti",
+                "vigilati",
+                "2022",
+                "32elenco_a"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Data-ultima-modifica",
+                  "value" : "31/10/2022"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/3mnc-wu2c",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Elenco-Aziende-Lombarde-per-l-Edilizia-Residenzial/3mnc-wu2c",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Dati Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2021-2022",
+            "id" : "evbd-85ze",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2022. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2022-10-17T16:47:29.000Z",
+            "createdAt" : "2022-10-17T16:31:40.000Z",
+            "metadata_updated_at" : "2022-10-17T16:47:29.000Z",
+            "data_updated_at" : "2022-10-17T16:42:25.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 6,
+                "page_views_last_month" : 25,
+                "page_views_total" : 624,
+                "page_views_last_week_log" : 2.807354922057604,
+                "page_views_last_month_log" : 4.700439718141093,
+                "page_views_total_log" : 9.287712379549449
+              },
+            "columns_name" :
+              [
+                "NUMERO RAPPRESENTANTI AMMINISTRAZIONE",
+                "NOTE",
+                "ONERE COMPLESSIVO ANNO 2021",
+                "RAGIONE SOCIALE",
+                "RISULTATI BILANCIO ANNO 2020",
+                "RISULTATI BILANCIO ANNO 2019",
+                "DETTAGLI SOCIETA",
+                "RISULTATI BILANCIO ANNO 2021",
+                "TRATTAMENTO ECONOMICO AMMINISTRAZIONE",
+                "DETTAGLI RAPPRESENTANTI AMMINISTRAZIONE"
+              ],
+            "columns_field_name" :
+              [
+                "numero_rappresentanti",
+                "note",
+                "onere_complessivo_anno_2021",
+                "ragione_sociale",
+                "risultati_bilancio_anno_2020",
+                "risultati_bilancio_anno_2019",
+                "dettagli_societa",
+                "risultati_bilancio_anno_2021",
+                "trattamento_economico",
+                "dettagli_rappresentanti"
+              ],
+            "columns_datatype" :
+              [
+                "Number",
+                "Text",
+                "Number",
+                "Text",
+                "Number",
+                "Number",
+                "URL",
+                "Number",
+                "Number",
+                "URL"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                { "align" : "right" },
+                {},
+                { "noCommas" : "true", "precision" : "2", "align" : "right" },
+                {},
+                { "noCommas" : "true", "precision" : "2", "align" : "right" },
+                { "noCommas" : "true", "precision" : "2", "align" : "right" },
+                {},
+                { "noCommas" : "true", "precision" : "2", "align" : "right" },
+                { "noCommas" : "true", "precision" : "2", "align" : "right" },
+                {}
+              ],
+            "download_count" : 44,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2022-10-17T16:42:30.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2022",
+                "pubblici",
+                "enti",
+                "vigilati",
+                "2022",
+                "16dati_ale"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Data-ultima-modifica",
+                  "value" : "31/10/2022"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/evbd-85ze",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Dati-Aziende-Lombarde-per-l-Edilizia-Residenziale-/evbd-85ze",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Elenco Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2024",
+            "id" : "cguq-bp8z",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2024. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2024-11-11T14:32:55.000Z",
+            "createdAt" : "2024-11-02T22:04:00.000Z",
+            "metadata_updated_at" : "2024-11-11T14:32:55.000Z",
+            "data_updated_at" : "2024-11-11T14:32:49.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 11,
+                "page_views_last_month" : 34,
+                "page_views_total" : 574,
+                "page_views_last_week_log" : 3.5849625007211565,
+                "page_views_last_month_log" : 5.129283016944966,
+                "page_views_total_log" : 9.167418145831737
+              },
+            "columns_name" :
+              [
+                "DENOMINAZIONE",
+                "SITO ISTITUZIONALE",
+                "FUNZIONI ATTRIBUITE",
+                "ATTIVITA SVOLTE",
+                "NOTE",
+                "EVENTUALE MISURA \nDI PARTECIPAZIONE",
+                "DETTAGLI SOCIETA",
+                "DURATA IMPEGNO"
+              ],
+            "columns_field_name" :
+              [
+                "denominazione",
+                "sito_istituzionale",
+                "funzioni_attribuite",
+                "attivita_svolte",
+                "note",
+                "eventuale_misura_di",
+                "dettagli_societa",
+                "durata_impegno"
+              ],
+            "columns_datatype" :
+              [ "Text", "URL", "Text", "Text", "Text", "Text", "URL", "Text" ],
+            "columns_description" : [ "", "", "", "", "", "", "", "" ],
+            "columns_format" : [ {}, {}, {}, {}, {}, {}, {}, {} ],
+            "download_count" : 11,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-11-11T14:32:55.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2024",
+                "enti",
+                "pubblici",
+                "vigilati",
+                "2024",
+                "3amminist"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Link-alla-Serie",
+                  "value" : "https://dati.lombardia.it/browse?tags=art.22aler2024"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/cguq-bp8z",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Elenco-Aziende-Lombarde-per-l-Edilizia-Residenzial/cguq-bp8z",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Amministratori Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2020-2021",
+            "id" : "m4uf-qnq8",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2021. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni.\n\nAvviso sul riutilizzo dei dati personali: I dati personali presenti in questo dataset sono pubblicati da Regione Lombardia esclusivamente in adempimento degli obblighi di trasparenza previsti dal D.lgs. 33/2013. Il loro riutilizzo è consentito solo alle condizioni previste dalla normativa sul riuso dei dati pubblici (D.lgs. 36/2006 e s.m.i.) e deve essere compatibile con le finalità per le quali i dati sono stati raccolti. È vietato qualsiasi riutilizzo che comporti trattamenti non conformi al GDPR, tra cui finalità di marketing, profilazione, contatto non richiesto, spam o altre attività non autorizzate.",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2026-02-04T08:51:22.000Z",
+            "createdAt" : "2022-05-26T13:39:54.000Z",
+            "metadata_updated_at" : "2026-02-04T08:51:22.000Z",
+            "data_updated_at" : "2022-05-26T14:01:11.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 7,
+                "page_views_last_month" : 22,
+                "page_views_total" : 570,
+                "page_views_last_week_log" : 3.0,
+                "page_views_last_month_log" : 4.523561956057013,
+                "page_views_total_log" : 9.157346935362844
+              },
+            "columns_name" :
+              [
+                "DETTAGLI_SOCIETA",
+                "NOTE",
+                "COGNOME",
+                "ENTE",
+                "NOME",
+                "TRATTAMENTO_ECONOMICO_AMMINISTRATORE",
+                "IN_CARICA_FINO_AL",
+                "LINK_AGGIORNAMENTO_DICHIARAZIONI",
+                "IN_CARICA_DAL"
+              ],
+            "columns_field_name" :
+              [
+                "dettagli_societa",
+                "note",
+                "cognome",
+                "ente",
+                "nome",
+                "trattamento_economico",
+                "in_carica_fino_al",
+                "link_aggiornamento",
+                "in_carica_dal"
+              ],
+            "columns_datatype" :
+              [
+                "URL",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Number",
+                "Calendar date",
+                "URL",
+                "Calendar date"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "noCommas" : "true", "precision" : "2", "align" : "right" },
+                { "view" : "date_dmy" },
+                {},
+                { "view" : "date_dmy" }
+              ],
+            "download_count" : 47,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2022-05-26T14:01:17.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2021",
+                "pubblici",
+                "enti",
+                "vigilati",
+                "2021",
+                "3amminist"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/m4uf-qnq8",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Amministratori-Aziende-Lombarde-per-l-Edilizia-Res/m4uf-qnq8",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Amministratori Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2024",
+            "id" : "ubme-vvdi",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2024. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni.\n\nAvviso sul riutilizzo dei dati personali: I dati personali presenti in questo dataset sono pubblicati da Regione Lombardia esclusivamente in adempimento degli obblighi di trasparenza previsti dal D.lgs. 33/2013. Il loro riutilizzo è consentito solo alle condizioni previste dalla normativa sul riuso dei dati pubblici (D.lgs. 36/2006 e s.m.i.) e deve essere compatibile con le finalità per le quali i dati sono stati raccolti. È vietato qualsiasi riutilizzo che comporti trattamenti non conformi al GDPR, tra cui finalità di marketing, profilazione, contatto non richiesto, spam o altre attività non autorizzate.",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2026-02-04T08:53:55.000Z",
+            "createdAt" : "2024-11-02T22:04:34.000Z",
+            "metadata_updated_at" : "2026-02-04T08:53:55.000Z",
+            "data_updated_at" : "2024-11-04T09:40:45.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 6,
+                "page_views_last_month" : 22,
+                "page_views_total" : 541,
+                "page_views_last_week_log" : 2.807354922057604,
+                "page_views_last_month_log" : 4.523561956057013,
+                "page_views_total_log" : 9.082149041353873
+              },
+            "columns_name" :
+              [
+                "NOME",
+                "IN CARICA DAL",
+                "COGNOME",
+                "DETTAGLI SOCIETA",
+                "ENTE",
+                "NOTE",
+                "LINK AGGIORNAMENTO DICHIARAZIONI",
+                "TRATTAMENTO ECONOMICO AMMINISTRATORE",
+                "IN CARICA FINO AL"
+              ],
+            "columns_field_name" :
+              [
+                "nome",
+                "in_carica_dal",
+                "cognome",
+                "dettagli_societa",
+                "ente",
+                "note",
+                "link_aggiornamento",
+                "trattamento_economico",
+                "in_carica_fino_al"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Calendar date",
+                "Text",
+                "URL",
+                "Text",
+                "Text",
+                "URL",
+                "Number",
+                "Calendar date"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                {},
+                { "view" : "date_dmy" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "decimalSeparator" : ",", "groupSeparator" : "." },
+                { "view" : "date_dmy" }
+              ],
+            "download_count" : 8,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-11-02T22:20:52.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2024",
+                "pubblici",
+                "enti",
+                "vigilati",
+                "2024",
+                "3amminist"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Link-alla-Serie",
+                  "value" : "https://dati.lombardia.it/browse?tags=art.22aler2024"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/ubme-vvdi",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Amministratori-Aziende-Lombarde-per-l-Edilizia-Res/ubme-vvdi",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Dati Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2025",
+            "id" : "nzrd-zjg2",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2025. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2025-12-04T08:49:29.000Z",
+            "createdAt" : "2025-11-12T16:32:30.000Z",
+            "metadata_updated_at" : "2025-12-04T08:49:29.000Z",
+            "data_updated_at" : "2025-11-14T16:08:59.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 18,
+                "page_views_last_month" : 37,
+                "page_views_total" : 267,
+                "page_views_last_week_log" : 4.247927513443585,
+                "page_views_last_month_log" : 5.247927513443585,
+                "page_views_total_log" : 8.066089190457772
+              },
+            "columns_name" :
+              [
+                "NUMERO RAPPRESENTANTI AMMINISTRAZIONE",
+                "DETTAGLI RAPPRESENTANTI AMMINISTRAZIONE",
+                "RISULTATI BILANCIO ANNO 2022",
+                "NOTE",
+                "RISULTATI BILANCIO ANNO 2023",
+                "TRATTAMENTO ECONOMICO AMMINISTRAZIONE",
+                "ONERE COMPLESSIVO ANNO 2024",
+                "RISULTATI BILANCIO ANNO 2024",
+                "DENOMINAZIONE ENTE/RAGIONE SOCIALE",
+                "DETTAGLI ENTE"
+              ],
+            "columns_field_name" :
+              [
+                "numero_rappresentanti",
+                "dettagli_rappresentanti",
+                "risultati_bilancio_anno_2022",
+                "note",
+                "risultati_bilancio_anno_2023",
+                "trattamento_economico",
+                "onere_complessivo_anno_2024",
+                "risultati_bilancio_anno_2024",
+                "denominazione_ente_ragione",
+                "dettagli_ente"
+              ],
+            "columns_datatype" :
+              [
+                "Number",
+                "URL",
+                "Number",
+                "Text",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Text",
+                "URL"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                {
+                  "precisionStyle" : "currency",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : "."
+                },
+                {},
+                {
+                  "precisionStyle" : "currency",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : "."
+                },
+                {
+                  "precisionStyle" : "currency",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : "."
+                },
+                {
+                  "precisionStyle" : "currency",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : "."
+                },
+                {
+                  "precisionStyle" : "currency",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : "."
+                },
+                {},
+                {}
+              ],
+            "download_count" : 1,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2025-11-13T10:44:34.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "enti",
+                "pubblici",
+                "vigilati",
+                "2025",
+                "art.22aler2025",
+                "16dati_ale"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai "
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Link-alla-Serie",
+                  "value" : "https://dati.lombardia.it/browse?tags=art.22aler2025"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/nzrd-zjg2",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Dati-Aziende-Lombarde-per-l-Edilizia-Residenziale-/nzrd-zjg2",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Amministratori Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2021-2022",
+            "id" : "wi5k-jfxj",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2022. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni.\n\nAvviso sul riutilizzo dei dati personali: I dati personali presenti in questo dataset sono pubblicati da Regione Lombardia esclusivamente in adempimento degli obblighi di trasparenza previsti dal D.lgs. 33/2013. Il loro riutilizzo è consentito solo alle condizioni previste dalla normativa sul riuso dei dati pubblici (D.lgs. 36/2006 e s.m.i.) e deve essere compatibile con le finalità per le quali i dati sono stati raccolti. È vietato qualsiasi riutilizzo che comporti trattamenti non conformi al GDPR, tra cui finalità di marketing, profilazione, contatto non richiesto, spam o altre attività non autorizzate.",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2026-02-04T08:52:20.000Z",
+            "createdAt" : "2022-10-17T16:25:00.000Z",
+            "metadata_updated_at" : "2026-02-04T08:52:20.000Z",
+            "data_updated_at" : "2022-10-17T16:41:06.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 8,
+                "page_views_last_month" : 29,
+                "page_views_total" : 600,
+                "page_views_last_week_log" : 3.1699250014423126,
+                "page_views_last_month_log" : 4.906890595608519,
+                "page_views_total_log" : 9.231221180711186
+              },
+            "columns_name" :
+              [
+                "IN CARICA DAL",
+                "NOTE",
+                "TRATTAMENTO ECONOMICO AMMINISTRATORE",
+                "DETTAGLI SOCIETA",
+                "LINK AGGIORNAMENTO DICHIARAZIONI",
+                "ENTE",
+                "COGNOME",
+                "NOME",
+                "IN CARICA FINO AL"
+              ],
+            "columns_field_name" :
+              [
+                "in_carica_dal",
+                "note",
+                "trattamento_economico",
+                "dettagli_societa",
+                "link_aggiornamento",
+                "ente",
+                "cognome",
+                "nome",
+                "in_carica_fino_al"
+              ],
+            "columns_datatype" :
+              [
+                "Calendar date",
+                "Text",
+                "Number",
+                "URL",
+                "URL",
+                "Text",
+                "Text",
+                "Text",
+                "Calendar date"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                { "view" : "date_dmy" },
+                {},
+                { "noCommas" : "true", "precision" : "2", "align" : "right" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "view" : "date_dmy" }
+              ],
+            "download_count" : 37,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2022-10-17T16:41:12.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2022",
+                "pubblici",
+                "enti",
+                "vigilati",
+                "2022",
+                "3amminist"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Data-ultima-modifica",
+                  "value" : "31/10/2022"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/wi5k-jfxj",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Amministratori-Aziende-Lombarde-per-l-Edilizia-Res/wi5k-jfxj",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Elenco Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2025",
+            "id" : "8hmn-a8an",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2025. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2025-12-04T08:49:14.000Z",
+            "createdAt" : "2025-11-12T16:32:20.000Z",
+            "metadata_updated_at" : "2025-12-04T08:49:14.000Z",
+            "data_updated_at" : "2025-11-14T16:09:41.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 9,
+                "page_views_last_month" : 33,
+                "page_views_total" : 313,
+                "page_views_last_week_log" : 3.3219280948873626,
+                "page_views_last_month_log" : 5.08746284125034,
+                "page_views_total_log" : 8.294620748891626
+              },
+            "columns_name" :
+              [
+                "ATTIVITA SVOLTE",
+                "DETTAGLI ENTE",
+                "DURATA IMPEGNO",
+                "DENOMINAZIONE ENTE/RAGIONE SOCIALE",
+                "NOTE",
+                "SITO ISTITUZIONALE",
+                "EVENTUALE MISURA DI PARTECIPAZIONE",
+                "FUNZIONI ATTRIBUITE"
+              ],
+            "columns_field_name" :
+              [
+                "attivita_svolte",
+                "dettagli_ente",
+                "durata_impegno",
+                "denominazione_ente_ragione",
+                "note",
+                "sito_istituzionale",
+                "eventuale_misura_di",
+                "funzioni_attribuite"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "URL",
+                "Text",
+                "Text",
+                "Text",
+                "URL",
+                "Number",
+                "Text"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "precision" : "2",
+                  "decimalSeparator" : ",",
+                  "percentScale" : "1",
+                  "groupSeparator" : ".",
+                  "precisionStyle" : "percentage"
+                },
+                {}
+              ],
+            "download_count" : 0,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2025-11-13T10:42:53.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "enti",
+                "pubblici",
+                "vigilati",
+                "art.22aler2025",
+                "2025",
+                "32elenco_a"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai "
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Link-alla-Serie",
+                  "value" : "https://dati.lombardia.it/browse?tags=art.22aler2025"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/8hmn-a8an",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Elenco-Aziende-Lombarde-per-l-Edilizia-Residenzial/8hmn-a8an",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Amministratori Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2022-2023 - SMAF",
+            "id" : "2puc-dgmh",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2023. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni.\n\nAvviso sul riutilizzo dei dati personali: I dati personali presenti in questo dataset sono pubblicati da Regione Lombardia esclusivamente in adempimento degli obblighi di trasparenza previsti dal D.lgs. 33/2013. Il loro riutilizzo è consentito solo alle condizioni previste dalla normativa sul riuso dei dati pubblici (D.lgs. 36/2006 e s.m.i.) e deve essere compatibile con le finalità per le quali i dati sono stati raccolti. È vietato qualsiasi riutilizzo che comporti trattamenti non conformi al GDPR, tra cui finalità di marketing, profilazione, contatto non richiesto, spam o altre attività non autorizzate.",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2026-02-04T08:53:07.000Z",
+            "createdAt" : "2023-11-14T11:46:22.000Z",
+            "metadata_updated_at" : "2026-02-04T08:53:07.000Z",
+            "data_updated_at" : "2024-05-27T14:12:46.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 6,
+                "page_views_last_month" : 23,
+                "page_views_total" : 643,
+                "page_views_last_week_log" : 2.807354922057604,
+                "page_views_last_month_log" : 4.584962500721157,
+                "page_views_total_log" : 9.330916878114618
+              },
+            "columns_name" :
+              [
+                "TRATTAMENTO ECONOMICO AMMINISTRATORE",
+                "NOTE",
+                "IN CARICA FINO AL",
+                "IN CARICA DAL",
+                "DETTAGLI SOCIETA",
+                "LINK AGGIORNAMENTO DICHIARAZIONI",
+                "ENTE",
+                "COGNOME",
+                "NOME"
+              ],
+            "columns_field_name" :
+              [
+                "trattamento_economico",
+                "note",
+                "in_carica_fino_al",
+                "in_carica_dal",
+                "dettagli_societa",
+                "link_aggiornamento",
+                "ente",
+                "cognome",
+                "nome"
+              ],
+            "columns_datatype" :
+              [
+                "Number",
+                "Text",
+                "Calendar date",
+                "Calendar date",
+                "URL",
+                "URL",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                {
+                  "noCommas" : "true",
+                  "precision" : "2",
+                  "decimalSeparator" : ".",
+                  "align" : "right",
+                  "groupSeparator" : ","
+                },
+                {},
+                { "view" : "date_dmy" },
+                { "view" : "date_dmy" },
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 35,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2023-11-27T10:07:49.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "art.22aler2023",
+                "pubblici",
+                "enti",
+                "vigilati",
+                "2023",
+                "3amminist"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/2puc-dgmh",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Amministratori-Aziende-Lombarde-per-l-Edilizia-Res/2puc-dgmh",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Amministratori Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2025",
+            "id" : "cgw7-4cvd",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2025. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni.\n\nAvviso sul riutilizzo dei dati personali: I dati personali presenti in questo dataset sono pubblicati da Regione Lombardia esclusivamente in adempimento degli obblighi di trasparenza previsti dal D.lgs. 33/2013. Il loro riutilizzo è consentito solo alle condizioni previste dalla normativa sul riuso dei dati pubblici (D.lgs. 36/2006 e s.m.i.) e deve essere compatibile con le finalità per le quali i dati sono stati raccolti. È vietato qualsiasi riutilizzo che comporti trattamenti non conformi al GDPR, tra cui finalità di marketing, profilazione, contatto non richiesto, spam o altre attività non autorizzate.",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2026-02-04T08:54:36.000Z",
+            "createdAt" : "2025-11-12T16:32:39.000Z",
+            "metadata_updated_at" : "2026-02-04T08:54:36.000Z",
+            "data_updated_at" : "2025-11-14T16:10:20.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 15,
+                "page_views_last_month" : 32,
+                "page_views_total" : 229,
+                "page_views_last_week_log" : 4.0,
+                "page_views_last_month_log" : 5.044394119358453,
+                "page_views_total_log" : 7.845490050944376
+              },
+            "columns_name" :
+              [
+                "IN CARICA FINO AL",
+                "NOTE",
+                "IN CARICA DAL",
+                "COGNOME",
+                "NOM_REGIONALE",
+                "DETTAGLI ENTE",
+                "DENOMINAZIONE ENTE/RAGIONE SOCIALE",
+                "NOME",
+                "TRATTAMENTO ECONOMICO AMMINISTRATORE",
+                "LINK AGGIORNAMENTO DICHIARAZIONI"
+              ],
+            "columns_field_name" :
+              [
+                "in_carica_fino_al",
+                "note",
+                "in_carica_dal",
+                "cognome",
+                "nom_regionale",
+                "dettagli_ente",
+                "denominazione_ente_ragione",
+                "nome",
+                "trattamento_economico",
+                "link_aggiornamento"
+              ],
+            "columns_datatype" :
+              [
+                "Calendar date",
+                "Text",
+                "Calendar date",
+                "Text",
+                "Text",
+                "URL",
+                "Text",
+                "Text",
+                "Number",
+                "URL"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                { "view" : "date_dmy" },
+                {},
+                { "view" : "date_dmy" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "precisionStyle" : "currency",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : "."
+                },
+                {}
+              ],
+            "download_count" : 0,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2025-11-13T10:41:44.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "pubblici",
+                "enti",
+                "vigilati",
+                "3amminist",
+                "2025",
+                "art.22aler2025"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai "
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Link-alla-Serie",
+                  "value" : "https://dati.lombardia.it/browse?tags=art.22aler2025"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/cgw7-4cvd",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Amministratori-Aziende-Lombarde-per-l-Edilizia-Res/cgw7-4cvd",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Amministratori Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2026",
+            "id" : "iq8f-qch9",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2026. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni.\n\nAvviso sul riutilizzo dei dati personali: I dati personali presenti in questo dataset sono pubblicati da Regione Lombardia esclusivamente in adempimento degli obblighi di trasparenza previsti dal D.lgs. 33/2013. Il loro riutilizzo è consentito solo alle condizioni previste dalla normativa sul riuso dei dati pubblici (D.lgs. 36/2006 e s.m.i.) e deve essere compatibile con le finalità per le quali i dati sono stati raccolti. È vietato qualsiasi riutilizzo che comporti trattamenti non conformi al GDPR, tra cui finalità di marketing, profilazione, contatto non richiesto, spam o altre attività non autorizzate.",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati-dalla-regione-lombardia",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2026-11-05T10:58:48.000Z",
+            "createdAt" : "2026-11-04T13:31:53.000Z",
+            "metadata_updated_at" : "2026-11-05T10:58:48.000Z",
+            "data_updated_at" : "2026-11-05T10:58:37.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 16,
+                "page_views_last_month" : 16,
+                "page_views_total" : 16,
+                "page_views_last_week_log" : 4.08746284125034,
+                "page_views_last_month_log" : 4.08746284125034,
+                "page_views_total_log" : 4.08746284125034
+              },
+            "columns_name" :
+              [
+                "NOME",
+                "COGNOME",
+                "IN CARICA FINO AL",
+                "NOTE",
+                "NOM_REGIONALE",
+                "IN CARICA DAL",
+                "TRATTAMENTO ECONOMICO AMMINISTRATORE",
+                "DETTAGLI ENTE",
+                "LINK AGGIORNAMENTO DICHIARAZIONI",
+                "DENOMINAZIONE ENTE/RAGIONE SOCIALE"
+              ],
+            "columns_field_name" :
+              [
+                "nome",
+                "cognome",
+                "in_carica_fino_al",
+                "note",
+                "nom_regionale",
+                "in_carica_dal",
+                "trattamento_economico",
+                "dettagli_ente",
+                "link_aggiornamento",
+                "denominazione_ente_ragione"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Calendar date",
+                "Text",
+                "Text",
+                "Calendar date",
+                "Number",
+                "URL",
+                "URL",
+                "Text"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                {},
+                {},
+                { "view" : "date_dmy" },
+                {},
+                {},
+                { "view" : "date_dmy" },
+                {
+                  "precision" : "2",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : ".",
+                  "precisionStyle" : "currency"
+                },
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 0,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2026-11-05T10:58:48.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "pubblici",
+                "enti",
+                "vigilati",
+                "3amminist",
+                "2026",
+                "art.22aler2026"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Link-alla-Serie",
+                  "value" : "https://dati.lombardia.it/browse?tags=art.22aler2026"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/iq8f-qch9",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Amministratori-Aziende-Lombarde-per-l-Edilizia-Res/iq8f-qch9",
+        "owner" :
+          {
+            "id" : "paxu-img3",
+            "user_type" : "interactive",
+            "display_name" : "Giada Lunardi"
+          },
+        "creator" :
+          {
+            "id" : "paxu-img3",
+            "user_type" : "interactive",
+            "display_name" : "Giada Lunardi"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Dati Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2026",
+            "id" : "b6r3-f7ye",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2026. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni.",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati-dalla-regione-lombardia",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2026-11-05T10:39:58.000Z",
+            "createdAt" : "2026-11-04T13:29:58.000Z",
+            "metadata_updated_at" : "2026-11-05T10:39:58.000Z",
+            "data_updated_at" : "2026-11-05T10:39:58.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 9,
+                "page_views_last_month" : 9,
+                "page_views_total" : 9,
+                "page_views_last_week_log" : 3.3219280948873626,
+                "page_views_last_month_log" : 3.3219280948873626,
+                "page_views_total_log" : 3.3219280948873626
+              },
+            "columns_name" :
+              [
+                "ONERE COMPLESSIVO ANNO 2024",
+                "NOTE",
+                "DETTAGLI RAPPRESENTANTI AMMINISTRAZIONE",
+                "NUMERO RAPPRESENTANTI AMMINISTRAZIONE",
+                "DETTAGLI ENTE",
+                "RISULTATI BILANCIO ANNO 2024",
+                "TRATTAMENTO ECONOMICO AMMINISTRAZIONE",
+                "DENOMINAZIONE ENTE/RAGIONE SOCIALE",
+                "RISULTATI BILANCIO ANNO 2023",
+                "RISULTATI BILANCIO ANNO 2025"
+              ],
+            "columns_field_name" :
+              [
+                "onere_complessivo_anno_2024",
+                "note",
+                "dettagli_rappresentanti",
+                "numero_rappresentanti",
+                "dettagli_ente",
+                "risultati_bilancio_anno_2024",
+                "trattamento_economico",
+                "denominazione_ente_ragione",
+                "risultati_bilancio_anno_2023",
+                "risultati_bilancio_anno_2025"
+              ],
+            "columns_datatype" :
+              [
+                "Number",
+                "Text",
+                "URL",
+                "Number",
+                "URL",
+                "Number",
+                "Number",
+                "Text",
+                "Number",
+                "Number"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                {
+                  "precision" : "2",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : ".",
+                  "precisionStyle" : "currency"
+                },
+                {},
+                {},
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                {
+                  "precision" : "2",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : ".",
+                  "precisionStyle" : "currency"
+                },
+                {
+                  "precision" : "2",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : ".",
+                  "precisionStyle" : "currency"
+                },
+                {},
+                {
+                  "precision" : "2",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : ".",
+                  "precisionStyle" : "currency"
+                },
+                {
+                  "precision" : "2",
+                  "decimalSeparator" : ",",
+                  "currencyStyle" : "EUR",
+                  "groupSeparator" : ".",
+                  "precisionStyle" : "currency"
+                }
+              ],
+            "download_count" : 0,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2026-11-05T08:46:31.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "enti",
+                "pubblici",
+                "vigilati",
+                "16dati_ale",
+                "2026",
+                "art.22aler2026"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Link-alla-Serie",
+                  "value" : "https://dati.lombardia.it/browse?tags=art.22aler2026"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/b6r3-f7ye",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Dati-Aziende-Lombarde-per-l-Edilizia-Residenziale-/b6r3-f7ye",
+        "owner" :
+          {
+            "id" : "paxu-img3",
+            "user_type" : "interactive",
+            "display_name" : "Giada Lunardi"
+          },
+        "creator" :
+          {
+            "id" : "paxu-img3",
+            "user_type" : "interactive",
+            "display_name" : "Giada Lunardi"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Elenco Aziende Lombarde per l'Edilizia Residenziale (ALER) di Regione Lombardia - Anno 2026",
+            "id" : "mbp2-4nrh",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Ai sensi dell'articolo 22 del decreto legislativo n. 33 del 2013, Regione Lombardia pubblica i principali dati riferiti ai propri enti pubblici istituiti, vigilati e finanziati - ALER aggiornato al 31/10/2026. (ex. Art. 22 d.lgs. 33/2013)\nFrequenza di aggiornamento “Mai” = il dataset pubblicato alla scadenza prevista dalla normativa non subisce variazioni, salvo errori e correzioni",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/amministrazione-trasparente/enti-controllati/enti-pubblici-vigilati-dalla-regione-lombardia",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2026-11-05T10:38:20.000Z",
+            "createdAt" : "2026-11-04T13:31:29.000Z",
+            "metadata_updated_at" : "2026-11-05T10:38:19.000Z",
+            "data_updated_at" : "2026-11-05T10:38:20.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 9,
+                "page_views_last_month" : 9,
+                "page_views_total" : 9,
+                "page_views_last_week_log" : 3.3219280948873626,
+                "page_views_last_month_log" : 3.3219280948873626,
+                "page_views_total_log" : 3.3219280948873626
+              },
+            "columns_name" :
+              [
+                "DENOMINAZIONE ENTE/RAGIONE SOCIALE",
+                "NOTE",
+                "DURATA IMPEGNO",
+                "DETTAGLI ENTE",
+                "SITO ISTITUZIONALE",
+                "ATTIVITA SVOLTE",
+                "FUNZIONI ATTRIBUITE",
+                "EVENTUALE MISURA DI PARTECIPAZIONE"
+              ],
+            "columns_field_name" :
+              [
+                "denominazione_ente_ragione",
+                "note",
+                "durata_impegno",
+                "dettagli_ente",
+                "sito_istituzionale",
+                "attivita_svolte",
+                "funzioni_attribuite",
+                "eventuale_misura_di"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "URL",
+                "URL",
+                "Text",
+                "Text",
+                "Number"
+              ],
+            "columns_description" : [ "", "", "", "", "", "", "", "" ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "precision" : "1",
+                  "decimalSeparator" : ".",
+                  "percentScale" : "1",
+                  "groupSeparator" : ",",
+                  "precisionStyle" : "percentage"
+                }
+              ],
+            "download_count" : 0,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2026-11-05T08:44:07.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Trasparenza",
+            "domain_tags" :
+              [
+                "enti",
+                "pubblici",
+                "vigilati",
+                "32elenco_a",
+                "2026",
+                "art.22aler2026"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Presidenza"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Mai"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Link-alla-Serie",
+                  "value" : "https://dati.lombardia.it/browse?tags=art.22aler2026"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "hub.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://hub.dati.lombardia.it/d/mbp2-4nrh",
+        "link" : "https://hub.dati.lombardia.it/Trasparenza/Elenco-Aziende-Lombarde-per-l-Edilizia-Residenzial/mbp2-4nrh",
+        "owner" :
+          {
+            "id" : "paxu-img3",
+            "user_type" : "interactive",
+            "display_name" : "Giada Lunardi"
+          },
+        "creator" :
+          {
+            "id" : "paxu-img3",
+            "user_type" : "interactive",
+            "display_name" : "Giada Lunardi"
+          }
+      }
+    ],
+  "resultSetSize" : 18,
+  "timings" : { "serviceMillis" : 28, "searchMillis" : [ 3, 8 ] },
+  "warnings" : []
+}

@@ -1,0 +1,840 @@
+{
+  "id" : "vmvb-epzv",
+  "name" : "Servizi Abitativi a Canone Convenzionato (SACC)",
+  "assetType" : "dataset",
+  "attribution" : "Regione Lombardia",
+  "attributionLink" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/DettaglioServizio/servizi-e-informazioni/Enti-e-Operatori/Edilizia-pubblica/housing-sociale/servizi-abitativi-canone-convenzionato/servizi-abitativi-canone-convenzionato",
+  "averageRating" : 0,
+  "category" : "Famiglia",
+  "createdAt" : 1413295472,
+  "description" : "Interventi di realizzazione e gestione di Servizi Abitativi a Canone Convenzionato (SACC) secondo le modalità definite dalla Deliberazione di Giunta regionale n. 2159 del 4 agosto 2011 (B.U.R.L. Serie Ordinaria n. 34, 24/08/2011)",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 3233,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "licenseId" : "CC0_10",
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 3074274,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1762426939,
+  "publicationGroup" : 12093,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1763557424,
+  "rowsUpdatedBy" : "fqs6-wjn2",
+  "tableId" : 2065863,
+  "totalTimesRated" : 0,
+  "viewCount" : 1590,
+  "viewLastModified" : 1763557423,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1413367561,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 1531992,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1413367561,
+    "targetAudience" : "public",
+    "workflowId" : 186,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "failureCount" : 0,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "7pvs-5xuu",
+      "displayName" : "Regione Lombardia"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 27104389,
+    "name" : "LOCALIZZAZIONE_INTERVENTO",
+    "dataTypeName" : "text",
+    "description" : "Comune in cui sono ubicati gli alloggi",
+    "fieldName" : "localizzazione_intervento",
+    "position" : 1,
+    "renderTypeName" : "text",
+    "tableColumnId" : 125650,
+    "width" : 108,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "Valmorea",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Milano",
+        "count" : "6"
+      }, {
+        "item" : "Pero",
+        "count" : "3"
+      }, {
+        "item" : "Como",
+        "count" : "2"
+      }, {
+        "item" : "Canegrate",
+        "count" : "1"
+      }, {
+        "item" : "Broni",
+        "count" : "1"
+      }, {
+        "item" : "Cormano",
+        "count" : "1"
+      }, {
+        "item" : "Abbiategrasso",
+        "count" : "1"
+      }, {
+        "item" : "Cinisello Balsamo",
+        "count" : "1"
+      }, {
+        "item" : "Sesto S. Giovanni",
+        "count" : "1"
+      }, {
+        "item" : "Novate Milanese",
+        "count" : "1"
+      }, {
+        "item" : "Brembate di Sopra",
+        "count" : "1"
+      }, {
+        "item" : "Parabiago",
+        "count" : "1"
+      }, {
+        "item" : "Senago",
+        "count" : "1"
+      }, {
+        "item" : "Valmorea",
+        "count" : "1"
+      }, {
+        "item" : "Palazzolo sull'Oglio",
+        "count" : "1"
+      }, {
+        "item" : "Legnano",
+        "count" : "1"
+      } ],
+      "smallest" : "Abbiategrasso",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : { }
+  }, {
+    "id" : 27104390,
+    "name" : "PROVINCIA",
+    "dataTypeName" : "text",
+    "description" : "Provincia in cui sono ubicati gli alloggi",
+    "fieldName" : "provincia",
+    "position" : 2,
+    "renderTypeName" : "text",
+    "tableColumnId" : 125651,
+    "width" : 90,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "PV",
+      "null" : "0",
+      "top" : [ {
+        "item" : "MI",
+        "count" : "18"
+      }, {
+        "item" : "CO",
+        "count" : "3"
+      }, {
+        "item" : "BS",
+        "count" : "1"
+      }, {
+        "item" : "BG",
+        "count" : "1"
+      }, {
+        "item" : "PV",
+        "count" : "1"
+      } ],
+      "smallest" : "BG",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : { }
+  }, {
+    "id" : 27104391,
+    "name" : "INDIRIZZO_INTERVENTO",
+    "dataTypeName" : "text",
+    "description" : "Indirizzo in cui sono ubicati gli alloggi",
+    "fieldName" : "indirizzo_intervento",
+    "position" : 3,
+    "renderTypeName" : "text",
+    "tableColumnId" : 125652,
+    "width" : 165,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "via Zezio, 57/F e 57/G",
+      "null" : "0",
+      "top" : [ {
+        "item" : "via Castellammare, 16",
+        "count" : "3"
+      }, {
+        "item" : "Piazzale della Cooperazione, 1",
+        "count" : "2"
+      }, {
+        "item" : "via Cesare Battisti, 9",
+        "count" : "2"
+      }, {
+        "item" : "via Alcide De Gasperi, 36",
+        "count" : "1"
+      }, {
+        "item" : "via Europa, 8",
+        "count" : "1"
+      }, {
+        "item" : "via Molino Tuono , 52",
+        "count" : "1"
+      }, {
+        "item" : "via don Orione, 1",
+        "count" : "1"
+      }, {
+        "item" : "via Matteo Pedrali 29, 31, 33",
+        "count" : "1"
+      }, {
+        "item" : "via Carlotta Marzorati, 5",
+        "count" : "1"
+      }, {
+        "item" : "via Cesare Battisti, 21",
+        "count" : "1"
+      }, {
+        "item" : "via Agazzi, 7",
+        "count" : "1"
+      }, {
+        "item" : "via Aldo Moro 12,14,16, via Cornaggia 33, via Mozart 17, via Brunelleschi 45, via Leonardo Da Vinci 61",
+        "count" : "1"
+      }, {
+        "item" : "via Alciato, 12/B",
+        "count" : "1"
+      }, {
+        "item" : "via Cavalieri, 31",
+        "count" : "1"
+      }, {
+        "item" : "via Cavour 7A",
+        "count" : "1"
+      }, {
+        "item" : "via De Amicis, 85",
+        "count" : "1"
+      }, {
+        "item" : "via Zezio, 57/F e 57/G",
+        "count" : "1"
+      }, {
+        "item" : "via dei Frassini, 3",
+        "count" : "1"
+      }, {
+        "item" : "via Cascella, 5",
+        "count" : "1"
+      }, {
+        "item" : "via Merati, 5",
+        "count" : "1"
+      } ],
+      "smallest" : "Piazzale della Cooperazione, 1",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : { }
+  }, {
+    "id" : 27104401,
+    "name" : "NUMERO_ALLOGGI_PREVISTI",
+    "dataTypeName" : "number",
+    "description" : "Numero di alloggi realizzati",
+    "fieldName" : "numero_alloggi_previsti",
+    "position" : 4,
+    "renderTypeName" : "number",
+    "tableColumnId" : 16375761,
+    "width" : 125,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "32",
+      "null" : "0",
+      "top" : [ {
+        "item" : "6",
+        "count" : "3"
+      }, {
+        "item" : "12",
+        "count" : "2"
+      }, {
+        "item" : "14",
+        "count" : "2"
+      }, {
+        "item" : "18",
+        "count" : "2"
+      }, {
+        "item" : "5",
+        "count" : "2"
+      }, {
+        "item" : "32",
+        "count" : "2"
+      }, {
+        "item" : "16",
+        "count" : "1"
+      }, {
+        "item" : "27",
+        "count" : "1"
+      }, {
+        "item" : "10",
+        "count" : "1"
+      }, {
+        "item" : "1",
+        "count" : "1"
+      }, {
+        "item" : "20",
+        "count" : "1"
+      }, {
+        "item" : "4",
+        "count" : "1"
+      }, {
+        "item" : "9",
+        "count" : "1"
+      }, {
+        "item" : "28",
+        "count" : "1"
+      }, {
+        "item" : "3",
+        "count" : "1"
+      }, {
+        "item" : "7",
+        "count" : "1"
+      }, {
+        "item" : "30",
+        "count" : "1"
+      } ],
+      "smallest" : "1",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : { }
+  }, {
+    "id" : 27104402,
+    "name" : "NUMERO_BOX_AUTO_PREVISTI",
+    "dataTypeName" : "number",
+    "description" : "Numero di box realizzati",
+    "fieldName" : "numero_box_auto_previsti",
+    "position" : 5,
+    "renderTypeName" : "number",
+    "tableColumnId" : 16375762,
+    "width" : 87,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "28",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "6"
+      }, {
+        "item" : "14",
+        "count" : "3"
+      }, {
+        "item" : "5",
+        "count" : "2"
+      }, {
+        "item" : "12",
+        "count" : "2"
+      }, {
+        "item" : "7",
+        "count" : "1"
+      }, {
+        "item" : "15",
+        "count" : "1"
+      }, {
+        "item" : "27",
+        "count" : "1"
+      }, {
+        "item" : "10",
+        "count" : "1"
+      }, {
+        "item" : "18",
+        "count" : "1"
+      }, {
+        "item" : "1",
+        "count" : "1"
+      }, {
+        "item" : "6",
+        "count" : "1"
+      }, {
+        "item" : "4",
+        "count" : "1"
+      }, {
+        "item" : "9",
+        "count" : "1"
+      }, {
+        "item" : "28",
+        "count" : "1"
+      }, {
+        "item" : "3",
+        "count" : "1"
+      } ],
+      "smallest" : "0",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : { }
+  }, {
+    "id" : 27104394,
+    "name" : "INVESTIMENTO_COMPLESSIVO_PREVISTO",
+    "dataTypeName" : "number",
+    "description" : "Costo complessivo dell’intervento di realizzazione degli alloggi",
+    "fieldName" : "investimento_complessivo_previsto",
+    "position" : 6,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125655,
+    "width" : 162,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "3928557.00",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2763347.00",
+        "count" : "2"
+      }, {
+        "item" : "1387400.70",
+        "count" : "1"
+      }, {
+        "item" : "1387067.10",
+        "count" : "1"
+      }, {
+        "item" : "2454670.60",
+        "count" : "1"
+      }, {
+        "item" : "681577.38",
+        "count" : "1"
+      }, {
+        "item" : "274511.10",
+        "count" : "1"
+      }, {
+        "item" : "1022890.90",
+        "count" : "1"
+      }, {
+        "item" : "2964504.00",
+        "count" : "1"
+      }, {
+        "item" : "3928557.00",
+        "count" : "1"
+      }, {
+        "item" : "3546571.10",
+        "count" : "1"
+      }, {
+        "item" : "1429653.30",
+        "count" : "1"
+      }, {
+        "item" : "3861465.00",
+        "count" : "1"
+      }, {
+        "item" : "3717406.00",
+        "count" : "1"
+      }, {
+        "item" : "2813174.00",
+        "count" : "1"
+      }, {
+        "item" : "722803.20",
+        "count" : "1"
+      }, {
+        "item" : "772616.50",
+        "count" : "1"
+      }, {
+        "item" : "2745997.00",
+        "count" : "1"
+      }, {
+        "item" : "1252281.19",
+        "count" : "1"
+      }, {
+        "item" : "3186530.21",
+        "count" : "1"
+      }, {
+        "item" : "234481.00",
+        "count" : "1"
+      } ],
+      "smallest" : "234481.00",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : {
+      "precisionStyle" : "standard",
+      "noCommas" : "false",
+      "precision" : "2",
+      "align" : "right"
+    }
+  }, {
+    "id" : 27104395,
+    "name" : "CONTRIBUTO_REGIONALE_PREVISTO",
+    "dataTypeName" : "number",
+    "description" : "Contributo regionale erogato per la realizzazione degli alloggi",
+    "fieldName" : "contributo_regionale_previsto",
+    "position" : 7,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125656,
+    "width" : 325,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "1018228.00",
+      "null" : "0",
+      "top" : [ {
+        "item" : "549000.00",
+        "count" : "1"
+      }, {
+        "item" : "176000.00",
+        "count" : "1"
+      }, {
+        "item" : "740630.21",
+        "count" : "1"
+      }, {
+        "item" : "1018228.00",
+        "count" : "1"
+      }, {
+        "item" : "206319.25",
+        "count" : "1"
+      }, {
+        "item" : "477979.00",
+        "count" : "1"
+      }, {
+        "item" : "500000.00",
+        "count" : "1"
+      }, {
+        "item" : "992000.00",
+        "count" : "1"
+      }, {
+        "item" : "561433.00",
+        "count" : "1"
+      }, {
+        "item" : "576000.00",
+        "count" : "1"
+      }, {
+        "item" : "480000.00",
+        "count" : "1"
+      }, {
+        "item" : "214000.00",
+        "count" : "1"
+      }, {
+        "item" : "177840.00",
+        "count" : "1"
+      }, {
+        "item" : "984000.00",
+        "count" : "1"
+      }, {
+        "item" : "96078.00",
+        "count" : "1"
+      }, {
+        "item" : "485473.00",
+        "count" : "1"
+      }, {
+        "item" : "485590.00",
+        "count" : "1"
+      }, {
+        "item" : "234000.00",
+        "count" : "1"
+      }, {
+        "item" : "447784.00",
+        "count" : "1"
+      }, {
+        "item" : "967171.00",
+        "count" : "1"
+      } ],
+      "smallest" : "57000.00",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : {
+      "precisionStyle" : "standard",
+      "noCommas" : "false",
+      "precision" : "2",
+      "align" : "right"
+    }
+  }, {
+    "id" : 27104396,
+    "name" : "STATO_AVANZAMENTO_INTERVENTO",
+    "dataTypeName" : "text",
+    "description" : "Stato di avanzamento dei lavori di realizzazione degli alloggi",
+    "fieldName" : "stato_avanzamento_intervento",
+    "position" : 8,
+    "renderTypeName" : "text",
+    "tableColumnId" : 125657,
+    "width" : 213,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "intervento concluso, LCA, alloggi venduti",
+      "null" : "0",
+      "top" : [ {
+        "item" : "intervento concluso, in fase di gestione",
+        "count" : "20"
+      }, {
+        "item" : "intervento concluso, in fase di gestione - RL intervenuta in procedura esecutiva",
+        "count" : "2"
+      }, {
+        "item" : "intervento concluso, LCA, alloggi venduti",
+        "count" : "1"
+      }, {
+        "item" : "intervento concluso, alloggi venduti per PFV",
+        "count" : "1"
+      } ],
+      "smallest" : "intervento concluso, alloggi venduti per PFV",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : { }
+  }, {
+    "id" : 27104397,
+    "name" : "RAG_SOC_SOGGETTO_ATTUATORE",
+    "dataTypeName" : "text",
+    "description" : "Denominazione del soggetto che ha realizzato gli alloggi e ricevuto il contributo regionale",
+    "fieldName" : "rag_soc_soggetto_attuatore",
+    "position" : 9,
+    "renderTypeName" : "text",
+    "tableColumnId" : 125658,
+    "width" : 250,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "Uniabita Soc. Coop.",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Società Cooperativa Solidarnosc",
+        "count" : "11"
+      }, {
+        "item" : "Società Cooperativa Edificatrice di Abitazioni per gli Operai",
+        "count" : "2"
+      }, {
+        "item" : "Uniabita Soc. Coop.",
+        "count" : "1"
+      }, {
+        "item" : "Società Cooperativa Casa Nostra",
+        "count" : "1"
+      }, {
+        "item" : "Circolo Familiare Valmorea",
+        "count" : "1"
+      }, {
+        "item" : "Est Ticino Società Cooperativa in Concordato Preventivo",
+        "count" : "1"
+      }, {
+        "item" : "Coop. LUM",
+        "count" : "1"
+      }, {
+        "item" : "Società Cooperativa Bell'Unione",
+        "count" : "1"
+      }, {
+        "item" : "La Vittoria  Coop. Edificatrice",
+        "count" : "1"
+      }, {
+        "item" : "Cooperativa  Insieme in LCA",
+        "count" : "1"
+      }, {
+        "item" : "MASS S. p. A.",
+        "count" : "1"
+      }, {
+        "item" : "I Navigli Housing s.r.l.",
+        "count" : "1"
+      }, {
+        "item" : "Impresa Zandalasini s.r.l.",
+        "count" : "1"
+      } ],
+      "smallest" : "Circolo Familiare Valmorea",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : { }
+  }, {
+    "id" : 27104398,
+    "name" : "COM_SEDE_LEG_SOGGETTO_ATTUATORE",
+    "dataTypeName" : "text",
+    "description" : "Sede legale del soggetto che ha realizzato gli alloggi e ricevuto il contributo regionale",
+    "fieldName" : "com_sede_leg_soggetto_attuatore",
+    "position" : 10,
+    "renderTypeName" : "text",
+    "tableColumnId" : 125659,
+    "width" : 130,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "Valmorea",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Milano",
+        "count" : "12"
+      }, {
+        "item" : "Como",
+        "count" : "2"
+      }, {
+        "item" : "Cormano",
+        "count" : "1"
+      }, {
+        "item" : "Chiari",
+        "count" : "1"
+      }, {
+        "item" : "Castano Primo",
+        "count" : "1"
+      }, {
+        "item" : "Buscate",
+        "count" : "1"
+      }, {
+        "item" : "Cinisello Balsamo",
+        "count" : "1"
+      }, {
+        "item" : "Canegrate",
+        "count" : "1"
+      }, {
+        "item" : "Novate Milanese",
+        "count" : "1"
+      }, {
+        "item" : "Broni",
+        "count" : "1"
+      }, {
+        "item" : "Brembate di Sopra",
+        "count" : "1"
+      }, {
+        "item" : "Valmorea",
+        "count" : "1"
+      } ],
+      "smallest" : "Brembate di Sopra",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : { }
+  }, {
+    "id" : 27104399,
+    "name" : "PROV_SEDE_LEG_SOGGETTO_ATTUATORE",
+    "dataTypeName" : "text",
+    "description" : "Provincia della sede legale del soggetto che ha realizzato gli alloggi e ricevuto il contributo regionale",
+    "fieldName" : "prov_sede_leg_soggetto_attuatore",
+    "position" : 11,
+    "renderTypeName" : "text",
+    "tableColumnId" : 125660,
+    "width" : 148,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "PV",
+      "null" : "0",
+      "top" : [ {
+        "item" : "MI",
+        "count" : "17"
+      }, {
+        "item" : "CO",
+        "count" : "4"
+      }, {
+        "item" : "BS",
+        "count" : "1"
+      }, {
+        "item" : "BG",
+        "count" : "1"
+      }, {
+        "item" : "PV",
+        "count" : "1"
+      } ],
+      "smallest" : "BG",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : { }
+  }, {
+    "id" : 27104400,
+    "name" : "INDIRIZZO_SOGGETTO_ATTUATORE",
+    "dataTypeName" : "text",
+    "description" : "Indirizzo della sede legale del soggetto che ha realizzato gli alloggi e ricevuto il contributo regionale",
+    "fieldName" : "indirizzo_soggetto_attuatore",
+    "position" : 12,
+    "renderTypeName" : "text",
+    "tableColumnId" : 125661,
+    "width" : 234,
+    "cachedContents" : {
+      "non_null" : "24",
+      "largest" : "via Pontoglio, 65/B",
+      "null" : "0",
+      "top" : [ {
+        "item" : "via della Signora, 3",
+        "count" : "11"
+      }, {
+        "item" : "via Armando Diaz, 17",
+        "count" : "2"
+      }, {
+        "item" : "via Guglielmo Marconi, 37",
+        "count" : "1"
+      }, {
+        "item" : "via Giulio Natta, 19",
+        "count" : "1"
+      }, {
+        "item" : "via Donizetti, 109",
+        "count" : "1"
+      }, {
+        "item" : "piazza Vittorio Veneto, 24",
+        "count" : "1"
+      }, {
+        "item" : "via del Pozzo, 15",
+        "count" : "1"
+      }, {
+        "item" : "via Cavour, 22",
+        "count" : "1"
+      }, {
+        "item" : "via Mario Zanzottera, 6",
+        "count" : "1"
+      }, {
+        "item" : "via Molinazzo, 6",
+        "count" : "1"
+      }, {
+        "item" : "via Pontoglio, 65/B",
+        "count" : "1"
+      }, {
+        "item" : "piazza Soncino, 1",
+        "count" : "1"
+      }, {
+        "item" : "via E. De Amicis 84",
+        "count" : "1"
+      } ],
+      "smallest" : "piazza Soncino, 1",
+      "count" : "24",
+      "cardinality" : "24"
+    },
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "license" : {
+    "name" : "Creative Commons 1.0 Universal (Public Domain Dedication)",
+    "logoUrl" : "images/licenses/ccZero.png",
+    "termsLink" : "http://creativecommons.org/publicdomain/zero/1.0/legalcode"
+  },
+  "metadata" : {
+    "custom_fields" : {
+      "Dettagli" : {
+        "Direzione" : "Casa, housing sociale, expo 2015 e internazionalizzazione delle imprese"
+      },
+      "Ulteriori informazioni" : {
+        "Fonte" : "PROGRAMMI PER L’OFFERTA ABITATIVA",
+        "Direzione" : "Casa e Housing Sociale"
+      },
+      "Frequenza di aggiornamento" : {
+        "Data ultima modifica" : "16/10/2025",
+        "Frequenza" : "Annuale"
+      }
+    },
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+  },
+  "owner" : {
+    "id" : "7pvs-5xuu",
+    "displayName" : "Regione Lombardia",
+    "profileImageUrlLarge" : "/api/users/7pvs-5xuu/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/7pvs-5xuu/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/7pvs-5xuu/profile_images/TINY",
+    "screenName" : "Regione Lombardia",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "7pvs-5xuu",
+    "displayName" : "Regione Lombardia",
+    "profileImageUrlLarge" : "/api/users/7pvs-5xuu/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/7pvs-5xuu/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/7pvs-5xuu/profile_images/TINY",
+    "screenName" : "Regione Lombardia",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "alloggi", "servizi abitativi", "canone convenzionato", "housing sociale", "casa", "u1", "edilizia convenzionata", "servizi abitativi sociali" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

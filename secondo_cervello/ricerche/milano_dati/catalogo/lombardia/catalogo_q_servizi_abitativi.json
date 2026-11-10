@@ -1,0 +1,887 @@
+{
+  "results" :
+    [
+      {
+        "resource" :
+          {
+            "name" : "Servizi Abitativi a Canone Convenzionato (SACC)",
+            "id" : "vmvb-epzv",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Interventi di realizzazione e gestione di Servizi Abitativi a Canone Convenzionato (SACC) secondo le modalità definite dalla Deliberazione di Giunta regionale n. 2159 del 4 agosto 2011 (B.U.R.L. Serie Ordinaria n. 34, 24/08/2011)",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/DettaglioServizio/servizi-e-informazioni/Enti-e-Operatori/Edilizia-pubblica/housing-sociale/servizi-abitativi-canone-convenzionato/servizi-abitativi-canone-convenzionato",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2025-11-19T13:03:44.000Z",
+            "createdAt" : "2014-10-14T14:04:32.000Z",
+            "metadata_updated_at" : "2025-11-19T13:03:43.000Z",
+            "data_updated_at" : "2025-11-19T13:03:44.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 9,
+                "page_views_last_month" : 43,
+                "page_views_total" : 1590,
+                "page_views_last_week_log" : 3.3219280948873626,
+                "page_views_last_month_log" : 5.459431618637297,
+                "page_views_total_log" : 10.635718120331047
+              },
+            "columns_name" :
+              [
+                "RAG_SOC_SOGGETTO_ATTUATORE",
+                "NUMERO_ALLOGGI_PREVISTI",
+                "COM_SEDE_LEG_SOGGETTO_ATTUATORE",
+                "NUMERO_BOX_AUTO_PREVISTI",
+                "PROV_SEDE_LEG_SOGGETTO_ATTUATORE",
+                "PROVINCIA",
+                "STATO_AVANZAMENTO_INTERVENTO",
+                "LOCALIZZAZIONE_INTERVENTO",
+                "INDIRIZZO_SOGGETTO_ATTUATORE",
+                "INDIRIZZO_INTERVENTO",
+                "INVESTIMENTO_COMPLESSIVO_PREVISTO",
+                "CONTRIBUTO_REGIONALE_PREVISTO"
+              ],
+            "columns_field_name" :
+              [
+                "rag_soc_soggetto_attuatore",
+                "numero_alloggi_previsti",
+                "com_sede_leg_soggetto_attuatore",
+                "numero_box_auto_previsti",
+                "prov_sede_leg_soggetto_attuatore",
+                "provincia",
+                "stato_avanzamento_intervento",
+                "localizzazione_intervento",
+                "indirizzo_soggetto_attuatore",
+                "indirizzo_intervento",
+                "investimento_complessivo_previsto",
+                "contributo_regionale_previsto"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Number",
+                "Text",
+                "Number",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Number",
+                "Number"
+              ],
+            "columns_description" :
+              [
+                "Denominazione del soggetto che ha realizzato gli alloggi e ricevuto il contributo regionale",
+                "Numero di alloggi realizzati",
+                "Sede legale del soggetto che ha realizzato gli alloggi e ricevuto il contributo regionale",
+                "Numero di box realizzati",
+                "Provincia della sede legale del soggetto che ha realizzato gli alloggi e ricevuto il contributo regionale",
+                "Provincia in cui sono ubicati gli alloggi",
+                "Stato di avanzamento dei lavori di realizzazione degli alloggi",
+                "Comune in cui sono ubicati gli alloggi",
+                "Indirizzo della sede legale del soggetto che ha realizzato gli alloggi e ricevuto il contributo regionale",
+                "Indirizzo in cui sono ubicati gli alloggi",
+                "Costo complessivo dell’intervento di realizzazione degli alloggi",
+                "Contributo regionale erogato per la realizzazione degli alloggi"
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "precisionStyle" : "standard",
+                  "noCommas" : "false",
+                  "precision" : "2",
+                  "align" : "right"
+                },
+                {
+                  "precisionStyle" : "standard",
+                  "noCommas" : "false",
+                  "precision" : "2",
+                  "align" : "right"
+                }
+              ],
+            "download_count" : 3233,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2025-11-06T11:02:19.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Famiglia",
+            "domain_tags" :
+              [
+                "alloggi",
+                "servizi abitativi",
+                "canone convenzionato",
+                "housing sociale",
+                "casa",
+                "u1",
+                "edilizia convenzionata",
+                "servizi abitativi sociali"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Dettagli_Direzione",
+                  "value" : "Casa, housing sociale, expo 2015 e internazionalizzazione delle imprese"
+                },
+                {
+                  "key" : "Ulteriori-informazioni_Fonte",
+                  "value" : "PROGRAMMI PER L’OFFERTA ABITATIVA"
+                },
+                {
+                  "key" : "Ulteriori-informazioni_Direzione",
+                  "value" : "Casa e Housing Sociale"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Annuale"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Data-ultima-modifica",
+                  "value" : "16/10/2025"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://www.dati.lombardia.it/d/vmvb-epzv",
+        "link" : "https://www.dati.lombardia.it/Famiglia/Servizi-Abitativi-a-Canone-Convenzionato-SACC-/vmvb-epzv",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Mappa Residenzialita leggera",
+            "id" : "3whk-uarc",
+            "resource_name" : null,
+            "parent_fxf" : [ "esqu-uiax" ],
+            "description" : "Questa misura prevede che i destinatari vivano in contesti abitativi singoli o comunitari che, pur mettendo a disposizione servizi comuni di carattere generale, garantiscono alle persone di rimanere nel proprio contesto di vita, in ambiente controllato e protetto.",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "http://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/direzioni-generali/direzione-generale-reddito-di-autonomia-e-inclusione-sociale",
+            "contact_email" : null,
+            "type" : "map",
+            "updatedAt" : "2025-01-16T11:29:07.000Z",
+            "createdAt" : "2025-01-15T14:14:18.000Z",
+            "metadata_updated_at" : "2025-01-16T11:29:07.000Z",
+            "data_updated_at" : "2022-08-28T14:51:51.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 4,
+                "page_views_last_month" : 19,
+                "page_views_total" : 530,
+                "page_views_last_week_log" : 2.321928094887362,
+                "page_views_last_month_log" : 4.321928094887363,
+                "page_views_total_log" : 9.052568050804155
+              },
+            "columns_name" : [],
+            "columns_field_name" : [],
+            "columns_datatype" : [],
+            "columns_description" : [],
+            "columns_format" : [],
+            "download_count" : 0,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "visualization_canvas_map",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2025-01-16T11:29:07.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Famiglia",
+            "domain_tags" : [],
+            "domain_metadata" :
+              [
+                { "key" : "Dettagli_Direzione", "value" : "Welfare" },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Trimestrale"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Data-ultima-modifica",
+                  "value" : "30/08/2022"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://www.dati.lombardia.it/d/3whk-uarc",
+        "link" : "https://www.dati.lombardia.it/Famiglia/Mappa-Residenzialita-leggera/3whk-uarc",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Residenzialità leggera",
+            "id" : "esqu-uiax",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Questa misura prevede che i destinatari vivano in contesti abitativi singoli o comunitari che, pur mettendo a disposizione servizi comuni di carattere generale, garantiscono alle persone di rimanere nel proprio contesto di vita, in ambiente controllato e protetto.",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "http://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/direzioni-generali/direzione-generale-reddito-di-autonomia-e-inclusione-sociale",
+            "contact_email" : null,
+            "type" : "dataset",
+            "updatedAt" : "2022-08-28T14:51:52.000Z",
+            "createdAt" : "2014-10-31T11:26:23.000Z",
+            "metadata_updated_at" : "2022-08-28T14:51:52.000Z",
+            "data_updated_at" : "2022-08-28T14:51:51.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 34,
+                "page_views_last_month" : 147,
+                "page_views_total" : 7207,
+                "page_views_last_week_log" : 5.129283016944966,
+                "page_views_last_month_log" : 7.209453365628949,
+                "page_views_total_log" : 12.81538329581354
+              },
+            "columns_name" :
+              [
+                "COD_AMBITO_CAPOFILA",
+                "PUBBLICA_PRIVATA",
+                "ONLUS",
+                "ASL",
+                "DATA_CONTRATTO",
+                "WGS84_Y",
+                "CAP",
+                "POSTI_AUT",
+                "MISURA",
+                "CD_ENTE",
+                "DESC_STRUT",
+                "COD_ISTAT_COMUNE",
+                "NUM_FAX_GESTORE",
+                "CAP_SEDE_LEGALE",
+                "ABILITAZIONE",
+                "COD_ISTAT_SEDE_LEGALE",
+                "INDIRIZZO_MAIL_PEC_GEST",
+                "INDIRIZZO_SEDE_LEGALE",
+                "NUM_FAX",
+                "NUM_TELEFONO",
+                "INDIRIZZO_UBI",
+                "DATA_CHIUSURA",
+                "location (zip)",
+                "PARTITA_IVA",
+                "COD_STRUT",
+                "POSTI_ACCR_NO_CONTR",
+                "location (address)",
+                "WGS84_X",
+                "PARTEC_ALTRI_PRJ",
+                "PROV_SEDE_LEGALE",
+                "location",
+                "COMUNE",
+                "COD_FISCALE",
+                "NUM_TEL_GESTORE",
+                "Limiti amministrativi 2014 delle province di Regione Lombardia",
+                "Limiti amministrativi 2015 delle province di Regione Lombardia",
+                "NUM_MAIL_PEC",
+                "PROVINCIA",
+                "location (state)",
+                "ACCREDITAMENTO",
+                "TIPO_UDO",
+                "DESC_GESTORE",
+                "NATURA_GIURIDICA_GEST",
+                "PARTECIPAZIONE",
+                "location (city)",
+                "COMUNE_SEDE_LEGALE"
+              ],
+            "columns_field_name" :
+              [
+                "cod_ambito_capofila",
+                "pubblica_privata",
+                "onlus",
+                "asl",
+                "data_contratto",
+                "wgs84_y",
+                "cap",
+                "posti_aut",
+                "misura",
+                "cd_ente",
+                "desc_strut",
+                "cod_istat_comune",
+                "num_fax_gestore",
+                "cap_sede_legale",
+                "abilitazione",
+                "cod_istat_sede_legale",
+                "indirizzo_mail_pec_gest",
+                "indirizzo_sede_legale",
+                "num_fax",
+                "num_telefono",
+                "indirizzo_ubi",
+                "data_chiusura",
+                "location_zip",
+                "partita_iva",
+                "cod_strut",
+                "posti_accr_no_contr",
+                "location_address",
+                "wgs84_x",
+                "partec_altri_prj",
+                "prov_sede_legale",
+                "location",
+                "comune",
+                "cod_fiscale",
+                "num_tel_gestore",
+                ":@computed_region_6hky_swhk",
+                ":@computed_region_ttgh_9sm5",
+                "num_mail_pec",
+                "provincia",
+                "location_state",
+                "accreditamento",
+                "tipo_udo",
+                "desc_gestore",
+                "natura_giuridica_gest",
+                "partecipazione",
+                "location_city",
+                "comune_sede_legale"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Number",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Number",
+                "Text",
+                "Text",
+                "Point",
+                "Text",
+                "Text",
+                "Text",
+                "Number",
+                "Number",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "This column was automatically created in order to record in what polygon from the dataset 'Limiti amministrativi 2014 delle province di Regione Lombardia' (6hky-swhk) the point in column 'location' is located. This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset 'Limiti amministrativi 2015 delle province di Regione Lombardia' (ttgh-9sm5) the point in column 'location' is located. This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                { "align" : "left" },
+                {},
+                {},
+                {},
+                { "noCommas" : "true" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "noCommas" : "true" },
+                {},
+                { "align" : "left" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "align" : "left" },
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 3976,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2015-05-25T06:54:38.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Famiglia",
+            "domain_tags" :
+              [
+                "rsa",
+                "residenze sanitarie assistenziale",
+                "residenzialita leggera",
+                "g1"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Dettagli_Direzione", "value" : "Welfare" },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Trimestrale"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Data-ultima-modifica",
+                  "value" : "30/08/2022"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://www.dati.lombardia.it/d/esqu-uiax",
+        "link" : "https://www.dati.lombardia.it/Famiglia/Residenzialità-leggera/esqu-uiax",
+        "owner" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          },
+        "creator" :
+          {
+            "id" : "7pvs-5xuu",
+            "user_type" : "interactive",
+            "display_name" : "Regione Lombardia"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Residenzialità leggera - RSA",
+            "id" : "uanp-e89r",
+            "resource_name" : null,
+            "parent_fxf" : [ "esqu-uiax" ],
+            "description" : "Questa misura prevede che i destinatari vivano in contesti abitativi singoli o comunitari che, pur mettendo a disposizione servizi comuni di carattere generale, garantiscono alle persone di rimanere nel proprio contesto di vita, in ambiente controllato e protetto.",
+            "attribution" : "Regione Lombardia",
+            "attribution_link" : "http://www.regione.lombardia.it/wps/portal/istituzionale/HP/istituzione/direzioni-generali/direzione-generale-reddito-di-autonomia-e-inclusione-sociale",
+            "contact_email" : null,
+            "type" : "filter",
+            "updatedAt" : "2025-01-27T23:16:50.000Z",
+            "createdAt" : "2016-05-23T15:20:42.000Z",
+            "metadata_updated_at" : "2025-01-27T23:16:50.000Z",
+            "data_updated_at" : "2022-08-28T14:51:51.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 8,
+                "page_views_last_month" : 28,
+                "page_views_total" : 882,
+                "page_views_last_week_log" : 3.1699250014423126,
+                "page_views_last_month_log" : 4.857980995127573,
+                "page_views_total_log" : 9.786269627648466
+              },
+            "columns_name" :
+              [
+                "CD_ENTE",
+                "NUM_MAIL_PEC",
+                "ASL",
+                "MISURA",
+                "ONLUS",
+                "COMUNE_SEDE_LEGALE",
+                "COD_ISTAT_SEDE_LEGALE",
+                "PUBBLICA_PRIVATA",
+                "COD_FISCALE",
+                "ACCREDITAMENTO",
+                "PARTECIPAZIONE",
+                "PARTEC_ALTRI_PRJ",
+                "WGS84_X",
+                "NUM_FAX_GESTORE",
+                "INDIRIZZO_MAIL_PEC_GEST",
+                "DATA_CONTRATTO",
+                "location",
+                "CAP",
+                "NUM_TELEFONO",
+                "COD_ISTAT_COMUNE",
+                "NUM_TEL_GESTORE",
+                "NATURA_GIURIDICA_GEST",
+                "DESC_GESTORE",
+                "PARTITA_IVA",
+                "INDIRIZZO_SEDE_LEGALE",
+                "COMUNE",
+                "DESC_STRUT",
+                "COD_AMBITO_CAPOFILA",
+                "INDIRIZZO_UBI",
+                "COD_STRUT",
+                "POSTI_AUT",
+                "PROV_SEDE_LEGALE",
+                "PROVINCIA",
+                "NUM_FAX",
+                "CAP_SEDE_LEGALE",
+                "POSTI_ACCR_NO_CONTR",
+                "WGS84_Y",
+                "TIPO_UDO",
+                "DATA_CHIUSURA",
+                "ABILITAZIONE"
+              ],
+            "columns_field_name" :
+              [
+                "cd_ente",
+                "num_mail_pec",
+                "asl",
+                "misura",
+                "onlus",
+                "comune_sede_legale",
+                "cod_istat_sede_legale",
+                "pubblica_privata",
+                "cod_fiscale",
+                "accreditamento",
+                "partecipazione",
+                "partec_altri_prj",
+                "wgs84_x",
+                "num_fax_gestore",
+                "indirizzo_mail_pec_gest",
+                "data_contratto",
+                "location",
+                "cap",
+                "num_telefono",
+                "cod_istat_comune",
+                "num_tel_gestore",
+                "natura_giuridica_gest",
+                "desc_gestore",
+                "partita_iva",
+                "indirizzo_sede_legale",
+                "comune",
+                "desc_strut",
+                "cod_ambito_capofila",
+                "indirizzo_ubi",
+                "cod_strut",
+                "posti_aut",
+                "prov_sede_legale",
+                "provincia",
+                "num_fax",
+                "cap_sede_legale",
+                "posti_accr_no_contr",
+                "wgs84_y",
+                "tipo_udo",
+                "data_chiusura",
+                "abilitazione"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Number",
+                "Text",
+                "Text",
+                "Text",
+                "Point",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Number",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "align" : "left" },
+                {},
+                {},
+                {},
+                {},
+                { "noCommas" : "true" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "align" : "left" },
+                {},
+                {},
+                {},
+                {},
+                { "noCommas" : "true" },
+                { "align" : "left" },
+                {},
+                {}
+              ],
+            "download_count" : 189,
+            "provenance" : "community",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2015-05-25T06:54:38.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Famiglia",
+            "domain_tags" :
+              [
+                "rsa",
+                "residenze sanitarie assistenziale",
+                "residenzialita leggera",
+                "g1"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Dettagli_Direzione", "value" : "Welfare" },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Frequenza",
+                  "value" : "Trimestrale"
+                },
+                {
+                  "key" : "Frequenza-di-aggiornamento_Data-ultima-modifica",
+                  "value" : "30/11/2015"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.dati.lombardia.it",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://www.dati.lombardia.it/d/uanp-e89r",
+        "link" : "https://www.dati.lombardia.it/Famiglia/Residenzialità-leggera-RSA/uanp-e89r",
+        "owner" :
+          {
+            "id" : "b8k2-fdhg",
+            "user_type" : "interactive",
+            "display_name" : "franco"
+          },
+        "creator" :
+          {
+            "id" : "b8k2-fdhg",
+            "user_type" : "interactive",
+            "display_name" : "franco"
+          }
+      }
+    ],
+  "resultSetSize" : 4,
+  "timings" : { "serviceMillis" : 22, "searchMillis" : [ 3, 7 ] },
+  "warnings" : []
+}
