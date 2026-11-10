@@ -11,6 +11,9 @@ Vale per ogni agente del team (`.claude/agents/`) e per ogni prova della mappa [
 - Se un dato manca, dichiaralo e fermati su quel punto: non sostituirlo con un valore plausibile senza marcarlo [H] e senza un'analisi di sensibilità.
 - Non aggirare blocchi di rete o di permesso: segnalali nel report.
 
+## Codice
+Prima di scrivere codice carica la skill `ponytail` (livello full) e seguila: il minimo codice che risolve tutta la prova, librerie standard prima di quelle nuove, nessuna astrazione non richiesta. Chiudi con una riga su cosa non hai verificato.
+
 ## Riproducibilità
 - Tutto si rifà da zero con uno script (`run.py` o equivalente) e un `README` di due righe. Seme casuale fisso e dichiarato.
 - Dati grezzi pesanti fuori da git (scaricati dallo script in `esperimenti/_cache/`, ignorata); nel repo solo dati derivati piccoli (< 20 MB per prova) e i metadati con fonte, licenza e data.

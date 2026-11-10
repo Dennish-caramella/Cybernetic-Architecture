@@ -15,6 +15,9 @@ Progetto di ricerca (tesi/dottorato) su partecipazione e democratizzazione dei p
 - Dopo ogni sessione: una riga in `giornale/GIORNALE.md` e aggiorna `STATO.md` (≤80 righe; la storia va in `giornale/`).
 - PDF, TIF e figure pesanti stanno solo sul PC (`Desktop\TESI`), non nel repo. Elenco in `secondo_cervello/fonti/ELENCO_NON_VERSIONATI.md`.
 
+## Codice
+- `/ponytail` (livello full) è sempre attiva quando si scrive, corregge o rivede codice, anche negli agenti del team: la soluzione più piccola che risolve tutto il problema, nessuna dipendenza o astrazione non necessaria. Si spegne solo con "stop ponytail". `/caveman` resta spenta salvo richiesta esplicita.
+
 ## Agent skills
 - Issue tracker: GitHub Issues (`docs/agents/issue-tracker.md`). Mappa di ricerca nelle issue #5–#12.
 - Label di triage: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix` (`docs/agents/triage-labels.md`).
