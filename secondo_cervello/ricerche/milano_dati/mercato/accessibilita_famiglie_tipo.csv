@@ -1,0 +1,126 @@
+percentile,tipo,mq,lordo_individuale,netto_famiglia,auu_annuo,isee_proxy,zona,canone_eur_mq_mese,canone_annuo,canone_mese,RTI,oltre30,oltre40,residuo_annuo,paniere_non_abitativo,shelter_poor,shelter_poor_75,ERP_eleggibile_proxy,prezzo_alloggio,PTI,rata_mutuo_su_netto,anni_risparmio_anticipo_20pct_al_10pct
+P20,persona sola (<65),45,9727,10525,0,2727,periferia (mediana fascia D/E),12.7,6858,572,0.652,True,True,3667,13237,True,True,True,154125.0,14.6,0.695,29.3
+P20,persona sola (<65),45,9727,10525,0,2727,citta' (mediana tutte le zone),13.62,7358,613,0.699,True,True,3168,13237,True,True,True,173250.0,16.5,0.782,32.9
+P20,persona sola (<65),45,9727,10525,0,2727,semicentro (mediana fascia C),17.23,9302,775,0.884,True,True,1224,13237,True,True,True,246375.0,23.4,1.112,46.8
+P20,persona sola (<65),45,9727,10525,0,2727,Piano Casa (80 €/m2/anno),6.67,3600,300,0.342,True,False,6925,13237,True,True,True,,,,
+P20,persona sola (<65),45,9727,10525,0,2727,"annunci [S] 23,3 €/m2",23.3,12582,1048,1.195,True,True,-2057,13237,True,True,True,,,,
+P20,anziano solo (pensionato),50,9727,9246,0,2727,periferia (mediana fascia D/E),12.7,7620,635,0.824,True,True,1626,13237,True,True,True,171250.0,18.5,0.88,37.0
+P20,anziano solo (pensionato),50,9727,9246,0,2727,citta' (mediana tutte le zone),13.62,8175,681,0.884,True,True,1071,13237,True,True,True,192500.0,20.8,0.989,41.6
+P20,anziano solo (pensionato),50,9727,9246,0,2727,semicentro (mediana fascia C),17.23,10335,861,1.118,True,True,-1089,13237,True,True,True,273750.0,29.6,1.406,59.2
+P20,anziano solo (pensionato),50,9727,9246,0,2727,Piano Casa (80 €/m2/anno),6.67,4000,333,0.433,True,True,5246,13237,True,True,True,,,,
+P20,anziano solo (pensionato),50,9727,9246,0,2727,"annunci [S] 23,3 €/m2",23.3,13980,1165,1.512,True,True,-4734,13237,True,True,True,,,,
+P20,coppia senza figli (2 percettori),60,9727,21051,0,7933,periferia (mediana fascia D/E),12.7,9144,762,0.434,True,True,11907,19856,True,True,True,205500.0,9.8,0.464,19.5
+P20,coppia senza figli (2 percettori),60,9727,21051,0,7933,citta' (mediana tutte le zone),13.62,9810,818,0.466,True,True,11241,19856,True,True,True,231000.0,11.0,0.521,21.9
+P20,coppia senza figli (2 percettori),60,9727,21051,0,7933,semicentro (mediana fascia C),17.23,12402,1034,0.589,True,True,8649,19856,True,True,True,328500.0,15.6,0.741,31.2
+P20,coppia senza figli (2 percettori),60,9727,21051,0,7933,Piano Casa (80 €/m2/anno),6.67,4800,400,0.228,False,False,16251,19856,True,False,True,,,,
+P20,coppia senza figli (2 percettori),60,9727,21051,0,7933,"annunci [S] 23,3 €/m2",23.3,16776,1398,0.797,True,True,4275,19856,True,True,True,,,,
+P20,monogenitore + 1 figlio <14,65,9727,12918,2393,1737,periferia (mediana fascia D/E),12.7,9906,826,0.767,True,True,3012,17208,True,True,True,222625.0,17.2,0.818,34.5
+P20,monogenitore + 1 figlio <14,65,9727,12918,2393,1737,citta' (mediana tutte le zone),13.62,10628,886,0.823,True,True,2291,17208,True,True,True,250250.0,19.4,0.92,38.7
+P20,monogenitore + 1 figlio <14,65,9727,12918,2393,1737,semicentro (mediana fascia C),17.23,13436,1120,1.04,True,True,-517,17208,True,True,True,355875.0,27.5,1.308,55.1
+P20,monogenitore + 1 figlio <14,65,9727,12918,2393,1737,Piano Casa (80 €/m2/anno),6.67,5200,433,0.403,True,True,7718,17208,True,True,True,,,,
+P20,monogenitore + 1 figlio <14,65,9727,12918,2393,1737,"annunci [S] 23,3 €/m2",23.3,18174,1514,1.407,True,True,-5256,17208,True,True,True,,,,
+P20,coppia + 2 figli <14 (2 percettori),85,9727,25836,4786,5063,periferia (mediana fascia D/E),12.7,12954,1080,0.501,True,True,12882,27798,True,True,True,291125.0,11.3,0.535,22.5
+P20,coppia + 2 figli <14 (2 percettori),85,9727,25836,4786,5063,citta' (mediana tutte le zone),13.62,13898,1158,0.538,True,True,11939,27798,True,True,True,327250.0,12.7,0.602,25.3
+P20,coppia + 2 figli <14 (2 percettori),85,9727,25836,4786,5063,semicentro (mediana fascia C),17.23,17570,1464,0.68,True,True,8267,27798,True,True,True,465375.0,18.0,0.855,36.0
+P20,coppia + 2 figli <14 (2 percettori),85,9727,25836,4786,5063,Piano Casa (80 €/m2/anno),6.67,6800,567,0.263,False,False,19036,27798,True,True,True,,,,
+P20,coppia + 2 figli <14 (2 percettori),85,9727,25836,4786,5063,"annunci [S] 23,3 €/m2",23.3,23766,1980,0.92,True,True,2070,27798,True,True,True,,,,
+P40,persona sola (<65),45,20627,18194,0,13627,periferia (mediana fascia D/E),12.7,6858,572,0.377,True,False,11336,13237,True,False,True,154125.0,8.5,0.402,16.9
+P40,persona sola (<65),45,20627,18194,0,13627,citta' (mediana tutte le zone),13.62,7358,613,0.404,True,True,10837,13237,True,False,True,173250.0,9.5,0.452,19.0
+P40,persona sola (<65),45,20627,18194,0,13627,semicentro (mediana fascia C),17.23,9302,775,0.511,True,True,8893,13237,True,True,True,246375.0,13.5,0.643,27.1
+P40,persona sola (<65),45,20627,18194,0,13627,Piano Casa (80 €/m2/anno),6.67,3600,300,0.198,False,False,14594,13237,False,False,True,,,,
+P40,persona sola (<65),45,20627,18194,0,13627,"annunci [S] 23,3 €/m2",23.3,12582,1048,0.692,True,True,5612,13237,True,True,True,,,,
+P40,anziano solo (pensionato),50,20627,16784,0,13627,periferia (mediana fascia D/E),12.7,7620,635,0.454,True,True,9164,13237,True,True,True,171250.0,10.2,0.485,20.4
+P40,anziano solo (pensionato),50,20627,16784,0,13627,citta' (mediana tutte le zone),13.62,8175,681,0.487,True,True,8609,13237,True,True,True,192500.0,11.5,0.545,22.9
+P40,anziano solo (pensionato),50,20627,16784,0,13627,semicentro (mediana fascia C),17.23,10335,861,0.616,True,True,6449,13237,True,True,True,273750.0,16.3,0.775,32.6
+P40,anziano solo (pensionato),50,20627,16784,0,13627,Piano Casa (80 €/m2/anno),6.67,4000,333,0.238,False,False,12784,13237,True,False,True,,,,
+P40,anziano solo (pensionato),50,20627,16784,0,13627,"annunci [S] 23,3 €/m2",23.3,13980,1165,0.833,True,True,2804,13237,True,True,True,,,,
+P40,coppia senza figli (2 percettori),60,20627,36389,0,21818,periferia (mediana fascia D/E),12.7,9144,762,0.251,False,False,27245,19856,False,False,False,205500.0,5.6,0.268,11.3
+P40,coppia senza figli (2 percettori),60,20627,36389,0,21818,citta' (mediana tutte le zone),13.62,9810,818,0.27,False,False,26579,19856,False,False,False,231000.0,6.3,0.301,12.7
+P40,coppia senza figli (2 percettori),60,20627,36389,0,21818,semicentro (mediana fascia C),17.23,12402,1034,0.341,True,False,23987,19856,False,False,False,328500.0,9.0,0.429,18.1
+P40,coppia senza figli (2 percettori),60,20627,36389,0,21818,Piano Casa (80 €/m2/anno),6.67,4800,400,0.132,False,False,31589,19856,False,False,False,,,,
+P40,coppia senza figli (2 percettori),60,20627,36389,0,21818,"annunci [S] 23,3 €/m2",23.3,16776,1398,0.461,True,True,19613,19856,True,False,False,,,,
+P40,monogenitore + 1 figlio <14,65,20627,20587,2393,8680,periferia (mediana fascia D/E),12.7,9906,826,0.481,True,True,10681,17208,True,True,True,222625.0,10.8,0.514,21.6
+P40,monogenitore + 1 figlio <14,65,20627,20587,2393,8680,citta' (mediana tutte le zone),13.62,10628,886,0.516,True,True,9960,17208,True,True,True,250250.0,12.2,0.577,24.3
+P40,monogenitore + 1 figlio <14,65,20627,20587,2393,8680,semicentro (mediana fascia C),17.23,13436,1120,0.653,True,True,7152,17208,True,True,True,355875.0,17.3,0.821,34.6
+P40,monogenitore + 1 figlio <14,65,20627,20587,2393,8680,Piano Casa (80 €/m2/anno),6.67,5200,433,0.253,False,False,15387,17208,True,False,True,,,,
+P40,monogenitore + 1 figlio <14,65,20627,20587,2393,8680,"annunci [S] 23,3 €/m2",23.3,18174,1514,0.883,True,True,2413,17208,True,True,True,,,,
+P40,coppia + 2 figli <14 (2 percettori),85,20627,41174,4786,13924,periferia (mediana fascia D/E),12.7,12954,1080,0.315,True,False,28220,27798,False,False,True,291125.0,7.1,0.336,14.1
+P40,coppia + 2 figli <14 (2 percettori),85,20627,41174,4786,13924,citta' (mediana tutte le zone),13.62,13898,1158,0.338,True,False,27277,27798,True,False,True,327250.0,7.9,0.377,15.9
+P40,coppia + 2 figli <14 (2 percettori),85,20627,41174,4786,13924,semicentro (mediana fascia C),17.23,17570,1464,0.427,True,True,23605,27798,True,False,True,465375.0,11.3,0.537,22.6
+P40,coppia + 2 figli <14 (2 percettori),85,20627,41174,4786,13924,Piano Casa (80 €/m2/anno),6.67,6800,567,0.165,False,False,34374,27798,False,False,True,,,,
+P40,coppia + 2 figli <14 (2 percettori),85,20627,41174,4786,13924,"annunci [S] 23,3 €/m2",23.3,23766,1980,0.577,True,True,17408,27798,True,True,True,,,,
+P50,persona sola (<65),45,25924,21562,0,18924,periferia (mediana fascia D/E),12.7,6858,572,0.318,True,False,14704,13237,False,False,False,154125.0,7.1,0.339,14.3
+P50,persona sola (<65),45,25924,21562,0,18924,citta' (mediana tutte le zone),13.62,7358,613,0.341,True,False,14205,13237,False,False,False,173250.0,8.0,0.382,16.1
+P50,persona sola (<65),45,25924,21562,0,18924,semicentro (mediana fascia C),17.23,9302,775,0.431,True,True,12261,13237,True,False,False,246375.0,11.4,0.543,22.9
+P50,persona sola (<65),45,25924,21562,0,18924,Piano Casa (80 €/m2/anno),6.67,3600,300,0.167,False,False,17962,13237,False,False,False,,,,
+P50,persona sola (<65),45,25924,21562,0,18924,"annunci [S] 23,3 €/m2",23.3,12582,1048,0.584,True,True,8980,13237,True,True,False,,,,
+P50,anziano solo (pensionato),50,25924,20281,0,18924,periferia (mediana fascia D/E),12.7,7620,635,0.376,True,False,12661,13237,True,False,False,171250.0,8.4,0.401,16.9
+P50,anziano solo (pensionato),50,25924,20281,0,18924,citta' (mediana tutte le zone),13.62,8175,681,0.403,True,True,12106,13237,True,False,False,192500.0,9.5,0.451,19.0
+P50,anziano solo (pensionato),50,25924,20281,0,18924,semicentro (mediana fascia C),17.23,10335,861,0.51,True,True,9946,13237,True,False,False,273750.0,13.5,0.641,27.0
+P50,anziano solo (pensionato),50,25924,20281,0,18924,Piano Casa (80 €/m2/anno),6.67,4000,333,0.197,False,False,16281,13237,False,False,False,,,,
+P50,anziano solo (pensionato),50,25924,20281,0,18924,"annunci [S] 23,3 €/m2",23.3,13980,1165,0.689,True,True,6301,13237,True,True,False,,,,
+P50,coppia senza figli (2 percettori),60,25924,43124,0,28566,periferia (mediana fascia D/E),12.7,9144,762,0.212,False,False,33980,19856,False,False,False,205500.0,4.8,0.226,9.5
+P50,coppia senza figli (2 percettori),60,25924,43124,0,28566,citta' (mediana tutte le zone),13.62,9810,818,0.227,False,False,33314,19856,False,False,False,231000.0,5.4,0.254,10.7
+P50,coppia senza figli (2 percettori),60,25924,43124,0,28566,semicentro (mediana fascia C),17.23,12402,1034,0.288,False,False,30722,19856,False,False,False,328500.0,7.6,0.362,15.2
+P50,coppia senza figli (2 percettori),60,25924,43124,0,28566,Piano Casa (80 €/m2/anno),6.67,4800,400,0.111,False,False,38324,19856,False,False,False,,,,
+P50,coppia senza figli (2 percettori),60,25924,43124,0,28566,"annunci [S] 23,3 €/m2",23.3,16776,1398,0.389,True,False,26348,19856,False,False,False,,,,
+P50,monogenitore + 1 figlio <14,65,25924,23955,2393,12054,periferia (mediana fascia D/E),12.7,9906,826,0.414,True,True,14049,17208,True,False,True,222625.0,9.3,0.441,18.6
+P50,monogenitore + 1 figlio <14,65,25924,23955,2393,12054,citta' (mediana tutte le zone),13.62,10628,886,0.444,True,True,13327,17208,True,False,True,250250.0,10.4,0.496,20.9
+P50,monogenitore + 1 figlio <14,65,25924,23955,2393,12054,semicentro (mediana fascia C),17.23,13436,1120,0.561,True,True,10519,17208,True,True,True,355875.0,14.9,0.706,29.7
+P50,monogenitore + 1 figlio <14,65,25924,23955,2393,12054,Piano Casa (80 €/m2/anno),6.67,5200,433,0.217,False,False,18755,17208,False,False,True,,,,
+P50,monogenitore + 1 figlio <14,65,25924,23955,2393,12054,"annunci [S] 23,3 €/m2",23.3,18174,1514,0.759,True,True,5781,17208,True,True,True,,,,
+P50,coppia + 2 figli <14 (2 percettori),85,25924,47773,4649,18231,periferia (mediana fascia D/E),12.7,12954,1080,0.271,False,False,34819,27798,False,False,False,291125.0,6.1,0.289,12.2
+P50,coppia + 2 figli <14 (2 percettori),85,25924,47773,4649,18231,citta' (mediana tutte le zone),13.62,13898,1158,0.291,False,False,33876,27798,False,False,False,327250.0,6.9,0.325,13.7
+P50,coppia + 2 figli <14 (2 percettori),85,25924,47773,4649,18231,semicentro (mediana fascia C),17.23,17570,1464,0.368,True,False,30204,27798,False,False,False,465375.0,9.7,0.463,19.5
+P50,coppia + 2 figli <14 (2 percettori),85,25924,47773,4649,18231,Piano Casa (80 €/m2/anno),6.67,6800,567,0.142,False,False,40973,27798,False,False,False,,,,
+P50,coppia + 2 figli <14 (2 percettori),85,25924,47773,4649,18231,"annunci [S] 23,3 €/m2",23.3,23766,1980,0.497,True,True,24007,27798,True,False,False,,,,
+P60,persona sola (<65),45,34820,26590,0,27820,periferia (mediana fascia D/E),12.7,6858,572,0.258,False,False,19732,13237,False,False,False,154125.0,5.8,0.275,11.6
+P60,persona sola (<65),45,34820,26590,0,27820,citta' (mediana tutte le zone),13.62,7358,613,0.277,False,False,19233,13237,False,False,False,173250.0,6.5,0.309,13.0
+P60,persona sola (<65),45,34820,26590,0,27820,semicentro (mediana fascia C),17.23,9302,775,0.35,True,False,17289,13237,False,False,False,246375.0,9.3,0.44,18.5
+P60,persona sola (<65),45,34820,26590,0,27820,Piano Casa (80 €/m2/anno),6.67,3600,300,0.135,False,False,22990,13237,False,False,False,,,,
+P60,persona sola (<65),45,34820,26590,0,27820,"annunci [S] 23,3 €/m2",23.3,12582,1048,0.473,True,True,14008,13237,False,False,False,,,,
+P60,anziano solo (pensionato),50,34820,25690,0,27820,periferia (mediana fascia D/E),12.7,7620,635,0.297,False,False,18070,13237,False,False,False,171250.0,6.7,0.317,13.3
+P60,anziano solo (pensionato),50,34820,25690,0,27820,citta' (mediana tutte le zone),13.62,8175,681,0.318,True,False,17515,13237,False,False,False,192500.0,7.5,0.356,15.0
+P60,anziano solo (pensionato),50,34820,25690,0,27820,semicentro (mediana fascia C),17.23,10335,861,0.402,True,True,15355,13237,False,False,False,273750.0,10.7,0.506,21.3
+P60,anziano solo (pensionato),50,34820,25690,0,27820,Piano Casa (80 €/m2/anno),6.67,4000,333,0.156,False,False,21690,13237,False,False,False,,,,
+P60,anziano solo (pensionato),50,34820,25690,0,27820,"annunci [S] 23,3 €/m2",23.3,13980,1165,0.544,True,True,11710,13237,True,False,False,,,,
+P60,coppia senza figli (2 percettori),60,34820,53181,0,39898,periferia (mediana fascia D/E),12.7,9144,762,0.172,False,False,44037,19856,False,False,False,205500.0,3.9,0.184,7.7
+P60,coppia senza figli (2 percettori),60,34820,53181,0,39898,citta' (mediana tutte le zone),13.62,9810,818,0.184,False,False,43371,19856,False,False,False,231000.0,4.3,0.206,8.7
+P60,coppia senza figli (2 percettori),60,34820,53181,0,39898,semicentro (mediana fascia C),17.23,12402,1034,0.233,False,False,40779,19856,False,False,False,328500.0,6.2,0.293,12.4
+P60,coppia senza figli (2 percettori),60,34820,53181,0,39898,Piano Casa (80 €/m2/anno),6.67,4800,400,0.09,False,False,48381,19856,False,False,False,,,,
+P60,coppia senza figli (2 percettori),60,34820,53181,0,39898,"annunci [S] 23,3 €/m2",23.3,16776,1398,0.315,True,False,36405,19856,False,False,False,,,,
+P60,monogenitore + 1 figlio <14,65,34820,28945,2355,17720,periferia (mediana fascia D/E),12.7,9906,826,0.342,True,False,19039,17208,False,False,False,222625.0,7.7,0.365,15.4
+P60,monogenitore + 1 figlio <14,65,34820,28945,2355,17720,citta' (mediana tutte le zone),13.62,10628,886,0.367,True,False,18318,17208,False,False,False,250250.0,8.6,0.411,17.3
+P60,monogenitore + 1 figlio <14,65,34820,28945,2355,17720,semicentro (mediana fascia C),17.23,13436,1120,0.464,True,True,15510,17208,True,False,False,355875.0,12.3,0.584,24.6
+P60,monogenitore + 1 figlio <14,65,34820,28945,2355,17720,Piano Casa (80 €/m2/anno),6.67,5200,433,0.18,False,False,23745,17208,False,False,False,,,,
+P60,monogenitore + 1 figlio <14,65,34820,28945,2355,17720,"annunci [S] 23,3 €/m2",23.3,18174,1514,0.628,True,True,10771,17208,True,True,False,,,,
+P60,coppia + 2 figli <14 (2 percettori),85,34820,56962,3781,25464,periferia (mediana fascia D/E),12.7,12954,1080,0.227,False,False,44008,27798,False,False,False,291125.0,5.1,0.243,10.2
+P60,coppia + 2 figli <14 (2 percettori),85,34820,56962,3781,25464,citta' (mediana tutte le zone),13.62,13898,1158,0.244,False,False,43064,27798,False,False,False,327250.0,5.7,0.273,11.5
+P60,coppia + 2 figli <14 (2 percettori),85,34820,56962,3781,25464,semicentro (mediana fascia C),17.23,17570,1464,0.308,True,False,39392,27798,False,False,False,465375.0,8.2,0.388,16.3
+P60,coppia + 2 figli <14 (2 percettori),85,34820,56962,3781,25464,Piano Casa (80 €/m2/anno),6.67,6800,567,0.119,False,False,50162,27798,False,False,False,,,,
+P60,coppia + 2 figli <14 (2 percettori),85,34820,56962,3781,25464,"annunci [S] 23,3 €/m2",23.3,23766,1980,0.417,True,True,33196,27798,False,False,False,,,,
+P80,persona sola (<65),45,52717,36171,0,45717,periferia (mediana fascia D/E),12.7,6858,572,0.19,False,False,29313,13237,False,False,False,154125.0,4.3,0.202,8.5
+P80,persona sola (<65),45,52717,36171,0,45717,citta' (mediana tutte le zone),13.62,7358,613,0.203,False,False,28814,13237,False,False,False,173250.0,4.8,0.227,9.6
+P80,persona sola (<65),45,52717,36171,0,45717,semicentro (mediana fascia C),17.23,9302,775,0.257,False,False,26870,13237,False,False,False,246375.0,6.8,0.323,13.6
+P80,persona sola (<65),45,52717,36171,0,45717,Piano Casa (80 €/m2/anno),6.67,3600,300,0.1,False,False,32571,13237,False,False,False,,,,
+P80,persona sola (<65),45,52717,36171,0,45717,"annunci [S] 23,3 €/m2",23.3,12582,1048,0.348,True,False,23589,13237,False,False,False,,,,
+P80,anziano solo (pensionato),50,52717,36171,0,45717,periferia (mediana fascia D/E),12.7,7620,635,0.211,False,False,28551,13237,False,False,False,171250.0,4.7,0.225,9.5
+P80,anziano solo (pensionato),50,52717,36171,0,45717,citta' (mediana tutte le zone),13.62,8175,681,0.226,False,False,27996,13237,False,False,False,192500.0,5.3,0.253,10.6
+P80,anziano solo (pensionato),50,52717,36171,0,45717,semicentro (mediana fascia C),17.23,10335,861,0.286,False,False,25836,13237,False,False,False,273750.0,7.6,0.359,15.1
+P80,anziano solo (pensionato),50,52717,36171,0,45717,Piano Casa (80 €/m2/anno),6.67,4000,333,0.111,False,False,32171,13237,False,False,False,,,,
+P80,anziano solo (pensionato),50,52717,36171,0,45717,"annunci [S] 23,3 €/m2",23.3,13980,1165,0.386,True,False,22191,13237,False,False,False,,,,
+P80,coppia senza figli (2 percettori),60,52717,72343,0,62696,periferia (mediana fascia D/E),12.7,9144,762,0.126,False,False,63199,19856,False,False,False,205500.0,2.8,0.135,5.7
+P80,coppia senza figli (2 percettori),60,52717,72343,0,62696,citta' (mediana tutte le zone),13.62,9810,818,0.136,False,False,62533,19856,False,False,False,231000.0,3.2,0.152,6.4
+P80,coppia senza figli (2 percettori),60,52717,72343,0,62696,semicentro (mediana fascia C),17.23,12402,1034,0.171,False,False,59941,19856,False,False,False,328500.0,4.5,0.216,9.1
+P80,coppia senza figli (2 percettori),60,52717,72343,0,62696,Piano Casa (80 €/m2/anno),6.67,4800,400,0.066,False,False,67543,19856,False,False,False,,,,
+P80,coppia senza figli (2 percettori),60,52717,72343,0,62696,"annunci [S] 23,3 €/m2",23.3,16776,1398,0.232,False,False,55567,19856,False,False,False,,,,
+P80,monogenitore + 1 figlio <14,65,52717,37843,1671,29119,periferia (mediana fascia D/E),12.7,9906,826,0.262,False,False,27937,17208,False,False,False,222625.0,5.9,0.279,11.8
+P80,monogenitore + 1 figlio <14,65,52717,37843,1671,29119,citta' (mediana tutte le zone),13.62,10628,886,0.281,False,False,27215,17208,False,False,False,250250.0,6.6,0.314,13.2
+P80,monogenitore + 1 figlio <14,65,52717,37843,1671,29119,semicentro (mediana fascia C),17.23,13436,1120,0.355,True,False,24407,17208,False,False,False,355875.0,9.4,0.447,18.8
+P80,monogenitore + 1 figlio <14,65,52717,37843,1671,29119,Piano Casa (80 €/m2/anno),6.67,5200,433,0.137,False,False,32643,17208,False,False,False,,,,
+P80,monogenitore + 1 figlio <14,65,52717,37843,1671,29119,"annunci [S] 23,3 €/m2",23.3,18174,1514,0.48,True,True,19669,17208,False,False,False,,,,
+P80,coppia + 2 figli <14 (2 percettori),85,52717,74378,2035,40014,periferia (mediana fascia D/E),12.7,12954,1080,0.174,False,False,61424,27798,False,False,False,291125.0,3.9,0.186,7.8
+P80,coppia + 2 figli <14 (2 percettori),85,52717,74378,2035,40014,citta' (mediana tutte le zone),13.62,13898,1158,0.187,False,False,60481,27798,False,False,False,327250.0,4.4,0.209,8.8
+P80,coppia + 2 figli <14 (2 percettori),85,52717,74378,2035,40014,semicentro (mediana fascia C),17.23,17570,1464,0.236,False,False,56809,27798,False,False,False,465375.0,6.3,0.297,12.5
+P80,coppia + 2 figli <14 (2 percettori),85,52717,74378,2035,40014,Piano Casa (80 €/m2/anno),6.67,6800,567,0.091,False,False,67578,27798,False,False,False,,,,
+P80,coppia + 2 figli <14 (2 percettori),85,52717,74378,2035,40014,"annunci [S] 23,3 €/m2",23.3,23766,1980,0.32,True,False,50612,27798,False,False,False,,,,

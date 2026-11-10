@@ -1,0 +1,16 @@
+tipo,zona,lordo_soglia_ERP_per_percettore,pct_ERP,lordo_soglia_mercato_per_percettore,pct_mercato,ampiezza_pancia_pp
+persona sola (<65),citta' (mediana tutte le zone),23000,0.445,30981,0.557,11.2
+persona sola (<65),periferia (mediana fascia D/E),23000,0.445,27907,0.523,7.8
+persona sola (<65),"annunci [S] 23,3 €/m2",23000,0.445,63307,0.853,40.8
+anziano solo (pensionato),citta' (mediana tutte le zone),23000,0.445,37450,0.629,18.4
+anziano solo (pensionato),periferia (mediana fascia D/E),23000,0.445,34331,0.595,15.0
+anziano solo (pensionato),"annunci [S] 23,3 €/m2",23000,0.445,71862,0.882,43.7
+coppia senza figli (2 percettori),citta' (mediana tutte le zone),16060,0.314,17844,0.347,3.3
+coppia senza figli (2 percettori),periferia (mediana fascia D/E),16060,0.314,16169,0.316,0.2
+coppia senza figli (2 percettori),"annunci [S] 23,3 €/m2",16060,0.314,37487,0.63,31.6
+monogenitore + 1 figlio <14,citta' (mediana tutte le zone),32120,0.57,51346,0.785,21.5
+monogenitore + 1 figlio <14,periferia (mediana fascia D/E),32120,0.57,46893,0.735,16.5
+monogenitore + 1 figlio <14,"annunci [S] 23,3 €/m2",32120,0.57,97528,0.922,35.2
+coppia + 2 figli <14 (2 percettori),citta' (mediana tutte le zone),23180,0.448,28449,0.529,8.1
+coppia + 2 figli <14 (2 percettori),periferia (mediana fascia D/E),23180,0.448,25967,0.501,5.3
+coppia + 2 figli <14 (2 percettori),"annunci [S] 23,3 €/m2",23180,0.448,59029,0.839,39.1

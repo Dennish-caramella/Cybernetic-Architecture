@@ -1,0 +1,31 @@
+tipo,zona,canone_annuo,netto_necessario_per_percettore,lordo_necessario_per_percettore,percentile_contribuenti_milano
+persona sola (<65),periferia (mediana fascia D/E),6858,22860,27907,0.523
+persona sola (<65),citta' (mediana tutte le zone),7358,24525,30981,0.557
+persona sola (<65),semicentro (mediana fascia C),9302,31005,43147,0.693
+persona sola (<65),Piano Casa (80 €/m2/anno),3600,12000,11673,0.235
+persona sola (<65),Piano Casa (90 €/m2/anno),4050,13500,13653,0.27
+persona sola (<65),"annunci [S] 23,3 €/m2",12582,41940,63307,0.853
+anziano solo (pensionato),periferia (mediana fascia D/E),7620,25400,34331,0.595
+anziano solo (pensionato),citta' (mediana tutte le zone),8175,27250,37450,0.629
+anziano solo (pensionato),semicentro (mediana fascia C),10335,34450,49592,0.765
+anziano solo (pensionato),Piano Casa (80 €/m2/anno),4000,13333,15625,0.306
+anziano solo (pensionato),Piano Casa (90 €/m2/anno),4500,15000,18041,0.351
+anziano solo (pensionato),"annunci [S] 23,3 €/m2",13980,46600,71862,0.882
+coppia senza figli (2 percettori),periferia (mediana fascia D/E),9144,15240,16169,0.316
+coppia senza figli (2 percettori),citta' (mediana tutte le zone),9810,16350,17844,0.347
+coppia senza figli (2 percettori),semicentro (mediana fascia C),12402,20670,24661,0.476
+coppia senza figli (2 percettori),Piano Casa (80 €/m2/anno),4800,8000,8000,0.164
+coppia senza figli (2 percettori),Piano Casa (90 €/m2/anno),5400,9000,8500,0.175
+coppia senza figli (2 percettori),"annunci [S] 23,3 €/m2",16776,27960,37487,0.63
+monogenitore + 1 figlio <14,periferia (mediana fascia D/E),9906,33020,46893,0.735
+monogenitore + 1 figlio <14,citta' (mediana tutte le zone),10628,35425,51346,0.785
+monogenitore + 1 figlio <14,semicentro (mediana fascia C),13436,44785,68530,0.87
+monogenitore + 1 figlio <14,Piano Casa (80 €/m2/anno),5200,17333,19328,0.375
+monogenitore + 1 figlio <14,Piano Casa (90 €/m2/anno),5850,19500,22597,0.437
+monogenitore + 1 figlio <14,"annunci [S] 23,3 €/m2",18174,60580,97528,0.922
+coppia + 2 figli <14 (2 percettori),periferia (mediana fascia D/E),12954,21590,25967,0.501
+coppia + 2 figli <14 (2 percettori),citta' (mediana tutte le zone),13898,23162,28449,0.529
+coppia + 2 figli <14 (2 percettori),semicentro (mediana fascia C),17570,29283,39945,0.657
+coppia + 2 figli <14 (2 percettori),Piano Casa (80 €/m2/anno),6800,11333,10794,0.22
+coppia + 2 figli <14 (2 percettori),Piano Casa (90 €/m2/anno),7650,12750,12663,0.253
+coppia + 2 figli <14 (2 percettori),"annunci [S] 23,3 €/m2",23766,39610,59029,0.839
