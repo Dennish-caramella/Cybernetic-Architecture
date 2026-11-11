@@ -1,0 +1,28 @@
+classe,passo,rimasti,rimossi
+comune,"particelle di terreno nel Comune (catasto, mappale numerico)",109863,
+riuso:fonti,ds503: punti,174,
+riuso:fonti,ds503: punti con un edificio DBT entro 20 m,165,9
+riuso:fonti,DBT diruti (EDIFC_STAT=02),610,-445
+riuso:fonti,DBT diruti con volume fuori terra,447,163
+riuso:fonti,edifici fonte distinti,595,-148
+riuso,edifici fonte su una particella di terreno del Comune,549,
+riuso,particelle con edifici fonte,463,86
+riuso,particella >= 300 m²,362,101
+riuso,"non verde/agricolo/paesaggio/istruzione/acque/infrastrutture (>= 0,5)",260,102
+riuso,fuori dai PCU,242,18
+edificabile+attivazione,"ingresso E1 (AT, AMB_DEG, DUSAF 133/134, Demanio disp., terreno comunale libero)",13115,
+edificabile+attivazione,"ingresso E1 o A1 (anche DUSAF 1412, 131/132)",13816,-701
+edificabile+attivazione,particella >= 300 m²,7984,5832
+edificabile+attivazione,fuori dai PCU,6837,1147
+edificabile+attivazione,"non acque/infrastrutture/agricolo/boschi/verde in uso DUSAF, agricolo/istruzione PGT (>= 0,5)",3663,3174
+edificabile+attivazione,"non residenza occupata (quota residenziale del volume < 0,5)",3416,247
+edificabile+attivazione,non particella di un lotto da riusare,3390,26
+edificabile,particelle verso l'abitazione,2309,
+attivazione,particelle verso l'attivazione per vincolo o ingresso solo verde/cava (A2),1081,
+edificabile,gruppi per adiacenza (stessa origine),966,1343
+attivazione,gruppi per adiacenza (stessa origine e motivo),649,432
+edificabile,lotto >= 1500 m²,553,413
+attivazione,gruppi >= 500 m² (A2) + gruppi edificabili 500-1.500 m² (A3),854,-205
+riuso,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),242,0
+edificabile,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),553,0
+attivazione,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),854,0

@@ -4,7 +4,7 @@ Uso: python run.py              scarica le fonti mancanti, costruisce, campiona,
      python run.py --pilota     prova su 3 NIL: uscite solo in esecuzioni/<data>_pilota/
 Regole e soglie: pre-registrazione in esecuzioni/00_preregistrazione.txt (= REPORT §1). Ogni esecuzione lascia esecuzioni/<data>_<tag>/.
 Riusa da v1 (esperimenti/L_lotti/run.py, congelato come fallimento documentato) le funzioni parcels, share, dusaf_cat, rd e fetch.py."""
-import hashlib, io, json, os, shutil, subprocess, sys, time, urllib.request
+import glob, hashlib, json, os, shutil, subprocess, sys, time, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 import numpy as np, pandas as pd, geopandas as gpd, shapely, pyogrio
 from scipy.sparse import coo_matrix
@@ -259,7 +259,7 @@ def build(pilota):
         if prev:
             q = shapely.make_valid(shapely.difference(g[n], shapely.union_all(g[prev]), grid_size=0.01))
             g[n] = shapely.union_all([p for p in shapely.get_parts(q) if p.geom_type == "Polygon" and p.area > 0.01]) if not q.is_empty else q
-    Lt["geometry"] = g; Lt["area_m2"] = Lt.area.round(1)
+    Lt["geometry"] = shapely.force_2d(g); Lt["area_m2"] = Lt.area.round(1)  # la Z ereditata dalle unità DBT varia tra esecuzioni (C8)
     keep = (~Lt.geometry.is_empty) & np.where(Lt.classe == CL[1], Lt.area_m2 >= P["lot_min_m2"], np.where(Lt.classe == CL[2], Lt.area_m2 >= P["att_min_m2"], Lt.area_m2 > 1))
     for c, kk in zip(CL, ("riuso", "edificabile", "attivazione")): W += [(kk, "dopo la rimozione delle sovrapposizioni (sopra il minimo di classe)", int((keep & (Lt.classe == c)).sum()))]
     Lt = Lt[keep].reset_index(drop=True)
@@ -355,7 +355,10 @@ def main():
     res["proprieta"] = Lt.groupby(["classe", "proprieta"]).size().rename("n").reset_index().values.tolist()
     res["area_ha"] = Lt.groupby("classe").area_m2.sum().div(1e4).round(1).to_dict()
     res["nil_con_lotti"] = int(Lt.nil_id.nunique()); res["hash_contenuto"] = content_hash(Lt)
-    res["passa_C1_C6"] = all(res[c] for c in ("C1", "C2", "C3", "C4", "C6")) and res.get("C5", False)
+    prev = sorted(glob.glob(os.path.join(HERE, "esecuzioni", "*_completa", "esito_criteri.json")))  # C8: confronto con l'esecuzione completa precedente
+    res["C8_hash_precedente"] = json.load(open(prev[-1])).get("hash_contenuto") if prev and not pil else None
+    res["C8"] = res["C8_hash_precedente"] == res["hash_contenuto"]
+    res["passa"] = all(res.get(c) is True for c in ("C1", "C2", "C3", "C4", "C5", "C6", "C8"))
     # ---------------------------------------------------------- uscite
     meta = pd.DataFrame([
         ("id", "ipotesi", "R/E/A + progressivo per classe e posizione"), ("geometry", "catasto; dbt", "particelle unite; riuso: particella meno gli altri edifici DBT; senza sovrapposizioni (precedenza R > E > A)"),
@@ -395,7 +398,7 @@ def main():
         Lt.drop(columns="geometry").to_csv(os.path.join(T, "lotti_attributi.csv"), index=False)
         js(os.path.join(HERE, "esito_criteri.json")); figure(Lt, nil, cas)
         if casi is not None: controllo_umano(camp, casi)
-    log("fatto", res["conteggi"], {c: res.get(c) for c in ("C1", "C2", "C3", "C4", "C5", "C6")}, res["hash_contenuto"][:12])
+    log("fatto", res["conteggi"], {c: res.get(c) for c in ("C1", "C2", "C3", "C4", "C5", "C6", "C8")}, res["hash_contenuto"][:12])
 
 
 def criteri_orto(camp, cod, Lt):

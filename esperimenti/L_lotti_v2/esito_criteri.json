@@ -412,16 +412,23 @@
   "lotto edificabile": 653.8
  },
  "nil_con_lotti": 83,
- "hash_contenuto": "85985c277a6e7c92da20f4af07e45cea8bc6a8105b01b410d448030c474253d0",
- "passa_C1_C6": false,
+ "hash_contenuto": "011672c66a0e9212221ba7984b847295848924c29dcdeeae7d48fded0089249b",
+ "C8_hash_precedente": "011672c66a0e9212221ba7984b847295848924c29dcdeeae7d48fded0089249b",
+ "C8": true,
+ "passa": false,
  "registro": {
-  "utc": "2026-11-11T104447Z",
-  "commit": "76dbf2f770ff2910d7f254d186815d7ecb0c0127",
+  "utc": "2026-11-11T122931Z",
+  "commit": "a97c9f95cd6d8af3ec00dffe65417926996f6917",
   "modifiche_non_committate": [
-   "?? esperimenti/L_lotti_v2/"
+   "M esperimenti/L_lotti_v2/esecuzioni/registro.txt",
+   " M esperimenti/L_lotti_v2/esito_criteri.json",
+   " M esperimenti/L_lotti_v2/lotti_v2.gpkg",
+   " M esperimenti/L_lotti_v2/run.py",
+   "?? esperimenti/L_lotti_v2/esecuzioni/2026-11-11T121112Z_completa/",
+   "?? esperimenti/L_lotti_v2/esecuzioni/2026-11-11T122041Z_completa/"
   ],
-  "sha256_run_py": "5169bd4732857d374da83abb821841382e563994a54a645f69dbc3c51e7d3dd6",
+  "sha256_run_py": "3223654738f5d23bff64ba3e0d999a170e70646d48a2f2f9bf139138dee93b49",
   "python": "3.13.18",
-  "durata_s": 476
+  "durata_s": 526
  }
 }
