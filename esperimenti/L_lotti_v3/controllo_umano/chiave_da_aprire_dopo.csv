@@ -1,0 +1,21 @@
+caso,codice,tipo,id,classe,origine,agente_Q1,agente_tetto,agente_veg,agente_uso,agente_nota
+D01,C065,lotto,A00568,area di attivazione,DUSAF13 / verde di servizio PGT,V,,,,giardino storico e prato con resti archeologici
+D02,C185,base,F205_014000.72,particella qualsiasi,,U,T1,V0,U?,edificio residenziale
+D03,C054,lotto,R00093,lotto da riusare,dbt_diruto,D,T2,V2,U-,giardino inselvatichito con piccoli edifici degradati
+D04,C135,base,F205_023500.190,particella qualsiasi,,U,T1,V1,U?,cortile e edifici
+D05,C129,lotto,E00275,lotto edificabile,AT,D,T1,V2,U-,piazzali in rovina e vegetazione presso i binari
+D06,C094,lotto,E00229,lotto edificabile,AT,L,,,,bosco spontaneo e orti informali
+D07,C039,lotto,E00207,lotto edificabile,DUSAF13,L,,,,area sterrata vuota
+D08,C198,base,F205_038000.123,particella qualsiasi,,U,T1,V0,U?,villa
+D09,C067,base,F205_022400.87,particella qualsiasi,,U,T1,V0,U?,edifici e cortile
+D10,C154,lotto,E00233,lotto edificabile,DUSAF13,C,,,U+,grande area di cantiere sterrata
+D11,C169,lotto,E00279,lotto edificabile,AT,U,T1,V1,U+,complesso a corte con parcheggi
+D12,C186,lotto,R00027,lotto da riusare,dbt_diruto,L,,,,area alberata spontanea
+D13,C040,lotto,A00566,area di attivazione,DUSAF13 / taglia < 1.500 m²,C,,,U+,cantiere
+D14,C152,lotto,A00527,area di attivazione,AT / taglia < 1.500 m²,I,,,,strada lungo la ferrovia
+D15,C126,lotto,E00391,lotto edificabile,DUSAF13,D,T2,V2,U-,complesso con vegetazione spontanea fitta; coperture irregolari
+D16,C012,base,F205_006400.102,particella qualsiasi,,I,,,,strada
+D17,C111,lotto,E00237,lotto edificabile,DUSAF13,L,,,,giardini e orti inselvatichiti
+D18,C086,lotto,R00026,lotto da riusare,dbt_diruto,D,T3,V2,U-,rudere senza copertura con vegetazione
+D19,C010,lotto,R00133,lotto da riusare,dbt_diruto,U,T1,V0,U+,capannoni e piazzale con materiali
+D20,C077,lotto,R00036,lotto da riusare,dbt_diruto,L,,,U?,piazzale sterrato con materiali

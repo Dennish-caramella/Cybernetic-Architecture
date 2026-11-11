@@ -1,0 +1,22 @@
+Secondo codificatore cieco — Base L v3 (ticket #35)
+
+Materiale: img/C001.jpg ... img/C200.jpg (ortofoto AGEA 2018-2019, Regione Lombardia; licenza di sola visione, non diffondere; le immagini non sono in git e si rigenerano con run.py) e il foglio vuoto codifica_secondo.csv.
+Non aprire nient'altro della cartella esperimenti/L_lotti_v3 (in particolare tabelle/, controllo_umano/, esito_criteri.json, esecuzioni/): la codifica deve essere fatta sull'immagine sola.
+
+Ogni immagine mostra un'area con contorno ROSSO. Codifica ciò che sta DENTRO il contorno rosso, in ordine di codice, una riga per immagine.
+
+Q1 copertura prevalente (oltre metà dell'area nel contorno), una lettera:
+ L libera: suolo nudo, sterrato, prato o incolto non curato, piazzale vuoto
+ C cantiere
+ D edificato dismesso o degradato: tetti danneggiati o crollati, vegetazione su edifici o piazzali, nessun segno d'uso
+ U edificato o area in uso (inclusi cortili, parcheggi pieni, pertinenze)
+ V verde curato (parco, giardino) o agricolo coltivato
+ I infrastruttura in uso (binari attivi, strade, piazzali di servizio in uso)
+ X non giudicabile
+Q2 solo se nel contorno ci sono edifici (altrimenti lasciare vuoto):
+ tetto: T1 integro / T2 danneggiato / T3 crollato o assente / T0 non visibile
+ veg: V0 nessuna vegetazione spontanea su edifici o piazzali / V1 poca / V2 molta
+ uso: U+ segni d'uso (auto, manutenzione, insegne) / U- nessun segno d'uso / U? incerto
+nota: facoltativa, breve.
+
+Consegna: codifica_secondo.csv compilato; poi calcola e annota lo SHA-256 del file prima di qualsiasi confronto. È uno screening visivo dall'alto, non una perizia.

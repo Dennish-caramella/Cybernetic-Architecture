@@ -1,0 +1,34 @@
+classe,passo,rimasti,rimossi
+comune,"particelle di terreno nel Comune (catasto, mappale numerico)",109863,
+riuso:fonti,ds503: punti,174,
+riuso:fonti,ds503: punti con un edificio DBT entro 20 m,165,
+riuso:fonti,DBT diruti (EDIFC_STAT=02),610,
+riuso:fonti,DBT diruti con volume fuori terra,447,
+riuso:fonti,edifici fonte distinti,595,
+riuso,edifici fonte su una particella di terreno del Comune,549,
+riuso:fonti,"screening ds503: lotti candidati (R2-R4 passati, almeno un edificio ds503 non diruto)",111,
+riuso:fonti,screening ds503: lotti confermati (Q1 = D o tetto T2/T3),31,
+riuso,edifici fonte confermati (diruti DBT o ds503 confermati dallo screening),453,96
+riuso,particelle con edifici fonte,367,86
+riuso,particella >= 300 m²,280,87
+riuso,"non verde/agricolo/paesaggio/istruzione PGT, non acque DUSAF (>= 0,5)",211,69
+riuso,"non infrastrutture/verde/agricolo/boschi DUSAF (>= 0,5), salvo particelle AT",189,22
+riuso,fuori dai PCU,171,18
+edificabile+attivazione,"ingresso E1 (AT, AMB_DEG, DUSAF 133/134, Demanio disp., terreno comunale con DUSAF 131-134/1412)",3172,
+edificabile+attivazione,"ingresso E1 o A1 (anche DUSAF 1412, 131/132)",3873,
+edificabile+attivazione,particella >= 300 m²,2192,1681
+edificabile+attivazione,fuori dai PCU,2068,124
+edificabile+attivazione,"non acque DUSAF (>= 0,5)",2068,0
+edificabile+attivazione,"non infrastrutture/agricolo/boschi/verde in uso DUSAF (>= 0,5), salvo particelle AT",2065,3
+edificabile+attivazione,"non agricolo/istruzione PGT (>= 0,5)",2021,44
+edificabile+attivazione,"non residenza occupata (quota residenziale del volume < 0,5)",1821,200
+edificabile+attivazione,non particella di un lotto da riusare,1801,20
+edificabile,particelle verso l'abitazione,1309,
+attivazione,particelle verso l'attivazione per vincolo o ingresso solo verde/cava (A2),492,
+edificabile,gruppi per adiacenza (stessa origine),299,1010
+attivazione,gruppi per adiacenza (stessa origine e motivo),234,258
+edificabile,lotto >= 1500 m²,245,54
+attivazione,gruppi >= 500 m² (A2) + gruppi edificabili 500-1.500 m² (A3),258,
+riuso,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),171,0
+edificabile,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),245,0
+attivazione,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),258,0

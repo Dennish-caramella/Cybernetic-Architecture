@@ -1,0 +1,34 @@
+attributo,fonte,regola,fonte_estesa,licenza
+id,ipotesi,R/E/A + progressivo per classe e posizione,Parametro o formula scelta [H] (vedi REPORT §3),—
+geometry,catasto; dbt,particelle unite; riuso: particella meno gli altri edifici DBT; senza sovrapposizioni (precedenza R > E > A),"Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11 | Comune di Milano, DBT 2020 (ds2889): UN_VOL, EDIFC, EDIFC_USO",CC BY 4.0 | CC BY 2.5 IT
+classe,ipotesi,regole REPORT §1.2,Parametro o formula scelta [H] (vedi REPORT §3),—
+origine,pgt; dusaf; ds677; demanio; ds503; dbt,ingresso (e motivo per l'attivazione),"Regione Lombardia, Tavola delle previsioni di piano (mosaico PGT, tav_previsioni_b), PGT Milano 2030 | Regione Lombardia, DUSAF 8.0 (uso del suolo 2024), servizio ArcGIS dusaf8 | Comune di Milano, Elenco immobili di proprietà comunale 2019 (ds677) | Agenzia del Demanio via Comune di Milano, Aree (ds2688) e Fabbricati (ds2689) del Demanio statale 2023 | Comune di Milano, Edifici e aree in degrado 2014-2017 (ds503, tav. R.10 PGT) | Comune di Milano, DBT 2020 (ds2889): UN_VOL, EDIFC, EDIFC_USO","[L] licenza non verificata | CC BY 4.0 [I: come DUSAF 7.0, licenza della 8.0 non letta] | CC BY 4.0 | CC BY 3.0 IT | CC BY 4.0 | CC BY 2.5 IT"
+ref,catasto,riferimenti catastali,"Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0
+n_particelle,catasto,,"Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0
+ambito_pgt,pgt,nome AT non PCU,"Regione Lombardia, Tavola delle previsioni di piano (mosaico PGT, tav_previsioni_b), PGT Milano 2030",[L] licenza non verificata
+edifici_fonte,dbt,CEDIUV degli edifici fonte (riuso),"Comune di Milano, DBT 2020 (ds2889): UN_VOL, EDIFC, EDIFC_USO",CC BY 2.5 IT
+fonti_riuso,ds503; dbt,,"Comune di Milano, Edifici e aree in degrado 2014-2017 (ds503, tav. R.10 PGT) | Comune di Milano, DBT 2020 (ds2889): UN_VOL, EDIFC, EDIFC_USO",CC BY 4.0 | CC BY 2.5 IT
+nota,ds503; dbt,descrizione della fonte,"Comune di Milano, Edifici e aree in degrado 2014-2017 (ds503, tav. R.10 PGT) | Comune di Milano, DBT 2020 (ds2889): UN_VOL, EDIFC, EDIFC_USO",CC BY 4.0 | CC BY 2.5 IT
+volume_fonte_m3,dbt,volume fuori terra dei soli edifici fonte,"Comune di Milano, DBT 2020 (ds2889): UN_VOL, EDIFC, EDIFC_USO",CC BY 2.5 IT
+area_m2,catasto,"area del lotto, EPSG:32632","Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0
+cx,catasto,punto interno x,"Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0
+cy,catasto,punto interno y,"Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0
+nil_id,nil,,"Comune di Milano, NIL vigenti PGT 2030 (ds964)",CC BY 4.0
+nil_nome,nil,,"Comune di Milano, NIL vigenti PGT 2030 (ds964)",CC BY 4.0
+nil_indice_verde,ds2813,"indice di verde urbano del NIL, luglio 2024","Comune di Milano, Indice di verde urbano per NIL, luglio 2024 (ds2813, SPOTTED)",CC BY 4.0
+nil_deficit_verde,ds2813; ipotesi,1 se nel quartile inferiore degli 88 NIL,"Comune di Milano, Indice di verde urbano per NIL, luglio 2024 (ds2813, SPOTTED) | Parametro o formula scelta [H] (vedi REPORT §3)",CC BY 4.0 | —
+anche_attivazione,ds2813; ipotesi,lotto edificabile >= 5.000 m² in NIL con deficit di verde (A4),"Comune di Milano, Indice di verde urbano per NIL, luglio 2024 (ds2813, SPOTTED) | Parametro o formula scelta [H] (vedi REPORT §3)",CC BY 4.0 | —
+cap_far05,ipotesi,"floor(0,70 × 0,5 × area / 80); riuso: demolizione e ricostruzione; attivazione 0",Parametro o formula scelta [H] (vedi REPORT §3),—
+cap_far1,ipotesi,"floor(0,70 × 1 × area / 80); come sopra",Parametro o formula scelta [H] (vedi REPORT §3),—
+cap_far2,ipotesi,"floor(0,70 × 2 × area / 80); come sopra",Parametro o formula scelta [H] (vedi REPORT §3),—
+cap_recupero,dbt; ipotesi,"riuso: floor(0,70 × volume_fonte / 3,2 / 80); altre classi vuoto","Comune di Milano, DBT 2020 (ds2889): UN_VOL, EDIFC, EDIFC_USO | Parametro o formula scelta [H] (vedi REPORT §3)",CC BY 2.5 IT | —
+scenario_principale,ipotesi; orto,"riuso: T3 -> demolizione, T1/T2 -> recupero (screening ds503 o campione); altrimenti diruto -> demolizione, ds503 -> recupero","Parametro o formula scelta [H] (vedi REPORT §3) | AGEA, Ortofoto 2018-2019, servizio Regione Lombardia BaseMap/Ortofoto2018_2019",— | proprietà AGEA: visione e stampa con citazione [S]
+base_scenario,ipotesi; orto,"regola di default, screening ds503 o campione su ortofoto","Parametro o formula scelta [H] (vedi REPORT §3) | AGEA, Ortofoto 2018-2019, servizio Regione Lombardia BaseMap/Ortofoto2018_2019",— | proprietà AGEA: visione e stampa con citazione [S]
+conferma_screening,ds503; orto,1 se il lotto da riusare contiene edifici ds503 confermati dallo screening su ortofoto (R1 v3),"Comune di Milano, Edifici e aree in degrado 2014-2017 (ds503, tav. R.10 PGT) | AGEA, Ortofoto 2018-2019, servizio Regione Lombardia BaseMap/Ortofoto2018_2019",CC BY 4.0 | proprietà AGEA: visione e stampa con citazione [S]
+quota_comunale,ds677; catasto,quota di area su particelle ds677,"Comune di Milano, Elenco immobili di proprietà comunale 2019 (ds677) | Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0 | CC BY 4.0
+quota_demanio,demanio; catasto,quota di area su particelle con un punto Demanio,"Agenzia del Demanio via Comune di Milano, Aree (ds2688) e Fabbricati (ds2689) del Demanio statale 2023 | Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 3.0 IT | CC BY 4.0
+proprieta,ds677; demanio,"Demanio se quota_demanio >= 0,5; comunale se quota_comunale >= 0,5; altrimenti ignoto","Comune di Milano, Elenco immobili di proprietà comunale 2019 (ds677) | Agenzia del Demanio via Comune di Milano, Aree (ds2688) e Fabbricati (ds2689) del Demanio statale 2023",CC BY 4.0 | CC BY 3.0 IT
+proprieta_conflitto,ds677; demanio,"entrambe le quote >= 0,5","Comune di Milano, Elenco immobili di proprietà comunale 2019 (ds677) | Agenzia del Demanio via Comune di Milano, Aree (ds2688) e Fabbricati (ds2689) del Demanio statale 2023",CC BY 4.0 | CC BY 3.0 IT
+vincoli_noti,ds600; pgt; demanio,quota > 10% o punto nel lotto,"Città Metropolitana, Interventi di bonifica (ds600) | Regione Lombardia, Tavola delle previsioni di piano (mosaico PGT, tav_previsioni_b), PGT Milano 2030 | Agenzia del Demanio via Comune di Milano, Aree (ds2688) e Fabbricati (ds2689) del Demanio statale 2023",CC0 | [L] licenza non verificata | CC BY 3.0 IT
+fonti,—,,,non applicabile (campo descrittivo)
+licenze,—,,,non applicabile (campo descrittivo)

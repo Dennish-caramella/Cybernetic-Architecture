@@ -3,3 +3,18 @@
 2026-11-11T13:13Z  pilota 1: errore di codice (campione più grande della popolazione nel pilota, 12 edificabili < 50): allocazione limitata alla popolazione; nessuna regola toccata. Pilota 2.
 2026-11-11T13:14Z  pilota 2 (esecuzioni/*_pilota): C1-C4, C6 veri, C8 falso per costruzione (nessuna esecuzione precedente). Errore di codice ereditato da v2: il filtro PGT bonifica usava BONIFICA == "SI" ma il campo è numerico (1/2); il testo SI/NO è in DBONIFICA [V]. In v2 la quota di bonifica PGT era quindi sempre 0 (vincoli_noti solo da ds600). Corretto in DBONIFICA == "SI" (vincoli_noti e copertura_ambiti); nessuna regola di classe toccata (la bonifica non esclude, pre-registrazione 1.2). Avvio esecuzione completa 1 (fase screening ds503: si ferma dopo le immagini S).
 2026-11-11T13:14Z  esecuzione completa 1 (--no-fetch): fase screening
+2026-11-11T13:26Z  esecuzione completa 1: fermata per costruzione dopo lo screening (111 immagini S001-S111, fogli 2x2 in _cache/L_lotti_v3/orto/screening/fogli). Nessun lotto finale. Inizio codifica dello screening senza aprire tabelle/screening_ds503_chiave.csv.
+2026-11-11T13:28Z  codifica dello screening ds503 completata (111 righe) senza aprire la chiave; SHA-256 registrato prima dell'esecuzione che la usa:
+3ad73cdc49bb29b555d8737a769ece0b3da61d48743b9c1290dbfed7d486cab7  tabelle/screening_ds503_codifica.csv
+2026-11-11T13:28Z  correzione di formato: virgole nella colonna nota (CSV non leggibile) sostituite da ';'; codici invariati. Nuovo SHA-256, registrato prima dell'esecuzione:
+e92d4f2df32e7ce82e9ccb59960ccedcd05f38bf14374deec41af04075318530  tabelle/screening_ds503_codifica.csv
+2026-11-11T13:28Z  esecuzione completa 2 (--no-fetch): con lo screening; prepara il campione e le immagini C001-C200 (C5 in attesa della codifica)
+2026-11-11T13:45Z  esecuzione completa 2: C1-C4, C6 veri; C8 falso per costruzione (nessuna completa precedente con lotti); conteggi visti: 245 edificabili, 171 riuso, 258 attivazione. Immagini C001-C200 e cartella del secondo codificatore pronte. Inizio codifica cieca (fogli 2x2 in _cache/L_lotti_v3/orto/img/fogli) senza aprire tabelle/campione_ortofoto.csv.
+2026-11-11T13:48Z  codifica cieca C001-C200 completata (200 righe) senza aprire tabelle/campione_ortofoto.csv. SHA-256 registrato prima dell'unione (esecuzione completa 3):
+d4211b4697b4fc9b832000ac209752d738547fe65295ad3ce9bc6e557175f159  tabelle/codifica_ortofoto.csv
+2026-11-11T13:48Z  esecuzione completa 3 (--no-fetch): unisce codifica e campione, calcola C5; prepara controllo_umano
+2026-11-11T13:57Z  esecuzione completa 3 (2026-11-11T135645Z_completa): C1-C4, C6 veri; C5 NON passa: C5a 0,58 [0,482; 0,672] < 0,70; base 0,11 [0,063; 0,186]; differenza 0,47, IC Newcombe [0,346; 0,573] (C5b passerebbe). C8 falso per costruzione (la 2 non aveva lo stesso stato del campione/scenari). Regola di arresto: nessuna regola o soglia modificata.
+2026-11-11T13:57Z  correzione di sola presentazione (non tocca lotti né hash del contenuto): nella cascata la colonna 'rimossi' è vuota per le righe '*:fonti' e per le righe di ingresso con aumento (differenze tra righe non consecutive, ereditato da v2). Esecuzioni 4 e 5 per C8.
+2026-11-11T13:57Z  esecuzione completa 4 (--no-fetch) per C8
+2026-11-11T14:05Z  esecuzione completa 5 (--no-fetch) per C8
+2026-11-11T14:13Z  esecuzioni 4 (140534Z) e 5 (141339Z): hash del contenuto 4f41a0afb504 identico a quello della 3; C8 passa. Esito finale: C1-C4, C6, C8 passano; C5 NON passa (C5a 0,58 < 0,70; C5b passa); C7 in attesa di Dennis. test_lotti.py ok. Regola di arresto: base NON congelata.

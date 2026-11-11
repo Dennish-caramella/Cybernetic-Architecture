@@ -1,4 +1,4 @@
-# versioni con cui è stata eseguita la Base L v2 (Python 3.13.18), 2026-11-11
+# versioni con cui è stata eseguita la Base L v3 (Python 3.13.18), 2026-11-11
 geopandas==1.2.0
 shapely==2.2.0
 pyogrio==0.13.0

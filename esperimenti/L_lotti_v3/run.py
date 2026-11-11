@@ -424,6 +424,7 @@ def main():
                      and (Lt.cap_recupero[r].astype(int) == cap(Lt.volume_fonte_m3[r] / P["storey_m"], 1.0)).all() and Lt.cap_recupero[~r].isna().all())
     tab = pd.crosstab([Lt.nil_id, Lt.nil_nome], Lt.classe).reset_index()
     cas = pd.DataFrame(W, columns=["classe", "passo", "rimasti"]); cas["rimossi"] = cas.groupby("classe").rimasti.diff().mul(-1).astype("Int64")
+    cas.loc[cas.classe.str.endswith(":fonti") | (cas.rimossi < 0), "rimossi"] = pd.NA  # righe di fonti o di ingresso: la differenza non è un filtro
     last = cas.groupby("classe").rimasti.last()
     res["C6"] = bool(all(tab[c].sum() == (Lt.classe == c).sum() for c in Lt.classe.unique())
                      and last["riuso"] == r.sum() and last["edificabile"] == e.sum() and last["attivazione"] == a.sum())

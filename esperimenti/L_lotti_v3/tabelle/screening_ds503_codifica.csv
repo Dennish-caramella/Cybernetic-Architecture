@@ -1,0 +1,112 @@
+codice,Q1,tetto,veg,uso,nota
+S001,U,T1,V0,U?,edificio integro in contesto denso
+S002,U,T1,V1,U?,edificio integro; terreno incolto fuori dal contorno
+S003,U,T0,V0,U?,piazzale con impianto (betonaggio?) apparentemente attivo
+S004,U,T1,V0,U?,capannone con tetto integro
+S005,D,T1,V2,U-,villa in giardino molto inselvatichito
+S006,U,T1,V0,U?,capannone con lucernari; tetto apparentemente integro
+S007,U,T1,V1,U?,edifici integri; cortile con materiali e auto
+S008,D,T1,V2,U?,corte con vegetazione spontanea e macerie; tetti apparentemente integri
+S009,U,T1,V0,U+,edificio tetto bianco; auto
+S010,U,T1,V0,U+,case a schiera nuove
+S011,U,T1,V0,U?,isolato denso
+S012,U,T1,V0,U?,capannone a shed integro
+S013,C,T0,V0,U?,gru; edificio in lavori
+S014,D,T1,V2,U?,piccoli edifici tra alberi e incolto
+S015,U,T1,V1,U?,edificio in giardino; orti
+S016,U,T1,V0,U?,isolato denso
+S017,U,T1,V1,U+,corte con auto
+S018,U,T1,V1,U?,corte integra
+S019,U,T1,V1,U+,parcheggio e edificio
+S020,D,T2,V2,U-,parte senza tetto con vegetazione; edificio a tetto bianco integro
+S021,D,T2,V2,U-,cortili con macerie e vegetazione; coperture parzialmente aperte
+S022,U,T1,V0,U?,capannone in coppi integro
+S023,U,T1,V0,U?,tetto piano integro
+S024,U,T1,V0,U+,edificio in uso; parcheggio
+S025,U,T1,V1,U?,coperture scure; tetto incerto
+S026,U,T1,V1,U?,complesso residenziale con verde
+S027,U,T1,V0,U?,edificio tetto bianco
+S028,D,T3,V2,U-,strutture senza copertura; macerie; vegetazione
+S029,D,T2,V2,U-,capannoni con coperture deteriorate e vegetazione tra i corpi
+S030,D,T3,V2,U-,struttura senza copertura; vegetazione e macerie
+S031,U,T1,V1,U?,capannone integro
+S032,D,T2,V2,U-,piccolo edificio con copertura irregolare in giardino incolto
+S033,D,T2,V2,U-,vegetazione sulla copertura
+S034,U,T1,V0,U?,edificio basso integro
+S035,D,T2,V2,U-,copertura in coppi deformata; cortile incolto
+S036,U,T1,V0,U?,capannoni integri
+S037,U,T1,V0,U?,edifici integri
+S038,U,T1,V1,U?,edificio integro
+S039,D,T1,V2,U?,area scoperta con vegetazione e materiali; capannoni integri
+S040,U,T1,V0,U?,edificio integro
+S041,U,T1,V0,U?,capannoni integri
+S042,U,T1,V0,U+,edificio ristrutturato
+S043,U,T1,V1,U?,isolato
+S044,U,T1,V1,U?,corpo lungo integro in area produttiva
+S045,D,T1,V2,U-,due corpi in area molto inselvatichita; nessuna auto
+S046,D,T2,V2,U-,copertura irregolare; vegetazione fitta nel lotto
+S047,L,T1,V2,U-,area aperta sterrata e incolta; piccolo edificio
+S048,U,T1,V0,U?,edificio a tetto bianco in isolato
+S049,U,T1,V1,U?,edificio con giardino
+S050,U,T1,V1,U?,edificio lungo integro
+S051,U,T1,V0,U?,edificio lungo integro
+S052,U,T1,V1,U?,edifici alti integri
+S053,U,T1,V1,U?,edificio residenziale integro
+S054,U,T1,V0,U?,capannone a volte integro
+S055,D,T3,V1,U-,piattaforme e resti di edifici lungo la ferrovia
+S056,D,T3,V1,U-,capannoni con sole capriate; senza copertura
+S057,U,T1,V0,U?,corpo basso integro
+S058,C,T0,V0,U?,gru; complesso in lavori
+S059,L,T1,V2,U?,lotto prevalentemente incolto; piccolo edificio
+S060,D,T3,V2,U-,impronta dell'edificio vuota; macerie e vegetazione
+S061,D,T1,V2,U?,giardino inselvatichito e piazzale con materiali
+S062,D,T1,V1,U-,corpo di caserma; tetto integro; piazzale con crepe e vegetazione
+S063,U,T1,V0,U+,capannoni; furgoni
+S064,U,T1,V0,U?,edificio integro; cortile con materiali
+S065,U,T1,V1,U?,isolato
+S066,C,T0,V1,U?,gru al centro della corte; terreno intorno scoperto
+S067,U,T1,V1,U?,piccolo edificio con giardino
+S068,U,T1,V0,U?,complesso integro
+S069,L,T1,V2,U-,incolto con capannone e serra senza copertura
+S070,U,T1,V0,U?,isolato
+S071,U,T1,V0,U?,edifici integri
+S072,U,T1,V1,U?,edificio con corte
+S073,D,T2,V2,U-,incolto con macerie; un corpo senza copertura
+S074,U,T1,V0,U?,isolato
+S075,U,T1,V0,U?,edificio a tetto bianco
+S076,L,T1,V1,U-,edificio cubico in un'area sterrata sgomberata
+S077,D,T1,V2,U-,piazzale vuoto con vegetazione; edificio integro
+S078,D,T3,V2,U-,corpi con alberi dentro l'impronta (senza copertura)
+S079,D,T2,V2,U-,copertura con buchi
+S080,C,T0,V0,U+,cantiere con materiali
+S081,U,T1,V0,U?,isolato
+S082,U,T1,V1,U?,capannone a tetto scuro; bordi inselvatichiti
+S083,U,T1,V0,U?,edificio lungo integro
+S084,U,T1,V0,U?,capannone in isolato
+S085,U,T1,V0,U?,isolato denso
+S086,D,T2,V1,U-,struttura circolare con copertura degradata e resti
+S087,U,T1,V0,U?,isolato con pannelli solari
+S088,U,T1,V1,U+,edificio alto; parcheggio
+S089,U,T1,V1,U?,piccoli edifici; copertura incerta
+S090,U,T1,V0,U?,edificio con volte e tetto piano
+S091,U,T1,V0,U?,capannoni integri; cortile
+S092,U,T1,V1,U+,edificio con pannelli solari; auto
+S093,U,T1,V0,U+,case nuove con pannelli
+S094,U,T1,V0,U?,tetto piano con chiazze
+S095,D,T2,V2,U-,tetto piano con detriti; circondato da vegetazione spontanea
+S096,L,T3,V2,U-,lotto incolto tra ferrovie; piccolo corpo senza copertura
+S097,U,T1,V0,U?,capannone con lucernari integro
+S098,U,T1,V1,U?,edifici e corte
+S099,U,T1,V0,U+,edificio lungo con auto sul tetto
+S100,D,T2,V2,U-,copertura scura con vegetazione su un lato; lotto incolto
+S101,U,T1,V1,U?,edificio in coppi integro
+S102,U,T1,V0,U+,edificio con auto
+S103,U,T1,V0,U+,capannone; auto
+S104,U,T1,V0,U?,edificio per uffici
+S105,U,T1,V1,U?,capannoni a tetto grigio
+S106,D,T2,V1,U-,capannoni con coperture rotte e vegetazione; grande piazzale vuoto
+S107,D,T2,V2,U-,capannoni a shed con coperture mancanti; area inselvatichita
+S108,D,T1,V2,U-,edificio a tetto piano in lotto inselvatichito
+S109,U,T1,V0,U?,isolato
+S110,U,T1,V2,U?,edificio in coppi integro; intorno incolto
+S111,U,T2,V2,U?,corpo con copertura scura irregolare (incerto); corte alberata
