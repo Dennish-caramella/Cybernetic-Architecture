@@ -1,0 +1,313 @@
+{
+ "C3_completo": {
+  "coppie_oltre_tol": 1,
+  "coppie_area_pos": 62,
+  "m2_max": 157.3
+ },
+ "C3_leggero_repo": {
+  "coppie_oltre_tol": 6,
+  "coppie_area_pos": 172,
+  "m2_max": 194.2
+ },
+ "C5a_originale_codice": {
+  "k": 14,
+  "n": 30,
+  "p": 0.467,
+  "ic95": [
+   0.302,
+   0.639
+  ]
+ },
+ "C5a_originale_testo": {
+  "k": 13,
+  "n": 30,
+  "p": 0.433,
+  "ic95": [
+   0.274,
+   0.608
+  ]
+ },
+ "C5b_originale_codice": {
+  "k": 29,
+  "n": 30,
+  "p": 0.967,
+  "ic95": [
+   0.833,
+   0.994
+  ]
+ },
+ "C5b_originale_testo": {
+  "k": 30,
+  "n": 30,
+  "p": 1.0,
+  "ic95": [
+   0.886,
+   1.0
+  ]
+ },
+ "nuovo_campione_ids": [
+  "E00574",
+  "E01087",
+  "E01890",
+  "E01705",
+  "E01570",
+  "E00558",
+  "E01530",
+  "E00568",
+  "E01488",
+  "E01066",
+  "E00703",
+  "E01569",
+  "E01277",
+  "E01629",
+  "E01003",
+  "E00701",
+  "E00517",
+  "E00433",
+  "E01961",
+  "E01425",
+  "E01895",
+  "E01838",
+  "E00274",
+  "E01388",
+  "E00995",
+  "E00865",
+  "E01641",
+  "E01611",
+  "E00893",
+  "E00341",
+  "E01112",
+  "E01268",
+  "E00612",
+  "E00503",
+  "E00323",
+  "E01949",
+  "E00989",
+  "E01572",
+  "E01126",
+  "E01541",
+  "E01474",
+  "E01626",
+  "E01276",
+  "E01679",
+  "E00808",
+  "E01219",
+  "E00623",
+  "E00351",
+  "E01121",
+  "E01068",
+  "E01507",
+  "E01407",
+  "E01668",
+  "E00434",
+  "E01576",
+  "E01403",
+  "E00453",
+  "E01344",
+  "E01791",
+  "E01212",
+  "E01870",
+  "E00889",
+  "E00513",
+  "E00872",
+  "E01880",
+  "E00361",
+  "E01693",
+  "E01760",
+  "E00354",
+  "E00832",
+  "E00993",
+  "E01279",
+  "E01973",
+  "E00525",
+  "E01656",
+  "E01975",
+  "E00505",
+  "E00614",
+  "E00990",
+  "E01608",
+  "E01005",
+  "E01162",
+  "E00477",
+  "E01909",
+  "E00955",
+  "E00759",
+  "E00552",
+  "E01607",
+  "E00379",
+  "E01757",
+  "E00491",
+  "E00754",
+  "E00586",
+  "E01264",
+  "E01475",
+  "E00876",
+  "E01747",
+  "E01477",
+  "E00700",
+  "E01160"
+ ],
+ "nuovo_C5a_regola_codice": {
+  "k": 51,
+  "n": 100,
+  "p": 0.51,
+  "ic95": [
+   0.413,
+   0.606
+  ]
+ },
+ "nuovo_libera_o_dismessa_DUSAF13x_1412": {
+  "k": 6,
+  "n": 100,
+  "p": 0.06,
+  "ic95": [
+   0.028,
+   0.125
+  ]
+ },
+ "nuovo_origini": [
+  87,
+  7
+ ],
+ "censimento_edificabili_per_origine": {
+  "AMB_DEG": {
+   "n": 3,
+   "c5a": 1.0,
+   "libera": 1.0,
+   "res_gt_05": 0.0
+  },
+  "AT": {
+   "n": 54,
+   "c5a": 1.0,
+   "libera": 0.204,
+   "res_gt_05": 0.0
+  },
+  "ERP": {
+   "n": 168,
+   "c5a": 0.048,
+   "libera": 0.006,
+   "res_gt_05": 0.952
+  },
+  "SOFT": {
+   "n": 1539,
+   "c5a": 0.554,
+   "libera": 0.073,
+   "res_gt_05": 0.444
+  }
+ },
+ "base_C5a_regola_su_particelle_qualsiasi_ge2286": {
+  "k": 127,
+  "n": 300,
+  "p": 0.423,
+  "ic95": [
+   0.369,
+   0.48
+  ]
+ },
+ "base_C5a_solo_parte_residenziale_ge2286": {
+  "k": 225,
+  "n": 300,
+  "p": 0.75,
+  "ic95": [
+   0.698,
+   0.796
+  ]
+ },
+ "base_C5b_regola_su_particelle_qualsiasi_ge300": {
+  "k": 246,
+  "n": 300,
+  "p": 0.82,
+  "ic95": [
+   0.773,
+   0.859
+  ]
+ },
+ "base_libera_ge2286": {
+  "k": 19,
+  "n": 300,
+  "p": 0.063,
+  "ic95": [
+   0.041,
+   0.097
+  ]
+ },
+ "particelle_terreno_chiave_foglio_mappale_duplicata": 0,
+ "particelle_geometria_duplicata": 0,
+ "riuso_res_gt_05": {
+  "n": 102,
+  "su": 248,
+  "capacita": 1927,
+  "capacita_tot": 8965,
+  "capacita_da_volume": 8481
+ },
+ "riuso_C5b_censimento_codice": {
+  "k": 244,
+  "n": 248,
+  "p": 0.984,
+  "ic95": [
+   0.959,
+   0.994
+  ]
+ },
+ "edificabili_con_capacita_ge20": {
+  "0.5": 1166,
+  "1.0": 1764
+ },
+ "edificabili_troncati_a_400": 102,
+ "capacita_tot_FAR": {
+  "0.5": 91623,
+  "1.0": 185703
+ },
+ "proprieta_per_origine": {
+  "AMB_DEG": {
+   "Demanio": 0,
+   "ignoto": 3,
+   "pubblico comunale": 0
+  },
+  "AT": {
+   "Demanio": 2,
+   "ignoto": 47,
+   "pubblico comunale": 5
+  },
+  "ERP": {
+   "Demanio": 2,
+   "ignoto": 94,
+   "pubblico comunale": 72
+  },
+  "SOFT": {
+   "Demanio": 18,
+   "ignoto": 1300,
+   "pubblico comunale": 221
+  },
+  "dbt_diruto": {
+   "Demanio": 0,
+   "ignoto": 98,
+   "pubblico comunale": 14
+  },
+  "dbt_diruto+demanio": {
+   "Demanio": 1,
+   "ignoto": 0,
+   "pubblico comunale": 0
+  },
+  "dbt_diruto+ds503": {
+   "Demanio": 0,
+   "ignoto": 17,
+   "pubblico comunale": 0
+  },
+  "demanio": {
+   "Demanio": 5,
+   "ignoto": 0,
+   "pubblico comunale": 0
+  },
+  "ds503": {
+   "Demanio": 0,
+   "ignoto": 104,
+   "pubblico comunale": 2
+  },
+  "ds677": {
+   "Demanio": 0,
+   "ignoto": 0,
+   "pubblico comunale": 7
+  }
+ }
+}
