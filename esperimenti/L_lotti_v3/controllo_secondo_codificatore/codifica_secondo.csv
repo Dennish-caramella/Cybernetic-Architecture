@@ -1,201 +1,201 @@
 codice,Q1,tetto,veg,uso,nota
-C001,,,,,
-C002,,,,,
-C003,,,,,
-C004,,,,,
-C005,,,,,
-C006,,,,,
-C007,,,,,
-C008,,,,,
-C009,,,,,
-C010,,,,,
-C011,,,,,
-C012,,,,,
-C013,,,,,
-C014,,,,,
-C015,,,,,
-C016,,,,,
-C017,,,,,
-C018,,,,,
-C019,,,,,
-C020,,,,,
-C021,,,,,
-C022,,,,,
-C023,,,,,
-C024,,,,,
-C025,,,,,
-C026,,,,,
-C027,,,,,
-C028,,,,,
-C029,,,,,
-C030,,,,,
-C031,,,,,
-C032,,,,,
-C033,,,,,
-C034,,,,,
-C035,,,,,
-C036,,,,,
-C037,,,,,
-C038,,,,,
-C039,,,,,
-C040,,,,,
-C041,,,,,
-C042,,,,,
-C043,,,,,
-C044,,,,,
-C045,,,,,
-C046,,,,,
-C047,,,,,
-C048,,,,,
-C049,,,,,
-C050,,,,,
-C051,,,,,
-C052,,,,,
-C053,,,,,
-C054,,,,,
-C055,,,,,
-C056,,,,,
-C057,,,,,
-C058,,,,,
-C059,,,,,
-C060,,,,,
-C061,,,,,
-C062,,,,,
-C063,,,,,
-C064,,,,,
-C065,,,,,
-C066,,,,,
-C067,,,,,
-C068,,,,,
-C069,,,,,
-C070,,,,,
-C071,,,,,
-C072,,,,,
-C073,,,,,
-C074,,,,,
-C075,,,,,
-C076,,,,,
-C077,,,,,
-C078,,,,,
-C079,,,,,
-C080,,,,,
-C081,,,,,
-C082,,,,,
-C083,,,,,
-C084,,,,,
-C085,,,,,
-C086,,,,,
-C087,,,,,
-C088,,,,,
-C089,,,,,
-C090,,,,,
-C091,,,,,
-C092,,,,,
-C093,,,,,
-C094,,,,,
-C095,,,,,
-C096,,,,,
-C097,,,,,
-C098,,,,,
-C099,,,,,
-C100,,,,,
-C101,,,,,
-C102,,,,,
-C103,,,,,
-C104,,,,,
-C105,,,,,
-C106,,,,,
-C107,,,,,
-C108,,,,,
-C109,,,,,
-C110,,,,,
-C111,,,,,
-C112,,,,,
-C113,,,,,
-C114,,,,,
-C115,,,,,
-C116,,,,,
-C117,,,,,
-C118,,,,,
-C119,,,,,
-C120,,,,,
-C121,,,,,
-C122,,,,,
-C123,,,,,
-C124,,,,,
-C125,,,,,
-C126,,,,,
-C127,,,,,
-C128,,,,,
-C129,,,,,
-C130,,,,,
-C131,,,,,
-C132,,,,,
-C133,,,,,
-C134,,,,,
-C135,,,,,
-C136,,,,,
-C137,,,,,
-C138,,,,,
-C139,,,,,
-C140,,,,,
-C141,,,,,
-C142,,,,,
-C143,,,,,
-C144,,,,,
-C145,,,,,
-C146,,,,,
-C147,,,,,
-C148,,,,,
-C149,,,,,
-C150,,,,,
-C151,,,,,
-C152,,,,,
-C153,,,,,
-C154,,,,,
-C155,,,,,
-C156,,,,,
-C157,,,,,
-C158,,,,,
-C159,,,,,
-C160,,,,,
-C161,,,,,
-C162,,,,,
-C163,,,,,
-C164,,,,,
-C165,,,,,
-C166,,,,,
-C167,,,,,
-C168,,,,,
-C169,,,,,
-C170,,,,,
-C171,,,,,
-C172,,,,,
-C173,,,,,
-C174,,,,,
-C175,,,,,
-C176,,,,,
-C177,,,,,
-C178,,,,,
-C179,,,,,
-C180,,,,,
-C181,,,,,
-C182,,,,,
-C183,,,,,
-C184,,,,,
-C185,,,,,
-C186,,,,,
-C187,,,,,
-C188,,,,,
-C189,,,,,
-C190,,,,,
-C191,,,,,
-C192,,,,,
-C193,,,,,
-C194,,,,,
-C195,,,,,
-C196,,,,,
-C197,,,,,
-C198,,,,,
-C199,,,,,
-C200,,,,,
+C001,L,,,,striscia di prato con filare di alberi
+C002,U,T1,V0,U+,edificio residenziale con terrazze
+C003,D,T1,V2,U?,area alberata con fabbricati sparsi
+C004,U,T1,V0,U+,piazzale con auto e pensilina
+C005,D,T2,V2,U-,fabbricato lungo con tetto danneggiato e vegetazione
+C006,L,T3,V2,U-,incolto con arbusti e piccolo rudere senza tetto
+C007,I,T1,V0,U+,striscia lungo i binari con pensilina e passerella
+C008,U,T1,V0,U+,edificio con terrazze e impianti
+C009,V,T1,V1,U?,cortile interno alberato con piccolo fabbricato
+C010,U,T1,V1,U+,capannoni e cortile in area produttiva
+C011,U,T1,V0,U+,tetto di edificio residenziale in linea
+C012,I,,,,tratto di strada con incrocio
+C013,U,,,,parcheggio sterrato con auto e prato a sud
+C014,U,T1,V0,U?,tetti di isolato storico con cortile in ombra
+C015,U,T1,V1,U+,capannone con piazzale e bancali
+C016,U,T1,V1,U?,giardino interno alberato e fabbricato basso
+C017,U,T1,V0,U+,capannoni con copertura verde e piazzale presso ferrovia
+C018,U,,,,parcheggio lungo strada con auto
+C019,C,T3,V1,U+,demolizione o ricostruzione in corso con area alberata
+C020,U,T1,V0,U?,edificio a tetto piano
+C021,U,T1,V1,U+,edifici in linea con verde di pertinenza e auto
+C022,U,T1,V0,U+,isolato con edifici e cortile
+C023,U,T1,V0,U+,edificio con tetto a falde e auto in cortile
+C024,U,T1,V0,U?,edificio a corte in isolato urbano
+C025,U,T1,V0,U?,edificio multipiano con parti in ombra
+C026,L,,,,bosco e prato con cumulo di materiale
+C027,U,T1,V0,U?,fabbricati a tetto piano in cortile urbano
+C028,I,,,,tratto di strada a scorrimento e svincolo
+C029,U,T1,V0,U?,edificio curvo a tetto piano
+C030,L,,,,prato con fascia alberata
+C031,V,T1,V1,U+,orti urbani con capanni e alberi
+C032,L,,,,area incolta con arbusti e alberi
+C033,L,T1,V1,U?,piazzale sterrato vuoto con capannone al margine
+C034,U,T1,V0,U+,parcheggio con auto e parte di edificio
+C035,U,T1,V1,U+,cortile con auto e alberi e materiale
+C036,I,T1,V1,U+,contorno frammentato su strade parcheggi edifici e lotto incolto
+C037,D,T1,V2,U?,capannone a shed con corte alberata incerto tra D e U
+C038,L,,,,prato incolto in svincolo stradale
+C039,L,,,,lotto sterrato vuoto
+C040,C,,,,scavo di cantiere in piazza
+C041,U,T1,V1,U+,area produttiva in uso e lotto sterrato con vialetti
+C042,U,T1,V0,U?,cortina di edifici su strada
+C043,C,T1,V1,U+,contorno frammentato su complesso in costruzione e canale incerto
+C044,C,,,,cantiere con scavo e mezzi
+C045,L,,,,fascia boscata lungo un rio
+C046,U,T1,V0,U?,edificio lungo con tetto a falde chiazzato e auto attorno
+C047,U,T1,V1,U+,piccoli edifici con pannelli solari tra binari
+C048,L,,,,lotto incolto con arbusti e alberi
+C049,V,,,,corte a prato con aiuole circolari poco curata
+C050,U,T1,V1,U?,contorno frammentato su capannone piazzale binari e prato
+C051,L,,,,scarpata con roccia e vegetazione
+C052,U,T1,V1,U?,edificio con ampio giardino alberato
+C053,V,,,,aiuola a prato con alberi presso parcheggio
+C054,D,T2,V2,U?,giardino inselvatichito con piccoli fabbricati e materiale
+C055,U,T1,V1,U+,grande capannone e piazzale con lotto erboso a sud
+C056,L,,,,fascia incolta con sentiero e cumuli presso orti
+C057,D,T2,V2,U-,fabbricato con tetto macchiato e giardino inselvatichito
+C058,L,,,,fascia verde lungo fascio binari scala molto piccola
+C059,U,T1,V1,U?,edifici con tetti diversi e cortile alberato
+C060,L,,,,strisce sottili su prato alberi e strada
+C061,L,,,,fascia di arbusti e prato incolto
+C062,L,,,,prato incolto dentro svincolo stradale
+C063,U,T1,V0,U?,edificio a corte in isolato urbano
+C064,L,,,,lotto incolto con arbusti
+C065,V,T1,V1,U+,parco con resti archeologici serre e alberi
+C066,U,T1,V0,U?,tetto piano di edificio con impianti
+C067,U,T1,V0,U?,edifici su strada a tetto piano
+C068,L,,,,campo incolto e striscia asfaltata vuota
+C069,V,,,,campo agricolo con vegetazione fitta e piccolo manufatto
+C070,U,T1,V1,U?,cortile interno con albero e piccoli fabbricati
+C071,L,,,,lotto incolto con container e materiale in un angolo
+C072,U,,,,parcheggio con auto e aiuola erbosa
+C073,L,T1,V1,U?,ex piazzale sterrato ampio e quasi vuoto con fabbricati ai margini
+C074,U,T1,V0,U?,contorno frammentato su nuovo quartiere con prati incerto
+C075,U,T1,V0,U?,edificio d'angolo con cortile in ombra
+C076,U,T1,V0,U+,edificio residenziale con auto su strada
+C077,U,,,,piazzale sterrato con materiali e mezzi depositati
+C078,L,,,,lotto stretto inselvatichito con pergolato
+C079,V,T1,V2,U+,orti con capanni tra alberi
+C080,L,,,,lotto sterrato incolto con poche auto ai bordi
+C081,U,T1,V1,U?,cortile rurale con alberi e materiali riflesso in foto
+C082,U,T1,V0,U+,edificio in linea e parcheggio con auto
+C083,V,T1,V0,U+,campi coltivati a orto con serre
+C084,U,T1,V0,U+,villa con giardino curato
+C085,U,T1,V0,U+,edificio in corte con auto parcheggiate
+C086,D,T3,V2,U-,rudere senza tetto invaso da vegetazione
+C087,U,T1,V1,U+,piazzale pieno di auto con piccolo fabbricato
+C088,U,T1,V1,U?,porzione di tetto piano con verde pensile
+C089,D,T2,V2,U?,fabbricati sparsi in area boscata presso gasometri
+C090,L,,,,prato secco con alberi
+C091,L,T1,V2,U?,area boscata e incolta con capannoni nella parte sud
+C092,U,T1,V1,U+,terrazza con fioriere su edificio d'angolo
+C093,U,T1,V1,U?,edificio con cortile alberato
+C094,L,T1,V2,U+,bosco con orti e capanni sparsi
+C095,D,T2,V2,U?,piccoli fabbricati presso binari con copertura forse danneggiata
+C096,U,T1,V0,U+,edificio a corte d'angolo
+C097,L,,,,lotto di terra nuda e striscia lungo ferrovia
+C098,I,,,,tratto di strada lungo canale
+C099,L,,,,lotto incolto con resti di fondazioni e arbusti
+C100,L,,,,prato in ansa di svincolo con tratto di strada
+C101,V,,,,striscia alberata e giardino lungo edificio
+C102,V,,,,campo coltivato
+C103,L,,,,sterrato e incolto tra strade
+C104,U,T1,V0,U+,capannoni con auto e piazzali
+C105,I,,,,binari ferroviari
+C106,D,T2,V1,U?,copertura piana con detriti e rattoppi
+C107,L,,,,prato incolto tra strade
+C108,L,,,,prato e sterrato con alberi
+C109,U,T1,V1,U?,cortile interno sterrato con vegetazione
+C110,U,T1,V0,U+,edifici residenziali centro
+C111,L,,,,orti e incolto alberato
+C112,X,T0,V0,U?,interno scuro forse senza copertura
+C113,D,T3,V1,U-,edificio con copertura crollata
+C114,U,T1,V0,U+,edificio con corte e terrazze
+C115,V,,,,area giochi sterrata alberata
+C116,L,,,,striscia tra edifici con alberi spontanei
+C117,U,T1,V0,U+,capannoni con mezzi e piazzale
+C118,L,,,,lotto incolto alberato in centro
+C119,L,,,,prato incolto lungo strada
+C120,D,T2,V2,U-,capannoni a shed degradati e incolto
+C121,U,T1,V0,U+,isolato a corte su incrocio
+C122,L,,,,prato incolto tra svincoli
+C123,U,T1,V0,U+,edifici e cortile in uso
+C124,U,T1,V0,U+,villa con giardino
+C125,I,T1,V1,U?,striscia lungo scalo ferroviario
+C126,D,T2,V2,U-,complesso abbandonato invaso da alberi
+C127,U,T1,V0,U?,capannone accanto a area con macerie
+C128,L,,,,incolto arbustivo
+C129,L,T1,V2,U?,piazzali e incolto lungo ferrovia
+C130,U,T1,V0,U+,edificio su strada con cortile
+C131,U,T1,V0,U+,cortile interno con ombrelloni
+C132,L,,,,fascia verde lungo superstrada
+C133,L,,,,prato secco alberato presso rotatoria
+C134,U,T1,V0,U+,cortile con auto e basso fabbricato
+C135,U,T1,V0,U+,edifici residenziali con giardino interno
+C136,D,T1,V1,U?,capannone con vegetazione spontanea attorno
+C137,U,T1,V0,U+,condominio con corte alberata
+C138,L,,,,incolto con detriti
+C139,L,,,,sterrato incolto all incrocio
+C140,U,T1,V0,U+,cascina con cortile e auto
+C141,D,T1,V1,U-,capannoni lunghi e piazzali con erbe
+C142,L,,,,lotto con alberi e terra tra fabbricati
+C143,U,T1,V0,U+,edificio su viale con terrazze
+C144,L,T1,V0,U?,grande incolto con un edificio isolato
+C145,U,T1,V0,U+,edificio d angolo con cortile
+C146,U,T1,V0,U+,edifici con parcheggio e giardino alberato
+C147,U,T1,V0,U+,edificio a corte residenziale
+C148,C,T1,V0,U+,scavo con mezzi e sterrato
+C149,U,T1,V0,U+,deposito con capannoni e materiali
+C150,I,,,,strada con auto in sosta e bordo cantiere
+C151,L,,,,sterrato incolto e parcheggio
+C152,I,,,,tratto stradale lungo ferrovia
+C153,D,T3,V2,U-,rudere senza copertura invaso da vegetazione
+C154,L,T1,V1,U?,grande area sterrata con pochi fabbricati
+C155,V,,,,parco pubblico curato
+C156,V,,,,giardino interno alberato in ombra
+C157,U,T1,V0,U+,edificio in isolato centrale
+C158,I,T1,V1,U+,fabbricati e fasce dello scalo ferroviario
+C159,I,,,,binari su rilevato
+C160,V,,,,impianto arboreo coltivato
+C161,U,T1,V0,U+,edifici produttivi con auto
+C162,U,T1,V0,U+,fabbricati interni all isolato
+C163,L,T1,V1,U?,lunga fascia di piazzale e incolto con capannoni
+C164,L,,,,lotto incolto con vegetazione fitta
+C165,U,T1,V0,U+,edificio a L su strada
+C166,L,T1,V1,U?,prato e sterrato con piccoli fabbricati
+C167,L,,,,incolto con arbusti e sentieri
+C168,L,,,,incolto arbustivo presso svincolo
+C169,U,T1,V0,U+,grande complesso a corti con auto
+C170,U,T1,V0,U+,grande edificio a falde in centro
+C171,I,,,,viadotto ferroviario e alberi
+C172,L,,,,incolto con alberi spontanei
+C173,U,T1,V0,U+,edifici in isolato centrale
+C174,I,T1,V0,U+,parcheggio a raso semivuoto
+C175,V,,,,campo agricolo
+C176,U,T1,V0,U+,capannoni artigianali con cortile
+C177,U,T1,V0,U+,edificio d angolo residenziale
+C178,V,,,,striscia di prato falciato
+C179,U,T1,V0,U+,edificio e cortile alberato interno
+C180,U,T1,V0,U+,edificio residenziale con terrazze
+C181,U,T1,V0,U+,edificio lineare su viale alberato
+C182,D,T2,V1,U?,fabbricati lungo ferrovia in parte senza tetto
+C183,U,T1,V0,U+,edificio a copertura chiara
+C184,D,T2,V1,U-,fienile lungo con copertura deteriorata
+C185,U,T1,V0,U+,stecca residenziale
+C186,L,,,,lotto boscato tra fabbricati
+C187,D,T3,V2,U-,struttura scoperchiata con vegetazione
+C188,V,,,,cortile verde tra stecche residenziali
+C189,U,T1,V0,U+,lotti produttivi in uso
+C190,V,,,,campi coltivati
+C191,U,T1,V0,U+,edificio a corte residenziale
+C192,L,,,,terreno nudo livellato
+C193,U,T1,V1,U+,fabbricati sparsi con alberi e auto
+C194,U,T1,V0,U+,edificio a corti in centro storico
+C195,V,T1,V0,U+,verde di nuovo impianto e edificio nuovo
+C196,U,T1,V0,U+,fabbricati con corti lungo naviglio
+C197,U,T1,V0,U+,edifici con terrazze in nucleo storico
+C198,U,T1,V0,U+,palazzina residenziale
+C199,U,T1,V0,U+,complesso di uffici e capannone
+C200,U,T1,V1,U?,villino con giardino alberato
