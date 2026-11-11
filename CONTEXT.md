@@ -8,6 +8,8 @@ Termini canonici del progetto. Solo definizioni, nessun dettaglio di implementaz
 
 **Lotto**: un'area o un immobile candidato a ospitare abitazioni, con perimetro, proprietà, superficie, capacità e vincoli. Due classi: **lotto edificabile** (area libera o dismessa) e **lotto da riusare** (edificio degradato o inutilizzato). *Da evitare*: "sito" o "cella" come sinonimi di lotto.
 
+**Area di attivazione**: area dismessa con potenziale strategico non residenziale (verde, spazio pubblico, servizi) che può migliorare la qualità dei lotti vicini. È la terza classe della Base L, accanto a lotto edificabile e lotto da riusare. *Da evitare*: chiamarla "lotto" se non è destinata ad abitazioni.
+
 **Ancora**: un luogo che il nucleo abitativo deve raggiungere spesso (lavoro, scuola, università, cura).
 
 **Vettore dei desideri**: la descrizione delle esigenze di un nucleo abitativo: ancore, pesi sui criteri del lotto, budget e composizione.
