@@ -1,0 +1,33 @@
+id,classe,origine,area_m2,dusaf_dominante,quota_residenziale,quota_naturale,quota_artificiale_1xx_no14,esito
+E00029,lotto edificabile,SOFT,27171.7,"12111 - Insediamenti industriali, artigianali, commerciali",0.0,0.02,0.98,True
+E00014,lotto edificabile,SOFT,53045.0,1121 - Tessuto residenziale discontinuo,0.55,0.045,0.955,False
+E00008,lotto edificabile,ERP,4521.9,1121 - Tessuto residenziale discontinuo,0.815,0.185,0.815,False
+E00009,lotto edificabile,SOFT,4084.5,"12111 - Insediamenti industriali, artigianali, commerciali",0.004,0.0,1.0,True
+E00003,lotto edificabile,SOFT,8196.5,"12111 - Insediamenti industriali, artigianali, commerciali",0.001,0.291,0.709,True
+E00004,lotto edificabile,SOFT,16081.2,"12111 - Insediamenti industriali, artigianali, commerciali",0.0,0.001,0.999,True
+E00026,lotto edificabile,SOFT,4728.0,12122 - Impianti di servizi pubblici e privati,0.0,0.0,1.0,True
+E00031,lotto edificabile,SOFT,5297.7,"12111 - Insediamenti industriali, artigianali, commerciali",0.025,0.078,0.751,True
+E00016,lotto edificabile,ERP,3294.3,12122 - Impianti di servizi pubblici e privati,0.06,0.395,0.605,True
+E00011,lotto edificabile,SOFT,2850.4,"12111 - Insediamenti industriali, artigianali, commerciali",0.0,0.0,1.0,True
+E00021,lotto edificabile,SOFT,32112.5,1122 - Tessuto residenziale rado e nucleiforme,0.884,0.0,1.0,False
+E00012,lotto edificabile,ERP,9971.3,1121 - Tessuto residenziale discontinuo,0.891,0.03,0.97,False
+E00015,lotto edificabile,ERP,5069.4,1121 - Tessuto residenziale discontinuo,0.933,0.0,1.0,False
+E00020,lotto edificabile,SOFT,6160.9,12122 - Impianti di servizi pubblici e privati,0.073,0.0,1.0,True
+E00019,lotto edificabile,SOFT,4675.4,12122 - Impianti di servizi pubblici e privati,0.09,0.0,1.0,True
+E00028,lotto edificabile,SOFT,51311.9,"12111 - Insediamenti industriali, artigianali, commerciali",0.0,0.02,0.98,True
+E00025,lotto edificabile,SOFT,4692.0,12122 - Impianti di servizi pubblici e privati,0.0,0.0,1.0,True
+E00013,lotto edificabile,SOFT,3638.2,12122 - Impianti di servizi pubblici e privati,0.001,0.0,1.0,True
+E00030,lotto edificabile,SOFT,4900.5,1411 - Parchi e giardini,0.076,0.43,0.552,True
+E00007,lotto edificabile,SOFT,4874.2,"12111 - Insediamenti industriali, artigianali, commerciali",0.0,0.361,0.639,True
+E00033,lotto edificabile,SOFT,5030.6,"12111 - Insediamenti industriali, artigianali, commerciali",0.0,0.065,0.935,True
+E00032,lotto edificabile,SOFT,5142.3,12125 - aree militari obliterate,0.0,0.0,0.956,True
+E00023,lotto edificabile,SOFT,75687.1,12122 - Impianti di servizi pubblici e privati,0.0,0.0,0.999,True
+E00024,lotto edificabile,SOFT,4659.7,12122 - Impianti di servizi pubblici e privati,0.0,0.0,1.0,True
+E00005,lotto edificabile,SOFT,11682.0,1121 - Tessuto residenziale discontinuo,0.648,0.056,0.944,False
+E00027,lotto edificabile,SOFT,4688.5,12122 - Impianti di servizi pubblici e privati,0.0,0.0,1.0,True
+E00018,lotto edificabile,ERP,8288.2,1121 - Tessuto residenziale discontinuo,0.982,0.0,1.0,False
+E00006,lotto edificabile,SOFT,8836.1,1121 - Tessuto residenziale discontinuo,0.745,0.12,0.88,False
+E00010,lotto edificabile,ERP,13870.8,"12111 - Insediamenti industriali, artigianali, commerciali",0.396,0.0,1.0,True
+E00017,lotto edificabile,SOFT,2359.4,1121 - Tessuto residenziale discontinuo,0.985,0.0,1.0,False
+R00001,lotto da riusare,ds503,1528.8,"12111 - Insediamenti industriali, artigianali, commerciali",0.0,0.0,1.0,True
+R00002,lotto da riusare,ds503,504.8,"12111 - Insediamenti industriali, artigianali, commerciali",0.0,0.0,1.0,True

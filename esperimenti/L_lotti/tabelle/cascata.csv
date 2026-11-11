@@ -1,0 +1,27 @@
+classe,passo,rimasti,rimossi
+riuso,ds503 edifici e aree in degrado: righe,174,
+riuso,ds503 associati a una particella (entro 20 m),3,171
+riuso,Demanio 2023 aree+fabbricati: righe,610,-607
+riuso,Demanio: patrimonio disponibile,151,459
+riuso,Demanio: superficie dichiarata >= 300 m²,11,140
+riuso,Demanio associati a una particella,0,11
+riuso,ds677 in Milano: righe,22055,-22055
+riuso,ds677 in piano di alienazione,73,21982
+riuso,ds677 alienazione associati per foglio/mappale,0,73
+riuso,DBT 2020 edifici diruti/ruderi (EDIFC_STAT=02),610,-610
+riuso,"DBT diruti con volume fuori terra, associati a una particella",25,585
+riuso,particelle distinte candidate al riuso,20,5
+riuso,particella >= 300 m²,14,6
+riuso,non verde/agricolo/paesaggio/istruzione/acque/infrastrutture (>= 50%),3,11
+riuso,fuori dai Parchi della Campagna Urbana (PCU),2,1
+riuso,capacità >= 1 alloggio,2,0
+edificabile,"particelle di terreno nel Comune (catasto, mappale numerico)",1930,
+edificabile,particella >= 300 m²,1289,641
+edificabile,non verde/agricolo/paesaggio/istruzione/acque/infrastrutture (>= 50%),408,881
+edificabile,fuori dai Parchi della Campagna Urbana (PCU),315,93
+edificabile,"non residenza occupata (quota residenziale del volume < 0,5)",207,108
+edificabile,"ingresso: soft site, AT non PCU, srv_erp o ex AMB_DEG",154,53
+edificabile,non già lotto da riusare (precedenza al riuso),153,1
+edificabile,"siti (accorpamento per adiacenza, stessa origine)",84,69
+edificabile,sito >= 1500 m²,33,51
+edificabile,capacità >= 20 alloggi,31,2

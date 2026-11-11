@@ -1,0 +1,87 @@
+{
+ "C1": true,
+ "C2": true,
+ "C3_coppie_oltre_tolleranza": 1,
+ "C3": false,
+ "C3_dettaglio": [
+  {
+   "a": "E00028",
+   "b": "E00029",
+   "m2": 1709.7
+  }
+ ],
+ "C4": true,
+ "C5a_quota": 0.7,
+ "C5b_quota": 1.0,
+ "C5": true,
+ "C6": true,
+ "C7_siti_prima_capacita": 33,
+ "C7": false,
+ "conteggi": {
+  "lotto edificabile": 31,
+  "lotto da riusare": 2
+ },
+ "capacita_tot": {
+  "lotto da riusare": 11,
+  "lotto edificabile": 3389
+ },
+ "origini": [
+  [
+   "lotto da riusare",
+   "ds503",
+   2
+  ],
+  [
+   "lotto edificabile",
+   "ERP",
+   7
+  ],
+  [
+   "lotto edificabile",
+   "SOFT",
+   24
+  ]
+ ],
+ "proprieta": [
+  [
+   "lotto da riusare",
+   "ignoto",
+   2
+  ],
+  [
+   "lotto edificabile",
+   "ignoto",
+   20
+  ],
+  [
+   "lotto edificabile",
+   "pubblico comunale",
+   11
+  ]
+ ],
+ "proprieta_conflitti": 0,
+ "nil_con_lotti": 3,
+ "parametri": {
+  "a_min_parcel": 300.0,
+  "excl_share": 0.5,
+  "occ_res_share": 0.5,
+  "plan_share": 0.5,
+  "storey_m": 3.2,
+  "soft_far_ratio": 0.5,
+  "soft_a_min": 500.0,
+  "buffer_m": 2.0,
+  "max_area_m2": 60000.0,
+  "site_min_m2": 1500.0,
+  "far": 1.0,
+  "yield_": 0.7,
+  "gfa_dw": 80.0,
+  "m_min": 20,
+  "m_max": 400,
+  "snap_m": 20.0,
+  "reuse_min_decl_m2": 300.0,
+  "m_min_riuso": 1,
+  "sample_n": 30
+ },
+ "seme": 42,
+ "passa": false
+}

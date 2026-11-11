@@ -1,0 +1,23 @@
+attributo,fonte,regola,fonte_estesa,licenza
+id,ipotesi,E/R + progressivo ordinato per classe e posizione,Parametro o formula scelta [H] (vedi REPORT §3),—
+geometry,catasto,unione delle particelle (EPSG:32632),"Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0
+classe,ipotesi,regole REPORT §3,Parametro o formula scelta [H] (vedi REPORT §3),—
+origine,pgt; ds503; demanio; ds677; dbt,edificabile: AT/AMB_DEG/ERP/SOFT; riuso: fonti del punto,"Regione Lombardia, Tavola delle previsioni di piano (mosaico PGT, tav_previsioni_b), PGT Milano 2030 | Comune di Milano, Edifici e aree in degrado 2014-2017 (ds503, tav. R.10 PGT) | Agenzia del Demanio via Comune di Milano, Aree (ds2688) e Fabbricati (ds2689) del Demanio statale 2023 | Comune di Milano, Elenco immobili di proprietà comunale 2019 (ds677) | Comune di Milano, DBT 2020 (ds2889): UN_VOL, EDIFC, EDIFC_USO",[L] licenza non verificata | CC BY 4.0 | CC BY 3.0 IT | CC BY 4.0 | CC BY 2.5 IT
+ref,catasto,riferimenti catastali F205_ffffas.mappale,"Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0
+area_m2,catasto,area geometrica in EPSG:32632,"Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0
+volume_m3,dbt,somma area × altezza delle unità volumetriche fuori terra,"Comune di Milano, DBT 2020 (ds2889): UN_VOL, EDIFC, EDIFC_USO",CC BY 2.5 IT
+ambito_pgt,pgt,nome AT (non PCU),"Regione Lombardia, Tavola delle previsioni di piano (mosaico PGT, tav_previsioni_b), PGT Milano 2030",[L] licenza non verificata
+sl_base_m2,ipotesi; dbt,"edificabile FAR×area; riuso SL esistente = volume/3,2 m, altrimenti FAR×area","Parametro o formula scelta [H] (vedi REPORT §3) | Comune di Milano, DBT 2020 (ds2889): UN_VOL, EDIFC, EDIFC_USO",— | CC BY 2.5 IT
+capacita,ipotesi,"min(floor(0,70 × SL / 80), 400)",Parametro o formula scelta [H] (vedi REPORT §3),—
+far_H,ipotesi,"indice ipotetico, non del PGT",Parametro o formula scelta [H] (vedi REPORT §3),—
+nil_id,nil,NIL del punto interno,"Comune di Milano, NIL vigenti PGT 2030 (ds964)",CC BY 4.0
+nil_nome,nil,,"Comune di Milano, NIL vigenti PGT 2030 (ds964)",CC BY 4.0
+quota_comunale,ds677; catasto,quota di area su particelle in ds677 (foglio+mappale),"Comune di Milano, Elenco immobili di proprietà comunale 2019 (ds677) | Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0 | CC BY 4.0
+proprieta,ds677; demanio; catasto,"Demanio se punto Demanio nel lotto o fonte Demanio; pubblico comunale se quota_comunale >= 0,5 o fonte ds677; altrimenti ignoto","Comune di Milano, Elenco immobili di proprietà comunale 2019 (ds677) | Agenzia del Demanio via Comune di Milano, Aree (ds2688) e Fabbricati (ds2689) del Demanio statale 2023 | Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0 | CC BY 3.0 IT | CC BY 4.0
+proprieta_conflitto,ds677; demanio,lotto con entrambe le evidenze,"Comune di Milano, Elenco immobili di proprietà comunale 2019 (ds677) | Agenzia del Demanio via Comune di Milano, Aree (ds2688) e Fabbricati (ds2689) del Demanio statale 2023",CC BY 4.0 | CC BY 3.0 IT
+vincoli_noti,ds600; pgt; demanio,"bonifica, NAF, paesaggio, demanio storico-artistico; quota > 10%","Città Metropolitana, Interventi di bonifica (ds600) | Regione Lombardia, Tavola delle previsioni di piano (mosaico PGT, tav_previsioni_b), PGT Milano 2030 | Agenzia del Demanio via Comune di Milano, Aree (ds2688) e Fabbricati (ds2689) del Demanio statale 2023",CC0 | [L] licenza non verificata | CC BY 3.0 IT
+nota,ds503; demanio; ds677; dbt,descrizione della fonte del riuso,"Comune di Milano, Edifici e aree in degrado 2014-2017 (ds503, tav. R.10 PGT) | Agenzia del Demanio via Comune di Milano, Aree (ds2688) e Fabbricati (ds2689) del Demanio statale 2023 | Comune di Milano, Elenco immobili di proprietà comunale 2019 (ds677) | Comune di Milano, DBT 2020 (ds2889): UN_VOL, EDIFC, EDIFC_USO",CC BY 4.0 | CC BY 3.0 IT | CC BY 4.0 | CC BY 2.5 IT
+cx,catasto,"punto interno, x","Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0
+cy,catasto,"punto interno, y","Agenzia delle Entrate, cartografia catastale WFS INSPIRE (CadastralParcel, F205), scaricata 2026-11-11",CC BY 4.0
+fonti,—,chiavi delle fonti usate,,
+licenze,—,licenze delle fonti,,
