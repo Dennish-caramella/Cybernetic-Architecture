@@ -136,8 +136,8 @@ Per v4 servono: G1, G2, D1–D7, una nuova pre-registrazione con un nuovo seme e
 
 Non verificato da me: il contenuto delle immagini (non ho ricodificato), la causa delle particelle mancanti, i documenti attuativi degli AT, l'accordo con il secondo codificatore e C7.
 
-## 8. Cosa passa
-Nulla come base congelata. Proposte [H] per Dennis: (1) come C5 tratta gli AT — valutarli con lo stato attuativo del piano letto sui documenti, oppure una categoria Q1 "in trasformazione di piano" (nuova pre-registrazione); (2) ortofoto più recente per DUSAF 13; (3) perimetro dei lotti da riusare nelle grandi particelle ferroviarie limitato a un intorno dell'edificio; (4) attendere l'accordo con il secondo codificatore e C7. Riutilizzabili: pipeline, registro, schema di codifica, screening ds503, tabella di copertura.
-
 ### 7-bis. Secondo codificatore cieco e accordo (coordinatore)
 Dettaglio in `controllo_secondo_codificatore/ESITO.md` e `accordo.json`. Secondo codificatore in cartelle isolate (solo immagini e istruzioni), hash dei fogli registrati prima del confronto. Accordo binario 0,90 (kappa 0,785), su Q1 a 7 categorie 0,835 (kappa 0,768). C5a con il secondo codificatore: 0,65 [0,553; 0,736]; con entrambi d'accordo sul sì: 0,55 [0,452; 0,644]. Base: 0,12. AT: 0,41 [0,22; 0,64]. Poiché il revisore (D2) rileva che il primo codificatore non era pienamente cieco, la stima di riferimento è quella del secondo codificatore: anche con essa C5a resta sotto 0,70.
+
+## 8. Cosa passa
+Nulla come base congelata. Proposte [H] per Dennis: (1) come C5 tratta gli AT — valutarli con lo stato attuativo del piano letto sui documenti, oppure una categoria Q1 "in trasformazione di piano" (nuova pre-registrazione); (2) ortofoto più recente per DUSAF 13; (3) perimetro dei lotti da riusare nelle grandi particelle ferroviarie limitato a un intorno dell'edificio; (4) attendere l'accordo con il secondo codificatore e C7. Riutilizzabili: pipeline, registro, schema di codifica, screening ds503, tabella di copertura.
