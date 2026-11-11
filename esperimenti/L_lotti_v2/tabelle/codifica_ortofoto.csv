@@ -1,0 +1,201 @@
+codice,Q1,tetto,veg,uso,nota
+C001,U,T1,V0,U+,villa/edificio integro con giardino curato
+C002,L,,,,prato incolto con alberi; edifici esclusi dal contorno
+C003,C,,,,cantiere con scavi e gru
+C004,U,T1,V0,U+,edifici e piazzale in uso
+C005,V,,,,striscia alberata lungo un canale nel parco; ambigua
+C006,D,T1,V1,U?,cortile produttivo senza auto con ingombri e vegetazione; tetti integri; incerto
+C007,U,T1,V0,U?,capannone/edificio integro in contesto denso
+C008,U,T1,V0,U+,edificio residenziale/uffici in uso
+C009,U,,,,striscia di cortili e giardini privati
+C010,U,T1,V0,U?,capannone con piazzale; segni d'uso scarsi
+C011,U,T1,V0,U+,cortile di cascina con auto
+C012,D,T2,V1,U?,edificio con parte senza copertura e vegetazione intorno
+C013,V,,,,aiuola alberata accanto a un parcheggio
+C014,L,,,,incolto con detriti
+C015,U,T1,V0,U+,palestra/tensostruttura accanto a campo sportivo
+C016,U,T1,V0,U+,stecche residenziali con giardini
+C017,U,,,,giardino di pertinenza di edifici residenziali nuovi
+C018,U,T1,V0,U+,edificio storico in centro
+C019,U,T1,V0,U?,edificio produttivo/uffici integro
+C020,I,,,,striscia lunga e stretta lungo infrastruttura; non giudicabile come area
+C021,U,T1,V0,U+,edificio a corte integro
+C022,U,T1,V0,U+,coperture in centro storico integre
+C023,U,T1,V0,U+,isolato residenziale/commerciale
+C024,V,,,,parco con giochi
+C025,U,T1,V0,U+,villa residenziale
+C026,D,T2,V2,U?,lotto invaso da vegetazione con baracche e detriti
+C027,D,T3,V2,U-,copertura in gran parte crollata (orditura a vista) con vegetazione interna
+C028,U,T1,V1,U?,edificio a tetto piano scuro con giardino alberato
+C029,U,T1,V0,U+,edificio residenziale
+C030,U,T1,V1,U?,capannone a tetto scuro con fascia verde; uso incerto
+C031,U,,,,cortile-parcheggio tra edifici residenziali
+C032,U,T1,V1,U?,edificio basso in cortile di un complesso
+C033,D,T2,V2,U-,edificio lungo con copertura bucata nel bosco
+C034,I,,,,area di servizio ferroviaria
+C035,V,,,,spartitraffico alberato
+C036,V,,,,striscia tra risaie
+C037,U,T1,V0,U?,edificio a tetto piano tra residenze
+C038,U,T1,V0,U+,edificio residenziale d'angolo
+C039,U,,,,percorso e scarpata di un nuovo quartiere
+C040,U,,,,cortili interni di isolato storico
+C041,U,T1,V0,U+,villa residenziale
+C042,V,,,,prato lungo un grande edificio
+C043,U,,,,giardino condominiale di nuovo complesso
+C044,I,,,,striscia lungo marciapiede con auto
+C045,U,,,,parcheggio in uso
+C046,D,T1,V1,U?,lungo edificio con copertura consunta in complesso con vegetazione spontanea
+C047,U,,,,parcheggio in uso
+C048,U,,,,verde condominiale tra stecche residenziali
+C049,V,,,,campo agricolo (stoppie)
+C050,U,T1,V0,U+,edificio residenziale con passo carraio
+C051,U,T1,V0,U+,edificio con orto/giardino curato
+C052,V,,,,orti con capanni
+C053,D,T3,V2,U-,rudere con copertura crollata e vegetazione
+C054,U,,,,verde tra stecche residenziali
+C055,V,,,,giardino alberato attorno a un edificio
+C056,V,,,,argine vegetato lungo fiume e rampa stradale
+C057,U,T1,V0,U?,isolato denso con coperture integre
+C058,D,T2,V1,U-,complesso produttivo con parti demolite e macerie
+C059,C,,,,cantiere con gru
+C060,C,,,,cantiere con scavo e fondazioni
+C061,U,T1,V0,U+,edificio con pannelli solari
+C062,U,T1,V0,U+,isolato residenziale denso
+C063,U,,,,piazzale e parcheggio di servizio
+C064,L,,,,incolto alberato non curato
+C065,U,,,,isolati residenziali a corte
+C066,L,,,,lotto recintato con prato secco e ghiaia
+C067,U,,,,verde tra stecche residenziali
+C068,L,,,,striscia incolta invasa da vegetazione
+C069,I,,,,strada e parcheggio lungo la ferrovia
+C070,V,,,,pista di atletica e aree scolastiche
+C071,U,T1,V0,U?,lungo magazzino a tetto chiaro
+C072,I,,,,striscia stradale
+C073,U,T1,V0,U+,edificio di un complesso istituzionale
+C074,U,,,,parcheggio sterrato pieno di auto
+C075,L,,,,grande sterrato vuoto
+C076,U,T1,V0,U+,edificio in cortile con auto
+C077,L,,,,campo incolto con un container
+C078,U,T1,V0,U+,edifici in centro denso
+C079,U,T1,V0,U+,edifici con giardini alberati
+C080,U,T1,V0,U+,coperture storiche integre
+C081,V,,,,giardino pubblico alberato con mercato
+C082,L,,,,striscia di incolto arbustivo
+C083,C,,,,edificio in ristrutturazione con gru
+C084,U,T1,V0,U?,complesso a corte; ponteggio parziale
+C085,L,,,,sterrato e incolto alberato
+C086,U,T1,V0,U+,edificio residenziale
+C087,U,T1,V0,U?,coperture in isolato denso
+C088,U,T1,V0,U+,edificio residenziale
+C089,I,,,,striscia stradale e marciapiede
+C090,U,T1,V0,U+,edificio residenziale
+C091,L,,,,incolto sotto viadotto ferroviario
+C092,U,,,,piazzale di deposito materiali; possibili macerie; incerto
+C093,L,,,,prato alberato non curato; potrebbe essere parco
+C094,U,,,,strisce di pertinenza tra edifici produttivi
+C095,U,,,,piazzale logistico lungo la ferrovia
+C096,U,T1,V0,U+,edificio tecnologico recente con piazzale
+C097,U,T1,V0,U?,coperture in isolato denso
+C098,U,T1,V0,U?,capannone a tetto piano in cortile
+C099,U,T1,V0,U+,edificio commerciale/uffici con parcheggio
+C100,I,,,,rotatoria e spazi stradali con aiuole
+C101,U,T1,V0,U+,edificio a corte con auto
+C102,U,T1,V0,U+,edificio basso residenziale
+C103,U,T1,V0,U+,edificio a tetto piano in isolato
+C104,U,T1,V0,U+,edificio con lucernario in centro
+C105,U,,,,striscia di cortili e passaggi
+C106,L,,,,misto: sterrato incolto circa metà; resto sistemato; incerto
+C107,U,,,,edifici residenziali e cortile
+C108,U,T1,V0,U?,edificio a tetto piano accanto a una chiesa
+C109,U,T1,V0,U?,capannone a copertura verde lungo i binari
+C110,U,,,,complesso per uffici con giardino e parcheggio
+C111,I,,,,striscia di percorso lungo un giardino
+C112,U,,,,complesso con edifici e prati di pertinenza
+C113,V,,,,fascia alberata lungo un corso d'acqua
+C114,D,T1,V1,U-,piazzale dismesso con capannone e pavimentazione invasa
+C115,U,,,,cortile alberato di isolato
+C116,U,,,,complesso residenziale
+C117,D,T2,V2,U?,piccoli edifici con coperture consunte e vegetazione invadente lungo la ferrovia
+C118,U,,,,percorso interno di nuovo complesso residenziale
+C119,U,T1,V0,U+,case a schiera
+C120,U,,,,edificio residenziale in linea
+C121,U,T1,V0,U+,edificio residenziale con giardino
+C122,U,T1,V1,U?,edificio in linea con copertura integra nel verde
+C123,L,,,,piattaforma vuota con resti di fondazioni e vasche
+C124,U,T1,V0,U+,isolato denso
+C125,U,,,,parcheggi e spazi di un complesso residenziale
+C126,U,T1,V0,U+,centro commerciale
+C127,U,T1,V0,U+,edificio a corte con orti
+C128,U,T1,V0,U+,isolato denso
+C129,U,T1,V1,U?,capannone basso con giardino alberato; uso incerto
+C130,X,,,,piazzale con impianto/silos; nessun mezzo visibile; dismesso o in uso non distinguibile
+C131,D,T1,V2,U?,casa con giardino invaso dalla vegetazione
+C132,U,T1,V0,U+,tratto di edificio residenziale curvo
+C133,U,T1,V0,U+,isolato storico denso
+C134,U,,,,parcheggi di un campus
+C135,U,,,,parcheggio in uso
+C136,V,,,,striscia alberata ai margini di un parco
+C137,V,,,,campo coltivato tra due strade
+C138,U,T1,V0,U+,isolato denso
+C139,U,T1,V0,U?,grande edificio a tetto piano
+C140,L,,,,triangolo di prato secco non curato con alberi
+C141,I,,,,striscia stradale con fronti residenziali
+C142,U,T1,V0,U+,edificio residenziale con terrazze
+C143,V,,,,parco alberato con radura
+C144,L,,,,grande prato libero in città; potrebbe essere prato agricolo
+C145,U,T1,V0,U+,cortile con edificio basso e orti
+C146,U,T1,V1,U+,grande edificio a L con cortile pieno di auto
+C147,L,,,,area con detriti e alberi; senza edifici
+C148,D,T3,V1,U-,edificio con copertura crollata (muri a vista)
+C149,U,,,,parcheggio pieno di auto (sterrato)
+C150,L,,,,striscia di parcheggio e area incolta sterrata (incolto prevalente)
+C151,U,T1,V0,U+,edificio residenziale con lucernario
+C152,U,T1,V0,U+,edificio basso in isolato
+C153,U,T1,V0,U?,edificio a tetto piano in isolato
+C154,U,T1,V0,U+,edificio basso di cascina con auto
+C155,U,T1,V0,U+,edificio residenziale in isolato
+C156,V,,,,giardino pubblico con campo da basket e prato
+C157,U,T1,V0,U?,capannoni a tetto chiaro
+C158,I,,,,spazi stradali e aiuole
+C159,U,,,,complesso residenziale nuovo e giardini
+C160,U,T1,V0,U+,isolato denso
+C161,L,,,,piazzale abbandonato con pavimentazione invasa da vegetazione
+C162,D,T1,V2,U-,edifici a stecca con coperture integre in area invasa da alberi
+C163,U,T1,V0,U+,grande complesso produttivo/terziario in isolato
+C164,U,T1,V0,U?,edificio scolastico/istituzionale a pettine
+C165,U,T1,V0,U+,edificio residenziale
+C166,L,,,,incolto tra svincoli stradali
+C167,D,T2,V2,U-,capannone a shed in area invasa dalla vegetazione
+C168,L,,,,prato incolto con edificio in parte nel contorno
+C169,U,,,,strada e piazzali di un'area produttiva
+C170,U,,,,parcheggio in uso
+C171,U,T1,V0,U+,complesso scolastico e parcheggi
+C172,U,T1,V1,U?,edificio basso con giardino in isolato
+C173,U,T1,V0,U?,edificio basso lungo la ferrovia; copertura vecchia ma integra
+C174,U,,,,striscia di strada e cortili
+C175,U,T1,V0,U?,edifici di un complesso con verde di pertinenza
+C176,I,,,,parcheggio a raso vuoto (parcheggio di interscambio/evento)
+C177,U,T1,V0,U+,edificio a tetto piano in isolato
+C178,V,,,,orti e vegetazione fitta lungo la tangenziale (orti informali)
+C179,I,,,,incrocio stradale e una casa
+C180,U,T1,V0,U+,edifici in centro
+C181,U,,,,verde e cortili tra stecche residenziali
+C182,U,T1,V0,U+,edificio residenziale con giardino
+C183,I,,,,strade e spazi di un nuovo quartiere
+C184,U,T1,V0,U+,edificio con giardino in isolato
+C185,L,,,,giardino incolto con casa d'angolo (vegetazione non curata prevalente)
+C186,U,,,,cortile interno di grande edificio
+C187,V,,,,area alberata in un parco
+C188,L,,,,prato incolto e capannoni misti lungo la ferrovia; incolto prevalente
+C189,U,,,,giardino condominiale ed edificio residenziale
+C190,U,T1,V0,U?,coperture in isolato denso
+C191,U,T1,V0,U+,grande edificio commerciale/logistico con parcheggio
+C192,U,T1,V0,U+,isolato storico denso
+C193,L,,,,area in ombra con prato secco e percorso accanto a edificio
+C194,V,,,,campi e prati presso uno specchio d'acqua (agricolo o parco)
+C195,I,,,,strada e parcheggio di area produttiva
+C196,D,T2,V2,U?,edifici con un angolo danneggiato e macerie in area invasa da vegetazione
+C197,U,,,,parcheggio in uso
+C198,U,,,,percorsi e spazi tra edifici residenziali con campo sportivo
+C199,L,,,,lotto con vegetazione spontanea; detriti e un veicolo
+C200,U,T1,V0,U+,edificio residenziale in isolato

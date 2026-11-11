@@ -1,0 +1,169 @@
+{
+ "pilota": [
+  21,
+  51,
+  72
+ ],
+ "parametri": {
+  "a_min_parcel": 300.0,
+  "excl_share": 0.5,
+  "occ_res_share": 0.5,
+  "free_cover_max": 0.1,
+  "snap_m": 20.0,
+  "buffer_m": 2.0,
+  "max_area_m2": 60000.0,
+  "lot_min_m2": 1500.0,
+  "att_min_m2": 500.0,
+  "dual_min_m2": 5000.0,
+  "green_deficit_q": 0.25,
+  "storey_m": 3.2,
+  "yield_": 0.7,
+  "gfa_dw": 80.0,
+  "fars": [
+   0.5,
+   1.0,
+   2.0
+  ],
+  "seed_campione": 3411,
+  "n_alloc": {
+   "lotto edificabile": 50,
+   "lotto da riusare": 30,
+   "area di attivazione": 20
+  },
+  "n_base": 100,
+  "orto_service": "https://www.cartografia.servizirl.it/arcgis2/rest/services/BaseMap/Ortofoto2018_2019/ImageServer",
+  "soglia_C5a": 0.7,
+  "soglia_C5b": 0.25,
+  "overlap_m2": 1.0
+ },
+ "seme": 42,
+ "C1": true,
+ "C2": true,
+ "C3_coppie_oltre_1m2": 0,
+ "C3_area_comune_max_m2": 0.0,
+ "C3": true,
+ "C4": true,
+ "C6": true,
+ "conteggi": {
+  "area di attivazione": 27,
+  "lotto edificabile": 19,
+  "lotto da riusare": 3
+ },
+ "capacita": {
+  "lotto da riusare": {
+   "cap_far05": 5,
+   "cap_far1": 13,
+   "cap_far2": 27,
+   "cap_recupero": 20
+  },
+  "lotto edificabile": {
+   "cap_far05": 766,
+   "cap_far1": 1541,
+   "cap_far2": 3094
+  },
+  "area di attivazione": {
+   "cap_far05": 0,
+   "cap_far1": 0,
+   "cap_far2": 0
+  }
+ },
+ "capacita_anche_attivazione": {
+  "cap_far05": 0,
+  "cap_far1": 0,
+  "cap_far2": 0
+ },
+ "n_anche_attivazione": 0,
+ "edificabili_oltre_400_alloggi_far1": 0,
+ "origini": [
+  [
+   "area di attivazione",
+   "COMUNE / taglia < 1.500 m²",
+   2
+  ],
+  [
+   "area di attivazione",
+   "COMUNE / verde di servizio PGT",
+   11
+  ],
+  [
+   "area di attivazione",
+   "DUSAF1412 / area verde incolta DUSAF 1412",
+   8
+  ],
+  [
+   "area di attivazione",
+   "DUSAF1412 / verde di servizio PGT",
+   6
+  ],
+  [
+   "lotto da riusare",
+   "dbt_diruto",
+   2
+  ],
+  [
+   "lotto da riusare",
+   "ds503",
+   1
+  ],
+  [
+   "lotto edificabile",
+   "AT",
+   1
+  ],
+  [
+   "lotto edificabile",
+   "COMUNE",
+   10
+  ],
+  [
+   "lotto edificabile",
+   "DUSAF13",
+   8
+  ]
+ ],
+ "proprieta": [
+  [
+   "area di attivazione",
+   "ignoto",
+   14
+  ],
+  [
+   "area di attivazione",
+   "pubblico comunale",
+   13
+  ],
+  [
+   "lotto da riusare",
+   "ignoto",
+   3
+  ],
+  [
+   "lotto edificabile",
+   "ignoto",
+   7
+  ],
+  [
+   "lotto edificabile",
+   "pubblico comunale",
+   12
+  ]
+ ],
+ "area_ha": {
+  "area di attivazione": 21.2,
+  "lotto da riusare": 0.2,
+  "lotto edificabile": 17.7
+ },
+ "nil_con_lotti": 3,
+ "hash_contenuto": "ee02527b9577253da10bf19a1f44cd4236049f8acd8d06797a0c9ca7f0883652",
+ "passa_C1_C6": false,
+ "registro": {
+  "utc": "2026-11-11T095745Z",
+  "commit": "76dbf2f770ff2910d7f254d186815d7ecb0c0127",
+  "modifiche_non_committate": [
+   "?? esperimenti/L_lotti_v2/"
+  ],
+  "sha256_run_py": "b85aa3eba1b54f59fb4b6d1e04c923930c14dcc1b48dbc72dd3e9297cc0152ba",
+  "python": "3.13.18",
+  "durata_s": 56
+ }
+}

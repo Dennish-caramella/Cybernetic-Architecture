@@ -1,0 +1,55 @@
+PRE-REGISTRAZIONE Base L v2 (ticket #34) — testo di REPORT.md §1, scritto prima di ogni esecuzione della pipeline v2.
+Scritto: 2026-11-11T09:50Z. Nota: lo strumento di scrittura ha rifiutato REPORT.md per l'agente esecutore; il testo di §1 è qui, identico, e va copiato in REPORT.md §1 dal coordinatore. L'hash SHA-256 di questo file è in 00_preregistrazione.sha256, calcolato prima della prima esecuzione.
+
+1. CRITERI DI ACCETTAZIONE, REGOLE E PIANO DI CAMPIONAMENTO
+
+Cosa ho visto prima di scrivere: report e revisione di v1 (esiti, conteggi per origine, tassi DUSAF del revisore); schemi e valori dei campi delle fonti in cache (pgt_at, pgt_dism, ds503, ds2688, ds677, codici DUSAF 8.0 presenti a Milano, EDIFC_STAT); ds2813 (88 NIL, statistiche del campo value). Nessuna esecuzione della pipeline v2, nemmeno pilota; nessuna immagine di ortofoto di lotti (una sola immagine di prova del servizio, piazza del Duomo).
+
+1.1 Decisioni di Dennis (11/11, #34): D1 edificabili solo da aree designate o dismesse (niente soft site, niente ERP); D2 ortofoto Regione Lombardia, 100 lotti + 100 particelle qualsiasi, seme dichiarato prima, 20 casi ricontrollati da Dennis, screening di degrado e recuperabilità; D3 riuso solo di edifici dismessi o vuoti, capacità dall'edificio della fonte; D4 FAR 0,5/1/2 sempre insieme; terza classe area di attivazione. Precisazione di Dennis sulla capacità (09:47Z, prima di ogni esecuzione) recepita in 1.4.
+
+1.2 Regole di classe (soglie = parametri in testa a run.py, dizionario P, [H]). Universo: particelle catastali di terreno (mappale numerico) con punto interno nel Comune (come v1, fori ricostruiti).
+LOTTO DA RIUSARE (unità = edificio della fonte):
+ R1 ingresso: edificio DBT 2020 segnalato dismesso da (a) ds503 (tutte le tipologie): edificio DBT la cui impronta contiene il punto o il più vicino entro 20 m; (b) DBT EDIFC_STAT=02 (diruto). ds677 in alienazione e Demanio disponibile NON entrano (non attestano che l'edificio sia vuoto [I]).
+ R2 esclusi gli edifici abitati: entra solo l'edificio della fonte; occupazione non disponibile come dato aperto [L], controllata con lo screening (uso apparente).
+ R3 perimetro = particella che contiene l'edificio meno le impronte degli altri edifici DBT esistenti; più edifici fonte sulla stessa particella = un lotto.
+ R4 filtri: particella >= 300 m²; quota < 0,5 di verde/agricolo/paesaggio/istruzione PGT e acque/infrastrutture/verde/agricolo/boschi DUSAF; fuori dai PCU (come v1).
+LOTTO EDIFICABILE (unità = gruppo di particelle adiacenti della stessa origine):
+ E1 ingresso: AT PGT non PCU (quota >= 0,5); PGT ex AMB_DEG (punto interno); DUSAF 133 cantieri o 134 aree degradate non utilizzate (quota >= 0,5); terreno comunale libero (ds677 TIPO=TERRENO per foglio+mappale e copertura edificata DBT < 0,10); area Demanio patrimonio disponibile (ds2688, punto nella particella). Priorità AT > AMB_DEG > DUSAF13 > DEMANIO > COMUNE. Esclusi gli ex AR_RIG (rigenerazione diffusa, 98,5% suolo urbanizzato per il mosaico [V]).
+ E2 filtri comuni in ordine: particella >= 300 m²; fuori PCU; quota < 0,5 di acque, infrastrutture, agricolo, boschi DUSAF, verde DUSAF in uso (14x tranne 1412), agricolo PGT, istruzione PGT; non residenza occupata (quota residenziale del volume DBT >= 0,5); non particella di un lotto da riusare.
+ E3 instradamento all'attivazione delle particelle vincolate (A2); accorpamento per adiacenza (2 m, stessa origine, k-means sopra 60.000 m², seme 42).
+ E4 minimo come area: lotto >= 1.500 m²; nessun minimo in alloggi, nessun tetto a 400.
+AREA DI ATTIVAZIONE:
+ A1 ingresso: particelle che passano E1 o hanno quota >= 0,5 di DUSAF 1412 (aree verdi incolte) o 131/132 (cave, discariche), con i filtri E2.
+ A2 va all'attivazione e non all'abitazione se: quota >= 0,5 di verde di servizio PGT ("Aree a verde") o di valore paesaggistico PGT; oppure ingresso solo da DUSAF 1412 o 131/132. Accorpate come E3.
+ A3 taglia: gruppo della corrente edificabile con 500 <= area < 1.500 m² -> area di attivazione (motivo "taglia"); minimo 500 m² anche per A2.
+ A4 doppia etichetta: lotto edificabile >= 5.000 m² in NIL con deficit di verde (ds2813 indice 2024 nel quartile inferiore degli 88 NIL) resta lotto edificabile con capacità e porta anche_attivazione=1. Un'area di attivazione non ha capacità abitativa.
+SOVRAPPOSIZIONI: ogni lotto perde le parti già occupate da lotti precedenti nell'ordine riuso > edificabile > attivazione, poi id; sotto il minimo di classe esce (in cascata). File pubblicato NON semplificato = file dei criteri.
+PROPRIETÀ: quota_comunale (ds677 foglio+mappale); quota_demanio (particelle con punto Demanio, qualsiasi categoria); Demanio se quota_demanio >= 0,5, altrimenti comunale se quota_comunale >= 0,5, altrimenti ignoto; ERP/ALER [L].
+
+1.3 Ortofoto e campionamento (D2)
+ Fonte: ortofoto AGEA 2018-2019, Regione Lombardia, tasselli BaseMap/Ortofoto2018_2019/ImageServer (EPSG:32632, livello 13, 0,26 m) [V]. La 2021 (BaseMap/Ortofoto2021) in WMS GetMap ed exportImage dà errore 400 "General function failure" alle 09:40Z [V]: uso la 2018-2019 e dichiaro lo scarto temporale. Nessuna fonte dei filtri deriva da questa ortofoto [I].
+ Licenza: ortofoto di proprietà AGEA, visione e stampa citando la fonte [S]; le immagini restano fuori da git (_cache/L_lotti_v2/orto, controllo_umano/img ignorata), rigenerabili.
+ Lotti: 100, seme 3411 (numpy default_rng), allocazione fissa 50 edificabili, 30 riuso, 20 attivazione; classe con meno unità: tutte, resto agli edificabili.
+ Tasso di base: 100 particelle di terreno nel Comune >= 300 m², stesso generatore subito dopo, nessun filtro.
+ Cecità: 200 casi mescolati con lo stesso seme, codici C001-C200; codifica in ordine di codice sull'immagine sola (contorno rosso), senza classe/origine/fonte; tabella chiusa prima dell'unione. Cecità parziale (codificatore = esecutore) [I].
+ Q1 copertura prevalente (>50% del contorno): L libera (suolo nudo, sterrato, prato/incolto non curato, piazzale vuoto); C cantiere; D edificato dismesso o degradato (tetti danneggiati/crollati, vegetazione su edifici o piazzali, nessun segno d'uso); U edificato o area in uso; V verde curato o agricolo coltivato; I infrastruttura in uso; X non giudicabile. Libera o dismessa = {L,C,D}.
+ Q2 se ci sono edifici: tetto T1 integro / T2 danneggiato / T3 crollato o assente / T0 non visibile; vegetazione V0/V1/V2; uso apparente U+/U-/U?. Recuperabilità visiva [H]: alta = T1 e V0-V1; media = T2 oppure T1 con V2; bassa = T3. Screening visivo dall'alto, NON perizia strutturale.
+ Precisione: n=100, Wilson 95% semiampiezza <= 0,098. P(passa C5a | p=0,80)=0,994; 0,75->0,896; 0,70->0,549; 0,65->0,173 [V binomiale]. C5b (Newcombe, 20.000 simulazioni): 0,75 vs 0,15 -> 100%; 0,70 vs 0,30 -> 60%; 0,60 vs 0,30 -> 10% [V].
+
+1.4 Capacità: c(FAR) = floor(0,70 * FAR * A / 80), FAR in {0,5; 1; 2}, sempre insieme.
+ Edificabile: A = area del lotto, mai dagli edifici.
+ Riuso: recupero c_rec = floor(0,70 * V_src / (3,2*80)), V_src volume fuori terra del solo edificio fonte; demolizione e ricostruzione c(FAR) con A = area del lotto (R3). Scenario principale: dallo screening se nel campione (T3 -> demolizione; T1/T2 -> recupero); fuori campione: DBT diruto -> demolizione, ds503 -> recupero [H].
+ Attivazione: capacità 0 (la doppia etichetta A4 è un lotto edificabile).
+
+1.5 Criteri (passa se C1-C6 e C8; C7 in attesa di Dennis, blocca il congelamento ma non la consegna)
+ C1 geometrie poligonali non vuote, valide, EPSG:32632, sul file pubblicato: 100%
+ C2 id unico; classe, origine, proprietà, area>0, capacità 3 FAR, nil_id, fonti, licenze non vuoti; ogni attributo in metadati con fonte e licenza: 100%
+ C3 coppie con area comune > 1 m² nel file pubblicato: 0
+ C4 capacità secondo formula per i tre FAR; attivazione 0; cap_recupero dal solo edificio fonte: 100%
+ C5a ortofoto, 100 lotti, quota {L,C,D}: >= 0,70 (stima puntuale, IC Wilson riportato)
+ C5b differenza lotti - tasso di base: limite inferiore IC 95% Newcombe >= 0,25
+ C6 cascata e NIL x classe, somme esatte
+ C7 accordo di Dennis sulla codifica binaria dei 20 casi >= 16/20: in attesa di Dennis
+ C8 due esecuzioni consecutive da cache: stesso hash del contenuto (attributi + WKB ordinati)
+ Informativi: C5a per classe; riuso: quota U+ e distribuzione recuperabilità; C5a pesato per classe.
+ Arresto: se C1-C6 o C8 non passano, niente congelamento, ticket e decisione con Dennis. Nessuna regola/soglia cambia dopo aver visto C5; ogni correzione dopo la prima esecuzione completa va nel registro con motivo.

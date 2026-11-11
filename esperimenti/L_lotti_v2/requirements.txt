@@ -1,0 +1,11 @@
+# versioni con cui è stata eseguita la Base L v2 (Python 3.13.18), 2026-11-11
+geopandas==1.2.0
+shapely==2.2.0
+pyogrio==0.13.0
+pyproj==3.8.0
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pillow==12.3.0

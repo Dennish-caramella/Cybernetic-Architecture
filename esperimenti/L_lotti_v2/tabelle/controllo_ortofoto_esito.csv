@@ -1,0 +1,201 @@
+tipo,id,classe,origine,codice,Q1,tetto,veg,uso,nota,ok
+lotto,E00501,lotto edificabile,DUSAF13,C060,C,,,,cantiere con scavo e fondazioni,True
+lotto,E00540,lotto edificabile,DUSAF13,C144,L,,,,grande prato libero in città; potrebbe essere prato agricolo,True
+lotto,E00262,lotto edificabile,COMUNE,C159,U,,,,complesso residenziale nuovo e giardini,False
+lotto,E00591,lotto edificabile,DUSAF13,C168,L,,,,prato incolto con edificio in parte nel contorno,True
+lotto,E00481,lotto edificabile,COMUNE,C105,U,,,,striscia di cortili e passaggi,False
+lotto,E00416,lotto edificabile,COMUNE,C065,U,,,,isolati residenziali a corte,False
+lotto,E00658,lotto edificabile,DUSAF13,C003,C,,,,cantiere con scavi e gru,True
+lotto,E00760,lotto edificabile,COMUNE,C141,I,,,,striscia stradale con fronti residenziali,False
+lotto,E00364,lotto edificabile,AT,C109,U,T1,V0,U?,capannone a copertura verde lungo i binari,False
+lotto,E00713,lotto edificabile,COMUNE,C017,U,,,,giardino di pertinenza di edifici residenziali nuovi,False
+lotto,E00346,lotto edificabile,COMUNE,C183,I,,,,strade e spazi di un nuovo quartiere,False
+lotto,E00509,lotto edificabile,COMUNE,C096,U,T1,V0,U+,edificio tecnologico recente con piazzale,False
+lotto,E00386,lotto edificabile,COMUNE,C048,U,,,,verde condominiale tra stecche residenziali,False
+lotto,E00392,lotto edificabile,AT,C191,U,T1,V0,U+,grande edificio commerciale/logistico con parcheggio,False
+lotto,E00518,lotto edificabile,COMUNE,C047,U,,,,parcheggio in uso,False
+lotto,E00383,lotto edificabile,COMUNE,C067,U,,,,verde tra stecche residenziali,False
+lotto,E00413,lotto edificabile,COMUNE,C127,U,T1,V0,U+,edificio a corte con orti,False
+lotto,E00477,lotto edificabile,AT,C170,U,,,,parcheggio in uso,False
+lotto,E00274,lotto edificabile,COMUNE,C197,U,,,,parcheggio in uso,False
+lotto,E00596,lotto edificabile,COMUNE,C195,I,,,,strada e parcheggio di area produttiva,False
+lotto,E00586,lotto edificabile,COMUNE,C171,U,T1,V0,U+,complesso scolastico e parcheggi,False
+lotto,E00395,lotto edificabile,COMUNE,C054,U,,,,verde tra stecche residenziali,False
+lotto,E00246,lotto edificabile,COMUNE,C169,U,,,,strada e piazzali di un'area produttiva,False
+lotto,E00585,lotto edificabile,DUSAF13,C085,L,,,,sterrato e incolto alberato,True
+lotto,E00494,lotto edificabile,COMUNE,C040,U,,,,cortili interni di isolato storico,False
+lotto,E00536,lotto edificabile,COMUNE,C116,U,,,,complesso residenziale,False
+lotto,E00427,lotto edificabile,COMUNE,C106,L,,,,misto: sterrato incolto circa metà; resto sistemato; incerto,True
+lotto,E00730,lotto edificabile,COMUNE,C179,I,,,,incrocio stradale e una casa,False
+lotto,E00398,lotto edificabile,COMUNE,C112,U,,,,complesso con edifici e prati di pertinenza,False
+lotto,E00582,lotto edificabile,COMUNE,C031,U,,,,cortile-parcheggio tra edifici residenziali,False
+lotto,E00629,lotto edificabile,AT,C162,D,T1,V2,U-,edifici a stecca con coperture integre in area invasa da alberi,True
+lotto,E00689,lotto edificabile,COMUNE,C069,I,,,,strada e parcheggio lungo la ferrovia,False
+lotto,E00769,lotto edificabile,COMUNE,C134,U,,,,parcheggi di un campus,False
+lotto,E00502,lotto edificabile,COMUNE,C059,C,,,,cantiere con gru,True
+lotto,E00263,lotto edificabile,COMUNE,C120,U,,,,edificio residenziale in linea,False
+lotto,E00673,lotto edificabile,COMUNE,C181,U,,,,verde e cortili tra stecche residenziali,False
+lotto,E00382,lotto edificabile,AT,C099,U,T1,V0,U+,edificio commerciale/uffici con parcheggio,False
+lotto,E00258,lotto edificabile,COMUNE,C125,U,,,,parcheggi e spazi di un complesso residenziale,False
+lotto,E00778,lotto edificabile,DUSAF13,C020,I,,,,striscia lunga e stretta lungo infrastruttura; non giudicabile come area,False
+lotto,E00312,lotto edificabile,COMUNE,C111,I,,,,striscia di percorso lungo un giardino,False
+lotto,E00757,lotto edificabile,DUSAF13,C030,U,T1,V1,U?,capannone a tetto scuro con fascia verde; uso incerto,False
+lotto,E00451,lotto edificabile,AMB_DEG,C075,L,,,,grande sterrato vuoto,True
+lotto,E00699,lotto edificabile,COMUNE,C095,U,,,,piazzale logistico lungo la ferrovia,False
+lotto,E00281,lotto edificabile,COMUNE,C072,I,,,,striscia stradale,False
+lotto,E00652,lotto edificabile,COMUNE,C188,L,,,,prato incolto e capannoni misti lungo la ferrovia; incolto prevalente,True
+lotto,E00556,lotto edificabile,COMUNE,C016,U,T1,V0,U+,stecche residenziali con giardini,False
+lotto,E00329,lotto edificabile,COMUNE,C135,U,,,,parcheggio in uso,False
+lotto,E00525,lotto edificabile,COMUNE,C107,U,,,,edifici residenziali e cortile,False
+lotto,E00434,lotto edificabile,COMUNE,C118,U,,,,percorso interno di nuovo complesso residenziale,False
+lotto,E00442,lotto edificabile,COMUNE,C123,L,,,,piattaforma vuota con resti di fondazioni e vasche,True
+lotto,R00190,lotto da riusare,ds503,C130,X,,,,piazzale con impianto/silos; nessun mezzo visibile; dismesso o in uso non distinguibile,False
+lotto,R00137,lotto da riusare,dbt_diruto,C149,U,,,,parcheggio pieno di auto (sterrato),False
+lotto,R00241,lotto da riusare,dbt_diruto,C114,D,T1,V1,U-,piazzale dismesso con capannone e pavimentazione invasa,True
+lotto,R00007,lotto da riusare,dbt_diruto+ds503,C058,D,T2,V1,U-,complesso produttivo con parti demolite e macerie,True
+lotto,R00063,lotto da riusare,dbt_diruto+ds503,C129,U,T1,V1,U?,capannone basso con giardino alberato; uso incerto,False
+lotto,R00041,lotto da riusare,dbt_diruto,C027,D,T3,V2,U-,copertura in gran parte crollata (orditura a vista) con vegetazione interna,True
+lotto,R00200,lotto da riusare,dbt_diruto,C094,U,,,,strisce di pertinenza tra edifici produttivi,False
+lotto,R00093,lotto da riusare,ds503,C131,D,T1,V2,U?,casa con giardino invaso dalla vegetazione,True
+lotto,R00149,lotto da riusare,ds503,C006,D,T1,V1,U?,cortile produttivo senza auto con ingombri e vegetazione; tetti integri; incerto,True
+lotto,R00001,lotto da riusare,dbt_diruto,C026,D,T2,V2,U?,lotto invaso da vegetazione con baracche e detriti,True
+lotto,R00017,lotto da riusare,ds503,C084,U,T1,V0,U?,complesso a corte; ponteggio parziale,False
+lotto,R00042,lotto da riusare,ds503,C157,U,T1,V0,U?,capannoni a tetto chiaro,False
+lotto,R00135,lotto da riusare,dbt_diruto,C068,L,,,,striscia incolta invasa da vegetazione,True
+lotto,R00152,lotto da riusare,dbt_diruto,C174,U,,,,striscia di strada e cortili,False
+lotto,R00187,lotto da riusare,ds503,C139,U,T1,V0,U?,grande edificio a tetto piano,False
+lotto,R00160,lotto da riusare,ds503,C153,U,T1,V0,U?,edificio a tetto piano in isolato,False
+lotto,R00043,lotto da riusare,dbt_diruto+ds503,C010,U,T1,V0,U?,capannone con piazzale; segni d'uso scarsi,False
+lotto,R00240,lotto da riusare,dbt_diruto,C161,L,,,,piazzale abbandonato con pavimentazione invasa da vegetazione,True
+lotto,R00053,lotto da riusare,ds503,C051,U,T1,V0,U+,edificio con orto/giardino curato,False
+lotto,R00066,lotto da riusare,ds503,C008,U,T1,V0,U+,edificio residenziale/uffici in uso,False
+lotto,R00108,lotto da riusare,ds503,C175,U,T1,V0,U?,edifici di un complesso con verde di pertinenza,False
+lotto,R00211,lotto da riusare,dbt_diruto,C148,D,T3,V1,U-,edificio con copertura crollata (muri a vista),True
+lotto,R00159,lotto da riusare,dbt_diruto,C185,L,,,,giardino incolto con casa d'angolo (vegetazione non curata prevalente),True
+lotto,R00035,lotto da riusare,dbt_diruto,C098,U,T1,V0,U?,capannone a tetto piano in cortile,False
+lotto,R00106,lotto da riusare,dbt_diruto,C053,D,T3,V2,U-,rudere con copertura crollata e vegetazione,True
+lotto,R00215,lotto da riusare,ds503,C167,D,T2,V2,U-,capannone a shed in area invasa dalla vegetazione,True
+lotto,R00019,lotto da riusare,ds503,C083,C,,,,edificio in ristrutturazione con gru,True
+lotto,R00161,lotto da riusare,dbt_diruto,C046,D,T1,V1,U?,lungo edificio con copertura consunta in complesso con vegetazione spontanea,True
+lotto,R00128,lotto da riusare,dbt_diruto,C117,D,T2,V2,U?,piccoli edifici con coperture consunte e vegetazione invadente lungo la ferrovia,True
+lotto,R00168,lotto da riusare,ds503,C057,U,T1,V0,U?,isolato denso con coperture integre,False
+lotto,A01642,area di attivazione,DUSAF1412 / verde di servizio PGT,C091,L,,,,incolto sotto viadotto ferroviario,True
+lotto,A01444,area di attivazione,COMUNE / taglia < 1.500 m²,C037,U,T1,V0,U?,edificio a tetto piano tra residenze,False
+lotto,A01607,area di attivazione,COMUNE / valore paesaggistico PGT,C011,U,T1,V0,U+,cortile di cascina con auto,False
+lotto,A01503,area di attivazione,COMUNE / verde di servizio PGT,C066,L,,,,lotto recintato con prato secco e ghiaia,True
+lotto,A01391,area di attivazione,DUSAF13 / taglia < 1.500 m²,C014,L,,,,incolto con detriti,True
+lotto,A01560,area di attivazione,COMUNE / verde di servizio PGT,C055,V,,,,giardino alberato attorno a un edificio,False
+lotto,A01248,area di attivazione,COMUNE / verde di servizio PGT,C198,U,,,,percorsi e spazi tra edifici residenziali con campo sportivo,False
+lotto,A00879,area di attivazione,COMUNE / taglia < 1.500 m²,C158,I,,,,spazi stradali e aiuole,False
+lotto,A01223,area di attivazione,COMUNE / verde di servizio PGT,C042,V,,,,prato lungo un grande edificio,False
+lotto,A01095,area di attivazione,COMUNE / verde di servizio PGT,C140,L,,,,triangolo di prato secco non curato con alberi,True
+lotto,A01577,area di attivazione,COMUNE / verde di servizio PGT,C113,V,,,,fascia alberata lungo un corso d'acqua,False
+lotto,A01030,area di attivazione,COMUNE / verde di servizio PGT,C064,L,,,,incolto alberato non curato,True
+lotto,A01124,area di attivazione,AT / taglia < 1.500 m²,C033,D,T2,V2,U-,edificio lungo con copertura bucata nel bosco,True
+lotto,A00993,area di attivazione,COMUNE / verde di servizio PGT,C156,V,,,,giardino pubblico con campo da basket e prato,False
+lotto,A01016,area di attivazione,COMUNE / verde di servizio PGT,C002,L,,,,prato incolto con alberi; edifici esclusi dal contorno,True
+lotto,A01101,area di attivazione,COMUNE / verde di servizio PGT,C035,V,,,,spartitraffico alberato,False
+lotto,A01026,area di attivazione,DUSAF13 / taglia < 1.500 m²,C150,L,,,,striscia di parcheggio e area incolta sterrata (incolto prevalente),True
+lotto,A01214,area di attivazione,COMUNE / taglia < 1.500 m²,C044,I,,,,striscia lungo marciapiede con auto,False
+lotto,A01049,area di attivazione,COMUNE / verde di servizio PGT,C079,U,T1,V0,U+,edifici con giardini alberati,False
+lotto,A01527,area di attivazione,COMUNE / verde di servizio PGT,C043,U,,,,giardino condominiale di nuovo complesso,False
+base,F205_039000.59,particella qualsiasi,,C097,U,T1,V0,U?,coperture in isolato denso,False
+base,F205_018100.139,particella qualsiasi,,C190,U,T1,V0,U?,coperture in isolato denso,False
+base,F205_001800.384,particella qualsiasi,,C100,I,,,,rotatoria e spazi stradali con aiuole,False
+base,F205_061800.150,particella qualsiasi,,C092,U,,,,piazzale di deposito materiali; possibili macerie; incerto,False
+base,F205_010600.43,particella qualsiasi,,C073,U,T1,V0,U+,edificio di un complesso istituzionale,False
+base,F205_047200.120,particella qualsiasi,,C200,U,T1,V0,U+,edificio residenziale in isolato,False
+base,F205_007700.266,particella qualsiasi,,C155,U,T1,V0,U+,edificio residenziale in isolato,False
+base,F205_018800.1,particella qualsiasi,,C021,U,T1,V0,U+,edificio a corte integro,False
+base,F205_000500.71,particella qualsiasi,,C034,I,,,,area di servizio ferroviaria,False
+base,F205_044700.36,particella qualsiasi,,C166,L,,,,incolto tra svincoli stradali,True
+base,F205_001600.30,particella qualsiasi,,C154,U,T1,V0,U+,edificio basso di cascina con auto,False
+base,F205_013100.667,particella qualsiasi,,C172,U,T1,V1,U?,edificio basso con giardino in isolato,False
+base,F205_029500.100,particella qualsiasi,,C176,I,,,,parcheggio a raso vuoto (parcheggio di interscambio/evento),False
+base,F205_016300.189,particella qualsiasi,,C145,U,T1,V0,U+,cortile con edificio basso e orti,False
+base,F205_051600.100,particella qualsiasi,,C128,U,T1,V0,U+,isolato denso,False
+base,F205_039400.422,particella qualsiasi,,C050,U,T1,V0,U+,edificio residenziale con passo carraio,False
+base,F205_020300.63,particella qualsiasi,,C151,U,T1,V0,U+,edificio residenziale con lucernario,False
+base,F205_024100.24,particella qualsiasi,,C070,V,,,,pista di atletica e aree scolastiche,False
+base,F205_010900.17,particella qualsiasi,,C007,U,T1,V0,U?,capannone/edificio integro in contesto denso,False
+base,F205_014500.531,particella qualsiasi,,C115,U,,,,cortile alberato di isolato,False
+base,F205_062600.159,particella qualsiasi,,C137,V,,,,campo coltivato tra due strade,False
+base,F205_014700.85,particella qualsiasi,,C025,U,T1,V0,U+,villa residenziale,False
+base,F205_047100.225,particella qualsiasi,,C163,U,T1,V0,U+,grande complesso produttivo/terziario in isolato,False
+base,F205_002500.258,particella qualsiasi,,C039,U,,,,percorso e scarpata di un nuovo quartiere,False
+base,F205_007400.15,particella qualsiasi,,C121,U,T1,V0,U+,edificio residenziale con giardino,False
+base,F205_014600.45,particella qualsiasi,,C076,U,T1,V0,U+,edificio in cortile con auto,False
+base,F205_010600.219,particella qualsiasi,,C071,U,T1,V0,U?,lungo magazzino a tetto chiaro,False
+base,F205_012000.310,particella qualsiasi,,C193,L,,,,area in ombra con prato secco e percorso accanto a edificio,True
+base,F205_048000.17,particella qualsiasi,,C124,U,T1,V0,U+,isolato denso,False
+base,F205_037900.198,particella qualsiasi,,C086,U,T1,V0,U+,edificio residenziale,False
+base,F205_021600.80,particella qualsiasi,,C126,U,T1,V0,U+,centro commerciale,False
+base,F205_068400.84,particella qualsiasi,,C015,U,T1,V0,U+,palestra/tensostruttura accanto a campo sportivo,False
+base,F205_012500.144,particella qualsiasi,,C062,U,T1,V0,U+,isolato residenziale denso,False
+base,F205_027100.167,particella qualsiasi,,C133,U,T1,V0,U+,isolato storico denso,False
+base,F205_039600.31,particella qualsiasi,,C164,U,T1,V0,U?,edificio scolastico/istituzionale a pettine,False
+base,F205_047600.325,particella qualsiasi,,C022,U,T1,V0,U+,coperture in centro storico integre,False
+base,F205_004700.179,particella qualsiasi,,C136,V,,,,striscia alberata ai margini di un parco,False
+base,F205_020400.100,particella qualsiasi,,C004,U,T1,V0,U+,edifici e piazzale in uso,False
+base,F205_007200.291,particella qualsiasi,,C189,U,,,,giardino condominiale ed edificio residenziale,False
+base,F205_011900.340,particella qualsiasi,,C013,V,,,,aiuola alberata accanto a un parcheggio,False
+base,F205_056400.523,particella qualsiasi,,C082,L,,,,striscia di incolto arbustivo,True
+base,F205_013800.52,particella qualsiasi,,C074,U,,,,parcheggio sterrato pieno di auto,False
+base,F205_027800.184,particella qualsiasi,,C028,U,T1,V1,U?,edificio a tetto piano scuro con giardino alberato,False
+base,F205_013100.606,particella qualsiasi,,C186,U,,,,cortile interno di grande edificio,False
+base,F205_008300.36,particella qualsiasi,,C152,U,T1,V0,U+,edificio basso in isolato,False
+base,F205_007300.218,particella qualsiasi,,C143,V,,,,parco alberato con radura,False
+base,F205_066200.68,particella qualsiasi,,C036,V,,,,striscia tra risaie,False
+base,F205_036400.58,particella qualsiasi,,C093,L,,,,prato alberato non curato; potrebbe essere parco,True
+base,F205_012100.90,particella qualsiasi,,C122,U,T1,V1,U?,edificio in linea con copertura integra nel verde,False
+base,F205_024200.17,particella qualsiasi,,C187,V,,,,area alberata in un parco,False
+base,F205_051100.140,particella qualsiasi,,C032,U,T1,V1,U?,edificio basso in cortile di un complesso,False
+base,F205_059900.41,particella qualsiasi,,C132,U,T1,V0,U+,tratto di edificio residenziale curvo,False
+base,F205_020200.17,particella qualsiasi,,C023,U,T1,V0,U+,isolato residenziale/commerciale,False
+base,F205_005100.67,particella qualsiasi,,C110,U,,,,complesso per uffici con giardino e parcheggio,False
+base,F205_045800.13,particella qualsiasi,,C012,D,T2,V1,U?,edificio con parte senza copertura e vegetazione intorno,True
+base,F205_053500.248,particella qualsiasi,,C019,U,T1,V0,U?,edificio produttivo/uffici integro,False
+base,F205_009000.559,particella qualsiasi,,C142,U,T1,V0,U+,edificio residenziale con terrazze,False
+base,F205_053500.333,particella qualsiasi,,C146,U,T1,V1,U+,grande edificio a L con cortile pieno di auto,False
+base,F205_044700.34,particella qualsiasi,,C056,V,,,,argine vegetato lungo fiume e rampa stradale,False
+base,F205_060100.485,particella qualsiasi,,C196,D,T2,V2,U?,edifici con un angolo danneggiato e macerie in area invasa da vegetazione,True
+base,F205_035000.149,particella qualsiasi,,C160,U,T1,V0,U+,isolato denso,False
+base,F205_056900.47,particella qualsiasi,,C077,L,,,,campo incolto con un container,True
+base,F205_035100.231,particella qualsiasi,,C104,U,T1,V0,U+,edificio con lucernario in centro,False
+base,F205_020100.115,particella qualsiasi,,C173,U,T1,V0,U?,edificio basso lungo la ferrovia; copertura vecchia ma integra,False
+base,F205_048200.419,particella qualsiasi,,C081,V,,,,giardino pubblico alberato con mercato,False
+base,F205_031300.123,particella qualsiasi,,C184,U,T1,V0,U+,edificio con giardino in isolato,False
+base,F205_051200.247,particella qualsiasi,,C063,U,,,,piazzale e parcheggio di servizio,False
+base,F205_031600.6,particella qualsiasi,,C088,U,T1,V0,U+,edificio residenziale,False
+base,F205_009600.178,particella qualsiasi,,C103,U,T1,V0,U+,edificio a tetto piano in isolato,False
+base,F205_0535A0.81,particella qualsiasi,,C165,U,T1,V0,U+,edificio residenziale,False
+base,F205_064800.127,particella qualsiasi,,C119,U,T1,V0,U+,case a schiera,False
+base,F205_036800.377,particella qualsiasi,,C009,U,,,,striscia di cortili e giardini privati,False
+base,F205_020200.97,particella qualsiasi,,C087,U,T1,V0,U?,coperture in isolato denso,False
+base,F205_019400.313,particella qualsiasi,,C041,U,T1,V0,U+,villa residenziale,False
+base,F205_052700.368,particella qualsiasi,,C045,U,,,,parcheggio in uso,False
+base,F205_039300.784,particella qualsiasi,,C138,U,T1,V0,U+,isolato denso,False
+base,F205_001800.3,particella qualsiasi,,C024,V,,,,parco con giochi,False
+base,F205_004200.34,particella qualsiasi,,C199,L,,,,lotto con vegetazione spontanea; detriti e un veicolo,True
+base,F205_014600.54,particella qualsiasi,,C061,U,T1,V0,U+,edificio con pannelli solari,False
+base,F205_008800.94,particella qualsiasi,,C178,V,,,,orti e vegetazione fitta lungo la tangenziale (orti informali),False
+base,F205_023300.186,particella qualsiasi,,C018,U,T1,V0,U+,edificio storico in centro,False
+base,F205_049700.7,particella qualsiasi,,C194,V,,,,campi e prati presso uno specchio d'acqua (agricolo o parco),False
+base,F205_038900.26,particella qualsiasi,,C180,U,T1,V0,U+,edifici in centro,False
+base,F205_043600.14,particella qualsiasi,,C192,U,T1,V0,U+,isolato storico denso,False
+base,F205_049900.12,particella qualsiasi,,C049,V,,,,campo agricolo (stoppie),False
+base,F205_031600.386,particella qualsiasi,,C080,U,T1,V0,U+,coperture storiche integre,False
+base,F205_027000.261,particella qualsiasi,,C038,U,T1,V0,U+,edificio residenziale d'angolo,False
+base,F205_008700.168,particella qualsiasi,,C029,U,T1,V0,U+,edificio residenziale,False
+base,F205_014100.94,particella qualsiasi,,C182,U,T1,V0,U+,edificio residenziale con giardino,False
+base,F205_064800.95,particella qualsiasi,,C108,U,T1,V0,U?,edificio a tetto piano accanto a una chiesa,False
+base,F205_008700.104,particella qualsiasi,,C147,L,,,,area con detriti e alberi; senza edifici,True
+base,F205_057900.515,particella qualsiasi,,C177,U,T1,V0,U+,edificio a tetto piano in isolato,False
+base,F205_035300.106,particella qualsiasi,,C001,U,T1,V0,U+,villa/edificio integro con giardino curato,False
+base,F205_051300.362,particella qualsiasi,,C090,U,T1,V0,U+,edificio residenziale,False
+base,F205_044900.46,particella qualsiasi,,C052,V,,,,orti con capanni,False
+base,F205_057900.31,particella qualsiasi,,C102,U,T1,V0,U+,edificio basso residenziale,False
+base,F205_043700.159,particella qualsiasi,,C078,U,T1,V0,U+,edifici in centro denso,False
+base,F205_063800.10,particella qualsiasi,,C005,V,,,,striscia alberata lungo un canale nel parco; ambigua,False
+base,F205_001700.216,particella qualsiasi,,C089,I,,,,striscia stradale e marciapiede,False
+base,F205_044100.181,particella qualsiasi,,C101,U,T1,V0,U+,edificio a corte con auto,False
