@@ -31,3 +31,5 @@ w = pop / pop.sum(); print("stima post-stratificata, tutti i lotti:", round(floa
 w2 = pop.xs(False, level="at"); w2 = w2 / w2.sum(); s2 = smp.xs(False, level="at")
 print("stima post-stratificata, lotti non AT:", round(float((w2 * s2["sum"] / s2["size"]).sum()), 3))
 print("quota del campione per classe vs popolazione:", (lo.classe.value_counts() / len(lo)).round(2).to_dict(), (L.classe.value_counts() / len(L)).round(2).to_dict())
+# controprova della categoria Q1 "in trasformazione di piano": se ogni lotto AT contasse come successo, C5a cambierebbe senza alcun dato nuovo
+lo = C[C.tipo == "lotto"]; at = lo.origine.str.startswith("AT"); show("C5a se ogni lotto AT fosse 'in trasformazione' (circolare)", lo.ok | at)
