@@ -97,6 +97,16 @@ def parcels():
     g = g.apply(lambda q: q if q.geom_type == "Polygon" else max((p for p in getattr(q, "geoms", [q]) if p.geom_type == "Polygon"), key=lambda p: p.area, default=shapely.Polygon()))
     D = gpd.GeoDataFrame({"ref": refs}, geometry=g.values, crs=CRS)
     D = D[~D.geometry.is_empty & (D.area > 1)].sort_values("ref").reset_index(drop=True)
+    # il WFS è letto solo nell'anello esterno (come nel Lab): i fori (cortili con altre particelle) vanno ricostruiti
+    # togliendo a ogni particella le particelle che contiene; senza questo, i lotti si sovrappongono (criterio C3)
+    g = D.geometry.values
+    i, j = shapely.STRtree(g).query(g, predicate="contains")
+    k = (i != j) & (shapely.area(g[j]) < 0.999 * shapely.area(g[i]))  # i duplicati (stessa geometria, ref diversi) non sono fori
+    holes = pd.Series(g[j[k]]).groupby(i[k]).agg(lambda v: shapely.union_all(list(v)))
+    g = g.copy(); g[holes.index.values] = shapely.make_valid(shapely.difference(g[holes.index.values], holes.values))
+    D["geometry"] = [q if q.geom_type in ("Polygon", "MultiPolygon") else shapely.union_all([p for p in shapely.get_parts(q) if p.geom_type == "Polygon"]) for q in g]
+    D = D[~D.geometry.is_empty & (D.area > 1)].reset_index(drop=True)
+    log("particelle con fori ricostruiti", len(holes))
     suf = D.ref.str.split(".").str[-1]
     D["land"] = suf.str.isdigit()
     D["foglio"] = pd.to_numeric(D.ref.str[5:9], errors="coerce")
@@ -345,6 +355,11 @@ def main(fetch_first=True):
     camp["esito"] = np.where(camp.classe == "lotto edificabile", (camp.quota_residenziale <= 0.5) & (camp.quota_naturale <= 0.5), camp.quota_artificiale_1xx_no14 >= 0.5)
     pa = camp[camp.classe == "lotto edificabile"].esito.mean(); pb = camp[camp.classe == "lotto da riusare"].esito.mean()
     res["C5a_quota"], res["C5b_quota"] = round(float(pa), 3), round(float(pb), 3); res["C5"] = bool(pa >= 0.7 and pb >= 0.7)
+    # diagnostica (non criterio): la regola C5a su tutti i lotti edificabili, per origine
+    ge = Lt[e]
+    ok_all = (share(ge.geometry, du[du.cat.isin(["resd", "resr"])]) <= 0.5) & (share(ge.geometry, du[du.cat.isin(["green", "agr", "wood", "wat"])]) <= 0.5)
+    res["diag_C5a_tutti_per_origine"] = pd.Series(ok_all, index=ge.index).groupby(ge.origine).mean().round(3).to_dict()
+    res["diag_C5a_tutti"] = round(float(ok_all.mean()), 3)
     tab = pd.crosstab([Lt.nil_id, Lt.nil_nome], Lt.classe).reset_index()
     res["C6"] = bool(all(tab[c].sum() == (Lt.classe == c).sum() for c in Lt.classe.unique()))
     res["C7_siti_prima_capacita"] = n_pre_cap; res["C7"] = bool(1718 <= n_pre_cap <= 2864)
@@ -364,14 +379,15 @@ def main(fetch_first=True):
         ("ref", "catasto", "riferimenti catastali F205_ffffas.mappale"), ("area_m2", "catasto", "area geometrica in EPSG:32632"),
         ("volume_m3", "dbt", "somma area × altezza delle unità volumetriche fuori terra"), ("ambito_pgt", "pgt", "nome AT (non PCU)"),
         ("sl_base_m2", "ipotesi; dbt", "edificabile FAR×area; riuso SL esistente = volume/3,2 m, altrimenti FAR×area"),
-        ("capacita", "ipotesi", "min(floor(0,70 × SL / 80), 400)"), ("far_H", "ipotesi", "indice ipotetico, non del PGT"),
+        ("capacita", "ipotesi", "min(floor(0,70 × SL / 80), 400)"), ("base_capacita", "ipotesi", "quale SL entra nella formula"),
+        ("n_particelle", "catasto", "particelle catastali accorpate nel lotto"), ("far_H", "ipotesi", "indice ipotetico, non del PGT"),
         ("nil_id", "nil", "NIL del punto interno"), ("nil_nome", "nil", ""), ("quota_comunale", "ds677; catasto", "quota di area su particelle in ds677 (foglio+mappale)"),
         ("proprieta", "ds677; demanio; catasto", "Demanio se punto Demanio nel lotto o fonte Demanio; pubblico comunale se quota_comunale >= 0,5 o fonte ds677; altrimenti ignoto"),
         ("proprieta_conflitto", "ds677; demanio", "lotto con entrambe le evidenze"), ("vincoli_noti", "ds600; pgt; demanio", "bonifica, NAF, paesaggio, demanio storico-artistico; quota > 10%"),
         ("nota", "ds503; demanio; ds677; dbt", "descrizione della fonte del riuso"), ("cx", "catasto", "punto interno, x"), ("cy", "catasto", "punto interno, y"),
         ("fonti", "—", "chiavi delle fonti usate"), ("licenze", "—", "licenze delle fonti")], columns=["attributo", "fonte", "regola"])
     meta["fonte_estesa"] = meta.fonte.map(lambda s: " | ".join(SRC[k][0] for k in [x.strip() for x in s.split(";")] if k in SRC))
-    meta["licenza"] = meta.fonte.map(lambda s: " | ".join(SRC[k][1] for k in [x.strip() for x in s.split(";")] if k in SRC))
+    meta["licenza"] = meta.fonte.map(lambda s: " | ".join(SRC[k][1] for k in [x.strip() for x in s.split(";")] if k in SRC)).replace("", "non applicabile (campo descrittivo)")
     out = os.path.join(HERE, "..", "_cache", "L_lotti", "lotti_v1_full.gpkg")
     for f in (out,):
         if os.path.exists(f): os.remove(f)

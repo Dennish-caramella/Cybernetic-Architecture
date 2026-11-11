@@ -5,62 +5,119 @@
  "C3": false,
  "C3_dettaglio": [
   {
-   "a": "E00028",
-   "b": "E00029",
-   "m2": 1709.7
+   "a": "E01338",
+   "b": "E01355",
+   "m2": 157.3
   }
  ],
  "C4": true,
- "C5a_quota": 0.7,
- "C5b_quota": 1.0,
- "C5": true,
+ "C5a_quota": 0.467,
+ "C5b_quota": 0.967,
+ "C5": false,
+ "diag_C5a_tutti_per_origine": {
+  "AMB_DEG": 1.0,
+  "AT": 1.0,
+  "ERP": 0.048,
+  "SOFT": 0.554
+ },
+ "diag_C5a_tutti": 0.52,
  "C6": true,
- "C7_siti_prima_capacita": 33,
- "C7": false,
+ "C7_siti_prima_capacita": 2214,
+ "C7": true,
  "conteggi": {
-  "lotto edificabile": 31,
-  "lotto da riusare": 2
+  "lotto edificabile": 1764,
+  "lotto da riusare": 248
  },
  "capacita_tot": {
-  "lotto da riusare": 11,
-  "lotto edificabile": 3389
+  "lotto da riusare": 8965,
+  "lotto edificabile": 185703
  },
  "origini": [
   [
    "lotto da riusare",
-   "ds503",
-   2
+   "dbt_diruto",
+   112
   ],
   [
-   "lotto edificabile",
-   "ERP",
+   "lotto da riusare",
+   "dbt_diruto+demanio",
+   1
+  ],
+  [
+   "lotto da riusare",
+   "dbt_diruto+ds503",
+   17
+  ],
+  [
+   "lotto da riusare",
+   "demanio",
+   5
+  ],
+  [
+   "lotto da riusare",
+   "ds503",
+   106
+  ],
+  [
+   "lotto da riusare",
+   "ds677",
    7
   ],
   [
    "lotto edificabile",
+   "AMB_DEG",
+   3
+  ],
+  [
+   "lotto edificabile",
+   "AT",
+   54
+  ],
+  [
+   "lotto edificabile",
+   "ERP",
+   168
+  ],
+  [
+   "lotto edificabile",
    "SOFT",
-   24
+   1539
   ]
  ],
  "proprieta": [
   [
    "lotto da riusare",
+   "Demanio",
+   6
+  ],
+  [
+   "lotto da riusare",
    "ignoto",
-   2
+   219
+  ],
+  [
+   "lotto da riusare",
+   "pubblico comunale",
+   23
+  ],
+  [
+   "lotto edificabile",
+   "Demanio",
+   22
   ],
   [
    "lotto edificabile",
    "ignoto",
-   20
+   1444
   ],
   [
    "lotto edificabile",
    "pubblico comunale",
-   11
+   298
   ]
  ],
- "proprieta_conflitti": 0,
- "nil_con_lotti": 3,
+ "proprieta_conflitti": 1,
+ "nil_con_lotti": 84,
  "parametri": {
   "a_min_parcel": 300.0,
   "excl_share": 0.5,
