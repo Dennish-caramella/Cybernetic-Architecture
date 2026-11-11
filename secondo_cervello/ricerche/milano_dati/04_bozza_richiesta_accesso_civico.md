@@ -28,7 +28,7 @@ Il sottoscritto [NOME COGNOME], nato a [LUOGO] il [DATA], studente del corso di 
 
 5. **Domanda di servizi abitativi pubblici.** Statistiche aggregate sulle domande presentate negli avvisi SAP per il territorio comunale, per municipio o NIL: numero di domande, composizione dei nuclei, fasce ISEE. Solo dati aggregati.
 
-6. **Edifici e aree in stato di degrado.** Aggiornamento successivo al 2017 del censimento degli edifici abbandonati o degradati pubblicato sul portale open data.
+6. **Edifici e aree in stato di degrado.** Aggiornamento successivo al 2017 del censimento degli edifici abbandonati o degradati pubblicato sul portale open data ("ds503", 174 immobili); per ciascun immobile, se disponibili, le schede di rilievo o sopralluogo, la documentazione fotografica e ogni valutazione dello stato di conservazione, oltre agli esiti dei procedimenti ai sensi dell'art. 11 delle Norme di attuazione del Piano delle Regole.
 
 7. **Composizione delle graduatorie SAP.** Per gli ultimi avvisi SAP sul territorio comunale, numero di domande in graduatoria e di assegnazioni per fascia ISEE (per esempio 0–3.000, 3.000–8.000, 8.000–14.000, 14.000–16.000 €) e per composizione del nucleo, in forma aggregata.
 
