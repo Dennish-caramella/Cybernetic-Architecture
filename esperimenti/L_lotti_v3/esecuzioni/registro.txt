@@ -1,0 +1,5 @@
+2026-11-11T13:09Z  pre-registrazione scritta prima di ogni esecuzione: 39e4c160ade8c90c9e714800d5c6154afa98158ff40e83c14b55d8a1f6ce8180  00_preregistrazione.txt
+2026-11-11T13:12Z  pilota 1 (--no-fetch --pilota, NIL 21,51,72)
+2026-11-11T13:13Z  pilota 1: errore di codice (campione più grande della popolazione nel pilota, 12 edificabili < 50): allocazione limitata alla popolazione; nessuna regola toccata. Pilota 2.
+2026-11-11T13:14Z  pilota 2 (esecuzioni/*_pilota): C1-C4, C6 veri, C8 falso per costruzione (nessuna esecuzione precedente). Errore di codice ereditato da v2: il filtro PGT bonifica usava BONIFICA == "SI" ma il campo è numerico (1/2); il testo SI/NO è in DBONIFICA [V]. In v2 la quota di bonifica PGT era quindi sempre 0 (vincoli_noti solo da ds600). Corretto in DBONIFICA == "SI" (vincoli_noti e copertura_ambiti); nessuna regola di classe toccata (la bonifica non esclude, pre-registrazione 1.2). Avvio esecuzione completa 1 (fase screening ds503: si ferma dopo le immagini S).
+2026-11-11T13:14Z  esecuzione completa 1 (--no-fetch): fase screening

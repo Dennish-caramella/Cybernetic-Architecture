@@ -1,0 +1,56 @@
+PRE-REGISTRAZIONE Base L v3 (ticket #35) — testo di REPORT.md §1, scritto prima di ogni esecuzione della pipeline v3 (nemmeno pilota).
+Scritto: 2026-11-11T13:10Z. L'hash SHA-256 di questo file è in 00_preregistrazione.sha256 ed è registrato in registro.txt prima della prima esecuzione.
+
+1. CRITERI DI ACCETTAZIONE, REGOLE E PIANO DI CAMPIONAMENTO
+
+Cosa ho visto prima di scrivere: pre-registrazione, codice, report ed esiti di v2 (C5a 0,34; base 0,09; differenza 0,25 [0,139; 0,356]; per ingresso: terreno comunale 0,11, altri edificabili 0,54, diruti DBT 0,65, ds503 da solo 0,31); ticket #35 con le decisioni di Dennis; schemi e valori delle fonti in cache: elenco dei 30 poligoni AT del mosaico PGT con nome e area (es. Farini-Lugano 62,9 ha, Rogoredo 2,1 ha, Greco-Breda in 3 poligoni, San Cristoforo in 2), codici DUSAF 8.0 presenti (1221, 1222, 131, 132, 133, 134, 1412 …), campi di pgt_dism (tutti i 1.657 poligoni hanno CONTAMINAZ = "Da verificare"; BONIFICA = SI in 137), campi di ds600 (nessun campo di stato della bonifica), 174 punti ds503 per TIPO_MACRO. Nessuna esecuzione della pipeline v3, nessuna immagine di ortofoto di v3.
+
+1.1 Decisioni di Dennis (11/11, #35)
+ D1 Ambiti di trasformazione PGT non PCU: la destinazione di piano prevale sui filtri di uso attuale (DUSAF infrastrutture, ferrovie, parcheggi, verde in uso, agricolo, boschi); restano esclusi solo i vincoli veri: acque, valore paesaggistico PGT, bonifiche non risolte dove note.
+ D2 Terreni comunali "liberi" (ds677) entrano solo se DUSAF li conferma dismessi o in cantiere.
+ D3 ds503 (edifici degradati 2014-2017) entra solo con una conferma: DBT diruto o screening su ortofoto.
+ D4 Nuovo campione con seme nuovo dichiarato prima; secondo codificatore cieco (preparato qui, eseguito da un agente separato); tabella di copertura per ogni ambito PGT.
+ Tutto il resto è identico a v2 (regole, soglie, capacità, criteri). Le modifiche sono marcate [v3].
+
+1.2 Regole di classe (soglie = parametri in testa a run.py, dizionario P, [H]). Universo come v2: particelle catastali di terreno (mappale numerico) con punto interno nel Comune (fori ricostruiti).
+"Particella AT" = quota >= 0,5 di un AT PGT non PCU e punto interno fuori dai PCU (come v2).
+LOTTO DA RIUSARE (unità = edificio della fonte):
+ R1 [v3] ingresso: edificio DBT 2020 (a) diruto, EDIFC_STAT=02, come v2; oppure (b) segnalato da ds503 (punto nell'impronta o edificio più vicino entro 20 m, come v2) E confermato: edificio anche diruto DBT, oppure screening su ortofoto con Q1 = D oppure tetto in {T2, T3}. Q1 = X o immagine non giudicabile = non confermato.
+   Screening ds503 (censimento, non campione): tutti i lotti da riusare con almeno un edificio ds503 non diruto che passano R2-R4; immagine con contorno rosso del lotto e contorno giallo degli edifici fonte; codici S001.. assegnati in ordine casuale (seme 3513); il foglio di codifica riporta solo il codice; schema Q1/Q2 di 1.3; hash del foglio registrato prima dell'esecuzione che lo usa.
+ R2 come v2 (solo l'edificio della fonte; occupazione non disponibile come dato aperto [L], controllata dallo screening, uso apparente).
+ R3 come v2 (particella meno le impronte degli altri edifici DBT; più edifici fonte = un lotto).
+ R4 filtri: particella >= 300 m²; quota < 0,5 di verde/agricolo/paesaggio/istruzione PGT e acque/infrastrutture/verde/agricolo/boschi DUSAF; fuori dai PCU. [v3] Per le particelle AT valgono solo acque DUSAF e i filtri di piano (verde, agricolo, paesaggio, istruzione PGT): i filtri DUSAF di uso attuale (infrastrutture 122x, verde 14x, agricolo 2x, boschi 3x) non si applicano.
+LOTTO EDIFICABILE (unità = gruppo di particelle adiacenti della stessa origine):
+ E1 ingresso: AT PGT non PCU (particella AT); PGT ex AMB_DEG (punto interno); DUSAF 133 o 134 (quota >= 0,5); [v3] terreno comunale (ds677 TIPO=TERRENO per foglio+mappale, copertura edificata DBT < 0,10) SOLO se la quota dell'unione dei codici DUSAF {131, 132, 133, 134, 1412} è >= 0,5 (131 cave, 132 discariche, 133 cantieri, 134 aree degradate non utilizzate e non vegetate, 1412 aree verdi incolte); area Demanio patrimonio disponibile (ds2688). Priorità AT > AMB_DEG > DUSAF13 > DEMANIO > COMUNE (come v2: un terreno comunale con 133/134 resta di origine DUSAF13). Esclusi gli ex AR_RIG.
+ E2 filtri in ordine: particella >= 300 m²; fuori PCU; quota < 0,5 di acque DUSAF (tutti); [v3] quota < 0,5 di infrastrutture, agricolo, boschi, verde in uso DUSAF (14x tranne 1412) SOLO per le particelle non AT; quota < 0,5 di agricolo PGT e istruzione PGT (tutti, filtri di piano); non residenza occupata (quota residenziale del volume DBT >= 0,5) per tutti [H: un'abitazione occupata non è un uso del suolo che il piano rimuove; la regola resta come v2]; non particella di un lotto da riusare.
+ Bonifiche [v3, L]: nessuna fonte aperta dà lo stato di risoluzione (pgt_dism: CONTAMINAZ "Da verificare" per tutti; ds600 senza stato) [V]; quindi nessuna esclusione per bonifica non risolta: la bonifica resta in vincoli_noti (come v2) e in tabelle/copertura_ambiti.csv.
+ E3 come v2 (A2 all'attivazione; accorpamento 2 m, stessa origine, k-means sopra 60.000 m², seme 42).
+ E4 come v2 (lotto >= 1.500 m²; nessun minimo in alloggi, nessun tetto).
+AREA DI ATTIVAZIONE: A1-A4 come v2. A1 usa l'ingresso E1 di v3. A2 vale anche per le particelle AT (verde di servizio o valore paesaggistico PGT -> attivazione: è anch'essa destinazione di piano).
+SOVRAPPOSIZIONI e PROPRIETÀ: come v2 (precedenza riuso > edificabile > attivazione, poi id; file pubblicato non semplificato = file dei criteri).
+COPERTURA DEGLI AMBITI [v3]: tabelle/copertura_ambiti.csv, una riga per poligono AT del mosaico (PCU inclusi, marcati): nome, pcu, area ha, area coperta da particelle dell'universo, area coperta da lotti per classe (ha) e quota, area non coperta, le 3 classi DUSAF con più area nella parte non coperta (codice, ha), quota con BONIFICA=SI PGT. Informativa, non un criterio.
+
+1.3 Ortofoto e campionamento
+ Fonte come v2: AGEA 2018-2019, Regione Lombardia, tasselli BaseMap/Ortofoto2018_2019/ImageServer (EPSG:32632, livello fino a 13, 0,26 m). Stessa fonte per confrontabilità con v2 (la 2021 ha dato errore 400 in v2; non la cambio). Licenza AGEA di sola visione [S]: immagini solo in _cache e nelle cartelle di controllo ignorate da git.
+ Lotti: 100, seme 3511 (numpy default_rng; v2 usava 3411), allocazione fissa 50 edificabili, 30 riuso, 20 attivazione; classe con meno unità: tutte, resto agli edificabili. Tasso di base: 100 particelle di terreno nel Comune >= 300 m², stesso generatore subito dopo, nessun filtro. Cecità: 200 casi mescolati con lo stesso seme, codici C001-C200; codifica sull'immagine sola senza aprire il campione; SHA-256 della codifica scritto in registro.txt prima dell'esecuzione che la unisce. Cecità parziale: codificatore = esecutore [I].
+ Dipendenza dichiarata [I]: i lotti ds503 confermati dallo screening sono stati visti dallo stesso codificatore; se entrano nel campione la loro codifica C5 non è indipendente. Riporto C5a anche senza di loro (informativo). Tensione dichiarata [I]: C5 misura "libera o dismessa" sull'ortofoto 2018-2019, mentre D1 fa entrare gli AT anche se in uso (es. binari attivi): C5 resta il criterio, invariato; riporto C5 per origine.
+ Schema di codifica identico a v2: Q1 L libera / C cantiere / D dismesso o degradato / U in uso / V verde curato o agricolo / I infrastruttura in uso / X non giudicabile; libera o dismessa = {L, C, D}. Q2: tetto T0-T3, vegetazione V0-V2, uso U+/U-/U?. Recuperabilità [H]: alta T1 e V0-V1; media T2 o T1 con V2; bassa T3. Screening visivo, non perizia.
+ Secondo codificatore: controllo_secondo_codificatore/ con le 200 immagini C001-C200, il foglio vuoto e le istruzioni (schema sopra), senza campione né chiave; l'accordo lo calcola il coordinatore, non io.
+ Controllo di Dennis (C7): 20 casi nuovi dal campione v3, seme 3512, 7 edificabili, 5 riuso, 3 attivazione, 5 base; immagini ricodificate D01-D20 senza etichette, modulo vuoto, chiave separata da aprire dopo.
+ Giustificazione delle numerosità [V, calcolo binomiale e simulazione Newcombe 20.000 repliche, 13:05Z]: n = 100 dà semiampiezza Wilson 95% <= 0,096; P(passa C5a | p) = 0,994 (0,80), 0,896 (0,75), 0,549 (0,70), 0,173 (0,65). C5b con base vicina a v2 (0,10): potenza 1,00 per lotti 0,70-0,75, 0,998 per 0,65; con base 0,15 e lotti 0,70: 0,997. Con 30 riuso e 20 attivazione le stime per classe restano informative (semiampiezza fino a ~0,2). Stesse numerosità di v2 per confrontabilità.
+
+1.4 Capacità (invariata da v2): c(FAR) = floor(0,70 * FAR * A / 80), FAR in {0,5; 1; 2}, sempre insieme. Edificabile: A = area del lotto. Riuso: recupero floor(0,70 * V_src / (3,2*80)) dal solo edificio fonte; demolizione e ricostruzione c(FAR) con A = area del lotto. Scenario principale: dallo screening (campione C5 o [v3] screening ds503) T3 -> demolizione, T1/T2 -> recupero; altrimenti diruto -> demolizione, ds503 -> recupero [H]. Attivazione: capacità 0.
+
+1.5 Criteri (identici a v2; passa se C1-C6 e C8; C7 in attesa di Dennis, blocca il congelamento ma non la consegna)
+ C1 geometrie poligonali non vuote, valide, EPSG:32632, sul file pubblicato: 100%
+ C2 id unico; attributi obbligatori non vuoti; ogni attributo in metadati con fonte e licenza: 100%
+ C3 coppie con area comune > 1 m²: 0
+ C4 capacità secondo formula per i tre FAR; attivazione 0; cap_recupero dal solo edificio fonte: 100%
+ C5a ortofoto, 100 lotti, quota {L,C,D} >= 0,70 (stima puntuale, IC Wilson riportato)
+ C5b differenza lotti - base: limite inferiore IC 95% Newcombe >= 0,25
+ C6 cascata e NIL x classe, somme esatte
+ C7 accordo di Dennis sulla codifica binaria dei 20 casi >= 16/20: in attesa di Dennis
+ C8 due esecuzioni complete consecutive da cache: stesso hash del contenuto
+ Informativi: C5a per classe, per origine, pesato per classe, senza i lotti confermati dallo screening ds503; riuso: U+ e recuperabilità; copertura degli ambiti.
+ Arresto: se un criterio non passa, niente congelamento, ticket e decisione con Dennis. Nessuna regola o soglia cambia dopo aver visto C5 o la copertura; ogni correzione dopo la prima esecuzione completa va nel registro con motivo. Correzioni ammesse solo per errori di codice puro.
+ Pilota: NIL 21, 51, 72 (come v2), uscite solo in esecuzioni/<data>_pilota/.
