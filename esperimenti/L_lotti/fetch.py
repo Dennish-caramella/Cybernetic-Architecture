@@ -1,6 +1,7 @@
 """Scarica le fonti grezze della Base L in esperimenti/_cache/L_lotti/raw (ignorata da git). Riprende da dove si era fermato.
 Riuso dei fetcher del Lab (prove/in_evidenza/2026-10-25_spatial_milano_lab/mi/fetch_catasto.py, fetch_regione.py), con uscita in EPSG:32632."""
 import json, os, re, sys, time, urllib.parse, urllib.request, zipfile
+from concurrent.futures import ThreadPoolExecutor
 
 RAW = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "_cache", "L_lotti", "raw")
 log = lambda *a: print(*a, file=sys.stderr, flush=True)
@@ -72,30 +73,33 @@ REF = re.compile(r"<CP:NATIONALCADASTRALREFERENCE>([^<]+)<")
 POS = re.compile(r"<gml:exterior>.*?<gml:posList[^>]*>([^<]+)<", re.S)
 
 
+def tile(i, j):
+    """Un tassello 0,01° di particelle F205 (Milano) dal WFS INSPIRE. Solo anello esterno (come nel Lab). Coordinate lon/lat EPSG:6706."""
+    path = os.path.join(RAW, "catasto", f"{i}_{j}.json")
+    if os.path.exists(path): return
+    a, b = LAT0 + i * STEP, LON0 + j * STEP
+    bbox = f"{a:.4f},{b:.4f},{a + STEP:.4f},{b + STEP:.4f},urn:ogc:def:crs:EPSG::6706"
+    out, start = [], 0
+    while True:
+        q = urllib.parse.urlencode({"service": "WFS", "version": "2.0.0", "request": "GetFeature", "typeNames": "CP:CadastralParcel",
+                                    "count": 2000, "startIndex": start, "bbox": bbox})
+        ms = MEM.findall(get(f"{WFS}?{q}"))
+        for m in ms:
+            r, p = REF.search(m), POS.search(m)
+            if not r or not p or not r.group(1).startswith("F205"): continue
+            v = [float(x) for x in p.group(1).split()]
+            out.append([r.group(1), [[round(v[k + 1], 7), round(v[k], 7)] for k in range(0, len(v) - 1, 2)]])
+        if len(ms) < 2000: break
+        start += 2000
+    json.dump(out, open(path + ".part", "w"), separators=(",", ":")); os.replace(path + ".part", path)
+    log("tassello", i, j, len(out))
+
+
 def catasto():
-    """Particelle F205 (Milano) dal WFS INSPIRE, tasselli 0,01°. Solo anello esterno (come nel Lab). Coordinate lon/lat EPSG:6706."""
-    d = os.path.join(RAW, "catasto"); os.makedirs(d, exist_ok=True)
+    os.makedirs(os.path.join(RAW, "catasto"), exist_ok=True)
     ni, nj = int((LAT1 - LAT0) / STEP) + 1, int((LON1 - LON0) / STEP) + 1
-    for i in range(ni):
-        for j in range(nj):
-            path = os.path.join(d, f"{i}_{j}.json")
-            if os.path.exists(path): continue
-            a, b = LAT0 + i * STEP, LON0 + j * STEP
-            bbox = f"{a:.4f},{b:.4f},{a + STEP:.4f},{b + STEP:.4f},urn:ogc:def:crs:EPSG::6706"
-            out, start = [], 0
-            while True:
-                q = urllib.parse.urlencode({"service": "WFS", "version": "2.0.0", "request": "GetFeature", "typeNames": "CP:CadastralParcel",
-                                            "count": 2000, "startIndex": start, "bbox": bbox})
-                ms = MEM.findall(get(f"{WFS}?{q}"))
-                for m in ms:
-                    r, p = REF.search(m), POS.search(m)
-                    if not r or not p or not r.group(1).startswith("F205"): continue
-                    v = [float(x) for x in p.group(1).split()]
-                    out.append([r.group(1), [[round(v[k + 1], 7), round(v[k], 7)] for k in range(0, len(v) - 1, 2)]])
-                if len(ms) < 2000: break
-                start += 2000
-            json.dump(out, open(path, "w"), separators=(",", ":"))
-            log("tassello", i, j, len(out))
+    with ThreadPoolExecutor(4) as ex:  # 4 richieste in parallelo: un tassello impiega ~10 s
+        list(ex.map(lambda ij: tile(*ij), [(i, j) for i in range(ni) for j in range(nj)]))
 
 
 def main():
