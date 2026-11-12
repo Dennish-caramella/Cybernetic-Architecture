@@ -1,0 +1,27 @@
+Codificatore 2 — Base L v4 (ticket #37). Codifica cieca su ortofoto.
+
+Materiale in questa cartella: img/C001.jpg ... img/C220.jpg (ortofoto AGEA 2018-2019, Regione Lombardia; licenza di sola visione,
+non diffondere) e il foglio vuoto codifica.csv. Lavora solo con questa cartella: non aprire altri file del progetto.
+
+Ogni immagine mostra un'area con contorno ROSSO. Codifica ciò che sta DENTRO il contorno rosso, una riga per immagine.
+
+Q1 copertura prevalente: la categoria che occupa la parte PIÙ GRANDE dell'area dentro il contorno (anche se non supera la metà;
+non la più visibile né la più interessante). Una lettera:
+ L libera: suolo nudo, sterrato, prato o incolto non curato, piazzale vuoto
+ C cantiere
+ D edificato dismesso o degradato: tetti danneggiati o crollati, vegetazione su edifici o piazzali, nessun segno d'uso
+ U edificato o area in uso (inclusi cortili, parcheggi pieni, pertinenze)
+ V verde curato (parco, giardino) o agricolo coltivato
+ I infrastruttura in uso (binari attivi, strade, piazzali di servizio in uso)
+ X non giudicabile
+LCD quota dell'area dentro il contorno che è libera, in cantiere o dismessa (L + C + D insieme):
+ 0 meno di 1/4   1 da 1/4 a 1/2   2 da 1/2 a 3/4   3 oltre 3/4
+eterogeneo: E se nessuna categoria supera la metà dell'area, altrimenti vuoto.
+Q2 solo se nel contorno ci sono edifici (altrimenti vuoto):
+ tetto: T1 integro / T2 danneggiato / T3 crollato o assente / T0 non visibile
+ veg: V0 nessuna vegetazione spontanea su edifici o piazzali / V1 poca / V2 molta
+ uso: U+ segni d'uso (auto, manutenzione, insegne) / U- nessun segno d'uso / U? incerto
+nota: facoltativa, breve, senza virgole.
+
+Consegna: codifica.csv compilato (220 righe); annota l'ora di inizio e di fine; calcola lo SHA-256 del file e consegnalo
+al coordinatore prima di qualsiasi confronto. È uno screening visivo dall'alto, non una perizia.

@@ -1,0 +1,22 @@
+Censimento dello stato attuativo degli ambiti di trasformazione (C9-AT) — Base L v4, ticket #37. Istruzioni per il codificatore 2.
+
+Cosa ricevi: foglio_vuoto.csv (24 righe, una per poligono AT non PCU del mosaico PGT regionale), fonti_AT.csv (fonti raccolte dal codificatore 1, senza la sua categoria), queste istruzioni.
+Non aprire codifica_1.csv né consenso.csv né altri file del progetto. Puoi cercare altre fonti sul web.
+
+ATTENZIONE, fatto verificato [V, 12/11/2026]: i poligoni e le schede AT del mosaico regionale sono quelli del PGT 2012 (Allegato 3 "Ambiti di Trasformazione Urbana" del Documento di Piano; PDF creati il 10/10/2012). Il PGT vigente è il PGT 2030 (schede del Piano delle Regole pubblicate il 05/02/2020). Codifica lo stato della trasformazione dell'area del poligono oggi, partendo dalla previsione del 2012.
+
+Per ogni riga compila (una sola categoria):
+ categoria
+   A "attuazione avviata con atto approvato": esiste un atto approvato successivo al PGT 2012 che rende attuabile l'ambito o una sua parte (accordo di programma approvato o ratificato, programma integrato o piano attuativo approvato, convenzione stipulata, titolo edilizio rilasciato) o un cantiere documentato da fonte ufficiale.
+   B "in istruttoria": procedimento avviato ma nessun atto approvato (proposta presentata, avvio del procedimento, adozione, concorso o masterplan in corso, protocollo d'intesa, bando di alienazione o valorizzazione).
+   C "solo previsione": l'unica fonte ufficiale trovata è il piano e la ricerca (scrivi in nota fonti e parole cercate) non trova atti successivi.
+   D "decaduto o stralciato": una fonte ufficiale dice che la previsione è decaduta, stralciata o sostituita.
+   N "non determinato" [L]: le sole fonti utili stanno su siti che bloccano le richieste automatiche (www.comune.milano.it, pgt.comune.milano.it) o non ci sono; in documento_da_aprire scrivi l'URL esatto da aprire da browser.
+ cantiere: si / no / ignoto (informativo).   attuazione_conclusa: si solo se una fonte ufficiale dice che l'intervento è concluso; altrimenti no.
+ fonte_url, fonte_titolo, fonte_ente, data_fonte (data del documento), data_accesso: della fonte che decide la categoria.
+ fonte_ufficiale: si solo per Regione Lombardia/BURL, Gazzetta Ufficiale, dati.comune.milano.it, comunicati ufficiali del Comune ripubblicati altrove con riferimento verificabile, FS Sistemi Urbani o gruppo FS, Agenzia del Demanio, Ministero della Difesa, Invimit, CDP. Stampa, università e operatori privati: no (marca S) e non decidono la categoria.
+ marca: V (aperta e letta da te), S (secondaria), L (lacuna).
+ nota: breve, senza virgole se possibile.
+Non aggirare blocchi di rete. Se due poligoni hanno lo stesso nome (Greco-Breda, San Cristoforo), codificali uno per uno.
+
+Consegna: salva il foglio come codifica_2.csv, annota ora di inizio e fine, calcola lo SHA-256 del file e consegnalo al coordinatore prima di qualsiasi confronto.

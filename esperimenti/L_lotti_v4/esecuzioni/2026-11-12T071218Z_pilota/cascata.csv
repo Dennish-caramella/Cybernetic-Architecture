@@ -1,0 +1,34 @@
+classe,passo,rimasti,rimossi
+comune,"particelle di terreno nel Comune (catasto, mappale numerico)",7325,
+riuso:fonti,ds503: punti,174,
+riuso:fonti,ds503: punti con un edificio DBT entro 20 m,165,
+riuso:fonti,DBT diruti (EDIFC_STAT=02),610,
+riuso:fonti,DBT diruti con volume fuori terra,447,
+riuso:fonti,edifici fonte distinti,595,
+riuso,edifici fonte su una particella di terreno del Comune,5,
+riuso:fonti,screening ds503: lotti candidati,1,
+riuso:fonti,screening ds503: lotti confermati (Q1 = D o tetto T2/T3),0,
+riuso,edifici fonte confermati (diruti DBT o ds503 confermati dallo screening),2,3
+riuso,"particelle con edifici fonte (aggregazione, non filtro)",2,
+riuso,particella >= 300 m²,2,0
+riuso,"non verde/agricolo/paesaggio/istruzione PGT, non acque DUSAF (>= 0,5)",2,0
+riuso,"non infrastrutture/verde/agricolo/boschi DUSAF (>= 0,5), salvo particelle AT",2,0
+riuso,fuori dai PCU,2,0
+edificabile+attivazione,"ingresso E1 (AT, AMB_DEG, DUSAF 133/134, Demanio disp., terreno comunale con DUSAF 131-134/1412)",103,
+edificabile+attivazione,"ingresso E1 o A1 (anche DUSAF 1412, 131/132)",152,
+edificabile+attivazione,particella >= 300 m²,89,63
+edificabile+attivazione,fuori dai PCU,89,0
+edificabile+attivazione,"non acque DUSAF (>= 0,5)",89,0
+edificabile+attivazione,"non infrastrutture/agricolo/boschi/verde in uso DUSAF (>= 0,5), salvo particelle AT",89,0
+edificabile+attivazione,"non agricolo/istruzione PGT (>= 0,5)",89,0
+edificabile+attivazione,"non residenza occupata (quota residenziale del volume < 0,5)",87,2
+informativo,particelle AT tolte dal filtro residenza occupata (D5),0,
+edificabile,particelle verso l'abitazione,22,
+attivazione,"particelle verso l'attivazione (vincolo PGT, AT non residenziale [v4] o ingresso solo verde/cava)",65,
+edificabile,"gruppi per adiacenza (aggregazione, non filtro)",11,
+attivazione,"gruppi per adiacenza (aggregazione, non filtro)",25,
+edificabile,lotto >= 1500 m²,11,0
+attivazione,gruppi >= 500 m² (A2) + gruppi edificabili 500-1.500 m² (A3),20,5
+riuso,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),2,0
+edificabile,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),11,0
+attivazione,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),20,0
