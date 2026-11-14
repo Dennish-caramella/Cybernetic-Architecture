@@ -1,85 +1,85 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota
-C301,L,3,,,,,S,incolto lungo ferrovia con sentiero
-C302,V,0,,,,,S,risaie
-C303,U,0,,T1,V0,U+,N,edificio scolastico con corte e campo
-C304,L,2,E,T1,V1,U+,N,area mista deposito e incolto contorno complesso
-C305,U,1,,,,,N,piazzale con mezzi e alberi
-C306,U,1,E,T1,V1,U+,N,contorno frammentato edifici parcheggio verde e margine ferroviario
-C307,U,0,,T1,V0,U?,N,edificio con tetto in coppi invecchiato
-C308,L,2,,T1,V1,U?,N,incolto arbustivo con edifici bassi a sud
-C309,D,3,,T2,V1,U-,N,capannone con tetto sporco e muschio accanto ai binari
-C310,U,0,,T1,V0,U+,N,tettoia ferroviaria con mezzi e depositi attorno
-C311,L,2,E,T1,V1,U?,S,scalo ferroviario con sterrato incolto e binari incerto Q1 vs I
-C312,L,2,E,T1,V1,U?,S,scalo con ampio sterrato e binari incerto Q1 vs I
-C313,C,2,E,,,,S,cantiere a ovest e bosco con orti a est incerto
-C314,L,3,,,,,N,prati incolti con alberi
-C315,L,3,,,,,N,incolto arbustivo e prato
-C316,D,3,E,T1,V2,U-,N,capannoni ferroviari tra vegetazione spontanea incerto
-C317,D,3,,T3,V1,U-,N,ex fabbrica con coperture crollate e vetri rotti
-C318,U,1,,T1,V1,U+,N,corte di cascina con alberi e materiali
-C319,V,0,,T1,V1,U+,N,orti urbani con baracche
-C320,L,3,,,,,N,piazzale sterrato ferroviario non utilizzato
-C321,U,1,,T1,V1,U+,N,parcheggio con auto e casa con giardino accanto ai binari
-C322,L,3,,,,,N,lotto triangolare incolto lungo strada
-C323,U,1,,T1,V1,U?,N,complesso di caserme con tetti integri incerto uso
-C324,L,3,,,,,N,fascia alberata e arbustiva lungo ferrovia
-C325,D,2,E,T2,V2,U?,N,officine ferroviarie con tetti arrugginiti e verde nei cortili parte in uso
-C326,U,1,,T1,V1,U+,N,deposito con piccoli edifici e mezzi
-C327,D,3,E,T1,V2,U-,N,officine con grandi tetti e vegetazione spontanea incerto
-C328,I,0,,,,,N,solo carreggiata stradale
-C329,L,3,,,,,N,striscia sottile tra ferrovia e canale scala 1381 m poco leggibile
-C330,X,X,,,,,N,striscia sottilissima a scala 1976 m non giudicabile
-C331,L,3,,T1,V1,U?,N,ex stadio con piazzale in abbandono e sterrato incerto edificio solo in parte
-C332,V,0,,T1,V1,U+,N,campo da calcio erboso con piccole strutture incerto V vs U
-C333,L,2,E,T1,V1,U+,N,bosco spontaneo e orti con baracche incerto Q1 vs V
-C334,L,2,E,T1,V0,U+,N,prati e lembi di edifici residenziali incerto
-C335,V,0,,,,,S,risaia
-C336,V,1,,,,,N,area verde alberata con prato secco poco curato incerto
-C337,L,3,,,,,S,ampio sterrato e incolto ex scalo
-C338,D,3,,T3,V2,U-,N,piccolo edificio sommerso da vegetazione con tetto forato incerto T2 vs T3
-C339,L,3,,,,,N,piazzale pavimentato abbandonato e sterrato
-C340,D,3,E,T1,V1,U-,N,edifici ad anello e scarpata con vegetazione spontanea incerto Q1
-C341,L,2,,,,,N,fascia con binario e vegetazione spontanea incerto L vs I
-C342,L,3,,T2,V2,U-,N,lotto invaso da vegetazione con casetta e rudere
-C343,L,2,E,T1,V0,U?,N,scala 1180 m striscia con sterrato e capannoni poco leggibile
-C344,U,1,,T1,V0,U+,N,area produttiva con depositi e capannoni in uso
-C345,I,1,E,T1,V0,U+,N,scalo officine e binari con scarpata incerto contorno frammentato
-C346,L,3,,T0,V2,U?,N,boscaglia fitta con baracca nascosta
-C347,L,3,,,,,N,platea in cemento abbandonata con erbacce accanto a deposito
-C348,U,1,E,T1,V1,U?,N,capannoni o serre bianche campi da tennis e orti incerto
-C349,I,0,,,,,N,binario attivo sotto cavalcavia
-C350,U,0,,T1,V0,U+,N,magazzini militari con mezzi e materiali
-C351,L,2,E,T1,V0,U+,N,prato secco e boscaglia con parcheggio e edificio residenziale
-C352,V,1,,T1,V1,U+,N,orti urbani con baracche e lotto incolto a sud
-C353,U,1,,T1,V0,U+,N,capannone e piazzale in uso
-C354,I,1,,T1,V0,U+,N,fascia ferroviaria e stradale lunga e stretta
-C355,L,3,E,T1,V1,U?,N,piazzali dismessi con cemento e vegetazione e edificio parzialmente in uso
-C356,U,1,,T1,V0,U+,N,area produttiva con cave e depositi
-C357,U,1,,T1,V0,U+,N,tettoie e piazzale ferroviario in uso con auto
-C358,U,1,E,T1,V0,U+,N,palestra tensostruttura con prato e giardino
-C359,L,3,,,,,N,prato incolto con alberi e arbusti ex area
-C360,U,1,E,T1,V0,U+,N,area produttiva mista con campo sportivo e depositi
-C361,L,3,,T1,V1,U+,N,grande incolto con boscaglia e prato secco e piccolo campo sportivo
-C362,L,3,,T1,V2,U?,N,boscaglia e orti abusivi con baracche incerto L vs V
-C363,D,3,,T3,V2,U-,N,tettoia con copertura crollata e vegetazione
-C364,U,1,E,T1,V1,U+,N,parcheggio con auto e alberi e rimessa
-C365,L,3,,,,,S,prato incolto non curato
-C366,L,2,E,T2,V2,U-,N,capannone dismesso con tetto danneggiato e prato incolto e piazzale asfaltato
-C367,U,1,E,T1,V0,U+,N,caserma con edifici e piazzali in uso incerto
-C368,U,1,E,T1,V0,U+,N,solo alcuni edifici di caserma con tetti integri e parcheggi
-C369,U,1,,T1,V0,U+,N,area produttiva con depositi e capannoni in uso
-C370,D,3,,T3,V2,U-,N,lunga tettoia ferroviaria con copertura crollata e alberi
-C371,L,2,E,T1,V1,U+,N,piazzale sterrato e campo sportivo e binari scala 1927 m
-C372,L,3,,,,,N,prato secco non curato con alberi
-C373,L,3,,,,,N,incolto con alberi lungo strada
-C374,I,1,E,,,,N,fascia ferroviaria a scala 1431 m poco leggibile
-C375,L,3,E,T1,V1,U+,N,boscaglia e parcheggio e piazzale con edifici piccoli
-C376,L,3,,,,,N,campo incolto arato con striscia di bordo
-C377,U,0,,,,,N,auto parcheggiate su piazzale ferroviario
-C378,U,0,,T1,V0,U+,N,edificio con tetto in coppi integro lungo viale
-C379,U,2,E,T1,V1,U?,N,tetto con vegetazione e materiali e mezzi di cantiere incerto Q1 U vs D vs C
-C380,D,2,E,T2,V2,U-,N,capannone con tetto danneggiato e vegetazione e asfalto incerto
-C381,L,2,E,T1,V1,U?,N,cascina con prato incolto e cortile incerto proporzioni
-C382,D,3,,T2,V1,U?,N,capannone con lucernari rotti e tetto sporco incerto
-C383,L,3,,,,,S,campo arato incolto in zona periurbana
-C384,L,3,,,,,N,fascia alberata spontanea con striscia di terra
+C301,,,,,,,,
+C302,,,,,,,,
+C303,,,,,,,,
+C304,,,,,,,,
+C305,,,,,,,,
+C306,,,,,,,,
+C307,,,,,,,,
+C308,,,,,,,,
+C309,,,,,,,,
+C310,,,,,,,,
+C311,,,,,,,,
+C312,,,,,,,,
+C313,,,,,,,,
+C314,,,,,,,,
+C315,,,,,,,,
+C316,,,,,,,,
+C317,,,,,,,,
+C318,,,,,,,,
+C319,,,,,,,,
+C320,,,,,,,,
+C321,,,,,,,,
+C322,,,,,,,,
+C323,,,,,,,,
+C324,,,,,,,,
+C325,,,,,,,,
+C326,,,,,,,,
+C327,,,,,,,,
+C328,,,,,,,,
+C329,,,,,,,,
+C330,,,,,,,,
+C331,,,,,,,,
+C332,,,,,,,,
+C333,,,,,,,,
+C334,,,,,,,,
+C335,,,,,,,,
+C336,,,,,,,,
+C337,,,,,,,,
+C338,,,,,,,,
+C339,,,,,,,,
+C340,,,,,,,,
+C341,,,,,,,,
+C342,,,,,,,,
+C343,,,,,,,,
+C344,,,,,,,,
+C345,,,,,,,,
+C346,,,,,,,,
+C347,,,,,,,,
+C348,,,,,,,,
+C349,,,,,,,,
+C350,,,,,,,,
+C351,,,,,,,,
+C352,,,,,,,,
+C353,,,,,,,,
+C354,,,,,,,,
+C355,,,,,,,,
+C356,,,,,,,,
+C357,,,,,,,,
+C358,,,,,,,,
+C359,,,,,,,,
+C360,,,,,,,,
+C361,,,,,,,,
+C362,,,,,,,,
+C363,,,,,,,,
+C364,,,,,,,,
+C365,,,,,,,,
+C366,,,,,,,,
+C367,,,,,,,,
+C368,,,,,,,,
+C369,,,,,,,,
+C370,,,,,,,,
+C371,,,,,,,,
+C372,,,,,,,,
+C373,,,,,,,,
+C374,,,,,,,,
+C375,,,,,,,,
+C376,,,,,,,,
+C377,,,,,,,,
+C378,,,,,,,,
+C379,,,,,,,,
+C380,,,,,,,,
+C381,,,,,,,,
+C382,,,,,,,,
+C383,,,,,,,,
+C384,,,,,,,,
