@@ -141,3 +141,6 @@ Dettaglio in `controllo_secondo_codificatore/ESITO.md` e `accordo.json`. Secondo
 
 ## 8. Cosa passa
 Nulla come base congelata. Proposte [H] per Dennis: (1) come C5 tratta gli AT — valutarli con lo stato attuativo del piano letto sui documenti, oppure una categoria Q1 "in trasformazione di piano" (nuova pre-registrazione); (2) ortofoto più recente per DUSAF 13; (3) perimetro dei lotti da riusare nelle grandi particelle ferroviarie limitato a un intorno dell'edificio; (4) attendere l'accordo con il secondo codificatore e C7. Riutilizzabili: pipeline, registro, schema di codifica, screening ds503, tabella di copertura.
+
+### Nota del 14/11/2026 — C7 (controllo di Dennis)
+Dennis ha esaminato i 20 casi del controllo umano e lo dà per superato. Il foglio compilato non è stato consegnato, quindi il numero di casi concordi non è registrato: C7 è chiuso come **decisione di Dennis**, non come misura.
