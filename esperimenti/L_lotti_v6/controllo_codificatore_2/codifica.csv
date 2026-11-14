@@ -1,85 +1,85 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota
-C301,,,,,,,,
-C302,,,,,,,,
-C303,,,,,,,,
-C304,,,,,,,,
-C305,,,,,,,,
-C306,,,,,,,,
-C307,,,,,,,,
-C308,,,,,,,,
-C309,,,,,,,,
-C310,,,,,,,,
-C311,,,,,,,,
-C312,,,,,,,,
-C313,,,,,,,,
-C314,,,,,,,,
-C315,,,,,,,,
-C316,,,,,,,,
-C317,,,,,,,,
-C318,,,,,,,,
-C319,,,,,,,,
-C320,,,,,,,,
-C321,,,,,,,,
-C322,,,,,,,,
-C323,,,,,,,,
-C324,,,,,,,,
-C325,,,,,,,,
-C326,,,,,,,,
-C327,,,,,,,,
-C328,,,,,,,,
-C329,,,,,,,,
-C330,,,,,,,,
-C331,,,,,,,,
-C332,,,,,,,,
-C333,,,,,,,,
-C334,,,,,,,,
-C335,,,,,,,,
-C336,,,,,,,,
-C337,,,,,,,,
-C338,,,,,,,,
-C339,,,,,,,,
-C340,,,,,,,,
-C341,,,,,,,,
-C342,,,,,,,,
-C343,,,,,,,,
-C344,,,,,,,,
-C345,,,,,,,,
-C346,,,,,,,,
-C347,,,,,,,,
-C348,,,,,,,,
-C349,,,,,,,,
-C350,,,,,,,,
-C351,,,,,,,,
-C352,,,,,,,,
-C353,,,,,,,,
-C354,,,,,,,,
-C355,,,,,,,,
-C356,,,,,,,,
-C357,,,,,,,,
-C358,,,,,,,,
-C359,,,,,,,,
-C360,,,,,,,,
-C361,,,,,,,,
-C362,,,,,,,,
-C363,,,,,,,,
-C364,,,,,,,,
-C365,,,,,,,,
-C366,,,,,,,,
-C367,,,,,,,,
-C368,,,,,,,,
-C369,,,,,,,,
-C370,,,,,,,,
-C371,,,,,,,,
-C372,,,,,,,,
-C373,,,,,,,,
-C374,,,,,,,,
-C375,,,,,,,,
-C376,,,,,,,,
-C377,,,,,,,,
-C378,,,,,,,,
-C379,,,,,,,,
-C380,,,,,,,,
-C381,,,,,,,,
-C382,,,,,,,,
-C383,,,,,,,,
-C384,,,,,,,,
+C301,L,3,,,,,S,incolto tra ferrovia e canale
+C302,V,0,,,,,S,campi coltivati
+C303,U,0,,T1,V0,U?,N,capannone tetti integri uso incerto
+C304,U,1,E,T1,V1,U+,N,cortili con depositi e incolto e campo
+C305,U,2,E,,,,N,piazzale semivuoto con alcuni mezzi
+C306,U,1,E,T1,V1,U+,N,mosaico edifici parcheggio verde e lavori
+C307,U,0,,T1,V0,U?,N,edificio lungo tetto vecchio ma integro
+C308,L,3,,T1,V1,U?,N,bosco incolto e edifici bassi a sud
+C309,D,3,,T2,V1,U-,N,capannone tetto degradato con vegetazione
+C310,U,0,,T1,V0,U+,N,tettoia ferroviaria con mezzi
+C311,I,2,E,,,,S,scalo ferroviario con sterrato e incolto
+C312,L,2,E,,,,S,scalo con ampio sterrato e binari
+C313,C,3,E,,,,S,cantiere piu bosco incolto e orti
+C314,L,3,,,,,N,prato non curato con alberi
+C315,L,3,,,,,S,incolto arbustivo e prato secco
+C316,L,3,E,T1,V1,U?,M,scalo con arbusti e capannoni; s2 piu spoglio
+C317,D,3,,T2,V1,U-,N,capannoni con lucernari rotti e vegetazione
+C318,U,0,,T1,V0,U+,N,cortile di cascina con tetti integri
+C319,V,1,,T1,V1,U+,N,orti urbani con capanni
+C320,L,3,,,,,N,piazzale sterrato accanto allo scalo
+C321,U,1,E,T1,V1,U?,N,parcheggio giardino e vecchio edificio
+C322,L,3,,,,,N,incolto con alberi e cumuli
+C323,U,1,,T1,V0,U?,N,caserma con cortili e striscia di prato
+C324,L,3,,,,,N,fascia boscata spontanea tra ferrovia e strada
+C325,U,1,E,T1,V1,U?,N,officine ferroviarie con parcheggio e vegetazione interna
+C326,U,0,,T1,V1,U+,N,deposito con stoccaggi e piccoli volumi
+C327,D,2,E,T2,V2,U-,N,capannoni ferroviari con molta vegetazione
+C328,I,0,,,,,N,strada
+C329,L,3,,,,,N,fascia lungo ferrovia e canale scala ampia incerto
+C330,X,,,,,,N,scala troppo ampia contorno sottile non giudicabile
+C331,L,3,,,,,N,piazzale vuoto con sterrato e scarpate
+C332,V,1,,T1,V1,U+,N,campo sportivo con baracche e area incolta
+C333,V,1,E,T1,V2,U+,N,orti e baracche misti a bosco spontaneo
+C334,L,3,,T1,V0,U+,N,prati incolti e piccolo edificio di margine
+C335,V,0,,,,,N,risaia coltivata
+C336,V,1,,T1,V0,U?,N,area verde con alberi e prato secco poco curato
+C337,L,3,,,,,N,piazzale e incolto vasto con piccoli edifici esclusi
+C338,D,3,,T3,V2,U-,N,rudere con tetto crollato coperto da alberi
+C339,L,3,,,,,N,piazzale vuoto e scarpata incolta
+C340,D,3,E,T1,V1,U-,N,complesso ovale senza segni d'uso e scarpata incolta
+C341,L,2,E,,,,N,massicciata ferroviaria con vegetazione spontanea e binari
+C342,L,3,,T3,V2,U-,N,rudere privo di copertura in vegetazione fitta
+C343,L,2,,T1,V0,U+,N,sterrato lungo canale con edifici a sinistra
+C344,U,0,,T1,V0,U+,N,depositi e piazzali in uso
+C345,U,1,E,T1,V0,U+,N,officine ferroviarie e lotto residuo; incerto
+C346,L,3,,,,,N,incolto boscato e piccolo accumulo con telo blu
+C347,L,3,,,,,N,platea in cemento e incolto
+C348,U,0,,T1,V0,U+,N,capannoni e piazzali in uso e campi da tennis
+C349,I,0,,,,,N,binari e strada
+C350,U,0,,T1,V0,U+,N,caserma con edifici e piazzali con mezzi; poligoni su edifici
+C351,L,3,,,,,N,prati incolti e boscaglia e parcheggio; piccola struttura a est
+C352,V,1,,T1,V0,U+,N,orti urbani con parte incolta a sud; edificio al margine
+C353,U,0,E,T1,V0,U+,N,tetto e cortile ghiaiato di capannone; incerto
+C354,I,0,,T1,V0,U+,N,binari e strada con piccoli manufatti; incerto
+C355,L,3,,T1,V1,U?,N,area demolita con platee e vegetazione ruderale; edificio incerto
+C356,U,1,,T1,V0,U+,N,complesso produttivo con piazzali; cava a est
+C357,U,0,,T1,V0,U+,N,tettoie e piazzale presso binari
+C358,L,2,E,T1,V0,U+,S,lotto con prato e tensostruttura bianca; L circa meta
+C359,L,3,,,,,N,prato incolto con alberi e boscaglia
+C360,U,1,E,T1,V0,U+,N,depositi e piazzali campo sportivo e verde; eterogeneo
+C361,L,3,,T1,V0,U?,N,vasta area incolta e boscaglia; piccolo edificio al margine
+C362,L,2,,,,,N,boscaglia fitta con orti e capanni; L o V incerto
+C363,D,3,,T2,V1,U-,N,capannone con copertura degradata e vegetazione
+C364,U,0,E,T1,V0,U+,N,parcheggio con auto e alberi; piccolo chiosco
+C365,L,3,,,,,N,prato incolto senza edifici
+C366,L,3,,T2,V1,U-,S,incolto e piazzale asfaltato vuoto; capannoni con tetti danneggiati
+C367,U,1,,T1,V0,U+,N,caserma con piazzale e campo; auto presenti; alcuni spazi vuoti
+C368,U,0,,T1,V0,U+,N,contorno solo sui fabbricati; deposito militare con mezzi
+C369,U,0,,T1,V0,U+,N,area produttiva con accumuli di materiali e capannoni
+C370,D,3,,T2,V2,U-,N,contorno sul solo capannone in rovina coperto da vegetazione; tetto forse crollato in parte
+C371,L,1,E,T1,V0,U?,N,scalo ferroviario con piazzale sterrato e campo sportivo; incerto L o I
+C372,L,3,,,,,N,prato secco con alberi; incerto se verde curato
+C373,L,3,,,,,N,incolto alberato lungo strada; piccolo parcheggio ai margini
+C374,I,0,,,,,N,striscia lungo i binari dello scalo; incerto
+C375,L,3,,T1,V0,U?,N,incolto boscato e prato; piazzale a sud-ovest con piccoli edifici
+C376,V,1,,,,,N,campo lavorato o stoppie; incerto L o V; fascia incolta lungo sentiero
+C377,U,0,,,,,N,piccolo piazzale con auto parcheggiate in area ferroviaria
+C378,U,0,,T1,V0,U+,N,fabbricato con tetto in coppi integro; auto intorno
+C379,U,1,E,T2,V1,U?,N,deposito materiali con escavatore e vecchio fabbricato con vegetazione; incerto
+C380,L,3,E,T2,V1,U-,N,piazzale asfaltato vuoto e bordo di capannone dismesso con lucernari rotti
+C381,L,3,E,T2,V1,U?,N,cascina con prato e rovine; un tetto nuovo; incerto L o D
+C382,D,3,,T2,V0,U-,N,contorno sui tetti di capannone dismesso con lucernari rotti
+C383,L,3,,,,,N,due appezzamenti a prato incolto o stoppie; incerto L o V
+C384,V,1,,,,,N,fascia alberata densa con striscia di suolo nudo; incerto
