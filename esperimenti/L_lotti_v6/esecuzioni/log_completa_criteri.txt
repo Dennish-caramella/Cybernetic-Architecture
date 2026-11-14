@@ -1,4 +1,3 @@
 [     1s] tasselli catastali riscaricati 34 0 ancora vuoti
 [    12s] particelle con fori ricostruiti 4574
 [    12s] particelle 132873 di terreno 124128
-[    16s] DBT: unità 230852
