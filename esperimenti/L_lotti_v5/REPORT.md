@@ -3,7 +3,7 @@
 Esecuzione: agente `dati-geo-milano`, 14/11/2026. REPORT assemblato dal coordinatore a partire dalla consegna dell'agente, che non può creare `REPORT.md`. Stato: **candidata, in attesa di C5 e C9**.
 
 ## 1. Ipotesi e soglia
-Il testo completo è in `esecuzioni/00_preregistrazione.txt` (SHA-256 `5e2da4ab…`, scritto alle 10:24Z, prima del pilota delle 10:30Z, in commit separato). In sintesi:
+Il testo completo è in `esecuzioni/00_preregistrazione.txt` (SHA-256 `5e2da4ab…`, scritto alle 10:24Z, prima del pilota delle 10:30Z). **Correzione dopo la revisione**: il commit della pre-registrazione (0490f98, 11:15Z) è successivo al pilota e alle esecuzioni 1–4 (10:30–11:14Z) e alla codifica 1 del censimento (11:04Z); precede solo le codifiche C5 e la codifica 2 del censimento. L'ordine tra testo ed esecuzioni si regge sul registro dell'esecutore e sull'hash; le soglie di C5 e C9 sono quelle di v4, committate il 12/11 (f287378). In sintesi:
 - **Ambiti 2030 al posto dello strato AT del PGT 2012.** Comprendono i PA/AS del Piano delle Regole (strato 11 del mosaico regionale, schede MA del 05/02/2020), l'AdP Scali ferroviari e le GFU, queste con il perimetro 2012 come sostituto [H]. Precedenza: PA > ADP > GFU.
 - **D4 sugli ambiti 2030**: se la residenza nel 2030 non è "si", la particella va tra le aree di attivazione con capacità 0.
 - **C5-fisico**: soglie come v4. Precondizione kappa binario ≥ 0,60; C5a ≥ 0,70; C5b limite inferiore di Newcombe ≥ 0,25. Seme 5511, n = 120 lotti + 100 particelle qualsiasi.
@@ -70,7 +70,11 @@ Il testo completo è in `esecuzioni/00_preregistrazione.txt` (SHA-256 `5e2da4ab�
 - **Censimento, codificatore 1** (SHA-256 `a3ad9dda…`): 8 A (7 AdP + Mameli), 1 B (Piazza d'Armi), 20 N.
 
 ## 5. Esito
-**In attesa** (da completare dopo C5 e C9): C1–C4, C6 e C8 passano; C5 e C9 dipendono dai codificatori esterni.
+Esecuzione 5 (15:20Z, con i fogli compilati; hash di contenuto `440bf046…` identico): **la base non passa**, perché C9 è falso.
+- **C1–C4, C6, C8**: passano.
+- **C5 passa di misura.** Kappa binario 0,945, kappa Q1 0,876. C5a = 170/240 = 0,708 (soglia 0,70): codificatore 1 0,700 [0,613; 0,775], codificatore 2 0,717 [0,630; 0,790]. Base su particelle qualsiasi 0,16 per entrambi; C5b, limite inferiore di Newcombe 0,419 e 0,436 (soglia 0,25). Per classe: attivazione 0,817, edificabile 0,703, riuso 0,532. Informativo [I, revisione]: sui soli lotti con capacità (E + R) la quota è circa 0,62.
+- **C9 non passa.** Accordo prima della riconciliazione 11/29 (soglia 25). In 18 discordanze il codificatore 1 ha N e il codificatore 2 una categoria, per lo più su fonti secondarie.
+- **Esito proposto dal revisore: cambia** (§7). La regola di arresto è scattata: decide Dennis.
 
 ## 6. Limiti
 - Perimetri e destinazioni delle GFU mancano [L]; si usa il proxy 2012 [H].
@@ -82,7 +86,16 @@ Il testo completo è in `esecuzioni/00_preregistrazione.txt` (SHA-256 `5e2da4ab�
 - Fatto nuovo [V]: il protocollo Invimit del 23/12/2025 indica residenze a Piazza d'Armi. In v5 la regola GFU non è stata cambiata.
 
 ## 7. Revisione indipendente
-(da scrivere dal `revisore-metodologico`)
+Testo completo in `REVISIONE.md` (`revisore-metodologico`, che non ha eseguito la prova; è un'altra istanza dello stesso sistema, non una verifica umana). Ricalcolo dei numeri in `revisione/verifica.py`.
+- **Esito proposto: cambia.**
+- **G1**: C9 non può passare con lo strumento attuale. Le categorie N e C si sovrappongono; le istruzioni del codificatore 2 omettono la regola "le fonti secondarie non decidono"; entrambi indicano come decisivi documenti su comune.milano.it. Ne restano 136 lotti AT, il 37% della capacità edificabile, senza stato attuativo.
+- **G2**: C5 passa di 2 successi su codifiche probabilmente non indipendenti: 21 note identiche parola per parola, 0 disaccordi sulle 100 particelle di base, stesso modello. Il kappa misura la ripetibilità del modello, non l'accordo tra codificatori indipendenti.
+- **Da correggere**:
+  - 146,8 ha di GFU a destinazione ignota contati come aree di attivazione, contro `CONTEXT.md` e contro la fonte Invimit su Piazza d'Armi; la capacità oscilla tra circa 32.900 e 45.700 alloggi a FAR 1;
+  - 9 lotti da riusare in ambiti senza residenza conservano capacità (135 alloggi), contro il testo 1.3;
+  - la classe riuso non è validata (0,532);
+  - la cecità è affidata solo alla disciplina.
+- **Minori**: Bovisa 56,5 ha in §4 contro 64,1 ha nel gpkg; codifica 2 del censimento in 7 minuti; gli intervalli per classe sono calcolati su giudizi doppi.
 
 ## 8. Cosa passa alla prova successiva
 - **Codifica cieca** dei pacchetti `controllo_codificatore_1/` e `_2/`, isolati. Gli SHA-256 dei fogli vuoti (`ef22c48a…`) e della chiave (`d787a547…`) sono nel registro.
