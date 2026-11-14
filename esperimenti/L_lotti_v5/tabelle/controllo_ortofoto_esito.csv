@@ -1,0 +1,221 @@
+tipo,id,classe,origine,area_m2,codice,visto_v3,Q1_1,LCD_1,eterogeneo_1,tetto_1,veg_1,uso_1,s2_1,nota_1,Q1_2,LCD_2,eterogeneo_2,tetto_2,veg_2,uso_2,s2_2,nota_2,ok_1,ok_2
+base,F205_047000.246,particella qualsiasi,,953.6,C001,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,E00275,lotto edificabile,DUSAF13,8061.5,C002,1,U,1,E,T1,V1,U?,M,capannoni e corte alberata,D,2,E,T1,V2,U-,M,capannone con cortile inselvatichito,False,True
+base,F205_009000.260,particella qualsiasi,,301.4,C003,0,U,0,,T1,V0,U+,N,,U,0,,T1,V0,U+,N,,False,False
+lotto,E00286,lotto edificabile,COMUNE,3341.3,C004,1,L,2,,,,,M,prato con tracce di sfalcio e tratto di strada,L,2,,,,,N,prato incolto e strada,True,True
+base,F205_034900.117,particella qualsiasi,,382.0,C005,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_060100.81,particella qualsiasi,,367.9,C006,0,L,3,,,,,N,striscia di terra nuda,L,3,,,,,N,striscia sterrata lungo strada incerta,True,True
+base,F205_003700.22,particella qualsiasi,,306.4,C007,0,U,0,,T1,V0,U+,N,,U,0,,T1,V0,U+,N,,False,False
+lotto,R00166,lotto da riusare,dbt_diruto,258.6,C008,0,L,2,,T1,V1,U?,N,piazzale vuoto con parte di edificio,L,2,E,T1,V1,U?,N,piazzale vuoto dietro edificio,True,True
+lotto,A00657,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,61799.0,C009,1,L,3,,,,,S,incolto con arbusti,L,3,,,,,M,incolto con arbusti,True,True
+base,F205_004900.63,particella qualsiasi,,4410.0,C010,0,I,0,E,,,,S,strada e alberature,I,0,E,,,,S,strada e filari,False,False
+base,F205_007600.177,particella qualsiasi,,10052.8,C011,0,U,0,,T1,V0,U+,S,torri residenziali con giardino,V,0,,T1,V0,U+,S,torri residenziali in giardino curato,False,False
+base,F205_041300.67,particella qualsiasi,,472.6,C012,0,L,3,,,,,S,fascia alberata spontanea,L,3,,,,,N,fascia alberata spontanea,True,True
+lotto,E00243,lotto edificabile,DUSAF13,3680.9,C013,0,U,1,,T1,V1,U+,M,deposito mezzi e capannoni,U,1,,T1,V1,U+,M,deposito mezzi e materiali,False,False
+base,F205_046700.74,particella qualsiasi,,2055.7,C014,0,U,0,,T1,V0,U+,N,,V,0,E,T1,V0,U+,N,giardino e torre residenziale,False,False
+lotto,A00636,area di attivazione,DUSAF13 / verde di servizio PGT,14949.1,C015,0,C,3,,,,,M,grande cantiere,C,3,,T1,V0,U+,M,cantiere scavo stazione,True,True
+lotto,R00078,lotto da riusare,dbt_diruto,337.8,C016,0,V,1,,,,,N,orto o giardino con vegetazione fitta,V,1,E,,,,N,orti e alberi,False,False
+lotto,R00093,lotto da riusare,dbt_diruto,710.4,C017,1,L,3,,,,,N,lotto alberato incolto con detriti,L,3,,,,,N,area alberata incolta,True,True
+base,F205_054700.176,particella qualsiasi,,555.8,C018,0,U,0,,T1,V0,U+,N,,U,0,,T1,V0,U+,N,,False,False
+lotto,R00103,lotto da riusare,dbt_diruto,912.8,C019,0,L,3,,,,,N,fascia alberata incolta,L,3,,,,,N,incolto alberato,True,True
+base,F205_013500.59,particella qualsiasi,,734.7,C020,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,R00110,lotto da riusare,dbt_diruto,341.6,C021,0,D,3,,T2,V1,U-,N,tetto irregolare e corte con detriti,D,3,,T2,V1,U-,N,tetto danneggiato con parti crollate,True,True
+base,F205_003500.22,particella qualsiasi,,5382.7,C022,0,L,3,,,,,S,incolto con sentieri e arbusti,L,3,,,,,S,incolto con arbusti e sentieri,True,True
+lotto,A00418,area di attivazione,COMUNE / verde di servizio PGT,983.8,C023,0,L,3,,,,,S,prato incolto,L,3,,,,,N,prato incolto con alberi,True,True
+lotto,A00585,area di attivazione,DUSAF13 / verde di servizio PGT,19195.1,C024,1,V,1,,T1,V1,U?,M,parco archeologico con prato e alberi,V,1,E,T1,V1,U?,M,parco con area archeologica e bosco,False,False
+base,F205_023300.153,particella qualsiasi,,378.9,C025,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,A00613,area di attivazione,AMB_DEG / taglia < 1.500 m²,796.7,C026,0,D,3,,T3,V1,U-,N,struttura scoperchiata,D,3,,T3,V2,U-,N,rudere senza tetto con macerie,True,True
+lotto,A00422,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,4079.5,C027,0,L,3,,,,,S,verde spontaneo in svincolo,L,3,,,,,S,vegetazione spontanea in svincolo,True,True
+lotto,R00142,lotto da riusare,ds503,1183.7,C028,0,D,3,,T3,V1,U-,N,tetti crollati e macerie,D,3,,T2,V2,U-,N,edificio con tetti rotti e macerie,True,True
+lotto,A00669,area di attivazione,DUSAF1412 / verde di servizio PGT,5399.4,C029,0,L,3,,,,,S,fascia arbustiva lungo autostrada,L,3,,,,,S,fascia incolta lungo autostrada,True,True
+base,F205_027000.61,particella qualsiasi,,805.6,C030,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_047900.392,particella qualsiasi,,1192.1,C031,0,U,0,,T1,V0,U+,N,,U,0,,T1,V0,U+,N,edificio parcheggio e giardino,False,False
+lotto,A00531,area di attivazione,DUSAF1412 / verde di servizio PGT,15107.0,C032,0,L,2,,,,,S,incolto con sentieri più strada e orti,L,3,,,,,S,incolto con sentieri strada e orti,True,True
+base,F205_044500.215,particella qualsiasi,,950.2,C033,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,R00100,lotto da riusare,dbt_diruto,207.2,C034,0,U,0,,T1,V0,U+,N,corte con tavoli,U,0,,T1,V0,U+,N,cortile con tavoli e giardino,False,False
+base,F205_033500.157,particella qualsiasi,,360.5,C035,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,A00591,area di attivazione,DUSAF13 / taglia < 1.500 m²,1281.5,C036,0,L,3,,,,,N,parcheggio asfaltato quasi vuoto,L,3,,,,,S,parcheggio quasi vuoto,True,True
+lotto,E00314,lotto edificabile,DUSAF13,4237.7,C037,0,L,3,,,,,M,terreno nudo,L,3,,,,,N,lotto sterrato con erba secca,True,True
+base,F205_038500.76,particella qualsiasi,,803.0,C038,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_034100.14,particella qualsiasi,,372.7,C039,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_047200.369,particella qualsiasi,,376.1,C040,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,R00092,lotto da riusare,dbt_diruto,428.4,C041,0,L,2,E,T1,V1,U?,N,giardino trascurato con piccoli ricoveri,V,1,E,T1,V1,U+,N,giardino con casette e gazebo,True,False
+lotto,E00221,lotto edificabile,COMUNE,2078.6,C042,0,I,0,,,,,N,strada e marciapiede alberato,I,1,E,,,,S,strada marciapiede e bordo parcheggio,False,False
+lotto,E00302,lotto edificabile,DUSAF13,7193.3,C043,0,L,3,,,,,M,prato secco con un albero,L,3,,,,,M,prato secco e sterro,True,True
+lotto,A00684,area di attivazione,DUSAF1412 / valore paesaggistico PGT,7639.5,C044,0,L,2,,,,,S,prato in svincolo con rampa,L,3,,,,,S,prato in svincolo,True,True
+base,F205_048900.24,particella qualsiasi,,3903.6,C045,0,U,0,,T1,V0,U+,S,capannone e piazzale,U,0,,T1,V0,U+,S,capannone e piazzale,False,False
+lotto,E00370,lotto edificabile,COMUNE,1982.9,C046,0,L,3,,T1,V1,U?,N,prato e alberi con piccolo fabbricato,L,3,,T1,V1,U?,N,prato incolto alberi e piccola cabina,True,True
+base,F205_042100.101,particella qualsiasi,,1431.5,C047,0,U,0,,T1,V0,U+,N,,U,0,,T1,V0,U+,N,,False,False
+base,F205_031400.146,particella qualsiasi,,316.7,C048,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_013400.298,particella qualsiasi,,823.3,C049,0,U,0,,T1,V0,U?,N,,U,0,E,T1,V0,U?,N,edificio e giardino,False,False
+base,F205_010900.274,particella qualsiasi,,1514.0,C050,0,I,1,,,,,N,strada pista ciclabile e banchina erbosa,I,1,,,,,S,strada e pista ciclabile,False,False
+base,F205_031700.47,particella qualsiasi,,341.0,C051,0,U,0,,T1,V1,U?,N,corte interna con verde,U,0,,T1,V0,U?,N,cortile alberato interno,False,False
+base,F205_019400.114,particella qualsiasi,,970.3,C052,0,U,0,,T1,V0,U?,N,villa con giardino alberato,V,0,,T1,V0,U?,N,villa con giardino alberato,False,False
+lotto,E00232,lotto edificabile,DUSAF13,3064.5,C053,1,U,0,,T1,V0,U+,N,deposito e capannoni,U,0,,T1,V0,U+,N,deposito materiali e capannoni,False,False
+lotto,A00568,area di attivazione,DUSAF1412 / verde di servizio PGT,21196.5,C054,0,L,3,,,,,S,prato secco con alberi sparsi,L,3,,,,,S,prato falciato con alberi sparsi,True,True
+lotto,A00399,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,7698.8,C055,0,L,3,,,,,S,striscia incolta,L,3,,,,,S,fascia incolta tra capannoni,True,True
+lotto,R00137,lotto da riusare,dbt_diruto,272.7,C056,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_006700.56,particella qualsiasi,,2238.8,C057,0,U,0,,T1,V0,U+,S,corte con auto,U,0,,T1,V0,U+,N,corte con auto parcheggiate,False,False
+lotto,R00132,lotto da riusare,dbt_diruto,685.5,C058,0,D,3,,T3,V2,U-,N,telaio senza copertura invaso da vegetazione,D,3,,T3,V2,U-,M,telaio senza copertura invaso da vegetazione,True,True
+base,F205_009000.484,particella qualsiasi,,1401.9,C059,0,U,0,,T1,V0,U+,N,edificio con campi sportivi,U,0,,T1,V0,U+,N,scuola con cortile e campi,False,False
+base,F205_052800.13,particella qualsiasi,,704.9,C060,0,U,0,,T1,V0,U+,N,,U,0,,T1,V0,U+,N,,False,False
+lotto,A00614,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,4999.2,C061,0,U,0,,T1,V0,U+,N,capannoni e piazzale con mezzi,U,0,,T1,V0,U+,N,complesso produttivo con piazzale e mezzi,False,False
+base,F205_038600.19,particella qualsiasi,,1194.5,C062,0,V,1,,T1,V0,U?,N,giardino alberato retro edifici,V,0,,T1,V0,U?,N,giardino alberato incerto se curato,False,False
+lotto,A00610,area di attivazione,DUSAF13 / taglia < 1.500 m²,849.4,C063,0,L,3,,,,,N,striscia di vegetazione spontanea,L,3,,,,,N,fascia incolta con sentiero,True,True
+base,F205_002300.7,particella qualsiasi,,23467.9,C064,0,V,0,,,,,S,parco con prato e alberi,V,0,,,,,S,parco con prati e giochi,False,False
+base,F205_051800.242,particella qualsiasi,,522.8,C065,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_001500.60,particella qualsiasi,,1351.7,C066,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,E00373,lotto edificabile,DUSAF13,8915.0,C067,0,L,3,,,,,M,prato secco e sterrato,L,3,,T1,V1,U-,M,incolto e sterrato con piccola struttura,True,True
+lotto,R00075,lotto da riusare,dbt_diruto,100.2,C068,0,U,0,,T1,V1,U?,N,cortile interno piccolo,U,0,,T1,V0,U?,N,cortile e tetti piccoli poligoni,False,False
+base,F205_035100.186,particella qualsiasi,,324.4,C069,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,A00596,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,4179.4,C070,0,L,3,,,,,S,lotto incolto con arbusti,L,3,,,,,S,lotto incolto con arbusti,True,True
+lotto,A00635,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,2137.9,C071,0,L,3,,,,,S,boscaglia spontanea lungo ferrovia,L,3,,,,,S,boscaglia spontanea lungo ferrovia,True,True
+lotto,E00371,lotto edificabile,DUSAF13,8255.6,C072,0,L,3,,,,,M,prato incolto con sterrato,L,3,,,,,M,prato incolto con sterrato s2 suolo nudo,True,True
+base,F205_060200.122,particella qualsiasi,,306.6,C073,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_018600.217,particella qualsiasi,,324.9,C074,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,facciata in vista obliqua,False,False
+base,F205_007300.303,particella qualsiasi,,624.1,C075,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,E00271,lotto edificabile,DUSAF13,3673.9,C076,0,U,1,,T1,V0,U?,M,capannoni e piazzale vuoto,U,1,,T1,V0,U?,S,capannoni e piazzale vuoto,False,False
+lotto,A00539,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,3246.7,C077,0,L,3,,T3,V1,U-,M,sterrato con macerie e ruderi scoperchiati,L,3,,T3,V2,U-,M,sterrato incolto con ruderi,True,True
+lotto,A00665,area di attivazione,DUSAF1412 / verde di servizio PGT,585.4,C078,0,L,2,,,,,S,banchina erbosa e sentiero,L,3,,,,,S,sentiero e prato incolto,True,True
+base,F205_044000.333,particella qualsiasi,,696.7,C079,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,E00239,lotto edificabile,DUSAF13,7978.3,C080,1,C,3,,,,,M,scavo di cantiere con macchina,C,3,,,,,M,grande scavo di cantiere,True,True
+base,F205_016300.576,particella qualsiasi,,445.7,C081,0,L,3,,,,,N,filare arboreo spontaneo tra campi,L,3,,,,,N,filare di vegetazione spontanea tra campi,True,True
+lotto,E00353,lotto edificabile,COMUNE,7075.2,C082,0,L,3,,,,,S,incolto con alberi e cumulo di inerti,L,3,,,,,M,incolto con alberi e sterro s2 piu verde,True,True
+base,F205_001500.79,particella qualsiasi,,844.2,C083,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_055000.426,particella qualsiasi,,1477.6,C084,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_023100.126,particella qualsiasi,,601.4,C085,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,A00521,area di attivazione,DUSAF13 / taglia < 1.500 m²,1218.0,C086,0,U,0,,T1,V0,U+,N,,U,0,,T1,V0,U+,N,,False,False
+lotto,E00301,lotto edificabile,DUSAF13,12559.4,C087,0,U,0,,T1,V0,U?,M,complesso produttivo,U,1,,T1,V0,U?,M,complesso produttivo possibile dismissione s2 demolito,False,False
+lotto,R00163,lotto da riusare,dbt_diruto+ds503,2819.3,C088,0,U,1,,T1,V1,U?,M,capannoni con tetti chiari e fascia sterrata,U,0,,T1,V1,U?,M,capannoni s2 piu verde,False,False
+lotto,R00117,lotto da riusare,dbt_diruto,1764.7,C089,0,U,1,E,T1,V2,U?,N,edificio con giardino incolto e pergolato scoperto,D,2,E,T1,V2,U?,M,lotto con tettoia e vegetazione spontanea,False,True
+lotto,R00162,lotto da riusare,ds503,609.9,C090,0,U,0,,T1,V1,U+,N,,U,0,,T1,V1,U+,N,,False,False
+base,F205_054400.66,particella qualsiasi,,489.4,C091,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,A00405,area di attivazione,DUSAF1412 / verde di servizio PGT,10347.4,C092,0,L,3,,,,,S,incolto con alberi e arbusti,L,3,,,,,S,incolto alberato con foro escluso,True,True
+lotto,A00401,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,11458.6,C093,0,L,3,,,,,M,incolto e sterrato con resti di fondazioni,L,3,,T3,V2,U-,M,incolto e sterrato con resti di fondazioni,True,True
+base,F205_027300.268,particella qualsiasi,,345.1,C094,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,E00178,lotto edificabile,COMUNE,24637.5,C095,0,L,3,,,,,S,area ex cava rinaturalizzata con arbusti,L,3,,,,,S,area di cava con vegetazione spontanea,True,True
+lotto,A00427,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,21007.0,C096,1,L,3,,,,,M,terreno arato nudo in area di trasformazione,L,3,,,,,M,suolo arato nudo s2 inverdito,True,True
+lotto,A00611,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,5848.0,C097,0,L,2,,T1,V0,U?,M,prato incolto con fronte edificato,L,3,,,,,M,prato incolto s2 possibili nuove costruzioni,True,True
+lotto,E00217,lotto edificabile,DUSAF13,2165.2,C098,0,U,1,E,T1,V1,U?,N,edifici bassi e alberature spontanee,U,1,E,T1,V1,U?,N,capannoni tra alberi,False,False
+lotto,A00487,area di attivazione,DUSAF13 / verde di servizio PGT,4026.6,C099,0,V,1,E,,,,N,piazza alberata con prato secco,L,2,E,,,,S,prato secco con alberi e piazzale,False,True
+lotto,A00639,area di attivazione,COMUNE / taglia < 1.500 m²,666.6,C100,0,U,0,,,,,N,parcheggio pieno,U,0,,,,,N,striscia di parcheggio con auto,False,False
+lotto,E00248,lotto edificabile,DUSAF13,7870.7,C101,0,L,3,,,,,M,suolo nudo con platee di fondazione e incolto,L,3,,,,,M,lotto con resti di platee e incolto s2 nuovi edifici,True,True
+lotto,A00412,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,2119.9,C102,0,L,3,,,,,N,prato incolto e piazzale ghiaioso con poche auto,L,3,,,,,N,prato incolto e sterrato con poche auto,True,True
+lotto,R00036,lotto da riusare,dbt_diruto+ds503,1178.5,C103,0,D,2,,T2,V2,U?,N,area industriale con telaio scoperchiato e piazzale invaso,D,2,E,T2,V2,U-,N,scheletro senza copertura e capannone in area dismessa,True,True
+base,F205_027200.79,particella qualsiasi,,1842.5,C104,0,U,0,,T1,V0,U+,N,cortile alberato con campo sportivo,U,0,,T1,V0,U+,N,cortile scolastico con campo e alberi,False,False
+lotto,A00694,area di attivazione,COMUNE / valore paesaggistico PGT,1488.7,C105,0,L,3,,,,,S,fascia alberata in svincolo,L,3,,,,,S,boscaglia in svincolo stradale,True,True
+base,F205_030600.93,particella qualsiasi,,2866.1,C106,0,U,0,,T1,V0,U+,N,,U,0,,T1,V0,U+,N,isolato con corte interna,False,False
+base,F205_045500.443,particella qualsiasi,,983.9,C107,0,L,3,,,,,S,incolto con radura a prato e alberi,L,3,,T1,V1,U?,S,prato incolto e arbusti con piccola baracca,True,True
+lotto,E00363,lotto edificabile,COMUNE,6800.6,C108,0,L,3,,,,,S,incolto arbustivo e sterrato,L,3,,,,,S,incolto con arbusti e sterro,True,True
+lotto,E00265,lotto edificabile,COMUNE,2592.5,C109,0,L,2,E,,,,N,banchina erbosa con strada e oggetti allineati non identificati,L,2,E,,,,N,strada e binario con vagoni tra vegetazione incerto,True,True
+lotto,R00176,lotto da riusare,dbt_diruto,1835.8,C110,0,D,3,,T1,V2,U-,S,edificio isolato circondato da vegetazione spontanea,D,3,,T2,V2,U-,N,edificio abbandonato circondato da vegetazione,True,True
+lotto,E00195,lotto edificabile,DUSAF13,13059.1,C111,0,U,0,E,,,,S,piazza pavimentata con canali d'acqua e giardini,I,0,E,,,,N,canale e piazza pavimentata area ex fiera,False,False
+lotto,E00236,lotto edificabile,DUSAF13,11167.3,C112,1,U,1,,T1,V1,U?,S,grande capannone con area verde alberata,U,0,,T1,V0,U?,S,capannone grande e prato residuo,False,False
+lotto,R00080,lotto da riusare,ds503,694.3,C113,1,D,3,,T2,V1,U?,N,copertura piana con detriti e rattoppi,U,1,,T2,V1,U?,N,tetto usurato con detriti incerto se in uso,True,False
+base,F205_018400.31,particella qualsiasi,,1241.1,C114,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_001900.290,particella qualsiasi,,353.8,C115,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,E00376,lotto edificabile,COMUNE,37428.8,C116,0,L,3,,,,,S,prato secco e incolto tra svincoli,L,3,,,,,S,prato incolto e terrapieno presso svincolo,True,True
+lotto,A00439,area di attivazione,DUSAF1412 / verde di servizio PGT,6490.5,C117,0,L,3,,,,,S,prato incolto con pochi alberi,L,3,,,,,S,prato incolto con pochi alberi,True,True
+base,F205_053400.133,particella qualsiasi,,8306.4,C118,0,L,3,,T1,V2,U?,S,vegetazione spontanea con orti e baracche,L,2,E,T1,V2,U?,N,incolto con orti informali e baracche,True,True
+base,F205_030100.88,particella qualsiasi,,501.8,C119,0,U,0,,T1,V1,U?,N,edificio con corte alberata,U,0,,T1,V0,U?,N,edificio con cortile alberato,False,False
+lotto,A00437,area di attivazione,DUSAF1412 / verde di servizio PGT,3468.1,C120,0,L,2,,T1,V1,U?,S,pendio boscato e orti con porzioni di cortili,L,2,E,T1,V1,U?,S,bosco incolto orti e cortile residenziale,True,True
+lotto,A00407,area di attivazione,COMUNE / verde di servizio PGT,5117.1,C121,0,L,3,,,,,S,prato secco con muri e ruderi bassi,L,3,,T3,V2,U-,M,prato incolto con fondazioni e muri residui s2 inverdito,True,True
+base,F205_026100.131,particella qualsiasi,,559.8,C122,0,U,0,,T1,V0,U+,N,schiera di case con corte e auto,U,0,,T1,V0,U+,N,schiera di edifici con auto,False,False
+lotto,A00404,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,2799.3,C123,0,L,3,,,,,S,prato incolto con sterrato,L,3,,,,,M,prato incolto sterrato s2 piu scuro,True,True
+base,F205_067800.329,particella qualsiasi,,1356.5,C124,0,U,0,,T1,V0,U+,N,impianto con vasche e piazzale,U,0,,T1,V0,U+,N,impianto con vasche e piazzale,False,False
+base,F205_015700.57,particella qualsiasi,,350.5,C125,0,I,0,,,,,N,parcheggio pieno,U,0,,,,,N,parcheggio pieno,False,False
+lotto,A00562,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,5151.9,C126,0,L,3,,,,,S,prato falciato con gruppo di alberi in svincolo,L,3,,,,,S,prato non curato con boschetto presso svincolo,True,True
+lotto,E00214,lotto edificabile,DUSAF13,12886.6,C127,0,L,3,,,,,M,piastre di demolizione con vegetazione spontanea,L,3,,,,,M,platee demolite e incolto s2 nuovo edificio,True,True
+base,F205_054400.156,particella qualsiasi,,343.9,C128,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_036800.342,particella qualsiasi,,497.9,C129,0,U,0,,T1,V0,U+,N,,U,0,,T1,V0,U+,N,,False,False
+lotto,R00032,lotto da riusare,dbt_diruto,1170.4,C130,0,D,2,,T3,V2,U-,N,blocco a corte scoperchiato con corte inerbita,D,3,,T2,V2,U-,N,edificio a corte con tetti rotti e corte inselvatichita,True,True
+base,F205_038300.227,particella qualsiasi,,630.8,C131,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,A00600,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,577.0,C132,0,I,1,E,,,,N,piazzale sterrato con auto e striscia verde,U,1,E,,,,N,piazzale sterrato con auto e bordo alberato,False,False
+lotto,A00506,area di attivazione,DUSAF1412 / verde di servizio PGT,10594.5,C133,0,L,3,,,,,S,incolto alberato e sterrato tra ferrovia e canale,L,3,,,,,S,incolto alberato tra ferrovia e canale con piazzale,True,True
+base,F205_042400.106,particella qualsiasi,,2225.3,C134,0,U,0,,T1,V0,U?,N,palazzina con giardino,U,0,,T1,V0,U?,N,palazzina con giardino,False,False
+lotto,E00238,lotto edificabile,DUSAF13,2852.7,C135,0,U,1,,T1,V1,U?,N,corte alberata folta e piazzale vuoto,U,0,E,T1,V0,U?,N,edificio e corte alberata,False,False
+base,F205_006000.13,particella qualsiasi,,3103.9,C136,0,U,0,,T1,V0,U+,N,edificio con parcheggio,U,0,,T1,V0,U+,N,edificio con parcheggio,False,False
+lotto,A00565,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,2599.9,C137,0,L,3,,,,,S,prato incolto con alberi,L,3,,,,,S,prato incolto con alberi,True,True
+base,F205_023100.410,particella qualsiasi,,625.4,C138,0,U,0,,T1,V0,U+,N,edifici e corte con auto,U,0,,T1,V0,U+,N,edificio e cortile con auto,False,False
+lotto,R00026,lotto da riusare,dbt_diruto,237.4,C139,0,U,0,,T1,V0,U+,N,capannone e piazzale con auto,U,0,,T1,V0,U+,N,capannone e piazzale con auto,False,False
+base,F205_055600.443,particella qualsiasi,,5143.9,C140,0,L,3,,,,,M,ex scalo con binari dismessi sterrato e vegetazione,L,3,,,,,M,scalo ferroviario dismesso con sterrati e vegetazione s2 tutto sterro,True,True
+base,F205_013100.453,particella qualsiasi,,609.4,C141,0,U,1,,T1,V0,U?,N,edificio con giardino alberato retrostante,V,0,,T1,V0,U?,N,edificio e giardino interno alberato,False,False
+lotto,E00332,lotto edificabile,DUSAF13,2771.5,C142,0,L,3,,,,,S,sterrato con cumuli di inerti e alberi,L,3,,,,,S,sterro con cumuli di detriti e alberi,True,True
+base,F205_051300.113,particella qualsiasi,,687.1,C143,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_032800.337,particella qualsiasi,,784.3,C144,0,L,3,,,,,S,prato incolto con piccoli manufatti,L,3,,T1,V1,U?,S,prato incolto con piccole serre e baracche,True,True
+lotto,E00378,lotto edificabile,DUSAF13,2399.7,C145,0,L,3,,T1,V1,U?,S,sterrato incolto con piccolo edificio,L,3,,T1,V1,U?,N,lotto sterrato incolto con piccolo edificio,True,True
+base,F205_010000.69,particella qualsiasi,,737.2,C146,0,I,1,E,T1,V1,U?,N,piazzale e rampa con fabbricato basso e alberi,U,1,E,T1,V1,U?,N,piazzale e box tra alberi,False,False
+lotto,A00662,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,3486.2,C147,0,L,3,,,,,S,prato incolto con alberi e parcheggio,L,3,,,,,S,prato incolto con alberi,True,True
+lotto,R00116,lotto da riusare,dbt_diruto,140.0,C148,0,D,3,,T3,V2,U-,N,ruderi invasi da vegetazione,D,3,,T3,V2,U-,N,resti di struttura invasa da vegetazione,True,True
+base,F205_014700.163,particella qualsiasi,,498.5,C149,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,R00066,lotto da riusare,dbt_diruto,1536.3,C150,0,U,1,,T2,V0,U?,N,copertura parzialmente aperta con struttura a vista,U,1,,T2,V0,U?,N,copertura parzialmente rimossa telaio a vista,False,False
+lotto,R00012,lotto da riusare,dbt_diruto,1142.5,C151,0,D,3,,T3,V1,U-,N,solaio con ferri a vista di struttura incompiuta o ferma,C,3,,T3,V1,U?,M,solaio con armature a vista cantiere forse fermo,True,True
+base,F205_036900.62,particella qualsiasi,,2330.3,C152,0,L,3,,,,,S,prato incolto tra filari,L,3,,,,,S,prato e filare alberato con parte di giardino,True,True
+lotto,E00245,lotto edificabile,DUSAF13,10542.9,C153,0,I,1,E,T1,V1,U+,N,scalo ferroviario con depositi di materiali,I,1,E,T1,V1,U+,S,scalo con binari depositi e piazzale incerto se attivo,False,False
+lotto,E00240,lotto edificabile,DUSAF13,7682.9,C154,0,L,3,,,,,M,sterrato con macerie e rifiuti e vegetazione spontanea,L,3,,,,,M,incolto con detriti e alberi s2 nuovo edificio,True,True
+base,F205_025700.258,particella qualsiasi,,1174.3,C155,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,S,,False,False
+base,F205_058500.28,particella qualsiasi,,630.5,C156,0,U,0,,T1,V0,U?,N,stecca residenziale,U,0,,T1,V0,U?,N,stecca residenziale,False,False
+lotto,A00691,area di attivazione,DUSAF1412 / valore paesaggistico PGT,1686.6,C157,0,L,2,,,,,S,prato in svincolo con tratto di rampa,L,2,,,,,S,prato in svincolo con tratto di strada,True,True
+base,F205_026800.105,particella qualsiasi,,517.0,C158,0,U,0,,T1,V0,U+,N,corte con campo in erba sintetica,U,0,,T1,V0,U+,N,edifici e cortile con prato e pergola,False,False
+base,F205_052100.167,particella qualsiasi,,437.9,C159,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,A00522,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,2190.3,C160,0,L,3,,,,,S,sterrato con vasca impermeabilizzata,L,2,,,,,N,sterrato con vasca impermeabilizzata,True,True
+base,F205_001800.3,particella qualsiasi,,9405.0,C161,0,V,0,,,,,S,parco pubblico con campi gioco,V,0,,,,,S,parco pubblico con campo da gioco,False,False
+base,F205_039500.55,particella qualsiasi,,402.2,C162,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_064500.268,particella qualsiasi,,4775.5,C163,0,L,3,,,,,S,prato incolto con arbusti lungo ferrovia,L,3,,,,,S,prato incolto e arbusti presso ferrovia,True,True
+lotto,A00504,area di attivazione,AMB_DEG / taglia < 1.500 m²,965.3,C164,0,U,0,,T2,V0,U?,N,copertura piana macchiata con detriti in un angolo,U,1,,T2,V0,U?,N,copertura piana usurata con detriti incerto,False,False
+lotto,R00171,lotto da riusare,dbt_diruto,233.9,C165,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,piccola copertura in complesso produttivo,False,False
+base,F205_033300.21,particella qualsiasi,,335.9,C166,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_033100.16,particella qualsiasi,,44127.0,C167,0,V,1,E,,,,S,bosco e prati con viali e cascina esclusa,V,1,E,,,,S,prati falciati filari e fascia boscata,False,False
+base,F205_041400.2,particella qualsiasi,,20952.8,C168,0,D,3,,T2,V2,U-,S,complesso di edifici invaso da alberi con incolto,D,3,E,T2,V2,U-,S,complesso di edifici avvolto da vegetazione e prato incolto,True,True
+lotto,A00567,area di attivazione,COMUNE / taglia < 1.500 m²,874.8,C169,0,L,3,,,,,S,arbusti spontanei tra strade,L,3,,,,,S,vegetazione spontanea lungo rampa,True,True
+lotto,A00673,area di attivazione,COMUNE / verde di servizio PGT,40958.7,C170,0,L,2,E,T1,V1,U?,S,incolto con campo da calcio usurato e orti,L,2,E,T1,V1,U?,S,incolto e campo sportivo in erba,True,True
+lotto,E00345,lotto edificabile,COMUNE,19008.6,C171,0,L,3,,,,,S,incolto arbustivo con sentieri e manufatto circolare escluso,L,3,,,,,S,incolto con arbusti e sentieri,True,True
+lotto,E00253,lotto edificabile,COMUNE,6670.4,C172,0,L,3,,,,,S,prato con alberi in svincolo,L,3,,,,,S,prato non curato con alberi in svincolo,True,True
+base,F205_048000.390,particella qualsiasi,,554.6,C173,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+lotto,A00433,area di attivazione,DUSAF1412 / verde di servizio PGT,8288.8,C174,0,L,3,,,,,S,prato secco incolto accanto a capannone,L,3,,T1,V0,U+,S,prato secco incolto con capannone in uso,True,True
+base,F205_018100.204,particella qualsiasi,,1411.2,C175,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_041300.49,particella qualsiasi,,321.4,C176,0,L,3,,,,,N,striscia sottile di vegetazione spontanea lungo confine,L,3,,,,,N,striscia stretta di vegetazione spontanea lungo recinzione,True,True
+lotto,A00495,area di attivazione,DUSAF1412 / verde di servizio PGT,3093.2,C177,0,L,3,,,,,S,prato incolto con arbusti tra orti e campo sportivo,L,3,,,,,S,prato incolto tra orti e campo sportivo,True,True
+base,F205_050100.64,particella qualsiasi,,3105.9,C178,0,I,1,E,,,,S,rotatoria con aiuola e carreggiate,I,0,E,,,,S,rotatoria con aiuola e strade,False,False
+lotto,R00112,lotto da riusare,dbt_diruto+ds503,4419.3,C179,0,D,3,,T2,V2,U-,N,capannoni a shed con coperture degradate e vegetazione interna,D,2,,T2,V2,U-,N,capannoni a shed con tetti deteriorati e corsia inselvatichita,True,True
+base,F205_018800.152,particella qualsiasi,,2008.7,C180,0,U,0,E,T1,V0,U?,N,palazzine con giardino alberato,V,0,E,T1,V0,U?,N,edificio e giardino alberato,False,False
+base,F205_045000.5,particella qualsiasi,,474.8,C181,0,L,3,,,,,N,fascia erbosa e siepe tra deposito e campo,L,3,,,,,N,striscia di vegetazione spontanea al margine del campo,True,True
+lotto,R00058,lotto da riusare,dbt_diruto+ds503,409.3,C182,0,U,1,E,T1,V1,U?,N,casette con orto e alberi,U,1,E,T1,V1,U?,N,casa basse e baracche con vegetazione retrostante,False,False
+base,F205_031100.411,particella qualsiasi,,943.5,C183,0,U,1,E,T1,V1,U?,N,edificio con corte circolare e giardino alberato fitto,U,1,E,T1,V1,U?,N,edificio e cortile con alberi folti,False,False
+base,F205_013500.179,particella qualsiasi,,1607.1,C184,0,U,0,,T1,V0,U+,N,palazzina con cortile e auto,U,0,,T1,V0,U+,N,edificio e parcheggio con auto,False,False
+lotto,A00561,area di attivazione,COMUNE / verde di servizio PGT,1792.7,C185,0,L,3,,,,,S,boscaglia spontanea e orti tra strada e argine,L,3,,,,,S,boscaglia e orti informali tra strada e canale,True,True
+lotto,E00366,lotto edificabile,COMUNE,5411.1,C186,0,L,3,,,,,S,scarpata sterrata con arbusti lungo strada,L,3,,,,,S,scarpata incolta e strada laterale,True,True
+lotto,E00389,lotto edificabile,DUSAF13,50543.7,C187,0,L,3,,,,,S,area incolta vasta con piastre e vegetazione spontanea,L,3,,,,,S,area dismessa con piazzali erosi e vegetazione spontanea,True,True
+lotto,R00076,lotto da riusare,dbt_diruto,64.2,C188,0,U,0,,T1,V0,U?,N,poligono sottile su terrazzo e cortile,U,0,,T1,V0,U?,N,piccola porzione di edificio e terrazzo,False,False
+base,F205_003900.198,particella qualsiasi,,728.9,C189,0,V,1,,,,,S,giardino alberato con prato,V,0,,,,,S,giardino alberato lungo strada,False,False
+lotto,A00648,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,17247.7,C190,0,L,3,,,,,S,incolto con sentieri,L,3,,,,,S,incolto con sentieri,True,True
+lotto,A00496,area di attivazione,COMUNE / taglia < 1.500 m²,637.2,C191,0,U,2,E,,,,M,striscia di piazzale sterrato con auto parcheggiate,U,1,E,,,,M,fila di auto parcheggiate e bordo sterrato di piazzale s2 piu verde,False,False
+lotto,A00508,area di attivazione,COMUNE / verde di servizio PGT,11703.6,C192,0,V,1,,,,,S,parco di nuovo impianto con filari giovani e prato secco,V,1,E,,,,S,parco nuovo con alberi giovani e parte sterrata,False,False
+base,F205_020500.51,particella qualsiasi,,1115.3,C193,0,U,0,,T1,V0,U?,N,villa con giardino alberato,V,0,,T1,V0,U+,N,villa con giardino alberato,False,False
+lotto,A00630,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,549.2,C194,0,U,1,,T1,V1,U?,N,tettoia con materiali accatastati non identificati,X,,,T0,V1,U?,N,struttura con oggetti fitti non interpretabile,False,False
+base,F205_051800.185,particella qualsiasi,,553.6,C195,0,V,0,,,,,S,prato secco di parco pubblico,V,0,,,,,S,prato secco di parco con alberi,False,False
+base,F205_062800.80,particella qualsiasi,,1310.0,C196,0,U,0,,T1,V0,U?,N,stecche residenziali,U,0,,T1,V0,U+,N,blocco residenziale a L,False,False
+base,F205_048400.66,particella qualsiasi,,650.3,C197,0,D,3,,T2,V2,U-,N,copertura piana degradata con aperture e vegetazione attorno,D,3,,T2,V2,U-,M,copertura piana degradata con vegetazione intorno s2 area sgombrata,True,True
+lotto,A00457,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,2445.0,C198,0,L,3,,,,,S,prato incolto con arbusti,L,3,,,,,S,lotto incolto con arbusti,True,True
+lotto,E00386,lotto edificabile,DUSAF13,43229.8,C199,1,L,3,,,,,M,incolto arbustivo vasto ora più spoglio a 10 m,L,3,,,,,M,grande incolto arbustivo s2 sterro e nuovo edificio,True,True
+lotto,R00006,lotto da riusare,dbt_diruto,549.8,C200,0,U,0,,T1,V0,U+,N,edificio con corte e auto,U,0,,T1,V0,U?,N,ala di edificio a corte e cortile alberato,False,False
+base,F205_016500.82,particella qualsiasi,,1977.3,C201,0,V,1,,,,,S,prato con arnie e alberi da frutto,V,0,,,,,S,prato con arnie apicoltura e alberi,False,False
+lotto,R00151,lotto da riusare,dbt_diruto,38.8,C202,0,U,0,,,,,N,corsello stretto tra edifici con oggetti,U,0,,,,,N,stretto passaggio tra edifici,False,False
+lotto,A00664,area di attivazione,DUSAF1412 / area verde incolta DUSAF 1412,11522.8,C203,1,L,3,,,,,S,prato incolto in svincolo,L,3,,,,,S,prato incolto con arbusti in svincolo,True,True
+base,F205_018700.343,particella qualsiasi,,1279.3,C204,0,U,0,,T1,V0,U?,N,blocco a corte,U,0,,T1,V0,U?,N,corpo di isolato a corte e cortile,False,False
+lotto,E00329,lotto edificabile,COMUNE,2736.2,C205,0,L,3,,,,,S,scarpata incolta con vegetazione spontanea lungo ferrovia,L,3,,,,,S,scarpata incolta e sterrato presso ferrovia,True,True
+lotto,E00196,lotto edificabile,COMUNE,6256.7,C206,0,L,3,,T1,V1,U?,S,bosco spontaneo e incolto con piastra di copertura interrata,L,3,,T1,V1,U?,S,boscaglia spontanea e incolto con parte di solaio,True,True
+lotto,R00160,lotto da riusare,ds503,6818.4,C207,0,D,3,,T2,V2,U-,S,capannone con copertura degradata circondato da vegetazione spontanea,D,3,,T2,V2,U-,N,capannone a shed con lucernari rotti avvolto da vegetazione,True,True
+base,F205_049600.167,particella qualsiasi,,799.2,C208,0,L,2,E,T2,V1,U?,N,orti e baracche con terreno nudo,L,2,E,T1,V1,U+,N,lotti sterrati con orti e baracche,True,True
+lotto,E00392,lotto edificabile,COMUNE,1585.1,C209,0,I,1,E,,,,N,incrocio di percorsi e prato incolto,L,2,E,,,,N,prato non curato e tratto di ciclabile,False,True
+lotto,A00659,area di attivazione,DUSAF1412 / valore paesaggistico PGT,38138.3,C210,0,L,3,,,,,S,prati incolti in svincolo autostradale,L,3,,,,,S,prati incolti in svincolo autostradale,True,True
+lotto,E00249,lotto edificabile,DUSAF13,4673.0,C211,0,C,3,,,,,M,area sterrata con scavi e vani interrati in costruzione,C,3,,,,,M,cantiere con sterro e vasche di fondazione s2 edificato,True,True
+base,F205_038300.139,particella qualsiasi,,844.1,C212,0,U,0,,T1,V0,U?,N,,U,0,,T1,V0,U?,N,,False,False
+base,F205_025400.137,particella qualsiasi,,895.0,C213,0,I,0,,T1,V0,U+,N,piazzale di sosta con chiosco,I,0,,T1,V0,U?,N,slargo asfaltato presso incrocio con piccolo manufatto,False,False
+base,F205_054200.394,particella qualsiasi,,334.6,C214,0,L,3,,,,,N,alberi e prato incolto,L,3,,,,,N,alberi e prato non curato,True,True
+base,F205_022600.395,particella qualsiasi,,1018.4,C215,0,U,0,,T1,V0,U+,N,pertinenze con parcheggio e verde attorno a palazzine,U,0,,T1,V0,U+,N,due palazzine con parcheggio,False,False
+lotto,R00136,lotto da riusare,dbt_diruto,6882.2,C216,1,D,3,,T3,V2,U-,M,capannoni scoperchiati e prato incolto,D,3,,T3,V1,U-,M,capannoni con coperture crollate e macerie s2 area verde,True,True
+base,F205_055000.330,particella qualsiasi,,2605.2,C217,0,U,0,,T1,V0,U?,N,stecche residenziali con cortile,U,0,,T1,V0,U+,N,due stecche residenziali e cortile,False,False
+lotto,R00098,lotto da riusare,dbt_diruto+ds503,1411.7,C218,0,D,2,E,T3,V2,U-,M,ruderi senza copertura con vegetazione e un corpo con tetto integro,D,2,E,T2,V2,U?,N,corte con ruderi senza tetto e corpo con copertura integra,True,True
+lotto,A00417,area di attivazione,DUSAF1412 / verde di servizio PGT,7358.8,C219,0,L,3,,T1,V2,U?,S,boscaglia spontanea con capannone basso,L,3,,T1,V2,U?,S,boscaglia spontanea con piccolo capannone,True,True
+base,F205_028600.116,particella qualsiasi,,1814.0,C220,0,U,0,,T1,V0,U+,N,capannone e piazzale con materiali,U,0,,T1,V0,U+,N,capannone e cortile deposito materiali,False,False

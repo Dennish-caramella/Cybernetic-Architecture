@@ -138,11 +138,181 @@
  },
  "n_visti_v3": 13,
  "sha256_chiave": "d787a547e858e38150fe794837e82068870300e9dc8bba82392c58a9590da1d4",
- "C5": "in attesa dei due codificatori",
+ "kappa_binario": [
+  0.945,
+  0.973
+ ],
+ "kappa_Q1": [
+  0.876,
+  0.918
+ ],
+ "C5a": 0.708,
+ "C5a_cod1": {
+  "k": 84,
+  "n": 120,
+  "p": 0.7,
+  "ic95": [
+   0.613,
+   0.775
+  ]
+ },
+ "base_cod1": {
+  "k": 16,
+  "n": 100,
+  "p": 0.16,
+  "ic95": [
+   0.101,
+   0.244
+  ]
+ },
+ "C5b_cod1": [
+  0.54,
+  [
+   0.419,
+   0.635
+  ]
+ ],
+ "C5_pesato_area_cod1": 0.846,
+ "quota_libera_area_LCD_cod1": 0.76,
+ "C5_lotti_grandi_cod1": {
+  "k": 18,
+  "n": 24,
+  "p": 0.75,
+  "ic95": [
+   0.551,
+   0.88
+  ]
+ },
+ "C5a_cod2": {
+  "k": 86,
+  "n": 120,
+  "p": 0.717,
+  "ic95": [
+   0.63,
+   0.79
+  ]
+ },
+ "base_cod2": {
+  "k": 16,
+  "n": 100,
+  "p": 0.16,
+  "ic95": [
+   0.101,
+   0.244
+  ]
+ },
+ "C5b_cod2": [
+  0.557,
+  [
+   0.436,
+   0.651
+  ]
+ ],
+ "C5_pesato_area_cod2": 0.863,
+ "quota_libera_area_LCD_cod2": 0.771,
+ "C5_lotti_grandi_cod2": {
+  "k": 18,
+  "n": 24,
+  "p": 0.75,
+  "ic95": [
+   0.551,
+   0.88
+  ]
+ },
+ "entrambi_si": {
+  "k": 82,
+  "n": 120,
+  "p": 0.683,
+  "ic95": [
+   0.596,
+   0.76
+  ]
+ },
+ "C5": true,
+ "C5_per_classe": {
+  "area di attivazione": 0.817,
+  "lotto da riusare": 0.532,
+  "lotto edificabile": 0.703
+ },
+ "C5_per_origine": {
+  "AMB_DEG / taglia < 1.500 m²": [
+   0.5,
+   2
+  ],
+  "COMUNE": [
+   0.893,
+   14
+  ],
+  "COMUNE / taglia < 1.500 m²": [
+   0.333,
+   3
+  ],
+  "COMUNE / valore paesaggistico PGT": [
+   1.0,
+   1
+  ],
+  "COMUNE / verde di servizio PGT": [
+   0.8,
+   5
+  ],
+  "DUSAF13": [
+   0.587,
+   23
+  ],
+  "DUSAF13 / taglia < 1.500 m²": [
+   0.667,
+   3
+  ],
+  "DUSAF13 / verde di servizio PGT": [
+   0.5,
+   3
+  ],
+  "DUSAF1412 / area verde incolta DUSAF 1412": [
+   0.857,
+   21
+  ],
+  "DUSAF1412 / valore paesaggistico PGT": [
+   1.0,
+   3
+  ],
+  "DUSAF1412 / verde di servizio PGT": [
+   1.0,
+   11
+  ],
+  "dbt_diruto": [
+   0.5,
+   22
+  ],
+  "dbt_diruto+ds503": [
+   0.6,
+   5
+  ],
+  "ds503": [
+   0.625,
+   4
+  ]
+ },
+ "C5a_senza_visti_v3": 0.71,
  "C7": "non è un criterio in v5: deciso da Dennis come superato (ticket #38)",
- "C9": "in attesa del codificatore 2",
  "C9_n": 29,
  "C9b_soglia": 25,
+ "C9a_completi": [
+  9,
+  15
+ ],
+ "C9b_accordo": 11,
+ "C9": false,
+ "categorie_cod1": {
+  "N": 20,
+  "A": 8,
+  "B": 1
+ },
+ "categorie_cod2": {
+  "A": 11,
+  "B": 10,
+  "C": 6,
+  "N": 2
+ },
  "C1": true,
  "C2": true,
  "C3_coppie_oltre_1m2": 0,
@@ -374,13 +544,18 @@
  "C8": true,
  "passa": false,
  "registro": {
-  "utc": "2026-11-14T111405Z",
-  "commit": "1803c1566972c02a8a5e6d12d14c68ee1791ea05",
+  "utc": "2026-11-14T152018Z",
+  "commit": "418ffe81c3938da1a1eb1579fcc785f610fb5fea",
   "modifiche_non_committate": [
-   "?? esperimenti/L_lotti_v5/"
+   "M esperimenti/L_lotti_v5/controllo_codificatore_1/codifica.csv",
+   " M esperimenti/L_lotti_v5/controllo_codificatore_2/codifica.csv",
+   "?? esperimenti/L_lotti_v5/controllo_codificatore_1/codifica.sha256",
+   "?? esperimenti/L_lotti_v5/controllo_codificatore_2/codifica.sha256",
+   "?? esperimenti/L_lotti_v5/esecuzioni/log_completa5_criteri.txt",
+   "?? esperimenti/L_lotti_v5/tabelle/controllo_ortofoto_esito.csv"
   ],
   "sha256_run_py": "3ace4844793239055910c41e9f128459734881f3c46e23382e425f485695e0d8",
   "python": "3.13.18",
-  "durata_s": 552
+  "durata_s": 545
  }
 }

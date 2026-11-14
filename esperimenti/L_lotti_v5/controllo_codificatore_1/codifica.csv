@@ -1,221 +1,221 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota
-C001,,,,,,,,
-C002,,,,,,,,
-C003,,,,,,,,
-C004,,,,,,,,
-C005,,,,,,,,
-C006,,,,,,,,
-C007,,,,,,,,
-C008,,,,,,,,
-C009,,,,,,,,
-C010,,,,,,,,
-C011,,,,,,,,
-C012,,,,,,,,
-C013,,,,,,,,
-C014,,,,,,,,
-C015,,,,,,,,
-C016,,,,,,,,
-C017,,,,,,,,
-C018,,,,,,,,
-C019,,,,,,,,
-C020,,,,,,,,
-C021,,,,,,,,
-C022,,,,,,,,
-C023,,,,,,,,
-C024,,,,,,,,
-C025,,,,,,,,
-C026,,,,,,,,
-C027,,,,,,,,
-C028,,,,,,,,
-C029,,,,,,,,
-C030,,,,,,,,
-C031,,,,,,,,
-C032,,,,,,,,
-C033,,,,,,,,
-C034,,,,,,,,
-C035,,,,,,,,
-C036,,,,,,,,
-C037,,,,,,,,
-C038,,,,,,,,
-C039,,,,,,,,
-C040,,,,,,,,
-C041,,,,,,,,
-C042,,,,,,,,
-C043,,,,,,,,
-C044,,,,,,,,
-C045,,,,,,,,
-C046,,,,,,,,
-C047,,,,,,,,
-C048,,,,,,,,
-C049,,,,,,,,
-C050,,,,,,,,
-C051,,,,,,,,
-C052,,,,,,,,
-C053,,,,,,,,
-C054,,,,,,,,
-C055,,,,,,,,
-C056,,,,,,,,
-C057,,,,,,,,
-C058,,,,,,,,
-C059,,,,,,,,
-C060,,,,,,,,
-C061,,,,,,,,
-C062,,,,,,,,
-C063,,,,,,,,
-C064,,,,,,,,
-C065,,,,,,,,
-C066,,,,,,,,
-C067,,,,,,,,
-C068,,,,,,,,
-C069,,,,,,,,
-C070,,,,,,,,
-C071,,,,,,,,
-C072,,,,,,,,
-C073,,,,,,,,
-C074,,,,,,,,
-C075,,,,,,,,
-C076,,,,,,,,
-C077,,,,,,,,
-C078,,,,,,,,
-C079,,,,,,,,
-C080,,,,,,,,
-C081,,,,,,,,
-C082,,,,,,,,
-C083,,,,,,,,
-C084,,,,,,,,
-C085,,,,,,,,
-C086,,,,,,,,
-C087,,,,,,,,
-C088,,,,,,,,
-C089,,,,,,,,
-C090,,,,,,,,
-C091,,,,,,,,
-C092,,,,,,,,
-C093,,,,,,,,
-C094,,,,,,,,
-C095,,,,,,,,
-C096,,,,,,,,
-C097,,,,,,,,
-C098,,,,,,,,
-C099,,,,,,,,
-C100,,,,,,,,
-C101,,,,,,,,
-C102,,,,,,,,
-C103,,,,,,,,
-C104,,,,,,,,
-C105,,,,,,,,
-C106,,,,,,,,
-C107,,,,,,,,
-C108,,,,,,,,
-C109,,,,,,,,
-C110,,,,,,,,
-C111,,,,,,,,
-C112,,,,,,,,
-C113,,,,,,,,
-C114,,,,,,,,
-C115,,,,,,,,
-C116,,,,,,,,
-C117,,,,,,,,
-C118,,,,,,,,
-C119,,,,,,,,
-C120,,,,,,,,
-C121,,,,,,,,
-C122,,,,,,,,
-C123,,,,,,,,
-C124,,,,,,,,
-C125,,,,,,,,
-C126,,,,,,,,
-C127,,,,,,,,
-C128,,,,,,,,
-C129,,,,,,,,
-C130,,,,,,,,
-C131,,,,,,,,
-C132,,,,,,,,
-C133,,,,,,,,
-C134,,,,,,,,
-C135,,,,,,,,
-C136,,,,,,,,
-C137,,,,,,,,
-C138,,,,,,,,
-C139,,,,,,,,
-C140,,,,,,,,
-C141,,,,,,,,
-C142,,,,,,,,
-C143,,,,,,,,
-C144,,,,,,,,
-C145,,,,,,,,
-C146,,,,,,,,
-C147,,,,,,,,
-C148,,,,,,,,
-C149,,,,,,,,
-C150,,,,,,,,
-C151,,,,,,,,
-C152,,,,,,,,
-C153,,,,,,,,
-C154,,,,,,,,
-C155,,,,,,,,
-C156,,,,,,,,
-C157,,,,,,,,
-C158,,,,,,,,
-C159,,,,,,,,
-C160,,,,,,,,
-C161,,,,,,,,
-C162,,,,,,,,
-C163,,,,,,,,
-C164,,,,,,,,
-C165,,,,,,,,
-C166,,,,,,,,
-C167,,,,,,,,
-C168,,,,,,,,
-C169,,,,,,,,
-C170,,,,,,,,
-C171,,,,,,,,
-C172,,,,,,,,
-C173,,,,,,,,
-C174,,,,,,,,
-C175,,,,,,,,
-C176,,,,,,,,
-C177,,,,,,,,
-C178,,,,,,,,
-C179,,,,,,,,
-C180,,,,,,,,
-C181,,,,,,,,
-C182,,,,,,,,
-C183,,,,,,,,
-C184,,,,,,,,
-C185,,,,,,,,
-C186,,,,,,,,
-C187,,,,,,,,
-C188,,,,,,,,
-C189,,,,,,,,
-C190,,,,,,,,
-C191,,,,,,,,
-C192,,,,,,,,
-C193,,,,,,,,
-C194,,,,,,,,
-C195,,,,,,,,
-C196,,,,,,,,
-C197,,,,,,,,
-C198,,,,,,,,
-C199,,,,,,,,
-C200,,,,,,,,
-C201,,,,,,,,
-C202,,,,,,,,
-C203,,,,,,,,
-C204,,,,,,,,
-C205,,,,,,,,
-C206,,,,,,,,
-C207,,,,,,,,
-C208,,,,,,,,
-C209,,,,,,,,
-C210,,,,,,,,
-C211,,,,,,,,
-C212,,,,,,,,
-C213,,,,,,,,
-C214,,,,,,,,
-C215,,,,,,,,
-C216,,,,,,,,
-C217,,,,,,,,
-C218,,,,,,,,
-C219,,,,,,,,
-C220,,,,,,,,
+C001,U,0,,T1,V0,U?,N,
+C002,U,1,E,T1,V1,U?,M,capannoni e corte alberata
+C003,U,0,,T1,V0,U+,N,
+C004,L,2,,,,,M,prato con tracce di sfalcio e tratto di strada
+C005,U,0,,T1,V0,U?,N,
+C006,L,3,,,,,N,striscia di terra nuda
+C007,U,0,,T1,V0,U+,N,
+C008,L,2,,T1,V1,U?,N,piazzale vuoto con parte di edificio
+C009,L,3,,,,,S,incolto con arbusti
+C010,I,0,E,,,,S,strada e alberature
+C011,U,0,,T1,V0,U+,S,torri residenziali con giardino
+C012,L,3,,,,,S,fascia alberata spontanea
+C013,U,1,,T1,V1,U+,M,deposito mezzi e capannoni
+C014,U,0,,T1,V0,U+,N,
+C015,C,3,,,,,M,grande cantiere
+C016,V,1,,,,,N,orto o giardino con vegetazione fitta
+C017,L,3,,,,,N,lotto alberato incolto con detriti
+C018,U,0,,T1,V0,U+,N,
+C019,L,3,,,,,N,fascia alberata incolta
+C020,U,0,,T1,V0,U?,N,
+C021,D,3,,T2,V1,U-,N,tetto irregolare e corte con detriti
+C022,L,3,,,,,S,incolto con sentieri e arbusti
+C023,L,3,,,,,S,prato incolto
+C024,V,1,,T1,V1,U?,M,parco archeologico con prato e alberi
+C025,U,0,,T1,V0,U?,N,
+C026,D,3,,T3,V1,U-,N,struttura scoperchiata
+C027,L,3,,,,,S,verde spontaneo in svincolo
+C028,D,3,,T3,V1,U-,N,tetti crollati e macerie
+C029,L,3,,,,,S,fascia arbustiva lungo autostrada
+C030,U,0,,T1,V0,U?,N,
+C031,U,0,,T1,V0,U+,N,
+C032,L,2,,,,,S,incolto con sentieri più strada e orti
+C033,U,0,,T1,V0,U?,N,
+C034,U,0,,T1,V0,U+,N,corte con tavoli
+C035,U,0,,T1,V0,U?,N,
+C036,L,3,,,,,N,parcheggio asfaltato quasi vuoto
+C037,L,3,,,,,M,terreno nudo
+C038,U,0,,T1,V0,U?,N,
+C039,U,0,,T1,V0,U?,N,
+C040,U,0,,T1,V0,U?,N,
+C041,L,2,E,T1,V1,U?,N,giardino trascurato con piccoli ricoveri
+C042,I,0,,,,,N,strada e marciapiede alberato
+C043,L,3,,,,,M,prato secco con un albero
+C044,L,2,,,,,S,prato in svincolo con rampa
+C045,U,0,,T1,V0,U+,S,capannone e piazzale
+C046,L,3,,T1,V1,U?,N,prato e alberi con piccolo fabbricato
+C047,U,0,,T1,V0,U+,N,
+C048,U,0,,T1,V0,U?,N,
+C049,U,0,,T1,V0,U?,N,
+C050,I,1,,,,,N,strada pista ciclabile e banchina erbosa
+C051,U,0,,T1,V1,U?,N,corte interna con verde
+C052,U,0,,T1,V0,U?,N,villa con giardino alberato
+C053,U,0,,T1,V0,U+,N,deposito e capannoni
+C054,L,3,,,,,S,prato secco con alberi sparsi
+C055,L,3,,,,,S,striscia incolta
+C056,U,0,,T1,V0,U?,N,
+C057,U,0,,T1,V0,U+,S,corte con auto
+C058,D,3,,T3,V2,U-,N,telaio senza copertura invaso da vegetazione
+C059,U,0,,T1,V0,U+,N,edificio con campi sportivi
+C060,U,0,,T1,V0,U+,N,
+C061,U,0,,T1,V0,U+,N,capannoni e piazzale con mezzi
+C062,V,1,,T1,V0,U?,N,giardino alberato retro edifici
+C063,L,3,,,,,N,striscia di vegetazione spontanea
+C064,V,0,,,,,S,parco con prato e alberi
+C065,U,0,,T1,V0,U?,N,
+C066,U,0,,T1,V0,U?,N,
+C067,L,3,,,,,M,prato secco e sterrato
+C068,U,0,,T1,V1,U?,N,cortile interno piccolo
+C069,U,0,,T1,V0,U?,N,
+C070,L,3,,,,,S,lotto incolto con arbusti
+C071,L,3,,,,,S,boscaglia spontanea lungo ferrovia
+C072,L,3,,,,,M,prato incolto con sterrato
+C073,U,0,,T1,V0,U?,N,
+C074,U,0,,T1,V0,U?,N,
+C075,U,0,,T1,V0,U?,N,
+C076,U,1,,T1,V0,U?,M,capannoni e piazzale vuoto
+C077,L,3,,T3,V1,U-,M,sterrato con macerie e ruderi scoperchiati
+C078,L,2,,,,,S,banchina erbosa e sentiero
+C079,U,0,,T1,V0,U?,N,
+C080,C,3,,,,,M,scavo di cantiere con macchina
+C081,L,3,,,,,N,filare arboreo spontaneo tra campi
+C082,L,3,,,,,S,incolto con alberi e cumulo di inerti
+C083,U,0,,T1,V0,U?,N,
+C084,U,0,,T1,V0,U?,N,
+C085,U,0,,T1,V0,U?,N,
+C086,U,0,,T1,V0,U+,N,
+C087,U,0,,T1,V0,U?,M,complesso produttivo
+C088,U,1,,T1,V1,U?,M,capannoni con tetti chiari e fascia sterrata
+C089,U,1,E,T1,V2,U?,N,edificio con giardino incolto e pergolato scoperto
+C090,U,0,,T1,V1,U+,N,
+C091,U,0,,T1,V0,U?,N,
+C092,L,3,,,,,S,incolto con alberi e arbusti
+C093,L,3,,,,,M,incolto e sterrato con resti di fondazioni
+C094,U,0,,T1,V0,U?,N,
+C095,L,3,,,,,S,area ex cava rinaturalizzata con arbusti
+C096,L,3,,,,,M,terreno arato nudo in area di trasformazione
+C097,L,2,,T1,V0,U?,M,prato incolto con fronte edificato
+C098,U,1,E,T1,V1,U?,N,edifici bassi e alberature spontanee
+C099,V,1,E,,,,N,piazza alberata con prato secco
+C100,U,0,,,,,N,parcheggio pieno
+C101,L,3,,,,,M,suolo nudo con platee di fondazione e incolto
+C102,L,3,,,,,N,prato incolto e piazzale ghiaioso con poche auto
+C103,D,2,,T2,V2,U?,N,area industriale con telaio scoperchiato e piazzale invaso
+C104,U,0,,T1,V0,U+,N,cortile alberato con campo sportivo
+C105,L,3,,,,,S,fascia alberata in svincolo
+C106,U,0,,T1,V0,U+,N,
+C107,L,3,,,,,S,incolto con radura a prato e alberi
+C108,L,3,,,,,S,incolto arbustivo e sterrato
+C109,L,2,E,,,,N,banchina erbosa con strada e oggetti allineati non identificati
+C110,D,3,,T1,V2,U-,S,edificio isolato circondato da vegetazione spontanea
+C111,U,0,E,,,,S,piazza pavimentata con canali d'acqua e giardini
+C112,U,1,,T1,V1,U?,S,grande capannone con area verde alberata
+C113,D,3,,T2,V1,U?,N,copertura piana con detriti e rattoppi
+C114,U,0,,T1,V0,U?,N,
+C115,U,0,,T1,V0,U?,N,
+C116,L,3,,,,,S,prato secco e incolto tra svincoli
+C117,L,3,,,,,S,prato incolto con pochi alberi
+C118,L,3,,T1,V2,U?,S,vegetazione spontanea con orti e baracche
+C119,U,0,,T1,V1,U?,N,edificio con corte alberata
+C120,L,2,,T1,V1,U?,S,pendio boscato e orti con porzioni di cortili
+C121,L,3,,,,,S,prato secco con muri e ruderi bassi
+C122,U,0,,T1,V0,U+,N,schiera di case con corte e auto
+C123,L,3,,,,,S,prato incolto con sterrato
+C124,U,0,,T1,V0,U+,N,impianto con vasche e piazzale
+C125,I,0,,,,,N,parcheggio pieno
+C126,L,3,,,,,S,prato falciato con gruppo di alberi in svincolo
+C127,L,3,,,,,M,piastre di demolizione con vegetazione spontanea
+C128,U,0,,T1,V0,U?,N,
+C129,U,0,,T1,V0,U+,N,
+C130,D,2,,T3,V2,U-,N,blocco a corte scoperchiato con corte inerbita
+C131,U,0,,T1,V0,U?,N,
+C132,I,1,E,,,,N,piazzale sterrato con auto e striscia verde
+C133,L,3,,,,,S,incolto alberato e sterrato tra ferrovia e canale
+C134,U,0,,T1,V0,U?,N,palazzina con giardino
+C135,U,1,,T1,V1,U?,N,corte alberata folta e piazzale vuoto
+C136,U,0,,T1,V0,U+,N,edificio con parcheggio
+C137,L,3,,,,,S,prato incolto con alberi
+C138,U,0,,T1,V0,U+,N,edifici e corte con auto
+C139,U,0,,T1,V0,U+,N,capannone e piazzale con auto
+C140,L,3,,,,,M,ex scalo con binari dismessi sterrato e vegetazione
+C141,U,1,,T1,V0,U?,N,edificio con giardino alberato retrostante
+C142,L,3,,,,,S,sterrato con cumuli di inerti e alberi
+C143,U,0,,T1,V0,U?,N,
+C144,L,3,,,,,S,prato incolto con piccoli manufatti
+C145,L,3,,T1,V1,U?,S,sterrato incolto con piccolo edificio
+C146,I,1,E,T1,V1,U?,N,piazzale e rampa con fabbricato basso e alberi
+C147,L,3,,,,,S,prato incolto con alberi e parcheggio
+C148,D,3,,T3,V2,U-,N,ruderi invasi da vegetazione
+C149,U,0,,T1,V0,U?,N,
+C150,U,1,,T2,V0,U?,N,copertura parzialmente aperta con struttura a vista
+C151,D,3,,T3,V1,U-,N,solaio con ferri a vista di struttura incompiuta o ferma
+C152,L,3,,,,,S,prato incolto tra filari
+C153,I,1,E,T1,V1,U+,N,scalo ferroviario con depositi di materiali
+C154,L,3,,,,,M,sterrato con macerie e rifiuti e vegetazione spontanea
+C155,U,0,,T1,V0,U?,N,
+C156,U,0,,T1,V0,U?,N,stecca residenziale
+C157,L,2,,,,,S,prato in svincolo con tratto di rampa
+C158,U,0,,T1,V0,U+,N,corte con campo in erba sintetica
+C159,U,0,,T1,V0,U?,N,
+C160,L,3,,,,,S,sterrato con vasca impermeabilizzata
+C161,V,0,,,,,S,parco pubblico con campi gioco
+C162,U,0,,T1,V0,U?,N,
+C163,L,3,,,,,S,prato incolto con arbusti lungo ferrovia
+C164,U,0,,T2,V0,U?,N,copertura piana macchiata con detriti in un angolo
+C165,U,0,,T1,V0,U?,N,
+C166,U,0,,T1,V0,U?,N,
+C167,V,1,E,,,,S,bosco e prati con viali e cascina esclusa
+C168,D,3,,T2,V2,U-,S,complesso di edifici invaso da alberi con incolto
+C169,L,3,,,,,S,arbusti spontanei tra strade
+C170,L,2,E,T1,V1,U?,S,incolto con campo da calcio usurato e orti
+C171,L,3,,,,,S,incolto arbustivo con sentieri e manufatto circolare escluso
+C172,L,3,,,,,S,prato con alberi in svincolo
+C173,U,0,,T1,V0,U?,N,
+C174,L,3,,,,,S,prato secco incolto accanto a capannone
+C175,U,0,,T1,V0,U?,N,
+C176,L,3,,,,,N,striscia sottile di vegetazione spontanea lungo confine
+C177,L,3,,,,,S,prato incolto con arbusti tra orti e campo sportivo
+C178,I,1,E,,,,S,rotatoria con aiuola e carreggiate
+C179,D,3,,T2,V2,U-,N,capannoni a shed con coperture degradate e vegetazione interna
+C180,U,0,E,T1,V0,U?,N,palazzine con giardino alberato
+C181,L,3,,,,,N,fascia erbosa e siepe tra deposito e campo
+C182,U,1,E,T1,V1,U?,N,casette con orto e alberi
+C183,U,1,E,T1,V1,U?,N,edificio con corte circolare e giardino alberato fitto
+C184,U,0,,T1,V0,U+,N,palazzina con cortile e auto
+C185,L,3,,,,,S,boscaglia spontanea e orti tra strada e argine
+C186,L,3,,,,,S,scarpata sterrata con arbusti lungo strada
+C187,L,3,,,,,S,area incolta vasta con piastre e vegetazione spontanea
+C188,U,0,,T1,V0,U?,N,poligono sottile su terrazzo e cortile
+C189,V,1,,,,,S,giardino alberato con prato
+C190,L,3,,,,,S,incolto con sentieri
+C191,U,2,E,,,,M,striscia di piazzale sterrato con auto parcheggiate
+C192,V,1,,,,,S,parco di nuovo impianto con filari giovani e prato secco
+C193,U,0,,T1,V0,U?,N,villa con giardino alberato
+C194,U,1,,T1,V1,U?,N,tettoia con materiali accatastati non identificati
+C195,V,0,,,,,S,prato secco di parco pubblico
+C196,U,0,,T1,V0,U?,N,stecche residenziali
+C197,D,3,,T2,V2,U-,N,copertura piana degradata con aperture e vegetazione attorno
+C198,L,3,,,,,S,prato incolto con arbusti
+C199,L,3,,,,,M,incolto arbustivo vasto ora più spoglio a 10 m
+C200,U,0,,T1,V0,U+,N,edificio con corte e auto
+C201,V,1,,,,,S,prato con arnie e alberi da frutto
+C202,U,0,,,,,N,corsello stretto tra edifici con oggetti
+C203,L,3,,,,,S,prato incolto in svincolo
+C204,U,0,,T1,V0,U?,N,blocco a corte
+C205,L,3,,,,,S,scarpata incolta con vegetazione spontanea lungo ferrovia
+C206,L,3,,T1,V1,U?,S,bosco spontaneo e incolto con piastra di copertura interrata
+C207,D,3,,T2,V2,U-,S,capannone con copertura degradata circondato da vegetazione spontanea
+C208,L,2,E,T2,V1,U?,N,orti e baracche con terreno nudo
+C209,I,1,E,,,,N,incrocio di percorsi e prato incolto
+C210,L,3,,,,,S,prati incolti in svincolo autostradale
+C211,C,3,,,,,M,area sterrata con scavi e vani interrati in costruzione
+C212,U,0,,T1,V0,U?,N,
+C213,I,0,,T1,V0,U+,N,piazzale di sosta con chiosco
+C214,L,3,,,,,N,alberi e prato incolto
+C215,U,0,,T1,V0,U+,N,pertinenze con parcheggio e verde attorno a palazzine
+C216,D,3,,T3,V2,U-,M,capannoni scoperchiati e prato incolto
+C217,U,0,,T1,V0,U?,N,stecche residenziali con cortile
+C218,D,2,E,T3,V2,U-,M,ruderi senza copertura con vegetazione e un corpo con tetto integro
+C219,L,3,,T1,V2,U?,S,boscaglia spontanea con capannone basso
+C220,U,0,,T1,V0,U+,N,capannone e piazzale con materiali
