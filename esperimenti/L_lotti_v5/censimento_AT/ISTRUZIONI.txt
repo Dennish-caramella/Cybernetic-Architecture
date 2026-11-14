@@ -1,0 +1,24 @@
+Censimento dello stato attuativo degli ambiti del PGT 2030 (C9) — Base L v5, ticket #38. Istruzioni per il codificatore 2.
+
+Cosa ricevi: foglio_vuoto.csv (una riga per poligono dell'insieme degli ambiti 2030: PA/AS del Piano delle Regole, AdP Scali ferroviari,
+GFU con perimetro sostitutivo del 2012), ambiti_2030.csv (campi letti dalle schede), fonti_AT.csv (fonti raccolte dal codificatore 1,
+senza la sua categoria), queste istruzioni. Non aprire codifica_1.csv né consenso.csv né altri file del progetto. Puoi cercare altre fonti sul web.
+
+Per ogni riga compila (una sola categoria), riferita agli atti successivi alla previsione del PGT 2030 (per gli AdP: l'AdP approvato conta come A):
+ categoria
+   A "attuazione avviata con atto approvato": atto approvato che rende attuabile l'ambito o una sua parte (accordo di programma approvato o ratificato,
+     programma integrato o piano attuativo approvato, convenzione stipulata, titolo edilizio rilasciato) o cantiere documentato da fonte ufficiale.
+   B "in istruttoria": procedimento avviato ma nessun atto approvato (proposta, avvio del procedimento, adozione, concorso o masterplan in corso,
+     protocollo d'intesa, bando di alienazione o valorizzazione).
+   C "solo previsione": l'unica fonte ufficiale trovata è il piano e la ricerca (scrivi in nota fonti e parole cercate) non trova atti successivi.
+   D "decaduto o stralciato": una fonte ufficiale dice che la previsione è decaduta, stralciata o sostituita.
+   N "non determinato" [L]: le sole fonti utili stanno su siti che bloccano le richieste automatiche o non ci sono; in documento_da_aprire l'URL da aprire da browser.
+ cantiere: si / no / ignoto (informativo).   attuazione_conclusa: si solo se una fonte ufficiale dice che l'intervento è concluso; altrimenti no.
+ fonte_url, fonte_titolo, fonte_ente, data_fonte (data del documento), data_accesso: della fonte che decide la categoria.
+ fonte_ufficiale: si solo per Regione Lombardia/BURL, Gazzetta Ufficiale, dati.comune.milano.it, comunicati ufficiali del Comune ripubblicati altrove con
+   riferimento verificabile, FS Sistemi Urbani o gruppo FS, Agenzia del Demanio, Ministero della Difesa, Invimit, CDP. Stampa, università e operatori: no (S).
+ marca: V (aperta e letta da te), S (secondaria), L (lacuna).   nota: breve, senza virgole se possibile.
+Non usare www.comune.milano.it né pgt.comune.milano.it (decisione di Dennis del 14/11/2026: bloccati e senza materiale utile). Non aggirare blocchi di rete.
+Poligoni con lo stesso nome o la stessa fonte (Stephenson MA_2 e MA_14, via Natta, scali) si codificano uno per uno.
+
+Consegna: salva il foglio come codifica_2.csv, annota ora di inizio e fine, calcola lo SHA-256 del file e consegnalo al coordinatore prima di qualsiasi confronto.

@@ -1,0 +1,24 @@
+{
+ "senza_gfu_conteggi": {
+  "area di attivazione": 268,
+  "lotto edificabile": 222,
+  "lotto da riusare": 175
+ },
+ "senza_gfu_conteggi_non_AT": {
+  "area di attivazione": 247,
+  "lotto edificabile": 179,
+  "lotto da riusare": 153
+ },
+ "senza_gfu_capacita_edificabili": {
+  "cap_far05": 16970,
+  "cap_far1": 34051,
+  "cap_far2": 68216
+ },
+ "senza_gfu_area_ha": {
+  "area di attivazione": 211.5,
+  "lotto da riusare": 18.7,
+  "lotto edificabile": 390.5
+ },
+ "utc": "2026-11-14T105854Z",
+ "sha256_run_py": "3ace4844793239055910c41e9f128459734881f3c46e23382e425f485695e0d8"
+}
