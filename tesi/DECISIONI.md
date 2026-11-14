@@ -44,3 +44,13 @@ Vedi `tesi/DOMANDA_DI_RICERCA.md`. Formula: scelta (c) — **il metodo è il con
 - **Diversità** senza imposizione tra persone: raggruppamento per esigenze di luogo (non per somiglianza personale) e riserve di capacità sul lotto.
 - **Perché, e confronto con gli approcci esistenti:** `tesi/CONFRONTO_APPROCCI_ALLOCAZIONE.md`. La scelta va dimostrata empiricamente con un confronto pre-registrato tra sette approcci (B0–B6) su popolazioni simulate, poi con un contrasto su persone reali in F2.
 - **Chiarito:** il confronto economico cooperativa/developer va tarato su casi reali e riportato come gap fondiario ΔL (regione di parametri), non come stima puntuale.
+
+## 2026-11-14 — Regole della Base L v6 (decisioni di Dennis sui punti del revisore, ticket #38)
+
+- **Stato di attuazione degli ambiti (C9) non esclude nessun lotto.** Tutti i lotti restano disponibili, qualunque sia la fase (A, B, C, D, N). La fase di ogni lotto si registra come attributo, per l'analisi successiva. Per noi oggi un lotto disponibile conta come libero. Motivo: la tesi può essere attuata dopo, e così non si perdono lotti rispetto ad altre fonti.
+- **Nessun controllo umano sulla dipendenza dei codificatori.** Non è richiesto.
+- **Aree designate dal PGT come riuso o simili (GFU, ambiti di trasformazione) sono lotti edificabili.** Non sono più area di attivazione né "destinazione ignota".
+- **Lotti da riusare: non si va oltre le informazioni disponibili.** Vuoti urbani con recinzioni o muri di confine e, all'interno, sterbaglia o terreno abbandonato, si riconoscono anche da immagini satellitari e si segnalano come **possibile area con potenziale** (attributo, non nuova classe).
+- **Progetti in stato avanzato o in costruzione** diventano **tessuto urbano consolidato**: contesto su cui basare le analisi, non lotti disponibili.
+
+Nota di metodo [I]: queste regole cambiano i criteri dopo aver visto l'esito di C9 e della revisione. Il protocollo (§6) vieta modifiche dopo l'esecuzione. Quindi la v6 va come nuova prova: nuova pre-registrazione su git prima di qualsiasi esecuzione, con la motivazione e il riferimento a v5 e alla revisione. v5 resta come prova documentata con esito "cambia".
