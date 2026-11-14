@@ -1,6 +1,6 @@
 # STATO
 
-Aggiornato 2026-11-14. Decisioni di impianto: `tesi/DECISIONI.md`. Storia: `giornale/`.
+Aggiornato 2026-11-14 (sera). Decisioni di impianto: `tesi/DECISIONI.md`. Storia: `giornale/`.
 
 ## Fase
 **F0 Fondamenta** (nov–dic 2026), dopo la ripartenza del 09/11. Tesi magistrale con rigore da dottorato; laurea nei primi mesi del 2028. Calendario: `tesi/CALENDARIO.md`. Domanda di ricerca (bozza di base): `tesi/DOMANDA_DI_RICERCA.md`.
@@ -23,6 +23,7 @@ Aggiornato 2026-11-14. Decisioni di impianto: `tesi/DECISIONI.md`. Storia: `gior
 ## Laboratorio della scala urbana (11–14/11)
 Mappa: issue #15 (Base L → banco, Base P, Base E, pre-registrazione → A1–A4, B0–B6, confronto, sintesi). Regole: `esperimenti/PROTOCOLLO_LABORATORIO.md`; agenti in `.claude/agents/`.
 - **Base L v5** (#38, `esperimenti/L_lotti_v5/`): ambiti PGT 2030; 216 edificabili / 176 riuso / 309 attivazione; ~32.900 alloggi a FAR 1. C1–C4, C6, C8 e C5 passano (C5 di misura, 0,708; codificatori LLM probabilmente non indipendenti); **C9 non passa** (11/29). Revisione: **cambia**. **Ferma: decide Dennis** su C9 (documenti del Comune), validità dei codificatori LLM, GFU (Piazza d'Armi), riuso, altri AdP/PII.
+- **Base L v6** (#39, `esperimenti/L_lotti_v6/`): 220 E / 160 R / 269 A + 52 tessuto consolidato; capacità a FAR 1 in una forbice 29.000–45.700. **C5 falso (0,686)**: le GFU come edificabili sono libere in foto solo 0,26. Revisione: cambia. Ferma: decide Dennis (GFU separate, regola cantiere, verifica dei 17 lotti GFU, v7).
 - v1–v4: prove documentate, non basi.
 
 ## Decisione del 10/11

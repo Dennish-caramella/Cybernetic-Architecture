@@ -17,7 +17,7 @@ Come v5 con modifiche minime in `run.py`. Tre esecuzioni complete con hash ident
 - **Conteggi**: 220 lotti edificabili, 160 da riusare, 269 aree di attivazione, 52 lotti nel tessuto consolidato (112,8 ha). Capacità degli edificabili a FAR 0,5 / 1 / 2: 18.318 / 36.744 / 73.605 alloggi. Per scenario, a FAR 1: 29.021 (GFU come in v5), 37.799 (senza Bovisa), 45.683 (senza regola cantiere). I lotti non in ambito sono identici a v5.
 - **Dato Bovisa di v5 non riproducibile** (56,5 ha): verificati 64,1 ha (lotti nell'ambito) e 63,8 ha (intersezione), su un poligono di 85,6 ha; in v6 Bovisa è tessuto consolidato.
 - **C1–C4, C6, C8**: veri.
-- **C5**: kappa binario 0,934 (cod. 1) e 0,967 (cod. 2). C5a = 0,686 (soglia 0,70): **falso**. Quota di lotti liberi o dismessi:
+- **C5**: kappa binario 0,934 e accordo osservato 0,967 tra i due codificatori (su S2 da solo il kappa è 0,904). C5a = 0,686 (soglia 0,70): **falso**. Quota di lotti liberi o dismessi:
   - S1 (identici a v5): 0,700 e 0,717;
   - S2 (nuovi o cambiati, n = 84): 0,560 e 0,512, contro la soglia implicita 0,644.
   - Particelle a caso (base): 0,16 per entrambi. C5b passa (limite inferiore 0,522 e 0,530).
@@ -32,13 +32,13 @@ Come v5 con modifiche minime in `run.py`. Tre esecuzioni complete con hash ident
 - I codificatori sono LLM della stessa famiglia, con kappa molto alto [I]; l'ipotesi di indipendenza non regge.
 - Prima consegna scartata; seconda consegna con tempi di codifica molto brevi [L].
 - Perimetri e destinazioni delle GFU mancano [L]; si usa il perimetro 2012 [H].
-- `potenziale_vuoto` è una regola calcolata dagli strati, senza verità a terra; 1 solo lotto su 127 è marcato "1" (vedi `tabelle/lotti_attributi.csv`).
+- `potenziale_vuoto` è una regola calcolata dagli strati, senza verità a terra; 127 lotti su 649 sono marcati 1 (96 E, 30 A, 1 R), tutti fuori ambito; vale 0 sugli 84 lotti in ambito (vedi `tabelle/lotti_attributi.csv`).
 - I "cantiere = sì" (6 poligoni) vengono dalla sola codifica 2, con fonti spesso secondarie; non ho incrociato la fonte ufficiale.
 - Etichette obsolete in `cascata.csv` (cosmetiche).
 - Non verificata la riproducibilità da zero senza la cache copiata.
 
 ## 7. Revisione indipendente
-(da scrivere dal `revisore-metodologico`)
+Testo in `REVISIONE.md`. **Esito proposto: cambia.** Difetti gravi: G1 C5 falso, localizzato in S2 (confermato dalla consegna scartata: 0,691); G2 le GFU come edificabili contraddicono `CONTEXT.md` e la misura C5; G3 il fallimento poggia solo su codificatori LLM. Raccomandazione: v7 con GFU in una classe separata, regola cantiere ristretta, e verifica di Dennis sui 17 lotti GFU.
 
 ## 8. Cosa passa alla prova successiva
-Niente: la base non è congelata. Opzioni per Dennis nel messaggio di consegna (ripetere con le GFU in una classe separata "da verificare", oppure accettare le GFU come ipotesi dichiarata e andare avanti con la base come "candidata con riserva").
+Niente: la base non è congelata. Decide Dennis (§7.12 di `REVISIONE.md`); il protocollo non prevede lo stato "candidata con riserva" (la bozza di questo punto lo proponeva, errore corretto dopo la revisione).
