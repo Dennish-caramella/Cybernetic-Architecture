@@ -1,0 +1,9 @@
+[     1s] tasselli catastali riscaricati 34 0 ancora vuoti
+[    12s] particelle con fori ricostruiti 4574
+[    12s] particelle 132873 di terreno 124128
+[    16s] DBT: unità 230852
+[   521s] quote PGT e DUSAF
+[   523s] screening ds503: candidati 130 codificati in v3 111 chiavi v3 non più candidate 0
+[   523s] lotti da riusare 177
+[   526s] lotti {'area di attivazione': 286, 'lotto edificabile': 203, 'lotto da riusare': 160} tessuto consolidato 52
+[   529s] sensibilita {'scenario': 'gfu_come_v5', 'conteggi': {'area di attivazione': 286, 'lotto edificabile': 203, 'lotto da riusare': 160}, 'tessuto_consolidato': 52, 'edificabili_in_ambito': 30, 'capacita_edificabili': {'cap_far05': 14460, 'cap_far1': 29021, 'cap_far2': 58152}, 'capacita_edificabili_in_ambito_far1': 8437, 'tc_alloggi_far1': 4046, 'tc_ha': np.float64(112.8), 'area_ha': {'area di attivazione': 302.9, 'lotto da riusare': 16.5, 'lotto edificabile': 332.9}, 'utc': '2026-11-14T202318Z', 'sha256_run_py': '19e3f71f64085787bdba77f41c077993638655e4759563ecbb2ac730e11024b8'}

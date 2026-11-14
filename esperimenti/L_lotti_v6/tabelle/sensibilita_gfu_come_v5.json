@@ -1,0 +1,25 @@
+{
+ "scenario": "gfu_come_v5",
+ "conteggi": {
+  "area di attivazione": 286,
+  "lotto edificabile": 203,
+  "lotto da riusare": 160
+ },
+ "tessuto_consolidato": 52,
+ "edificabili_in_ambito": 30,
+ "capacita_edificabili": {
+  "cap_far05": 14460,
+  "cap_far1": 29021,
+  "cap_far2": 58152
+ },
+ "capacita_edificabili_in_ambito_far1": 8437,
+ "tc_alloggi_far1": 4046,
+ "tc_ha": 112.8,
+ "area_ha": {
+  "area di attivazione": 302.9,
+  "lotto da riusare": 16.5,
+  "lotto edificabile": 332.9
+ },
+ "utc": "2026-11-14T202318Z",
+ "sha256_run_py": "19e3f71f64085787bdba77f41c077993638655e4759563ecbb2ac730e11024b8"
+}

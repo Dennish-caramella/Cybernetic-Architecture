@@ -1,0 +1,17 @@
+versione,definizione,voce,n,ha
+v5,"a) lotti con ambito_id GFU_5267, per classe",area di attivazione,22,64.14
+v5,"a) lotti con ambito_id GFU_5267, per classe",lotto da riusare,5,1.34
+v5,"b) lotti con ambito_id GFU_5267, per origine/motivo",AT / GFU 2030: residenza non verificata [L],19,58.42
+v5,"b) lotti con ambito_id GFU_5267, per origine/motivo",AT / verde di servizio PGT,3,5.72
+v5,"b) lotti con ambito_id GFU_5267, per origine/motivo",dbt_diruto,5,1.34
+v5,c) area dei lotti di qualunque ambito dentro il poligono AT 2012 5267,tutti,27,63.84
+v6,c) area dei lotti di qualunque ambito dentro il poligono AT 2012 5267,tutti,0,0.0
+v6 tessuto consolidato,"a) lotti con ambito_id GFU_5267, per classe",area di attivazione,7,6.04
+v6 tessuto consolidato,"a) lotti con ambito_id GFU_5267, per classe",lotto da riusare,5,1.34
+v6 tessuto consolidato,"a) lotti con ambito_id GFU_5267, per classe",lotto edificabile,15,58.1
+v6 tessuto consolidato,"b) lotti con ambito_id GFU_5267, per origine/motivo",AT,15,58.1
+v6 tessuto consolidato,"b) lotti con ambito_id GFU_5267, per origine/motivo",AT / taglia < 1.500 m²,4,0.33
+v6 tessuto consolidato,"b) lotti con ambito_id GFU_5267, per origine/motivo",AT / verde di servizio PGT,3,5.72
+v6 tessuto consolidato,"b) lotti con ambito_id GFU_5267, per origine/motivo",dbt_diruto,5,1.34
+v6 tessuto consolidato,c) area dei lotti di qualunque ambito dentro il poligono AT 2012 5267,tutti,27,63.84
+-,d) area del poligono AT 2012 5267 (perimetro GFU sostitutivo),poligono,1,85.55

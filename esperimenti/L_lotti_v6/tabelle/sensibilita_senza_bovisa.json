@@ -1,0 +1,25 @@
+{
+ "scenario": "senza_bovisa",
+ "conteggi": {
+  "area di attivazione": 269,
+  "lotto edificabile": 226,
+  "lotto da riusare": 164
+ },
+ "tessuto_consolidato": 25,
+ "edificabili_in_ambito": 47,
+ "capacita_edificabili": {
+  "cap_far05": 18843,
+  "cap_far1": 37799,
+  "cap_far2": 75715
+ },
+ "capacita_edificabili_in_ambito_far1": 16160,
+ "tc_alloggi_far1": 3931,
+ "tc_ha": 47.3,
+ "area_ha": {
+  "area di attivazione": 214.5,
+  "lotto da riusare": 17.7,
+  "lotto edificabile": 433.3
+ },
+ "utc": "2026-11-14T202231Z",
+ "sha256_run_py": "19e3f71f64085787bdba77f41c077993638655e4759563ecbb2ac730e11024b8"
+}

@@ -1,0 +1,46 @@
+tipo,at2012_objectid,at2012_nome,at2012_funzione,pcu,area_2012_ha,ambiti_2030,sovrapposizioni_minori,esito
+AT 2012,5263.0,Piazza d'Armi,RESIDENZIALE,0.0,61.8,,,GFU 2030 Piazza d'Armi (perimetro 2012 sostitutivo [H]); residenza non verificata [L]
+AT 2012,5264.0,Ronchetto sul Naviglio,RESIDENZIALE,0.0,11.67,,,GFU 2030 Ronchetto (perimetro 2012 sostitutivo [H]); residenza non verificata [L]
+AT 2012,5265.0,Romana,RESIDENZIALE,0.0,21.72,"ADP_29 AdP Scali ferroviari Scalo Di Porta Romana (res. si; 0.99 del 2012, 0.99 del 2030)",,sopravvive (ADP; 2012 RESIDENZIALE -> 2030 residenza si)
+AT 2012,5266.0,Lambrate,RESIDENZIALE,0.0,7.07,"ADP_25 AdP Scali ferroviari Scalo Di Lambrate (res. si; 0.91 del 2012, 0.91 del 2030)",,sopravvive (ADP; 2012 RESIDENZIALE -> 2030 residenza si)
+AT 2012,5267.0,Bovisa,RESIDENZIALE,0.0,85.55,,,GFU 2030 Bovisa-Goccia (perimetro 2012 sostitutivo [H]); residenza non verificata [L]
+AT 2012,5268.0,Porta Genova,RESIDENZIALE,0.0,10.9,"ADP_28 AdP Scali ferroviari Scalo E Stazione Porta Genova (res. si; 0.78 del 2012, 0.95 del 2030)",,sopravvive (ADP; 2012 RESIDENZIALE -> 2030 residenza si)
+AT 2012,5269.0,Caserma Mameli,RESIDENZIALE,0.0,10.6,"MA_6 PA6 Caserma Mameli (res. si; 0.94 del 2012, 0.99 del 2030)",,sopravvive (PA; 2012 RESIDENZIALE -> 2030 residenza si)
+AT 2012,5270.0,Comprensorio XXIV Maggio-Magenta-Carroccio,RESIDENZIALE,0.0,4.13,,,non presente negli strati 2030 raggiungibili [L]
+AT 2012,5271.0,Stephenson,TERZIARIO,0.0,44.6,,MA_2 0.06; MA_14 0.05,non presente negli strati 2030 raggiungibili [L]; in parte in MA_2 PA1/b (res. no; 0.06); in parte in MA_14 PA1/b (res. no; 0.05)
+AT 2012,5272.0,Rogoredo,RESIDENZIALE,0.0,2.11,"ADP_26 AdP Scali ferroviari Scalo Di Rogoredo (res. si; 0.92 del 2012, 0.92 del 2030)",,sopravvive (ADP; 2012 RESIDENZIALE -> 2030 residenza si)
+AT 2012,5273.0,Caserma Montello,RESIDENZIALE,0.0,7.18,,,non presente negli strati 2030 raggiungibili [L]
+AT 2012,5274.0,Caserma Rubattino,RESIDENZIALE,0.0,8.19,,,non presente negli strati 2030 raggiungibili [L]
+AT 2012,5275.0,Magazzini raccordati Stazione Centrale,RESIDENZIALE,0.0,22.53,,,non presente negli strati 2030 raggiungibili [L]
+AT 2012,5276.0,Toffetti,TERZIARIO,0.0,8.66,,,non presente negli strati 2030 raggiungibili [L]
+AT 2012,5277.0,Greco-Breda,RESIDENZIALE,0.0,1.43,"ADP_24 AdP Scali ferroviari Scalo Greco Breda (res. si; 0.90 del 2012, 0.17 del 2030)",,sopravvive (ADP; 2012 RESIDENZIALE -> 2030 residenza si)
+AT 2012,5278.0,Greco-Breda,RESIDENZIALE,0.0,3.31,"ADP_24 AdP Scali ferroviari Scalo Greco Breda (res. si; 0.95 del 2012, 0.43 del 2030)",,sopravvive (ADP; 2012 RESIDENZIALE -> 2030 residenza si)
+AT 2012,5279.0,Greco-Breda,RESIDENZIALE,0.0,2.47,"ADP_24 AdP Scali ferroviari Scalo Greco Breda (res. si; 0.73 del 2012, 0.25 del 2030)",,sopravvive (ADP; 2012 RESIDENZIALE -> 2030 residenza si)
+AT 2012,5280.0,San Cristoforo,RESIDENZIALE,0.0,11.92,"ADP_27 AdP Scali ferroviari Aree Ferroviarie San Cristoforo (res. no; 0.93 del 2012, 0.70 del 2030)",,cambia destinazione (ADP; 2012 RESIDENZIALE -> 2030 residenza no)
+AT 2012,5281.0,Porto di Mare,RESIDENZIALE,0.0,35.88,,,GFU 2030 Porto di Mare (perimetro 2012 sostitutivo [H]); residenza non verificata [L]
+AT 2012,5282.0,San Cristoforo,SERVIZI,0.0,5.26,"ADP_27 AdP Scali ferroviari Aree Ferroviarie San Cristoforo (res. no; 0.76 del 2012, 0.25 del 2030)",,sopravvive (ADP; 2012 SERVIZI -> 2030 residenza no)
+AT 2012,5283.0,Le Abbazie (PCU3),RESIDENZIALE,1.0,6.66,,,PCU 2012 (parco): non è un ambito di trasformazione; filtro di esclusione mantenuto
+AT 2012,5284.0,L'Idroscalo (PCU4),RESIDENZIALE,1.0,250.5,,,PCU 2012 (parco): non è un ambito di trasformazione; filtro di esclusione mantenuto
+AT 2012,5285.0,Monlué (PCU5),RESIDENZIALE,1.0,74.08,,,PCU 2012 (parco): non è un ambito di trasformazione; filtro di esclusione mantenuto
+AT 2012,5286.0,I Navigli (PCU2),RESIDENZIALE,1.0,529.03,,,PCU 2012 (parco): non è un ambito di trasformazione; filtro di esclusione mantenuto
+AT 2012,5287.0,Le Abbazie (PCU3),RESIDENZIALE,1.0,1576.95,,,PCU 2012 (parco): non è un ambito di trasformazione; filtro di esclusione mantenuto
+AT 2012,5288.0,Il Bosco in Città (PCU1),RESIDENZIALE,1.0,995.59,,,PCU 2012 (parco): non è un ambito di trasformazione; filtro di esclusione mantenuto
+AT 2012,5294.0,via Messina,RESIDENZIALE,0.0,3.18,,,non presente negli strati 2030 raggiungibili [L]
+AT 2012,5295.0,via Don Giovanni Calabria,RESIDENZIALE,0.0,7.25,,,non presente negli strati 2030 raggiungibili [L]
+AT 2012,5296.0,Farini-Lugano,RESIDENZIALE,0.0,62.93,"ADP_23 AdP Scali ferroviari Scalo Di Farini (res. si; 0.97 del 2012, 0.98 del 2030)",,sopravvive (ADP; 2012 RESIDENZIALE -> 2030 residenza si)
+AT 2012,5297.0,via Litta Modignani,RESIDENZIALE,0.0,15.58,,,non presente negli strati 2030 raggiungibili [L]
+ambito 2030,,,,,,MA_1 PA2* via Natta (res. no),,nuovo (quota massima coperta da un AT 2012: 0.00)
+ambito 2030,,,,,,MA_3 PA4/a Basmetto (res. no),,nuovo (quota massima coperta da un AT 2012: 0.00)
+ambito 2030,,,,,,MA_4 PA1/a Bruzzano (res. si),,nuovo (quota massima coperta da un AT 2012: 0.00)
+ambito 2030,,,,,,MA_5 PA7 Trotto (res. si),,nuovo (quota massima coperta da un AT 2012: 0.00)
+ambito 2030,,,,,,MA_7 AS/1 Bellarmino (res. no),,nuovo (quota massima coperta da un AT 2012: 0.02)
+ambito 2030,,,,,,MA_8 PA8 via Novate (res. si),,nuovo (quota massima coperta da un AT 2012: 0.00)
+ambito 2030,,,,,,MA_9 PA4/b Basmetto (res. si),,nuovo (quota massima coperta da un AT 2012: 0.00)
+ambito 2030,,,,,,MA_10 PA2*/b via Natta (res. no),,nuovo (quota massima coperta da un AT 2012: 0.00)
+ambito 2030,,,,,,MA_11 PA1/c Vaiano Valle Nord (res. si),,nuovo (quota massima coperta da un AT 2012: 0.01)
+ambito 2030,,,,,,MA_12 PA2 via Natta (res. si),,nuovo (quota massima coperta da un AT 2012: 0.00)
+ambito 2030,,,,,,MA_13 AS/2 Vaiano Valle Sud (res. no),,nuovo (quota massima coperta da un AT 2012: 0.01)
+ambito 2030,,,,,,MA_15 PA5 piazza Lugano (res. no),,nuovo (quota massima coperta da un AT 2012: 0.01)
+ambito 2030,,,,,,MA_16 PA2* via Natta (res. si),,nuovo (quota massima coperta da un AT 2012: 0.00)
+ambito 2030,,,,,,MA_17 PA3 viale Molise (res. si),,nuovo (quota massima coperta da un AT 2012: 0.00)
+ambito 2030,,,,,,MA_18 PA2/a via Natta (res. no),,nuovo (quota massima coperta da un AT 2012: 0.00)

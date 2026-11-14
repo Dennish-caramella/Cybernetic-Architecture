@@ -1,0 +1,9 @@
+[     1s] tasselli catastali riscaricati 34 0 ancora vuoti
+[    12s] particelle con fori ricostruiti 4574
+[    12s] particelle 132873 di terreno 124128
+[    16s] DBT: unità 230852
+[   462s] quote PGT e DUSAF
+[   463s] screening ds503: candidati 130 codificati in v3 111 chiavi v3 non più candidate 0
+[   464s] lotti da riusare 177
+[   467s] lotti {'area di attivazione': 269, 'lotto edificabile': 220, 'lotto da riusare': 160} tessuto consolidato 52
+[   472s] fatto {'area di attivazione': 269, 'lotto edificabile': 220, 'lotto da riusare': 160} {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': 'in attesa dei due codificatori', 'C6': True, 'C8': True} b0db2c5afcd7

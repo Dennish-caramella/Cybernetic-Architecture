@@ -1,0 +1,85 @@
+tipo,id,classe,origine,area_m2,ambito_id,strato,codice
+lotto,A00458,area di attivazione,AT / ambito PGT 2030 senza residenza,71952.3,ADP_27,S2,C301
+lotto,A00512,area di attivazione,AT / verde di servizio PGT,42283.5,MA_3,S2,C302
+lotto,A00529,area di attivazione,AT / verde di servizio PGT,2258.6,ADP_23,S2,C303
+lotto,A00569,area di attivazione,AT / verde di servizio PGT,20768.3,GFU_5281,S2,C304
+lotto,E00201,lotto edificabile,AT,10140.0,MA_12,S2,C305
+lotto,E00263,lotto edificabile,AT,34511.5,ADP_23,S2,C306
+lotto,A00538,area di attivazione,AT / taglia < 1.500 m²,846.5,ADP_23,S2,C307
+lotto,E00184,lotto edificabile,AT,37746.4,GFU_5263,S2,C308
+lotto,R00038,lotto da riusare,ds503,749.2,MA_4,S2,C309
+lotto,E00298,lotto edificabile,AT,1603.8,ADP_24,S2,C310
+lotto,E00253,lotto edificabile,AT,71625.6,ADP_23,S2,C311
+lotto,E00262,lotto edificabile,AT,87282.3,ADP_23,S2,C312
+lotto,E00214,lotto edificabile,AT,56713.6,GFU_5264,S2,C313
+lotto,A00556,area di attivazione,AT / valore paesaggistico PGT,11297.0,MA_11,S2,C314
+lotto,E00187,lotto edificabile,AT,22553.8,GFU_5263,S2,C315
+lotto,E00264,lotto edificabile,AT,98114.4,ADP_23,S2,C316
+lotto,A00450,area di attivazione,AT / ambito PGT 2030 senza residenza,5940.9,MA_14,S2,C317
+lotto,R00112,lotto da riusare,dbt_diruto,533.5,GFU_5281,S2,C318
+lotto,E00193,lotto edificabile,AT,23087.7,GFU_5263,S2,C319
+lotto,E00322,lotto edificabile,AT,20433.6,ADP_26,S2,C320
+lotto,A00559,area di attivazione,AT / taglia < 1.500 m²,1243.6,ADP_24,S2,C321
+lotto,A00557,area di attivazione,AT / taglia < 1.500 m²,1002.2,MA_11,S2,C322
+lotto,E00186,lotto edificabile,AT,46024.1,GFU_5263,S2,C323
+lotto,E00306,lotto edificabile,AT,2252.9,ADP_24,S2,C324
+lotto,E00269,lotto edificabile,AT,32748.0,ADP_23,S2,C325
+lotto,E00312,lotto edificabile,AT,39474.5,GFU_5281,S2,C326
+lotto,E00266,lotto edificabile,AT,62138.0,ADP_23,S2,C327
+lotto,A00456,area di attivazione,AT / taglia < 1.500 m²,700.6,GFU_5263,S2,C328
+lotto,A00468,area di attivazione,AT / ambito PGT 2030 senza residenza,39293.2,ADP_27,S2,C329
+lotto,E00222,lotto edificabile,AT,13591.5,ADP_28,S2,C330
+lotto,E00205,lotto edificabile,AT,41254.5,MA_5,S2,C331
+lotto,E00189,lotto edificabile,AT,11925.2,GFU_5263,S2,C332
+lotto,E00191,lotto edificabile,AT,39377.4,GFU_5263,S2,C333
+lotto,E00255,lotto edificabile,AT,46414.0,MA_4,S2,C334
+lotto,A00510,area di attivazione,AT / verde di servizio PGT,20758.5,MA_3,S2,C335
+lotto,A00457,area di attivazione,AT / verde di servizio PGT,9634.3,MA_18,S2,C336
+lotto,E00268,lotto edificabile,AT,91758.7,ADP_23,S2,C337
+lotto,R00055,lotto da riusare,dbt_diruto,359.8,ADP_23,S2,C338
+lotto,E00206,lotto edificabile,AT,51382.8,MA_5,S2,C339
+lotto,E00200,lotto edificabile,AT,12567.0,MA_5,S2,C340
+lotto,E00237,lotto edificabile,AT,1947.8,ADP_28,S2,C341
+lotto,R00016,lotto da riusare,ds503,351.4,ADP_28,S2,C342
+lotto,E00247,lotto edificabile,AT,31312.9,ADP_28,S2,C343
+lotto,E00313,lotto edificabile,AT,47502.7,GFU_5281,S2,C344
+lotto,E00258,lotto edificabile,AT,41951.1,ADP_23,S2,C345
+lotto,R00041,lotto da riusare,dbt_diruto,468.6,ADP_23,S2,C346
+lotto,A00570,area di attivazione,AT / verde di servizio PGT,695.4,GFU_5281,S2,C347
+lotto,E00316,lotto edificabile,AT,41375.5,GFU_5281,S2,C348
+lotto,A00503,area di attivazione,AT / taglia < 1.500 m²,977.3,ADP_28,S2,C349
+lotto,E00202,lotto edificabile,AT,5525.5,GFU_5263,S2,C350
+lotto,E00261,lotto edificabile,AT,64152.0,MA_4,S2,C351
+lotto,E00303,lotto edificabile,AT,15522.1,ADP_24,S2,C352
+lotto,R00118,lotto da riusare,dbt_diruto,244.4,GFU_5281,S2,C353
+lotto,E00257,lotto edificabile,AT,38389.9,ADP_28,S2,C354
+lotto,E00249,lotto edificabile,AT,14222.0,ADP_23,S2,C355
+lotto,A00577,area di attivazione,AT / verde di servizio PGT,33711.0,GFU_5281,S2,C356
+lotto,R00097,lotto da riusare,dbt_diruto,478.2,ADP_24,S2,C357
+lotto,A00463,area di attivazione,AT / ambito PGT 2030 senza residenza,6480.2,MA_10,S2,C358
+lotto,A00504,area di attivazione,AT / verde di servizio PGT,24719.9,MA_8,S2,C359
+lotto,E00315,lotto edificabile,AT,54395.9,GFU_5281,S2,C360
+lotto,E00192,lotto edificabile,AT,220524.9,GFU_5263,S2,C361
+lotto,E00213,lotto edificabile,AT,59535.6,GFU_5264,S2,C362
+lotto,R00037,lotto da riusare,ds503,448.6,MA_4,S2,C363
+lotto,E00274,lotto edificabile,AT,2399.6,ADP_23,S2,C364
+lotto,E00203,lotto edificabile,AT,11746.3,MA_16,S2,C365
+lotto,A00449,area di attivazione,AT / ambito PGT 2030 senza residenza,25471.2,MA_2,S2,C366
+lotto,E00199,lotto edificabile,AT,135200.6,GFU_5263,S2,C367
+lotto,E00196,lotto edificabile,AT,9047.1,GFU_5263,S2,C368
+lotto,E00319,lotto edificabile,AT,33469.8,GFU_5281,S2,C369
+lotto,R00043,lotto da riusare,dbt_diruto,894.7,ADP_23,S2,C370
+lotto,A00467,area di attivazione,AT / ambito PGT 2030 senza residenza,50050.1,ADP_27,S2,C371
+lotto,A00455,area di attivazione,AT / verde di servizio PGT,10379.7,MA_18,S2,C372
+lotto,A00462,area di attivazione,AT / ambito PGT 2030 senza residenza,3286.5,MA_1,S2,C373
+lotto,E00304,lotto edificabile,AT,15214.3,ADP_24,S2,C374
+lotto,E00251,lotto edificabile,AT,29101.6,MA_9,S2,C375
+lotto,E00295,lotto edificabile,AT,13128.6,MA_11,S2,C376
+lotto,R00098,lotto da riusare,dbt_diruto,273.1,ADP_24,S2,C377
+lotto,E00272,lotto edificabile,AT,2163.3,ADP_23,S2,C378
+lotto,R00099,lotto da riusare,dbt_diruto,675.2,ADP_24,S2,C379
+lotto,A00451,area di attivazione,ds503 / ambito PGT 2030 senza residenza,1026.2,MA_2,S2,C380
+lotto,E00294,lotto edificabile,AT,7426.8,MA_11,S2,C381
+lotto,R00040,lotto da riusare,dbt_diruto,3279.8,ADP_23,S2,C382
+lotto,A00558,area di attivazione,AT / valore paesaggistico PGT,31521.7,MA_11,S2,C383
+lotto,R00034,lotto da riusare,dbt_diruto+ds503,677.0,MA_4,S2,C384
