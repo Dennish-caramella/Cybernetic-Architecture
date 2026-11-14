@@ -1,0 +1,641 @@
+{
+ "pilota": null,
+ "parametri": {
+  "a_min_parcel": 300.0,
+  "excl_share": 0.5,
+  "occ_res_share": 0.5,
+  "free_cover_max": 0.1,
+  "snap_m": 20.0,
+  "buffer_m": 2.0,
+  "max_area_m2": 60000.0,
+  "lot_min_m2": 1500.0,
+  "att_min_m2": 500.0,
+  "dual_min_m2": 5000.0,
+  "green_deficit_q": 0.25,
+  "storey_m": 3.2,
+  "yield_": 0.7,
+  "gfa_dw": 80.0,
+  "fars": [
+   0.5,
+   1.0,
+   2.0
+  ],
+  "dusaf_conf_comune": [
+   "131",
+   "132",
+   "133",
+   "134",
+   "1412"
+  ],
+  "riuso_intorno_m": 10.0,
+  "riuso_intorno_sens": [
+   5.0,
+   20.0
+  ],
+  "seed_campione": 6611,
+  "seed_screening": 3513,
+  "n2_max": 140,
+  "px": 800,
+  "lotto_grande_m2": 10000.0,
+  "gfu_res": "si [H]",
+  "pv_dusaf_min": 0.5,
+  "pv_cover_max": 0.1,
+  "cantiere_si": "si",
+  "sim_m2": 0.01,
+  "orto_service": "https://www.cartografia.servizirl.it/arcgis2/rest/services/BaseMap/Ortofoto2018_2019/ImageServer",
+  "s2_tiles": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2025_3857/default/GoogleMapsCompatible",
+  "s2_min_m": 600.0,
+  "at_esito_quota": 0.25,
+  "soglia_C5a": 0.7,
+  "soglia_C5b": 0.25,
+  "soglia_kappa": 0.6,
+  "overlap_m2": 1.0
+ },
+ "seme": 42,
+ "riuso_intorno": {
+  "intorno_m": 10.0,
+  "ha_regola_v3": 68.89,
+  "ha_intorno": 18.85,
+  "ha_liberati": 50.04,
+  "ha_liberati_a_edificabili": 12.38,
+  "ha_liberati_a_attivazione": 0.73,
+  "ha_liberati_fuori_base": 36.93,
+  "alloggi_riuso_v3_far05": 2919,
+  "alloggi_riuso_v4_far05": 739,
+  "alloggi_su_liberati_edificabili_far05_I": 541,
+  "alloggi_riuso_v3_far1": 5936,
+  "alloggi_riuso_v4_far1": 1564,
+  "alloggi_su_liberati_edificabili_far1_I": 1083,
+  "alloggi_riuso_v3_far2": 11965,
+  "alloggi_riuso_v4_far2": 3212,
+  "alloggi_su_liberati_edificabili_far2_I": 2166,
+  "sens_5m_ha": 14.96,
+  "sens_5m_alloggi_far1": 1216,
+  "sens_20m_ha": 25.27,
+  "sens_20m_alloggi_far1": 2119,
+  "rapporto_area_impronta": {
+   "mediana": 2.6,
+   "p99": 30.02,
+   "max": 90.19,
+   "v3_mediana": 4.45
+  }
+ },
+ "ambiti_2030_senza_residenza": {
+  "lotti": 8,
+  "ha": 20.35,
+  "alloggi_far1_se_edificabili_I": 1766,
+  "per_ambito": {
+   "ADP_27": 16.13,
+   "MA_1": 0.33,
+   "MA_10": 0.65,
+   "MA_14": 0.59,
+   "MA_2": 2.65
+  },
+  "gfu_lotti": 0,
+  "gfu_ha": 0.0,
+  "gfu_alloggi_far1_se_edificabili_I": 0
+ },
+ "aggancio_ds677": {
+  "chiavi_ds677": 19422,
+  "agganciate": 15297,
+  "quota": 0.788,
+  "chiavi_terreno": 18442,
+  "terreno_agganciate": 14639,
+  "quota_terreno": 0.794
+ },
+ "d5_residenza_occupata_AT": {
+  "particelle": 85,
+  "ha": 34.81,
+  "copertura_lt_0_10": 12,
+  "per_ambito": {
+   "ADP_23": 6.42,
+   "ADP_24": 2.98,
+   "ADP_25": 0.89,
+   "ADP_28": 0.08,
+   "ADP_29": 0.13,
+   "GFU_5263": 3.9,
+   "GFU_5267": 3.71,
+   "GFU_5281": 0.14,
+   "MA_11": 0.04,
+   "MA_14": 1.51,
+   "MA_17": 0.56,
+   "MA_4": 2.87,
+   "MA_5": 2.6,
+   "MA_6": 6.7,
+   "MA_8": 2.27
+  }
+ },
+ "tessuto_consolidato": {
+  "lotti": 52,
+  "ha": 112.81,
+  "poligoni": {
+   "ADP_25": "codifica 2",
+   "ADP_29": "codifica 2",
+   "GFU_5267": "codifica 2",
+   "MA_15": "codifica 2",
+   "MA_17": "codifica 2",
+   "MA_6": "codifica 2"
+  },
+  "per_classe": {
+   "lotto edificabile": 28,
+   "lotto da riusare": 14,
+   "area di attivazione": 10
+  },
+  "alloggi_cap_far05": 4553,
+  "alloggi_cap_far1": 9121,
+  "alloggi_cap_far2": 18262
+ },
+ "catasto_tasselli_riscaricati": {
+  "n": 34,
+  "ancora_vuoti": [],
+  "particelle_recuperate": 17866
+ },
+ "strati_C5": {
+  "N1": 565,
+  "N2": 84,
+  "v5_campione": 120,
+  "v5_ritenuti": 120,
+  "v5_scartati": [],
+  "ritenuti": [
+   "C002",
+   "C004",
+   "C008",
+   "C009",
+   "C013",
+   "C015",
+   "C016",
+   "C017",
+   "C019",
+   "C021",
+   "C023",
+   "C024",
+   "C026",
+   "C027",
+   "C028",
+   "C029",
+   "C032",
+   "C034",
+   "C036",
+   "C037",
+   "C041",
+   "C042",
+   "C043",
+   "C044",
+   "C046",
+   "C053",
+   "C054",
+   "C055",
+   "C056",
+   "C058",
+   "C061",
+   "C063",
+   "C067",
+   "C068",
+   "C070",
+   "C071",
+   "C072",
+   "C076",
+   "C077",
+   "C078",
+   "C080",
+   "C082",
+   "C086",
+   "C087",
+   "C088",
+   "C089",
+   "C090",
+   "C092",
+   "C093",
+   "C095",
+   "C096",
+   "C097",
+   "C098",
+   "C099",
+   "C100",
+   "C101",
+   "C102",
+   "C103",
+   "C105",
+   "C108",
+   "C109",
+   "C110",
+   "C111",
+   "C112",
+   "C113",
+   "C116",
+   "C117",
+   "C120",
+   "C121",
+   "C123",
+   "C126",
+   "C127",
+   "C130",
+   "C132",
+   "C133",
+   "C135",
+   "C137",
+   "C139",
+   "C142",
+   "C145",
+   "C147",
+   "C148",
+   "C150",
+   "C151",
+   "C153",
+   "C154",
+   "C157",
+   "C160",
+   "C164",
+   "C165",
+   "C169",
+   "C170",
+   "C171",
+   "C172",
+   "C174",
+   "C177",
+   "C179",
+   "C182",
+   "C185",
+   "C186",
+   "C187",
+   "C188",
+   "C190",
+   "C191",
+   "C192",
+   "C194",
+   "C198",
+   "C199",
+   "C200",
+   "C202",
+   "C203",
+   "C205",
+   "C206",
+   "C207",
+   "C209",
+   "C210",
+   "C211",
+   "C216",
+   "C218",
+   "C219"
+  ],
+  "q1_cod": [
+   0.7,
+   0.7167
+  ],
+  "q1_media": 0.7083,
+  "q2_star": 0.6439,
+  "n2": 84,
+  "censimento": true
+ },
+ "n_campione_S2": 84,
+ "allocazione_S2": {
+  "lotto edificabile": 47,
+  "area di attivazione": 24,
+  "lotto da riusare": 13
+ },
+ "sha256_chiave_v6": "6860336ce51f34d7a61a8aa706eb2a515a29f26cccaa33b965eb74928e949d99",
+ "C5_dettaglio": {
+  "N1": 565,
+  "N2": 84,
+  "n1_ritenuti": 120,
+  "n2": 84,
+  "kappa_binario": [
+   0.934,
+   0.967
+  ],
+  "cod1": {
+   "q_S1": 0.7,
+   "q_S2": 0.56,
+   "p": 0.6818,
+   "n_eff": 198.3,
+   "ic95_wilson": [
+    0.614,
+    0.743
+   ],
+   "base": {
+    "k": 16,
+    "n": 100,
+    "p": 0.16,
+    "ic95": [
+     0.101,
+     0.244
+    ]
+   },
+   "C5b_newcombe": [
+    0.522,
+    [
+     0.414,
+     0.607
+    ]
+   ]
+  },
+  "cod2": {
+   "q_S1": 0.717,
+   "q_S2": 0.512,
+   "p": 0.6902,
+   "n_eff": 201.8,
+   "ic95_wilson": [
+    0.623,
+    0.75
+   ],
+   "base": {
+    "k": 16,
+    "n": 100,
+    "p": 0.16,
+    "ic95": [
+     0.101,
+     0.244
+    ]
+   },
+   "C5b_newcombe": [
+    0.53,
+    [
+     0.423,
+     0.614
+    ]
+   ]
+  },
+  "C5a": 0.686,
+  "C5": false,
+  "S2_per_classe": {
+   "area di attivazione": [
+    0.604,
+    24
+   ],
+   "lotto da riusare": [
+    0.577,
+    13
+   ],
+   "lotto edificabile": [
+    0.489,
+    47
+   ]
+  },
+  "S2_E_piu_R": 0.508,
+  "S2_per_gruppo_ambito": {
+   "ADP": [
+    0.514,
+    35
+   ],
+   "GFU": [
+    0.261,
+    23
+   ],
+   "MA_": [
+    0.808,
+    26
+   ]
+  }
+ },
+ "C5": false,
+ "C7": "non è un criterio (deciso da Dennis in v5)",
+ "C9": "eliminato in v6: lo stato di attuazione è un attributo",
+ "C1": true,
+ "C2": true,
+ "C3_coppie_oltre_1m2": 0,
+ "C3_area_comune_max_m2": 0.232,
+ "C3": true,
+ "C4": true,
+ "C6": true,
+ "conteggi": {
+  "area di attivazione": 269,
+  "lotto edificabile": 220,
+  "lotto da riusare": 160
+ },
+ "conteggi_non_AT": {
+  "area di attivazione": 245,
+  "lotto edificabile": 173,
+  "lotto da riusare": 147
+ },
+ "conteggi_AT": {
+  "lotto edificabile": 47,
+  "area di attivazione": 24,
+  "lotto da riusare": 13
+ },
+ "capacita": {
+  "lotto da riusare": {
+   "cap_far05": 644,
+   "cap_far1": 1368,
+   "cap_far2": 2813,
+   "cap_recupero": 2655
+  },
+  "lotto edificabile": {
+   "cap_far05": 18318,
+   "cap_far1": 36744,
+   "cap_far2": 73605
+  },
+  "area di attivazione": {
+   "cap_far05": 0,
+   "cap_far1": 0,
+   "cap_far2": 0
+  }
+ },
+ "capacita_edificabili_AT": {
+  "cap_far05": 8070,
+  "cap_far1": 16160,
+  "cap_far2": 32350
+ },
+ "n_anche_attivazione": 19,
+ "edificabili_oltre_400_alloggi_far1": 29,
+ "origini": [
+  [
+   "area di attivazione",
+   "AMB_DEG / taglia < 1.500 m²",
+   7
+  ],
+  [
+   "area di attivazione",
+   "AMB_DEG / verde di servizio PGT",
+   1
+  ],
+  [
+   "area di attivazione",
+   "AT / ambito PGT 2030 senza residenza",
+   7
+  ],
+  [
+   "area di attivazione",
+   "AT / taglia < 1.500 m²",
+   5
+  ],
+  [
+   "area di attivazione",
+   "AT / valore paesaggistico PGT",
+   2
+  ],
+  [
+   "area di attivazione",
+   "AT / verde di servizio PGT",
+   9
+  ],
+  [
+   "area di attivazione",
+   "COMUNE / taglia < 1.500 m²",
+   10
+  ],
+  [
+   "area di attivazione",
+   "COMUNE / valore paesaggistico PGT",
+   8
+  ],
+  [
+   "area di attivazione",
+   "COMUNE / verde di servizio PGT",
+   34
+  ],
+  [
+   "area di attivazione",
+   "DUSAF13 / taglia < 1.500 m²",
+   16
+  ],
+  [
+   "area di attivazione",
+   "DUSAF13 / valore paesaggistico PGT",
+   3
+  ],
+  [
+   "area di attivazione",
+   "DUSAF13 / verde di servizio PGT",
+   15
+  ],
+  [
+   "area di attivazione",
+   "DUSAF1412 / area verde incolta DUSAF 1412",
+   91
+  ],
+  [
+   "area di attivazione",
+   "DUSAF1412 / valore paesaggistico PGT",
+   12
+  ],
+  [
+   "area di attivazione",
+   "DUSAF1412 / verde di servizio PGT",
+   47
+  ],
+  [
+   "area di attivazione",
+   "DUSAF_CAVA / cava o discarica DUSAF",
+   1
+  ],
+  [
+   "area di attivazione",
+   "ds503 / ambito PGT 2030 senza residenza",
+   1
+  ],
+  [
+   "lotto da riusare",
+   "dbt_diruto",
+   122
+  ],
+  [
+   "lotto da riusare",
+   "dbt_diruto+ds503",
+   14
+  ],
+  [
+   "lotto da riusare",
+   "ds503",
+   24
+  ],
+  [
+   "lotto edificabile",
+   "AMB_DEG",
+   4
+  ],
+  [
+   "lotto edificabile",
+   "AT",
+   47
+  ],
+  [
+   "lotto edificabile",
+   "COMUNE",
+   39
+  ],
+  [
+   "lotto edificabile",
+   "DEMANIO",
+   1
+  ],
+  [
+   "lotto edificabile",
+   "DUSAF13",
+   129
+  ]
+ ],
+ "proprieta": [
+  [
+   "area di attivazione",
+   "non agganciata",
+   200
+  ],
+  [
+   "area di attivazione",
+   "pubblico comunale",
+   69
+  ],
+  [
+   "lotto da riusare",
+   "non agganciata",
+   149
+  ],
+  [
+   "lotto da riusare",
+   "pubblico comunale",
+   11
+  ],
+  [
+   "lotto edificabile",
+   "Demanio",
+   2
+  ],
+  [
+   "lotto edificabile",
+   "non agganciata",
+   148
+  ],
+  [
+   "lotto edificabile",
+   "pubblico comunale",
+   70
+  ]
+ ],
+ "area_ha": {
+  "area di attivazione": 214.5,
+  "lotto da riusare": 16.5,
+  "lotto edificabile": 421.2
+ },
+ "scenario_riuso": {
+  "demolizione e ricostruzione": 138,
+  "recupero": 22
+ },
+ "stato_riferimento": {
+  "A": 35,
+  "non determinato [L]": 30,
+  "B": 11,
+  "C": 8
+ },
+ "potenziale_vuoto_n": 127,
+ "potenziale_vuoto_per_classe": {
+  "area di attivazione": 30,
+  "lotto da riusare": 1,
+  "lotto edificabile": 96
+ },
+ "nil_con_lotti": 73,
+ "hash_contenuto": "b0db2c5afcd7b1a49cf14bdb69a9d9bf3a9e3813bf895ea33f8eeec0e26c92da",
+ "C8_hash_precedente": "b0db2c5afcd7b1a49cf14bdb69a9d9bf3a9e3813bf895ea33f8eeec0e26c92da",
+ "C8": true,
+ "passa": false,
+ "registro": {
+  "utc": "2026-11-14T205539Z",
+  "commit": "dd0fcfe32a828eb4179dda9be3b52ee57e09aa11",
+  "modifiche_non_committate": [
+   "M esperimenti/L_lotti_v6/esecuzioni/log_completa_criteri.txt",
+   "?? esperimenti/L_lotti_v6/tabelle/controllo_ortofoto_esito_S2.csv"
+  ],
+  "sha256_run_py": "19e3f71f64085787bdba77f41c077993638655e4759563ecbb2ac730e11024b8",
+  "python": "3.13.18",
+  "durata_s": 474
+ }
+}

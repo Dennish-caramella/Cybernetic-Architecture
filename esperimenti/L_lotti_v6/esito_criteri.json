@@ -294,7 +294,100 @@
   "lotto da riusare": 13
  },
  "sha256_chiave_v6": "6860336ce51f34d7a61a8aa706eb2a515a29f26cccaa33b965eb74928e949d99",
- "C5": "in attesa dei due codificatori",
+ "C5_dettaglio": {
+  "N1": 565,
+  "N2": 84,
+  "n1_ritenuti": 120,
+  "n2": 84,
+  "kappa_binario": [
+   0.934,
+   0.967
+  ],
+  "cod1": {
+   "q_S1": 0.7,
+   "q_S2": 0.56,
+   "p": 0.6818,
+   "n_eff": 198.3,
+   "ic95_wilson": [
+    0.614,
+    0.743
+   ],
+   "base": {
+    "k": 16,
+    "n": 100,
+    "p": 0.16,
+    "ic95": [
+     0.101,
+     0.244
+    ]
+   },
+   "C5b_newcombe": [
+    0.522,
+    [
+     0.414,
+     0.607
+    ]
+   ]
+  },
+  "cod2": {
+   "q_S1": 0.717,
+   "q_S2": 0.512,
+   "p": 0.6902,
+   "n_eff": 201.8,
+   "ic95_wilson": [
+    0.623,
+    0.75
+   ],
+   "base": {
+    "k": 16,
+    "n": 100,
+    "p": 0.16,
+    "ic95": [
+     0.101,
+     0.244
+    ]
+   },
+   "C5b_newcombe": [
+    0.53,
+    [
+     0.423,
+     0.614
+    ]
+   ]
+  },
+  "C5a": 0.686,
+  "C5": false,
+  "S2_per_classe": {
+   "area di attivazione": [
+    0.604,
+    24
+   ],
+   "lotto da riusare": [
+    0.577,
+    13
+   ],
+   "lotto edificabile": [
+    0.489,
+    47
+   ]
+  },
+  "S2_E_piu_R": 0.508,
+  "S2_per_gruppo_ambito": {
+   "ADP": [
+    0.514,
+    35
+   ],
+   "GFU": [
+    0.261,
+    23
+   ],
+   "MA_": [
+    0.808,
+    26
+   ]
+  }
+ },
+ "C5": false,
  "C7": "non è un criterio (deciso da Dennis in v5)",
  "C9": "eliminato in v6: lo stato di attuazione è un attributo",
  "C1": true,
@@ -535,32 +628,14 @@
  "C8": true,
  "passa": false,
  "registro": {
-  "utc": "2026-11-14T203400Z",
-  "commit": "f4b8f44097a0ddffb721dacee9f3a54dd788aa9a",
+  "utc": "2026-11-14T205539Z",
+  "commit": "dd0fcfe32a828eb4179dda9be3b52ee57e09aa11",
   "modifiche_non_committate": [
-   "?? esperimenti/L_lotti_v6/README.md",
-   "?? esperimenti/L_lotti_v6/chiavi/",
-   "?? esperimenti/L_lotti_v6/controllo_codificatore_1/",
-   "?? esperimenti/L_lotti_v6/controllo_codificatore_2/",
-   "?? esperimenti/L_lotti_v6/esecuzioni/2026-11-14T200558Z_pilota/",
-   "?? esperimenti/L_lotti_v6/esecuzioni/2026-11-14T201408Z_completa/",
-   "?? esperimenti/L_lotti_v6/esecuzioni/2026-11-14T202219Z_completa/",
-   "?? esperimenti/L_lotti_v6/esecuzioni/log_completa1.txt",
-   "?? esperimenti/L_lotti_v6/esecuzioni/log_completa2.txt",
-   "?? esperimenti/L_lotti_v6/esecuzioni/log_completa3_prepara.txt",
-   "?? esperimenti/L_lotti_v6/esecuzioni/log_sens_gfu_come_v5.txt",
-   "?? esperimenti/L_lotti_v6/esecuzioni/log_sens_senza_bovisa.txt",
-   "?? esperimenti/L_lotti_v6/esecuzioni/log_sens_senza_regola_cantiere.txt",
-   "?? esperimenti/L_lotti_v6/esecuzioni/registro.txt",
-   "?? esperimenti/L_lotti_v6/esito_criteri.json",
-   "?? esperimenti/L_lotti_v6/lotti_v6.gpkg",
-   "?? esperimenti/L_lotti_v6/requirements.txt",
-   "?? esperimenti/L_lotti_v6/run.py",
-   "?? esperimenti/L_lotti_v6/tabelle/",
-   "?? esperimenti/L_lotti_v6/test_lotti.py"
+   "M esperimenti/L_lotti_v6/esecuzioni/log_completa_criteri.txt",
+   "?? esperimenti/L_lotti_v6/tabelle/controllo_ortofoto_esito_S2.csv"
   ],
   "sha256_run_py": "19e3f71f64085787bdba77f41c077993638655e4759563ecbb2ac730e11024b8",
   "python": "3.13.18",
-  "durata_s": 624
+  "durata_s": 474
  }
 }

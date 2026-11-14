@@ -1,0 +1,41 @@
+classe,passo,rimasti,rimossi
+comune,"particelle di terreno nel Comune (catasto, mappale numerico)",124114,
+riuso:fonti,ds503: punti,174,
+riuso:fonti,ds503: punti con un edificio DBT entro 20 m,165,
+riuso:fonti,DBT diruti (EDIFC_STAT=02),610,
+riuso:fonti,DBT diruti con volume fuori terra,447,
+riuso:fonti,edifici fonte distinti,595,
+riuso,edifici fonte su una particella di terreno del Comune,595,
+riuso:fonti,screening ds503: lotti candidati,130,
+riuso:fonti,screening ds503: lotti confermati (Q1 = D o tetto T2/T3),31,
+riuso,edifici fonte confermati (diruti DBT o ds503 confermati dallo screening),478,117
+riuso,"particelle con edifici fonte (aggregazione, non filtro)",392,
+riuso,particella >= 300 m²,293,99
+riuso,"non verde/agricolo/paesaggio/istruzione PGT, non acque DUSAF (>= 0,5)",220,73
+riuso,"non infrastrutture/verde/agricolo/boschi DUSAF (>= 0,5), salvo particelle AT",198,22
+riuso,fuori dai PCU,177,21
+edificabile+attivazione,"ingresso E1 (AT, AMB_DEG, DUSAF 133/134, Demanio disp., terreno comunale con DUSAF 131-134/1412)",3385,
+edificabile+attivazione,"ingresso E1 o A1 (anche DUSAF 1412, 131/132)",4123,
+edificabile+attivazione,particella >= 300 m²,2320,1803
+edificabile+attivazione,fuori dai PCU,2189,131
+edificabile+attivazione,"non acque DUSAF (>= 0,5)",2189,0
+edificabile+attivazione,"non infrastrutture/agricolo/boschi/verde in uso DUSAF (>= 0,5), salvo particelle AT",2186,3
+edificabile+attivazione,"non agricolo/istruzione PGT (>= 0,5)",2089,97
+edificabile+attivazione,"non residenza occupata (quota residenziale del volume < 0,5)",1889,200
+informativo,particelle AT tolte dal filtro residenza occupata (D5),85,
+edificabile,particelle verso l'abitazione,1303,
+attivazione,"particelle verso l'attivazione (vincolo PGT, ambito 2030 senza residenza o GFU [v5], ingresso solo verde/cava)",586,
+edificabile,"gruppi per adiacenza (aggregazione, non filtro)",302,
+attivazione,"gruppi per adiacenza (aggregazione, non filtro)",257,
+edificabile,lotto >= 1500 m²,249,53
+attivazione,gruppi >= 500 m² (A2) + gruppi edificabili 500-1.500 m² (A3),278,
+riuso,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),176,1
+edificabile,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),248,1
+attivazione,dopo la rimozione delle sovrapposizioni (sopra il minimo di classe),277,1
+riuso,"[v6] senza i lotti da riusare in ambito senza residenza (passano all'attivazione, D4)",174,2
+attivazione,[v6] più i lotti da riusare passati dall'ambito senza residenza (>= 500 m²),279,
+informativo,"[v6] lotti da riusare in ambito senza residenza (D4): totale / sotto il minimo di attivazione, fuori dalla base",2,
+riuso,[v6] senza i lotti in ambito con cantiere = si (tessuto urbano consolidato),160,14
+edificabile,[v6] senza i lotti in ambito con cantiere = si (tessuto urbano consolidato),220,28
+attivazione,[v6] senza i lotti in ambito con cantiere = si (tessuto urbano consolidato),269,10
+informativo,"[v6] lotti in ambito con cantiere = si, passati al tessuto consolidato",52,
