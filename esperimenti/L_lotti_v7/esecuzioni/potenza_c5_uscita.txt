@@ -1,0 +1,47 @@
+N_h {('F', 'E'): 173, ('F', 'R'): 147, ('F', 'A'): 245, ('D', 'E'): 43, ('D', 'R'): 20, ('D', 'A'): 23} N 651
+
+n_fuori=100 n_lotti=186 n_h={('F', 'E'): 31, ('F', 'R'): 26, ('F', 'A'): 43, ('D', 'E'): 43, ('D', 'R'): 20, ('D', 'A'): 23}
+  quota 0.60 (p vero 0.600): P(C5a passa)=0.004  P(C5b passa)=0.912
+  quota 0.65 (p vero 0.650): P(C5a passa)=0.098  P(C5b passa)=0.987
+  quota 0.68 (p vero 0.680): P(C5a passa)=0.289  P(C5b passa)=0.998
+  quota 0.70 (p vero 0.700): P(C5a passa)=0.478  P(C5b passa)=0.999
+  quota 0.72 (p vero 0.720): P(C5a passa)=0.734  P(C5b passa)=1.000
+  quota 0.75 (p vero 0.750): P(C5a passa)=0.920  P(C5b passa)=1.000
+  quota 0.80 (p vero 0.800): P(C5a passa)=0.999  P(C5b passa)=1.000
+  quota v6 [I] (p vero 0.699): P(C5a passa)=0.526  P(C5b passa)=0.999
+
+n_fuori=120 n_lotti=206 n_h={('F', 'E'): 37, ('F', 'R'): 31, ('F', 'A'): 52, ('D', 'E'): 43, ('D', 'R'): 20, ('D', 'A'): 23}
+  quota 0.60 (p vero 0.600): P(C5a passa)=0.002  P(C5b passa)=0.935
+  quota 0.65 (p vero 0.650): P(C5a passa)=0.078  P(C5b passa)=0.993
+  quota 0.68 (p vero 0.680): P(C5a passa)=0.275  P(C5b passa)=0.999
+  quota 0.70 (p vero 0.700): P(C5a passa)=0.471  P(C5b passa)=1.000
+  quota 0.72 (p vero 0.720): P(C5a passa)=0.752  P(C5b passa)=1.000
+  quota 0.75 (p vero 0.750): P(C5a passa)=0.938  P(C5b passa)=1.000
+  quota 0.80 (p vero 0.800): P(C5a passa)=1.000  P(C5b passa)=1.000
+  quota v6 [I] (p vero 0.699): P(C5a passa)=0.547  P(C5b passa)=1.000
+
+n_fuori=150 n_lotti=236 n_h={('F', 'E'): 46, ('F', 'R'): 39, ('F', 'A'): 65, ('D', 'E'): 43, ('D', 'R'): 20, ('D', 'A'): 23}
+  quota 0.60 (p vero 0.600): P(C5a passa)=0.000  P(C5b passa)=0.957
+  quota 0.65 (p vero 0.650): P(C5a passa)=0.034  P(C5b passa)=0.996
+  quota 0.68 (p vero 0.680): P(C5a passa)=0.254  P(C5b passa)=1.000
+  quota 0.70 (p vero 0.700): P(C5a passa)=0.475  P(C5b passa)=1.000
+  quota 0.72 (p vero 0.720): P(C5a passa)=0.776  P(C5b passa)=1.000
+  quota 0.75 (p vero 0.750): P(C5a passa)=0.975  P(C5b passa)=1.000
+  quota 0.80 (p vero 0.800): P(C5a passa)=1.000  P(C5b passa)=1.000
+  quota v6 [I] (p vero 0.699): P(C5a passa)=0.479  P(C5b passa)=1.000
+
+n_fuori=200 n_lotti=286 n_h={('F', 'E'): 61, ('F', 'R'): 52, ('F', 'A'): 87, ('D', 'E'): 43, ('D', 'R'): 20, ('D', 'A'): 23}
+  quota 0.60 (p vero 0.600): P(C5a passa)=0.000  P(C5b passa)=0.973
+  quota 0.65 (p vero 0.650): P(C5a passa)=0.015  P(C5b passa)=0.998
+  quota 0.68 (p vero 0.680): P(C5a passa)=0.213  P(C5b passa)=1.000
+  quota 0.70 (p vero 0.700): P(C5a passa)=0.477  P(C5b passa)=1.000
+  quota 0.72 (p vero 0.720): P(C5a passa)=0.814  P(C5b passa)=1.000
+  quota 0.75 (p vero 0.750): P(C5a passa)=0.990  P(C5b passa)=1.000
+  quota 0.80 (p vero 0.800): P(C5a passa)=1.000  P(C5b passa)=1.000
+  quota v6 [I] (p vero 0.699): P(C5a passa)=0.514  P(C5b passa)=1.000
+kappa: n=286 po=0.8 kappa=0.60 se=0.047 P(kappa>=0,60)=0.500
+kappa: n=286 po=0.85 kappa=0.70 se=0.042 P(kappa>=0,60)=0.991
+kappa: n=286 po=0.9 kappa=0.80 se=0.035 P(kappa>=0,60)=1.000
+kappa: n=336 po=0.8 kappa=0.60 se=0.044 P(kappa>=0,60)=0.500
+kappa: n=336 po=0.85 kappa=0.70 se=0.039 P(kappa>=0,60)=0.995
+kappa: n=336 po=0.9 kappa=0.80 se=0.033 P(kappa>=0,60)=1.000
