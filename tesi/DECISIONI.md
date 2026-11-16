@@ -54,3 +54,11 @@ Vedi `tesi/DOMANDA_DI_RICERCA.md`. Formula: scelta (c) — **il metodo è il con
 - **Progetti in stato avanzato o in costruzione** diventano **tessuto urbano consolidato**: contesto su cui basare le analisi, non lotti disponibili.
 
 Nota di metodo [I]: queste regole cambiano i criteri dopo aver visto l'esito di C9 e della revisione. Il protocollo (§6) vieta modifiche dopo l'esecuzione. Quindi la v6 va come nuova prova: nuova pre-registrazione su git prima di qualsiasi esecuzione, con la motivazione e il riferimento a v5 e alla revisione. v5 resta come prova documentata con esito "cambia".
+
+## 2026-11-16 — Base L v7 (dopo la revisione della v6, ticket #39)
+
+Dennis: "procedi con il nuovo passaggio". **Lettura di Claude, da confermare**: si adottano le raccomandazioni della revisione v6 (§7.12), non scelte esplicitamente da Dennis:
+- **GFU** in una classe separata, "edificabile per destinazione, non verificato": fuori dai totali, capacità solo come scenario. Il glossario resta com'è (lotto edificabile = area libera o dismessa).
+- **Tessuto consolidato** solo con cantiere documentato da fonte ufficiale o confermato da entrambi i codificatori del censimento. Bovisa resta "da verificare" (è una GFU); viale Molise (PA3) non è tessuto consolidato senza atto approvato.
+- **C5 con codifiche nuove**: la v6 ha mostrato dove fallisce (GFU 0,26); togliere le GFU e ricalcolare C5 sulle stesse codifiche sarebbe circolare. La v7 si valida con codifiche cieche nuove, fatte da due modelli diversi da quello delle codifiche precedenti, su un campione nuovo pre-registrato.
+- La verifica di Dennis sui 17 lotti GFU resta facoltativa: con le GFU fuori dai totali non blocca la base.
