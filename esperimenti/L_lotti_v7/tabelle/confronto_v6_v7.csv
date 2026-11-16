@@ -1,0 +1,13 @@
+classe,ambito,n_v6,ha_v6,far05_v6,far1_v6,far2_v6,recupero_v6,n_v7,ha_v7,far05_v7,far1_v7,far2_v7,recupero_v7,scen_far05,scen_far1,scen_far2,scen_recupero
+area di attivazione,fuori ambito 2030,245.0,172.9,0.0,0.0,0.0,,245.0,172.9,0.0,0.0,0.0,,,,,
+area di attivazione,in ambito 2030,24.0,41.6,0.0,0.0,0.0,,23.0,38.3,0.0,0.0,0.0,,,,,
+area di attivazione,totale,269.0,214.5,0.0,0.0,0.0,,268.0,211.3,0.0,0.0,0.0,,,,,
+"edificabile per destinazione, non verificato",in ambito 2030,,,,,,,50.0,159.5,0.0,0.0,0.0,,6454.0,12919.0,25857.0,128.0
+"edificabile per destinazione, non verificato",totale,,,,,,,50.0,159.5,0.0,0.0,0.0,,6454.0,12919.0,25857.0,128.0
+lotto da riusare,fuori ambito 2030,147.0,15.6,609.0,1292.0,2654.0,2535.0,147.0,15.6,609.0,1292.0,2654.0,2535.0,,,,
+lotto da riusare,in ambito 2030,13.0,0.9,35.0,76.0,159.0,120.0,20.0,1.7,63.0,137.0,284.0,363.0,,,,
+lotto da riusare,totale,160.0,16.5,644.0,1368.0,2813.0,2655.0,167.0,17.3,672.0,1429.0,2938.0,2898.0,,,,
+lotto edificabile,fuori ambito 2030,173.0,236.2,10248.0,20584.0,41255.0,,173.0,236.2,10248.0,20584.0,41255.0,,,,,
+lotto edificabile,in ambito 2030,47.0,185.0,8070.0,16160.0,32350.0,,43.0,140.9,6141.0,12301.0,24630.0,,,,,
+lotto edificabile,totale,220.0,421.2,18318.0,36744.0,73605.0,,216.0,377.1,16389.0,32885.0,65885.0,,,,,
+tessuto consolidato,in ambito 2030,52.0,112.8,4553.0,9121.0,18262.0,,,,,,,,,,,

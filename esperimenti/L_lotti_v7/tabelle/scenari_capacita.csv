@@ -1,0 +1,7 @@
+scenario,classi,n,far05,far1,far2
+(i) base v7 (senza GFU),lotti edificabili,216,16389,32885,65885
+(i) base v7 (senza GFU),edificabili + da riusare,383,17061,34314,68823
+(ii) base + GFU senza Bovisa,lotti edificabili,233,20247,40608,81338
+(ii) base + GFU senza Bovisa,edificabili + da riusare,406,20922,42043,84289
+(iii) base + GFU con Bovisa,lotti edificabili,248,22783,45683,91497
+(iii) base + GFU con Bovisa,edificabili + da riusare,433,23515,47233,94680

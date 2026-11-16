@@ -1,0 +1,10 @@
+ambito_id,ambito_pgt,classe_se_verificata,n,ha,cap_scen_far05,cap_scen_far1,cap_scen_far2,cap_scen_recupero,stato_riferimento,verifica_destinazione
+GFU_5263,Piazza d'Armi,area di attivazione,1,0.07,0,0,0,0,B,"non verificato: perimetro AT 2012 sostitutivo [H], destinazione e quota residenziale [L]"
+GFU_5263,Piazza d'Armi,lotto edificabile,10,55.1,2407,4818,9639,0,B,"non verificato: perimetro AT 2012 sostitutivo [H], destinazione e quota residenziale [L]"
+GFU_5264,Ronchetto,lotto edificabile,2,11.62,508,1016,2033,0,C,"non verificato: perimetro AT 2012 sostitutivo [H], destinazione e quota residenziale [L]"
+GFU_5267,Bovisa-Goccia,area di attivazione,7,6.04,0,0,0,0,non determinato [L],"da verificare: campus Politecnico [S] e cantiere su una parte del poligono (codifica 2 v5, fonte secondaria) [S]"
+GFU_5267,Bovisa-Goccia,lotto da riusare,5,1.34,57,115,232,128,non determinato [L],"da verificare: campus Politecnico [S] e cantiere su una parte del poligono (codifica 2 v5, fonte secondaria) [S]"
+GFU_5267,Bovisa-Goccia,lotto edificabile,15,58.1,2536,5075,10159,0,non determinato [L],"da verificare: campus Politecnico [S] e cantiere su una parte del poligono (codifica 2 v5, fonte secondaria) [S]"
+GFU_5281,Porto di Mare,area di attivazione,3,5.52,0,0,0,0,non determinato [L],"non verificato: perimetro AT 2012 sostitutivo [H], destinazione e quota residenziale [L]"
+GFU_5281,Porto di Mare,lotto da riusare,2,0.08,3,6,13,0,non determinato [L],"non verificato: perimetro AT 2012 sostitutivo [H], destinazione e quota residenziale [L]"
+GFU_5281,Porto di Mare,lotto edificabile,5,21.62,943,1889,3781,0,non determinato [L],"non verificato: perimetro AT 2012 sostitutivo [H], destinazione e quota residenziale [L]"
