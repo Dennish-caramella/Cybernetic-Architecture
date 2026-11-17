@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C501,,,,,,,,,,
-C502,,,,,,,,,,
-C503,,,,,,,,,,
-C504,,,,,,,,,,
-C505,,,,,,,,,,
-C506,,,,,,,,,,
-C507,,,,,,,,,,
-C508,,,,,,,,,,
-C509,,,,,,,,,,
-C510,,,,,,,,,,
-C511,,,,,,,,,,
-C512,,,,,,,,,,
-C513,,,,,,,,,,
-C514,,,,,,,,,,
-C515,,,,,,,,,,
-C516,,,,,,,,,,
-C517,,,,,,,,,,
-C518,,,,,,,,,,
-C519,,,,,,,,,,
-C520,,,,,,,,,,
-C521,,,,,,,,,,
+C501,U,0,,T1,V0,U+,N,asfalto in uso con mezzi e tetto parziale,c2_b01,2026-11-17T19:58:59Z
+C502,L,3,,,,,S,incolto con arbusti nessun edificio,c2_b01,2026-11-17T19:59:04Z
+C503,L,3,,,,,N,area verde incolta tra edifici,c2_b01,2026-11-17T19:59:09Z
+C504,C,3,,T1,V1,U-,N,area di cantiere o sterro con struttura metallica incerta,c2_b01,2026-11-17T19:59:15Z
+C505,L,3,,,,,N,incolto tra binari e strada,c2_b01,2026-11-17T19:59:20Z
+C506,U,0,,T1,V0,U?,S,striscia di copertura industriale poco leggibile,c2_b01,2026-11-17T19:59:26Z
+C507,L,3,,,,,N,prato incolto secco ai margini stradali,c2_b01,2026-11-17T19:59:31Z
+C508,U,0,,T1,V1,U-,N,edifici residenziali con alberi ai bordi,c2_b01,2026-11-17T19:59:36Z
+C509,L,3,,,,,S,suolo nudo e sterrato con piccolo parcheggio ai margini,c2_b01,2026-11-17T19:59:43Z
+C510,L,3,,,,,N,striscia di suolo nudo tra alberi incolti,c2_b01,2026-11-17T19:59:48Z
+C511,L,3,,,,,N,terreno incolto triangolare presso strada,c2_b01,2026-11-17T19:59:54Z
+C512,I,0,,,,,N,striscia stradale con alberi ai bordi incerta tra I e V,c2_b01,2026-11-17T20:00:00Z
+C513,I,0,,T1,V1,U+,N,piazzale di servizio con mezzi e alberi vicino stazione,c2_b01,2026-11-17T20:00:05Z
+C514,U,0,,T1,V1,U-,S,palazzina residenziale ben tenuta con alberi,c2_b01,2026-11-17T20:00:10Z
+C515,L,3,,,,,N,prato incolto tra strade,c2_b01,2026-11-17T20:00:15Z
+C516,L,3,,,,,N,suolo nudo incolto in area urbana,c2_b01,2026-11-17T20:00:20Z
+C517,U,0,,T1,V0,U?,N,edificio singolo scuro senza segni chiari d uso,c2_b01,2026-11-17T20:00:26Z
+C518,I,0,,T1,V0,U+,N,piazzale di servizio ferroviario con mezzi in uso,c2_b01,2026-11-17T20:00:33Z
+C519,I,0,E,T1,V1,U+,N,area ferroviaria multipla con binari e fabbricati non omogenea,c2_b01,2026-11-17T20:00:39Z
+C520,U,0,,T1,V0,U-,N,edificio urbano con tetto in tegole e cortile,c2_b01,2026-11-17T20:00:45Z
+C521,L,3,,T2,V1,U?,S,suolo nudo con arbusti e capannone ai margini,c2_b01,2026-11-17T20:00:52Z

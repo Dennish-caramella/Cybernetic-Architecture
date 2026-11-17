@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C585,,,,,,,,,,
-C586,,,,,,,,,,
-C587,,,,,,,,,,
-C588,,,,,,,,,,
-C589,,,,,,,,,,
-C590,,,,,,,,,,
-C591,,,,,,,,,,
-C592,,,,,,,,,,
-C593,,,,,,,,,,
-C594,,,,,,,,,,
-C595,,,,,,,,,,
-C596,,,,,,,,,,
-C597,,,,,,,,,,
-C598,,,,,,,,,,
-C599,,,,,,,,,,
-C600,,,,,,,,,,
-C601,,,,,,,,,,
-C602,,,,,,,,,,
-C603,,,,,,,,,,
-C604,,,,,,,,,,
-C605,,,,,,,,,,
+C585,U,0,,T1,V0,U+,S,piazzale con auto e ala edificata,c2_b05,2026-11-17T19:59:03Z
+C586,D,3,,T2,V0,U-,N,capannone degradato lungo striscia stretta,c2_b05,2026-11-17T19:59:08Z
+C587,L,3,,,,,N,incolto con arbusti lungo binari,c2_b05,2026-11-17T19:59:12Z
+C588,D,3,,T2,V1,U?,S,incerto piazzale con alberi e capannone,c2_b05,2026-11-17T19:59:17Z
+C589,U,0,,T1,V0,U?,N,copertura piana di edificio in uso,c2_b05,2026-11-17T19:59:25Z
+C590,L,3,,,,,S,bosco incolto tra edifici,c2_b05,2026-11-17T19:59:30Z
+C591,V,1,,,,,N,alberi in ombra incerto,c2_b05,2026-11-17T19:59:35Z
+C592,U,0,,T1,V0,U?,S,isolato urbano con cortile interno,c2_b05,2026-11-17T19:59:40Z
+C593,L,3,,,,,M,campo sterrato possibile sterro,c2_b05,2026-11-17T19:59:45Z
+C594,V,1,,T1,V1,U+,N,giardino con piccoli annessi e auto,c2_b05,2026-11-17T19:59:52Z
+C595,L,3,,,,,N,striscia incolta lungo binari,c2_b05,2026-11-17T19:59:57Z
+C596,L,2,,T1,V0,U?,M,area lunga e frammentata incerto,c2_b05,2026-11-17T20:00:03Z
+C597,L,3,,,,,S,striscia verde incolta tra strade,c2_b05,2026-11-17T20:00:09Z
+C598,L,3,,,,,S,prato incolto non falciato,c2_b05,2026-11-17T20:00:14Z
+C599,V,0,,,,,S,campi agricoli coltivati,c2_b05,2026-11-17T20:00:18Z
+C600,V,0,,,,,S,boschetto ai bordi di svincolo incerto,c2_b05,2026-11-17T20:00:23Z
+C601,D,3,,T2,V2,U-,S,piccolo edificio abbandonato coperto di vegetazione,c2_b05,2026-11-17T20:00:29Z
+C602,L,3,,T2,V1,U-,S,ex scalo con suolo nudo e resti di edificio,c2_b05,2026-11-17T20:00:36Z
+C603,D,3,,T1,V2,U-,N,area invasa da vegetazione con angolo di edificio,c2_b05,2026-11-17T20:00:42Z
+C604,U,0,,T1,V0,U?,S,edificio urbano con tetto integro,c2_b05,2026-11-17T20:00:47Z
+C605,L,3,,T2,V0,U-,S,cortile vuoto con capannone degradato,c2_b05,2026-11-17T20:00:53Z

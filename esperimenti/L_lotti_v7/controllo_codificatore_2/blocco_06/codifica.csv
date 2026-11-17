@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C606,,,,,,,,,,
-C607,,,,,,,,,,
-C608,,,,,,,,,,
-C609,,,,,,,,,,
-C610,,,,,,,,,,
-C611,,,,,,,,,,
-C612,,,,,,,,,,
-C613,,,,,,,,,,
-C614,,,,,,,,,,
-C615,,,,,,,,,,
-C616,,,,,,,,,,
-C617,,,,,,,,,,
-C618,,,,,,,,,,
-C619,,,,,,,,,,
-C620,,,,,,,,,,
-C621,,,,,,,,,,
-C622,,,,,,,,,,
-C623,,,,,,,,,,
-C624,,,,,,,,,,
-C625,,,,,,,,,,
-C626,,,,,,,,,,
+C606,L,3,,,,,N,prato incolto secco,c2_b06,2026-11-17T19:59:48Z
+C607,L,2,,T2,V1,U+,N,bosco incolto e piazzale con camion; edificio con telo blu; quota L incerta,c2_b06,2026-11-17T19:59:57Z
+C608,U,,,T1,V1,U?,N,edificato residenziale con cortile verde; uso incerto,c2_b06,2026-11-17T20:00:05Z
+C609,U,,,T1,V0,U+,N,edifici in uso con impianti sui tetti; cortile scuro,c2_b06,2026-11-17T20:00:12Z
+C610,L,2,,,,,N,striscia incolta secca lungo edifici; quota incerta,c2_b06,2026-11-17T20:00:23Z
+C611,U,0,,T1,V0,U?,N,tetti a falda integri di edificio in linea; uso incerto,c2_b06,2026-11-17T20:00:29Z
+C612,L,3,,,,,S,due lotti incolti con arbusti e suolo nudo; s2 verde senza costruzioni,c2_b06,2026-11-17T20:00:35Z
+C613,L,3,,T3,V1,U-,N,suolo nudo con fondazioni crollate e vegetazione; quota L e D,c2_b06,2026-11-17T20:00:43Z
+C614,D,2,,T1,V1,U-,N,piazzale degradato con erbe e tettoia; edifici a margine integri,c2_b06,2026-11-17T20:00:52Z
+C615,U,0,,T1,V0,U?,N,fronti urbani in uso con cortile ombreggiato; uso incerto,c2_b06,2026-11-17T20:00:58Z
+C616,U,0,,T1,V0,U?,N,copertura lunga in tegola su parcheggio; uso incerto,c2_b06,2026-11-17T20:01:04Z
+C617,V,0,,,,,N,fascia di arbusti e alberi tra strada e vialetto; verde curato incerto,c2_b06,2026-11-17T20:01:11Z
+C618,L,3,,,,,S,piazzale sterrato vuoto lungo binari; s2 ancora chiaro,c2_b06,2026-11-17T20:01:17Z
+C619,U,1,E,T1,V1,U?,N,edificio con cortile sgombro a fondo chiaro; quota e uso incerti,c2_b06,2026-11-17T20:01:25Z
+C620,L,3,,,,,S,prato incolto con alberi sparsi; s2 verde senza costruzioni,c2_b06,2026-11-17T20:01:32Z
+C621,U,0,,T1,V0,U?,N,edificio moderno a copertura piana; uso incerto,c2_b06,2026-11-17T20:01:38Z
+C622,L,2,,,,,S,prato secco incolto con campo sportivo a margine; s2 chiaro,c2_b06,2026-11-17T20:01:44Z
+C623,L,2,E,T1,V1,U?,S,ampia area sterrata e incolta con ruderi a tratti; capannone a margine; quota incerta,c2_b06,2026-11-17T20:01:53Z
+C624,L,2,E,T1,V0,U-,M,binari dismessi con alberi e suolo nudo; piccolo edificio a nord; s2 zona nuda incerta,c2_b06,2026-11-17T20:02:01Z
+C625,L,2,,,,,S,campo incolto con sentieri e arbusti; orti a nord; s2 vegetazione senza costruzioni,c2_b06,2026-11-17T20:02:10Z
+C626,U,0,,,,,N,cortile asfaltato con veicoli e contenitori tra due edifici in uso,c2_b06,2026-11-17T20:02:17Z

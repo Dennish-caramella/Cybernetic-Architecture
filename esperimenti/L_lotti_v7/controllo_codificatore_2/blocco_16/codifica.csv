@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C816,,,,,,,,,,
-C817,,,,,,,,,,
-C818,,,,,,,,,,
-C819,,,,,,,,,,
-C820,,,,,,,,,,
-C821,,,,,,,,,,
-C822,,,,,,,,,,
-C823,,,,,,,,,,
-C824,,,,,,,,,,
-C825,,,,,,,,,,
-C826,,,,,,,,,,
-C827,,,,,,,,,,
-C828,,,,,,,,,,
-C829,,,,,,,,,,
-C830,,,,,,,,,,
-C831,,,,,,,,,,
-C832,,,,,,,,,,
-C833,,,,,,,,,,
-C834,,,,,,,,,,
-C835,,,,,,,,,,
-C836,,,,,,,,,,
+C816,L,3,,,,,S,striscia erbosa su rampa verde incerto,c2_b16,2026-11-17T19:59:48Z
+C817,L,2,,,,,S,scalo ferroviario sterrato e binari quota incerta,c2_b16,2026-11-17T19:59:55Z
+C818,D,3,,T1,V2,U-,M,scalo dismesso con vegetazione spontanea; S2 spoglio incerto,c2_b16,2026-11-17T20:00:01Z
+C819,L,3,,,,,S,prato incolto tra svincoli con sterrato,c2_b16,2026-11-17T20:00:10Z
+C820,U,0,,T1,V0,U+,N,piazzale di pertinenza con mezzi e tettoia; S2 non leggibile,c2_b16,2026-11-17T20:00:15Z
+C821,U,0,,T1,V1,U+,N,isolato residenziale con negozio al piano terra,c2_b16,2026-11-17T20:00:20Z
+C822,D,3,,,V2,,S,scalo dismesso con vegetazione su binari,c2_b16,2026-11-17T20:00:26Z
+C823,L,3,,,,,S,scarpata con suolo nudo e arbusti sparsi,c2_b16,2026-11-17T20:00:33Z
+C824,D,3,,T1,V2,U-,S,edificio a corte senza segni d uso con cortile vegetato incerto,c2_b16,2026-11-17T20:00:40Z
+C825,L,1,,T1,V0,U?,N,prato urbano incerto L o V; edificio bianco; S2 non leggibile,c2_b16,2026-11-17T20:00:50Z
+C826,V,0,,,,,S,campo coltivato uniforme a verde,c2_b16,2026-11-17T20:00:56Z
+C827,X,,,,,,N,striscia sottile tra binari e lotti non giudicabile,c2_b16,2026-11-17T20:01:02Z
+C828,U,0,,T1,V1,U+,N,parcheggio pieno con alberi e piccola tettoia,c2_b16,2026-11-17T20:01:08Z
+C829,D,3,,T1,V2,U-,N,cortile incolto invaso da alberi e arbusti,c2_b16,2026-11-17T20:01:14Z
+C830,U,0,,T1,V0,U?,N,fascia di edificio urbano in uso; S2 illeggibile,c2_b16,2026-11-17T20:01:19Z
+C831,U,0,,T1,V0,U?,N,isolato urbano con terrazzi in uso; S2 illeggibile,c2_b16,2026-11-17T20:01:24Z
+C832,V,0,,,,,S,campo a stoppie e orti; coltivazione incerta,c2_b16,2026-11-17T20:01:30Z
+C833,U,0,,T1,V1,U?,N,cortile residenziale tra corpi di fabbrica; S2 illeggibile,c2_b16,2026-11-17T20:01:36Z
+C834,L,3,,,,,N,incolto erboso non curato tra strada e campi sportivi,c2_b16,2026-11-17T20:01:41Z
+C835,L,2,,,,,N,terreno incolto con binari sullo sfondo e piccolo manufatto,c2_b16,2026-11-17T20:01:48Z
+C836,U,0,,T1,V1,U?,N,edificio con tetto in laterizio e corte interna verde; S2 illeggibile,c2_b16,2026-11-17T20:01:53Z

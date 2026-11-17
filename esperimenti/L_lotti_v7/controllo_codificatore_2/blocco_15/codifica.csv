@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C795,,,,,,,,,,
-C796,,,,,,,,,,
-C797,,,,,,,,,,
-C798,,,,,,,,,,
-C799,,,,,,,,,,
-C800,,,,,,,,,,
-C801,,,,,,,,,,
-C802,,,,,,,,,,
-C803,,,,,,,,,,
-C804,,,,,,,,,,
-C805,,,,,,,,,,
-C806,,,,,,,,,,
-C807,,,,,,,,,,
-C808,,,,,,,,,,
-C809,,,,,,,,,,
-C810,,,,,,,,,,
-C811,,,,,,,,,,
-C812,,,,,,,,,,
-C813,,,,,,,,,,
-C814,,,,,,,,,,
-C815,,,,,,,,,,
+C795,V,0,E,T1,V0,U+,N,incerto V o U sotto meta s2 sfocata,c2_b15,2026-11-17T19:59:53Z
+C796,L,1,E,T1,V1,U+,N,dietro hangar bianco prato secco nord parcheggio uso,c2_b15,2026-11-17T20:00:00Z
+C797,L,3,,,,,N,striscia stretta incolta con sterrato,c2_b15,2026-11-17T20:00:07Z
+C798,L,2,,T1,V0,U-,N,lotto incolto con piccolo annesso e edificio a lato,c2_b15,2026-11-17T20:00:13Z
+C799,U,0,,T1,V1,U?,N,edifici in tegole con cortile alberato,c2_b15,2026-11-17T20:00:19Z
+C800,V,0,,,,,S,campo coltivato con strada a lato,c2_b15,2026-11-17T20:00:25Z
+C801,U,1,,T1,V1,U?,N,capannoni ferroviari con sterrato e alberi tra i poligoni incerto,c2_b15,2026-11-17T20:00:34Z
+C802,L,3,,,,,S,fascia boscosa incolta incerto L o V,c2_b15,2026-11-17T20:00:40Z
+C803,U,0,,T1,V1,U+,N,piazzale con capannone e veicoli in uso (riga corretta subito: colonne sfasate),c2_b15,2026-11-17T20:00:49Z
+C804,U,0,,T1,V1,U?,S,capannoni industriali con alberi sul lato ovest,c2_b15,2026-11-17T20:00:56Z
+C805,V,0,,,,,N,prato con alberi a bordo svincolo incerto V o L,c2_b15,2026-11-17T20:01:02Z
+C806,D,3,,T2,V1,U-,N,capannone dismesso con tetto sfondato e vegetazione sul bordo,c2_b15,2026-11-17T20:01:08Z
+C807,U,0,,T1,V1,U?,S,edificio storico in uso con cortile,c2_b15,2026-11-17T20:01:13Z
+C808,U,0,,T1,V1,U+,N,edificio urbano con tetti e piccolo cortile,c2_b15,2026-11-17T20:01:21Z
+C809,L,3,,T1,V1,U?,S,grande incolto erboso con piccolo edificio in basso,c2_b15,2026-11-17T20:01:28Z
+C810,D,2,,T2,V2,U-,S,rimessa ferroviaria degradata con alberi tra i capannoni piazzale in parte sterrato,c2_b15,2026-11-17T20:01:35Z
+C811,U,0,,T1,V1,U?,N,tetti urbani con giardino pensile sul tetto,c2_b15,2026-11-17T20:01:41Z
+C812,L,3,,T1,V0,U-,S,grande area sterrata incolta con piccola struttura,c2_b15,2026-11-17T20:01:47Z
+C813,U,0,,T1,V1,U+,N,parcheggio e edifici con alberi e strisce di binario incerto,c2_b15,2026-11-17T20:01:53Z
+C814,V,0,,,,,N,alberi urbani a bordo strada incerto V o L,c2_b15,2026-11-17T20:02:00Z
+C815,L,3,,,,,N,incolto e sterrato con arbusti poligoni frammentati,c2_b15,2026-11-17T20:02:07Z

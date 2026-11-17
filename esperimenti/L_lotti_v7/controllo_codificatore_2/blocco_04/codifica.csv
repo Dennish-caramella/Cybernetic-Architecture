@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C564,,,,,,,,,,
-C565,,,,,,,,,,
-C566,,,,,,,,,,
-C567,,,,,,,,,,
-C568,,,,,,,,,,
-C569,,,,,,,,,,
-C570,,,,,,,,,,
-C571,,,,,,,,,,
-C572,,,,,,,,,,
-C573,,,,,,,,,,
-C574,,,,,,,,,,
-C575,,,,,,,,,,
-C576,,,,,,,,,,
-C577,,,,,,,,,,
-C578,,,,,,,,,,
-C579,,,,,,,,,,
-C580,,,,,,,,,,
-C581,,,,,,,,,,
-C582,,,,,,,,,,
-C583,,,,,,,,,,
-C584,,,,,,,,,,
+C564,L,3,,,,,N,striscia erba secca incolta bordo alberi,c2_b04,2026-11-17T19:59:00Z
+C565,U,0,,T1,V0,U+,N,cortile scuro con alberi e tetti piani con impianti incerto,c2_b04,2026-11-17T19:59:09Z
+C566,L,2,,T1,V0,U?,S,piazzale ghiaia con binari e capannoni incerto uso,c2_b04,2026-11-17T19:59:15Z
+C567,U,0,,T1,V0,U?,N,tetti in uso con impianti contorno piccolo a 10 m,c2_b04,2026-11-17T19:59:21Z
+C568,L,3,,,,,N,prato secco non curato con alberi svincolo stradale incerto V o L,c2_b04,2026-11-17T19:59:26Z
+C569,L,2,,,,,N,striscia erba con bosco incerto L o verde non curato,c2_b04,2026-11-17T19:59:34Z
+C570,C,2,,T1,V1,U?,N,edificio in ristrutturazione con cortile scavato incerto,c2_b04,2026-11-17T19:59:40Z
+C571,U,0,,T1,V0,U?,N,tetti integri di edificio urbano contorno piccolo a 10 m,c2_b04,2026-11-17T19:59:47Z
+C572,U,0,,T1,V0,U-,N,palazzina residenziale con tetto integro contorno stretto a 10 m,c2_b04,2026-11-17T19:59:52Z
+C573,U,0,,T1,V0,U-,N,tetti di edifici urbani in uso contorno piccolo a 10 m,c2_b04,2026-11-17T19:59:57Z
+C574,U,0,,T1,V0,U+,N,parcheggio in uso con auto piccolo edificio incerto se parte cantiere adiacente,c2_b04,2026-11-17T20:00:05Z
+C575,L,3,,T0,V1,U-,N,sterrato e lastre abbandonate con sterpaglie e piccoli manufatti,c2_b04,2026-11-17T20:00:12Z
+C576,L,3,,,,,S,prato incolto con chiazze secche tra svincoli,c2_b04,2026-11-17T20:00:18Z
+C577,D,3,,T2,V2,U-,N,tetto vegetato e danneggiato di edificio dismesso,c2_b04,2026-11-17T20:00:24Z
+C578,L,3,,,,,N,campo secco incolto in area urbana,c2_b04,2026-11-17T20:00:30Z
+C579,L,3,,,,,N,prato incolto asciutto in area urbana,c2_b04,2026-11-17T20:00:36Z
+C580,U,0,,T1,V0,U+,N,edificio in uso con impianti sul tetto contorno piccolo a 10 m,c2_b04,2026-11-17T20:00:42Z
+C581,U,0,,T1,V0,U?,N,passaggio ombreggiato tra edifici in uso,c2_b04,2026-11-17T20:00:48Z
+C582,L,3,,,,,N,suolo nudo e lastre con sterpaglie,c2_b04,2026-11-17T20:00:53Z
+C583,U,0,,,,,N,striscia di parcheggio stretta con alberi incerto,c2_b04,2026-11-17T20:00:59Z
+C584,D,3,,T1,V0,U-,N,capannone scuro dismesso con verde attorno stato tetto incerto,c2_b04,2026-11-17T20:01:07Z

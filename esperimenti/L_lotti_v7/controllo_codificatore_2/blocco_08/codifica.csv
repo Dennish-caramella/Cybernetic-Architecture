@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C648,,,,,,,,,,
-C649,,,,,,,,,,
-C650,,,,,,,,,,
-C651,,,,,,,,,,
-C652,,,,,,,,,,
-C653,,,,,,,,,,
-C654,,,,,,,,,,
-C655,,,,,,,,,,
-C656,,,,,,,,,,
-C657,,,,,,,,,,
-C658,,,,,,,,,,
-C659,,,,,,,,,,
-C660,,,,,,,,,,
-C661,,,,,,,,,,
-C662,,,,,,,,,,
-C663,,,,,,,,,,
-C664,,,,,,,,,,
-C665,,,,,,,,,,
-C666,,,,,,,,,,
-C667,,,,,,,,,,
-C668,,,,,,,,,,
+C648,U,0,,T1,V1,U+,S,tetti integri cortile con auto,c2_b08,2026-11-17T19:59:52Z
+C649,L,3,,,,,S,prato incolto senza edifici,c2_b08,2026-11-17T19:59:57Z
+C650,L,3,,,,,S,suolo nudo o piazzale vuoto senza edifici,c2_b08,2026-11-17T20:00:03Z
+C651,L,3,,,,,S,prato incolto a margine stradale senza edifici,c2_b08,2026-11-17T20:00:09Z
+C652,U,0,,T1,V0,U?,N,corpo edificio con tetti integri senza segni d uso visibili,c2_b08,2026-11-17T20:00:15Z
+C653,L,2,,T1,V0,U?,S,incolto a margine con fila di case basse quota incerta,c2_b08,2026-11-17T20:00:28Z
+C654,U,0,,T1,V1,U+,N,passaggio tra capannoni con veicoli e materiali,c2_b08,2026-11-17T20:00:34Z
+C655,U,0,,T1,V0,U+,N,isolato urbano con tetti integri e cortile usato con auto,c2_b08,2026-11-17T20:00:40Z
+C656,V,0,,,,,S,campo con filari o impianto agricolo,c2_b08,2026-11-17T20:00:46Z
+C657,C,3,,,,,N,cantiere con scavi mezzi e materiali,c2_b08,2026-11-17T20:00:53Z
+C658,L,3,,,,,M,incolto con arbusti in S2 pare area chiara incerto,c2_b08,2026-11-17T20:01:00Z
+C659,U,0,,T1,V1,U+,N,edificio urbano tetti integri con impianti e verde,c2_b08,2026-11-17T20:01:07Z
+C660,L,3,,,,,N,verde spontaneo incolto nello svincolo non curato,c2_b08,2026-11-17T20:01:17Z
+C661,L,1,E,T1,V1,U?,N,lotto con suolo nudo alberi e corpi edilizi a margine,c2_b08,2026-11-17T20:01:26Z
+C662,L,3,,,,,S,incolto con arbusti e sentiero senza edifici,c2_b08,2026-11-17T20:01:31Z
+C663,V,0,,T1,V2,U?,N,cortile alberato in ombra incerto tra giardino e incolto,c2_b08,2026-11-17T20:01:38Z
+C664,U,0,,T1,V0,U?,N,edificio d angolo tetto piano integro,c2_b08,2026-11-17T20:01:44Z
+C665,D,2,E,T1,V1,U-,S,complesso industriale dismesso incerto con cortili inerbiti,c2_b08,2026-11-17T20:01:55Z
+C666,U,0,,T1,V0,U?,N,fabbricato lungo strada con tetti piani integri,c2_b08,2026-11-17T20:02:00Z
+C667,I,1,E,T0,V1,U?,S,scalo ferroviario con binari attivi e sterrato,c2_b08,2026-11-17T20:02:08Z
+C668,D,3,,T1,V1,U-,N,capannoni a shed con tetti scuri incerto dismesso o in uso,c2_b08,2026-11-17T20:02:18Z

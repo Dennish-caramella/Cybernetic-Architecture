@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C669,,,,,,,,,,
-C670,,,,,,,,,,
-C671,,,,,,,,,,
-C672,,,,,,,,,,
-C673,,,,,,,,,,
-C674,,,,,,,,,,
-C675,,,,,,,,,,
-C676,,,,,,,,,,
-C677,,,,,,,,,,
-C678,,,,,,,,,,
-C679,,,,,,,,,,
-C680,,,,,,,,,,
-C681,,,,,,,,,,
-C682,,,,,,,,,,
-C683,,,,,,,,,,
-C684,,,,,,,,,,
-C685,,,,,,,,,,
-C686,,,,,,,,,,
-C687,,,,,,,,,,
-C688,,,,,,,,,,
-C689,,,,,,,,,,
+C669,L,3,,,,,N,suolo secco incolto area piccola,c2_b09,2026-11-17T19:59:54Z
+C670,U,0,,T1,V0,U?,N,capannone con tetto integro uso incerto,c2_b09,2026-11-17T20:00:03Z
+C671,L,3,,T1,V1,U?,N,piazzale vuoto con marciapiede e sterrato,c2_b09,2026-11-17T20:00:13Z
+C672,L,2,,,,,S,incolto con laghetto e alberi dubbio sul prato,c2_b09,2026-11-17T20:00:23Z
+C673,L,3,,,,,N,striscia di incolto lungo sterrato,c2_b09,2026-11-17T20:00:30Z
+C674,U,0,,T1,V0,U?,N,striscia di edificio commerciale tetto scuro uso incerto,c2_b09,2026-11-17T20:00:39Z
+C675,L,3,,T0,V0,U?,S,scrub lungo strada sterrata piccolo box incerto,c2_b09,2026-11-17T20:00:48Z
+C676,V,0,E,T1,V1,U+,N,alberi urbani e tetto abitato con impianti sole abbagliante,c2_b09,2026-11-17T20:00:57Z
+C677,L,2,,T1,V1,U?,N,lotto sterrato vuoto a fianco di cortili edificati,c2_b09,2026-11-17T20:01:06Z
+C678,U,0,,T1,V0,U?,N,isolato residenziale con tetto integro e cortile,c2_b09,2026-11-17T20:01:13Z
+C679,U,0,,T1,V0,U+,N,villa con terrazzi arredati e giardino fuori contorno,c2_b09,2026-11-17T20:01:20Z
+C680,L,3,,T0,V0,U?,S,sterrato nudo vicino a binari piccoli manufatti ai margini,c2_b09,2026-11-17T20:01:28Z
+C681,L,2,,T1,V2,U-,N,incolto invaso da vegetazione con piccola casa,c2_b09,2026-11-17T20:01:37Z
+C682,L,3,,,,,S,prato secco lungo ferrovia e canale con sentiero,c2_b09,2026-11-17T20:01:45Z
+C683,U,0,,T1,V1,U+,N,capannoni in uso con piazzale auto parcheggiate,c2_b09,2026-11-17T20:01:52Z
+C684,V,0,E,T1,V0,U+,N,edificio scolastico con alberi e parcheggio,c2_b09,2026-11-17T20:02:00Z
+C685,U,0,,T1,V0,U+,N,isolato urbano su strada con tetti in uso,c2_b09,2026-11-17T20:02:08Z
+C686,L,2,,,,,N,triangolo di incolto con arbusti tra fosso e strada,c2_b09,2026-11-17T20:02:15Z
+C687,U,0,,T1,V0,U?,N,isolato in blocco urbano con cortile scuro,c2_b09,2026-11-17T20:02:22Z
+C688,U,0,,T1,V0,U?,N,palazzina con tetto a padiglione integro,c2_b09,2026-11-17T20:02:29Z
+C689,U,0,,T1,V0,U?,N,capannone industriale con tetto integro,c2_b09,2026-11-17T20:02:36Z

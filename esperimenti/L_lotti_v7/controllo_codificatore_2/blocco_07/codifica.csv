@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C627,,,,,,,,,,
-C628,,,,,,,,,,
-C629,,,,,,,,,,
-C630,,,,,,,,,,
-C631,,,,,,,,,,
-C632,,,,,,,,,,
-C633,,,,,,,,,,
-C634,,,,,,,,,,
-C635,,,,,,,,,,
-C636,,,,,,,,,,
-C637,,,,,,,,,,
-C638,,,,,,,,,,
-C639,,,,,,,,,,
-C640,,,,,,,,,,
-C641,,,,,,,,,,
-C642,,,,,,,,,,
-C643,,,,,,,,,,
-C644,,,,,,,,,,
-C645,,,,,,,,,,
-C646,,,,,,,,,,
-C647,,,,,,,,,,
+C627,L,0,E,T1,V0,U+,N,acqua gran parte area incerto LCD,c2_b07,2026-11-17T20:00:00Z
+C628,U,,,T1,V1,U?,N,tetto piano in strada urbana,c2_b07,2026-11-17T20:00:06Z
+C629,V,0,,T1,V0,U?,S,prato curato con piccole aree secche,c2_b07,2026-11-17T20:00:12Z
+C630,U,0,,T1,V1,U?,S,complesso a corte con cortili in parte verdi,c2_b07,2026-11-17T20:00:19Z
+C631,I,0,,T1,V0,U+,N,piazzale e capannoni di scalo ferroviario in uso,c2_b07,2026-11-17T20:00:25Z
+C632,V,0,,T1,V0,U-,S,orti coltivati con capanni,c2_b07,2026-11-17T20:00:30Z
+C633,U,0,,T1,V0,U?,N,cortile pavimentato e tetti con impianti,c2_b07,2026-11-17T20:00:36Z
+C634,L,2,,T1,V1,U?,S,lotto incolto con alberi incerto tra L e V,c2_b07,2026-11-17T20:00:42Z
+C635,I,0,,,,,S,binari urbani in uso eventuali piccole strutture incerte,c2_b07,2026-11-17T20:00:48Z
+C636,U,0,,T1,V1,U+,N,tetti e terrazzi abitati in cortile,c2_b07,2026-11-17T20:00:53Z
+C637,L,1,E,,,,S,prato incolto con alberi fitti incerto,c2_b07,2026-11-17T20:00:59Z
+C638,L,2,,,,,S,incolto boscato con sterrato e materiali incerto,c2_b07,2026-11-17T20:01:05Z
+C639,U,0,,T1,V0,U+,N,terrazzo pavimentato di edificio abitato,c2_b07,2026-11-17T20:01:10Z
+C640,U,0,,T1,V0,U?,N,edificio lungo a tetto integro lato parcheggio,c2_b07,2026-11-17T20:01:15Z
+C641,U,0,,T1,V1,U+,N,tetti e terrazzi abitati con verde pensile,c2_b07,2026-11-17T20:01:20Z
+C642,L,3,,,,,S,ampio prato incolto senza edifici incerto L o V,c2_b07,2026-11-17T20:01:25Z
+C643,U,0,,,,,N,striscia pavimentata tra edifici incerta tra U e I,c2_b07,2026-11-17T20:01:31Z
+C644,U,0,,T1,V1,U+,N,cortile con aiuole e terrazzo di edificio,c2_b07,2026-11-17T20:01:37Z
+C645,L,1,E,T1,V1,U?,S,sterrato centrale con deposito materiali e alberi,c2_b07,2026-11-17T20:01:44Z
+C646,D,2,,T3,V1,U-,N,rudere o sedime demolito con sterrato incerto D o L,c2_b07,2026-11-17T20:01:51Z
+C647,L,3,,,,,S,prati non falciati con alberi isolati,c2_b07,2026-11-17T20:01:56Z

@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C522,,,,,,,,,,
-C523,,,,,,,,,,
-C524,,,,,,,,,,
-C525,,,,,,,,,,
-C526,,,,,,,,,,
-C527,,,,,,,,,,
-C528,,,,,,,,,,
-C529,,,,,,,,,,
-C530,,,,,,,,,,
-C531,,,,,,,,,,
-C532,,,,,,,,,,
-C533,,,,,,,,,,
-C534,,,,,,,,,,
-C535,,,,,,,,,,
-C536,,,,,,,,,,
-C537,,,,,,,,,,
-C538,,,,,,,,,,
-C539,,,,,,,,,,
-C540,,,,,,,,,,
-C541,,,,,,,,,,
-C542,,,,,,,,,,
+C522,U,0,,T1,V0,U?,N,tetto piano in uso non leggibile a 10 m,c2_b02,2026-11-17T19:59:04Z
+C523,U,0,,T1,V0,U?,N,edificio lungo in uso su strada,c2_b02,2026-11-17T19:59:10Z
+C524,U,0,,T1,V0,U?,N,isolato con cortili interni in uso,c2_b02,2026-11-17T19:59:16Z
+C525,L,2,,T1,V0,U?,N,prato incolto lungo svincolo con bordo edificio,c2_b02,2026-11-17T19:59:25Z
+C526,U,0,,T1,V0,U?,N,capannone a shed grigio incerto se in uso,c2_b02,2026-11-17T19:59:31Z
+C527,L,2,,T1,V0,U-,N,area nuda con edificio piatto dismesso in s2 appare verde,c2_b02,2026-11-17T19:59:39Z
+C528,L,3,,,,,N,incolto con alberi e arbusti non curato,c2_b02,2026-11-17T19:59:47Z
+C529,D,3,,T2,V1,U-,N,capannone con tetto degradato e vegetazione leggera,c2_b02,2026-11-17T19:59:54Z
+C530,V,0,,,,,N,striscia alberata tra edifici incerto verde curato o incolto,c2_b02,2026-11-17T20:00:02Z
+C531,U,0,,T1,V0,U?,N,edificio piatto integro con parcheggio a fianco,c2_b02,2026-11-17T20:00:09Z
+C532,D,3,,T0,V2,U-,N,striscia di piazzale con vegetazione spontanea e manufatto basso,c2_b02,2026-11-17T20:00:17Z
+C533,U,0,,T1,V0,U+,N,edificio di via in uso con balconi fioriti,c2_b02,2026-11-17T20:00:24Z
+C534,U,0,,T1,V0,U?,N,palazzo urbano con terrazzi in uso,c2_b02,2026-11-17T20:00:31Z
+C535,L,2,,T1,V0,U+,N,orto con suolo nudo e piccolo edificio con auto,c2_b02,2026-11-17T20:00:39Z
+C536,U,0,,T1,V0,U+,S,capannone industriale con pannelli solari in uso,c2_b02,2026-11-17T20:00:46Z
+C537,L,2,,T1,V1,U?,N,prato secco non curato con palazzina e alberi,c2_b02,2026-11-17T20:00:53Z
+C538,U,0,,T1,V1,U-,N,piazza urbana con prato e alberi incerto tra U e V,c2_b02,2026-11-17T20:01:02Z
+C539,L,3,,T2,V1,U-,S,piazzali vuoti e ruderi lungo binari,c2_b02,2026-11-17T20:01:13Z
+C540,L,2,,T1,V2,U?,N,terreno nudo con piccoli manufatti e alberi,c2_b02,2026-11-17T20:01:20Z
+C541,L,2,,T1,V1,U?,N,incolto con casa isolata a tetto integro,c2_b02,2026-11-17T20:01:27Z
+C542,L,2,,T1,V0,U?,S,suolo nudo ampio con capannone lungo strada,c2_b02,2026-11-17T20:01:34Z

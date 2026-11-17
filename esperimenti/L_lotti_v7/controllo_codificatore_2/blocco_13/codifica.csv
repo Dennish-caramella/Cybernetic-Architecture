@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C753,,,,,,,,,,
-C754,,,,,,,,,,
-C755,,,,,,,,,,
-C756,,,,,,,,,,
-C757,,,,,,,,,,
-C758,,,,,,,,,,
-C759,,,,,,,,,,
-C760,,,,,,,,,,
-C761,,,,,,,,,,
-C762,,,,,,,,,,
-C763,,,,,,,,,,
-C764,,,,,,,,,,
-C765,,,,,,,,,,
-C766,,,,,,,,,,
-C767,,,,,,,,,,
-C768,,,,,,,,,,
-C769,,,,,,,,,,
-C770,,,,,,,,,,
-C771,,,,,,,,,,
-C772,,,,,,,,,,
-C773,,,,,,,,,,
+C753,D,3,,T2,V1,U-,N,struttura lunga scura incerta senza segni d uso,c2_b13,2026-11-17T19:59:47Z
+C754,I,1,E,,,,N,binario attivo con fascia incolta incerta,c2_b13,2026-11-17T19:59:55Z
+C755,C,3,,T0,V1,U?,N,cantiere con sterro e piccoli baraccamenti incerti,c2_b13,2026-11-17T20:00:01Z
+C756,U,0,,T1,V1,U?,N,isolato urbano denso con edifici integri,c2_b13,2026-11-17T20:00:07Z
+C757,L,3,,,,,N,area incolta alberata non curata,c2_b13,2026-11-17T20:00:12Z
+C758,U,0,,T1,V1,U+,N,isolato urbano denso con tetti integri e auto in sosta,c2_b13,2026-11-17T20:00:18Z
+C759,U,0,,T1,V1,U+,N,edificio con cortile alberato e auto,c2_b13,2026-11-17T20:00:24Z
+C760,D,3,,T3,V2,U-,M,struttura a travi con vegetazione tra le travi incerta,c2_b13,2026-11-17T20:00:30Z
+C761,X,,,,,,N,specchio d acqua con vegetazione ripariale categoria non prevista,c2_b13,2026-11-17T20:00:37Z
+C762,U,0,,T1,V1,U?,N,edificio isolato con giardino pertinenziale,c2_b13,2026-11-17T20:00:43Z
+C763,U,0,,T1,V0,U?,N,capannone a falde con tetto integro,c2_b13,2026-11-17T20:00:48Z
+C764,L,3,,,,,S,prato aperto con sfalcio incerto tra L e V,c2_b13,2026-11-17T20:00:53Z
+C765,U,0,,T1,V1,U?,N,edificio basso a tetto piano con alberi ai bordi,c2_b13,2026-11-17T20:00:59Z
+C766,U,0,,T1,V1,U+,N,edificio urbano a tetto piano con unita sul tetto e auto,c2_b13,2026-11-17T20:01:05Z
+C767,V,0,,,,,N,fascia alberata e prato di pertinenza residenziale,c2_b13,2026-11-17T20:01:10Z
+C768,I,0,,,,,N,striscia di strada in uso con sponda alberata,c2_b13,2026-11-17T20:01:14Z
+C769,L,3,,T2,V1,U-,S,piazzale vuoto e incolto con edificio dismesso parzialmente crollato,c2_b13,2026-11-17T20:01:20Z
+C770,L,3,,,,,N,lotto incolto con fitta vegetazione spontanea,c2_b13,2026-11-17T20:01:26Z
+C771,I,0,,,,,N,binari in uso,c2_b13,2026-11-17T20:01:30Z
+C772,L,2,,T2,V1,U-,N,suolo nudo con rottami e capannone lamierato degradato,c2_b13,2026-11-17T20:01:36Z
+C773,U,0,,,,,N,stretta fascia di cortile tra edifici con poca vegetazione incerta,c2_b13,2026-11-17T20:01:41Z

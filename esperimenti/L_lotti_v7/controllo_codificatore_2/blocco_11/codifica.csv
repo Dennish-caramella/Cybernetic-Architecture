@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C711,,,,,,,,,,
-C712,,,,,,,,,,
-C713,,,,,,,,,,
-C714,,,,,,,,,,
-C715,,,,,,,,,,
-C716,,,,,,,,,,
-C717,,,,,,,,,,
-C718,,,,,,,,,,
-C719,,,,,,,,,,
-C720,,,,,,,,,,
-C721,,,,,,,,,,
-C722,,,,,,,,,,
-C723,,,,,,,,,,
-C724,,,,,,,,,,
-C725,,,,,,,,,,
-C726,,,,,,,,,,
-C727,,,,,,,,,,
-C728,,,,,,,,,,
-C729,,,,,,,,,,
-C730,,,,,,,,,,
-C731,,,,,,,,,,
+C711,U,0,,T1,V1,U?,N,tetti in laterizio integri e piccolo cortile verde,c2_b11,2026-11-17T19:59:52Z
+C712,U,0,,T1,V0,U?,N,capannone grigio lungo accanto ai binari con piazzale scuro,c2_b11,2026-11-17T19:59:59Z
+C713,D,3,,T3,V1,U-,N,ruderi di edificio crollato con muri residui e suolo nudo,c2_b11,2026-11-17T20:00:06Z
+C714,L,3,,,,,N,incolto non curato con chiazze di suolo nudo,c2_b11,2026-11-17T20:00:14Z
+C715,U,0,,T1,V1,U+,N,edificio a tetto piano con cortile e campo sportivo in uso,c2_b11,2026-11-17T20:00:23Z
+C716,U,0,,T1,V0,U+,N,edifici con tetti grigi e cortile scuro con mezzi,c2_b11,2026-11-17T20:00:30Z
+C717,U,0,,T1,V0,U?,N,tetti piani grigi tra edifici; contorno frammentato e zona scura incerta,c2_b11,2026-11-17T20:00:37Z
+C718,V,0,,T1,V0,U?,N,giardino alberato con tetto residenziale integro sul lato destro,c2_b11,2026-11-17T20:00:47Z
+C719,L,3,,,,,N,vegetazione arborea spontanea fitta non curata tra due edifici,c2_b11,2026-11-17T20:00:56Z
+C720,L,3,,,,,N,scarpata erbosa secca incolta con arbusti e sterrato,c2_b11,2026-11-17T20:01:10Z
+C721,L,2,,,,,N,piazzale sterrato chiaro tra binari e campo sportivo; poligoni multipli incerto,c2_b11,2026-11-17T20:01:21Z
+C722,L,3,,,,,N,suolo nudo sgombro con detriti e fondazioni; cantiere adiacente fuori contorno,c2_b11,2026-11-17T20:01:29Z
+C723,L,3,,T1,V0,U?,N,vegetazione arborea spontanea fitta con piccola struttura piana in angolo,c2_b11,2026-11-17T20:01:38Z
+C724,U,0,,T1,V1,U-,N,blocchi a corte tetti integri con cortili alberati senza segni d uso; incerto tra U e D,c2_b11,2026-11-17T20:01:49Z
+C725,U,0,,T1,V0,U+,N,capannone a tetto chiaro con file di materiali o pannelli sul piazzale,c2_b11,2026-11-17T20:01:57Z
+C726,D,3,,T2,V0,U-,N,tetto piano grigio con macchie e segni di degrado senza uso visibile,c2_b11,2026-11-17T20:02:05Z
+C727,U,0,,T1,V0,U+,N,campi da tennis in uso con prato curato e alberature sul lato destro,c2_b11,2026-11-17T20:02:13Z
+C728,V,0,,T1,V0,U?,N,orti con alberi e piccoli capanni; uso incerto,c2_b11,2026-11-17T20:02:22Z
+C729,V,0,,,,,N,prato secco con alberature tra strade; cura incerta,c2_b11,2026-11-17T20:02:29Z
+C730,U,0,,T1,V1,U+,N,piazzale pieno di auto e mezzi con tettoia leggera e poca vegetazione,c2_b11,2026-11-17T20:02:36Z
+C731,L,3,,,,,N,suolo nudo e sterrato lungo strada con cumuli di detriti,c2_b11,2026-11-17T20:02:44Z

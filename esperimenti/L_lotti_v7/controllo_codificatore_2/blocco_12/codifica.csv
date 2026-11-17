@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C732,,,,,,,,,,
-C733,,,,,,,,,,
-C734,,,,,,,,,,
-C735,,,,,,,,,,
-C736,,,,,,,,,,
-C737,,,,,,,,,,
-C738,,,,,,,,,,
-C739,,,,,,,,,,
-C740,,,,,,,,,,
-C741,,,,,,,,,,
-C742,,,,,,,,,,
-C743,,,,,,,,,,
-C744,,,,,,,,,,
-C745,,,,,,,,,,
-C746,,,,,,,,,,
-C747,,,,,,,,,,
-C748,,,,,,,,,,
-C749,,,,,,,,,,
-C750,,,,,,,,,,
-C751,,,,,,,,,,
-C752,,,,,,,,,,
+C732,V,0,,T1,V0,U?,N,giardino condominiale alberato,c2_b12,2026-11-17T19:59:51Z
+C733,U,0,,T1,V1,U+,N,capannone e tetto rosso in uso con alberi ai margini,c2_b12,2026-11-17T20:00:01Z
+C734,U,0,,T2,V1,U?,N,cortile alberato e blocco residenziale con tetto parzialmente rovinato incerto,c2_b12,2026-11-17T20:00:11Z
+C735,I,0,,,,,N,striscia di binari attivi in linea ferroviaria,c2_b12,2026-11-17T20:00:18Z
+C736,U,0,,T1,V0,U?,N,capannone con tetto in coppi integro,c2_b12,2026-11-17T20:00:27Z
+C737,L,3,,,,,N,prato incolto o poco curato,c2_b12,2026-11-17T20:00:34Z
+C738,L,2,,,,,N,suolo nudo con vasca rivestita e arbusti ai margini,c2_b12,2026-11-17T20:00:41Z
+C739,L,2,E,T1,V1,U?,N,lotto sterrato con alberi e cantiere ai bordi area mista incerta,c2_b12,2026-11-17T20:00:51Z
+C740,U,0,,T1,V0,U+,N,edificio urbano con tetti piani in uso e impianti,c2_b12,2026-11-17T20:00:59Z
+C741,L,3,,,,,M,campo incolto secco con detriti e piccolo manufatto al bordo verde in S2 forse stagionale,c2_b12,2026-11-17T20:01:06Z
+C742,D,2,,T2,V1,U-,N,capannoni industriali dismessi con tetti sfondati e vegetazione ai bordi,c2_b12,2026-11-17T20:01:16Z
+C743,U,1,,T1,V0,U?,N,capannone bianco a falde piane con lotto erboso a nord,c2_b12,2026-11-17T20:01:23Z
+C744,V,1,,,,,N,aiuola stradale erbosa con filari e tratto secco incerto,c2_b12,2026-11-17T20:01:32Z
+C745,U,0,,T1,V1,U+,N,edificio con terrazzo tecnico e vegetazione su piazzale laterale,c2_b12,2026-11-17T20:01:39Z
+C746,U,0,,T1,V0,U?,N,lunga copertura piana in uso lungo strada,c2_b12,2026-11-17T20:01:46Z
+C747,L,3,,,,,N,lotto nudo sterrato con bordi arbustivi,c2_b12,2026-11-17T20:01:52Z
+C748,V,0,,,,,N,prato curato con alberi giovani ai bordi di area a rotatoria,c2_b12,2026-11-17T20:02:00Z
+C749,L,3,,,,,N,ampio suolo nudo sabbioso con qualche arbusto,c2_b12,2026-11-17T20:02:07Z
+C750,V,1,,T1,V1,U?,N,piccolo giardino alberato con edificio bianco e incolto laterale incerto,c2_b12,2026-11-17T20:02:15Z
+C751,I,0,,,,,N,striscia lineare lungo linea ferroviaria in uso molto stretta,c2_b12,2026-11-17T20:02:22Z
+C752,I,0,,,,,N,binari ferroviari in uso su cavalcavia con alberi,c2_b12,2026-11-17T20:02:29Z

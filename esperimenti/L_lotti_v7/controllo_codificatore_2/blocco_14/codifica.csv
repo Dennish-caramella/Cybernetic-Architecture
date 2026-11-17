@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C774,,,,,,,,,,
-C775,,,,,,,,,,
-C776,,,,,,,,,,
-C777,,,,,,,,,,
-C778,,,,,,,,,,
-C779,,,,,,,,,,
-C780,,,,,,,,,,
-C781,,,,,,,,,,
-C782,,,,,,,,,,
-C783,,,,,,,,,,
-C784,,,,,,,,,,
-C785,,,,,,,,,,
-C786,,,,,,,,,,
-C787,,,,,,,,,,
-C788,,,,,,,,,,
-C789,,,,,,,,,,
-C790,,,,,,,,,,
-C791,,,,,,,,,,
-C792,,,,,,,,,,
-C793,,,,,,,,,,
-C794,,,,,,,,,,
+C774,L,3,,,,,N,piazzale asfalto vuoto con stalli,c2_b14,2026-11-17T19:59:50Z
+C775,L,3,,,,,N,verde incolto fitto lungo strada,c2_b14,2026-11-17T19:59:57Z
+C776,L,3,,,,,N,prato secco non curato con alberi,c2_b14,2026-11-17T20:00:03Z
+C777,V,1,E,T1,V1,U+,N,vivaio o orto incerto con capanni,c2_b14,2026-11-17T20:00:12Z
+C778,U,1,E,T1,V1,U+,S,cascina e cortile incerto tra U e L grossolano,c2_b14,2026-11-17T20:00:25Z
+C779,U,0,,T1,V1,U+,N,capannone industriale in uso con impianti,c2_b14,2026-11-17T20:00:32Z
+C780,U,0,,T1,V1,U+,N,palazzina residenziale con cortile e alberi,c2_b14,2026-11-17T20:00:39Z
+C781,L,3,,,,,S,area incolta vuota ai margini di capannoni grossolano,c2_b14,2026-11-17T20:00:46Z
+C782,I,0,,,,,N,striscia stretta lungo binari attivi incerta,c2_b14,2026-11-17T20:00:55Z
+C783,U,0,,T1,V0,U+,N,edificio urbano in uso con parcheggio,c2_b14,2026-11-17T20:01:01Z
+C784,U,0,,T1,V0,U+,S,capannone logistico con pannelli solari,c2_b14,2026-11-17T20:01:08Z
+C785,U,0,,T1,V0,U?,N,palazzina allungata in uso contorno sottile,c2_b14,2026-11-17T20:01:15Z
+C786,L,3,,,,,S,campo sterrato incolto ai margini di capannoni,c2_b14,2026-11-17T20:01:22Z
+C787,L,1,E,T1,V1,U+,S,bosco incolto misto a orti e piazzale,c2_b14,2026-11-17T20:01:31Z
+C788,D,3,,T2,V1,U-,N,edifici dismessi con tetti danneggiati,c2_b14,2026-11-17T20:01:38Z
+C789,L,3,,,,,S,area incolta sabbiosa lungo autostrada contorno multiparte,c2_b14,2026-11-17T20:01:44Z
+C790,L,3,,,,,N,prato secco incolto a bordo strada,c2_b14,2026-11-17T20:01:52Z
+C791,V,0,,,,,N,alberi di giardino urbano curato,c2_b14,2026-11-17T20:01:58Z
+C792,U,0,E,T1,V0,U-,S,complesso di capannoni con cortile vuoto incerto,c2_b14,2026-11-17T20:02:07Z
+C793,L,2,,T1,V1,U-,N,area alberata incolta con piccolo edificio incerta,c2_b14,2026-11-17T20:02:14Z
+C794,I,0,,,,,N,strada asfaltata in uso con marciapiede,c2_b14,2026-11-17T20:02:21Z
