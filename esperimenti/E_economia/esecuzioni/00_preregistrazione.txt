@@ -1,0 +1,454 @@
+PRE-REGISTRAZIONE — Base E v1: motore economico tarato e gap fondiario (ticket #19)
+Versione 1, scritta il 22/11/2026 da economista-abitativo (istanza Claude), PRIMA di qualsiasi esecuzione.
+Testo di REPORT §1 (ipotesi, soglie, criteri di accettazione). Stato: in attesa di conferma di Dennis sulle
+scelte [H] marcate "DA CONFERMARE" (sezione 12). Nessun codice scritto, nessun calcolo per lotto eseguito.
+
+Marche (PROTOCOLLO_LABORATORIO.md): [V] verificato in questa sessione (file aperto o dato scaricato, URL e data);
+[S] fonte secondaria o non riaperta qui; [I] inferenza o calcolo mio; [H] ipotesi o parametro scelto; [L] lacuna.
+Termini come in CONTEXT.md: lotto edificabile, lotto da riusare, lotto GFU, fascia grigia (pancia), Base, prova.
+
+======================================================================================================
+0. COSA HO VISTO PRIMA DI SCRIVERE (dichiarazione di contaminazione)
+======================================================================================================
+Letti per intero o nelle parti indicate:
+- esperimenti/PROTOCOLLO_LABORATORIO.md; CONTEXT.md; tesi/DECISIONI.md (voce 10/11: confronto tarato, ΔL come
+  regione di parametri); tesi/CONFRONTO_APPROCCI_ALLOCAZIONE.md; ticket #19 (gh api, testo breve).
+- esperimenti/L_lotti_v7/VERSIONE.md, REPORT.md, README.md; schema di lotti_v7.gpkg (tabelle lotti, metadati).
+  Ho eseguito SOLO interrogazioni aggregate in lettura: conteggi per classe (216 edificabili, 167 da riusare,
+  50 GFU, 268 attivazione), somme di cap_far1 (32.885) e cap_recupero (2.898), area media (edificabili
+  17.459 m², da riusare 1.033 m²), proprietà (83 pubblico comunale, 1 Demanio, 299 "non agganciata"),
+  gruppo d'ambito (314 fuori ambito, 36 ADP, 32 PA, 1 GFU). Regola di capacità letta nei metadati:
+  alloggi = floor(0,70 × FAR × area / 80); recupero = floor(0,70 × volume_fonte / 3,2 / 80).
+- secondo_cervello/ricerche/milano_dati/: 02 (intero), 03 (§0-1), 05 (intero), 07 (intero), 01 (§2.2, §3-5),
+  sintesi/README.md; CSV mercato/omi_milano_2025S2_civili_normale_per_zona.csv (40 zone: ho visto i valori
+  min/max di compravendita e locazione per zona).
+- Note 04_modelli_economici_abitare.md (intera) e 06_economia_urbana_abitativa.md (§2, formule e ΔL).
+- SACC (catalogo/lombardia/vmvb-epzv_SACC_righe.json, 24 righe) e metadati: ho calcolato per i 6 casi milanesi
+  investimento per alloggio e rapporto contributo/investimento (sezione 6.2).
+- Web, 22/11/2026: vedi sezione 2 (fonti aperte e non aperte).
+Ordine di grandezza visto senza calcolo per lotto [I]: con costi dell'ordine di 2.000 €/m² SL, oneri di qualche
+centinaio di €/m² e prezzi OMI delle zone D/E (2.275–4.700 €/m² punto medio), il valore residuo del developer
+in periferia può essere vicino a zero o negativo (già detto nella nota 02 §6). Lo dichiaro perché influenza
+la scelta di un parametro (η, sezione 4.1), che fisso qui e sottopongo a Dennis.
+Non ho eseguito il motore, non ho calcolato VRA, L* o ΔL per nessun lotto, né per i compendi del Piano Casa.
+
+======================================================================================================
+1. DOMANDA E IPOTESI (fissate prima)
+======================================================================================================
+Domanda del ticket: il motore riproduce i casi reali entro quale errore? E, una volta tarato, in quale regione
+di parametri la cooperativa / il canone a costo / il Community Land Trust (CLT) regge su ciascun lotto della
+Base L v7, e quanto vale il gap fondiario ΔL per lotto e per regime del suolo (acquisto, diritto di
+superficie, cessione)?
+
+Il risultato NON è "chi vince". È (a) l'errore di taratura dichiarato; (b) per lotto, FAR e regime del suolo,
+la quota della regione tarata dei parametri in cui la cooperativa è fattibile; (c) ΔL come distribuzione
+sulla regione, mai come stima puntuale.
+
+Ipotesi di lavoro (servono a leggere i risultati, non sono soglie di accettazione della base) [H]:
+ HE1 In regime di acquisto a valore di mercato, nella maggioranza dei lotti edificabili ΔL > 0 nella regione
+     tarata (la cooperativa non può pagare il suolo che pagherebbe il developer). Attesa dalla letteratura
+     su Zurigo-Altstetten [S, nota 04 §2].
+ HE2 In regime di cessione (suolo a costo nullo) e con canone ≤ 90 €/m²/anno, la cooperativa è fattibile in
+     una quota non nulla della regione tarata per almeno una parte dei lotti; altrimenti il canone a costo
+     milanese richiede contributi oltre al suolo gratuito.
+ HE3 ΔL cresce con il prezzo OMI della zona più velocemente di quanto cresca L*_coop (la rendita di
+     posizione va al suolo).
+Falsificazione: si riporta l'esito comunque; nessuna di queste ipotesi è una condizione per congelare la base.
+
+======================================================================================================
+2. FONTI (con marche)
+======================================================================================================
+Aperte in questa sessione, 22/11/2026 [V]:
+ F1 Comune di Milano, Direzione Casa, Relazione tecnica allegata alla proposta di DG n. 365 (firmata
+    25/03/2026), copia conforme all'albo ripubblicata da Assolombarda:
+    https://www.assolombarda.it/servizi/immobili-urbanistica-e-territorio/documenti/delg-365-2026_all1
+    (PDF scaricato, SHA-256 51ee24ae7ecd1cc81c886f1017aa6b00e7b23664af0954970648a6c298de58ff, testo estratto
+    con pdftotext). Contenuto usato: canone medio massimo ERSC 90 €/m²/anno; vincolo ≥ 30 anni con
+    rivalutazione ISTAT; dopo il vincolo canone di mercato ridotto ≥ 20%; diritto di superficie 90 anni;
+    base del corrispettivo 1 €/m²; bersaglio: reddito netto del nucleo 1.500–2.500 €/mese; compendi:
+    Ex Palasharp ST ≈ 18.120 m², indice 1,1 m²/m² (ERSC ≥ 10.872, SAP ≥ 1.812, funzioni libere ≤ 7.248 m²),
+    San Romanello ST ≈ 7.200 m², 1 m²/m² (ERSC ≥ 4.320, libere ≤ 2.880), Bovisasca ST ≈ 1.838 m², 1 m²/m²
+    (ERSC ≥ 1.103, libere ≤ 735); bonifiche stimate Bovisasca 0,75–1,5 M€, Ex Palasharp 3,8–8,6 M€ (Comune
+    rimborsa fino al minimo, alea tra minimo e massimo 50/50, tetti 1,6 M€ e 6,2 M€); demolizione Ex Palasharp
+    rimborsata fino a 3,15 M€; PEF su 90 anni valutato dal Comune con supporto metodologico dell'Università
+    Bocconi; il Comune dichiara che l'ipotesi a 90 €/m²/anno "consente di contemperare" la sostenibilità
+    economico-finanziaria per l'operatore. Il PEF stesso NON è pubblicato nel documento [L].
+ F2 Regione Lombardia, d.d.s. 18/12/2014 n. 12319, Bando per l'accesso al fondo SACC (BURL S.O. n. 53 del
+    29/12/2014), copia ANCE Lombardia:
+    https://lombardia.ance.it/wp-content/uploads/archivet/18858-1_ALLEGATO-NUOVO%20BANDO%20SACC.pdf
+    (SHA-256 4d68f86ec9aab39f96045c233f0dfbc530db2c4bcb2c46afe648c1d64182e167). Contenuto usato:
+    "costo totale dell'investimento (valore convenzionale dell'opera)" = eventuale costo dell'area + superficie
+    commerciale × costo convenzionale (classe C-D 1.300, B 1.400, A 1.500 €/m²); agevolazione = abbattimento
+    interessi fino al 35% del costo (locazione ≥ 30 anni) o 20% (8 anni con patto di futura vendita); mutuo
+    ≤ 30 anni; superficie commerciale definita (muri, 50% balconi, 25% cantine, +4% parti comuni, +10 m² con box).
+    NB: il dataset SACC (F4) si riferisce al bando della DGR 2159/2011, i cui costi convenzionali NON ho letto [L].
+ F3 CCIAA Como-Lecco, Listino edile, Appendice 2 "Costi standard per tipologie edilizie" (PDF datato 12/2024):
+    https://listinoedili.comolecco.camcom.it/wp-content/uploads/files/pdfedilicolcnote/11-App2-Costi-standard-per-tipologie-edilizie.pdf
+    (SHA-256 58e264ef187d916f5b0a882151512b2b5d757941d7a1499dbc721c84057b7eab). NC.06 Condominio, 6 piani,
+    40 alloggi, classe A1: 1.992 €/m² di s.l.p. (8.565.600 € su 4.300 m²); NC.01 edilizia residenziale pubblica,
+    20 alloggi: 2.150 €/m² s.l.p. Cosa includono (spese tecniche, IVA, utile d'impresa) non verificato [L].
+    Provincia diversa da Milano: trasferimento [I].
+ F4 Regione Lombardia, dataset SACC vmvb-epzv (CC0, aggiornato 19/11/2025), letto dal file già scaricato nel
+    repo il 10/11/2026 [V allora; riletto oggi dal file]: per i 6 interventi milanesi indirizzo, alloggi,
+    investimento complessivo previsto, contributo regionale, stato, soggetto attuatore. NON contiene superfici,
+    anno, canone, inclusione del suolo, tipo di intervento (nuovo / recupero / acquisto) [L].
+ F5 Eurostat API, 22/11/2026: sts_copi_a (Italia, nuovi edifici residenziali, 2021=100): prezzi alla produzione
+    2014 96,6; 2021 100; 2025 110,7; costi 2014 92,7, 2023 114,2 (ultimo anno disponibile). irt_lt_mcby_m
+    (rendimento titoli di Stato a 10 anni, Italia, criterio di convergenza): 3,39–4,68% tra 09/2025 e 10/2026;
+    10/2026 = 4,68%. https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/
+ F6 OMI 2025/2, abitazioni civili, stato normale, per zona (40 zone) dal CSV del repo, a sua volta da
+    dati.comune.milano.it ds3024/ds3025 [V il 10/11/2026, nota 02]. Esistenza del dataset dei perimetri
+    "Zone e Perimetri OMI 2025/2" (ds3023) nel catalogo comunale scaricato il 10/11 [V esistenza]; geometrie
+    non ancora scaricate [L].
+ F7 Base L v7 (VERSIONE.md, hash di contenuto 49327c8a…): lotti, area, classe, NIL, proprietà, volume e
+    impronta degli edifici fonte, capacità FAR 0,5/1/2 e recupero [V].
+Fonti secondarie [S] (riportate nelle note o lette come stampa, non atti):
+ S1 Oneri di urbanizzazione Milano, Delibera CC 28/2023 (17/05/2023): aumento medio 37,92% (MilanoFree);
+    prima 23,97 €/m³ primaria e 38,02 €/m³ secondaria; dopo, in fascia centrale, 51 e 81 €/m³ (Il Fatto
+    Quotidiano 20/07/2025); fasce centrale/esterna e riduzioni (Ordine Architetti); determinazione dirigenziale
+    9501 del 24/10/2025 sulle riduzioni per demolizione e ricostruzione (Osborne Clarke). Tabelle ufficiali e
+    perimetro delle fasce NON lette (comune.milano.it blocca le richieste automatiche; non aggirato) [L].
+ S2 Costo base per il contributo sul costo di costruzione a Milano 2025: 484,78 €/m² (sito immobiliare, senza
+    atto citato) [S, bassa affidabilità]; competenza regionale (TAR Lombardia 05/2026) [S].
+ S3 Margine del developer: 15–20% del GDV o 20% sul costo, prassi UK (RICS Land Journal, LandTech, Hertsmere)
+    [S, nota 04]; nessuna fonte italiana [L].
+ S4 Il Sole 24 Ore, 20/10/2025 (aperto, stampa): primo giro Piano Casa con 65% di sociale, 24 manifestazioni
+    d'interesse, una sola (via Demostene, 33 alloggi, Uniabita) conforme; operatori: costi di bonifica e oneri
+    "non chiari". Nessun numero di costo.
+ S5 Zurigo: Kostenmiete, Betriebsquote 3,25% del valore assicurativo; canone mediano gemeinnützig 1.149 contro
+    1.987 CHF [S, nota 04/06; pagine ufficiali non aperte]. Vienna: rendimento sul capitale ≤ 3,5% (WGG) [S].
+ S6 Prezzi d'annuncio Milano 5.572–5.750 €/m² medi, canoni 22,4–24 €/m²/mese [S, nota 02 e Il Foglio 06/12/2025].
+ S7 Quota ERS 40% della SL nei grandi interventi (PGT 2030, NdA PdR art. 8.5 secondo Il Giorno) [S].
+Lacune principali [L]: costi di costruzione ufficiali per Milano (prezzario regionale, DEI); tabelle oneri e
+mappa delle fasce; prezzi della convenzionata; PEF dei bandi Piano Casa ed esiti (corrispettivi offerti);
+canoni e costi di cooperative a proprietà indivisa milanesi; transazioni di aree edificabili a Milano con
+ST/SL e prezzo; tassi effettivi CDP/BEI per l'housing sociale; regime IVA del corrispettivo di godimento.
+
+======================================================================================================
+3. UNITÀ, GRANDEZZE E CAPACITÀ (forbice, non valore unico)
+======================================================================================================
+Per ogni lotto ℓ della Base L v7 nelle classi "lotto edificabile" (216) e "lotto da riusare" (167); i 50 lotti
+GFU solo in una tabella di scenario separata, fuori da ogni totale, etichettati "non verificato"; le aree di
+attivazione sono escluse (capacità 0).
+ A_ℓ   area del lotto (m², area_m2)                                       [V, Base L]
+ f     FAR ∈ {0,5; 1; 2} — si calcola TUTTO per i tre valori e si riporta la forbice  [H, Base L]
+ SL_ℓ  superficie lorda: edificabile = f × A_ℓ                              [H, Base L]
+ N_ℓ   alloggi = floor(0,70 × SL_ℓ / 80): deve coincidere con cap_far05/1/2 (test T2)  [V, Base L]
+ S_ℓ   superficie commerciale vendibile o locabile = η × SL_ℓ               [H, sezione 4.1]
+Lotti da riusare, due varianti sempre entrambe riportate:
+ (R1) recupero: SL = volume_fonte / 3,2 (come cap_recupero), costo c_rec = ρ × c_new, oneri ridotti ω × O,
+      nessuna demolizione; ammesso solo se volume_fonte > 0.
+ (R2) demolizione e ricostruzione: SL = f × A_ℓ (come cap_far*), costo c_new + demolizione d × volume_fonte.
+ Avvertenza da portare nei risultati: la validazione C5 dei lotti da riusare è debole (0,55–0,59, Base L v7).
+Uscite per lotto: totali in €, per m² di area del lotto, per m² di SL e per alloggio.
+
+======================================================================================================
+4. FORMULE (in chiaro)
+======================================================================================================
+4.1 Grandezze comuni ai due regimi (STESSI costi e oneri)
+ C_hard = c × SL                       c = c_new (nuovo) o ρ·c_new (recupero)
+ C_dem  = d × volume_fonte             solo variante R2
+ C_bon  = b × A_ℓ                      bonifica, solo come scenario (sezione 5)
+ C_soft = σ × C_hard                   spese tecniche e generali
+ O      = O_urb + O_cc
+ O_urb  = (o_I + o_II) × h × SL        oneri di urbanizzazione primaria e secondaria in €/m³, h = 3 m
+                                       altezza virtuale per passare da m³ a m² [H; regola lombarda da verificare, L]
+ O_cc   = k × c_base × SL              contributo sul costo di costruzione (aliquota k, costo base c_base)
+ C_tot  = C_hard + C_dem + C_bon + C_soft + O
+ η: rapporto superficie commerciale / SL, usato SIA per i ricavi del developer SIA per i canoni della
+    cooperativa (simmetrico). Base L usa 0,70 solo per contare gli alloggi.
+
+4.2 Developer: valore residuo del suolo (metodo residuale RICS, statico, primario)
+ GDV   = S × [(1 − s_ERS) × p_z + s_ERS × p_ERS]
+ p_z   = prezzo OMI di compravendita della zona z del lotto (sezione 5)
+ p_ERS = valore della quota ERS = c_ERS × (1 − q) / y_ERS (canone ERS capitalizzato) [H]
+ F_dev = i_c × λ_c × (C_tot) × T_c / 2      interessi sul debito di costruzione, profilo lineare
+ Margine dichiarato SU RICAVO (primario):     P = π_R × GDV
+   equivalente su costo: π_C = π_R / (1 − π_R) (15% su ricavi = 17,6% su costo); test T5
+ R     = GDV × (1 − m_v − π_R) − C_tot − F_dev        (m_v spese di vendita)
+ VRA   = R / [(1 + τ) × (1 + i_c)^T_c]                (τ imposte e spese d'acquisto del suolo;
+                                                       interessi sul suolo per la durata T_c)
+ Valore di mercato del suolo usato nei regimi: L_mkt = max(VRA, 0) [H: il proprietario non vende sotto zero;
+ il valore d'uso esistente (EUV) è una lacuna, L]. Si riporta sempre anche VRA con segno.
+ Verifica di robustezza (secondaria, non entra nei criteri): DCF annuale del developer su T_c + 1 anni con
+ margine dentro il tasso obiettivo r_dev invece che in π_R (mai i due insieme: niente doppio conteggio).
+
+4.3 Cooperativa / canone a costo / CLT: prezzo del suolo sostenibile L*_coop (DCF)
+ Canone obiettivo c₀ (€/m²/anno di superficie commerciale), indicizzato: c_t = c₀ × (1 + g)^(t−1)
+ Ricavo netto anno t (t = 1..T, dopo la costruzione):
+   NOI_t = S × c_t × (1 − v) / (1 + IVA_g) − q × S × c_t − δ × C_hard × (1 + g)^(t−1)
+   (v sfitto e morosità; IVA_g = 0 in locazione, variante proprietà indivisa con IVA sul corrispettivo [S/L];
+    q quota di gestione sul canone; δ fondo di manutenzione straordinaria in % di C_hard)
+ Tasso: r = D × i_D + (1 − D) × i_E    (D quota di debito; i_D tasso del debito; i_E rendimento del capitale
+        dei soci o capitale paziente, tetto 3,5% come WGG austriaca [S])
+ Valore finale VF_T: 0 in diritto di superficie (l'edificio torna al Comune, F1); in acquisto, variante
+        conservativa VF = 0 (primaria) e variante VF = NOI_(T+1) / y_exit [H].
+ L*_coop = Σ_{t=1..T} NOI_t / (1 + r)^(t + T_c)  +  VF_T / (1 + r)^(T + T_c)
+           −  C_tot × [1 + r × T_c / 2]                 (interessi di costruzione al tasso r)
+           +  Contributi pubblici in conto capitale (0 salvo casi di taratura che li dichiarano)
+ Canone di pareggio c*(L): il c₀ che rende L*_coop = L (bisezione). Si riporta per L = 0 e L = L_mkt.
+ CLT: stesso motore per la fase di costruzione e locazione; la formula di rivendita CLT (index-based,
+ P_t = P_0 × I_t/I_0) entra solo come variante descrittiva, NON nei criteri (nessun CLT italiano con formula
+ pubblicata, nota 06 [L]).
+ Variante "operatore Piano Casa" (per la taratura, sezione 6): canone c₀ ≤ 90 per 30 anni, poi
+ c_t = 0,8 × canone di mercato OMI di zona indicizzato fino a T = 90; funzioni libere vendute a p_z;
+ SAP: ricavo 0 [H, regime della quota SAP non letto, L].
+
+4.4 Gap fondiario per regime del suolo k
+ Prezzo del suolo che la cooperativa deve pagare:
+   acquisto              L^(acq) = L_mkt
+   diritto di superficie L^(ds)  = α × L_mkt  (corrispettivo anticipato; α parametro, 0 = 1 €/m² come F1)
+   cessione              L^(ces) = 0          (eventualmente con bonifica e demolizione a carico pubblico)
+ ΔL^(k) = L^(k) − L*_coop.  ΔL^(k) ≤ 0  ⇔  la cooperativa è fattibile nel regime k.
+ ΔL^(k) > 0 è il trasferimento (rinuncia alla rendita o contributo) necessario perché esista.
+ Definizione generale riportata anche: ΔL = VRA − L*_coop (nota 06, formula 6), con il segno di VRA.
+
+======================================================================================================
+5. PARAMETRI: valore centrale, intervallo, fonte, marca
+======================================================================================================
+Ogni [H] ha un intervallo e entra nell'analisi di sensibilità. Gli intervalli definiscono il cubo Θ.
+Distribuzione nel cubo: uniforme indipendente [H] (NON è una probabilità sul mondo: le quote si leggono come
+"quota del cubo", mai come probabilità).
+
+Mercato
+ p_z     prezzo OMI 2025/2 della zona del lotto (centroide; se il lotto taglia più zone, zona di massima
+         sovrapposizione). Centrale: massimo "normale" della zona (proxy del nuovo) [H]; se ds3025 riporta lo
+         stato "ottimo" per la zona, si usa il suo punto medio [H]. Intervallo: punto medio normale ... massimo
+         ottimo (o massimo normale × 1,15). Annunci 5.572–5.750 €/m² [S] solo come controllo esterno.  [V/H]
+ canone OMI di zona (per la variante operatore dopo 30 anni): massimo locazione normale [V/H].
+ η       0,85 centrale; 0,75–0,95. Superficie commerciale OMI (DPR 138/1998, L) contro SL del PGT [H]
+         DA CONFERMARE (pesa molto: vedi sezione 0).
+ s_ERS   variante D1: 0; variante D2: 0,40 se SL ≥ 10.000 m² [S7]; primaria D2 [H] DA CONFERMARE.
+ c_ERS, y_ERS, q per p_ERS: 90 €/m²/anno [V, F1, come riferimento], y_ERS 4–5,5% centrale 4,5% [H].
+Costi (identici nei due regimi)
+ c_new   2.000 €/m² SL centrale; 1.600–2.600 [H]. Ancore: CCIAA Como-Lecco 1.992 e 2.150 €/m² s.l.p. 2024 [V,
+         altra provincia]; SACC costo convenzionale 1.300–1.500 €/m² commerciale (2014) [V] × indice prezzi
+         alla produzione 110,7/96,6 = 1,146 → 1.490–1.720 €/m² [I]; Cronoshare 1.500–2.000 [S, bassa].
+ ρ       recupero/nuovo 0,80; 0,55–1,00 [H, L].
+ d       demolizione 25 €/m³ v.p.p.; 10–50 [H, L]. Ancora qualitativa: Ex Palasharp ≤ 3,15 M€ [V, F1; volume L].
+ σ       spese tecniche e generali 0,12; 0,08–0,16 [H, nota 04].
+ o_I+o_II 100 €/m³ centrale; 62–132 €/m³ [S1: 62 = 23,97+38,02 pre-2023; 132 = 51+81 fascia centrale post-2023].
+         Senza mappa delle fasce [L] si usa lo stesso intervallo per tutti i lotti.
+ h       3,0 m [H/L].
+ k×c_base contributo sul costo di costruzione: c_base 484,78 €/m² [S2], k 0,05–0,10 centrale 0,075 [H/L]
+         → 24–48 €/m² SL. Variante: esenzione per edilizia convenzionata (DPR 380/2001 art. 17) solo nel regime
+         cooperativo, NON primaria (il ticket chiede stessi oneri) [L].
+ ω       riduzione oneri nel recupero 0,8; 0,4–1,0 [S: riduzione ≥ 20% citata, atto non letto; H].
+ b       bonifica: 0 nel caso centrale (stato ignoto, L); scenario 200 e 500 €/m² di area [I: F1 dà
+         210–475 €/m² ST a Ex Palasharp e 408–816 €/m² ST a Bovisasca]. Solo scenario, non nel cubo.
+Developer
+ π_R     margine 0,15 SU RICAVO centrale; 0,10–0,20 [S3]. Riportato sempre con la base.
+ m_v     spese di vendita e commercializzazione 0,03 del GDV; 0,02–0,04 [H].
+ i_c     tasso del debito di costruzione 6%; 4,5–7,5% [H; BTP 10 anni 3,4–4,7% come pavimento, F5].
+ λ_c     quota del costo finanziata a debito 0,6; 0,5–0,7 [H].
+ T_c     durata costruzione e vendita 3 anni; 2–4 [H].
+ τ       imposte e spese d'acquisto del suolo 0,09; 0,04–0,11 [H/L].
+Cooperativa / canone a costo
+ c₀      parametro di decisione, NON nel cubo: griglia {60, 75, 90, 110, 130} €/m²/anno. 90 = tetto DG 365
+         [V, F1]; 130 ≈ concordato di Milano nell'esempio regionale (60 m² a 650 €/mese) [V nota 05, I].
+         Canone sostenibile per la fascia grigia: c_sost = 0,30 × 12 × Y / m², con Y netto mensile
+         ∈ {1.500; 2.000; 2.500} [V, F1] e m² per nucleo ∈ {50; 65; 85} [H, nota 02]: da 53 a 180 €/m²/anno [I].
+         Spese condominiali e utenze escluse (limite).
+ g       indicizzazione ISTAT di canoni e costi 2%; 1–3% [H].
+ v       sfitto e morosità 0,04; 0,02–0,06 [H].
+ q       gestione sul canone 0,20; 0,15–0,30 [H, nota 04].
+ δ       manutenzione straordinaria 0,8% di C_hard all'anno; 0,4–1,5% [H]. Controllo esterno: Betriebsquote
+         Zurigo 3,25% del valore assicurativo comprende gestione e rinnovi [S5].
+ D       quota di debito 0,70; 0,50–0,85 [H].
+ i_D     tasso del debito 4,0%; 2,5–5,5% [H; BTP 10 anni 4,68% a 10/2026, F5; tassi CDP/BEI L].
+ i_E     rendimento del capitale dei soci 1,5%; 0–3,5% [H; tetto WGG S5].
+ T       durata 60 anni centrale; {30, 60, 90}: 30 = vincolo minimo DG 365, 90 = diritto di superficie [V, F1].
+ IVA_g   0 (locazione) primaria; variante 0,10 [L, aliquota da verificare].
+ α       quota del valore di mercato pagata per il diritto di superficie: 0 (≈ 1 €/m², F1), 0,5, 0,8 [H]: tre
+         livelli riportati separatamente, non nel cubo.
+ y_exit  rendimento di uscita per VF in acquisto (solo variante) 4,5% [H; rendimento lordo OMI mediano 4,1%,
+         nota 02, I].
+
+======================================================================================================
+6. TARATURA SU CASI REALI (prima di qualsiasi uso)
+======================================================================================================
+Principio: un confronto non tarato è vero per costruzione (dipende solo dalle ipotesi). La taratura restringe
+il cubo Θ al sottoinsieme Θ_cal compatibile con casi osservati; tutti i risultati della Base E si riportano su
+Θ_cal (e, per trasparenza, anche su Θ).
+Campionamento: Monte Carlo con N = 20.000 punti nel cubo Θ, seme 4519 (numpy default_rng). Errore Monte
+Carlo su una quota: ≤ 0,7 punti percentuali al 95% [I].
+
+6.1 Caso K1 — Piano Casa, DG 365/2026 (vincolo di segno, fonte F1 [V])
+ Per i tre compendi (Ex Palasharp, San Romanello, Bovisasca) si applica la variante "operatore Piano Casa"
+ con le quantità di F1: SL ERSC minima, SAP (solo Palasharp), funzioni libere al massimo; canone 90; vincolo
+ 30 anni poi mercato −20% fino a 90 anni; corrispettivo 1 €/m² × ST; bonifica a carico dell'operatore pari al
+ 50% dell'alea (massimo − minimo) [V, F1]; demolizione Ex Palasharp rimborsata (0 per l'operatore); zona OMI
+ del compendio dalle geometrie ds3023 (indirizzi: via Sant'Elia 33, via San Romanello, via Bovisasca 18 [V, F1]).
+ Condizione: VAN dell'operatore ≥ −0,05 × C_tot per tutti e tre i compendi (tolleranza di modello 5% [H]).
+ Lettura [I]: il Comune ha giudicato l'operazione sostenibile a queste condizioni; un parametro θ che la rende
+ nettamente in perdita è incompatibile con quel giudizio. È un vincolo di segno, non una misura: non
+ identifica θ, lo restringe.
+ Se nella fase 2 si trova l'esito dei bandi (corrispettivo offerto e aggiudicato) da fonte primaria o
+ istituzionale [V], K1 diventa una misura: errore e = (L*_modello − L_offerto)/L_offerto, tolleranza |e| ≤ 0,40.
+
+6.2 Caso K2 — SACC Milano (6 interventi, fonte F4 [V], regole F2 [V])
+ Visti prima di scrivere [V/I]: investimento per alloggio Cascella 5 (28 all.) 105.875 €; Piazzale della
+ Cooperazione 1 (LUM, 14) 99.100; Piazzale della Cooperazione 1 (Solidarnosc, 14) 99.076; Castellammare 16
+ (9) 183.007; (5) 250.456; (1) 234.481. Rapporto contributo/investimento 0,25; 0,35; 0,35; 0,35; 0,22; 0,24.
+ Inferenza [I]: rapporti esattamente pari a 0,35 coincidono con il tetto del 35% del "costo convenzionale"
+ del bando: l'"investimento" del dataset è probabilmente il VALORE CONVENZIONALE (costo convenzionale ×
+ superficie commerciale, + area), non un costo di cantiere osservato. Se confermato, K2 tara il motore contro
+ una regola regionale, non contro il mercato: va detto e non va spacciato per validazione esterna.
+ Regola: (a) se nella fase 2 si trovano per almeno 3 dei 6 casi superficie commerciale e anno (Regione,
+ Finlombarda, cooperative attuatrici) [V], K2 è una taratura sul costo per m²: modello C_hard + C_soft per m²
+ commerciale (portato all'anno del caso con sts_copi_a) contro investimento/superficie; tolleranza mediana
+ |e| ≤ 0,20 e massimo |e| ≤ 0,40. (b) Altrimenti K2 è solo un controllo d'ordine di grandezza sul costo per
+ alloggio (rapporto modello/osservato entro [0,5; 2] per ciascun caso, con 80 m² commerciali per alloggio [H]
+ e indicizzazione 2014→2025), riportato ma escluso dai criteri di accettazione.
+ Nota: i tre righi di via Castellammare 16 possono essere fasi o tipi di intervento diversi (1 alloggio a
+ 234.481 € suggerisce acquisto o recupero): da chiarire [L].
+
+6.3 Casi K3 — ulteriori casi osservati (ricerca con protocollo fissato ora, per evitare la scelta a posteriori)
+ Dove cercare: bandi ed esiti Piano Casa (copie istituzionali, non comune.milano.it se bloccato); fondi del
+ sistema FIA/CDP a Milano; Fondazione Housing Sociale; cooperative a proprietà indivisa milanesi (bilanci,
+ regolamenti); Regione (housing sociale DGR 6209/2026, valorizzazioni ALER); transazioni di aree edificabili
+ a Milano con ST/SL e prezzo (per il ramo developer).
+ Criteri d'inclusione (fissati ora): intervento nel Comune di Milano (prima cintura ammessa e marcata);
+ concluso o aggiudicato dal 2015; fonte primaria o istituzionale [V]; almeno due grandezze tra costo totale o
+ €/m², superficie, canone €/m²/anno, prezzo di cessione, prezzo del suolo, contributi pubblici. Casi solo da
+ stampa [S]: riportati con peso 0 nei criteri.
+ Budget di ricerca: una sessione, al massimo 40 chiamate web. Si registrano TUTTI i candidati trovati, inclusi
+ gli esclusi e il motivo.
+ Errore per caso j: e_j = (ŷ_j − y_j) / y_j; si riportano e_j, mediana di |e|, massimo |e| e log-rapporto.
+ Con ≥ 4 casi: errore leave-one-out (Θ_cal ricalcolato senza il caso j). Tolleranza: mediana |e| ≤ 0,20,
+ massimo |e| ≤ 0,40, sulla grandezza pertinente (costo €/m², canone di pareggio con i contributi dichiarati,
+ prezzo del suolo).
+
+6.4 Θ_cal e cosa succede se i casi non si trovano
+ Θ_cal = punti di Θ che soddisfano K1 e (se presenti) K2(a) e K3.
+ - Se |Θ_cal| < 1.000 punti (5% di Θ): il motore non riproduce i casi reali negli intervalli dichiarati →
+   regola di arresto (sezione 9). Non si allargano gli intervalli dopo aver visto l'esito.
+ - Se |Θ_cal| > 19.000 (95% di Θ): la taratura non vincola. Si dichiara "taratura non informativa" e i
+   risultati si riportano come NON tarati (rischio di confronto vero per costruzione, detto nel titolo delle
+   tabelle).
+ - Se si trova solo K1 (nessun K2(a) né K3): la Base E può essere al massimo "tarata debolmente (solo vincolo
+   di segno DG 365)"; il ramo developer resta "non tarato su transazioni di suolo". Congelarla così è una
+   decisione di Dennis, non un passaggio automatico.
+ - Se manca anche K1 (es. zona OMI dei compendi non determinabile): arresto.
+
+======================================================================================================
+7. ANALISI DI SENSIBILITÀ E REGIONE DI PARAMETRI
+======================================================================================================
+ (a) Tornado uno alla volta: ogni parametro del cubo agli estremi del suo intervallo, gli altri al centrale,
+     per tre lotti rappresentativi (lotto edificabile di area mediana nelle fasce OMI B, C-D, E; scelti per
+     regola: il più vicino alla mediana d'area della fascia; parità → id minore) e per l'insieme dei lotti.
+     Obbligatori: prezzo del suolo (α e regime), costo di costruzione c_new, tasso (i_D, i_c), durata T,
+     prezzo p_z, η, oneri, margine π_R.
+ (b) Monte Carlo su Θ e Θ_cal: per ogni lotto, FAR, variante (R1/R2, D1/D2), regime k e canone c₀:
+     quota di punti con ΔL^(k) ≤ 0; quantili 5-50-95% di ΔL^(k), VRA, L*_coop, c*(0) e c*(L_mkt).
+ (c) Importanza: correlazione di rango parziale (PRCC, solo numpy) tra parametri e ΔL^(k).
+ (d) Mappe 2D della regione di fattibilità per i tre lotti rappresentativi: (prezzo del suolo × canone),
+     (costo di costruzione × tasso i_D), (durata T × tasso i_D).
+ (e) Forbice della capacità: tutto per FAR 0,5, 1, 2; nessun aggregato su un solo FAR.
+ (f) Dove regge la cooperativa: per regime k, numero di lotti (e alloggi, come forbice) con quota ≥ 0,5 di
+     Θ_cal fattibile, per fascia OMI, per proprietà (pubblico comunale / non agganciata) e per c₀.
+
+======================================================================================================
+8. CRITERI DI ACCETTAZIONE DELLA BASE E v1 (numerici, fissati ora)
+======================================================================================================
+ E1 Riproducibilità: due esecuzioni da zero (con dati in cache) danno lo stesso hash di contenuto delle
+    tabelle di uscita (valori arrotondati a 1 €, ordinamento per id). Seme 4519 dichiarato.
+ E2 Invarianti (tutti devono passare; un fallimento è un errore di codice, si corregge senza toccare
+    parametri, e si registra):
+    T1 ogni lotto edificabile e da riusare ha una zona OMI, un prezzo e un canone OMI; quota di lotti con zona
+       assegnata per centroide o massima sovrapposizione = 100% (≥ 95% di lotti assegnati per centroide).
+    T2 N_ℓ calcolato dal motore = cap_far05 / cap_far1 / cap_far2 / cap_recupero della Base L v7, per tutti.
+    T3 nessun lotto GFU né area di attivazione nei totali.
+    T4 monotonie su ogni punto campionato: VRA crescente in p_z e η, decrescente in c_new, oneri, π_R, i_c;
+       L*_coop crescente in c₀, decrescente in c_new, oneri, i_D, i_E, q, v, δ; L*_coop non decrescente in T
+       quando NOI_t > 0 per ogni t.
+    T5 conversione del margine: VRA con π_R uguale a VRA con π_C = π_R/(1−π_R) applicato su tutti i costi
+       (suolo, sue imposte e interessi, C_tot, F_dev, spese di vendita), risolto per il suolo (identità a meno
+       di 1 €).
+    T6 identità: ΔL^(k) = L^(k) − L*_coop esattamente; c*(L*_coop(c₀)) = c₀ entro 0,01 €/m²/anno.
+    T7 stessi costi: C_tot identico nei due regimi per ogni lotto e punto (salvo varianti dichiarate).
+    T8 omogeneità: raddoppiando A_ℓ (lotto fittizio di test) VRA e L*_coop raddoppiano (salvo arrotondamento
+       di N).
+ E3 Coerenza con OMI: p_z ∈ [minimo, massimo] OMI della zona (con il premio del nuovo dichiarato) per il 100%
+    dei lotti; il canone di mercato usato nella variante operatore ∈ [minimo, massimo] OMI locazione.
+ E4 Taratura: K1 soddisfatto e |Θ_cal| ≥ 1.000 punti (sezione 6.4). Errori di taratura per caso riportati
+    sempre, anche se passano.
+ E5 Taratura su casi osservati (si applica se esistono ≥ 3 casi K2(a)/K3): mediana |e| ≤ 0,20 e massimo
+    |e| ≤ 0,40 (leave-one-out se ≥ 4 casi).
+ E6 Robustezza rispetto alle ipotesi non tarate (controllo del "vero per costruzione"): nel tornado su
+    Θ_cal, se un singolo parametro [H] senza fonte e non vincolato dalla taratura cambia il segno di ΔL^(acq)
+    per più del 50% dei lotti edificabili a FAR 1 passando da un estremo all'altro del suo intervallo, la
+    base NON può dichiarare una regione robusta: esito "cambia" (servono dati su quel parametro).
+ Esito della base: passa se E1–E5 passano (E5 se applicabile) ed E6 non scatta; altrimenti ripeti o cambia
+ secondo la regola di arresto. Il revisore-metodologico scrive la revisione (REPORT §7) senza aver eseguito.
+
+======================================================================================================
+9. REGOLA DI ARRESTO
+======================================================================================================
+ Ci si ferma, si apre un ticket di revisione e si decide con Dennis se:
+ - E4 fallisce (Θ_cal vuoto o < 5%), oppure manca K1;
+ - E5 fallisce;
+ - E6 scatta;
+ - il revisore segnala un difetto grave (in particolare: confronto vero per costruzione, doppio conteggio
+   del margine, regimi con costi diversi non dichiarati);
+ - per eseguire servirebbe un dato non ottenibile senza aggirare un blocco (es. comune.milano.it).
+ Vietato dopo l'esecuzione: cambiare intervalli, centrali, tolleranze, casi di taratura o criteri. Ogni
+ deviazione si registra in esecuzioni/registro.txt con data e motivo; una correzione dei criteri è una nuova
+ pre-registrazione (versione 2) committata prima di rieseguire.
+
+======================================================================================================
+10. RIPRODUCIBILITÀ
+======================================================================================================
+ run.py (Python standard + numpy + pandas + geopandas, già nei requirements della Base L) e test_economia.py;
+ README di due righe. Dati scaricati dallo script in esperimenti/_cache/E_economia/ (fuori da git): OMI
+ ds3023 (perimetri), ds3024, ds3025 2025/2; Base L v7 letta in sola lettura con verifica dello SHA-256
+ (5d464a3c… del gpkg al congelamento, o hash di contenuto 49327c8a…). Nel repo: tabelle derivate (< 20 MB),
+ metadati con fonte, licenza e data, registro delle esecuzioni, hash dei PDF di F1–F3.
+ Seme unico 4519 per il Monte Carlo; nessun'altra componente casuale.
+
+======================================================================================================
+11. LIMITI (dichiarati prima)
+======================================================================================================
+ L1 Costi di costruzione senza fonte ufficiale milanese: ancore da altra provincia e da costi convenzionali
+    regionali; l'intervallo 1.600–2.600 €/m² è [H].
+ L2 Oneri: tabelle e fasce della Delibera CC 28/2023 non lette; si usa un intervallo [S] uguale per tutti i
+    lotti; contributo sul costo di costruzione da fonte debole.
+ L3 Ramo developer non tarato su transazioni di suolo (nessuna trovata finora): VRA è un valore teorico
+    coerente con OMI, non un prezzo osservato.
+ L4 K1 è un vincolo di segno su un giudizio del Comune (PEF non pubblicato), non una misura; K2 probabilmente
+    tara su valori convenzionali regionali, non su costi di mercato.
+ L5 OMI valuta lo stock in stato normale; il prezzo del nuovo è approssimato (massimo normale o ottimo).
+ L6 Statico per lotto: nessun equilibrio generale, nessun effetto della nuova offerta sui prezzi, nessuno
+    spillover di vicinato (nota 06 §1, §3).
+ L7 Fiscalità semplificata (IVA su vendite e godimento, IRES, IMU, imposte sul suolo): varianti, non modello.
+ L8 Capacità della Base L con regole uniformi (FAR, 0,70, 80 m²); lotti da riusare e AdP con validazione
+    debole; GFU non verificate; possibile acqua in alcuni lotti (E00170).
+ L9 Bonifiche e demolizioni ignote per lotto: solo scenari.
+ L10 Il canone sostenibile della fascia grigia usa redditi di contribuenti e famiglie tipo [H] (note 02, 05);
+    la corrispondenza con la Base P è rinviata.
+ L11 Le quote "di cubo" dipendono dagli intervalli scelti: non sono probabilità.
+
+======================================================================================================
+12. SCELTE [H] DA CONFERMARE DA DENNIS PRIMA DELL'ESECUZIONE
+======================================================================================================
+ H1 η = 0,85 (0,75–0,95) come rapporto superficie commerciale/SL, uguale nei due regimi.
+ H2 Prezzo del nuovo = massimo OMI "normale" della zona (o punto medio "ottimo" se esiste).
+ H3 Margine del developer 15% SU RICAVO (10–20%), statico RICS come metodo primario.
+ H4 Variante D2 (40% ERS se SL ≥ 10.000 m²) come primaria del developer, D1 riportata accanto.
+ H5 c_new 2.000 €/m² SL (1.600–2.600); oneri 62–132 €/m³ con h = 3 m; stessi oneri nei due regimi.
+ H6 Tasso della cooperativa: D = 0,70, i_D = 4,0% (2,5–5,5), i_E = 1,5% (0–3,5); durata centrale 60 anni,
+    riportate anche 30 e 90.
+ H7 L_mkt = max(VRA, 0) (nessun valore d'uso esistente).
+ H8 Taratura: K1 come vincolo di segno con tolleranza 5%; K2 come taratura solo se si trovano superfici e
+    anni; budget di ricerca di 40 chiamate per K3.
+ H9 Soglie E4–E6 come sopra.
+
+======================================================================================================
+13. PIANO DELLA FASE 2 (dopo la conferma)
+======================================================================================================
+ 1. Dennis conferma o corregge H1–H9; si committa questa pre-registrazione (o la v2) prima di ogni esecuzione.
+ 2. Raccolta dati con protocollo 6.3 (registro di tutti i candidati); download OMI ds3023/3024/3025.
+ 3. run.py e test_economia.py; test T1–T8 su dati fittizi prima dei lotti veri.
+ 4. Taratura (K1, K2, K3) → Θ_cal; esito E4/E5 scritto prima di calcolare ΔL sui lotti.
+ 5. Monte Carlo, tornado, mappe 2D; tabelle per lotto e regime; E6.
+ 6. REPORT.md in 8 punti; revisione del revisore-metodologico; congelamento solo se passa, con VERSIONE.md.
