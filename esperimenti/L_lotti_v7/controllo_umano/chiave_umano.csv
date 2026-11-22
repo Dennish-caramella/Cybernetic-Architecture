@@ -1,0 +1,61 @@
+codice,id,strato,classe,ambito_id,gruppo_ambito,lotto_at,area_m2
+H01,R00013,F-R,lotto da riusare,,,0,736.3
+H02,R00035,F-R,lotto da riusare,,,0,7289.0
+H03,R00054,F-R,lotto da riusare,,,0,1785.4
+H04,A00561,D-A,area di attivazione,MA_11,PA,1,1002.2
+H05,A00558,F-A,area di attivazione,,,0,699.4
+H06,A00631,F-A,area di attivazione,,,0,7639.5
+H07,E00200,D-E,lotto edificabile,MA_16,PA,1,11746.3
+H08,R00034,D-R,lotto da riusare,MA_4,PA,1,677.0
+H09,A00596,F-A,area di attivazione,,,0,8499.0
+H10,E00316,D-E,lotto edificabile,MA_17,PA,1,49931.3
+H11,A00555,F-A,area di attivazione,,,0,577.0
+H12,R00116,F-R,lotto da riusare,,,0,857.6
+H13,E00271,F-E,lotto edificabile,,,0,1513.5
+H14,R00044,F-R,lotto da riusare,,,0,1143.6
+H15,E00258,D-E,lotto edificabile,ADP_23,ADP,1,34511.5
+H16,R00114,D-R,lotto da riusare,MA_17,PA,1,480.8
+H17,E00289,D-E,lotto edificabile,ADP_29,ADP,1,66538.2
+H18,E00237,F-E,lotto edificabile,,,0,3807.4
+H19,E00286,D-E,lotto edificabile,MA_6,PA,1,2552.5
+H20,E00376,F-E,lotto edificabile,,,0,49043.6
+H21,A00452,D-A,area di attivazione,MA_2,PA,1,25471.2
+H22,R00004,F-R,lotto da riusare,,,0,3663.6
+H23,A00572,F-A,area di attivazione,,,0,760.6
+H24,E00257,D-E,lotto edificabile,ADP_23,ADP,1,87282.3
+H25,A00584,F-A,area di attivazione,,,0,1284.4
+H26,E00269,D-E,lotto edificabile,ADP_23,ADP,1,2399.6
+H27,R00115,D-R,lotto da riusare,MA_17,PA,1,3304.4
+H28,A00622,F-A,area di attivazione,,,0,33199.9
+H29,A00469,D-A,area di attivazione,ADP_27,ADP,1,50050.1
+H30,E00377,F-E,lotto edificabile,,,0,58647.0
+H31,E00214,F-E,lotto edificabile,,,0,39742.9
+H32,E00250,D-E,lotto edificabile,MA_4,PA,1,46414.0
+H33,R00016,D-R,lotto da riusare,ADP_28,ADP,1,351.4
+H34,R00094,F-R,lotto da riusare,,,0,251.2
+H35,R00078,D-R,lotto da riusare,MA_6,PA,1,909.7
+H36,A00514,D-A,area di attivazione,MA_3,PA,1,42283.5
+H37,R00041,D-R,lotto da riusare,ADP_23,ADP,1,468.6
+H38,E00198,D-E,lotto edificabile,MA_5,PA,1,12567.0
+H39,R00062,F-R,lotto da riusare,,,0,1090.4
+H40,A00560,D-A,area di attivazione,MA_11,PA,1,11297.0
+H41,E00279,F-E,lotto edificabile,,,0,8446.3
+H42,R00099,D-R,lotto da riusare,ADP_24,ADP,1,478.2
+H43,A00651,F-A,area di attivazione,,,0,1086.3
+H44,E00340,F-E,lotto edificabile,,,0,6947.2
+H45,A00542,D-A,area di attivazione,ADP_23,ADP,1,846.5
+H46,E00358,F-E,lotto edificabile,,,0,10606.7
+H47,E00261,D-E,lotto edificabile,ADP_23,ADP,1,62138.0
+H48,E00371,F-E,lotto edificabile,,,0,63660.3
+H49,R00039,F-R,lotto da riusare,,,0,604.2
+H50,A00458,D-A,area di attivazione,MA_18,PA,1,10379.7
+H51,R00137,D-R,lotto da riusare,ADP_25,ADP,1,469.2
+H52,R00141,F-R,lotto da riusare,,,0,2627.9
+H53,R00043,D-R,lotto da riusare,ADP_23,ADP,1,894.7
+H54,A00614,F-A,area di attivazione,,,0,6640.7
+H55,E00288,F-E,lotto edificabile,,,0,2081.4
+H56,R00040,D-R,lotto da riusare,ADP_23,ADP,1,3279.8
+H57,A00512,D-A,area di attivazione,MA_3,PA,1,20758.5
+H58,A00506,D-A,area di attivazione,MA_8,PA,1,24719.9
+H59,A00528,F-A,area di attivazione,,,0,6539.4
+H60,A00453,D-A,area di attivazione,MA_14,PA,1,5940.9
