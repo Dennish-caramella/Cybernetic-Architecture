@@ -1,0 +1,88 @@
+# §7 Revisione indipendente — Base L v7 (ticket #40)
+
+Revisore metodologico, 22/11/2026. Non ho eseguito la prova, non ho aperto immagini (licenza AGEA di sola visione) né fonti online. Sono un'altra istanza dello stesso sistema dell'esecutore e dei codificatori: **non è una verifica fatta da persone** [I]. Comandi rieseguiti in sola lettura; script di controllo nello scratchpad della sessione, non nel repo.
+
+## 7.1 Riproduzione e cronologia [V]
+- SHA-256: pre-registrazione v2 `7f98ab31…` e stesura superata `9342f700…` uguali ai `.sha256` e a `git show e5ca67b`; `potenza_c5.py` `7e89caba…`, uscita `a5f3bb86…`; chiave `ea9d6fda…`, fogli uniti `0381ea15…` (c1) e `c2cdc1c0…` (c2), uguali al registro. Fogli dei blocchi verificati con i loro `.sha256` (campione 01, 05, 16 per i due codificatori) e `codifiche_fable_parziali/SHA256SUMS` tutti OK. I fogli uniti coincidono riga per riga con i 16 blocchi (336 righe, codici e Q1 identici).
+- Cronologia git: e5ca67b (21:06:30Z, prima stesura) → 114bea1 (21:07:55Z, v2) → c511a6f (22:07:25Z, costruzione, pacchetti, modelli) → d5ae38e (17/11 20:03Z, Haiku completo) → bedf1aa (22/11 15:10:57Z, deviazione) → ee517f6 (15:15:27Z, Opus completo) → 0022265 (15:26Z, fogli uniti) → af76460 (15:36:48Z) → 411572f (15:48Z) → e9e7897 (15:58Z, esito). Le prime righe dei fogli Opus hanno ora 15:11:44–15:12:17Z, dopo il commit della deviazione. L'ordine è quello dichiarato; le ore sono di git e delle istanze, auto-dichiarate [L].
+- **C5 ricalcolato da zero** (fogli uniti + chiave, formula di 2.6, f_h = 1 negli strati D): p₁ (Opus) = 0,7602, IC Wilson [0,707; 0,806]; p₂ (Haiku) = 0,6839 [0,628; 0,735]; **C5a = 0,7221**; base 15/100 e 12/100; kappa binario 0,780 (accordo 0,890). Quote per strato identiche al JSON. **I valori del REPORT si riproducono.**
+- `potenza_c5.py 173 147 245 43 20 23` rieseguito: uscita identica byte per byte al file committato.
+- `lotti_v7.gpkg` del commit dei pacchetti (`93e15b2e…`) e quello finale (`5d464a3c…`) differiscono come file ma hanno strati `lotti`, `metadati`, `cascata` identici (attributi e WKB): cambia solo il contenitore SQLite.
+- `test_lotti.py` **fallisce** sullo stato attuale del repo (riga 78: nelle cartelle dei blocchi c'è ora `codifica.sha256`, non previsto dal test scritto prima delle codifiche). Con quella sola tolleranza (copia temporanea, poi rimossa) tutti gli altri test passano: 701 lotti, 268 A / 216 E / 167 R / 50 GFU.
+- Non rieseguito `run.py` per intero (cache e ~10 min per esecuzione); riproducibilità da zero senza cache non verificata [L].
+
+## 7.2 Pre-registrazione e deviazioni
+- **Regola cantiere (0.2).** La prima stesura è stata hashata e committata, poi corretta dopo un conteggio di sola lettura (3 poligoni con la formulazione superata, 0 con quella corretta). La correzione va verso il testo del ticket e di DECISIONI 16/11, è dichiarata come cambio dopo un numero noto, e lo scenario (v) ne mostra l'effetto (14 lotti, 2.696 alloggi a FAR 1). Ammissibile: la regola non tocca C5 (le GFU e il tessuto consolidato ne restano fuori comunque) e sposta capacità di circa l'8% (30.203 contro 32.885 a FAR 1) [V, registro e `sensibilita_cantiere_superata.json`].
+- **Ma la v2 non cambia "SOLO la regola 1.5 (ii)"** come dichiara la sua riga 2: il diff mostra che cambia anche la frase di validità, da "le scelte [H-D] sono da confermare con Dennis PRIMA del commit" a "sono PROPOSTE DEL COORDINATORE che Dennis non ha ancora confermato". La sezione 5, passo (0), e il titolo della sezione 7 chiedono ancora la conferma prima del commit. Nel registro, nel ticket (nessun commento) e in `tesi/DECISIONI.md` non c'è traccia della conferma [V]. Il passo (0) è stato saltato.
+- **La regola GFU contraddice una decisione esplicita di Dennis.** DECISIONI 14/11: "Aree designate dal PGT come riuso o simili (GFU, ambiti di trasformazione) sono lotti edificabili". La voce 16/11 è una "lettura di Claude, da confermare" di un "procedi con il nuovo passaggio". La v7 è quindi costruita su una regola che l'autore della tesi non ha scelto e che rovescia la sua ultima decisione registrata [V]. È coerente con `CONTEXT.md` (lotto edificabile = area libera o dismessa) e con la revisione v6 (G2), ma la scelta tra le due strade di 7.12.1 della revisione v6 spettava a Dennis.
+- **Deviazione sul codificatore 1 (Fable → Opus).** Registrata e committata (bedf1aa, 15:10:57Z) prima di ogni codifica Opus e prima dell'unione con la chiave: la decisione è cieca rispetto a C5 [V]. Però viola un requisito centrale della pre-registrazione, 2.1: "I due codificatori sono due modelli DIVERSI da quello che ha fatto le codifiche v5/v6", che era anche la ragione d'essere della v7 (DECISIONI 16/11, revisione v6 G3). Il registro stesso indica Opus come "molto probabilmente" il modello di v5 [I]. La pre-registrazione non prevedeva un piano per la perdita di un codificatore; la deviazione non ha un nuovo testo con hash, solo una riga di registro. Il "procedi" di Dennis del 22/11 non è un'approvazione esplicita di Opus [I].
+- Mitigazione verificata [V]: sui 30 lotti in comune con v5, Opus non è più allineato a v5 di Haiku (kappa Opus/v5 0,59 e 0,79; Haiku/v5 0,71 e 0,90). Nessun indizio che l'identità di modello con v5 abbia gonfiato p₁. Resta che la v7 non soddisfa la condizione che si era data.
+- Soglie, n, semi e definizione di successo non sono cambiati [V, parametri nel JSON uguali alla pre-registrazione].
+
+## 7.3 Il "passa" di C5: credibile o fragile
+Per la regola pre-registrata C5 **passa** [V]. La regola usa la media dei due codificatori; giudicarla ora con un'altra regola (per esempio "entrambi ≥ 0,70") sarebbe spostare la soglia dopo aver visto i dati, e non lo propongo. Ma il "passa" è fragile per quattro motivi indipendenti:
+1. **Dipende dal modello scelto come codificatore 1.** Haiku da solo 0,684 (sotto). Le righe parziali di Fable (il codificatore pre-registrato) coprono 77 lotti e 26 particelle, distribuite in tutti gli strati: sugli stessi 77 lotti Fable dà 0,662 contro 0,740 di Opus e 0,688 di Haiku; discordanze Opus sì / Fable no 7, Fable sì / Opus no 1 (binomiale esatta, p = 0,07). Stima pesata sul sottoinsieme: Fable 0,704, Opus 0,784. Proiezione grezza [I]: spostando p₁ della differenza pesata (−0,081), **C5a con Fable ≈ 0,68, sotto soglia**. Il sottoinsieme è piccolo e non casuale (prime righe di ogni blocco; l'ordine dei codici è però casuale per costruzione, 2.4), quindi è un indizio, non una misura. Ma due modelli su tre stanno sotto 0,70 e la media supera la soglia solo con il terzo.
+2. **Incertezza.** Margine 0,022. Bootstrap per strato (20.000 repliche, seme 1, coppie di codifiche ricampionate insieme): IC 95% di C5a [0,665; 0,777], P(C5a < 0,70) ≈ 0,22 [I]. Le stesse cifre si ottengono ricampionando solo gli strati F. Il test è al limite come la pre-registrazione aveva previsto (potenza 0,48 a quota vera 0,70; P(passa) 0,25 a quota vera 0,68).
+3. **Disaccordo sistematico, non rumore.** Delle 32 discordanze sui lotti (37 con le particelle base), 27 sono Opus sì / Haiku no e 5 il contrario; in ambito D-E 10 contro 2, kappa per strato D-E 0,45 e D-R 0,44 [V]. Non c'è riferimento per dire chi abbia ragione. Descrittivo, non regola: "entrambi sì" 0,668, "almeno uno" 0,776.
+4. **Acqua.** C627 (E00170, lotto edificabile di 4,65 ha a Assiano, 407 alloggi a FAR 1) ha oltre metà della superficie in acqua secondo Opus, che lo codifica L "sulla sola parte a terra" contro l'istruzione di codificare la categoria prevalente; C761 (A00625, sponda e alveo) L per Opus, X per Haiku. Se i due casi contano come non successo, C5a = 0,713 [V]: passa ancora, ma il margine si dimezza. Quanti altri lotti contengano acqua non è stato verificato [L].
+Conclusione [I]: il "passa" è conforme alla regola ma non è un'evidenza che la quota vera superi 0,70; è compatibile con 0,67 come con 0,77, e il risultato si rovescia cambiando il codificatore con quello pre-registrato.
+
+## 7.4 Incidenti della run e JSON troncato
+- **Il JSON troncato contiene C5 intero.** `esecuzioni/_interrotte/2026-11-22T153615Z_completa/esito_criteri.json` (6.174 byte) si interrompe nell'elenco dei disaccordi, dopo `"C5a": 0.7221, "C5": true`, p₁, p₂, IC, C5b, quote per strato, classe e gruppo. Non "valori parziali": tutti i valori decisivi [V].
+- È stato committato in af76460 (15:36:48Z) insieme a `tabelle/controllo_ortofoto_esito_C5.csv` (esito per caso, colonne ok1/ok2), poi spostato in 411572f (15:48Z). Git non può dimostrare che non sia stato letto [L]. Ma la lettura non poteva cambiare l'esito: `run.py` è a3129b5 dalla correzione delle 15:36:40Z all'esecuzione finale (nessuna modifica in 411572f ed e9e7897), i fogli non cambiano dopo 0022265, e `C5_dettaglio` finale è identico al contenuto troncato [V]. Nessuna leva era disponibile dopo il possibile sguardo.
+- La correzione delle chiavi-tupla è codice puro (il JSON precedente aveva già tutti i numeri prima di fermarsi) [V].
+- Registro: la riga delle 15:47:54Z parla della "run delle ~16:0xZ", ora successiva alla riga stessa; dalla cronologia è la run delle ~15:37–15:47Z [I].
+
+## 7.5 Contorni multipli o "autointersecanti"
+Verificati su `lotti_v7.gpkg` tramite la chiave [V]: nessuna geometria non valida (0 su 701; C1 confermato). Le segnalazioni corrispondono a **MultiPolygon con parti che si toccano** (distanza tra parti 0) e a **fori**: C509 = E00312, 4 parti e 3 fori; C543 = A00410, 2 parti; C557 = E00316 (MA_17), 2 parti e 4 fori; C562 = A00459, 2 parti; C602 = A00522, 1 foro; C611 = R00143, 2 parti di cui una di **4 m²**; C614 = R00062, 2 parti. C621 e C715 sono particelle base, non lotti (contorno catastale). Sull'intera base: 122 lotti su 701 con più parti, 127 con fori, 28 parti < 50 m² in 20 lotti (15 < 10 m²). Effetto su C5 non visibile: quota di successo 0,746 / 0,627 sui 67 lotti del campione con parti o fori contro 0,734 / 0,651 sugli altri. Difetto di pulizia geometrica, non di validità; ma un "lotto" fatto di pezzi che si toccano in un punto e di schegge di pochi m² non è un'unità che un nucleo abitativo possa scegliere.
+
+## 7.6 Attuazione delle raccomandazioni della revisione v6
+| Raccomandazione v6 | Attuata? |
+|---|---|
+| 7.12.1 GFU in classe separata fuori dai totali (G2) | Sì nei dati (50 lotti, capacità solo scenario) [V]; ma senza la scelta di Dennis tra le due strade, e contro la sua decisione del 14/11 |
+| 7.12.2 Cantiere solo con fonte ufficiale o due codifiche; Bovisa da verificare; MA_17 non consolidato | Sì: regola inerte, Bovisa in classe GFU "da verificare", MA_17 in pipeline [V] |
+| 7.12.3 Dennis verifica i 17 lotti GFU (G3) | **No**: resa facoltativa dalla lettura di Claude; il "passa" poggia di nuovo solo su codificatori LLM, uno dei quali probabilmente il modello di v5 |
+| 7.12.4 Non congelare; v7 con nuova pre-registrazione | Sì [V] |
+| 7.12.5 Forbice 29.000–45.700 a FAR 1 | Sì nel REPORT; scenari (iv) e (v) solo nei JSON di sensibilità, non in `scenari_capacita.csv` come chiede 1.7 |
+| C1 `potenziale_vuoto` riportato correttamente | **No**: il REPORT v7 non lo riporta (132 su 701; 127 su 565 fuori ambito, 5 su 136 in ambito, dal registro) né la tabella di accordo con Q1 promessa da 1.6 (è solo nel JSON) |
+| C5 registro: modello, versione, istanza per riga | In parte: istanza e ora per riga sì; versione dei modelli no (solo alias), temperatura [L] |
+| M3 riproducibilità da zero | No [L] |
+
+## 7.7 Rischi per le prove successive
+- **Banco**: non presentare la Base L come "validata al 70%": la quota è 0,68–0,76 secondo il codificatore. Lotti in ambito ADP (0,49) e lotti da riusare (0,55–0,59) vanno mostrati come incerti; la classe GFU mai come edificabile.
+- **Base P / Base E e A1–A4**: la capacità va usata come forbice di scenari (circa 29.000–45.700 a FAR 1 per gli edificabili), non come cifra. A1–A4 che pesano i lotti in ambito (in particolare ADP) erediteranno una classificazione che per metà dei casi è contestata dai codificatori (kappa 0,45 in D-E). E00170 (lago) e i lotti con schegge vanno corretti prima di A2 (accessibilità per lotto) e A3 (fattibilità per superficie).
+- **B0–B6**: l'indipendenza tra i metodi non va confusa con quella dei codificatori. Se la base resta questa, i confronti di B0–B6 non devono dipendere da lotti singoli il cui stato è in disaccordo tra codificatori; un'analisi di sensibilità che escluda i 32 lotti discordi va pre-registrata.
+
+## 7.8 Difetti
+**Gravi**
+- **G1. Il "passa" di C5 dipende dalla deviazione sul codificatore 1.** La deviazione viola 2.1 (modelli diversi da quello di v5/v6) e, con i dati disponibili, è decisiva: Haiku da solo e la proiezione con Fable stanno sotto 0,70; IC di C5a [0,665; 0,777]. Prova: 7.2, 7.3. Correzione: non congelare su questo C5; vedi 7.10.
+- **G2. Le regole della v7 non sono state scelte da Dennis.** Passo (0) della pre-registrazione saltato; frase di validità cambiata nella v2 senza dichiararlo; regola GFU contraria alla decisione del 14/11. Prova: 7.2. Correzione: conferma esplicita di Dennis, registrata in `tesi/DECISIONI.md`, prima di qualsiasi congelamento.
+
+**Da correggere**
+- **C1.** `test_lotti.py` fallisce sullo stato committato (riga 78). Correzione: ammettere `codifica.sha256` nelle cartelle dei blocchi e rieseguire.
+- **C2.** REPORT §4 senza `potenziale_vuoto` (132/701) e senza la tabella di accordo con Q1 (pre-reg. 1.6).
+- **C3.** Acqua: E00170 (4,65 ha, 407 alloggi a FAR 1) con lago come lotto edificabile; A00625 su alveo. Correzione: maschera dei corpi idrici sull'intera base (per esempio DUSAF classe 5) e conteggio dei lotti toccati; nel REPORT, la sensibilità di C5a (0,713).
+- **C4.** Geometria: 15 parti < 10 m² e 122 lotti a più parti che si toccano. Correzione: eliminare le schegge sotto una soglia dichiarata e riportare il conteggio; nessun effetto atteso su C5.
+- **C5.** Isolamento delle istanze solo dichiarativo: la chiave è nel repo da c511a6f, l'istanza c1_b02 ha scritto fuori dal proprio blocco, c2_b14 ha inventato un'ora. Correzione: nelle prossime codifiche, cartelle fuori dal repo e nessun accesso alla chiave; dichiararlo [L] nel REPORT.
+- **C6.** Registro e REPORT: dire che il JSON troncato contiene tutti i valori di C5 (non "parziali") e che era committato in af76460; correggere l'ora "~16:0xZ"; versione dei modelli se nota, altrimenti [L].
+- **C7.** `scenari_capacita.csv` senza gli scenari (iv) e (v) richiesti da 1.7.
+
+**Minori**
+- **M1.** REPORT §4 usa "PA" per il gruppo che la pre-registrazione 2.8 chiama "MA".
+- **M2.** In `VERSIONE.md` usare l'hash del contenuto (49327c8a…), non quello del file `.gpkg`, che cambia a ogni esecuzione.
+- **M3.** Riproducibilità da zero senza cache non verificata (come v6).
+- **M4.** Tempi di codifica: circa 7 s per immagine (Opus, 16 istanze in parallelo in 4 minuti) e circa 5 s (Haiku); nessuna soglia prevista, ma conferma che non si può sapere quanto un'immagine sia stata guardata [L].
+
+## 7.9 Esito proposto: **ripeti** (solo C5; la costruzione della base resta)
+C1–C4, C6 e C8 passano e si riproducono (hash del contenuto identico, test verde salvo C1). C5 passa per la regola, ma con una deviazione che viola la condizione principale della prova e che, con i dati in mano, decide l'esito (G1); e le regole della base non sono state confermate da chi deve sceglierle (G2). Regola di arresto: niente congelamento, decide Dennis. Non propongo "cambia": la pipeline e le regole, se Dennis le conferma, non hanno difetti che una nuova versione debba correggere. Propongo di ripetere la sola misura C5 con una regola fissata **adesso, prima di nuovi dati**, accettando in anticipo entrambi gli esiti.
+
+## 7.10 Condizioni per congelare la base e cosa deve decidere Dennis
+1. **Regole della v7** (G2). Dennis conferma o cambia: GFU in classe separata (contro la sua decisione del 14/11) e le scelte [H-D] 7.1–7.7. *Raccomandazione*: confermare la classe separata, coerente con `CONTEXT.md`; se invece preferisce le GFU come edificabili, va cambiato `CONTEXT.md` e C5 deve misurare altro (revisione v6, 7.12.1).
+2. **C5** (G1). Una delle tre strade, scritta in una integrazione della pre-registrazione con hash **prima** di nuove codifiche:
+   - (a) **riferimento umano** *(raccomandata)*: Dennis codifica alla cieca, con le stesse istruzioni, un sottocampione stratificato estratto con un seme nuovo (per esempio 60 lotti, metà in ambito); i 32 lotti discordi solo come analisi a parte, fuori dalla stima, perché scelti in base agli esiti; si dichiara prima quale stima conta (quota di Dennis pesata, soglia 0,70) e come si usano i codificatori (solo per misurarne l'accordo con lui). Risponde anche al G3 della v6, mai attuato. Richiede di rivedere la decisione del 14/11 "nessun controllo umano".
+   - (b) **completare Fable** sulle 233 righe mancanti con istanze nuove (crediti a pagamento) e giudicare C5 con il codificatore pre-registrato. È la strada più fedele alla pre-registrazione, ma oggi è informata: la proiezione dice che probabilmente non passerebbe.
+   - (c) **accettare il "passa"** com'è, con la deviazione dichiarata. Ammissibile per la lettera della regola, ma la base porterebbe l'etichetta "C5 al limite, dipendente dal modello": sconsigliata.
+3. Prima del congelamento, comunque: C1–C7 di 7.8 (in particolare test verde, maschera dell'acqua, schegge), `VERSIONE.md` con l'hash del contenuto.
+4. Nelle prove successive: forbice di capacità, avvertenze su ADP e riuso, sensibilità senza i 32 lotti discordi (7.7).
+
+Non verificato dal revisore: esecuzione completa di `run.py`, immagini, fonti online, presenza d'acqua nei lotti oltre i due casi segnalati, isolamento effettivo delle istanze, modello effettivo delle codifiche v5/v6.

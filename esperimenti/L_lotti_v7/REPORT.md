@@ -1,6 +1,6 @@
 # Report di laboratorio — Base L v7: GFU separate e validazione cieca nuova (ticket #40)
 
-Stato: **C1–C6 e C8 passano** (C5 con C5a = 0,722). Revisione indipendente: §7. Report assemblato dal coordinatore.
+Stato: **C1–C6 e C8 passano secondo la regola** (C5a = 0,722), ma la revisione indipendente propone **ripeti C5** (§7): il passaggio dipende dalla deviazione sul codificatore 1. Non congelata. Report assemblato dal coordinatore.
 
 ## 1. Ipotesi e soglia
 Testo completo in `esecuzioni/00_preregistrazione.txt` (versione 2, SHA-256 `7f98ab31…`, commit 114bea1 del 16/11 21:07Z, prima di ogni esecuzione). La prima stesura (`9342f700…`, commit e5ca67b) è superata: la regola del cantiere chiedeva una fonte ufficiale "nella riga" e non "riferita al cantiere"; la correzione è stata fatta dopo un conteggio in sola lettura ed è dichiarata.
@@ -41,7 +41,7 @@ Lotti da riusare: 672 / 1.429 / 2.938 (recupero 2.898). Forbice degli edificabil
 - Lotti in comune con v5 (30) e v6 (61): kappa tra 0,59 e 0,90; quote simili a quelle di allora (informativo).
 
 ## 5. Esito
-**Passa** secondo i criteri pre-registrati (C1–C6, C8), con le riserve del §6 e della revisione (§7). Non si congela prima della revisione.
+Secondo la regola pre-registrata i criteri passano; la revisione propone **ripeti** per C5 (G1: il passaggio dipende dalla sostituzione Fable → Opus; con il codificatore pre-registrato la proiezione è C5a ≈ 0,68 [I]). Base **non congelata**: decide Dennis (§7).
 
 ## 6. Limiti
 - C5a passa per la media dei due codificatori: **il codificatore 2 da solo (0,684) sarebbe sotto 0,70**. La differenza tra modelli (0,76 contro 0,68) è dello stesso ordine del margine dalla soglia.
@@ -52,7 +52,14 @@ Lotti da riusare: 672 / 1.429 / 2.938 (recupero 2.898). Forbice degli edificabil
 - GFU, perimetri 2012 sostitutivi [H] e destinazioni non verificate [L].
 
 ## 7. Revisione indipendente
-(da scrivere dal `revisore-metodologico`)
+Testo completo in `REVISIONE.md` (`revisore-metodologico`; altra istanza dello stesso sistema, non una verifica umana). **Esito proposto: ripeti (solo C5).**
+- Riproduzione [V]: hash, fogli uniti e C5 ricalcolato da zero coincidono (C5a 0,7221; kappa 0,780). La costruzione della base regge.
+- **G1**: il "passa" dipende dalla deviazione sul codificatore 1 (Opus invece di Fable). Sui 77 lotti codificati anche da Fable: Fable 0,662 contro Opus 0,740; proiezione con Fable C5a ≈ 0,68 [I]; bootstrap IC di C5a [0,665; 0,777], P(C5a < 0,70) ≈ 0,22 [I]. Disaccordo sistematico tra i due codificatori (27 contro 5).
+- **G2**: le regole della v7 (GFU separate, cantiere) non sono state confermate da Dennis: il passo (0) della pre-registrazione è stato saltato dal coordinatore.
+- **Errore del coordinatore** segnalato dalla revisione: il JSON troncato della run interrotta contiene **tutto C5** (C5a 0,7221), non "valori parziali" come scritto nel registro, ed è stato committato (af76460) durante la run finale. Il coordinatore non l'ha aperto, ma git non lo dimostra; dopo quel momento nulla è cambiato (run.py, fogli, risultato identico).
+- Geometria: nessun poligono non valido (0 su 701); 122 lotti a più parti, 127 con fori, 15 schegge sotto 10 m². Acqua: C627 = E00170 (4,65 ha, lago su oltre metà) codificato L sulla sola parte a terra; contando C627 e C761 come non successo C5a = 0,713.
+- Da correggere: `test_lotti.py` fallisce sui file `.sha256` dei blocchi; `potenziale_vuoto` e la sua tabella con Q1 da riportare; maschera dei corpi idrici; schegge geometriche; isolamento delle istanze solo dichiarato; registro (JSON "parziale", ora errata, versione dei modelli); scenari (iv) e (v) mancanti in `scenari_capacita.csv`.
+- Raccomandazione per chiudere C5: Dennis codifica alla cieca un sottocampione stratificato nuovo (es. 60 lotti) con soglia 0,70 pre-registrata; in alternativa completare Fable con crediti. Sconsigliato accettare il "passa" così com'è.
 
 ## 8. Cosa passa alla prova successiva
 Se la revisione non segnala difetti gravi: base L v7 congelata (`VERSIONE.md`) con le classi edificabile / da riusare / attivazione e la classe GFU separata; capacità dichiarata come forbice di scenari; avvertenze sui lotti in ambito AdP e sul riuso per banco, Base P, Base E, A1–A4.
