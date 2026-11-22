@@ -1,0 +1,33 @@
+PRE-REGISTRAZIONE — controllo umano di C5, Base L v7 (ticket #40). Scritta il 2026-11-22, PRIMA di estrarre il campione e di preparare le immagini.
+
+0. Perché
+La revisione della v7 (REVISIONE.md, G1) ha trovato che il "passa" di C5 (C5a = 0,722) dipende dal codificatore 1 (Opus invece di Fable); Haiku da solo dà 0,684, Fable (sui 77 lotti in comune) darebbe circa 0,68. I tre sono modelli linguistici: nessun riferimento umano. Dennis ha chiesto di fare lui il controllo (22/11: "chiudiamo la base e preparami il pacchetto che analizzerò"), il che supera la decisione del 14/11 "nessun controllo umano sui codificatori" solo per questo controllo. Il testo del 16/11 sulle regole della v7 (GFU in classe separata, cantiere) è confermato implicitamente dal "chiudiamo la base" [I]: va detto a Dennis nel messaggio di consegna.
+
+1. Campione
+- Popolazione: i 651 lotti non-GFU della Base L v7 (216 edificabili + 167 da riusare + 268 attivazione, meno quelli non in classi C5: stessi strati di C5).
+- Strati h (fuori ambito F / in ambito D × classe E, R, A): N_h = F-E 173, F-R 147, F-A 245, D-E 43, D-R 20, D-A 23.
+- Allocazione uguale: n_h = 10 per strato, 60 lotti. Seme 8811 (numpy default_rng); ordine per id, scelta senza reinserimento; codici H01–H60 in ordine casuale (stesso generatore). Non si escludono i lotti già codificati dai modelli: servono a confrontare Dennis con Opus e Haiku sugli stessi lotti.
+- Nessuna particella di base (la base 0,15 / 0,12 è già misurata dai modelli e non cambia la decisione).
+- Immagini: AGEA 2018–2019 con contorno rosso (come per i codificatori); niente Sentinel-2 (a 10 m non leggibile, informativo e inutile qui). Licenza AGEA di sola visione: file consegnato a Dennis, non pubblicato.
+
+2. Codifica
+Dennis codifica Q1 su ogni immagine, alla cieca (non vede strato, classe, ambito, codifiche dei modelli): una lettera tra L libera, C cantiere, D dismesso, U in uso, V verde curato o agricolo, I infrastruttura in uso, X non giudicabile; nota facoltativa. Libera o dismessa = {L, C, D} (successo, come per i modelli). Le definizioni sono quelle delle ISTRUZIONI dei codificatori v7.
+
+3. Statistica e soglia (fissate ora)
+- p_h = successi / 10 per strato; quota pesata p = Σ_h W_h p_h, con W_h = N_h / 651 (W: F-E 0,266; F-R 0,226; F-A 0,376; D-E 0,066; D-R 0,031; D-A 0,035). Errore standard: sqrt(Σ W_h² p_h(1−p_h)/ (10−1)) con p_h(1−p_h)=0 negli strati uniformi trattato con correzione (p_h → (k+0,5)/(11)) [H]; IC 95% = p ± 1,96·SE (approssimazione normale) [H].
+- Esito:
+  · p ≥ 0,75 → C5 PASSA con riscontro umano (la base si può congelare);
+  · p < 0,65 → C5 NON PASSA (esito "cambia"; la regola di arresto scatta);
+  · 0,65 ≤ p < 0,75 → INCONCLUDENTE: non si decide dal solo p; si discute con Dennis (aggiungere lotti per un secondo campione pre-registrato, oppure accettare un limite dichiarato).
+- Motivo della fascia: con 60 lotti e SE ≈ 0,08 la soglia 0,70 secca sarebbe quasi una moneta (a q vero 0,70, P(p ≥ 0,70) ≈ 0,5). La fascia 0,65–0,75 dichiara l'incertezza invece di nasconderla [H]. Se Dennis preferisce la soglia secca 0,70, va detto prima di codificare.
+
+4. Analisi informative (non decidono)
+- Accordo lotto per lotto tra Dennis e Opus, Haiku (kappa binario {L,C,D} contro il resto); quale modello è più vicino a Dennis e con che segno (sovra o sotto-stima).
+- p per strato; p solo fuori ambito e solo in ambito; p per classe.
+- Con p_Dennis e la differenza media con i modelli si può calibrare la stima dei modelli [I] (con un campione di 60: solo indicativo).
+
+5. Limiti dichiarati
+n piccolo (10 per strato: una stima per strato ha IC ±0,3); un solo codificatore umano, senza secondo codificatore; Dennis non è un fotointerprete formato e conosce il progetto (la cecità sull'ambito e sulla classe c'è, ma non sulla tesi); le immagini sono del 2018–2019.
+
+6. Arresto
+Regole, soglie e fasce non cambiano dopo aver visto il foglio. Eventuali correzioni al codice di preparazione vanno a registro con motivo.
