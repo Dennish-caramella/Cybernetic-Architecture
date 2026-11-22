@@ -1,0 +1,22 @@
+codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
+C501,U,0,,T3,V1,U?,M,piazzale asfaltato di servizio con telaio aperto senza copertura; s2 pare sterro intorno ma incerto,c1_b01,2026-11-17T07:06:42Z
+C502,L,3,,,,,M,incolto con arbusti; s2 mostra chiazze chiare tipo sterro incerto,c1_b01,2026-11-17T07:06:50Z
+C503,L,3,,T1,V1,U?,N,lotto alberato non curato con piccolo manufatto piano; incerto L o V,c1_b01,2026-11-17T07:06:57Z
+C504,D,3,,T3,V1,U-,N,resti di edificio senza tetto con travi a vista; possibile demolizione in corso,c1_b01,2026-11-17T07:07:04Z
+C505,L,3,,,,,S,incolto alberato tra binari e viadotto,c1_b01,2026-11-17T07:07:10Z
+C506,D,3,,T3,V2,U-,M,capannone lungo ridotto a telaio senza copertura con vegetazione; s2 pare area demolita e sterrata,c1_b01,2026-11-17T07:07:17Z
+C507,L,3,,,,,M,prato incolto; in s2 gran parte chiara come nuovo edificio o sterro,c1_b01,2026-11-17T07:07:25Z
+C508,U,0,,T1,V0,U?,N,due corpi bassi a tetto piano integro con alberi; in ombra parziale,c1_b01,2026-11-17T07:07:34Z
+C509,L,3,,,,,S,sterrato e incolto con fascia di parcheggio in uso a sud; contorno composto da più poligoni,c1_b01,2026-11-17T07:07:43Z
+C510,D,3,,T2,V2,U-,N,fabbricato basso lungo semicoperto dagli alberi con tetto irregolare; incerto D o V alberato,c1_b01,2026-11-17T07:07:52Z
+C511,L,3,,,,,S,ritaglio incolto triangolare lungo stradina tra campi,c1_b01,2026-11-17T07:08:00Z
+C512,V,0,,,,,N,aiuola spartitraffico alberata tra parcheggio e strada,c1_b01,2026-11-17T07:08:08Z
+C513,U,0,E,T1,V0,U+,S,piazzale deposito con container e mezzi più alberi e rampa stradale; possibile area logistica di cantiere,c1_b01,2026-11-17T07:08:17Z
+C514,U,0,,T1,V0,U+,S,palazzina residenziale con tetto a falde integro e giardino curato,c1_b01,2026-11-17T07:08:24Z
+C515,L,3,,,,,S,incolto erboso con arbusti accanto a strada; rudere senza tetto appena fuori contorno,c1_b01,2026-11-17T07:08:31Z
+C516,L,3,,,,,M,lotto di suolo nudo sgomberato con tralicci rossi a terra; incerto L o C; in s2 appare inverdito,c1_b01,2026-11-17T07:08:40Z
+C517,U,0,,T1,V1,U?,N,edificio basso con tetto scuro in parte coperto da chioma d'albero; incerto U o D,c1_b01,2026-11-17T07:08:49Z
+C518,U,0,,,,,N,piazzale con auto e furgoni in sosta in scalo ferroviario; incerto U o I,c1_b01,2026-11-17T07:08:57Z
+C519,I,0,E,T1,V1,U+,S,deposito ferroviario con capannoni piazzali e binari; contorno a più poligoni difficile da delimitare; incerto I o U,c1_b01,2026-11-17T07:09:07Z
+C520,U,0,,T1,V0,U?,N,casa con tetto in coppi e cortile pavimentato; una apertura scura sul tetto forse terrazzino,c1_b01,2026-11-17T07:09:15Z
+C521,D,3,,T1,V2,U-,M,ex area industriale con platee invase da vegetazione e pochi edifici residui; incerto D o L; in s2 area sterrata e nuovo capannone a est,c1_b01,2026-11-17T07:09:23Z
