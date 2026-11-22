@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C816,,,,,,,,,,
-C817,,,,,,,,,,
-C818,,,,,,,,,,
-C819,,,,,,,,,,
-C820,,,,,,,,,,
-C821,,,,,,,,,,
-C822,,,,,,,,,,
-C823,,,,,,,,,,
-C824,,,,,,,,,,
-C825,,,,,,,,,,
-C826,,,,,,,,,,
-C827,,,,,,,,,,
-C828,,,,,,,,,,
-C829,,,,,,,,,,
-C830,,,,,,,,,,
-C831,,,,,,,,,,
-C832,,,,,,,,,,
-C833,,,,,,,,,,
-C834,,,,,,,,,,
-C835,,,,,,,,,,
-C836,,,,,,,,,,
+C816,L,2,,,,,S,striscia in svincolo prato incolto e rampe,c1o_b16,2026-11-22T15:12:16Z
+C817,L,2,E,T1,V1,U?,M,scalo con sterro e binari dismessi a nord e binari attivi a sud in s2 sterro esteso,c1o_b16,2026-11-22T15:12:24Z
+C818,L,3,,T1,V2,U?,M,ex binari invasi da vegetazione spontanea - in s2 sterrato senza alberi,c1o_b16,2026-11-22T15:12:31Z
+C819,L,3,,,,,S,prato incolto in svincolo con viadotto - LCD tra 2 e 3,c1o_b16,2026-11-22T15:12:37Z
+C820,I,0,,T1,V0,U+,N,piazzale con binari di deposito in uso - incerto tra I e U,c1o_b16,2026-11-22T15:12:43Z
+C821,U,0,,T1,V1,U?,N,palazzina con cortile alberato in ombra,c1o_b16,2026-11-22T15:12:49Z
+C822,L,3,,,,,M,binari dismessi con vegetazione spontanea - in s2 parti sterrate,c1o_b16,2026-11-22T15:12:55Z
+C823,L,2,,,,,S,carreggiata e scarpata incolta - incerto tra L e I,c1o_b16,2026-11-22T15:13:03Z
+C824,D,3,,T1,V1,U-,S,edificio a U tetto integro ma alberi incolti attorno e nessun segno d uso - incerto tra D e U,c1o_b16,2026-11-22T15:13:11Z
+C825,L,3,E,T2,V1,U?,M,prato incolto ed edificio con tetto in parte scoperto forse lavori - in s2 area chiara,c1o_b16,2026-11-22T15:13:21Z
+C826,V,0,,,,,S,prato agricolo verde curato,c1o_b16,2026-11-22T15:13:26Z
+C827,L,2,E,T1,V1,U?,S,fascia lungo ferrovia con vegetazione e binari laterali - scala grande lettura incerta,c1o_b16,2026-11-22T15:13:35Z
+C828,U,0,,T1,V1,U+,N,parcheggio pieno alberato con piccoli edifici,c1o_b16,2026-11-22T15:13:42Z
+C829,L,3,,T3,V2,U-,N,lotto con alberi spontanei fitti e forse rudere o macerie al centro - Q2 incerta,c1o_b16,2026-11-22T15:13:51Z
+C830,U,0,,T1,V0,U?,N,tetto a falde integro in isolato urbano,c1o_b16,2026-11-22T15:13:58Z
+C831,U,0,,T1,V0,U?,N,edificio d angolo con tetti integri,c1o_b16,2026-11-22T15:14:05Z
+C832,V,0,,,,,S,campo con solchi di lavorazione secco - incerto tra V e L,c1o_b16,2026-11-22T15:14:14Z
+C833,U,0,,T1,V1,U?,N,cortile interno tra stecche residenziali in ombra - lettura limitata,c1o_b16,2026-11-22T15:14:22Z
+C834,L,3,,,,,S,prato incolto con alberi spontanei lungo strada,c1o_b16,2026-11-22T15:14:29Z
+C835,L,3,,T1,V2,U-,S,area incolta tra strada e ferrovia con piccolo capanno,c1o_b16,2026-11-22T15:14:38Z
+C836,U,0,,T1,V1,U?,S,edificio a corte tetto integro e cortile interno con vegetazione - incerto tra U e D,c1o_b16,2026-11-22T15:14:44Z

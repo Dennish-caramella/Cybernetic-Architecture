@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C543,,,,,,,,,,
-C544,,,,,,,,,,
-C545,,,,,,,,,,
-C546,,,,,,,,,,
-C547,,,,,,,,,,
-C548,,,,,,,,,,
-C549,,,,,,,,,,
-C550,,,,,,,,,,
-C551,,,,,,,,,,
-C552,,,,,,,,,,
-C553,,,,,,,,,,
-C554,,,,,,,,,,
-C555,,,,,,,,,,
-C556,,,,,,,,,,
-C557,,,,,,,,,,
-C558,,,,,,,,,,
-C559,,,,,,,,,,
-C560,,,,,,,,,,
-C561,,,,,,,,,,
-C562,,,,,,,,,,
-C563,,,,,,,,,,
+C543,L,3,,,,,S,incolto con arbusti; contorno autointersecato,c1o_b03,2026-11-22T15:11:44Z
+C544,U,0,,T1,V0,U?,N,edificio a corte con tetto piano in ombra al centro,c1o_b03,2026-11-22T15:11:50Z
+C545,V,0,,,,,M,campo agricolo mietuto; in s2 area scura forse acqua di cava o coltura (incerto),c1o_b03,2026-11-22T15:11:59Z
+C546,L,3,,,,,N,fascia lungo canale con sterrato incolto e alberi,c1o_b03,2026-11-22T15:12:05Z
+C547,D,3,,T2,V1,U-,M,capannone con aperture nel tetto; in s2 intorno sembra sterrato chiaro al posto del verde,c1o_b03,2026-11-22T15:12:12Z
+C548,L,3,,,,,S,prato secco con alberi accanto a parco; incerto tra L e V,c1o_b03,2026-11-22T15:12:19Z
+C549,L,3,,,,,S,lotto incolto con vegetazione spontanea tra capannoni,c1o_b03,2026-11-22T15:12:25Z
+C550,U,0,E,T1,V0,U+,N,area piccola: chiome alberi e pavimentato di pertinenza con tettoia; uso da auto e piscina vicine,c1o_b03,2026-11-22T15:12:34Z
+C551,D,2,,T1,V2,U?,N,cortile interno invaso da vegetazione e macerie con piccolo edificio a tetto integro,c1o_b03,2026-11-22T15:12:43Z
+C552,U,0,,T1,V0,U+,M,edifici in uso con auto in cortile; in s2 parte est appare chiara (forse tetti rifatti; incerto),c1o_b03,2026-11-22T15:12:51Z
+C553,L,3,,,,,S,relitto boscato spontaneo tra svincoli stradali,c1o_b03,2026-11-22T15:12:58Z
+C554,L,2,E,T1,V2,U+,N,lotto con vegetazione spontanea e platea vuota; piccolo edificio e auto parcheggiate,c1o_b03,2026-11-22T15:13:07Z
+C555,V,0,E,,,,N,sagrato o cortile alberato pavimentato accanto a chiesa; incerto tra V e U,c1o_b03,2026-11-22T15:13:16Z
+C556,L,2,,,,,M,lotto a prato non curato con vialetti pavimentati; in s2 area beige tipo cantiere,c1o_b03,2026-11-22T15:13:25Z
+C557,D,3,,T2,V2,U-,M,complesso industriale con grandi capannoni e vegetazione su tetti e piazzali; contorno multiplo; in s2 parti sud ed est chiare forse sterro,c1o_b03,2026-11-22T15:13:36Z
+C558,U,1,,T1,V1,U+,N,cortile sterrato usato come parcheggio con edifici bassi,c1o_b03,2026-11-22T15:13:47Z
+C559,D,3,,T3,V2,U-,N,rudere senza copertura con muri visibili invaso da alberi,c1o_b03,2026-11-22T15:13:56Z
+C560,U,0,,T1,V0,U+,N,edificio residenziale con tetto in coppi integro e auto intorno,c1o_b03,2026-11-22T15:14:05Z
+C561,D,3,,T3,V1,U-,N,edifici con crolli parziali e macerie all'interno; incerto tra T2 e T3,c1o_b03,2026-11-22T15:14:14Z
+C562,V,1,,,,,S,parco alberato con sentieri e prato secco; striscia a est meno curata,c1o_b03,2026-11-22T15:14:23Z
+C563,L,3,,,,,S,prato incolto con alberi presso ferrovia; coda con parcheggio in uso,c1o_b03,2026-11-22T15:14:33Z

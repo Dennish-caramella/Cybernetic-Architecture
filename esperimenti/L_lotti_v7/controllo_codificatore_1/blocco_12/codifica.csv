@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C732,,,,,,,,,,
-C733,,,,,,,,,,
-C734,,,,,,,,,,
-C735,,,,,,,,,,
-C736,,,,,,,,,,
-C737,,,,,,,,,,
-C738,,,,,,,,,,
-C739,,,,,,,,,,
-C740,,,,,,,,,,
-C741,,,,,,,,,,
-C742,,,,,,,,,,
-C743,,,,,,,,,,
-C744,,,,,,,,,,
-C745,,,,,,,,,,
-C746,,,,,,,,,,
-C747,,,,,,,,,,
-C748,,,,,,,,,,
-C749,,,,,,,,,,
-C750,,,,,,,,,,
-C751,,,,,,,,,,
-C752,,,,,,,,,,
+C732,U,0,,T1,V0,U+,N,residenziale in uso con giardino,c1o_b12,2026-11-22T15:12:17Z
+C733,U,0,,T1,V1,U+,S,capannone commerciale e vecchi edifici con alberi a sud,c1o_b12,2026-11-22T15:12:23Z
+C734,U,0,,T1,V1,U?,N,cortile alberato interno a isolato residenziale; incerto U o V; striscia di tetto con oggetti,c1o_b12,2026-11-22T15:12:31Z
+C735,L,2,,,,,N,striscia sottile lungo fascio binari: sterrato a nord e incolto verde a sud; incerto L o I; scala piccola,c1o_b12,2026-11-22T15:12:38Z
+C736,D,3,,T1,V1,U-,M,solo falda di tetto in coppi apparentemente integra in complesso con tettoie scoperchiate; incerto D o U,c1o_b12,2026-11-22T15:12:46Z
+C737,L,3,,,,,N,prato falciato libero accanto a strada nuova; incerto L o V,c1o_b12,2026-11-22T15:12:52Z
+C738,L,2,,,,,N,terreno nudo e incolto con vasca impermeabilizzata (circa un quarto); LCD tra 2 e 3,c1o_b12,2026-11-22T15:13:01Z
+C739,L,2,E,T1,V1,U+,N,incolto con alberi e sabbia al centro; cantiere a ovest e sud; strade incluse,c1o_b12,2026-11-22T15:13:09Z
+C740,U,0,,T1,V0,U+,N,edificio urbano centrale con tetti piani e terrazze in uso,c1o_b12,2026-11-22T15:13:14Z
+C741,L,3,,T1,V1,U?,N,lotto incolto con piccola baracca e resti di manufatti bassi,c1o_b12,2026-11-22T15:13:22Z
+C742,D,3,,T2,V1,U-,M,capannoni industriali dismessi con coperture forate e parte centrale crollata; in s2 sembra spianato,c1o_b12,2026-11-22T15:13:30Z
+C743,U,1,,T1,V1,U?,S,grande edificio con copertura bianca integra; prato incolto a nordovest e piazzale sterrato a nordest,c1o_b12,2026-11-22T15:13:37Z
+C744,L,2,,,,,S,area tra svincoli: incolto a ovest e prato falciato con filare e percorso a est; quasi metà e metà,c1o_b12,2026-11-22T15:13:45Z
+C745,D,3,,T2,V2,U-,N,struttura incompiuta o abbandonata: solaio con ferri sporgenti e telaio scoperto invaso da vegetazione; incerto D o C,c1o_b12,2026-11-22T15:13:55Z
+C746,D,3,,T1,V1,U-,N,solo copertura grigia integra di stecca su strada; piazzale adiacente vuoto con erbacce; incerto D o U,c1o_b12,2026-11-22T15:14:06Z
+C747,L,3,,,,,M,lotto sterrato con incolto ai bordi; in s2 appare inverdito,c1o_b12,2026-11-22T15:14:13Z
+C748,V,1,,,,,S,aiuola di svincolo con prato e alberi giovani di nuovo impianto; bordo sud a erba secca,c1o_b12,2026-11-22T15:14:22Z
+C749,L,3,,,,,S,grande lotto vuoto con resti di pavimentazioni e incolto,c1o_b12,2026-11-22T15:14:29Z
+C750,U,1,,T1,V1,U+,S,edificio basso con copertura chiara e giardino alberato; terra nuda a est; auto nel lotto,c1o_b12,2026-11-22T15:14:37Z
+C751,X,,,,,,N,immagine visibile ma contorno lineare lungo ferrovia a scala 2 km: interno non leggibile (forse fascia verde o sedime ferroviario),c1o_b12,2026-11-22T15:14:46Z
+C752,I,1,,,,,S,binario sotto cavalcavia e tratto di strada con alberi ed erba secca; uso del binario non verificabile,c1o_b12,2026-11-22T15:14:52Z

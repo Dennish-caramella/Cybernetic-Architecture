@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C711,,,,,,,,,,
-C712,,,,,,,,,,
-C713,,,,,,,,,,
-C714,,,,,,,,,,
-C715,,,,,,,,,,
-C716,,,,,,,,,,
-C717,,,,,,,,,,
-C718,,,,,,,,,,
-C719,,,,,,,,,,
-C720,,,,,,,,,,
-C721,,,,,,,,,,
-C722,,,,,,,,,,
-C723,,,,,,,,,,
-C724,,,,,,,,,,
-C725,,,,,,,,,,
-C726,,,,,,,,,,
-C727,,,,,,,,,,
-C728,,,,,,,,,,
-C729,,,,,,,,,,
-C730,,,,,,,,,,
-C731,,,,,,,,,,
+C711,U,0,,T1,V1,U?,N,cortile alberato macchie scure sul tetto,c1o_b11,2026-11-22T15:12:16Z
+C712,U,0,,T1,V0,U+,S,magazzino ferroviario con mezzi e auto accanto,c1o_b11,2026-11-22T15:12:21Z
+C713,D,3,,T3,V2,U-,N,rudere senza copertura con vegetazione all'interno,c1o_b11,2026-11-22T15:12:26Z
+C714,L,3,,,,,M,incolto arbustivo con radure in s2 superficie chiara con segni lineari,c1o_b11,2026-11-22T15:12:31Z
+C715,U,0,,T1,V0,U+,S,doppio contorno codificato quello esterno complesso con campo sportivo,c1o_b11,2026-11-22T15:12:36Z
+C716,U,0,,T1,V0,U?,N,incerto gran parte in ombra cortile interno tra edifici,c1o_b11,2026-11-22T15:12:41Z
+C717,U,0,,T1,V0,U?,N,edifici urbani tetti piani integri parte in ombra,c1o_b11,2026-11-22T15:12:46Z
+C718,V,0,,T1,V0,U?,N,giardino alberato circa metà e parte di villa incerto V contro U,c1o_b11,2026-11-22T15:12:53Z
+C719,L,3,,,,,S,alberatura spontanea incolta accanto a capannoni con piazzale invaso incerto L contro V,c1o_b11,2026-11-22T15:12:59Z
+C720,L,2,,,,,M,scarpata svincolo erba secca con aiuole pacciamate in s2 più verde,c1o_b11,2026-11-22T15:13:07Z
+C721,L,1,E,T1,V1,U+,S,area ferroviaria con piazzale sterrato vuoto campi sportivi e alberi incerto L contro I,c1o_b11,2026-11-22T15:13:14Z
+C722,L,3,,,,,M,area sgombra con platee di demolizione accanto a cantiere in s2 sagome edificate,c1o_b11,2026-11-22T15:13:22Z
+C723,L,3,,,,,S,fascia boscata spontanea lungo la ferrovia,c1o_b11,2026-11-22T15:13:29Z
+C724,D,3,,T1,V2,U-,S,corpi a corte con cortili invasi da alberi tetti apparentemente integri,c1o_b11,2026-11-22T15:13:37Z
+C725,U,0,,T1,V0,U?,S,capannone a copertura chiara con file di lucernari o listelli incerto T1 contro T2,c1o_b11,2026-11-22T15:13:46Z
+C726,D,3,,T2,V1,U-,M,tetto piano degradato con aperture e alberi incolti intorno in s2 area circostante chiara forse sgombrata,c1o_b11,2026-11-22T15:13:54Z
+C727,U,0,,T1,V0,U+,M,centro sportivo con campi da tennis e padel in s2 campi non riconoscibili toni chiari,c1o_b11,2026-11-22T15:14:03Z
+C728,V,1,E,T1,V1,U+,S,orti informali con baracche alberi e spiazzo sterrato incerto V contro L,c1o_b11,2026-11-22T15:14:12Z
+C729,L,3,,,,,S,due poligoni con macchie arboree ed erba secca tra svincoli incerto L contro V,c1o_b11,2026-11-22T15:14:20Z
+C730,U,1,,T1,V1,U+,N,piazzale pieno di auto con tettoia e bordo infestato,c1o_b11,2026-11-22T15:14:29Z
+C731,L,3,,,,,M,incolto secco con tracciato e cataste di materiale in s2 più verde forse stagionale,c1o_b11,2026-11-22T15:14:36Z

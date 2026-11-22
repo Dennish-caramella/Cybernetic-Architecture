@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C669,,,,,,,,,,
-C670,,,,,,,,,,
-C671,,,,,,,,,,
-C672,,,,,,,,,,
-C673,,,,,,,,,,
-C674,,,,,,,,,,
-C675,,,,,,,,,,
-C676,,,,,,,,,,
-C677,,,,,,,,,,
-C678,,,,,,,,,,
-C679,,,,,,,,,,
-C680,,,,,,,,,,
-C681,,,,,,,,,,
-C682,,,,,,,,,,
-C683,,,,,,,,,,
-C684,,,,,,,,,,
-C685,,,,,,,,,,
-C686,,,,,,,,,,
-C687,,,,,,,,,,
-C688,,,,,,,,,,
-C689,,,,,,,,,,
+C669,L,3,,,,,S,incolto con deposito materiali a nord,c1o_b09,2026-11-22T15:12:17Z
+C670,U,1,E,,,,N,pertinenza con campo sportivo alberi e striscia sterrata,c1o_b09,2026-11-22T15:12:25Z
+C671,L,3,,,,,M,sterrato e scarpata incolta in area tipo ex stadio - s2 piu verde,c1o_b09,2026-11-22T15:12:33Z
+C672,L,3,,,,,M,bosco spontaneo prato umido e parte di stagno - s2 zona sud piu chiara forse sterro incerto,c1o_b09,2026-11-22T15:12:40Z
+C673,L,3,,,,,S,incolto erboso tra strade sterrate,c1o_b09,2026-11-22T15:12:45Z
+C674,U,0,,T1,V1,U?,N,contorno sottile a L su bordo capannone e piccolo annesso - incerto,c1o_b09,2026-11-22T15:12:53Z
+C675,L,3,,T0,V2,U-,S,strisce lungo sterrato e bosco spontaneo con piccolo manufatto al vertice incerto,c1o_b09,2026-11-22T15:13:01Z
+C676,U,0,,T1,V0,U+,N,edificio con terrazzi e cortile in ombra non leggibile - riflesso solare,c1o_b09,2026-11-22T15:13:08Z
+C677,D,3,E,T3,V1,U-,N,fila di corpi senza tetto e piazzale vuoto a ovest - D vs L quasi pari,c1o_b09,2026-11-22T15:13:17Z
+C678,U,0,,T1,V0,U?,N,edificio a corte in tessuto urbano denso tetti integri,c1o_b09,2026-11-22T15:13:23Z
+C679,U,0,,T1,V0,U+,N,edificio residenziale con terrazze arredate e giardino curato,c1o_b09,2026-11-22T15:13:29Z
+C680,L,3,,,,,S,piazzale sterrato vuoto lungo scalo ferroviario - possibile I se area di servizio,c1o_b09,2026-11-22T15:13:36Z
+C681,L,3,,T3,V2,U-,N,lotto invaso da vegetazione con piccolo rudere senza tetto - casa a est in gran parte fuori contorno,c1o_b09,2026-11-22T15:13:46Z
+C682,L,3,,T1,V1,U?,S,incolto tra ferrovia e canale con sentieri e viadotto - edificio basso al bordo sud-ovest incerto se dentro,c1o_b09,2026-11-22T15:13:55Z
+C683,U,0,,T1,V1,U+,N,capannoni con tetti integri e auto in cortile,c1o_b09,2026-11-22T15:14:03Z
+C684,V,0,E,T1,V0,U+,N,alberatura con parcheggio pieno e parte di edificio lungo - V vs U incerto,c1o_b09,2026-11-22T15:14:13Z
+C685,U,1,,T2,V1,U?,N,corpi su strada con coppi macchiati forse danneggiati e tetto piano chiaro - stato incerto,c1o_b09,2026-11-22T15:14:23Z
+C686,L,3,,,,,N,radura erbosa forse sfalciata e bosco spontaneo a sud - L vs V incerto,c1o_b09,2026-11-22T15:14:31Z
+C687,U,0,,T1,V0,U?,N,tetti piani in isolato denso - meta ovest in ombra profonda non leggibile,c1o_b09,2026-11-22T15:14:39Z
+C688,U,0,,T1,V0,U?,N,palazzina residenziale tetto a falde integro con lucernari,c1o_b09,2026-11-22T15:14:46Z
+C689,U,0,,T1,V0,U?,S,capannone industriale tetti integri con lucernari - s2 tetto piu giallastro incerto,c1o_b09,2026-11-22T15:14:52Z

@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C753,,,,,,,,,,
-C754,,,,,,,,,,
-C755,,,,,,,,,,
-C756,,,,,,,,,,
-C757,,,,,,,,,,
-C758,,,,,,,,,,
-C759,,,,,,,,,,
-C760,,,,,,,,,,
-C761,,,,,,,,,,
-C762,,,,,,,,,,
-C763,,,,,,,,,,
-C764,,,,,,,,,,
-C765,,,,,,,,,,
-C766,,,,,,,,,,
-C767,,,,,,,,,,
-C768,,,,,,,,,,
-C769,,,,,,,,,,
-C770,,,,,,,,,,
-C771,,,,,,,,,,
-C772,,,,,,,,,,
-C773,,,,,,,,,,
+C753,D,3,,T3,V1,U-,N,capannone con copertura scheletrica a vista,c1o_b13,2026-11-22T15:12:17Z
+C754,L,2,,,,,N,binario e scarpata incolta; incerto L vs I,c1o_b13,2026-11-22T15:12:24Z
+C755,C,3,,T1,V0,U+,M,cantiere con baracche e striscia di sterrato a ovest,c1o_b13,2026-11-22T15:12:30Z
+C756,L,1,E,T1,V2,U?,N,alberi spontanei e capannoni bassi; incerto L vs U,c1o_b13,2026-11-22T15:12:37Z
+C757,L,3,,,,,S,bosco spontaneo con sentiero,c1o_b13,2026-11-22T15:12:41Z
+C758,U,0,,T1,V0,U+,N,isolato residenziale con cortile e balconi,c1o_b13,2026-11-22T15:12:46Z
+C759,U,0,,T1,V0,U+,N,edificio a L con cortile alberato e auto,c1o_b13,2026-11-22T15:12:52Z
+C760,D,3,,T3,V2,U-,M,telai senza copertura e piazzale invaso; s2 chiaro forse sterro,c1o_b13,2026-11-22T15:12:59Z
+C761,L,3,,,,,S,sponda fluviale con vegetazione spontanea e parte d'alveo,c1o_b13,2026-11-22T15:13:06Z
+C762,U,0,,T1,V0,U+,N,palazzina con terrazzi e giardino di pertinenza; incerto U vs V,c1o_b13,2026-11-22T15:13:13Z
+C763,D,3,,T1,V1,U?,N,shed a denti di sega con tegole usurate; incerto D vs U,c1o_b13,2026-11-22T15:13:22Z
+C764,L,3,,,,,S,prato incolto tra strade; forse sfalciato,c1o_b13,2026-11-22T15:13:29Z
+C765,U,0,,T1,V1,U?,N,edificio basso a tetto piano con cortiletto e albero,c1o_b13,2026-11-22T15:13:36Z
+C766,U,0,,T1,V0,U+,N,edificio con terrazzi verdi e corte con auto,c1o_b13,2026-11-22T15:13:42Z
+C767,V,0,,,,,S,striscia di prato curato e vialetto tra condomini,c1o_b13,2026-11-22T15:13:49Z
+C768,I,1,E,,,,N,strada con strisce e aiuola alberata spontanea,c1o_b13,2026-11-22T15:13:57Z
+C769,L,3,,T2,V1,U-,M,incolto e piazzale asfaltato vuoto con capannoni degradati; s2 capannoni forse demoliti,c1o_b13,2026-11-22T15:14:06Z
+C770,L,3,,,,,S,lotto invaso da alberi; forse resti di struttura sotto la chioma,c1o_b13,2026-11-22T15:14:14Z
+C771,I,0,,,,,N,fascio di binari attivi con catenaria,c1o_b13,2026-11-22T15:14:20Z
+C772,L,3,,T2,V2,U-,N,incolto con tettoia o serra bucata e ruderi; incerto L vs D,c1o_b13,2026-11-22T15:14:29Z
+C773,U,0,,,,,N,stretto passaggio tra edifici con oggetti e piante in vaso; area minuscola,c1o_b13,2026-11-22T15:14:35Z

@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C522,,,,,,,,,,
-C523,,,,,,,,,,
-C524,,,,,,,,,,
-C525,,,,,,,,,,
-C526,,,,,,,,,,
-C527,,,,,,,,,,
-C528,,,,,,,,,,
-C529,,,,,,,,,,
-C530,,,,,,,,,,
-C531,,,,,,,,,,
-C532,,,,,,,,,,
-C533,,,,,,,,,,
-C534,,,,,,,,,,
-C535,,,,,,,,,,
-C536,,,,,,,,,,
-C537,,,,,,,,,,
-C538,,,,,,,,,,
-C539,,,,,,,,,,
-C540,,,,,,,,,,
-C541,,,,,,,,,,
-C542,,,,,,,,,,
+C522,U,0,,T1,V0,U+,N,tetto a falde integro e cortile con auto,c1o_b02,2026-11-22T15:11:45Z
+C523,U,0,,T1,V1,U?,N,edificio lungo a falde integro; chiome alberi stradali sul bordo,c1o_b02,2026-11-22T15:11:51Z
+C524,U,0,,T1,V0,U?,N,complesso a corti con tetti integri,c1o_b02,2026-11-22T15:11:56Z
+C525,L,3,,,,,S,incolto tra svincolo e capannoni,c1o_b02,2026-11-22T15:12:01Z
+C526,U,0,,T1,V0,U?,N,capannone a shed integro; uso non leggibile dall'alto,c1o_b02,2026-11-22T15:12:06Z
+C527,L,3,,T1,V1,U?,M,grande incolto con un edificio a tetto piano; in s2 parte sud verde,c1o_b02,2026-11-22T15:12:12Z
+C528,L,3,,,,,S,incolto con alberi e erba alta presso ferrovia,c1o_b02,2026-11-22T15:12:18Z
+C529,D,3,,T2,V1,U-,M,capannone con vegetazione nei compluvi e chiazze sul tetto; in s2 contorno chiaro incerto,c1o_b02,2026-11-22T15:12:26Z
+C530,L,3,,,,,S,striscia di prato e alberi spontanei; incerto tra L e V,c1o_b02,2026-11-22T15:12:32Z
+C531,U,0,,T1,V0,U+,N,edificio a tetto basso integro; parcheggio adiacente con auto,c1o_b02,2026-11-22T15:12:38Z
+C532,D,3,,T3,V2,U-,N,muri senza copertura invasi da vegetazione; incerto tra D e L,c1o_b02,2026-11-22T15:12:43Z
+C533,U,0,,T1,V0,U+,N,edificio su strada con tetto integro e balconi con vasi,c1o_b02,2026-11-22T15:12:56Z
+C534,U,0,,T1,V0,U+,N,palazzina residenziale con balconi e tende; vista obliqua,c1o_b02,2026-11-22T15:13:03Z
+C535,U,1,,T1,V0,U+,S,lotto periurbano con casa roulotte e auto; prato secco come pertinenza incerto tra U e L,c1o_b02,2026-11-22T15:13:12Z
+C536,U,1,,T1,V1,U?,M,grande capannone integro e lotto incolto a sud-est; in s2 angolo sud-est chiaro forse edificato,c1o_b02,2026-11-22T15:13:22Z
+C537,L,3,,,,,S,prato incolto con alberi attorno a palazzina esclusa dal contorno,c1o_b02,2026-11-22T15:13:30Z
+C538,V,0,,,,,S,parco nuovo con viali e alberi giovani attorno a cascina esclusa; prato secco,c1o_b02,2026-11-22T15:13:39Z
+C539,L,2,,T1,V2,U?,S,contorno a fascia lungo ferrovia con incolto arbustivo e piccolo edificio; parte binari; contorno di lettura difficile,c1o_b02,2026-11-22T15:13:52Z
+C540,L,2,,T1,V2,U+,S,prato secco e alberi spontanei con casette a nord-est; LCD tra 2 e 3,c1o_b02,2026-11-22T15:14:02Z
+C541,D,3,,T1,V2,U?,S,casa isolata con tetto integro in lotto invaso da vegetazione; incerto tra D e L,c1o_b02,2026-11-22T15:14:11Z
+C542,L,3,,T1,V1,U?,S,piazzale sterrato vuoto con piccolo edificio bianco a sud-ovest; capannone sul bordo est forse fuori contorno,c1o_b02,2026-11-22T15:14:18Z

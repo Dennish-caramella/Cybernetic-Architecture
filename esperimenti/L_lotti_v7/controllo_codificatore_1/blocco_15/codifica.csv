@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C795,,,,,,,,,,
-C796,,,,,,,,,,
-C797,,,,,,,,,,
-C798,,,,,,,,,,
-C799,,,,,,,,,,
-C800,,,,,,,,,,
-C801,,,,,,,,,,
-C802,,,,,,,,,,
-C803,,,,,,,,,,
-C804,,,,,,,,,,
-C805,,,,,,,,,,
-C806,,,,,,,,,,
-C807,,,,,,,,,,
-C808,,,,,,,,,,
-C809,,,,,,,,,,
-C810,,,,,,,,,,
-C811,,,,,,,,,,
-C812,,,,,,,,,,
-C813,,,,,,,,,,
-C814,,,,,,,,,,
-C815,,,,,,,,,,
+C795,U,0,,T1,V0,U+,S,complesso residenziale con cortile,c1o_b15,2026-11-22T15:12:14Z
+C796,L,1,E,T1,V1,U?,S,tensostruttura con prato incolto e alberi attorno,c1o_b15,2026-11-22T15:12:20Z
+C797,L,3,,,,,N,striscia di vegetazione spontanea; area accanto forse cambiata in s2,c1o_b15,2026-11-22T15:12:25Z
+C798,L,2,,T1,V2,U?,N,cortile incolto alberato con edificio basso lungo il lato ovest; LCD al limite 2-3,c1o_b15,2026-11-22T15:12:33Z
+C799,U,0,,T1,V0,U+,N,edifici a corte con tetti integri e auto nel cortile,c1o_b15,2026-11-22T15:12:37Z
+C800,V,0,,,,,S,campo coltivato; nuovo edificato a sud fuori contorno in s2,c1o_b15,2026-11-22T15:12:43Z
+C801,U,1,E,T1,V2,U?,M,capannoni ferroviari integri e fascia sud con vegetazione spontanea; in s2 area sgomberata o sterro; Q1 U o L incerto,c1o_b15,2026-11-22T15:12:52Z
+C802,L,3,,,,,S,fascia boscata spontanea al margine di parco; L o V incerto,c1o_b15,2026-11-22T15:13:00Z
+C803,U,1,,T1,V1,U+,S,edificio commerciale con ampio piazzale quasi vuoto e qualche auto; U o L incerto,c1o_b15,2026-11-22T15:13:08Z
+C804,D,3,,T2,V2,U-,M,capannoni con tetti degradati e vegetazione su tetto ovest; s2 forse demolito (incerto),c1o_b15,2026-11-22T15:13:16Z
+C805,V,0,,,,,S,aiuola di svincolo stradale a prato sfalciato con alberi; V o L o I incerto,c1o_b15,2026-11-22T15:13:23Z
+C806,D,3,,T2,V2,U-,N,edificio dismesso con tetto bucato e alberi interni; parte di strada a est; LCD 2-3,c1o_b15,2026-11-22T15:13:32Z
+C807,U,0,,T1,V1,U?,N,edificio storico a corte con tetti in coppi integri; piccola porzione nord forse scoperta o in lavori,c1o_b15,2026-11-22T15:13:39Z
+C808,U,0,,T1,V1,U?,N,edificio urbano con terrazzi e cortile; area piccola,c1o_b15,2026-11-22T15:13:46Z
+C809,L,3,,,,,S,terreno incolto e terrapieno tra svincolo e quartiere,c1o_b15,2026-11-22T15:13:53Z
+C810,U,1,E,T1,V1,U+,N,capannoni ferroviari e parcheggio con auto; alcune falde scure forse danneggiate; uso dei capannoni incerto,c1o_b15,2026-11-22T15:14:04Z
+C811,U,0,,T1,V1,U+,N,isolato di centro storico denso con tetti integri e terrazzi,c1o_b15,2026-11-22T15:14:10Z
+C812,L,3,,,,,S,vasta area libera di suolo nudo e incolto con tracce di vecchi tracciati,c1o_b15,2026-11-22T15:14:18Z
+C813,U,1,E,T1,V1,U+,N,mosaico di edifici in uso parcheggi alberi e fascia lungo ferrovia; qualche area sterrata al centro,c1o_b15,2026-11-22T15:14:27Z
+C814,L,3,,,,,N,piccolo lotto con vegetazione fitta apparentemente spontanea; L o V incerto,c1o_b15,2026-11-22T15:14:35Z
+C815,L,3,,,,,M,incolto con boscaglia e sterrati; contorno irregolare e frastagliato; in s2 parte est piu chiara forse sterro,c1o_b15,2026-11-22T15:14:42Z

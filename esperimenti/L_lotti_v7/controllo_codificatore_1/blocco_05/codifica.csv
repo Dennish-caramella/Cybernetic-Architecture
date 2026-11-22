@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C585,,,,,,,,,,
-C586,,,,,,,,,,
-C587,,,,,,,,,,
-C588,,,,,,,,,,
-C589,,,,,,,,,,
-C590,,,,,,,,,,
-C591,,,,,,,,,,
-C592,,,,,,,,,,
-C593,,,,,,,,,,
-C594,,,,,,,,,,
-C595,,,,,,,,,,
-C596,,,,,,,,,,
-C597,,,,,,,,,,
-C598,,,,,,,,,,
-C599,,,,,,,,,,
-C600,,,,,,,,,,
-C601,,,,,,,,,,
-C602,,,,,,,,,,
-C603,,,,,,,,,,
-C604,,,,,,,,,,
-C605,,,,,,,,,,
+C585,U,0,,T1,V0,U+,N,isolato urbano denso,c1o_b05,2026-11-22T15:11:45Z
+C586,D,3,,T2,V1,U-,N,capannone con copertura degradata,c1o_b05,2026-11-22T15:11:49Z
+C587,L,3,,,,,S,incolto con arbusti lungo ferrovia,c1o_b05,2026-11-22T15:11:56Z
+C588,D,3,,T2,V2,U-,M,alberi su corte e tetti; s2 tetto centrale più chiaro (incerto),c1o_b05,2026-11-22T15:12:02Z
+C589,U,0,,T1,V0,U+,S,copertura chiara di edificio in complesso attivo,c1o_b05,2026-11-22T15:12:07Z
+C590,L,3,,,,,S,boscaglia spontanea fitta; incerto L o V,c1o_b05,2026-11-22T15:12:13Z
+C591,V,0,,,,,N,giardino alberato in corte; molta ombra,c1o_b05,2026-11-22T15:12:19Z
+C592,U,0,,T1,V0,U?,N,corpi interni di isolato con cortiletto,c1o_b05,2026-11-22T15:12:25Z
+C593,L,3,,,,,M,lotto incolto con tracce di sterro; s2 superfici chiare nuove,c1o_b05,2026-11-22T15:12:31Z
+C594,V,1,,T1,V1,U+,N,giardino con gazebo e baracchine; incerto V o L,c1o_b05,2026-11-22T15:12:38Z
+C595,L,3,,,,,N,striscia incolta tra edificio e ferrovia con detriti,c1o_b05,2026-11-22T15:12:44Z
+C596,L,2,,T1,V1,U?,M,ampio piazzale ferroviario vuoto più striscia edificata a ovest; scala piccola; s2 più verde,c1o_b05,2026-11-22T15:12:53Z
+C597,L,3,,,,,S,striscia di prato incolto tra due strade,c1o_b05,2026-11-22T15:12:59Z
+C598,L,3,,,,,S,prato incolto con traliccio; s2 sterro adiacente a est fuori contorno,c1o_b05,2026-11-22T15:13:06Z
+C599,V,0,,,,,S,campi coltivati (contorno in due parti),c1o_b05,2026-11-22T15:13:13Z
+C600,L,3,,,,,S,prato e bosco in svincolo autostradale; incerto L o V,c1o_b05,2026-11-22T15:13:21Z
+C601,D,3,,T2,V2,U-,N,villino con tetto bucato in giardino inselvatichito; incerto D o L,c1o_b05,2026-11-22T15:13:30Z
+C602,L,3,,T1,V1,U?,S,ex scalo con platee vuote e un edificio lungo; secondo piccolo contorno circolare interno (codificato il rettangolo),c1o_b05,2026-11-22T15:13:40Z
+C603,L,3,,,,,S,alberi e arbusti fitti non curati accanto a edificio; incerto L o V,c1o_b05,2026-11-22T15:13:48Z
+C604,U,0,,T1,V0,U+,N,capannone a falde con auto accanto,c1o_b05,2026-11-22T15:13:55Z
+C605,D,2,,T2,V1,U?,N,capannoni con lacune in copertura sul lato est e cortile vuoto; incerto D o U,c1o_b05,2026-11-22T15:14:02Z

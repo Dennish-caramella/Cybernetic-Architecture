@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C690,,,,,,,,,,
-C691,,,,,,,,,,
-C692,,,,,,,,,,
-C693,,,,,,,,,,
-C694,,,,,,,,,,
-C695,,,,,,,,,,
-C696,,,,,,,,,,
-C697,,,,,,,,,,
-C698,,,,,,,,,,
-C699,,,,,,,,,,
-C700,,,,,,,,,,
-C701,,,,,,,,,,
-C702,,,,,,,,,,
-C703,,,,,,,,,,
-C704,,,,,,,,,,
-C705,,,,,,,,,,
-C706,,,,,,,,,,
-C707,,,,,,,,,,
-C708,,,,,,,,,,
-C709,,,,,,,,,,
-C710,,,,,,,,,,
+C690,D,3,,T2,V1,U-,N,edificio con parte senza tetto e vegetazione interna,c1o_b10,2026-11-22T15:12:16Z
+C691,L,3,,,,,S,incolto con alberi e sterrato,c1o_b10,2026-11-22T15:12:24Z
+C692,D,3,,T1,V1,U?,M,incerto tra D e U: tetto integro ma macchiato e nessun segno d'uso; in s2 area più chiara,c1o_b10,2026-11-22T15:12:30Z
+C693,L,3,,,,,N,prato secco e sterrato; piccola fascia di marciapiede,c1o_b10,2026-11-22T15:12:34Z
+C694,L,3,,,,,M,incolto con tracce di mezzi accanto a cantiere; in s2 sembra edificato,c1o_b10,2026-11-22T15:12:39Z
+C695,U,1,E,T1,V1,U+,M,due poligoni: striscia lungo binari incolta e lotto con tendone e piazzale asfaltato; capannoni a sud-ovest forse dismessi; in s2 lotto edificato,c1o_b10,2026-11-22T15:12:47Z
+C696,U,0,,T1,V1,U?,N,area piccola: copertura piana e cortile alberato con scala elicoidale,c1o_b10,2026-11-22T15:12:53Z
+C697,V,0,E,T1,V1,U+,S,complesso a padiglioni con fitta alberatura; parcheggio pieno a nord-ovest; incerto tra V e U,c1o_b10,2026-11-22T15:13:02Z
+C698,U,0,,T1,V1,U+,N,parcheggio pieno con alberi e parte di edificio a tetto rosso,c1o_b10,2026-11-22T15:13:08Z
+C699,L,3,,T1,V1,U?,S,vasto prato incolto e boscaglia spontanea; parcheggio in uso a sud; pochi manufatti minori a est,c1o_b10,2026-11-22T15:13:16Z
+C700,U,0,,T1,V1,U?,N,edificio residenziale con terrazze e verde secco ai bordi,c1o_b10,2026-11-22T15:13:22Z
+C701,U,0,,T1,V0,U+,S,condominio con cortile e box; auto nel cortile,c1o_b10,2026-11-22T15:13:28Z
+C702,D,3,,,,,M,fascio di binari invasi da vegetazione; incerto tra D e L; in s2 parte sud sterrata,c1o_b10,2026-11-22T15:13:36Z
+C703,L,2,,,,,N,lotto triangolare incolto con arbusti più striscia pavimentata lungo la strada; cantiere adiacente,c1o_b10,2026-11-22T15:13:44Z
+C704,L,3,,T1,V1,U?,S,prato falciato senza arredi e piazzale vuoto con capannone; incerto tra L e V,c1o_b10,2026-11-22T15:13:52Z
+C705,I,1,E,T2,V1,U+,N,piazzale ferroviario di servizio con materiali e parte di edificio; estremità nord del tetto forse demolita con macerie,c1o_b10,2026-11-22T15:14:01Z
+C706,L,3,,,,,S,lotto triangolare a prato incolto,c1o_b10,2026-11-22T15:14:07Z
+C707,L,3,,,,,N,striscia di boscaglia spontanea tra binari e strada; un binario in uso sul bordo; in s2 vegetazione poco leggibile,c1o_b10,2026-11-22T15:14:15Z
+C708,U,0,,T1,V1,U?,N,cortile interno alberato e parte di edificio a falde; area in ombra,c1o_b10,2026-11-22T15:14:21Z
+C709,U,0,,T1,V0,U?,N,edificio con tetto scuro a falde integro; giardino incolto adiacente fuori contorno,c1o_b10,2026-11-22T15:14:29Z
+C710,L,2,,,,,S,lotto a prato secco incolto e tratto di strada,c1o_b10,2026-11-22T15:14:34Z

@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C564,,,,,,,,,,
-C565,,,,,,,,,,
-C566,,,,,,,,,,
-C567,,,,,,,,,,
-C568,,,,,,,,,,
-C569,,,,,,,,,,
-C570,,,,,,,,,,
-C571,,,,,,,,,,
-C572,,,,,,,,,,
-C573,,,,,,,,,,
-C574,,,,,,,,,,
-C575,,,,,,,,,,
-C576,,,,,,,,,,
-C577,,,,,,,,,,
-C578,,,,,,,,,,
-C579,,,,,,,,,,
-C580,,,,,,,,,,
-C581,,,,,,,,,,
-C582,,,,,,,,,,
-C583,,,,,,,,,,
-C584,,,,,,,,,,
+C564,L,3,,,,,N,striscia incolta con filare alberi,c1o_b04,2026-11-22T15:11:46Z
+C565,U,0,E,,,,N,cortile interno in ombra con alberi e auto,c1o_b04,2026-11-22T15:11:52Z
+C566,D,3,,T1,V1,U?,S,scalo ferroviario con binari arrugginiti e carri fermi incerto D/I,c1o_b04,2026-11-22T15:12:01Z
+C567,U,0,,T1,V0,U+,N,edificio residenziale con cortile e auto,c1o_b04,2026-11-22T15:12:06Z
+C568,L,3,,,,,S,prato con alberi in svincolo stradale sfalciato incerto L/V,c1o_b04,2026-11-22T15:12:13Z
+C569,L,3,,,,,S,prato e boscaglia spontanea dietro distributore,c1o_b04,2026-11-22T15:12:18Z
+C570,D,3,,T3,V2,U-,S,isolato con tetti crollati e vegetazione copertura bianca incerta,c1o_b04,2026-11-22T15:12:26Z
+C571,U,0,,T1,V0,U?,N,edificio storico con cortile in ombra,c1o_b04,2026-11-22T15:12:32Z
+C572,U,0,,T1,V0,U?,N,parte di edificio residenziale con pannelli in copertura,c1o_b04,2026-11-22T15:12:39Z
+C573,U,0,,T1,V0,U?,N,edificio a corte in centro storico tetti integri,c1o_b04,2026-11-22T15:12:46Z
+C574,L,3,,T1,V1,U?,M,piazzale parcheggio quasi vuoto accanto a scavo incerto L/U s2 area scura forse nuovo edificio,c1o_b04,2026-11-22T15:12:54Z
+C575,L,3,,T1,V1,U?,M,grande area sterrata con piazzale vuoto e incolto s2 piu verde,c1o_b04,2026-11-22T15:13:02Z
+C576,L,3,,,,,S,incolto con arbusti dentro svincolo e tratti di rampa,c1o_b04,2026-11-22T15:13:09Z
+C577,D,3,,T2,V2,U-,M,capannoni con tetti danneggiati e vegetazione s2 area circostante sterrata,c1o_b04,2026-11-22T15:13:17Z
+C578,L,3,,,,,S,lotto a prato secco incolto con alberi,c1o_b04,2026-11-22T15:13:24Z
+C579,L,3,,,,,S,lotto incolto con auto parcheggiate sul fronte strada,c1o_b04,2026-11-22T15:13:32Z
+C580,U,0,,T1,V0,U+,N,edificio residenziale con terrazzi abitati,c1o_b04,2026-11-22T15:13:40Z
+C581,X,,,T1,V0,U?,N,striscia tra edifici quasi tutta in ombra non giudicabile immagine visibile,c1o_b04,2026-11-22T15:13:50Z
+C582,L,3,,,,,S,area demolita con platee in cemento e vegetazione rada incerto L/D,c1o_b04,2026-11-22T15:13:59Z
+C583,U,0,,,,,N,striscia di parcheggio con auto e chiome di alberi incerto U/I,c1o_b04,2026-11-22T15:14:08Z
+C584,D,3,,T2,V1,U-,N,fabbricato isolato con tetto in coppi usurato tra incolto e ferrovia incerto D/U,c1o_b04,2026-11-22T15:14:17Z

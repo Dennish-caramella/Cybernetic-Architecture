@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C627,,,,,,,,,,
-C628,,,,,,,,,,
-C629,,,,,,,,,,
-C630,,,,,,,,,,
-C631,,,,,,,,,,
-C632,,,,,,,,,,
-C633,,,,,,,,,,
-C634,,,,,,,,,,
-C635,,,,,,,,,,
-C636,,,,,,,,,,
-C637,,,,,,,,,,
-C638,,,,,,,,,,
-C639,,,,,,,,,,
-C640,,,,,,,,,,
-C641,,,,,,,,,,
-C642,,,,,,,,,,
-C643,,,,,,,,,,
-C644,,,,,,,,,,
-C645,,,,,,,,,,
-C646,,,,,,,,,,
-C647,,,,,,,,,,
+C627,L,1,E,T2,V1,U?,S,acqua del lago oltre metà area non codificabile; codificata la parte a terra (piazzale cava e impianto),c1o_b07,2026-11-22T15:11:56Z
+C628,U,0,,T1,V1,U?,N,cortile laterale con vegetazione e materiali,c1o_b07,2026-11-22T15:11:56Z
+C629,L,3,,,,,S,prati e incolti; prato verde a sud forse sfalciato (V incerto),c1o_b07,2026-11-22T15:12:07Z
+C630,D,3,,T1,V2,U-,S,complesso a corte con alberi spontanei nei cortili; tetti apparentemente integri,c1o_b07,2026-11-22T15:12:12Z
+C631,U,0,,T1,V0,U+,N,capannoni presso scalo ferroviario con auto parcheggiate,c1o_b07,2026-11-22T15:12:15Z
+C632,V,0,,T1,V1,U+,S,orti urbani coltivati con capanni; incolto e macerie a sud (LCD vicino a 1),c1o_b07,2026-11-22T15:12:21Z
+C633,U,0,,T1,V0,U+,N,edificio urbano con terrazze; contorno multiplo; parte in ombra,c1o_b07,2026-11-22T15:12:27Z
+C634,L,3,,,,,S,lotto intercluso a incolto con alberi spontanei,c1o_b07,2026-11-22T15:12:33Z
+C635,I,0,,T1,V1,U+,S,fascio ferroviario e piazzale stazione; scala ampia con dettaglio scarso,c1o_b07,2026-11-22T15:12:40Z
+C636,U,0,,T1,V0,U?,N,edifici in cortina con terrazze e lucernari; ombra sul lato ovest,c1o_b07,2026-11-22T15:12:46Z
+C637,L,3,,,,,S,relitto stradale con alberi e prato non curato (V incerto),c1o_b07,2026-11-22T15:12:52Z
+C638,L,3,,,,,S,bosco spontaneo con pista sterrata e deposito materiali in uso sul lato est,c1o_b07,2026-11-22T15:12:58Z
+C639,U,0,,T1,V0,U?,N,area minima: pergolato su terrazza e striscia stretta tra edifici,c1o_b07,2026-11-22T15:13:05Z
+C640,U,0,,T1,V0,U?,N,edificio in linea con tetto a coppi integro; auto parcheggiate subito fuori contorno; uso non certo (D possibile),c1o_b07,2026-11-22T15:13:12Z
+C641,U,0,,T1,V0,U+,N,edificio urbano con terrazze e impianti; cortile interno in ombra,c1o_b07,2026-11-22T15:13:18Z
+C642,L,3,,,,,M,prato non curato (forse prato da sfalcio); in s2 superfici chiare nuove: probabile cantiere o edifici,c1o_b07,2026-11-22T15:13:25Z
+C643,I,1,E,,,,N,striscia di accesso con alberature e piccolo piazzale in ombra a sud-ovest; incerto,c1o_b07,2026-11-22T15:13:33Z
+C644,U,0,,T1,V0,U+,N,residenziale con balconi fioriti e giardino condominiale curato nel cortile,c1o_b07,2026-11-22T15:13:40Z
+C645,L,2,,T1,V1,U+,S,incolto e sterrato con alberi spontanei a est; deposito materiali in uso con capannoni a ovest,c1o_b07,2026-11-22T15:13:48Z
+C646,D,3,,T3,V2,U-,N,edificio senza copertura con muri a vista e alberi sopra; rudere,c1o_b07,2026-11-22T15:13:55Z
+C647,L,3,,,,,S,prati non curati con alberi sparsi; striscia sud su campo arato; contorno multiplo,c1o_b07,2026-11-22T15:14:00Z

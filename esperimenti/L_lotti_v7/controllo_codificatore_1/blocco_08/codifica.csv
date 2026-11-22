@@ -1,22 +1,22 @@
 codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
-C648,,,,,,,,,,
-C649,,,,,,,,,,
-C650,,,,,,,,,,
-C651,,,,,,,,,,
-C652,,,,,,,,,,
-C653,,,,,,,,,,
-C654,,,,,,,,,,
-C655,,,,,,,,,,
-C656,,,,,,,,,,
-C657,,,,,,,,,,
-C658,,,,,,,,,,
-C659,,,,,,,,,,
-C660,,,,,,,,,,
-C661,,,,,,,,,,
-C662,,,,,,,,,,
-C663,,,,,,,,,,
-C664,,,,,,,,,,
-C665,,,,,,,,,,
-C666,,,,,,,,,,
-C667,,,,,,,,,,
-C668,,,,,,,,,,
+C648,U,0,,T1,V1,U?,N,capannoni tetto integro cortile con ghiaia e albero,c1o_b08,2026-11-22T15:11:45Z
+C649,L,2,,,,,S,prato incolto a est parte ovest falciata forse agricola,c1o_b08,2026-11-22T15:11:52Z
+C650,L,3,,,,,M,piazzale vuoto e binari dismessi inerbiti; in s2 area sterrata,c1o_b08,2026-11-22T15:11:58Z
+C651,L,3,,,,,N,prato incolto fra rampe svincolo con tratto di rampa; LCD tra 2 e 3,c1o_b08,2026-11-22T15:12:04Z
+C652,U,0,,T1,V1,U?,N,edificio con tetti a toppe e vegetazione fitta attorno; uso incerto; in s2 area chiara a est fuori contorno,c1o_b08,2026-11-22T15:12:11Z
+C653,U,0,,T1,V1,U?,N,complesso con corpo ad anello e fila di edifici; fascia alberata a est; uso non evidente,c1o_b08,2026-11-22T15:12:18Z
+C654,U,0,,T1,V1,U+,N,striscia stretta con piccoli edifici e auto lungo la corte,c1o_b08,2026-11-22T15:12:24Z
+C655,U,0,,T1,V0,U+,N,isolato residenziale denso con corti; contorno frammentato in tre parti,c1o_b08,2026-11-22T15:12:31Z
+C656,V,0,,,,,M,impianto arboreo giovane in filari; in s2 chioma fitta scura,c1o_b08,2026-11-22T15:12:37Z
+C657,C,3,,,,,M,cantiere attivo con scavi mezzi e baracche (Q2 non compilato: solo baracche); in s2 sembra edificato,c1o_b08,2026-11-22T15:12:46Z
+C658,L,3,,,,,M,incolto con arbusti e alberi spontanei; in s2 area chiara probabile sterro o cantiere,c1o_b08,2026-11-22T15:12:52Z
+C659,U,0,,T1,V1,U+,N,edificio urbano con terrazzi e piccolo giardino interno,c1o_b08,2026-11-22T15:12:59Z
+C660,L,3,,,,,S,alberi e prato spontanei interni a svincolo con tratto di rampa e bordo laghetto; LCD tra 2 e 3,c1o_b08,2026-11-22T15:13:08Z
+C661,L,2,,T1,V2,U?,N,piazzale vuoto con erbe e alberi spontanei piu basso edificio; quota L vicina a meta,c1o_b08,2026-11-22T15:13:17Z
+C662,L,2,,,,,S,vegetazione spontanea e sentieri lungo canale; orti informali con baracche a ovest (Q2 non compilato); strada a nord,c1o_b08,2026-11-22T15:13:26Z
+C663,V,0,,,,,N,giardino alberato in corte interna molto in ombra; curato o incolto incerto,c1o_b08,2026-11-22T15:13:34Z
+C664,U,0,,T1,V0,U?,N,edificio d'angolo con tetto grigio integro; segni d'uso non chiari dall'alto,c1o_b08,2026-11-22T15:13:42Z
+C665,D,2,E,T2,V2,U?,M,comparto industriale misto: capannoni degradati e piazzali inerbiti a est e alberi; capannoni sud forse in uso; in s2 parte est piu chiara forse demolizioni,c1o_b08,2026-11-22T15:13:54Z
+C666,U,0,,T1,V0,U?,N,edificio su strada con corpo retrostante in ombra; parte nord poco leggibile,c1o_b08,2026-11-22T15:14:03Z
+C667,I,1,E,,,,M,scalo con binari attivi e banchina; parte nord-est binari dismessi inerbiti; LCD tra 1 e 2; in s2 parte nord-est sterrata,c1o_b08,2026-11-22T15:14:14Z
+C668,D,3,,T2,V2,U-,S,capannoni a shed con coperture arrugginite e lacunose e vegetazione nel corridoio centrale,c1o_b08,2026-11-22T15:14:24Z
