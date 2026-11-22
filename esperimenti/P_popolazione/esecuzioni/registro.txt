@@ -1,0 +1,4 @@
+07f3bf334ce05c9a50fe51c39a4dc8b2f95f5e44 2026-11-22T21:16:38Z commit della pre-registrazione (00_preregistrazione.txt sha256 fa0ec4f8a46783992bba5b6a4506e45a085a2a91e95c4c15c935df82c86036d2)
+2026-11-22T21:17Z Scelte D1-D10 accettate PROVVISORIAMENTE dal coordinatore, NON da Dennis (tesi/DECISIONI.md, voce 2026-11-22 "Base P: scelte D1-D10 accettate provvisoriamente dal coordinatore"). Se Dennis ne cambia una: nuova pre-registrazione e nuova versione.
+2026-11-22T21:17Z Inizio fase 2 (download). Nessuna esecuzione di run.py prima di questa riga.
+2026-11-22T21:19:30Z scarica.py: 25 file in _cache/P_popolazione/raw, metadati in dati_metadati.csv (sha256 per file)
