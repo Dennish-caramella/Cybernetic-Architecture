@@ -166,7 +166,320 @@
   "blocchi": 16
  },
  "sha256_chiave_v7": "ea9d6fda23f2f21c5310a009db9a91eb891a89d1441bab1b91190610ec5692cf",
- "C5": "in attesa dei due codificatori",
+ "C5_dettaglio": {
+  "N_h": {
+   "F-E": 173,
+   "F-R": 147,
+   "F-A": 245,
+   "D-E": 43,
+   "D-R": 20,
+   "D-A": 23
+  },
+  "n_h": {
+   "F-A": 65,
+   "F-E": 46,
+   "D-E": 43,
+   "F-R": 39,
+   "D-A": 23,
+   "D-R": 20
+  },
+  "n_base": 100,
+  "kappa_binario": [
+   0.78,
+   0.89
+  ],
+  "cod1": {
+   "q_h": {
+    "D-A": 0.652,
+    "D-E": 0.651,
+    "D-R": 0.75,
+    "F-A": 0.862,
+    "F-E": 0.804,
+    "F-R": 0.59
+   },
+   "p": 0.7602,
+   "n_eff": 282.6,
+   "ic95_wilson": [
+    0.707,
+    0.806
+   ],
+   "base": {
+    "k": 15,
+    "n": 100,
+    "p": 0.15,
+    "ic95": [
+     0.093,
+     0.233
+    ]
+   },
+   "C5b_newcombe": [
+    0.61,
+    [
+     0.512,
+     0.683
+    ]
+   ]
+  },
+  "cod2": {
+   "q_h": {
+    "D-A": 0.609,
+    "D-E": 0.465,
+    "D-R": 0.6,
+    "F-A": 0.785,
+    "F-E": 0.761,
+    "F-R": 0.513
+   },
+   "p": 0.6839,
+   "n_eff": 282.5,
+   "ic95_wilson": [
+    0.628,
+    0.735
+   ],
+   "base": {
+    "k": 12,
+    "n": 100,
+    "p": 0.12,
+    "ic95": [
+     0.07,
+     0.198
+    ]
+   },
+   "C5b_newcombe": [
+    0.564,
+    [
+     0.468,
+     0.636
+    ]
+   ]
+  },
+  "C5a": 0.7221,
+  "C5": true,
+  "info": {
+   "per_strato": {
+    "D-A": [
+     0.63,
+     23
+    ],
+    "D-E": [
+     0.558,
+     43
+    ],
+    "D-R": [
+     0.675,
+     20
+    ],
+    "F-A": [
+     0.823,
+     65
+    ],
+    "F-E": [
+     0.783,
+     46
+    ],
+    "F-R": [
+     0.551,
+     39
+    ]
+   },
+   "per_classe": {
+    "area di attivazione": [
+     0.773,
+     88
+    ],
+    "lotto da riusare": [
+     0.593,
+     59
+    ],
+    "lotto edificabile": [
+     0.674,
+     89
+    ]
+   },
+   "per_gruppo_ambito": {
+    "ADP": [
+     0.488,
+     42
+    ],
+    "PA": [
+     0.716,
+     44
+    ]
+   },
+   "per_stato": {
+    "A": [
+     0.51,
+     49
+    ],
+    "C": [
+     0.667,
+     6
+    ],
+    "non determinato [L]": [
+     0.742,
+     31
+    ]
+   },
+   "E_piu_R": [
+    0.642,
+    148
+   ],
+   "lotti_grandi": [
+    0.708,
+    72
+   ],
+   "kappa_per_strato": {
+    "D-A": [
+     0.907,
+     0.957
+    ],
+    "D-E": [
+     0.453,
+     0.721
+    ],
+    "D-R": [
+     0.444,
+     0.75
+    ],
+    "F-A": [
+     0.634,
+     0.892
+    ],
+    "F-E": [
+     0.873,
+     0.957
+    ],
+    "F-R": [
+     0.742,
+     0.872
+    ]
+   },
+   "disaccordi": [
+    "C506",
+    "C530",
+    "C547",
+    "C556",
+    "C557",
+    "C574",
+    "C600",
+    "C610",
+    "C616",
+    "C629",
+    "C630",
+    "C653",
+    "C692",
+    "C696",
+    "C703",
+    "C705",
+    "C724",
+    "C729",
+    "C735",
+    "C736",
+    "C744",
+    "C745",
+    "C754",
+    "C756",
+    "C761",
+    "C778",
+    "C782",
+    "C792",
+    "C804",
+    "C810",
+    "C814",
+    "C827"
+   ],
+   "potenziale_vuoto_vs_Q1_LC": {
+    "False | False": {
+     "0": 88,
+     "1": 2
+    },
+    "False | True": {
+     "0": 10,
+     "1": 2
+    },
+    "True | False": {
+     "0": 17,
+     "1": 4
+    },
+    "True | True": {
+     "0": 88,
+     "1": 25
+    }
+   },
+   "in_comune": {
+    "v5": {
+     "n": 30,
+     "nuovo1_vs_v5cod1": {
+      "kappa_accordo": [
+       0.586,
+       0.867
+      ],
+      "quota_nuova": 0.833,
+      "quota_vecchia": 0.767
+     },
+     "nuovo1_vs_v5cod2": {
+      "kappa_accordo": [
+       0.793,
+       0.933
+      ],
+      "quota_nuova": 0.833,
+      "quota_vecchia": 0.767
+     },
+     "nuovo2_vs_v5cod1": {
+      "kappa_accordo": [
+       0.706,
+       0.9
+      ],
+      "quota_nuova": 0.8,
+      "quota_vecchia": 0.767
+     },
+     "nuovo2_vs_v5cod2": {
+      "kappa_accordo": [
+       0.902,
+       0.967
+      ],
+      "quota_nuova": 0.8,
+      "quota_vecchia": 0.767
+     }
+    },
+    "v6": {
+     "n": 61,
+     "nuovo1_vs_v6cod1": {
+      "kappa_accordo": [
+       0.717,
+       0.869
+      ],
+      "quota_nuova": 0.607,
+      "quota_vecchia": 0.672
+     },
+     "nuovo1_vs_v6cod2": {
+      "kappa_accordo": [
+       0.863,
+       0.934
+      ],
+      "quota_nuova": 0.607,
+      "quota_vecchia": 0.607
+     },
+     "nuovo2_vs_v6cod1": {
+      "kappa_accordo": [
+       0.693,
+       0.852
+      ],
+      "quota_nuova": 0.557,
+      "quota_vecchia": 0.672
+     },
+     "nuovo2_vs_v6cod2": {
+      "kappa_accordo": [
+       0.698,
+       0.852
+      ],
+      "quota_nuova": 0.557,
+      "quota_vecchia": 0.607
+     }
+    }
+   }
+  }
+ },
+ "C5": true,
  "C7": "non è un criterio (deciso da Dennis in v5)",
  "C9": "eliminato in v6: lo stato di attuazione è un attributo",
  "C1": true,
@@ -471,15 +784,15 @@
  "hash_contenuto": "49327c8a864d6ff2bed9ccc7d933f7514ec2f48ffd8ee5e337b40f3c146cdc28",
  "C8_hash_precedente": "49327c8a864d6ff2bed9ccc7d933f7514ec2f48ffd8ee5e337b40f3c146cdc28",
  "C8": true,
- "passa": false,
+ "passa": true,
  "registro": {
-  "utc": "2026-11-22T152601Z",
-  "commit": "3da1708988944477964a9b8f8e50901f3c2678cd",
+  "utc": "2026-11-22T155746Z",
+  "commit": "411572f430d4c562874e19606dd745b884dbbe0e",
   "modifiche_non_committate": [
    "M esperimenti/L_lotti_v7/esecuzioni/log_criteri.txt"
   ],
-  "sha256_run_py": "f5fdd0c85bf409e3159fc0e0c4d89da387d541f87b4081a18c583f9646746fb4",
+  "sha256_run_py": "a3129b5aa63aea217dd5f5994f7ebe0ba87d29909dac7450e24d8d0ae6cf90ea",
   "python": "3.13.18",
-  "durata_s": 615
+  "durata_s": 591
  }
 }
