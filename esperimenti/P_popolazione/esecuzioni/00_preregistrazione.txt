@@ -1,0 +1,219 @@
+PRE-REGISTRAZIONE Base P v1 (ticket #18, parte di #15) — popolazione sintetica dei nuclei abitativi di Milano. Testo di REPORT.md §1 (ipotesi e criteri di accettazione).
+Scritta il 2026-11-22 intorno alle 21:15Z dall'agente demografo-popolazioni-sintetiche, PRIMA di: scrivere run.py, scaricare qualsiasi dato grezzo, eseguire qualsiasi calcolo di calibrazione, generare qualsiasi nucleo sintetico. L'SHA-256 di questo file è in 00_preregistrazione.sha256.
+VALIDITÀ: vale solo se questo file e il suo .sha256 sono COMMITTATI prima della prima esecuzione di run.py (anche del pilota). Il commit (hash e ora) sarà la prima riga di esecuzioni/registro.txt. Le scelte marcate [H-D] (sezione 9) sono PROPOSTE dell'agente che Dennis non ha ancora confermato: se Dennis ne cambia una, si scrive un nuovo testo (nuovo file, nuovo hash) prima di qualsiasi esecuzione; dopo il commit nessuna regola cambia. Una deviazione dopo l'esecuzione è una nuova versione (PROTOCOLLO_LABORATORIO.md).
+Marche: [V] verificato in questa sessione (file aperto); [S] fonte secondaria; [I] inferenza; [H] ipotesi o parametro scelto; [H-D] ipotesi da far confermare a Dennis; [L] lacuna. Le marche [V] sui dati si riferiscono ai CSV derivati delle note (aperti oggi), non ai dati grezzi, che non ho scaricato.
+
+======================================================================
+0. COSA HO VISTO PRIMA DI SCRIVERE
+======================================================================
+Letti, in sola lettura: esperimenti/PROTOCOLLO_LABORATORIO.md; CONTEXT.md; tesi/DECISIONI.md; tesi/CONFRONTO_APPROCCI_ALLOCAZIONE.md; esperimenti/L_lotti_v7/VERSIONE.md; le prime ~5.000 battute di esperimenti/L_lotti_v7/esecuzioni/00_preregistrazione.txt (solo per il formato); ticket #18 (titolo e corpo, via gh api; nessun commento letto); .claude/agents/demografo-popolazioni-sintetiche.md; secondo_cervello/ricerche/milano_dati/02_mercato_e_accessibilita.md, 03_pancia_della_gaussiana.md, 05_fasce_e_strumenti_abitativi.md, 06_famiglie_studenti_nuovi_arrivi.md, 07_video_crisi_abitativa_verifica.md, sintesi/README.md; research_notes/Frontiere modelli matching e scelta sociale/05_modelli_preferenze_validita.md (righe 1-80 e i passaggi sugli LLM) e 08_critica_metodologica.md (§2-3, passaggi su generatori e potenza).
+CSV derivati aperti (intestazioni e righe indicate) [V]:
+ - popolazioni/famiglie_2025_milano_ds1441.csv: tutto (tipologia, componenti, età del capofamiglia, tipologia × età, monocomponenti per età, capofamiglia straniero).
+ - popolazioni/famiglie_2021_con_minori_ds139.csv: tutto (10 tipologie 2021).
+ - popolazioni/famiglie_2025_per_NIL_ds1441.csv, famiglie_2021_con_minori_per_NIL_ds139.csv, titolo_godimento_2011_per_NIL_ds1457.csv: intestazione e prime 2 righe; ho calcolato SOLO i totali di colonna e il numero di righe: 87 NIL ciascuno; ds1441 totale 780.935, soli_65piu 127.837, under35_capofam 127.178; ds139 totale 706.915, con_minori 129.558, monogen_minori 31.081; ds1457 totale 604.510, affitto 174.556; i codici NIL fra parentesi sono gli stessi 87 nei tre file.
+ - popolazioni/nil_immigrati_emigrati_minori_ds205.csv: intestazione e prime 2 righe (NIL 21 e 20); 89 righe, solo anno 2024. NON ho calcolato nulla sulle colonne "Minori" e "80 e + soli fam registrate in anagrafe" per NIL (sono margini tenuti fuori, sezione 6, P4).
+ - popolazioni/istat_famiglie_titolo_godimento_milano_2021.csv: tutto (713.971 famiglie; proprietà 448.605,3; affitto 231.364,4; altro 34.001,3).
+ - popolazioni/istat_reddito_netto_famiglie_lombardia_2021_2024.csv: le righe 2024.
+ - prime righe di: famiglie_serie_tipologia_ds1441.csv, iscritti_universita_milanesi_ds752.csv, istat_abitazioni_titolo_milano_2019.csv, movimento_anagrafico_2010_2024_ds71.csv, pendolari_entrata_2011_motivo_provincia_ds395.csv; mercato/mef_milano_cap_2024.csv (39 righe = 38 CAP + intestazione), mef_milano_percentili_contribuenti.csv (tutto), mef_milano_classi_reddito_2014_2024.csv (intestazione), omi_milano_2025S2_civili_normale_per_zona.csv (intestazione); in mercato/analisi_accessibilita.py le righe sulle famiglie tipo, la scala ISEE e l'Assegno Unico.
+ - metadati CKAN (catalogo/metadati_ckan/): ds390, ds634, ds234, ds3023 (descrizione e risorse); riga del catalogo di ds94 (copertura temporale dichiarata 31/01/2011).
+ - esperimenti/L_lotti_v7/lotti_v7.gpkg: solo il sistema di riferimento (EPSG:32632) letto da gpkg_geometry_columns.
+Non ho: scaricato dati; aperto i dati grezzi (zip del Comune, file MEF, ISTAT); eseguito script; generato nuclei.
+
+======================================================================
+1. DOMANDA E UNITÀ
+======================================================================
+Domanda (ticket #18): quale popolazione di nuclei abitativi di Milano, generata come, validata contro quali margini reali, per servire ai metodi di assegnazione B0-B6 (popolazione richiedente) e alle analisi A1-A4.
+Unità: il nucleo abitativo (CONTEXT.md). Per i residenti si approssima con la famiglia anagrafica (ds1441) [H]: le famiglie anagrafiche gonfiano le persone sole (residenze separate), come già notato nelle note 02 e 06 [S/I]; limite dichiarato in sezione 10. Per gli studenti fuori sede il nucleo è una persona (posto letto) [H].
+Anno di riferimento: 2025 per la struttura (anagrafe ds1441); redditi a.i. 2024 (MEF); titolo di godimento 2021 (ISTAT) e 2011 per NIL (ds1457); studenti 2024/25 (ds752); flussi 2024 (ds71, ds205). Il disallineamento degli anni è un limite dichiarato, non corretto [H].
+
+======================================================================
+2. POPOLAZIONE OBIETTIVO: TUTTI I NUCLEI, POI LA POPOLAZIONE RICHIEDENTE
+======================================================================
+Si generano due livelli:
+ (a) POPOLAZIONE DI RIFERIMENTO = tutti i nuclei residenti a Milano (780.935 famiglie anagrafiche 2025 [V]) + studenti fuori sede non residenti + una coorte annuale di nuovi arrivati.
+ (b) POPOLAZIONE RICHIEDENTE = sottoinsieme di (a) selezionato con una regola esplicita su variabili generate [H-D, sezione 9]: nuclei in affitto, studenti fuori sede non in residenza universitaria, nuovi arrivati; esclusi in base i proprietari.
+Perché due livelli [I]: (1) i margini reali esistono solo per TUTTI i nuclei (anagrafe, censimento, MEF); per chi chiederebbe un alloggio nessun margine esiste (domanda latente [L], sintesi/README.md); calibrare direttamente la popolazione richiedente vorrebbe dire inventarne i margini. (2) Generare tutto e poi filtrare rende la regola di selezione un parametro visibile e sottoponibile a sensibilità, invece che un'assunzione nascosta nella calibrazione. (3) I metodi B0-B6 useranno campioni della popolazione richiedente di dimensione fissata dalla pre-registrazione comune (esperimenti/prereg/, oggi assente [L]); Base P fornisce il campionatore stratificato con seme, non la dimensione.
+Fuori da v1 (dichiarati, non stimati): pendolari in entrata (~475 mila al giorno nel 2011 [V, nota 06]) come domanda latente; coabitazioni forzate; chi ha lasciato Milano. Nessun margine li misura [L].
+
+======================================================================
+3. FONTI E MARGINI
+======================================================================
+I dati grezzi si riscaricano in fase 2 in esperimenti/_cache/P_popolazione/ (ignorata da git), con URL, licenza, data e SHA-256 in un file di metadati nel repo. Invariante di ingresso: i margini ricalcolati dal grezzo devono coincidere con i CSV derivati delle note (totali di sezione 0); se no, ci si ferma (sezione 7).
+
+3.1 Margini ADATTATI (usati nella calibrazione)
+ M1 NIL × tipologia (8 tipologie), 2025 — ds1441 per NIL [V CSV derivato]. 87 NIL.
+ M2 tipologia × classe d'età del capofamiglia (4 classi), città 2025 — ds1441 [V].
+ M3 per NIL: monocomponenti con capofamiglia ≥65 (soli_65piu) e famiglie con capofamiglia <35 (under35_capofam), 2025 — ds1441 per NIL [V].
+ M4 numero di componenti (1, 2, 3, 4, 5+), città 2025 — ds1441 [V]. Solo città: nessun margine per NIL nei file visti [L].
+ M5 per NIL: quota di famiglie con almeno un minore e quota di monogenitori con minori, 2021 — ds139 [V], applicate come QUOTE alle famiglie 2025 (le due fonti contano totali diversi: 706.915 contro 751.850 nel 2021 [V, nota 06]) [H: quote per NIL stabili 2021→2025].
+ M6 totale minori residenti — somma NIL di ds205 2024 (196.577 [V, nota 06]) [H: 2024 ≈ 2025]. Solo il totale cittadino è adattato; la distribuzione per NIL è tenuta fuori (P4b).
+ M7 titolo di godimento, città, famiglie 2021: affitto 32,4%, proprietà 62,8%, altro 4,8% — ISTAT DF_DCSS_HUDW_1_COM [V CSV derivato].
+ M8 per NIL: quota di affitto 2011 (abitazioni occupate) — ds1457 [V], riscalata sul margine M7 [H: gradiente tra NIL stabile 2011→2025; NIL 2011 e 2025 con gli stessi codici [V], confini non confrontati [L]].
+ M9 classi di reddito complessivo dei contribuenti, Milano a.i. 2024 (7 classi, 1.013.387 con reddito > 0) — MEF [V, nota 02/03]: adattato sui PERCETTORI simulati (unità individuo, non nucleo).
+ M10 (condizionale) per CAP: classi MEF sui 20 CAP che le pubblicano — mef_milano_cap_2024.csv [V]. Usabile solo se si costruisce una corrispondenza NIL↔CAP: nessuna geometria dei CAP nel repo e i metadati di ds634 (numeri civici) non citano un campo CAP [V, letti]; se in fase 2 i civici non hanno il CAP, M10 è [L] e il reddito non ha variazione spaziale propria (limite).
+ M11 iscritti per ateneo 2024/25 (7 atenei, 211.440) — ds752 [V]; ripartisce gli studenti fuori sede tra atenei.
+ M12 nuovi arrivati: 46.568 iscrizioni anagrafiche 2024 (persone) — ds71 [V]; ripartizione per NIL dalle colonne "Immigrati" di ds205 2024 [V, colonna vista, valori non elaborati].
+
+3.2 Margini TENUTI FUORI (solo validazione, fissati ora, non toccati dalla calibrazione)
+ V1 anziani soli ≥80 per NIL — ds205 2024, colonna "80 e + soli fam registrate in anagrafe".
+ V2 minori per NIL — ds205 2024, colonna "Minori".
+ V3 reddito netto familiare mediano, Lombardia 2024: 36.875 € senza fitti imputati; 27.593 € per famiglie con fonte principale pensione (codice 3, interpretazione [I] della nota 06) — ISTAT EU-SILC [V CSV derivato]. Regionale, non comunale: controllo di coerenza a banda larga, non test di precisione.
+ V4 (condizionale) medie di reddito dei 18 CAP MEF senza classi — solo se M10 è usabile.
+ V5 (informativo, nessuna soglia) quota di affitto per abitazioni ISTAT 2019 (25,4%) [V]: unità diversa (abitazioni), si riporta lo scarto.
+
+3.3 Fonti per ancore, residenza e budget (strati georiferiti; scaricati in fase 2; nessun valore visto)
+ - Residenza: punti dei numeri civici ds634 [V metadati] dentro il NIL (confini NIL vigenti ds964 [V nome nel catalogo]); se impossibile, centroide del NIL [H].
+ - Lavoro: matrice origine-destinazione dei pendolari interni a Milano per sezione di censimento 2011 (ds390 [V metadati]) e in uscita per comune (ds391 [V titolo nel catalogo]); sezioni 2011 (ds98 [V nome]). Anno 2011 [H: struttura OD stabile]. Se ds390 non distingue lavoro e studio: tutti i flussi trattati come lavoro [H] e dichiarato.
+ - Scuola: nidi ds47, infanzia ds3014, primarie ds3015, secondarie I grado ds3016 (2025/26), secondarie II grado ds78 [V nomi; date da verificare].
+ - Università: sedi ds94 [V riga del catalogo: copertura 2011, ultima modifica risorsa 2023]: probabilmente incompleta per sedi recenti [I]; da confrontare in fase 2 con i 7 atenei di ds752.
+ - Cura: medici di medicina generale ds234 [V metadati, risorsa 10/11/2026].
+ - Canone di riferimento: OMI locazione 2025 S2 per zona (ds3024) e perimetri delle zone (ds3023) [V metadati]; canone d'annuncio 23,3 €/m²/mese [S, nota 02] come variante.
+ - Confine comunale ds2841 [V nome], per il test "ancora dentro Milano".
+ Sistema di riferimento delle coordinate: EPSG:32632, lo stesso della Base L v7 [V].
+
+3.4 Lacune note che entrano come [H] con sensibilità (sezione 8)
+ L1 titolo di godimento per tipo di nucleo ed età a Milano [L, nota 06 §5.5].
+ L2 reddito familiare per Milano; correlazione tra redditi dei partner; reddito per età [L, note 02, 03, 06].
+ L3 numero di studenti fuori sede: 50-90 mila, nessun dato ufficiale [S]; quota in residenze 11-16 mila posti [S]; quota idonei DSU [L].
+ L4 nuovi arrivati per età, composizione e provenienza [L, nota 06 §3.1]; salari d'ingresso [L].
+ L5 canone pagato dagli inquilini in essere (non quello di nuovo contratto) [L].
+ L6 patrimonio dei nuclei (entra nell'ISEE) [L].
+ L7 giovani coppie: ds1441 non distingue le coppie non sposate; "coppia sposata senza figli" con capofamiglia <35 = 2.377 [V], "in convivenza" <35 = 6.124 [V, significato della modalità non chiarito: L]; ds139 2021 conta 18.854 coppie conviventi senza figli senza età [V].
+ L8 inquilini dei servizi abitativi pubblici per NIL [L]: stock ALER + Comune ~62.457 alloggi [S, nota 05].
+ L9 età dei minori dentro il nucleo [L].
+ L10 pesi delle preferenze di localizzazione per Milano: nessuna stima pubblicata trovata (nota 05 §1) [L].
+
+======================================================================
+4. METODO (il più semplice che regge)
+======================================================================
+Nessun microdato disponibile: niente ricampionamento combinatorio da un campione di semi. Si usa IPF (raking) su tabelle con margini noti, con seme uniforme (soluzione di massima entropia dati i margini) e zeri strutturali dove la combinazione è impossibile; poi integerizzazione e assegnazione sequenziale degli attributi. Nessun agente LLM genera persone o preferenze.
+
+4.1 Scheletro dei nuclei residenti
+ Tabella T[n, t, a]: NIL n (87) × tipologia t (8, ds1441) × classe d'età del capofamiglia a (<35, 35-64, 65-79, 80+). IPF sui margini M1 (n,t), M2 (t,a), M3 (n, t=mono ∧ a≥65) e (n, a<35). Aggiornamento di ciascun margine k:
+   T ← T · (m_k / Σ_{celle di k} T)
+ Convergenza: variazione relativa massima < 1e-8 o 2.000 cicli; se non converge si riporta la tabella dei residui (i margini sono di fonti coerenti, stesso anno: attesa la convergenza [I]).
+ Integerizzazione: per ogni NIL, parte intera più resti maggiori (Hamilton) con spareggio casuale col seme; conserva esattamente il totale del NIL.
+ Numero di componenti: tabella t × dimensione con zeri strutturali [H: monocomponente = 1; coppia senza figli = 2; coppia con figli ≥3; monogenitore con figli ≥2; monogenitore con figli e convivente ≥3; capofamiglia con convivente ≥2; in convivenza e altre ≥2], IPF su M4 e sui totali per tipologia; poi estrazione per nucleo.
+ Minori: tra le tipologie con figli, flag "almeno un minore" calibrato su M5 per NIL (e monogenitori su M5 monogenitori); numero di minori = 1 + Binomiale(figli − 1, p), con p unico calibrato su M6 [H]. Età dei minori uniforme 0-17 [H, L9].
+ Componenti adulti: età del partner nella stessa classe del capofamiglia [H].
+
+4.2 Titolo di godimento
+ Base (T0) [H-D]: per NIL quota d'affitto M8 riscalata su M7 (IPF a due margini NIL × titolo), poi estrazione indipendente da tipologia ed età dentro il NIL (massima entropia: nessuna correlazione assunta oltre ai margini).
+ Variante (T1) [H, sensibilità]: rapporto di quote affitto/proprietà per classe d'età del capofamiglia (<35, 35-64, ≥65) = (4, 1, 0,5) relativo a 35-64, ricalibrato con IPF in modo che M7 e M8 restino rispettati. I valori (4, 1, 0,5) sono un parametro scelto, NON derivato da fonti: servono solo a misurare quanto pesa la lacuna L1.
+ Studenti fuori sede e nuovi arrivati: in affitto per definizione [H] (fuori sede = alloggio a titolo oneroso, bando Polimi [V, nota 06]).
+
+4.3 Reddito, netto e proxy ISEE
+ Percettori per nucleo [H]: mono = 1; coppie = 2 con probabilità q2 = 0,7 e 1 altrimenti [H-D]; monogenitore = 1; altri adulti conviventi = 0 o 1 con probabilità 0,5 [H]. Percettore "pensionato" se ha ≥65 anni [H].
+ Reddito complessivo lordo individuale: estratto dalla distribuzione MEF Milano a.i. 2024 (M9): uniforme entro classe; classe aperta >120k con coda di Pareto il cui parametro riproduce la media di classe [I]; IPF/rescaling dei pesi di estrazione finché le 7 classi sui percettori simulati coincidono con M9. Con M10 usabile: stessa procedura per i 20 CAP con classi, con i NIL assegnati ai CAP per quota di civici [H].
+ Correlazioni (tutte [H], dichiarate): partner: correlazione di rango ρ_p = 0 in base, 0,5 in sensibilità; età: nessuna dipendenza in base (i pensionati estraggono dalla stessa distribuzione), variante con ρ_età = −0,3 tra classe d'età e rango del reddito. La base è la meno informata (massima entropia), NON la più plausibile: l'assortative mating è atteso positivo [L, letteratura non riaperta].
+ Netto: stessa formula della nota 02 (IRPEF 2024 23/35/43%, detrazioni art. 13 TUIR, trattamento integrativo, addizionali regionale e comunale) [H, nota 02 §1.1], ricopiata in run.py con il riferimento. Assegno Unico per i minori come in analisi_accessibilita.py [S/H]. Reddito netto del nucleo = somma.
+ Proxy ISEE [H]: ISR = Σ_k (lordo_k − min(0,2·lordo_k, 3.000) per i redditi da lavoro dipendente) − min(canone annuo, 7.000) se in affitto; patrimonio = 0 (L6); ISEE = ISR / scala. Scala: 1; 1,57; 2,04; 2,46 per 1-4 componenti [I, valori usati nelle note 02-03]; 2,85 per 5 e +0,35 per ogni componente oltre il quinto [L, da verificare sul DPCM 159/2013 e sul DPCM 13/2025]. Canone annuo per l'ISEE: canone di riferimento (4.5) [H, L5]. Per i proprietari la casa non entra (ISEE sottostimato) [L6, dichiarato].
+ Studenti fuori sede: nessun reddito proprio; ISEE del nucleo d'origine non osservabile [L]; fascia DSU estratta con quota idonei q_DSU = 0,3 [H-D] e fasce 1/2/3 equiprobabili tra gli idonei [H].
+ Nuovi arrivati: reddito estratto come per i residenti della stessa tipologia e classe d'età [H, L4], variante con traslazione del rango −0,2 [H].
+
+4.4 Categoria e fascia grigia
+ Categoria (esclusiva, in quest'ordine di precedenza) [H-D]: (1) studenti fuori sede; (2) famiglie con figli minorenni (≥1 minore); (3) anziani soli (monocomponente, ≥65); (4) giovani coppie (coppia senza figli, capofamiglia <35; in base SOLO "coppia sposata senza figli" <35, variante + "in convivenza" <35); (5) giovani soli e nuovi arrivati (monocomponente <35, più la coorte dei nuovi arrivati non già in 1-4); (6) "nessuna categoria" per il resto. Il termine "nessuna categoria" non è nel glossario: si usa solo come valore di campo.
+ Fascia ISEE 14-16 mila: categoria TRASVERSALE (flag), calcolata come 14.000 ≤ ISEE proxy ≤ 16.000, cumulabile con 1-6 [H-D].
+ Fascia grigia (CONTEXT.md; DGR XII/5248/2025 [V, nota 03]): ISEE proxy > 16.000 (sopra la soglia SAP, RR 4/2017 [V, nota 05]) E canone di riferimento di mercato > 30% del reddito netto del nucleo [H: regola del 30%, L/S nota 03]. Nessun tetto ISEE in base (la DGR 5248 non ne ha [V, nota 05]); variante con tetto 40.000 (DGR 6209/2026 [V presentazione, nota 05]). Calcolata per tutti i nuclei, con il titolo di godimento accanto (per i proprietari non "morde" [I, nota 03 §5.3]).
+
+4.5 Budget abitativo
+ Canone di riferimento del nucleo: punto medio OMI 2025 S2 della zona OMI che contiene il punto di residenza × superficie [H: 45 m² per 1 persona, 60 per 2, 65 per monogenitore con 1 figlio, 75 per 3, 85 per 4, 95 per 5+; i primi quattro dalla nota 02, gli altri scelti]. Variante: canone d'annuncio 23,3 €/m²/mese [S].
+ Budget B_i (€/mese) = 0,30 × reddito netto annuo / 12 [H, regola del 30%]. Variante "reddito residuo": B_i = max(0, netto − paniere)/12 con paniere = soglia di povertà assoluta ISTAT 2025 per adulto solo in comune centro di area metropolitana lombarda (1.256,37 €/mese [V, nota 05]) × scala OCSE modificata [H]; per i nuclei di più persone le soglie ISTAT non sono state estratte [L], da cui la scala.
+ Studenti: idonei DSU: B = borsa annua fuori sede della propria fascia / 12 (8.248 / 7.172 / 5.857 €, Bocconi 2026/27 [V, nota 06]); non idonei: B lognormale con mediana 704 €/mese (stanza singola, annunci 2026 [S]) e deviazione standard del logaritmo 0,3 [H].
+
+4.6 Ancore (localizzate, EPSG:32632)
+ Residenza: civico estratto a caso nel NIL [H].
+ Lavoro (ogni percettore non pensionato): sezione di destinazione estratta dalla riga OD di ds390 della sezione di origine che contiene la residenza [H]; quota di flussi in uscita da Milano da ds391 (ancora fuori Milano = centroide del comune, con flag) [H]; punto = centroide della sezione di destinazione [H]. Nuovi arrivati: destinazioni dal margine cittadino delle destinazioni [H].
+ Scuola (ogni minore): servizio del livello per età (0-2 nido, 3-5 infanzia, 6-10 primaria, 11-13 secondaria I, 14-17 secondaria II) più vicino in linea d'aria alla residenza [H]. Nota: è la residenza attuale; nei metodi B0-B6 la scuola si potrà ricalcolare rispetto al lotto (decisione della pre-registrazione comune).
+ Università (studenti): ateneo estratto con probabilità proporzionali a M11 [H: stessa quota di fuori sede in ogni ateneo, L3]; sede uniforme tra le sedi dell'ateneo in ds94 [H].
+ Cura: per ogni nucleo con un componente ≥65, il medico di medicina generale più vicino (ds234) [H]. Altre forme di cura (assistenza a familiari, RSA) [L], fuori da v1.
+
+4.7 Vettore dei desideri e i tre generatori (nota 08 §3.2)
+ Il vettore dei desideri (CONTEXT.md) = ancore + budget + composizione (sopra) + pesi sui criteri del lotto. I criteri del lotto li fissa la pre-registrazione comune (esperimenti/prereg/), che non esiste ancora [L]: Base P v1 congela il codice dei generatori e i semi; le tabelle dei pesi si producono quando l'elenco dei criteri K è fissato [H-D]. Fino ad allora i test P5 usano 5 criteri astratti e 50 lotti sintetici casuali (NON Base L), estratti col seme.
+ G1 strutturale: pesi w_i ~ Dirichlet(a_c) per categoria c, con a_c tutti uguali a 1 tranne un peso doppio sul criterio "vicinanza alle ancore" per famiglie con minori e anziani soli [H, nessuna stima disponibile, L10]; sensibilità al tempo alle ancore α_i e al superamento del budget λ_i lognormali con mediana 1 e sd-log 0,5 [H]. Forma: quella additiva di CONFRONTO_APPROCCI_ALLOCAZIONE.md §2. G1 eredita le assunzioni del ricercatore (nota 08).
+ G2 avversario (stessi nuclei di G1, preferenze vere fuori dal modello additivo): 20% lessicografiche (un criterio domina, poi il budget); 20% omofile (utilità dipende dalla quota di nuclei della propria categoria sul lotto, che il meccanismo non vede); 20% minoranza polarizzata (tutto il peso su un criterio a cui G1 dà peso basso); 20% soglia (rifiutano ogni lotto oltre un tempo massimo dalle ancore, poi additivo); 20% additivo con rumore elevato (sd del rumore = 1 sulle utilità standardizzate). In più, sul 100% di G2, i pesi DICHIARATI differiscono dai veri per rumore e, nel 10% dei nuclei, per una dichiarazione strategica (peso esagerato sul criterio preferito). Tutte le quote [H].
+ G3 verità nota: parametri veri estratti da distribuzioni larghe e indipendenti dalla categoria (Dirichlet(1), α e λ lognormali sd-log 1) [H]; segnali dichiarati = veri + rumore gaussiano con sd 0,1 e 0,3 (due livelli) [H]; i parametri veri si scrivono in un file separato con SHA-256 sigillato prima di qualsiasi uso, per i test di recupero dei metodi.
+ G4 (agenti LLM): ESCLUSO da Base P.
+
+4.8 Riproducibilità e prodotti
+ Un solo script run.py (librerie: numpy, pandas, geopandas/shapely per i punti e le distanze; nient'altro senza motivo), test_popolazione.py per gli invarianti, README di due righe, requirements.txt. Seme principale SEME = 20261122, flussi indipendenti con numpy.random.SeedSequence(SEME).spawn(9) nell'ordine: [0] integerizzazione, [1] componenti e minori, [2] titolo, [3] reddito, [4] residenza e ancore, [5] studenti e nuovi arrivati, [6] G1, [7] G2, [8] G3 e campionatore della popolazione richiedente. Semi di robustezza: SEME + k, k = 1…10.
+ Prodotti: popolazione di riferimento in esperimenti/_cache/P_popolazione/ (rifatta dallo script; hash di contenuto in VERSIONE.md); popolazione richiedente e tabelle di calibrazione nel repo se < 20 MB (altrimenti in cache con hash); tabella errore per margine; campionatore stratificato per categoria con seme.
+
+======================================================================
+5. QUANTITÀ RIPORTATE PER OGNI MARGINE (anche dove non c'è soglia)
+======================================================================
+ TAE = Σ_celle |sim − obiettivo|; TAE/N; errore relativo massimo sulle celle con obiettivo ≥ 100; SRMSE = sqrt(media_celle (sim − obs)²) / media_celle(obs); ρ di Spearman tra NIL (margini per NIL). Una riga per margine, prima e dopo l'integerizzazione.
+
+======================================================================
+6. CRITERI DI ACCETTAZIONE (fissati ora)
+======================================================================
+P1 Calibrazione (margini adattati, dopo integerizzazione, seme principale):
+ P1a margini cittadini M2, M4, M6, M7: TAE/N ≤ 0,5% ciascuno; M9 (percettori): TAE/N ≤ 1%.
+ P1b margini per NIL M1, M3, M5, M8: TAE/N ≤ 1% ciascuno; per ogni cella con obiettivo ≥ 100 errore relativo ≤ 5%; per celle < 100 errore assoluto ≤ 10 nuclei.
+ P1c totali esatti: 780.935 nuclei residenti; totale per NIL uguale a ds1441.
+ P1d (se M10 usabile) classi MEF per i 20 CAP: TAE/N ≤ 2% per CAP.
+P2 Invarianti (test, 100% delle righe): ogni nucleo ha NIL fra gli 87, categoria, titolo, dimensione ≥ 1; monocomponente ⇔ dimensione 1; anziani soli: dimensione 1 ed età ≥ 65; famiglie con figli minorenni: ≥ 1 minore e dimensione ≥ 2; minori ≤ dimensione − 1; reddito netto ≥ 0; ISEE proxy ≥ 0; budget > 0 per chi ha reddito > 0; ogni nucleo con minori ha ≥ 1 ancora scuola; ogni studente ha 1 ancora università; ogni percettore non pensionato ha 1 ancora lavoro; ogni ancora ha coordinate valide e, se non marcata "fuori Milano", cade dentro il confine comunale (ds2841); studenti e nuovi arrivati marcati "non in anagrafe"/"coorte di flusso"; nessun campo generato da LLM; margini ricalcolati dal grezzo = totali dei CSV derivati (sezione 0).
+P3 Riproducibilità: due esecuzioni con SEME danno lo stesso SHA-256 del contenuto canonico (CSV ordinato per id); con i 10 semi di robustezza P1 e P2 passano tutti; per ogni categoria con ≥ 1.000 nuclei nella popolazione richiedente il coefficiente di variazione tra semi è ≤ 2%.
+P4 Validazione sui margini tenuti fuori (V1-V4), seme principale, valutata UNA volta, dopo P1-P3:
+ P4a V1 anziani soli ≥80 per NIL: ρ di Spearman ≥ 0,80 e SRMSE ≤ 0,30.
+ P4b V2 minori per NIL: ρ ≥ 0,85 e SRMSE ≤ 0,25.
+ P4c V3 reddito netto mediano dei nuclei residenti simulati tra 0,9 e 1,5 volte 36.875 € (33.188-55.313 €); mediana dei nuclei con capofamiglia ≥65 tra 0,8 e 1,5 volte 27.593 € (22.074-41.390 €). Banda larga perché V3 è lombardo e Milano ha redditi medi più alti [I, nota 06 §1.3].
+ P4d (se M10 usabile) V4: ρ di Spearman tra medie simulate e MEF sui 18 CAP ≥ 0,6. Se M10 non è usabile, P4d è "non applicabile" e lo si scrive come limite, non come passaggio.
+ Le soglie P4 sono [H]: scelte ora come ordine di grandezza ragionevole, non derivate da fonti.
+P5 Generatori:
+ P5a G1: su 50 lotti sintetici, la mediana per nucleo del τ di Kendall tra l'ordinamento vero e quello del miglior modello additivo adattato (minimi quadrati sulle utilità o logit sulle coppie) è ≥ 0,95 (controllo di sanità).
+ P5b G2: almeno il 50% dei nuclei G2 ha τ ≤ 0,80 con il miglior modello additivo (G2 è davvero fuori dal modello).
+ P5c G3: i parametri veri sono in un file separato con SHA-256 scritto prima di ogni uso; i segnali differiscono dai veri (rumore > 0) per il 100% dei nuclei.
+P6 Sensibilità (sezione 8): nessuna soglia di passaggio; regola: se tra lo scenario di base e una variante il numero di nuclei richiedenti di una categoria cambia di oltre un fattore 2, Base P v1 si congela con le DUE popolazioni (base e variante estrema) e i metodi B0-B6 vanno eseguiti su entrambe.
+ESITO: "passa" se P1-P5 passano; "ripeti" solo per errori di codice che non cambiano nessuna regola di questo testo (registrati in registro.txt, con nuova esecuzione completa); "cambia" se fallisce un criterio per ragioni di metodo o di dati.
+
+======================================================================
+7. REGOLA DI ARRESTO
+======================================================================
+ - Se fallisce P1, P2, P3, P4 o P5 per ragioni di metodo o di dati: ci si ferma, si scrive il REPORT con esito "cambia", si apre un ticket di revisione e si decide con Dennis. Nessuna regolazione di parametri dopo aver visto P4 (i margini tenuti fuori si guardano una volta sola).
+ - Se il ricalcolo dei margini dal grezzo non coincide con i CSV derivati delle note: ci si ferma prima della calibrazione e si segnala.
+ - Se un download è bloccato (rete o permessi): non si aggira, si segnala nel report; il margine relativo diventa [L] e, se è un margine adattato, la prova si ferma.
+ - Pilota consentito: un'esecuzione su 3 NIL solo per il debug del codice, senza calcolare P4; il suo esito non cambia regole.
+ - Se il revisore-metodologico segnala un difetto grave: ci si ferma (PROTOCOLLO).
+
+======================================================================
+8. SENSIBILITÀ PREVISTE (una variante per volta rispetto alla base)
+======================================================================
+ S1 titolo: T0 (base) contro T1 (gradiente per età).
+ S2 studenti fuori sede: 50.000 / 70.000 (base) / 90.000 [S, nota 06]; posti in residenza esclusi dai richiedenti: 11.000 / 16.000 [S].
+ S3 canone di riferimento: OMI (base) contro annunci [S].
+ S4 correlazione di rango tra partner: 0 (base) contro 0,5; dipendenza dall'età: nessuna (base) contro −0,3.
+ S5 giovani coppie: solo sposate <35 (base) contro + "in convivenza" <35.
+ S6 inquilini SAP: inclusi tra i richiedenti (base) contro esclusi (62.457 alloggi [S] tolti dagli affittuari in proporzione alla quota d'affitto 2011 dei NIL [H]).
+ S7 nuovi arrivati: dimensione media del nucleo in ingresso 1,5 (base) contro 2,0 [H]; reddito come i residenti (base) contro rango −0,2.
+ S8 budget: regola del 30% (base) contro reddito residuo.
+ S9 percettori nelle coppie: q2 = 0,7 (base) contro 0,5 e 0,9.
+ Per ciascuna si riportano: richiedenti per categoria, quota in fascia grigia, quota in fascia ISEE 14-16 mila, budget mediano per categoria.
+
+======================================================================
+9. SCELTE [H-D] DA FAR CONFERMARE A DENNIS PRIMA DEL COMMIT
+======================================================================
+ D1 Popolazione richiedente = affittuari residenti + studenti fuori sede non in residenza + coorte annuale di nuovi arrivati; proprietari esclusi in base (nessuna variante con proprietari in v1).
+ D2 Categorie esclusive con l'ordine di precedenza 4.4 e la fascia ISEE 14-16 mila come categoria trasversale cumulabile.
+ D3 Definizione di giovane: capofamiglia <35 anni (classe disponibile in ds1441); giovani coppie = senza figli.
+ D4 Titolo di godimento di base indipendente da età e tipologia dentro il NIL (T0), con T1 solo come sensibilità.
+ D5 Studenti fuori sede: 70.000 in base; quota idonei DSU 0,3.
+ D6 Percettori: q2 = 0,7 nelle coppie; correlazione tra partner 0 in base.
+ D7 Fascia grigia: ISEE proxy > 16.000 e canone OMI > 30% del netto, senza tetto ISEE in base.
+ D8 Budget: 30% del netto in base.
+ D9 Pesi delle preferenze: prodotti solo quando la pre-registrazione comune fissa i criteri del lotto (Base P v1 congela codice e semi dei generatori).
+ D10 Inquilini SAP inclusi tra i richiedenti in base.
+
+======================================================================
+10. LIMITI (noti prima di eseguire)
+======================================================================
+ 1. Nessun microdato: le correlazioni tra variabili non coperte da un margine congiunto sono quelle assunte [H] (titolo × età, reddito × tipo, reddito tra partner, età dei minori). La calibrazione sui margini non le valida.
+ 2. Famiglia anagrafica ≠ nucleo abitativo; le persone sole sono probabilmente sovrastimate [S/I].
+ 3. Reddito: distribuzione per contribuente, non per nucleo; netto calcolato con ipotesi semplificate; patrimonio ignorato, quindi ISEE proxy sottostimato per chi ha patrimonio; la fascia 14-16 mila è stretta e molto sensibile a queste ipotesi [I].
+ 4. Anni diversi tra fonti (2011, 2021, 2024, 2025); confini NIL 2011 non confrontati.
+ 5. Studenti fuori sede e nuovi arrivati: numeri e composizione in gran parte [S]/[H]; non sono validati da nessun margine tenuto fuori.
+ 6. Ancore di lavoro da una matrice del 2011; sedi universitarie da un dataset dichiarato al 2011; scuola e cura al servizio più vicino, non quello scelto.
+ 7. Domanda latente (pendolari, chi è uscito da Milano, coabitazioni) non rappresentata.
+ 8. I margini tenuti fuori V1 e V2 sono in parte meccanicamente legati ai margini adattati (stessa fonte anagrafica): un passaggio di P4a-b è una prova debole; P4c è a banda larga.
+ 9. G1 e G3 usano parametri scelti, non stimati: nessun risultato dei metodi va letto come stima delle preferenze dei milanesi.
+ 10. Non verificato in sessione: che i dataset della sezione 3.3 contengano i campi attesi (motivo nel ds390, CAP nei civici, sedi aggiornate in ds94); in caso contrario vale la regola di arresto o la marca [L] indicata.
