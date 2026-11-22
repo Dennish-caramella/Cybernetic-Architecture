@@ -1,0 +1,237 @@
+tipo,id,strato,classe,ambito_id,gruppo,lotto_at,area_m2,codice,blocco,stato_riferimento,potenziale_vuoto,ok1,ok2,ok,LC1,LC2
+lotto,R00121,D-R,lotto da riusare,MA_17,PA,1,835.8,C501,1,non determinato [L],0,False,False,0.0,False,False
+lotto,E00337,F-E,lotto edificabile,,,0,8510.4,C502,1,,1,True,True,1.0,True,True
+lotto,A00580,F-A,area di attivazione,,,0,590.5,C503,1,,1,True,True,1.0,True,True
+lotto,A00568,F-A,area di attivazione,,,0,796.7,C504,1,,0,True,True,1.0,False,True
+lotto,A00510,F-A,area di attivazione,,,0,5372.5,C505,1,,0,True,True,1.0,True,True
+lotto,R00115,D-R,lotto da riusare,MA_17,PA,1,3304.4,C506,1,non determinato [L],0,True,False,0.5,False,False
+lotto,E00200,D-E,lotto edificabile,MA_16,PA,1,11746.3,C507,1,non determinato [L],0,True,True,1.0,True,True
+lotto,E00312,F-E,lotto edificabile,,,0,11994.9,C509,1,,1,True,True,1.0,True,True
+lotto,R00034,D-R,lotto da riusare,MA_4,PA,1,677.0,C510,1,non determinato [L],0,True,True,1.0,True,True
+lotto,A00561,D-A,area di attivazione,MA_11,PA,1,1002.2,C511,1,non determinato [L],0,True,True,1.0,True,True
+lotto,E00199,D-E,lotto edificabile,MA_12,PA,1,10140.0,C513,1,non determinato [L],0,False,False,0.0,False,False
+lotto,A00443,F-A,area di attivazione,,,0,2445.0,C515,1,,0,True,True,1.0,True,True
+lotto,A00537,F-A,area di attivazione,,,0,2803.8,C516,1,,0,True,True,1.0,True,True
+lotto,R00081,D-R,lotto da riusare,MA_6,PA,1,344.7,C517,1,A,0,False,False,0.0,False,False
+lotto,R00100,D-R,lotto da riusare,ADP_24,ADP,1,273.1,C518,1,A,0,False,False,0.0,False,False
+lotto,E00253,D-E,lotto edificabile,ADP_23,ADP,1,41951.1,C519,1,A,0,False,False,0.0,False,False
+lotto,E00377,F-E,lotto edificabile,,,0,58647.0,C521,1,,1,True,True,1.0,False,True
+lotto,E00267,D-E,lotto edificabile,ADP_23,ADP,1,2163.3,C523,2,A,0,False,False,0.0,False,False
+lotto,A00613,F-A,area di attivazione,,,0,3688.4,C525,2,,0,True,True,1.0,True,True
+lotto,E00220,F-E,lotto edificabile,,,0,13139.9,C527,2,,0,True,True,1.0,True,True
+lotto,A00626,F-A,area di attivazione,,,0,1310.6,C528,2,,0,True,True,1.0,True,True
+lotto,R00038,D-R,lotto da riusare,MA_4,PA,1,749.2,C529,2,non determinato [L],0,True,True,1.0,False,False
+lotto,E00280,D-E,lotto edificabile,MA_6,PA,1,1833.0,C530,2,A,0,True,False,0.5,True,False
+lotto,A00553,F-A,area di attivazione,,,0,1155.6,C531,2,,0,False,False,0.0,False,False
+lotto,R00109,F-R,lotto da riusare,,,0,140.0,C532,2,,0,True,True,1.0,False,False
+lotto,E00226,F-E,lotto edificabile,,,0,11167.3,C536,2,,0,False,False,0.0,False,False
+lotto,A00463,F-A,area di attivazione,MA_16,PA,0,4650.3,C537,2,,0,True,True,1.0,True,True
+lotto,A00417,F-A,area di attivazione,,,0,10949.7,C538,2,,0,False,False,0.0,False,False
+lotto,E00244,D-E,lotto edificabile,ADP_23,ADP,1,14222.0,C539,2,A,0,True,True,1.0,True,True
+lotto,E00364,F-E,lotto edificabile,,,0,3627.6,C540,2,,1,True,True,1.0,True,True
+lotto,E00182,F-E,lotto edificabile,,,0,8841.3,C542,2,,1,True,True,1.0,True,True
+lotto,A00410,F-A,area di attivazione,,,0,1372.5,C543,3,,0,True,True,1.0,True,True
+lotto,A00515,F-A,area di attivazione,,,0,2018.6,C546,3,,0,True,True,1.0,True,True
+lotto,R00040,D-R,lotto da riusare,ADP_23,ADP,1,3279.8,C547,3,A,0,True,False,0.5,False,False
+lotto,A00458,D-A,area di attivazione,MA_18,PA,1,10379.7,C548,3,non determinato [L],0,True,True,1.0,True,True
+lotto,A00388,F-A,area di attivazione,,,0,7698.8,C549,3,,0,True,True,1.0,True,True
+lotto,R00008,F-R,lotto da riusare,,,0,253.0,C550,3,,0,False,False,0.0,False,False
+lotto,E00309,F-E,lotto edificabile,,,0,4715.3,C552,3,,0,False,False,0.0,False,False
+lotto,A00441,F-A,area di attivazione,,,0,2643.2,C553,3,,0,True,True,1.0,True,True
+lotto,E00339,F-E,lotto edificabile,,,0,2061.4,C554,3,,1,True,True,1.0,True,False
+lotto,A00430,F-A,area di attivazione,,,0,1158.3,C556,3,,1,True,False,0.5,True,False
+lotto,E00316,D-E,lotto edificabile,MA_17,PA,1,49931.3,C557,3,non determinato [L],0,True,False,0.5,False,False
+lotto,R00089,F-R,lotto da riusare,,,0,583.4,C558,3,,0,False,False,0.0,False,False
+lotto,R00055,D-R,lotto da riusare,ADP_23,ADP,1,359.8,C559,3,A,0,True,True,1.0,False,False
+lotto,R00133,F-R,lotto da riusare,,,0,1183.7,C561,3,,0,True,True,1.0,False,False
+lotto,A00459,D-A,area di attivazione,MA_18,PA,1,9634.3,C562,3,non determinato [L],0,False,False,0.0,False,False
+lotto,A00609,F-A,area di attivazione,,,0,3486.2,C563,3,,0,True,True,1.0,True,True
+lotto,A00543,F-A,area di attivazione,,,0,2999.6,C564,4,,0,True,True,1.0,True,True
+lotto,E00235,F-E,lotto edificabile,,,0,10542.9,C566,4,,1,True,True,1.0,False,True
+lotto,E00243,F-E,lotto edificabile,,,0,6670.4,C568,4,,0,True,True,1.0,True,True
+lotto,R00091,F-R,lotto da riusare,,,0,1411.7,C570,4,,0,True,True,1.0,False,True
+lotto,E00277,F-E,lotto edificabile,,,0,5039.8,C574,4,,1,True,False,0.5,True,False
+lotto,E00203,D-E,lotto edificabile,MA_5,PA,1,51382.8,C575,4,non determinato [L],0,True,True,1.0,True,True
+lotto,A00611,F-A,area di attivazione,,,0,11522.8,C576,4,,0,True,True,1.0,True,True
+lotto,A00484,F-A,area di attivazione,,,0,3856.9,C578,4,,0,True,True,1.0,True,True
+lotto,A00498,F-A,area di attivazione,,,0,2454.1,C579,4,,0,True,True,1.0,True,True
+lotto,A00521,D-A,area di attivazione,MA_15,PA,1,728.0,C582,4,non determinato [L],1,True,True,1.0,True,True
+lotto,A00586,F-A,area di attivazione,,,0,666.6,C583,4,,0,False,False,0.0,False,False
+lotto,R00138,F-R,lotto da riusare,,,0,707.6,C584,4,,0,True,True,1.0,False,False
+lotto,R00037,D-R,lotto da riusare,MA_4,PA,1,448.6,C586,5,non determinato [L],0,True,True,1.0,False,False
+lotto,E00224,F-E,lotto edificabile,,,0,2793.1,C587,5,,1,True,True,1.0,True,True
+lotto,R00132,F-R,lotto da riusare,,,0,4803.5,C588,5,,0,True,True,1.0,False,False
+lotto,E00281,D-E,lotto edificabile,MA_6,PA,1,3365.6,C590,5,A,0,True,True,1.0,True,True
+lotto,R00032,F-R,lotto da riusare,,,0,159.7,C591,5,,0,False,False,0.0,False,False
+lotto,E00223,F-E,lotto edificabile,,,0,7330.5,C593,5,,1,True,True,1.0,True,True
+lotto,R00085,F-R,lotto da riusare,,,0,428.4,C594,5,,0,False,False,0.0,False,False
+lotto,R00024,F-R,lotto da riusare,,,0,729.2,C595,5,,0,True,True,1.0,True,True
+lotto,E00242,D-E,lotto edificabile,ADP_28,ADP,1,31312.9,C596,5,A,0,True,True,1.0,True,True
+lotto,A00432,F-A,area di attivazione,,,0,3149.0,C597,5,,0,True,True,1.0,True,True
+lotto,A00608,F-A,area di attivazione,,,0,5063.2,C598,5,,0,True,True,1.0,True,True
+lotto,A00514,D-A,area di attivazione,MA_3,PA,1,42283.5,C599,5,C,0,False,False,0.0,False,False
+lotto,A00412,F-A,area di attivazione,,,0,7548.6,C600,5,,0,True,False,0.5,True,False
+lotto,R00106,F-R,lotto da riusare,,,0,505.6,C601,5,,0,True,True,1.0,False,False
+lotto,A00522,D-A,area di attivazione,MA_15,PA,1,21303.7,C602,5,non determinato [L],1,True,True,1.0,True,True
+lotto,R00163,F-R,lotto da riusare,,,0,836.0,C603,5,,0,True,True,1.0,True,False
+lotto,R00022,F-R,lotto da riusare,,,0,3063.7,C605,5,,0,True,True,1.0,False,True
+lotto,R00041,D-R,lotto da riusare,ADP_23,ADP,1,468.6,C607,6,A,0,True,True,1.0,True,True
+lotto,A00389,F-A,area di attivazione,,,0,3294.4,C610,6,,0,False,True,0.5,False,True
+lotto,R00143,F-R,lotto da riusare,,,0,233.6,C611,6,,0,False,False,0.0,False,False
+lotto,A00482,F-A,area di attivazione,,,0,8029.3,C612,6,,0,True,True,1.0,True,True
+lotto,R00011,F-R,lotto da riusare,,,0,845.7,C613,6,,0,True,True,1.0,True,True
+lotto,R00062,F-R,lotto da riusare,,,0,1090.4,C614,6,,0,True,True,1.0,False,False
+lotto,R00118,D-R,lotto da riusare,MA_17,PA,1,433.9,C616,6,non determinato [L],0,True,False,0.5,False,False
+lotto,A00570,F-A,area di attivazione,,,0,15201.8,C618,6,,1,True,True,1.0,True,True
+lotto,A00506,D-A,area di attivazione,MA_8,PA,1,24719.9,C620,6,non determinato [L],0,True,True,1.0,True,True
+lotto,E00360,F-E,lotto edificabile,,,0,8255.6,C622,6,,1,True,True,1.0,True,True
+lotto,E00263,D-E,lotto edificabile,ADP_23,ADP,1,91758.7,C623,6,A,0,True,True,1.0,True,True
+lotto,E00374,F-E,lotto edificabile,,,0,68563.9,C624,6,,0,True,True,1.0,False,True
+lotto,A00499,F-A,area di attivazione,,,0,15107.0,C625,6,,0,True,True,1.0,True,True
+lotto,E00170,F-E,lotto edificabile,,,0,46548.9,C627,7,,0,True,True,1.0,True,True
+lotto,E00250,D-E,lotto edificabile,MA_4,PA,1,46414.0,C629,7,non determinato [L],0,True,False,0.5,True,False
+lotto,E00283,D-E,lotto edificabile,MA_6,PA,1,11109.1,C630,7,A,0,True,False,0.5,False,False
+lotto,R00099,D-R,lotto da riusare,ADP_24,ADP,1,478.2,C631,7,A,0,False,False,0.0,False,False
+lotto,E00307,D-E,lotto edificabile,ADP_24,ADP,1,15522.1,C632,7,A,0,False,False,0.0,False,False
+lotto,A00564,F-A,area di attivazione,,,0,3819.0,C634,7,,0,True,True,1.0,True,True
+lotto,E00252,D-E,lotto edificabile,ADP_28,ADP,1,38389.9,C635,7,A,0,False,False,0.0,False,False
+lotto,A00405,F-A,area di attivazione,,,0,1617.6,C637,7,,0,True,True,1.0,True,True
+lotto,E00183,F-E,lotto edificabile,,,0,3179.3,C638,7,,0,True,True,1.0,True,True
+lotto,R00069,F-R,lotto da riusare,,,0,64.2,C639,7,,0,False,False,0.0,False,False
+lotto,A00542,D-A,area di attivazione,ADP_23,ADP,1,846.5,C640,7,A,0,False,False,0.0,False,False
+lotto,E00260,F-E,lotto edificabile,,,0,9284.2,C642,7,,1,True,True,1.0,True,True
+lotto,A00593,D-A,area di attivazione,ADP_25,ADP,1,934.7,C643,7,A,0,False,False,0.0,False,False
+lotto,A00503,F-A,area di attivazione,,,0,13986.2,C645,7,,0,True,True,1.0,True,True
+lotto,R00122,D-R,lotto da riusare,MA_17,PA,1,692.8,C646,7,non determinato [L],0,True,True,1.0,False,False
+lotto,A00560,D-A,area di attivazione,MA_11,PA,1,11297.0,C647,7,non determinato [L],0,True,True,1.0,True,True
+lotto,E00315,F-E,lotto edificabile,,,0,2023.4,C648,8,,0,False,False,0.0,False,False
+lotto,A00562,D-A,area di attivazione,MA_11,PA,1,31521.7,C649,8,non determinato [L],0,True,True,1.0,True,True
+lotto,E00295,D-E,lotto edificabile,ADP_29,ADP,1,62485.2,C650,8,A,0,True,True,1.0,True,True
+lotto,A00621,F-A,area di attivazione,,,0,2141.7,C651,8,,0,True,True,1.0,True,True
+lotto,R00047,F-R,lotto da riusare,,,0,428.9,C652,8,,0,False,False,0.0,False,False
+lotto,E00198,D-E,lotto edificabile,MA_5,PA,1,12567.0,C653,8,non determinato [L],0,False,True,0.5,False,True
+lotto,R00131,F-R,lotto da riusare,,,0,283.7,C654,8,,0,False,False,0.0,False,False
+lotto,R00049,F-R,lotto da riusare,,,0,435.4,C655,8,,0,False,False,0.0,False,False
+lotto,E00290,F-E,lotto edificabile,,,0,6150.0,C657,8,,1,True,True,1.0,True,True
+lotto,E00372,F-E,lotto edificabile,,,0,13887.4,C658,8,,1,True,True,1.0,True,True
+lotto,A00411,F-A,area di attivazione,,,0,4079.5,C660,8,,0,True,True,1.0,True,True
+lotto,R00123,F-R,lotto da riusare,,,0,714.1,C661,8,,0,True,True,1.0,True,True
+lotto,A00457,F-A,area di attivazione,,,0,21636.9,C662,8,,0,True,True,1.0,True,True
+lotto,R00063,F-R,lotto da riusare,,,0,457.4,C663,8,,0,False,False,0.0,False,False
+lotto,E00319,D-E,lotto edificabile,MA_17,PA,1,58010.9,C665,8,non determinato [L],0,True,True,1.0,False,False
+lotto,E00248,D-E,lotto edificabile,ADP_23,ADP,1,71625.6,C667,8,A,0,False,False,0.0,False,False
+lotto,R00105,F-R,lotto da riusare,,,0,4419.3,C668,8,,0,True,True,1.0,False,False
+lotto,A00415,F-A,area di attivazione,,,0,4414.5,C669,9,,0,True,True,1.0,True,True
+lotto,A00533,D-A,area di attivazione,ADP_23,ADP,1,2258.6,C670,9,A,0,False,False,0.0,False,False
+lotto,E00202,D-E,lotto edificabile,MA_5,PA,1,41254.5,C671,9,non determinato [L],0,True,True,1.0,True,True
+lotto,E00361,F-E,lotto edificabile,,,0,52061.4,C672,9,,1,True,True,1.0,True,True
+lotto,A00402,F-A,area di attivazione,,,0,1922.4,C673,9,,0,True,True,1.0,True,True
+lotto,R00010,F-R,lotto da riusare,,,0,90.2,C674,9,,0,False,False,0.0,False,False
+lotto,E00356,F-E,lotto edificabile,,,0,3280.6,C675,9,,0,True,True,1.0,True,True
+lotto,R00031,F-R,lotto da riusare,,,0,1300.8,C677,9,,0,True,True,1.0,False,True
+lotto,E00324,D-E,lotto edificabile,ADP_26,ADP,1,20433.6,C680,9,A,0,True,True,1.0,True,True
+lotto,R00016,D-R,lotto da riusare,ADP_28,ADP,1,351.4,C681,9,A,0,True,True,1.0,True,True
+lotto,A00460,D-A,area di attivazione,ADP_27,ADP,1,71952.3,C682,9,A,0,True,True,1.0,True,True
+lotto,E00296,F-E,lotto edificabile,,,0,3520.3,C683,9,,0,False,False,0.0,False,False
+lotto,E00343,F-E,lotto edificabile,ADP_25,ADP,0,6014.7,C689,9,,0,False,False,0.0,False,False
+lotto,R00150,F-R,lotto da riusare,,,0,831.9,C690,10,,0,True,True,1.0,False,False
+lotto,A00649,F-A,area di attivazione,,,0,5812.0,C691,10,,0,True,True,1.0,True,True
+lotto,R00092,F-R,lotto da riusare,,,0,2236.3,C692,10,,0,True,False,0.5,False,False
+lotto,A00557,F-A,area di attivazione,,,0,981.3,C693,10,,1,True,True,1.0,True,True
+lotto,E00285,D-E,lotto edificabile,ADP_29,ADP,1,40315.8,C695,10,A,0,False,False,0.0,False,False
+lotto,R00065,F-R,lotto da riusare,,,0,307.6,C696,10,,0,False,True,0.5,False,True
+lotto,E00194,F-E,lotto edificabile,,,0,84049.8,C697,10,,0,False,False,0.0,False,False
+lotto,A00563,D-A,area di attivazione,ADP_24,ADP,1,1243.6,C698,10,A,0,False,False,0.0,False,False
+lotto,E00256,D-E,lotto edificabile,MA_4,PA,1,64152.0,C699,10,non determinato [L],0,True,True,1.0,True,True
+lotto,E00289,D-E,lotto edificabile,ADP_29,ADP,1,66538.2,C702,10,A,0,True,True,1.0,False,True
+lotto,A00468,F-A,area di attivazione,,,0,1474.5,C703,10,,0,True,False,0.5,True,False
+lotto,A00552,F-A,area di attivazione,,,0,6989.0,C704,10,,0,True,True,1.0,True,True
+lotto,R00101,D-R,lotto da riusare,ADP_24,ADP,1,675.2,C705,10,A,0,False,True,0.5,False,True
+lotto,A00519,F-A,area di attivazione,,,0,969.7,C706,10,,0,True,True,1.0,True,True
+lotto,E00310,D-E,lotto edificabile,ADP_24,ADP,1,2252.9,C707,10,A,0,True,True,1.0,True,True
+lotto,E00332,F-E,lotto edificabile,,,0,1979.1,C710,10,,0,True,True,1.0,True,True
+lotto,E00302,D-E,lotto edificabile,ADP_24,ADP,1,1603.8,C712,11,A,0,False,False,0.0,False,False
+lotto,R00018,F-R,lotto da riusare,,,0,389.1,C713,11,,0,True,True,1.0,False,False
+lotto,A00623,F-A,area di attivazione,,,0,11645.9,C714,11,,0,True,True,1.0,True,True
+lotto,R00078,D-R,lotto da riusare,MA_6,PA,1,909.7,C719,11,A,0,True,True,1.0,True,True
+lotto,A00434,F-A,area di attivazione,,,0,2897.7,C720,11,,0,True,True,1.0,True,True
+lotto,A00469,D-A,area di attivazione,ADP_27,ADP,1,50050.1,C721,11,A,0,True,True,1.0,True,True
+lotto,E00238,F-E,lotto edificabile,,,0,7870.7,C722,11,,1,True,True,1.0,True,True
+lotto,E00320,F-E,lotto edificabile,MA_17,PA,0,2317.7,C723,11,,0,True,True,1.0,True,True
+lotto,E00284,D-E,lotto edificabile,MA_6,PA,1,15456.0,C724,11,A,0,True,False,0.5,False,False
+lotto,R00120,D-R,lotto da riusare,MA_17,PA,1,650.3,C726,11,non determinato [L],0,True,True,1.0,False,False
+lotto,E00236,F-E,lotto edificabile,,,0,7323.6,C727,11,,0,False,False,0.0,False,False
+lotto,A00450,F-A,area di attivazione,,,0,2268.2,C728,11,,1,False,False,0.0,False,False
+lotto,A00398,F-A,area di attivazione,,,0,11541.3,C729,11,,0,True,False,0.5,True,False
+lotto,R00098,F-R,lotto da riusare,,,0,488.4,C730,11,,0,False,False,0.0,False,False
+lotto,A00439,F-A,area di attivazione,,,0,5047.5,C731,11,,0,True,True,1.0,True,True
+lotto,E00208,F-E,lotto edificabile,,,0,2911.3,C734,12,,1,False,False,0.0,False,False
+lotto,E00308,D-E,lotto edificabile,ADP_24,ADP,1,15214.3,C735,12,A,0,True,False,0.5,True,False
+lotto,R00114,D-R,lotto da riusare,MA_17,PA,1,480.8,C736,12,non determinato [L],0,True,False,0.5,False,False
+lotto,A00637,F-A,area di attivazione,,,0,621.2,C737,12,,0,True,True,1.0,True,True
+lotto,A00495,F-A,area di attivazione,,,0,2190.3,C738,12,,0,True,True,1.0,True,True
+lotto,E00206,F-E,lotto edificabile,,,0,9535.2,C739,12,,0,True,True,1.0,True,True
+lotto,E00169,F-E,lotto edificabile,,,0,4025.0,C741,12,,0,True,True,1.0,True,True
+lotto,A00453,D-A,area di attivazione,MA_14,PA,1,5940.9,C742,12,C,0,True,True,1.0,False,False
+lotto,E00354,F-E,lotto edificabile,,,0,5759.8,C743,12,,0,False,False,0.0,False,False
+lotto,A00648,F-A,area di attivazione,,,0,12201.3,C744,12,,0,True,False,0.5,True,False
+lotto,R00083,F-R,lotto da riusare,,,0,566.3,C745,12,,0,True,False,0.5,False,False
+lotto,A00588,F-A,area di attivazione,,,0,1546.8,C747,12,,0,True,True,1.0,True,True
+lotto,A00421,F-A,area di attivazione,,,0,4598.8,C748,12,,0,False,False,0.0,False,False
+lotto,E00350,F-E,lotto edificabile,,,0,15667.3,C749,12,,1,True,True,1.0,True,True
+lotto,E00217,D-E,lotto edificabile,ADP_28,ADP,1,13591.5,C751,12,A,0,False,False,0.0,False,False
+lotto,A00505,D-A,area di attivazione,ADP_28,ADP,1,977.3,C752,12,A,0,False,False,0.0,False,False
+lotto,R00043,D-R,lotto da riusare,ADP_23,ADP,1,894.7,C753,13,A,0,True,True,1.0,False,False
+lotto,E00232,D-E,lotto edificabile,ADP_28,ADP,1,1947.8,C754,13,A,0,True,False,0.5,True,False
+lotto,E00234,F-E,lotto edificabile,,,0,23704.0,C755,13,,0,True,True,1.0,True,True
+lotto,E00207,F-E,lotto edificabile,,,0,2165.2,C756,13,,0,True,False,0.5,True,False
+lotto,A00573,F-A,area di attivazione,MA_17,PA,0,3842.2,C757,13,,0,True,True,1.0,True,True
+lotto,E00266,F-E,lotto edificabile,,,0,5714.1,C760,13,,0,True,True,1.0,False,False
+lotto,A00625,F-A,area di attivazione,,,0,948.1,C761,13,,1,True,False,0.5,True,False
+lotto,A00645,F-A,area di attivazione,,,0,7895.7,C764,13,,0,True,True,1.0,True,True
+lotto,R00044,F-R,lotto da riusare,,,0,1143.6,C765,13,,0,False,False,0.0,False,False
+lotto,A00452,D-A,area di attivazione,MA_2,PA,1,25471.2,C769,13,C,0,True,True,1.0,True,True
+lotto,R00030,F-R,lotto da riusare,,,0,916.7,C770,13,,0,True,True,1.0,True,True
+lotto,R00137,D-R,lotto da riusare,ADP_25,ADP,1,469.2,C772,13,A,0,True,True,1.0,True,True
+lotto,R00142,F-R,lotto da riusare,,,0,38.8,C773,13,,0,False,False,0.0,False,False
+lotto,A00546,F-A,area di attivazione,,,0,1281.5,C774,14,,1,True,True,1.0,True,True
+lotto,A00466,F-A,area di attivazione,,,0,4026.6,C776,14,,1,True,True,1.0,True,True
+lotto,A00446,F-A,area di attivazione,,,0,1849.2,C777,14,,0,False,False,0.0,False,False
+lotto,E00297,D-E,lotto edificabile,MA_11,PA,1,7426.8,C778,14,non determinato [L],0,True,False,0.5,True,False
+lotto,A00518,F-A,area di attivazione,,,0,703.0,C779,14,,0,False,False,0.0,False,False
+lotto,A00579,F-A,area di attivazione,,,0,5500.7,C781,14,,0,True,True,1.0,True,True
+lotto,A00470,D-A,area di attivazione,ADP_27,ADP,1,39293.2,C782,14,A,0,True,False,0.5,True,False
+lotto,E00192,F-E,lotto edificabile,,,0,24322.2,C786,14,,1,True,True,1.0,True,True
+lotto,E00246,D-E,lotto edificabile,MA_9,PA,1,29101.6,C787,14,C,0,True,True,1.0,True,True
+lotto,E00272,F-E,lotto edificabile,,,0,1549.3,C788,14,,0,True,True,1.0,False,False
+lotto,E00371,F-E,lotto edificabile,,,0,63660.3,C789,14,,1,True,True,1.0,True,True
+lotto,E00317,D-E,lotto edificabile,MA_17,PA,1,27342.0,C792,14,non determinato [L],0,True,False,0.5,False,False
+lotto,R00096,F-R,lotto da riusare,,,0,912.8,C793,14,,0,True,True,1.0,True,True
+lotto,A00465,D-A,area di attivazione,MA_10,PA,1,6480.2,C796,15,non determinato [L],0,True,True,1.0,True,True
+lotto,A00566,F-A,area di attivazione,,,0,849.4,C797,15,,1,True,True,1.0,True,True
+lotto,A00539,F-A,area di attivazione,,,0,1036.5,C798,15,,0,True,True,1.0,True,True
+lotto,A00512,D-A,area di attivazione,MA_3,PA,1,20758.5,C800,15,C,0,False,False,0.0,False,False
+lotto,E00261,D-E,lotto edificabile,ADP_23,ADP,1,62138.0,C801,15,A,0,False,False,0.0,False,False
+lotto,R00035,F-R,lotto da riusare,,,0,7289.0,C804,15,,0,True,False,0.5,False,False
+lotto,A00627,F-A,area di attivazione,,,0,2519.3,C805,15,,0,False,False,0.0,False,False
+lotto,A00454,D-A,area di attivazione,MA_2,PA,1,1026.2,C806,15,C,0,True,True,1.0,False,False
+lotto,E00365,F-E,lotto edificabile,,,0,37428.8,C809,15,,0,True,True,1.0,True,True
+lotto,E00264,D-E,lotto edificabile,ADP_23,ADP,1,32748.0,C810,15,A,0,False,True,0.5,False,False
+lotto,A00471,F-A,area di attivazione,,,0,37950.3,C812,15,,0,True,True,1.0,True,True
+lotto,E00258,D-E,lotto edificabile,ADP_23,ADP,1,34511.5,C813,15,A,0,False,False,0.0,False,False
+lotto,R00113,F-R,lotto da riusare,,,0,127.5,C814,15,,0,True,False,0.5,True,False
+lotto,E00369,F-E,lotto edificabile,,,0,53825.1,C815,15,,1,True,True,1.0,True,True
+lotto,A00628,F-A,area di attivazione,,,0,2504.0,C816,16,,0,True,True,1.0,True,True
+lotto,E00257,D-E,lotto edificabile,ADP_23,ADP,1,87282.3,C817,16,A,0,True,True,1.0,True,True
+lotto,E00259,D-E,lotto edificabile,ADP_23,ADP,1,98114.4,C818,16,A,0,True,True,1.0,True,False
+lotto,A00606,F-A,area di attivazione,,,0,38138.3,C819,16,,0,True,True,1.0,True,True
+lotto,R00117,F-R,lotto da riusare,,,0,578.6,C820,16,,0,False,False,0.0,False,False
+lotto,E00298,D-E,lotto edificabile,ADP_29,ADP,1,44810.5,C822,16,A,0,True,True,1.0,True,False
+lotto,E00355,F-E,lotto edificabile,,,0,5411.1,C823,16,,0,True,True,1.0,True,True
+lotto,E00286,D-E,lotto edificabile,MA_6,PA,1,2552.5,C824,16,A,0,True,True,1.0,False,False
+lotto,E00275,F-E,lotto edificabile,,,0,4784.2,C825,16,,1,True,True,1.0,True,True
+lotto,E00338,D-E,lotto edificabile,ADP_25,ADP,1,58511.0,C827,16,A,0,True,False,0.5,True,False
+lotto,E00269,D-E,lotto edificabile,ADP_23,ADP,1,2399.6,C828,16,A,0,False,False,0.0,False,False
+lotto,R00086,F-R,lotto da riusare,,,0,710.4,C829,16,,0,True,True,1.0,True,False
+lotto,E00299,D-E,lotto edificabile,MA_11,PA,1,13128.6,C832,16,non determinato [L],0,False,False,0.0,False,False
+lotto,A00464,D-A,area di attivazione,MA_1,PA,1,3286.5,C834,16,non determinato [L],0,True,True,1.0,True,True

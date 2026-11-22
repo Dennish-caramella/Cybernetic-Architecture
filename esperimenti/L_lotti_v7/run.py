@@ -976,7 +976,8 @@ def main():
     git = lambda *a: subprocess.run(["git", "-C", HERE, *a], capture_output=True, text=True).stdout.strip()
     res["registro"] = dict(utc=ts, commit=git("rev-parse", "HEAD"), modifiche_non_committate=git("status", "--porcelain", "--", ".").splitlines()[:30],
                            sha256_run_py=hashlib.sha256(open(__file__, "rb").read()).hexdigest(), python=sys.version.split()[0], durata_s=round(time.time() - T0))
-    js = lambda p: json.dump(res, open(p, "w"), indent=1, ensure_ascii=False, default=str)
+    sk = lambda o: {(" | ".join(map(str, k)) if isinstance(k, tuple) else k): sk(v) for k, v in o.items()} if isinstance(o, dict) else o  # [v7] chiavi-tupla -> stringa per il JSON
+    js = lambda p: json.dump(sk(res), open(p, "w"), indent=1, ensure_ascii=False, default=str)
     js(os.path.join(out, "esito_criteri.json")); cas.to_csv(os.path.join(out, "cascata.csv"), index=False); cov.to_csv(os.path.join(out, "copertura_ambiti.csv"), index=False)
     if not pil:
         lp = os.path.join(HERE, "lotti_v7.gpkg")
