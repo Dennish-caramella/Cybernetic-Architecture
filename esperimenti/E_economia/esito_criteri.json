@@ -1,0 +1,194 @@
+{
+ "K1": [
+  {
+   "compendio": "Ex Palasharp",
+   "zona": "E6",
+   "VAN_centrale": -5161074.996957839,
+   "Ctot_centrale": 53751977.621999994,
+   "VAN_su_Ctot_centrale": -0.09601646721264961,
+   "quota_cubo_ok": 0.30625,
+   "VAN_q05": -33679378.66319884,
+   "VAN_q50": -11355221.17502113,
+   "VAN_q95": 23264933.270217173
+  },
+  {
+   "compendio": "San Romanello",
+   "zona": "E5",
+   "VAN_centrale": -1725121.2202206552,
+   "Ctot_centrale": 18549781.2,
+   "VAN_su_Ctot_centrale": -0.09299954547284123,
+   "quota_cubo_ok": 0.2891,
+   "VAN_q05": -12074186.17043419,
+   "VAN_q50": -4203353.388032893,
+   "VAN_q95": 7449401.8185373675
+  },
+  {
+   "compendio": "Bovisasca",
+   "zona": "D32",
+   "VAN_centrale": -393230.4930570265,
+   "Ctot_centrale": 5110346.9229999995,
+   "VAN_su_Ctot_centrale": -0.07694790568664228,
+   "quota_cubo_ok": 0.31945,
+   "VAN_q05": -3050441.085948605,
+   "VAN_q50": -969960.2251100186,
+   "VAN_q95": 2068465.7062414226
+  }
+ ],
+ "n_Theta_cal": 5671,
+ "quota_Theta_cal": 0.28355,
+ "centrale_in_Theta_cal": false,
+ "KS_marginali": {
+  "eta": 0.12721158383649506,
+  "u_p": 0.057859550232092716,
+  "c_new": 0.2550302283626451,
+  "rho": 0.01032218409078206,
+  "d": 0.011258874849232936,
+  "sigma": 0.02926963942795996,
+  "o": 0.03976888259425648,
+  "k": 0.014780023017463673,
+  "omega": 0.00826627555549364,
+  "pi_R": 0.022982122869014465,
+  "m_v": 0.009294339877723157,
+  "i_c": 0.012076850647007142,
+  "lam_c": 0.006514301137278133,
+  "T_c": 0.02732019757522236,
+  "tau": 0.015986337523662852,
+  "y_ERS": 0.013387708482750171,
+  "g": 0.24222491764450604,
+  "v": 0.025957059658254567,
+  "q": 0.08508948939022681,
+  "delta": 0.1340887891569671,
+  "D": 0.09653841634037957,
+  "i_D": 0.27452763002807057,
+  "i_E": 0.16890280797275847
+ },
+ "E4": true,
+ "taratura_non_informativa": false,
+ "punto_base_tornado": "mediana di Theta_cal",
+ "T1": {
+  "assegnati": 433,
+  "totale": 433,
+  "quota_centroide_uguale": 1.0
+ },
+ "E3": true,
+ "E6": {
+  "eta": 0.23148148148148148,
+  "u_p": 0.0,
+  "c_new": 0.3611111111111111,
+  "rho": 0.0,
+  "d": 0.0,
+  "sigma": 0.0,
+  "o": 0.0,
+  "k": 0.0,
+  "omega": 0.0,
+  "pi_R": 0.0,
+  "m_v": 0.0,
+  "i_c": 0.0,
+  "lam_c": 0.0,
+  "T_c": 0.0,
+  "tau": 0.0,
+  "y_ERS": 0.0,
+  "g": 0.42592592592592593,
+  "v": 0.0,
+  "q": 0.3888888888888889,
+  "delta": 0.41203703703703703,
+  "D": 0.3888888888888889,
+  "i_D": 0.42592592592592593,
+  "i_E": 0.39351851851851855
+ },
+ "informativi": {
+  "SACC_K2b": [
+   {
+    "caso": "via Cascella 5",
+    "alloggi": 28,
+    "inv_per_alloggio": 105875.14285714286,
+    "inv_2025": 121328.96805678794,
+    "modello": 192353.9362078106,
+    "rapporto": 1.5853916775899672
+   },
+   {
+    "caso": "P.le Cooperazione 1 (LUM)",
+    "alloggi": 14,
+    "inv_per_alloggio": 99100.05,
+    "inv_2025": 113564.96413043479,
+    "modello": 192353.9362078106,
+    "rapporto": 1.6937788664018147
+   },
+   {
+    "caso": "P.le Cooperazione 1 (Solidarnosc)",
+    "alloggi": 14,
+    "inv_per_alloggio": 99076.22142857143,
+    "inv_2025": 113537.65747559894,
+    "modello": 192353.9362078106,
+    "rapporto": 1.6941862328730053
+   },
+   {
+    "caso": "via Castellammare 16 (9)",
+    "alloggi": 9,
+    "inv_per_alloggio": 183006.9777777778,
+    "inv_2025": 209719.17639751555,
+    "modello": 192353.9362078106,
+    "rapporto": 0.9171976521746884
+   },
+   {
+    "caso": "via Castellammare 16 (5)",
+    "alloggi": 5,
+    "inv_per_alloggio": 250456.23799999998,
+    "inv_2025": 287013.5149751553,
+    "modello": 192353.9362078106,
+    "rapporto": 0.670191214599986
+   },
+   {
+    "caso": "via Castellammare 16 (1)",
+    "alloggi": 1,
+    "inv_per_alloggio": 234481.0,
+    "inv_2025": 268706.48757763975,
+    "modello": 192353.9362078106,
+    "rapporto": 0.7158514777289553
+   }
+  ],
+  "diritti_edificatori": {
+   "prezzo_asta_2023_euro_m2_SL": 678,
+   "VRA_mediana_D_E_FAR1_euro_m2_SL": 188.68156126515575
+  },
+  "varianti_punto_base": {
+   "base": {
+    "lotti": 216,
+    "regge_acquisto": 0,
+    "regge_cessione": 0
+   },
+   "IVA 10% sul godimento": {
+    "lotti": 216,
+    "regge_acquisto": 0,
+    "regge_cessione": 0
+   },
+   "VF con y_exit 4,5% (solo acquisto)": {
+    "lotti": 216,
+    "regge_acquisto": 149,
+    "regge_cessione": 216
+   }
+  }
+ },
+ "lotti_rappresentativi": {
+  "B": "E00268",
+  "C+D": "E00182",
+  "E": "E00173"
+ },
+ "E6_eleggibili": {
+  "rho": 0.0,
+  "d": 0.0,
+  "sigma": 0.0,
+  "m_v": 0.0,
+  "lam_c": 0.0,
+  "T_c": 0.0,
+  "tau": 0.0,
+  "y_ERS": 0.0,
+  "v": 0.0,
+  "q": 0.3888888888888889,
+  "D": 0.3888888888888889
+ },
+ "E6_scatta": false,
+ "E1_hash_contenuto": "11e200fbb1bcc2cb56872dd2f0a5072a99690d19bfac77b5eb2cea2c6c36767e (due esecuzioni identiche)",
+ "E2": "T1-T8 passano (test_economia.py --reali)",
+ "E5": "non applicabile: 0 casi K2(a)/K3"
+}

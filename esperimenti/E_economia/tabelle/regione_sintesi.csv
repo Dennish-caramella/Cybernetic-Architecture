@@ -1,0 +1,2101 @@
+classe,variante,FAR,T,c0,regime,fascia,lotti,lotti_regge,alloggi,alloggi_regge,quota_cal_media,dL_q50_mediana
+lotto da riusare,R1,,30,60.0,acq,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,60.0,acq,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,60.0,acq,D,146,0,2546,0,0.0,
+lotto da riusare,R1,,30,60.0,acq,E,2,0,140,0,0.0,
+lotto da riusare,R1,,30,60.0,ces,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,60.0,ces,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,60.0,ces,D,146,0,2546,0,0.0,
+lotto da riusare,R1,,30,60.0,ces,E,2,0,140,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a0,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a0,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a0,D,146,0,2546,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a0,E,2,0,140,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a05,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a05,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a05,D,146,0,2546,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a05,E,2,0,140,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a08,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a08,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a08,D,146,0,2546,0,0.0,
+lotto da riusare,R1,,30,60.0,ds_a08,E,2,0,140,0,0.0,
+lotto da riusare,R1,,30,75.0,acq,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,75.0,acq,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,75.0,acq,D,146,0,2546,0,0.0,
+lotto da riusare,R1,,30,75.0,acq,E,2,0,140,0,0.0,
+lotto da riusare,R1,,30,75.0,ces,B,7,0,30,0,0.0005,
+lotto da riusare,R1,,30,75.0,ces,C,12,0,182,0,0.0005,
+lotto da riusare,R1,,30,75.0,ces,D,146,0,2546,0,0.0005,
+lotto da riusare,R1,,30,75.0,ces,E,2,0,140,0,0.0005,
+lotto da riusare,R1,,30,75.0,ds_a0,B,7,0,30,0,0.0005,
+lotto da riusare,R1,,30,75.0,ds_a0,C,12,0,182,0,0.0005,
+lotto da riusare,R1,,30,75.0,ds_a0,D,146,0,2546,0,0.0005,
+lotto da riusare,R1,,30,75.0,ds_a0,E,2,0,140,0,0.0005,
+lotto da riusare,R1,,30,75.0,ds_a05,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,75.0,ds_a05,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,75.0,ds_a05,D,146,0,2546,0,0.0,
+lotto da riusare,R1,,30,75.0,ds_a05,E,2,0,140,0,0.0,
+lotto da riusare,R1,,30,75.0,ds_a08,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,75.0,ds_a08,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,75.0,ds_a08,D,146,0,2546,0,0.0,
+lotto da riusare,R1,,30,75.0,ds_a08,E,2,0,140,0,0.0,
+lotto da riusare,R1,,30,90.0,acq,B,7,0,30,0,0.0,3430.4396
+lotto da riusare,R1,,30,90.0,acq,C,12,0,182,0,0.0,5274.5865
+lotto da riusare,R1,,30,90.0,acq,D,146,0,2546,0,0.0,1153.2261
+lotto da riusare,R1,,30,90.0,acq,E,2,0,140,0,0.0011,1926.1552
+lotto da riusare,R1,,30,90.0,ces,B,7,0,30,0,0.015,530.9948
+lotto da riusare,R1,,30,90.0,ces,C,12,0,182,0,0.015,1286.2769
+lotto da riusare,R1,,30,90.0,ces,D,146,0,2546,0,0.015,526.3285
+lotto da riusare,R1,,30,90.0,ces,E,2,0,140,0,0.015,1827.7357
+lotto da riusare,R1,,30,90.0,ds_a0,B,7,0,30,0,0.0147,531.9948
+lotto da riusare,R1,,30,90.0,ds_a0,C,12,0,182,0,0.0149,1287.2769
+lotto da riusare,R1,,30,90.0,ds_a0,D,146,0,2546,0,0.0149,527.3285
+lotto da riusare,R1,,30,90.0,ds_a0,E,2,0,140,0,0.015,1828.7357
+lotto da riusare,R1,,30,90.0,ds_a05,B,7,0,30,0,0.0,1979.5257
+lotto da riusare,R1,,30,90.0,ds_a05,C,12,0,182,0,0.0,3282.3388
+lotto da riusare,R1,,30,90.0,ds_a05,D,146,0,2546,0,0.0,824.0238
+lotto da riusare,R1,,30,90.0,ds_a05,E,2,0,140,0,0.0026,1862.2595
+lotto da riusare,R1,,30,90.0,ds_a08,B,7,0,30,0,0.0,2850.0342
+lotto da riusare,R1,,30,90.0,ds_a08,C,12,0,182,0,0.0,4461.5515
+lotto da riusare,R1,,30,90.0,ds_a08,D,146,0,2546,0,0.0,1024.3683
+lotto da riusare,R1,,30,90.0,ds_a08,E,2,0,140,0,0.0015,1898.2595
+lotto da riusare,R1,,30,110.0,acq,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,110.0,acq,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,110.0,acq,D,146,0,2546,0,0.0005,
+lotto da riusare,R1,,30,110.0,acq,E,2,0,140,0,0.0412,
+lotto da riusare,R1,,30,110.0,ces,B,7,0,30,0,0.1315,
+lotto da riusare,R1,,30,110.0,ces,C,12,0,182,0,0.1315,
+lotto da riusare,R1,,30,110.0,ces,D,146,0,2546,0,0.1315,
+lotto da riusare,R1,,30,110.0,ces,E,2,0,140,0,0.1315,
+lotto da riusare,R1,,30,110.0,ds_a0,B,7,0,30,0,0.1285,
+lotto da riusare,R1,,30,110.0,ds_a0,C,12,0,182,0,0.1297,
+lotto da riusare,R1,,30,110.0,ds_a0,D,146,0,2546,0,0.1299,
+lotto da riusare,R1,,30,110.0,ds_a0,E,2,0,140,0,0.1305,
+lotto da riusare,R1,,30,110.0,ds_a05,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,110.0,ds_a05,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,110.0,ds_a05,D,146,0,2546,0,0.0047,
+lotto da riusare,R1,,30,110.0,ds_a05,E,2,0,140,0,0.0667,
+lotto da riusare,R1,,30,110.0,ds_a08,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,110.0,ds_a08,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,110.0,ds_a08,D,146,0,2546,0,0.001,
+lotto da riusare,R1,,30,110.0,ds_a08,E,2,0,140,0,0.0481,
+lotto da riusare,R1,,30,130.0,acq,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,130.0,acq,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,130.0,acq,D,146,0,2546,0,0.0096,
+lotto da riusare,R1,,30,130.0,acq,E,2,0,140,0,0.2225,
+lotto da riusare,R1,,30,130.0,ces,B,7,0,30,0,0.3853,
+lotto da riusare,R1,,30,130.0,ces,C,12,0,182,0,0.3853,
+lotto da riusare,R1,,30,130.0,ces,D,146,0,2546,0,0.3853,
+lotto da riusare,R1,,30,130.0,ces,E,2,0,140,0,0.3853,
+lotto da riusare,R1,,30,130.0,ds_a0,B,7,0,30,0,0.3815,
+lotto da riusare,R1,,30,130.0,ds_a0,C,12,0,182,0,0.3825,
+lotto da riusare,R1,,30,130.0,ds_a0,D,146,0,2546,0,0.3831,
+lotto da riusare,R1,,30,130.0,ds_a0,E,2,0,140,0,0.3837,
+lotto da riusare,R1,,30,130.0,ds_a05,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,130.0,ds_a05,C,12,0,182,0,0.0006,
+lotto da riusare,R1,,30,130.0,ds_a05,D,146,0,2546,0,0.0558,
+lotto da riusare,R1,,30,130.0,ds_a05,E,2,0,140,0,0.3017,
+lotto da riusare,R1,,30,130.0,ds_a08,B,7,0,30,0,0.0,
+lotto da riusare,R1,,30,130.0,ds_a08,C,12,0,182,0,0.0,
+lotto da riusare,R1,,30,130.0,ds_a08,D,146,0,2546,0,0.0176,
+lotto da riusare,R1,,30,130.0,ds_a08,E,2,0,140,0,0.2506,
+lotto da riusare,R1,,60,60.0,acq,B,7,0,30,0,0.0,
+lotto da riusare,R1,,60,60.0,acq,C,12,0,182,0,0.0,
+lotto da riusare,R1,,60,60.0,acq,D,146,0,2546,0,0.0013,
+lotto da riusare,R1,,60,60.0,acq,E,2,0,140,0,0.0322,
+lotto da riusare,R1,,60,60.0,ces,B,7,0,30,0,0.0774,
+lotto da riusare,R1,,60,60.0,ces,C,12,0,182,0,0.0774,
+lotto da riusare,R1,,60,60.0,ces,D,146,0,2546,0,0.0774,
+lotto da riusare,R1,,60,60.0,ces,E,2,0,140,0,0.0774,
+lotto da riusare,R1,,60,60.0,ds_a0,B,7,0,30,0,0.076,
+lotto da riusare,R1,,60,60.0,ds_a0,C,12,0,182,0,0.0765,
+lotto da riusare,R1,,60,60.0,ds_a0,D,146,0,2546,0,0.0766,
+lotto da riusare,R1,,60,60.0,ds_a0,E,2,0,140,0,0.0771,
+lotto da riusare,R1,,60,60.0,ds_a05,B,7,0,30,0,0.0,
+lotto da riusare,R1,,60,60.0,ds_a05,C,12,0,182,0,0.0003,
+lotto da riusare,R1,,60,60.0,ds_a05,D,146,0,2546,0,0.0083,
+lotto da riusare,R1,,60,60.0,ds_a05,E,2,0,140,0,0.0475,
+lotto da riusare,R1,,60,60.0,ds_a08,B,7,0,30,0,0.0,
+lotto da riusare,R1,,60,60.0,ds_a08,C,12,0,182,0,0.0,
+lotto da riusare,R1,,60,60.0,ds_a08,D,146,0,2546,0,0.0026,
+lotto da riusare,R1,,60,60.0,ds_a08,E,2,0,140,0,0.0369,
+lotto da riusare,R1,,60,75.0,acq,B,7,0,30,0,0.0,
+lotto da riusare,R1,,60,75.0,acq,C,12,0,182,0,0.0002,
+lotto da riusare,R1,,60,75.0,acq,D,146,0,2546,0,0.0262,
+lotto da riusare,R1,,60,75.0,acq,E,2,0,140,0,0.2211,
+lotto da riusare,R1,,60,75.0,ces,B,7,0,30,0,0.3416,
+lotto da riusare,R1,,60,75.0,ces,C,12,0,182,0,0.3416,
+lotto da riusare,R1,,60,75.0,ces,D,146,0,2546,0,0.3416,
+lotto da riusare,R1,,60,75.0,ces,E,2,0,140,0,0.3416,
+lotto da riusare,R1,,60,75.0,ds_a0,B,7,0,30,0,0.3386,
+lotto da riusare,R1,,60,75.0,ds_a0,C,12,0,182,0,0.3398,
+lotto da riusare,R1,,60,75.0,ds_a0,D,146,0,2546,0,0.34,
+lotto da riusare,R1,,60,75.0,ds_a0,E,2,0,140,0,0.3403,
+lotto da riusare,R1,,60,75.0,ds_a05,B,7,0,30,0,0.001,
+lotto da riusare,R1,,60,75.0,ds_a05,C,12,0,182,0,0.0087,
+lotto da riusare,R1,,60,75.0,ds_a05,D,146,0,2546,0,0.0833,
+lotto da riusare,R1,,60,75.0,ds_a05,E,2,0,140,0,0.2746,
+lotto da riusare,R1,,60,75.0,ds_a08,B,7,0,30,0,0.0001,
+lotto da riusare,R1,,60,75.0,ds_a08,C,12,0,182,0,0.0006,
+lotto da riusare,R1,,60,75.0,ds_a08,D,146,0,2546,0,0.0397,
+lotto da riusare,R1,,60,75.0,ds_a08,E,2,0,140,0,0.2402,
+lotto da riusare,R1,,60,90.0,acq,B,7,0,30,0,0.0001,2703.0943
+lotto da riusare,R1,,60,90.0,acq,C,12,0,182,0,0.0037,3694.6256
+lotto da riusare,R1,,60,90.0,acq,D,146,0,2546,0,0.1355,444.1815
+lotto da riusare,R1,,60,90.0,acq,E,2,1,140,139,0.541,-356.1499
+lotto da riusare,R1,,60,90.0,ces,B,7,7,30,30,0.6383,-148.1054
+lotto da riusare,R1,,60,90.0,ces,C,12,12,182,182,0.6383,-358.769
+lotto da riusare,R1,,60,90.0,ces,D,146,146,2546,2546,0.6383,-146.8038
+lotto da riusare,R1,,60,90.0,ces,E,2,2,140,140,0.6383,-509.793
+lotto da riusare,R1,,60,90.0,ds_a0,B,7,7,30,30,0.6355,-147.1054
+lotto da riusare,R1,,60,90.0,ds_a0,C,12,12,182,182,0.6363,-357.769
+lotto da riusare,R1,,60,90.0,ds_a0,D,146,146,2546,2546,0.6368,-145.8038
+lotto da riusare,R1,,60,90.0,ds_a0,E,2,2,140,140,0.6371,-508.793
+lotto da riusare,R1,,60,90.0,ds_a05,B,7,0,30,0,0.0137,1274.6148
+lotto da riusare,R1,,60,90.0,ds_a05,C,12,0,182,0,0.0616,1716.3039
+lotto da riusare,R1,,60,90.0,ds_a05,D,146,6,2546,1280,0.3147,149.208
+lotto da riusare,R1,,60,90.0,ds_a05,E,2,2,140,140,0.5991,-427.1667
+lotto da riusare,R1,,60,90.0,ds_a08,B,7,0,30,0,0.0008,2128.9226
+lotto da riusare,R1,,60,90.0,ds_a08,C,12,0,182,0,0.0116,2905.2539
+lotto da riusare,R1,,60,90.0,ds_a08,D,146,2,2546,219,0.1882,333.423
+lotto da riusare,R1,,60,90.0,ds_a08,E,2,2,140,140,0.5649,-389.7032
+lotto da riusare,R1,,60,110.0,acq,B,7,0,30,0,0.0045,
+lotto da riusare,R1,,60,110.0,acq,C,12,0,182,0,0.043,
+lotto da riusare,R1,,60,110.0,acq,D,146,51,2546,1819,0.4323,
+lotto da riusare,R1,,60,110.0,acq,E,2,2,140,140,0.8889,
+lotto da riusare,R1,,60,110.0,ces,B,7,7,30,30,0.9203,
+lotto da riusare,R1,,60,110.0,ces,C,12,12,182,182,0.9203,
+lotto da riusare,R1,,60,110.0,ces,D,146,146,2546,2546,0.9203,
+lotto da riusare,R1,,60,110.0,ces,E,2,2,140,140,0.9203,
+lotto da riusare,R1,,60,110.0,ds_a0,B,7,7,30,30,0.9192,
+lotto da riusare,R1,,60,110.0,ds_a0,C,12,12,182,182,0.9194,
+lotto da riusare,R1,,60,110.0,ds_a0,D,146,146,2546,2546,0.9195,
+lotto da riusare,R1,,60,110.0,ds_a0,E,2,2,140,140,0.9196,
+lotto da riusare,R1,,60,110.0,ds_a05,B,7,0,30,0,0.1045,
+lotto da riusare,R1,,60,110.0,ds_a05,C,12,0,182,0,0.288,
+lotto da riusare,R1,,60,110.0,ds_a05,D,146,144,2546,2545,0.7042,
+lotto da riusare,R1,,60,110.0,ds_a05,E,2,2,140,140,0.9105,
+lotto da riusare,R1,,60,110.0,ds_a08,B,7,0,30,0,0.0164,
+lotto da riusare,R1,,60,110.0,ds_a08,C,12,0,182,0,0.0933,
+lotto da riusare,R1,,60,110.0,ds_a08,D,146,108,2546,2262,0.532,
+lotto da riusare,R1,,60,110.0,ds_a08,E,2,2,140,140,0.8976,
+lotto da riusare,R1,,60,130.0,acq,B,7,0,30,0,0.0317,
+lotto da riusare,R1,,60,130.0,acq,C,12,0,182,0,0.1684,
+lotto da riusare,R1,,60,130.0,acq,D,146,121,2546,2358,0.7294,
+lotto da riusare,R1,,60,130.0,acq,E,2,2,140,140,0.9952,
+lotto da riusare,R1,,60,130.0,ces,B,7,7,30,30,0.9989,
+lotto da riusare,R1,,60,130.0,ces,C,12,12,182,182,0.9989,
+lotto da riusare,R1,,60,130.0,ces,D,146,146,2546,2546,0.9989,
+lotto da riusare,R1,,60,130.0,ces,E,2,2,140,140,0.9989,
+lotto da riusare,R1,,60,130.0,ds_a0,B,7,7,30,30,0.9989,
+lotto da riusare,R1,,60,130.0,ds_a0,C,12,12,182,182,0.9989,
+lotto da riusare,R1,,60,130.0,ds_a0,D,146,146,2546,2546,0.9989,
+lotto da riusare,R1,,60,130.0,ds_a0,E,2,2,140,140,0.9989,
+lotto da riusare,R1,,60,130.0,ds_a05,B,7,2,30,18,0.3137,
+lotto da riusare,R1,,60,130.0,ds_a05,C,12,9,182,173,0.6118,
+lotto da riusare,R1,,60,130.0,ds_a05,D,146,146,2546,2546,0.9337,
+lotto da riusare,R1,,60,130.0,ds_a05,E,2,2,140,140,0.9982,
+lotto da riusare,R1,,60,130.0,ds_a08,B,7,0,30,0,0.0818,
+lotto da riusare,R1,,60,130.0,ds_a08,C,12,0,182,0,0.2939,
+lotto da riusare,R1,,60,130.0,ds_a08,D,146,144,2546,2545,0.8212,
+lotto da riusare,R1,,60,130.0,ds_a08,E,2,2,140,140,0.9969,
+lotto da riusare,R1,,90,60.0,acq,B,7,0,30,0,0.0004,
+lotto da riusare,R1,,90,60.0,acq,C,12,0,182,0,0.0048,
+lotto da riusare,R1,,90,60.0,acq,D,146,0,2546,0,0.0744,
+lotto da riusare,R1,,90,60.0,acq,E,2,0,140,0,0.3021,
+lotto da riusare,R1,,90,60.0,ces,B,7,0,30,0,0.401,
+lotto da riusare,R1,,90,60.0,ces,C,12,0,182,0,0.401,
+lotto da riusare,R1,,90,60.0,ces,D,146,0,2546,0,0.401,
+lotto da riusare,R1,,90,60.0,ces,E,2,0,140,0,0.401,
+lotto da riusare,R1,,90,60.0,ds_a0,B,7,0,30,0,0.3987,
+lotto da riusare,R1,,90,60.0,ds_a0,C,12,0,182,0,0.3996,
+lotto da riusare,R1,,90,60.0,ds_a0,D,146,0,2546,0,0.3999,
+lotto da riusare,R1,,90,60.0,ds_a0,E,2,0,140,0,0.4003,
+lotto da riusare,R1,,90,60.0,ds_a05,B,7,0,30,0,0.0127,
+lotto da riusare,R1,,90,60.0,ds_a05,C,12,0,182,0,0.0401,
+lotto da riusare,R1,,90,60.0,ds_a05,D,146,0,2546,0,0.1648,
+lotto da riusare,R1,,90,60.0,ds_a05,E,2,0,140,0,0.3461,
+lotto da riusare,R1,,90,60.0,ds_a08,B,7,0,30,0,0.0017,
+lotto da riusare,R1,,90,60.0,ds_a08,C,12,0,182,0,0.0113,
+lotto da riusare,R1,,90,60.0,ds_a08,D,146,0,2546,0,0.1006,
+lotto da riusare,R1,,90,60.0,ds_a08,E,2,0,140,0,0.3179,
+lotto da riusare,R1,,90,75.0,acq,B,7,0,30,0,0.0074,
+lotto da riusare,R1,,90,75.0,acq,C,12,0,182,0,0.0405,
+lotto da riusare,R1,,90,75.0,acq,D,146,6,2546,1280,0.2832,
+lotto da riusare,R1,,90,75.0,acq,E,2,2,140,140,0.6652,
+lotto da riusare,R1,,90,75.0,ces,B,7,7,30,30,0.7336,
+lotto da riusare,R1,,90,75.0,ces,C,12,12,182,182,0.7336,
+lotto da riusare,R1,,90,75.0,ces,D,146,146,2546,2546,0.7336,
+lotto da riusare,R1,,90,75.0,ces,E,2,2,140,140,0.7336,
+lotto da riusare,R1,,90,75.0,ds_a0,B,7,7,30,30,0.731,
+lotto da riusare,R1,,90,75.0,ds_a0,C,12,12,182,182,0.7318,
+lotto da riusare,R1,,90,75.0,ds_a0,D,146,146,2546,2546,0.7319,
+lotto da riusare,R1,,90,75.0,ds_a0,E,2,2,140,140,0.7323,
+lotto da riusare,R1,,90,75.0,ds_a05,B,7,0,30,0,0.0813,
+lotto da riusare,R1,,90,75.0,ds_a05,C,12,0,182,0,0.1948,
+lotto da riusare,R1,,90,75.0,ds_a05,D,146,59,2546,1836,0.4729,
+lotto da riusare,R1,,90,75.0,ds_a05,E,2,2,140,140,0.7046,
+lotto da riusare,R1,,90,75.0,ds_a08,B,7,0,30,0,0.019,
+lotto da riusare,R1,,90,75.0,ds_a08,C,12,0,182,0,0.0741,
+lotto da riusare,R1,,90,75.0,ds_a08,D,146,6,2546,1280,0.3472,
+lotto da riusare,R1,,90,75.0,ds_a08,E,2,2,140,140,0.6825,
+lotto da riusare,R1,,90,90.0,acq,B,7,0,30,0,0.0389,2072.4553
+lotto da riusare,R1,,90,90.0,acq,C,12,0,182,0,0.1448,2096.5697
+lotto da riusare,R1,,90,90.0,acq,D,146,111,2546,2267,0.5675,-91.2062
+lotto da riusare,R1,,90,90.0,acq,E,2,2,140,140,0.9182,-2343.5104
+lotto da riusare,R1,,90,90.0,ces,B,7,7,30,30,0.9459,-722.8512
+lotto da riusare,R1,,90,90.0,ces,C,12,12,182,182,0.9459,-1751.028
+lotto da riusare,R1,,90,90.0,ces,D,146,146,2546,2546,0.9459,-716.4988
+lotto da riusare,R1,,90,90.0,ces,E,2,2,140,140,0.9459,-2488.1239
+lotto da riusare,R1,,90,90.0,ds_a0,B,7,7,30,30,0.9446,-721.8512
+lotto da riusare,R1,,90,90.0,ds_a0,C,12,12,182,182,0.945,-1750.028
+lotto da riusare,R1,,90,90.0,ds_a0,D,146,146,2546,2546,0.945,-715.4988
+lotto da riusare,R1,,90,90.0,ds_a0,E,2,2,140,140,0.9452,-2487.1239
+lotto da riusare,R1,,90,90.0,ds_a05,B,7,0,30,0,0.2416,688.3896
+lotto da riusare,R1,,90,90.0,ds_a05,C,12,4,182,77,0.4464,95.9549
+lotto da riusare,R1,,90,90.0,ds_a05,D,146,146,2546,2546,0.783,-380.6639
+lotto da riusare,R1,,90,90.0,ds_a05,E,2,2,140,140,0.9356,-2419.3315
+lotto da riusare,R1,,90,90.0,ds_a08,B,7,0,30,0,0.0809,1525.7285
+lotto da riusare,R1,,90,90.0,ds_a08,C,12,0,182,0,0.229,1224.7322
+lotto da riusare,R1,,90,90.0,ds_a08,D,146,121,2546,2358,0.6506,-177.9637
+lotto da riusare,R1,,90,90.0,ds_a08,E,2,2,140,140,0.9265,-2370.6251
+lotto da riusare,R1,,90,110.0,acq,B,7,0,30,0,0.1472,
+lotto da riusare,R1,,90,110.0,acq,C,12,0,182,0,0.3761,
+lotto da riusare,R1,,90,110.0,acq,D,146,144,2546,2545,0.8372,
+lotto da riusare,R1,,90,110.0,acq,E,2,2,140,140,0.9962,
+lotto da riusare,R1,,90,110.0,ces,B,7,7,30,30,0.9991,
+lotto da riusare,R1,,90,110.0,ces,C,12,12,182,182,0.9991,
+lotto da riusare,R1,,90,110.0,ces,D,146,146,2546,2546,0.9991,
+lotto da riusare,R1,,90,110.0,ces,E,2,2,140,140,0.9991,
+lotto da riusare,R1,,90,110.0,ds_a0,B,7,7,30,30,0.9991,
+lotto da riusare,R1,,90,110.0,ds_a0,C,12,12,182,182,0.9991,
+lotto da riusare,R1,,90,110.0,ds_a0,D,146,146,2546,2546,0.9991,
+lotto da riusare,R1,,90,110.0,ds_a0,E,2,2,140,140,0.9991,
+lotto da riusare,R1,,90,110.0,ds_a05,B,7,4,30,21,0.5341,
+lotto da riusare,R1,,90,110.0,ds_a05,C,12,12,182,182,0.7743,
+lotto da riusare,R1,,90,110.0,ds_a05,D,146,146,2546,2546,0.9619,
+lotto da riusare,R1,,90,110.0,ds_a05,E,2,2,140,140,0.9984,
+lotto da riusare,R1,,90,110.0,ds_a08,B,7,0,30,0,0.2513,
+lotto da riusare,R1,,90,110.0,ds_a08,C,12,9,182,173,0.5172,
+lotto da riusare,R1,,90,110.0,ds_a08,D,146,146,2546,2546,0.895,
+lotto da riusare,R1,,90,110.0,ds_a08,E,2,2,140,140,0.9972,
+lotto da riusare,R1,,90,130.0,acq,B,7,2,30,18,0.3176,
+lotto da riusare,R1,,90,130.0,acq,C,12,9,182,173,0.6237,
+lotto da riusare,R1,,90,130.0,acq,D,146,146,2546,2546,0.9486,
+lotto da riusare,R1,,90,130.0,acq,E,2,2,140,140,0.9998,
+lotto da riusare,R1,,90,130.0,ces,B,7,7,30,30,1.0,
+lotto da riusare,R1,,90,130.0,ces,C,12,12,182,182,1.0,
+lotto da riusare,R1,,90,130.0,ces,D,146,146,2546,2546,1.0,
+lotto da riusare,R1,,90,130.0,ces,E,2,2,140,140,1.0,
+lotto da riusare,R1,,90,130.0,ds_a0,B,7,7,30,30,1.0,
+lotto da riusare,R1,,90,130.0,ds_a0,C,12,12,182,182,1.0,
+lotto da riusare,R1,,90,130.0,ds_a0,D,146,146,2546,2546,1.0,
+lotto da riusare,R1,,90,130.0,ds_a0,E,2,2,140,140,1.0,
+lotto da riusare,R1,,90,130.0,ds_a05,B,7,7,30,30,0.781,
+lotto da riusare,R1,,90,130.0,ds_a05,C,12,12,182,182,0.9341,
+lotto da riusare,R1,,90,130.0,ds_a05,D,146,146,2546,2546,0.9956,
+lotto da riusare,R1,,90,130.0,ds_a05,E,2,2,140,140,1.0,
+lotto da riusare,R1,,90,130.0,ds_a08,B,7,2,30,18,0.4727,
+lotto da riusare,R1,,90,130.0,ds_a08,C,12,12,182,182,0.7606,
+lotto da riusare,R1,,90,130.0,ds_a08,D,146,146,2546,2546,0.9742,
+lotto da riusare,R1,,90,130.0,ds_a08,E,2,2,140,140,0.9999,
+lotto da riusare,R2,0.5,30,60.0,acq,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,acq,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,acq,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,acq,E,2,0,18,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ces,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ces,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ces,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ces,E,2,0,18,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a0,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a0,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a0,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a0,E,2,0,18,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a05,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a05,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a05,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a05,E,2,0,18,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a08,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a08,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a08,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,60.0,ds_a08,E,2,0,18,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,acq,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,acq,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,acq,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,acq,E,2,0,18,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ces,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ces,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ces,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ces,E,2,0,18,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a0,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a0,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a0,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a0,E,2,0,18,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a05,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a05,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a05,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a05,E,2,0,18,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a08,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a08,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a08,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,75.0,ds_a08,E,2,0,18,0,0.0,
+lotto da riusare,R2,0.5,30,90.0,acq,B,7,0,12,0,0.0,2402.976
+lotto da riusare,R2,0.5,30,90.0,acq,C,12,0,40,0,0.0,1783.0395
+lotto da riusare,R2,0.5,30,90.0,acq,D,146,0,602,0,0.0,1059.9488
+lotto da riusare,R2,0.5,30,90.0,acq,E,2,0,18,0,0.0,985.6527
+lotto da riusare,R2,0.5,30,90.0,ces,B,7,0,12,0,0.0,814.4559
+lotto da riusare,R2,0.5,30,90.0,ces,C,12,0,40,0,0.0,912.6199
+lotto da riusare,R2,0.5,30,90.0,ces,D,146,0,602,0,0.0,813.988
+lotto da riusare,R2,0.5,30,90.0,ces,E,2,0,18,0,0.0,982.093
+lotto da riusare,R2,0.5,30,90.0,ds_a0,B,7,0,12,0,0.0,815.4559
+lotto da riusare,R2,0.5,30,90.0,ds_a0,C,12,0,40,0,0.0,913.6199
+lotto da riusare,R2,0.5,30,90.0,ds_a0,D,146,0,602,0,0.0,814.988
+lotto da riusare,R2,0.5,30,90.0,ds_a0,E,2,0,18,0,0.0,983.093
+lotto da riusare,R2,0.5,30,90.0,ds_a05,B,7,0,12,0,0.0,1650.8977
+lotto da riusare,R2,0.5,30,90.0,ds_a05,C,12,0,40,0,0.0,1349.6674
+lotto da riusare,R2,0.5,30,90.0,ds_a05,D,146,0,602,0,0.0,952.4946
+lotto da riusare,R2,0.5,30,90.0,ds_a05,E,2,0,18,0,0.0,983.9147
+lotto da riusare,R2,0.5,30,90.0,ds_a08,B,7,0,12,0,0.0,2098.5121
+lotto da riusare,R2,0.5,30,90.0,ds_a08,C,12,0,40,0,0.0,1601.2886
+lotto da riusare,R2,0.5,30,90.0,ds_a08,D,146,0,602,0,0.0,1014.7047
+lotto da riusare,R2,0.5,30,90.0,ds_a08,E,2,0,18,0,0.0,985.0053
+lotto da riusare,R2,0.5,30,110.0,acq,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,110.0,acq,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,110.0,acq,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,110.0,acq,E,2,0,18,0,0.0001,
+lotto da riusare,R2,0.5,30,110.0,ces,B,7,0,12,0,0.0001,
+lotto da riusare,R2,0.5,30,110.0,ces,C,12,0,40,0,0.0001,
+lotto da riusare,R2,0.5,30,110.0,ces,D,146,0,602,0,0.0001,
+lotto da riusare,R2,0.5,30,110.0,ces,E,2,0,18,0,0.0001,
+lotto da riusare,R2,0.5,30,110.0,ds_a0,B,7,0,12,0,0.0001,
+lotto da riusare,R2,0.5,30,110.0,ds_a0,C,12,0,40,0,0.0001,
+lotto da riusare,R2,0.5,30,110.0,ds_a0,D,146,0,602,0,0.0001,
+lotto da riusare,R2,0.5,30,110.0,ds_a0,E,2,0,18,0,0.0001,
+lotto da riusare,R2,0.5,30,110.0,ds_a05,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,110.0,ds_a05,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,110.0,ds_a05,D,146,0,602,0,0.0001,
+lotto da riusare,R2,0.5,30,110.0,ds_a05,E,2,0,18,0,0.0001,
+lotto da riusare,R2,0.5,30,110.0,ds_a08,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,110.0,ds_a08,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,110.0,ds_a08,D,146,0,602,0,0.0,
+lotto da riusare,R2,0.5,30,110.0,ds_a08,E,2,0,18,0,0.0001,
+lotto da riusare,R2,0.5,30,130.0,acq,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,130.0,acq,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,130.0,acq,D,146,0,602,0,0.0002,
+lotto da riusare,R2,0.5,30,130.0,acq,E,2,0,18,0,0.0016,
+lotto da riusare,R2,0.5,30,130.0,ces,B,7,0,12,0,0.0028,
+lotto da riusare,R2,0.5,30,130.0,ces,C,12,0,40,0,0.0018,
+lotto da riusare,R2,0.5,30,130.0,ces,D,146,0,602,0,0.0024,
+lotto da riusare,R2,0.5,30,130.0,ces,E,2,0,18,0,0.0022,
+lotto da riusare,R2,0.5,30,130.0,ds_a0,B,7,0,12,0,0.0028,
+lotto da riusare,R2,0.5,30,130.0,ds_a0,C,12,0,40,0,0.0018,
+lotto da riusare,R2,0.5,30,130.0,ds_a0,D,146,0,602,0,0.0024,
+lotto da riusare,R2,0.5,30,130.0,ds_a0,E,2,0,18,0,0.0022,
+lotto da riusare,R2,0.5,30,130.0,ds_a05,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,130.0,ds_a05,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,130.0,ds_a05,D,146,0,602,0,0.0004,
+lotto da riusare,R2,0.5,30,130.0,ds_a05,E,2,0,18,0,0.0017,
+lotto da riusare,R2,0.5,30,130.0,ds_a08,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,30,130.0,ds_a08,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,30,130.0,ds_a08,D,146,0,602,0,0.0003,
+lotto da riusare,R2,0.5,30,130.0,ds_a08,E,2,0,18,0,0.0016,
+lotto da riusare,R2,0.5,60,60.0,acq,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,60,60.0,acq,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,60,60.0,acq,D,146,0,602,0,0.0001,
+lotto da riusare,R2,0.5,60,60.0,acq,E,2,0,18,0,0.0001,
+lotto da riusare,R2,0.5,60,60.0,ces,B,7,0,12,0,0.0002,
+lotto da riusare,R2,0.5,60,60.0,ces,C,12,0,40,0,0.0002,
+lotto da riusare,R2,0.5,60,60.0,ces,D,146,0,602,0,0.0002,
+lotto da riusare,R2,0.5,60,60.0,ces,E,2,0,18,0,0.0002,
+lotto da riusare,R2,0.5,60,60.0,ds_a0,B,7,0,12,0,0.0002,
+lotto da riusare,R2,0.5,60,60.0,ds_a0,C,12,0,40,0,0.0002,
+lotto da riusare,R2,0.5,60,60.0,ds_a0,D,146,0,602,0,0.0002,
+lotto da riusare,R2,0.5,60,60.0,ds_a0,E,2,0,18,0,0.0002,
+lotto da riusare,R2,0.5,60,60.0,ds_a05,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,60,60.0,ds_a05,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,60,60.0,ds_a05,D,146,0,602,0,0.0002,
+lotto da riusare,R2,0.5,60,60.0,ds_a05,E,2,0,18,0,0.0001,
+lotto da riusare,R2,0.5,60,60.0,ds_a08,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,60,60.0,ds_a08,C,12,0,40,0,0.0,
+lotto da riusare,R2,0.5,60,60.0,ds_a08,D,146,0,602,0,0.0002,
+lotto da riusare,R2,0.5,60,60.0,ds_a08,E,2,0,18,0,0.0001,
+lotto da riusare,R2,0.5,60,75.0,acq,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,60,75.0,acq,C,12,0,40,0,0.0001,
+lotto da riusare,R2,0.5,60,75.0,acq,D,146,0,602,0,0.0024,
+lotto da riusare,R2,0.5,60,75.0,acq,E,2,0,18,0,0.007,
+lotto da riusare,R2,0.5,60,75.0,ces,B,7,0,12,0,0.0104,
+lotto da riusare,R2,0.5,60,75.0,ces,C,12,0,40,0,0.008,
+lotto da riusare,R2,0.5,60,75.0,ces,D,146,0,602,0,0.0102,
+lotto da riusare,R2,0.5,60,75.0,ces,E,2,0,18,0,0.0075,
+lotto da riusare,R2,0.5,60,75.0,ds_a0,B,7,0,12,0,0.0104,
+lotto da riusare,R2,0.5,60,75.0,ds_a0,C,12,0,40,0,0.0079,
+lotto da riusare,R2,0.5,60,75.0,ds_a0,D,146,0,602,0,0.0101,
+lotto da riusare,R2,0.5,60,75.0,ds_a0,E,2,0,18,0,0.0075,
+lotto da riusare,R2,0.5,60,75.0,ds_a05,B,7,0,12,0,0.0001,
+lotto da riusare,R2,0.5,60,75.0,ds_a05,C,12,0,40,0,0.0002,
+lotto da riusare,R2,0.5,60,75.0,ds_a05,D,146,0,602,0,0.0039,
+lotto da riusare,R2,0.5,60,75.0,ds_a05,E,2,0,18,0,0.0071,
+lotto da riusare,R2,0.5,60,75.0,ds_a08,B,7,0,12,0,0.0,
+lotto da riusare,R2,0.5,60,75.0,ds_a08,C,12,0,40,0,0.0001,
+lotto da riusare,R2,0.5,60,75.0,ds_a08,D,146,0,602,0,0.0028,
+lotto da riusare,R2,0.5,60,75.0,ds_a08,E,2,0,18,0,0.0071,
+lotto da riusare,R2,0.5,60,90.0,acq,B,7,0,12,0,0.0001,1920.0919
+lotto da riusare,R2,0.5,60,90.0,acq,C,12,0,40,0,0.0006,1302.8807
+lotto da riusare,R2,0.5,60,90.0,acq,D,146,0,602,0,0.0279,583.5657
+lotto da riusare,R2,0.5,60,90.0,acq,E,2,0,18,0,0.0552,541.3136
+lotto da riusare,R2,0.5,60,90.0,ces,B,7,0,12,0,0.0759,381.7043
+lotto da riusare,R2,0.5,60,90.0,ces,C,12,0,40,0,0.0599,473.5609
+lotto da riusare,R2,0.5,60,90.0,ces,D,146,0,602,0,0.0752,381.0464
+lotto da riusare,R2,0.5,60,90.0,ces,E,2,0,18,0,0.0571,538.4642
+lotto da riusare,R2,0.5,60,90.0,ds_a0,B,7,0,12,0,0.0754,382.7043
+lotto da riusare,R2,0.5,60,90.0,ds_a0,C,12,0,40,0,0.0596,474.5609
+lotto da riusare,R2,0.5,60,90.0,ds_a0,D,146,0,602,0,0.0748,382.0464
+lotto da riusare,R2,0.5,60,90.0,ds_a0,E,2,0,18,0,0.057,539.4642
+lotto da riusare,R2,0.5,60,90.0,ds_a05,B,7,0,12,0,0.0007,1178.9046
+lotto da riusare,R2,0.5,60,90.0,ds_a05,C,12,0,40,0,0.0046,879.4805
+lotto da riusare,R2,0.5,60,90.0,ds_a05,D,146,0,602,0,0.0397,501.2519
+lotto da riusare,R2,0.5,60,90.0,ds_a05,E,2,0,18,0,0.056,539.8221
+lotto da riusare,R2,0.5,60,90.0,ds_a08,B,7,0,12,0,0.0001,1620.7355
+lotto da riusare,R2,0.5,60,90.0,ds_a08,C,12,0,40,0,0.0012,1124.881
+lotto da riusare,R2,0.5,60,90.0,ds_a08,D,146,0,602,0,0.0315,547.644
+lotto da riusare,R2,0.5,60,90.0,ds_a08,E,2,0,18,0,0.0555,540.728
+lotto da riusare,R2,0.5,60,110.0,acq,B,7,0,12,0,0.001,
+lotto da riusare,R2,0.5,60,110.0,acq,C,12,0,40,0,0.0152,
+lotto da riusare,R2,0.5,60,110.0,acq,D,146,0,602,0,0.1747,
+lotto da riusare,R2,0.5,60,110.0,acq,E,2,0,18,0,0.2641,
+lotto da riusare,R2,0.5,60,110.0,ces,B,7,0,12,0,0.3437,
+lotto da riusare,R2,0.5,60,110.0,ces,C,12,0,40,0,0.2923,
+lotto da riusare,R2,0.5,60,110.0,ces,D,146,0,602,0,0.3438,
+lotto da riusare,R2,0.5,60,110.0,ces,E,2,0,18,0,0.2682,
+lotto da riusare,R2,0.5,60,110.0,ds_a0,B,7,0,12,0,0.3425,
+lotto da riusare,R2,0.5,60,110.0,ds_a0,C,12,0,40,0,0.2913,
+lotto da riusare,R2,0.5,60,110.0,ds_a0,D,146,0,602,0,0.3426,
+lotto da riusare,R2,0.5,60,110.0,ds_a0,E,2,0,18,0,0.267,
+lotto da riusare,R2,0.5,60,110.0,ds_a05,B,7,0,12,0,0.0163,
+lotto da riusare,R2,0.5,60,110.0,ds_a05,C,12,0,40,0,0.0516,
+lotto da riusare,R2,0.5,60,110.0,ds_a05,D,146,0,602,0,0.2324,
+lotto da riusare,R2,0.5,60,110.0,ds_a05,E,2,0,18,0,0.2664,
+lotto da riusare,R2,0.5,60,110.0,ds_a08,B,7,0,12,0,0.0033,
+lotto da riusare,R2,0.5,60,110.0,ds_a08,C,12,0,40,0,0.0235,
+lotto da riusare,R2,0.5,60,110.0,ds_a08,D,146,0,602,0,0.1926,
+lotto da riusare,R2,0.5,60,110.0,ds_a08,E,2,0,18,0,0.2651,
+lotto da riusare,R2,0.5,60,130.0,acq,B,7,0,12,0,0.0126,
+lotto da riusare,R2,0.5,60,130.0,acq,C,12,0,40,0,0.079,
+lotto da riusare,R2,0.5,60,130.0,acq,D,146,98,602,362,0.5162,
+lotto da riusare,R2,0.5,60,130.0,acq,E,2,1,18,2,0.6334,
+lotto da riusare,R2,0.5,60,130.0,ces,B,7,6,12,11,0.7951,
+lotto da riusare,R2,0.5,60,130.0,ces,C,12,11,40,37,0.7094,
+lotto da riusare,R2,0.5,60,130.0,ces,D,146,137,602,526,0.8028,
+lotto da riusare,R2,0.5,60,130.0,ces,E,2,1,18,2,0.6378,
+lotto da riusare,R2,0.5,60,130.0,ds_a0,B,7,6,12,11,0.7938,
+lotto da riusare,R2,0.5,60,130.0,ds_a0,C,12,11,40,37,0.7078,
+lotto da riusare,R2,0.5,60,130.0,ds_a0,D,146,137,602,526,0.8013,
+lotto da riusare,R2,0.5,60,130.0,ds_a0,E,2,1,18,2,0.6367,
+lotto da riusare,R2,0.5,60,130.0,ds_a05,B,7,0,12,0,0.087,
+lotto da riusare,R2,0.5,60,130.0,ds_a05,C,12,0,40,0,0.2257,
+lotto da riusare,R2,0.5,60,130.0,ds_a05,D,146,121,602,452,0.6348,
+lotto da riusare,R2,0.5,60,130.0,ds_a05,E,2,1,18,2,0.6355,
+lotto da riusare,R2,0.5,60,130.0,ds_a08,B,7,0,12,0,0.0262,
+lotto da riusare,R2,0.5,60,130.0,ds_a08,C,12,0,40,0,0.1161,
+lotto da riusare,R2,0.5,60,130.0,ds_a08,D,146,99,602,363,0.558,
+lotto da riusare,R2,0.5,60,130.0,ds_a08,E,2,1,18,2,0.6344,
+lotto da riusare,R2,0.5,90,60.0,acq,B,7,0,12,0,0.0001,
+lotto da riusare,R2,0.5,90,60.0,acq,C,12,0,40,0,0.0008,
+lotto da riusare,R2,0.5,90,60.0,acq,D,146,0,602,0,0.0171,
+lotto da riusare,R2,0.5,90,60.0,acq,E,2,0,18,0,0.0257,
+lotto da riusare,R2,0.5,90,60.0,ces,B,7,0,12,0,0.0349,
+lotto da riusare,R2,0.5,90,60.0,ces,C,12,0,40,0,0.0289,
+lotto da riusare,R2,0.5,90,60.0,ces,D,146,0,602,0,0.0344,
+lotto da riusare,R2,0.5,90,60.0,ces,E,2,0,18,0,0.0263,
+lotto da riusare,R2,0.5,90,60.0,ds_a0,B,7,0,12,0,0.0349,
+lotto da riusare,R2,0.5,90,60.0,ds_a0,C,12,0,40,0,0.0286,
+lotto da riusare,R2,0.5,90,60.0,ds_a0,D,146,0,602,0,0.0342,
+lotto da riusare,R2,0.5,90,60.0,ds_a0,E,2,0,18,0,0.0262,
+lotto da riusare,R2,0.5,90,60.0,ds_a05,B,7,0,12,0,0.0008,
+lotto da riusare,R2,0.5,90,60.0,ds_a05,C,12,0,40,0,0.0041,
+lotto da riusare,R2,0.5,90,60.0,ds_a05,D,146,0,602,0,0.0226,
+lotto da riusare,R2,0.5,90,60.0,ds_a05,E,2,0,18,0,0.0259,
+lotto da riusare,R2,0.5,90,60.0,ds_a08,B,7,0,12,0,0.0002,
+lotto da riusare,R2,0.5,90,60.0,ds_a08,C,12,0,40,0,0.0015,
+lotto da riusare,R2,0.5,90,60.0,ds_a08,D,146,0,602,0,0.0188,
+lotto da riusare,R2,0.5,90,60.0,ds_a08,E,2,0,18,0,0.0259,
+lotto da riusare,R2,0.5,90,75.0,acq,B,7,0,12,0,0.0021,
+lotto da riusare,R2,0.5,90,75.0,acq,C,12,0,40,0,0.0153,
+lotto da riusare,R2,0.5,90,75.0,acq,D,146,0,602,0,0.0984,
+lotto da riusare,R2,0.5,90,75.0,acq,E,2,0,18,0,0.1378,
+lotto da riusare,R2,0.5,90,75.0,ces,B,7,0,12,0,0.1769,
+lotto da riusare,R2,0.5,90,75.0,ces,C,12,0,40,0,0.1556,
+lotto da riusare,R2,0.5,90,75.0,ces,D,146,0,602,0,0.1772,
+lotto da riusare,R2,0.5,90,75.0,ces,E,2,0,18,0,0.1397,
+lotto da riusare,R2,0.5,90,75.0,ds_a0,B,7,0,12,0,0.1764,
+lotto da riusare,R2,0.5,90,75.0,ds_a0,C,12,0,40,0,0.1551,
+lotto da riusare,R2,0.5,90,75.0,ds_a0,D,146,0,602,0,0.1766,
+lotto da riusare,R2,0.5,90,75.0,ds_a0,E,2,0,18,0,0.1397,
+lotto da riusare,R2,0.5,90,75.0,ds_a05,B,7,0,12,0,0.017,
+lotto da riusare,R2,0.5,90,75.0,ds_a05,C,12,0,40,0,0.0403,
+lotto da riusare,R2,0.5,90,75.0,ds_a05,D,146,0,602,0,0.1264,
+lotto da riusare,R2,0.5,90,75.0,ds_a05,E,2,0,18,0,0.1386,
+lotto da riusare,R2,0.5,90,75.0,ds_a08,B,7,0,12,0,0.0048,
+lotto da riusare,R2,0.5,90,75.0,ds_a08,C,12,0,40,0,0.0224,
+lotto da riusare,R2,0.5,90,75.0,ds_a08,D,146,0,602,0,0.1072,
+lotto da riusare,R2,0.5,90,75.0,ds_a08,E,2,0,18,0,0.1382,
+lotto da riusare,R2,0.5,90,90.0,acq,B,7,0,12,0,0.0173,1490.9741
+lotto da riusare,R2,0.5,90,90.0,acq,C,12,0,40,0,0.0651,876.8833
+lotto da riusare,R2,0.5,90,90.0,acq,D,146,0,602,0,0.3108,168.0569
+lotto da riusare,R2,0.5,90,90.0,acq,E,2,1,18,2,0.386,150.5802
+lotto da riusare,R2,0.5,90,90.0,ces,B,7,4,12,10,0.4732,-5.0874
+lotto da riusare,R2,0.5,90,90.0,ces,C,12,4,40,3,0.4261,88.0093
+lotto da riusare,R2,0.5,90,90.0,ces,D,146,78,602,189,0.4761,-5.3304
+lotto da riusare,R2,0.5,90,90.0,ces,E,2,1,18,2,0.3891,147.3512
+lotto da riusare,R2,0.5,90,90.0,ds_a0,B,7,4,12,10,0.4721,-4.0874
+lotto da riusare,R2,0.5,90,90.0,ds_a0,C,12,4,40,3,0.4252,89.0093
+lotto da riusare,R2,0.5,90,90.0,ds_a0,D,146,78,602,189,0.4751,-4.3304
+lotto da riusare,R2,0.5,90,90.0,ds_a0,E,2,1,18,2,0.3883,148.3512
+lotto da riusare,R2,0.5,90,90.0,ds_a05,B,7,0,12,0,0.0727,768.1409
+lotto da riusare,R2,0.5,90,90.0,ds_a05,C,12,0,40,0,0.1539,473.0411
+lotto da riusare,R2,0.5,90,90.0,ds_a05,D,146,2,602,4,0.3754,103.5823
+lotto da riusare,R2,0.5,90,90.0,ds_a05,E,2,1,18,2,0.3877,148.8978
+lotto da riusare,R2,0.5,90,90.0,ds_a08,B,7,0,12,0,0.0298,1198.0316
+lotto da riusare,R2,0.5,90,90.0,ds_a08,C,12,0,40,0,0.0887,708.4022
+lotto da riusare,R2,0.5,90,90.0,ds_a08,D,146,0,602,0,0.3338,144.7206
+lotto da riusare,R2,0.5,90,90.0,ds_a08,E,2,1,18,2,0.3866,150.215
+lotto da riusare,R2,0.5,90,110.0,acq,B,7,0,12,0,0.0822,
+lotto da riusare,R2,0.5,90,110.0,acq,C,12,0,40,0,0.2434,
+lotto da riusare,R2,0.5,90,110.0,acq,D,146,138,602,562,0.6991,
+lotto da riusare,R2,0.5,90,110.0,acq,E,2,2,18,18,0.7785,
+lotto da riusare,R2,0.5,90,110.0,ces,B,7,7,12,12,0.9,
+lotto da riusare,R2,0.5,90,110.0,ces,C,12,12,40,40,0.8623,
+lotto da riusare,R2,0.5,90,110.0,ces,D,146,141,602,570,0.9123,
+lotto da riusare,R2,0.5,90,110.0,ces,E,2,2,18,18,0.7818,
+lotto da riusare,R2,0.5,90,110.0,ds_a0,B,7,7,12,12,0.8994,
+lotto da riusare,R2,0.5,90,110.0,ds_a0,C,12,12,40,40,0.8612,
+lotto da riusare,R2,0.5,90,110.0,ds_a0,D,146,141,602,570,0.9116,
+lotto da riusare,R2,0.5,90,110.0,ds_a0,E,2,2,18,18,0.7813,
+lotto da riusare,R2,0.5,90,110.0,ds_a05,B,7,0,12,0,0.2716,
+lotto da riusare,R2,0.5,90,110.0,ds_a05,C,12,5,40,16,0.4645,
+lotto da riusare,R2,0.5,90,110.0,ds_a05,D,146,141,602,570,0.7998,
+lotto da riusare,R2,0.5,90,110.0,ds_a05,E,2,2,18,18,0.7806,
+lotto da riusare,R2,0.5,90,110.0,ds_a08,B,7,0,12,0,0.128,
+lotto da riusare,R2,0.5,90,110.0,ds_a08,C,12,0,40,0,0.3116,
+lotto da riusare,R2,0.5,90,110.0,ds_a08,D,146,139,602,569,0.7361,
+lotto da riusare,R2,0.5,90,110.0,ds_a08,E,2,2,18,18,0.7792,
+lotto da riusare,R2,0.5,90,130.0,acq,B,7,0,12,0,0.2234,
+lotto da riusare,R2,0.5,90,130.0,acq,C,12,6,40,18,0.5,
+lotto da riusare,R2,0.5,90,130.0,acq,D,146,145,602,592,0.8921,
+lotto da riusare,R2,0.5,90,130.0,acq,E,2,2,18,18,0.9483,
+lotto da riusare,R2,0.5,90,130.0,ces,B,7,7,12,12,0.9805,
+lotto da riusare,R2,0.5,90,130.0,ces,C,12,12,40,40,0.9843,
+lotto da riusare,R2,0.5,90,130.0,ces,D,146,145,602,592,0.9825,
+lotto da riusare,R2,0.5,90,130.0,ces,E,2,2,18,18,0.9488,
+lotto da riusare,R2,0.5,90,130.0,ds_a0,B,7,7,12,12,0.9803,
+lotto da riusare,R2,0.5,90,130.0,ds_a0,C,12,12,40,40,0.9842,
+lotto da riusare,R2,0.5,90,130.0,ds_a0,D,146,145,602,592,0.9825,
+lotto da riusare,R2,0.5,90,130.0,ds_a0,E,2,2,18,18,0.9486,
+lotto da riusare,R2,0.5,90,130.0,ds_a05,B,7,5,12,5,0.5634,
+lotto da riusare,R2,0.5,90,130.0,ds_a05,C,12,12,40,40,0.779,
+lotto da riusare,R2,0.5,90,130.0,ds_a05,D,146,145,602,592,0.9561,
+lotto da riusare,R2,0.5,90,130.0,ds_a05,E,2,2,18,18,0.9488,
+lotto da riusare,R2,0.5,90,130.0,ds_a08,B,7,1,12,1,0.3226,
+lotto da riusare,R2,0.5,90,130.0,ds_a08,C,12,9,40,36,0.6003,
+lotto da riusare,R2,0.5,90,130.0,ds_a08,D,146,145,602,592,0.9197,
+lotto da riusare,R2,0.5,90,130.0,ds_a08,E,2,2,18,18,0.9484,
+lotto da riusare,R2,1.0,30,60.0,acq,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,acq,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,acq,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,acq,E,2,0,36,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ces,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ces,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ces,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ces,E,2,0,36,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a0,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a0,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a0,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a0,E,2,0,36,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a05,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a05,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a05,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a05,E,2,0,36,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a08,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a08,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a08,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,60.0,ds_a08,E,2,0,36,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,acq,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,acq,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,acq,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,acq,E,2,0,36,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ces,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ces,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ces,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ces,E,2,0,36,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a0,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a0,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a0,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a0,E,2,0,36,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a05,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a05,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a05,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a05,E,2,0,36,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a08,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a08,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a08,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,75.0,ds_a08,E,2,0,36,0,0.0,
+lotto da riusare,R2,1.0,30,90.0,acq,B,7,0,28,0,0.0,4778.1749
+lotto da riusare,R2,1.0,30,90.0,acq,C,12,0,88,0,0.0,3548.4584
+lotto da riusare,R2,1.0,30,90.0,acq,D,146,0,1277,0,0.0,2096.9795
+lotto da riusare,R2,1.0,30,90.0,acq,E,2,0,36,0,0.0,1737.9915
+lotto da riusare,R2,1.0,30,90.0,ces,B,7,0,28,0,0.0,1560.6577
+lotto da riusare,R2,1.0,30,90.0,ces,C,12,0,88,0,0.0,1656.2805
+lotto da riusare,R2,1.0,30,90.0,ces,D,146,0,1277,0,0.0,1559.9107
+lotto da riusare,R2,1.0,30,90.0,ces,E,2,0,36,0,0.0,1727.6521
+lotto da riusare,R2,1.0,30,90.0,ds_a0,B,7,0,28,0,0.0,1561.6577
+lotto da riusare,R2,1.0,30,90.0,ds_a0,C,12,0,88,0,0.0,1657.2805
+lotto da riusare,R2,1.0,30,90.0,ds_a0,D,146,0,1277,0,0.0,1560.9107
+lotto da riusare,R2,1.0,30,90.0,ds_a0,E,2,0,36,0,0.0,1728.6521
+lotto da riusare,R2,1.0,30,90.0,ds_a05,B,7,0,28,0,0.0,3220.0135
+lotto da riusare,R2,1.0,30,90.0,ds_a05,C,12,0,88,0,0.0,2600.5303
+lotto da riusare,R2,1.0,30,90.0,ds_a05,D,146,0,1277,0,0.0,1837.4383
+lotto da riusare,R2,1.0,30,90.0,ds_a05,E,2,0,36,0,0.0,1731.7156
+lotto da riusare,R2,1.0,30,90.0,ds_a08,B,7,0,28,0,0.0,4146.9821
+lotto da riusare,R2,1.0,30,90.0,ds_a08,C,12,0,88,0,0.0,3157.961
+lotto da riusare,R2,1.0,30,90.0,ds_a08,D,146,0,1277,0,0.0,1997.6245
+lotto da riusare,R2,1.0,30,90.0,ds_a08,E,2,0,36,0,0.0,1735.849
+lotto da riusare,R2,1.0,30,110.0,acq,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,110.0,acq,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,110.0,acq,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,110.0,acq,E,2,0,36,0,0.0001,
+lotto da riusare,R2,1.0,30,110.0,ces,B,7,0,28,0,0.0002,
+lotto da riusare,R2,1.0,30,110.0,ces,C,12,0,88,0,0.0001,
+lotto da riusare,R2,1.0,30,110.0,ces,D,146,0,1277,0,0.0002,
+lotto da riusare,R2,1.0,30,110.0,ces,E,2,0,36,0,0.0001,
+lotto da riusare,R2,1.0,30,110.0,ds_a0,B,7,0,28,0,0.0002,
+lotto da riusare,R2,1.0,30,110.0,ds_a0,C,12,0,88,0,0.0001,
+lotto da riusare,R2,1.0,30,110.0,ds_a0,D,146,0,1277,0,0.0002,
+lotto da riusare,R2,1.0,30,110.0,ds_a0,E,2,0,36,0,0.0001,
+lotto da riusare,R2,1.0,30,110.0,ds_a05,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,110.0,ds_a05,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,110.0,ds_a05,D,146,0,1277,0,0.0001,
+lotto da riusare,R2,1.0,30,110.0,ds_a05,E,2,0,36,0,0.0001,
+lotto da riusare,R2,1.0,30,110.0,ds_a08,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,110.0,ds_a08,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,110.0,ds_a08,D,146,0,1277,0,0.0,
+lotto da riusare,R2,1.0,30,110.0,ds_a08,E,2,0,36,0,0.0001,
+lotto da riusare,R2,1.0,30,130.0,acq,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,130.0,acq,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,130.0,acq,D,146,0,1277,0,0.0003,
+lotto da riusare,R2,1.0,30,130.0,acq,E,2,0,36,0,0.002,
+lotto da riusare,R2,1.0,30,130.0,ces,B,7,0,28,0,0.0038,
+lotto da riusare,R2,1.0,30,130.0,ces,C,12,0,88,0,0.0028,
+lotto da riusare,R2,1.0,30,130.0,ces,D,146,0,1277,0,0.0036,
+lotto da riusare,R2,1.0,30,130.0,ces,E,2,0,36,0,0.0026,
+lotto da riusare,R2,1.0,30,130.0,ds_a0,B,7,0,28,0,0.0038,
+lotto da riusare,R2,1.0,30,130.0,ds_a0,C,12,0,88,0,0.0028,
+lotto da riusare,R2,1.0,30,130.0,ds_a0,D,146,0,1277,0,0.0036,
+lotto da riusare,R2,1.0,30,130.0,ds_a0,E,2,0,36,0,0.0026,
+lotto da riusare,R2,1.0,30,130.0,ds_a05,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,130.0,ds_a05,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,130.0,ds_a05,D,146,0,1277,0,0.0005,
+lotto da riusare,R2,1.0,30,130.0,ds_a05,E,2,0,36,0,0.0023,
+lotto da riusare,R2,1.0,30,130.0,ds_a08,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,30,130.0,ds_a08,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,30,130.0,ds_a08,D,146,0,1277,0,0.0004,
+lotto da riusare,R2,1.0,30,130.0,ds_a08,E,2,0,36,0,0.002,
+lotto da riusare,R2,1.0,60,60.0,acq,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,60,60.0,acq,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,60,60.0,acq,D,146,0,1277,0,0.0001,
+lotto da riusare,R2,1.0,60,60.0,acq,E,2,0,36,0,0.0002,
+lotto da riusare,R2,1.0,60,60.0,ces,B,7,0,28,0,0.0003,
+lotto da riusare,R2,1.0,60,60.0,ces,C,12,0,88,0,0.0002,
+lotto da riusare,R2,1.0,60,60.0,ces,D,146,0,1277,0,0.0003,
+lotto da riusare,R2,1.0,60,60.0,ces,E,2,0,36,0,0.0003,
+lotto da riusare,R2,1.0,60,60.0,ds_a0,B,7,0,28,0,0.0003,
+lotto da riusare,R2,1.0,60,60.0,ds_a0,C,12,0,88,0,0.0002,
+lotto da riusare,R2,1.0,60,60.0,ds_a0,D,146,0,1277,0,0.0003,
+lotto da riusare,R2,1.0,60,60.0,ds_a0,E,2,0,36,0,0.0003,
+lotto da riusare,R2,1.0,60,60.0,ds_a05,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,60,60.0,ds_a05,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,60,60.0,ds_a05,D,146,0,1277,0,0.0002,
+lotto da riusare,R2,1.0,60,60.0,ds_a05,E,2,0,36,0,0.0003,
+lotto da riusare,R2,1.0,60,60.0,ds_a08,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,60,60.0,ds_a08,C,12,0,88,0,0.0,
+lotto da riusare,R2,1.0,60,60.0,ds_a08,D,146,0,1277,0,0.0002,
+lotto da riusare,R2,1.0,60,60.0,ds_a08,E,2,0,36,0,0.0002,
+lotto da riusare,R2,1.0,60,75.0,acq,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,60,75.0,acq,C,12,0,88,0,0.0001,
+lotto da riusare,R2,1.0,60,75.0,acq,D,146,0,1277,0,0.0029,
+lotto da riusare,R2,1.0,60,75.0,acq,E,2,0,36,0,0.0091,
+lotto da riusare,R2,1.0,60,75.0,ces,B,7,0,28,0,0.0127,
+lotto da riusare,R2,1.0,60,75.0,ces,C,12,0,88,0,0.0108,
+lotto da riusare,R2,1.0,60,75.0,ces,D,146,0,1277,0,0.0127,
+lotto da riusare,R2,1.0,60,75.0,ces,E,2,0,36,0,0.0098,
+lotto da riusare,R2,1.0,60,75.0,ds_a0,B,7,0,28,0,0.0126,
+lotto da riusare,R2,1.0,60,75.0,ds_a0,C,12,0,88,0,0.0108,
+lotto da riusare,R2,1.0,60,75.0,ds_a0,D,146,0,1277,0,0.0126,
+lotto da riusare,R2,1.0,60,75.0,ds_a0,E,2,0,36,0,0.0098,
+lotto da riusare,R2,1.0,60,75.0,ds_a05,B,7,0,28,0,0.0001,
+lotto da riusare,R2,1.0,60,75.0,ds_a05,C,12,0,88,0,0.0002,
+lotto da riusare,R2,1.0,60,75.0,ds_a05,D,146,0,1277,0,0.0049,
+lotto da riusare,R2,1.0,60,75.0,ds_a05,E,2,0,36,0,0.0094,
+lotto da riusare,R2,1.0,60,75.0,ds_a08,B,7,0,28,0,0.0,
+lotto da riusare,R2,1.0,60,75.0,ds_a08,C,12,0,88,0,0.0001,
+lotto da riusare,R2,1.0,60,75.0,ds_a08,D,146,0,1277,0,0.0033,
+lotto da riusare,R2,1.0,60,75.0,ds_a08,E,2,0,36,0,0.0093,
+lotto da riusare,R2,1.0,60,90.0,acq,B,7,0,28,0,0.0001,3813.4645
+lotto da riusare,R2,1.0,60,90.0,acq,C,12,0,88,0,0.0006,2590.8932
+lotto da riusare,R2,1.0,60,90.0,acq,D,146,0,1277,0,0.0317,1140.0
+lotto da riusare,R2,1.0,60,90.0,acq,E,2,0,36,0,0.0689,864.5749
+lotto da riusare,R2,1.0,60,90.0,ces,B,7,0,28,0,0.0902,699.8467
+lotto da riusare,R2,1.0,60,90.0,ces,C,12,0,88,0,0.0789,790.0388
+lotto da riusare,R2,1.0,60,90.0,ces,D,146,0,1277,0,0.0909,699.1734
+lotto da riusare,R2,1.0,60,90.0,ces,E,2,0,36,0,0.0717,856.6638
+lotto da riusare,R2,1.0,60,90.0,ds_a0,B,7,0,28,0,0.0899,700.8467
+lotto da riusare,R2,1.0,60,90.0,ds_a0,C,12,0,88,0,0.0788,791.0388
+lotto da riusare,R2,1.0,60,90.0,ds_a0,D,146,0,1277,0,0.0906,700.1734
+lotto da riusare,R2,1.0,60,90.0,ds_a0,E,2,0,36,0,0.0714,857.6638
+lotto da riusare,R2,1.0,60,90.0,ds_a05,B,7,0,28,0,0.0008,2276.3985
+lotto da riusare,R2,1.0,60,90.0,ds_a05,C,12,0,88,0,0.006,1664.524
+lotto da riusare,R2,1.0,60,90.0,ds_a05,D,146,0,1277,0,0.0465,927.8058
+lotto da riusare,R2,1.0,60,90.0,ds_a05,E,2,0,36,0,0.07,860.3871
+lotto da riusare,R2,1.0,60,90.0,ds_a08,B,7,0,28,0,0.0001,3191.7234
+lotto da riusare,R2,1.0,60,90.0,ds_a08,C,12,0,88,0,0.0015,2202.7043
+lotto da riusare,R2,1.0,60,90.0,ds_a08,D,146,0,1277,0,0.0363,1060.5084
+lotto da riusare,R2,1.0,60,90.0,ds_a08,E,2,0,36,0,0.0692,862.482
+lotto da riusare,R2,1.0,60,110.0,acq,B,7,0,28,0,0.0012,
+lotto da riusare,R2,1.0,60,110.0,acq,C,12,0,88,0,0.0165,
+lotto da riusare,R2,1.0,60,110.0,acq,D,146,0,1277,0,0.1923,
+lotto da riusare,R2,1.0,60,110.0,acq,E,2,0,36,0,0.3249,
+lotto da riusare,R2,1.0,60,110.0,ces,B,7,0,28,0,0.3918,
+lotto da riusare,R2,1.0,60,110.0,ces,C,12,0,88,0,0.362,
+lotto da riusare,R2,1.0,60,110.0,ces,D,146,0,1277,0,0.394,
+lotto da riusare,R2,1.0,60,110.0,ces,E,2,0,36,0,0.3304,
+lotto da riusare,R2,1.0,60,110.0,ds_a0,B,7,0,28,0,0.3909,
+lotto da riusare,R2,1.0,60,110.0,ds_a0,C,12,0,88,0,0.3615,
+lotto da riusare,R2,1.0,60,110.0,ds_a0,D,146,0,1277,0,0.3933,
+lotto da riusare,R2,1.0,60,110.0,ds_a0,E,2,0,36,0,0.3299,
+lotto da riusare,R2,1.0,60,110.0,ds_a05,B,7,0,28,0,0.0189,
+lotto da riusare,R2,1.0,60,110.0,ds_a05,C,12,0,88,0,0.0625,
+lotto da riusare,R2,1.0,60,110.0,ds_a05,D,146,0,1277,0,0.2612,
+lotto da riusare,R2,1.0,60,110.0,ds_a05,E,2,0,36,0,0.3277,
+lotto da riusare,R2,1.0,60,110.0,ds_a08,B,7,0,28,0,0.0038,
+lotto da riusare,R2,1.0,60,110.0,ds_a08,C,12,0,88,0,0.0269,
+lotto da riusare,R2,1.0,60,110.0,ds_a08,D,146,0,1277,0,0.2136,
+lotto da riusare,R2,1.0,60,110.0,ds_a08,E,2,0,36,0,0.3264,
+lotto da riusare,R2,1.0,60,130.0,acq,B,7,0,28,0,0.0137,
+lotto da riusare,R2,1.0,60,130.0,acq,C,12,0,88,0,0.0854,
+lotto da riusare,R2,1.0,60,130.0,acq,D,146,106,1277,956,0.5495,
+lotto da riusare,R2,1.0,60,130.0,acq,E,2,2,36,36,0.766,
+lotto da riusare,R2,1.0,60,130.0,ces,B,7,7,28,28,0.8705,
+lotto da riusare,R2,1.0,60,130.0,ces,C,12,12,88,88,0.837,
+lotto da riusare,R2,1.0,60,130.0,ces,D,146,141,1277,1212,0.8793,
+lotto da riusare,R2,1.0,60,130.0,ces,E,2,2,36,36,0.7722,
+lotto da riusare,R2,1.0,60,130.0,ds_a0,B,7,7,28,28,0.8698,
+lotto da riusare,R2,1.0,60,130.0,ds_a0,C,12,12,88,88,0.8362,
+lotto da riusare,R2,1.0,60,130.0,ds_a0,D,146,141,1277,1212,0.8786,
+lotto da riusare,R2,1.0,60,130.0,ds_a0,E,2,2,36,36,0.7713,
+lotto da riusare,R2,1.0,60,130.0,ds_a05,B,7,0,28,0,0.0988,
+lotto da riusare,R2,1.0,60,130.0,ds_a05,C,12,0,88,0,0.2611,
+lotto da riusare,R2,1.0,60,130.0,ds_a05,D,146,134,1277,1151,0.6876,
+lotto da riusare,R2,1.0,60,130.0,ds_a05,E,2,2,36,36,0.7688,
+lotto da riusare,R2,1.0,60,130.0,ds_a08,B,7,0,28,0,0.0284,
+lotto da riusare,R2,1.0,60,130.0,ds_a08,C,12,0,88,0,0.1289,
+lotto da riusare,R2,1.0,60,130.0,ds_a08,D,146,106,1277,956,0.5982,
+lotto da riusare,R2,1.0,60,130.0,ds_a08,E,2,2,36,36,0.7669,
+lotto da riusare,R2,1.0,90,60.0,acq,B,7,0,28,0,0.0001,
+lotto da riusare,R2,1.0,90,60.0,acq,C,12,0,88,0,0.0008,
+lotto da riusare,R2,1.0,90,60.0,acq,D,146,0,1277,0,0.019,
+lotto da riusare,R2,1.0,90,60.0,acq,E,2,0,36,0,0.0324,
+lotto da riusare,R2,1.0,90,60.0,ces,B,7,0,28,0,0.04,
+lotto da riusare,R2,1.0,90,60.0,ces,C,12,0,88,0,0.0367,
+lotto da riusare,R2,1.0,90,60.0,ces,D,146,0,1277,0,0.0406,
+lotto da riusare,R2,1.0,90,60.0,ces,E,2,0,36,0,0.0332,
+lotto da riusare,R2,1.0,90,60.0,ds_a0,B,7,0,28,0,0.04,
+lotto da riusare,R2,1.0,90,60.0,ds_a0,C,12,0,88,0,0.0367,
+lotto da riusare,R2,1.0,90,60.0,ds_a0,D,146,0,1277,0,0.0405,
+lotto da riusare,R2,1.0,90,60.0,ds_a0,E,2,0,36,0,0.0332,
+lotto da riusare,R2,1.0,90,60.0,ds_a05,B,7,0,28,0,0.001,
+lotto da riusare,R2,1.0,90,60.0,ds_a05,C,12,0,88,0,0.0049,
+lotto da riusare,R2,1.0,90,60.0,ds_a05,D,146,0,1277,0,0.0256,
+lotto da riusare,R2,1.0,90,60.0,ds_a05,E,2,0,36,0,0.0326,
+lotto da riusare,R2,1.0,90,60.0,ds_a08,B,7,0,28,0,0.0002,
+lotto da riusare,R2,1.0,90,60.0,ds_a08,C,12,0,88,0,0.0017,
+lotto da riusare,R2,1.0,90,60.0,ds_a08,D,146,0,1277,0,0.0211,
+lotto da riusare,R2,1.0,90,60.0,ds_a08,E,2,0,36,0,0.0326,
+lotto da riusare,R2,1.0,90,75.0,acq,B,7,0,28,0,0.0023,
+lotto da riusare,R2,1.0,90,75.0,acq,C,12,0,88,0,0.0164,
+lotto da riusare,R2,1.0,90,75.0,acq,D,146,0,1277,0,0.1066,
+lotto da riusare,R2,1.0,90,75.0,acq,E,2,0,36,0,0.1725,
+lotto da riusare,R2,1.0,90,75.0,ces,B,7,0,28,0,0.1994,
+lotto da riusare,R2,1.0,90,75.0,ces,C,12,0,88,0,0.1859,
+lotto da riusare,R2,1.0,90,75.0,ces,D,146,0,1277,0,0.1997,
+lotto da riusare,R2,1.0,90,75.0,ces,E,2,0,36,0,0.1748,
+lotto da riusare,R2,1.0,90,75.0,ds_a0,B,7,0,28,0,0.199,
+lotto da riusare,R2,1.0,90,75.0,ds_a0,C,12,0,88,0,0.1856,
+lotto da riusare,R2,1.0,90,75.0,ds_a0,D,146,0,1277,0,0.1994,
+lotto da riusare,R2,1.0,90,75.0,ds_a0,E,2,0,36,0,0.1745,
+lotto da riusare,R2,1.0,90,75.0,ds_a05,B,7,0,28,0,0.0191,
+lotto da riusare,R2,1.0,90,75.0,ds_a05,C,12,0,88,0,0.0463,
+lotto da riusare,R2,1.0,90,75.0,ds_a05,D,146,0,1277,0,0.1397,
+lotto da riusare,R2,1.0,90,75.0,ds_a05,E,2,0,36,0,0.1735,
+lotto da riusare,R2,1.0,90,75.0,ds_a08,B,7,0,28,0,0.0053,
+lotto da riusare,R2,1.0,90,75.0,ds_a08,C,12,0,88,0,0.0248,
+lotto da riusare,R2,1.0,90,75.0,ds_a08,D,146,0,1277,0,0.1172,
+lotto da riusare,R2,1.0,90,75.0,ds_a08,E,2,0,36,0,0.173,
+lotto da riusare,R2,1.0,90,90.0,acq,B,7,0,28,0,0.0181,2954.8477
+lotto da riusare,R2,1.0,90,90.0,acq,C,12,0,88,0,0.0689,1736.4008
+lotto da riusare,R2,1.0,90,90.0,acq,D,146,0,1277,0,0.3312,307.114
+lotto da riusare,R2,1.0,90,90.0,acq,E,2,1,36,4,0.4614,90.078
+lotto da riusare,R2,1.0,90,90.0,ces,B,7,6,28,25,0.5218,-76.4591
+lotto da riusare,R2,1.0,90,90.0,ces,C,12,5,88,15,0.496,16.8729
+lotto da riusare,R2,1.0,90,90.0,ces,D,146,114,1277,794,0.524,-77.0781
+lotto da riusare,R2,1.0,90,90.0,ces,E,2,1,36,4,0.4652,82.3923
+lotto da riusare,R2,1.0,90,90.0,ds_a0,B,7,6,28,25,0.5212,-75.4591
+lotto da riusare,R2,1.0,90,90.0,ds_a0,C,12,5,88,15,0.4954,17.8729
+lotto da riusare,R2,1.0,90,90.0,ds_a0,D,146,114,1277,794,0.5234,-76.0781
+lotto da riusare,R2,1.0,90,90.0,ds_a0,E,2,1,36,4,0.4646,83.3923
+lotto da riusare,R2,1.0,90,90.0,ds_a05,B,7,0,28,0,0.0798,1452.9432
+lotto da riusare,R2,1.0,90,90.0,ds_a05,C,12,0,88,0,0.1745,855.7449
+lotto da riusare,R2,1.0,90,90.0,ds_a05,D,146,6,1277,23,0.4066,134.2076
+lotto da riusare,R2,1.0,90,90.0,ds_a05,E,2,1,36,4,0.4634,85.8707
+lotto da riusare,R2,1.0,90,90.0,ds_a08,B,7,0,28,0,0.0318,2346.1806
+lotto da riusare,R2,1.0,90,90.0,ds_a08,C,12,0,88,0,0.0973,1365.8203
+lotto da riusare,R2,1.0,90,90.0,ds_a08,D,146,0,1277,0,0.3579,241.9703
+lotto da riusare,R2,1.0,90,90.0,ds_a08,E,2,1,36,4,0.462,88.3809
+lotto da riusare,R2,1.0,90,110.0,acq,B,7,0,28,0,0.0847,
+lotto da riusare,R2,1.0,90,110.0,acq,C,12,0,88,0,0.2525,
+lotto da riusare,R2,1.0,90,110.0,acq,D,146,143,1277,1253,0.7184,
+lotto da riusare,R2,1.0,90,110.0,acq,E,2,2,36,36,0.8957,
+lotto da riusare,R2,1.0,90,110.0,ces,B,7,7,28,28,0.9504,
+lotto da riusare,R2,1.0,90,110.0,ces,C,12,12,88,88,0.9405,
+lotto da riusare,R2,1.0,90,110.0,ces,D,146,145,1277,1256,0.9534,
+lotto da riusare,R2,1.0,90,110.0,ces,E,2,2,36,36,0.9003,
+lotto da riusare,R2,1.0,90,110.0,ds_a0,B,7,7,28,28,0.9501,
+lotto da riusare,R2,1.0,90,110.0,ds_a0,C,12,12,88,88,0.9403,
+lotto da riusare,R2,1.0,90,110.0,ds_a0,D,146,145,1277,1256,0.9531,
+lotto da riusare,R2,1.0,90,110.0,ds_a0,E,2,2,36,36,0.8999,
+lotto da riusare,R2,1.0,90,110.0,ds_a05,B,7,0,28,0,0.2913,
+lotto da riusare,R2,1.0,90,110.0,ds_a05,C,12,7,88,68,0.5038,
+lotto da riusare,R2,1.0,90,110.0,ds_a05,D,146,145,1277,1256,0.8319,
+lotto da riusare,R2,1.0,90,110.0,ds_a05,E,2,2,36,36,0.8981,
+lotto da riusare,R2,1.0,90,110.0,ds_a08,B,7,0,28,0,0.1349,
+lotto da riusare,R2,1.0,90,110.0,ds_a08,C,12,0,88,0,0.3295,
+lotto da riusare,R2,1.0,90,110.0,ds_a08,D,146,143,1277,1253,0.7599,
+lotto da riusare,R2,1.0,90,110.0,ds_a08,E,2,2,36,36,0.8965,
+lotto da riusare,R2,1.0,90,130.0,acq,B,7,0,28,0,0.2293,
+lotto da riusare,R2,1.0,90,130.0,acq,C,12,8,88,71,0.5104,
+lotto da riusare,R2,1.0,90,130.0,acq,D,146,145,1277,1256,0.9021,
+lotto da riusare,R2,1.0,90,130.0,acq,E,2,2,36,36,0.9944,
+lotto da riusare,R2,1.0,90,130.0,ces,B,7,7,28,28,0.9982,
+lotto da riusare,R2,1.0,90,130.0,ces,C,12,12,88,88,0.9985,
+lotto da riusare,R2,1.0,90,130.0,ces,D,146,145,1277,1256,0.9931,
+lotto da riusare,R2,1.0,90,130.0,ces,E,2,2,36,36,0.995,
+lotto da riusare,R2,1.0,90,130.0,ds_a0,B,7,7,28,28,0.9982,
+lotto da riusare,R2,1.0,90,130.0,ds_a0,C,12,12,88,88,0.9985,
+lotto da riusare,R2,1.0,90,130.0,ds_a0,D,146,145,1277,1256,0.9931,
+lotto da riusare,R2,1.0,90,130.0,ds_a0,E,2,2,36,36,0.995,
+lotto da riusare,R2,1.0,90,130.0,ds_a05,B,7,5,28,13,0.5885,
+lotto da riusare,R2,1.0,90,130.0,ds_a05,C,12,12,88,88,0.8114,
+lotto da riusare,R2,1.0,90,130.0,ds_a05,D,146,145,1277,1256,0.9697,
+lotto da riusare,R2,1.0,90,130.0,ds_a05,E,2,2,36,36,0.995,
+lotto da riusare,R2,1.0,90,130.0,ds_a08,B,7,1,28,2,0.3351,
+lotto da riusare,R2,1.0,90,130.0,ds_a08,C,12,9,88,78,0.6192,
+lotto da riusare,R2,1.0,90,130.0,ds_a08,D,146,145,1277,1256,0.932,
+lotto da riusare,R2,1.0,90,130.0,ds_a08,E,2,2,36,36,0.9946,
+lotto da riusare,R2,2.0,30,60.0,acq,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,acq,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,acq,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,acq,E,2,0,72,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ces,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ces,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ces,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ces,E,2,0,72,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a0,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a0,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a0,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a0,E,2,0,72,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a05,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a05,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a05,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a05,E,2,0,72,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a08,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a08,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a08,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,60.0,ds_a08,E,2,0,72,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,acq,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,acq,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,acq,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,acq,E,2,0,72,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ces,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ces,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ces,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ces,E,2,0,72,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a0,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a0,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a0,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a0,E,2,0,72,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a05,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a05,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a05,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a05,E,2,0,72,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a08,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a08,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a08,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,75.0,ds_a08,E,2,0,72,0,0.0,
+lotto da riusare,R2,2.0,30,90.0,acq,B,7,0,60,0,0.0,9526.3269
+lotto da riusare,R2,2.0,30,90.0,acq,C,12,0,183,0,0.0,7078.5284
+lotto da riusare,R2,2.0,30,90.0,acq,D,146,0,2623,0,0.0,4174.2686
+lotto da riusare,R2,2.0,30,90.0,acq,E,2,0,72,0,0.0,3246.0653
+lotto da riusare,R2,2.0,30,90.0,ces,B,7,0,60,0,0.0,3050.0541
+lotto da riusare,R2,2.0,30,90.0,ces,C,12,0,183,0,0.0,3150.4729
+lotto da riusare,R2,2.0,30,90.0,ces,D,146,0,2623,0,0.0,3049.5897
+lotto da riusare,R2,2.0,30,90.0,ces,E,2,0,72,0,0.0,3220.1619
+lotto da riusare,R2,2.0,30,90.0,ds_a0,B,7,0,60,0,0.0,3051.0541
+lotto da riusare,R2,2.0,30,90.0,ds_a0,C,12,0,183,0,0.0,3151.4729
+lotto da riusare,R2,2.0,30,90.0,ds_a0,D,146,0,2623,0,0.0,3050.5897
+lotto da riusare,R2,2.0,30,90.0,ds_a0,E,2,0,72,0,0.0,3221.1619
+lotto da riusare,R2,2.0,30,90.0,ds_a05,B,7,0,60,0,0.0,6358.8774
+lotto da riusare,R2,2.0,30,90.0,ds_a05,C,12,0,183,0,0.0,5109.0232
+lotto da riusare,R2,2.0,30,90.0,ds_a05,D,146,0,2623,0,0.0,3624.4938
+lotto da riusare,R2,2.0,30,90.0,ds_a05,E,2,0,72,0,0.0,3229.6363
+lotto da riusare,R2,2.0,30,90.0,ds_a08,B,7,0,60,0,0.0,8253.1497
+lotto da riusare,R2,2.0,30,90.0,ds_a08,C,12,0,183,0,0.0,6285.7183
+lotto da riusare,R2,2.0,30,90.0,ds_a08,D,146,0,2623,0,0.0,3976.6178
+lotto da riusare,R2,2.0,30,90.0,ds_a08,E,2,0,72,0,0.0,3240.2919
+lotto da riusare,R2,2.0,30,110.0,acq,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,110.0,acq,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,110.0,acq,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,110.0,acq,E,2,0,72,0,0.0001,
+lotto da riusare,R2,2.0,30,110.0,ces,B,7,0,60,0,0.0002,
+lotto da riusare,R2,2.0,30,110.0,ces,C,12,0,183,0,0.0002,
+lotto da riusare,R2,2.0,30,110.0,ces,D,146,0,2623,0,0.0002,
+lotto da riusare,R2,2.0,30,110.0,ces,E,2,0,72,0,0.0001,
+lotto da riusare,R2,2.0,30,110.0,ds_a0,B,7,0,60,0,0.0002,
+lotto da riusare,R2,2.0,30,110.0,ds_a0,C,12,0,183,0,0.0002,
+lotto da riusare,R2,2.0,30,110.0,ds_a0,D,146,0,2623,0,0.0002,
+lotto da riusare,R2,2.0,30,110.0,ds_a0,E,2,0,72,0,0.0001,
+lotto da riusare,R2,2.0,30,110.0,ds_a05,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,110.0,ds_a05,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,110.0,ds_a05,D,146,0,2623,0,0.0001,
+lotto da riusare,R2,2.0,30,110.0,ds_a05,E,2,0,72,0,0.0001,
+lotto da riusare,R2,2.0,30,110.0,ds_a08,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,110.0,ds_a08,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,110.0,ds_a08,D,146,0,2623,0,0.0,
+lotto da riusare,R2,2.0,30,110.0,ds_a08,E,2,0,72,0,0.0001,
+lotto da riusare,R2,2.0,30,130.0,acq,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,130.0,acq,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,130.0,acq,D,146,0,2623,0,0.0004,
+lotto da riusare,R2,2.0,30,130.0,acq,E,2,0,72,0,0.0027,
+lotto da riusare,R2,2.0,30,130.0,ces,B,7,0,60,0,0.0046,
+lotto da riusare,R2,2.0,30,130.0,ces,C,12,0,183,0,0.004,
+lotto da riusare,R2,2.0,30,130.0,ces,D,146,0,2623,0,0.0046,
+lotto da riusare,R2,2.0,30,130.0,ces,E,2,0,72,0,0.0034,
+lotto da riusare,R2,2.0,30,130.0,ds_a0,B,7,0,60,0,0.0046,
+lotto da riusare,R2,2.0,30,130.0,ds_a0,C,12,0,183,0,0.004,
+lotto da riusare,R2,2.0,30,130.0,ds_a0,D,146,0,2623,0,0.0046,
+lotto da riusare,R2,2.0,30,130.0,ds_a0,E,2,0,72,0,0.0034,
+lotto da riusare,R2,2.0,30,130.0,ds_a05,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,130.0,ds_a05,C,12,0,183,0,0.0001,
+lotto da riusare,R2,2.0,30,130.0,ds_a05,D,146,0,2623,0,0.0006,
+lotto da riusare,R2,2.0,30,130.0,ds_a05,E,2,0,72,0,0.0031,
+lotto da riusare,R2,2.0,30,130.0,ds_a08,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,30,130.0,ds_a08,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,30,130.0,ds_a08,D,146,0,2623,0,0.0004,
+lotto da riusare,R2,2.0,30,130.0,ds_a08,E,2,0,72,0,0.0027,
+lotto da riusare,R2,2.0,60,60.0,acq,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,60,60.0,acq,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,60,60.0,acq,D,146,0,2623,0,0.0001,
+lotto da riusare,R2,2.0,60,60.0,acq,E,2,0,72,0,0.0002,
+lotto da riusare,R2,2.0,60,60.0,ces,B,7,0,60,0,0.0004,
+lotto da riusare,R2,2.0,60,60.0,ces,C,12,0,183,0,0.0002,
+lotto da riusare,R2,2.0,60,60.0,ces,D,146,0,2623,0,0.0003,
+lotto da riusare,R2,2.0,60,60.0,ces,E,2,0,72,0,0.0003,
+lotto da riusare,R2,2.0,60,60.0,ds_a0,B,7,0,60,0,0.0004,
+lotto da riusare,R2,2.0,60,60.0,ds_a0,C,12,0,183,0,0.0002,
+lotto da riusare,R2,2.0,60,60.0,ds_a0,D,146,0,2623,0,0.0003,
+lotto da riusare,R2,2.0,60,60.0,ds_a0,E,2,0,72,0,0.0003,
+lotto da riusare,R2,2.0,60,60.0,ds_a05,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,60,60.0,ds_a05,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,60,60.0,ds_a05,D,146,0,2623,0,0.0002,
+lotto da riusare,R2,2.0,60,60.0,ds_a05,E,2,0,72,0,0.0003,
+lotto da riusare,R2,2.0,60,60.0,ds_a08,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,60,60.0,ds_a08,C,12,0,183,0,0.0,
+lotto da riusare,R2,2.0,60,60.0,ds_a08,D,146,0,2623,0,0.0002,
+lotto da riusare,R2,2.0,60,60.0,ds_a08,E,2,0,72,0,0.0002,
+lotto da riusare,R2,2.0,60,75.0,acq,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,60,75.0,acq,C,12,0,183,0,0.0001,
+lotto da riusare,R2,2.0,60,75.0,acq,D,146,0,2623,0,0.0033,
+lotto da riusare,R2,2.0,60,75.0,acq,E,2,0,72,0,0.0112,
+lotto da riusare,R2,2.0,60,75.0,ces,B,7,0,60,0,0.0143,
+lotto da riusare,R2,2.0,60,75.0,ces,C,12,0,183,0,0.0134,
+lotto da riusare,R2,2.0,60,75.0,ces,D,146,0,2623,0,0.0144,
+lotto da riusare,R2,2.0,60,75.0,ces,E,2,0,72,0,0.0121,
+lotto da riusare,R2,2.0,60,75.0,ds_a0,B,7,0,60,0,0.0143,
+lotto da riusare,R2,2.0,60,75.0,ds_a0,C,12,0,183,0,0.0134,
+lotto da riusare,R2,2.0,60,75.0,ds_a0,D,146,0,2623,0,0.0144,
+lotto da riusare,R2,2.0,60,75.0,ds_a0,E,2,0,72,0,0.0121,
+lotto da riusare,R2,2.0,60,75.0,ds_a05,B,7,0,60,0,0.0001,
+lotto da riusare,R2,2.0,60,75.0,ds_a05,C,12,0,183,0,0.0002,
+lotto da riusare,R2,2.0,60,75.0,ds_a05,D,146,0,2623,0,0.0056,
+lotto da riusare,R2,2.0,60,75.0,ds_a05,E,2,0,72,0,0.0117,
+lotto da riusare,R2,2.0,60,75.0,ds_a08,B,7,0,60,0,0.0,
+lotto da riusare,R2,2.0,60,75.0,ds_a08,C,12,0,183,0,0.0001,
+lotto da riusare,R2,2.0,60,75.0,ds_a08,D,146,0,2623,0,0.0038,
+lotto da riusare,R2,2.0,60,75.0,ds_a08,E,2,0,72,0,0.0115,
+lotto da riusare,R2,2.0,60,90.0,acq,B,7,0,60,0,0.0001,7596.1332
+lotto da riusare,R2,2.0,60,90.0,acq,C,12,0,183,0,0.0007,5163.5088
+lotto da riusare,R2,2.0,60,90.0,acq,D,146,0,2623,0,0.035,2266.4008
+lotto da riusare,R2,2.0,60,90.0,acq,E,2,0,72,0,0.0837,1515.0971
+lotto da riusare,R2,2.0,60,90.0,ces,B,7,0,60,0,0.1003,1335.915
+lotto da riusare,R2,2.0,60,90.0,ces,C,12,0,183,0,0.0949,1425.102
+lotto da riusare,R2,2.0,60,90.0,ces,D,146,0,2623,0,0.1013,1335.6038
+lotto da riusare,R2,2.0,60,90.0,ces,E,2,0,72,0,0.0876,1490.2224
+lotto da riusare,R2,2.0,60,90.0,ds_a0,B,7,0,60,0,0.1002,1336.915
+lotto da riusare,R2,2.0,60,90.0,ds_a0,C,12,0,183,0,0.0947,1426.102
+lotto da riusare,R2,2.0,60,90.0,ds_a0,D,146,0,2623,0,0.1012,1336.6038
+lotto da riusare,R2,2.0,60,90.0,ds_a0,E,2,0,72,0,0.0876,1491.2224
+lotto da riusare,R2,2.0,60,90.0,ds_a05,B,7,0,60,0,0.001,4470.8354
+lotto da riusare,R2,2.0,60,90.0,ds_a05,C,12,0,183,0,0.0072,3233.1482
+lotto da riusare,R2,2.0,60,90.0,ds_a05,D,146,0,2623,0,0.0515,1803.8206
+lotto da riusare,R2,2.0,60,90.0,ds_a05,E,2,0,72,0,0.0853,1504.7666
+lotto da riusare,R2,2.0,60,90.0,ds_a08,B,7,0,60,0,0.0001,6332.3824
+lotto da riusare,R2,2.0,60,90.0,ds_a08,C,12,0,183,0,0.0017,4377.7392
+lotto da riusare,R2,2.0,60,90.0,ds_a08,D,146,0,2623,0,0.0401,2087.7205
+lotto da riusare,R2,2.0,60,90.0,ds_a08,E,2,0,72,0,0.0843,1509.9439
+lotto da riusare,R2,2.0,60,110.0,acq,B,7,0,60,0,0.0012,
+lotto da riusare,R2,2.0,60,110.0,acq,C,12,0,183,0,0.0174,
+lotto da riusare,R2,2.0,60,110.0,acq,D,146,0,2623,0,0.2054,
+lotto da riusare,R2,2.0,60,110.0,acq,E,2,0,72,0,0.3815,
+lotto da riusare,R2,2.0,60,110.0,ces,B,7,0,60,0,0.4241,
+lotto da riusare,R2,2.0,60,110.0,ces,C,12,0,183,0,0.4085,
+lotto da riusare,R2,2.0,60,110.0,ces,D,146,0,2623,0,0.4253,
+lotto da riusare,R2,2.0,60,110.0,ces,E,2,0,72,0,0.3887,
+lotto da riusare,R2,2.0,60,110.0,ds_a0,B,7,0,60,0,0.4236,
+lotto da riusare,R2,2.0,60,110.0,ds_a0,C,12,0,183,0,0.408,
+lotto da riusare,R2,2.0,60,110.0,ds_a0,D,146,0,2623,0,0.4249,
+lotto da riusare,R2,2.0,60,110.0,ds_a0,E,2,0,72,0,0.3881,
+lotto da riusare,R2,2.0,60,110.0,ds_a05,B,7,0,60,0,0.0207,
+lotto da riusare,R2,2.0,60,110.0,ds_a05,C,12,0,183,0,0.0695,
+lotto da riusare,R2,2.0,60,110.0,ds_a05,D,146,0,2623,0,0.2807,
+lotto da riusare,R2,2.0,60,110.0,ds_a05,E,2,0,72,0,0.3848,
+lotto da riusare,R2,2.0,60,110.0,ds_a08,B,7,0,60,0,0.0041,
+lotto da riusare,R2,2.0,60,110.0,ds_a08,C,12,0,183,0,0.0286,
+lotto da riusare,R2,2.0,60,110.0,ds_a08,D,146,0,2623,0,0.2289,
+lotto da riusare,R2,2.0,60,110.0,ds_a08,E,2,0,72,0,0.3831,
+lotto da riusare,R2,2.0,60,130.0,acq,B,7,0,60,0,0.0142,
+lotto da riusare,R2,2.0,60,130.0,acq,C,12,0,183,0,0.0883,
+lotto da riusare,R2,2.0,60,130.0,acq,D,146,109,2623,2061,0.5702,
+lotto da riusare,R2,2.0,60,130.0,acq,E,2,2,72,72,0.8633,
+lotto da riusare,R2,2.0,60,130.0,ces,B,7,7,60,60,0.917,
+lotto da riusare,R2,2.0,60,130.0,ces,C,12,12,183,183,0.9044,
+lotto da riusare,R2,2.0,60,130.0,ces,D,146,145,2623,2580,0.9187,
+lotto da riusare,R2,2.0,60,130.0,ces,E,2,2,72,72,0.8722,
+lotto da riusare,R2,2.0,60,130.0,ds_a0,B,7,7,60,60,0.9166,
+lotto da riusare,R2,2.0,60,130.0,ds_a0,C,12,12,183,183,0.904,
+lotto da riusare,R2,2.0,60,130.0,ds_a0,D,146,145,2623,2580,0.9185,
+lotto da riusare,R2,2.0,60,130.0,ds_a0,E,2,2,72,72,0.8718,
+lotto da riusare,R2,2.0,60,130.0,ds_a05,B,7,0,60,0,0.107,
+lotto da riusare,R2,2.0,60,130.0,ds_a05,C,12,0,183,0,0.2827,
+lotto da riusare,R2,2.0,60,130.0,ds_a05,D,146,140,2623,2477,0.718,
+lotto da riusare,R2,2.0,60,130.0,ds_a05,E,2,2,72,72,0.868,
+lotto da riusare,R2,2.0,60,130.0,ds_a08,B,7,0,60,0,0.0301,
+lotto da riusare,R2,2.0,60,130.0,ds_a08,C,12,0,183,0,0.1362,
+lotto da riusare,R2,2.0,60,130.0,ds_a08,D,146,109,2623,2061,0.6226,
+lotto da riusare,R2,2.0,60,130.0,ds_a08,E,2,2,72,72,0.865,
+lotto da riusare,R2,2.0,90,60.0,acq,B,7,0,60,0,0.0001,
+lotto da riusare,R2,2.0,90,60.0,acq,C,12,0,183,0,0.0009,
+lotto da riusare,R2,2.0,90,60.0,acq,D,146,0,2623,0,0.0204,
+lotto da riusare,R2,2.0,90,60.0,acq,E,2,0,72,0,0.0388,
+lotto da riusare,R2,2.0,90,60.0,ces,B,7,0,60,0,0.0446,
+lotto da riusare,R2,2.0,90,60.0,ces,C,12,0,183,0,0.0421,
+lotto da riusare,R2,2.0,90,60.0,ces,D,146,0,2623,0,0.0446,
+lotto da riusare,R2,2.0,90,60.0,ces,E,2,0,72,0,0.0402,
+lotto da riusare,R2,2.0,90,60.0,ds_a0,B,7,0,60,0,0.0445,
+lotto da riusare,R2,2.0,90,60.0,ds_a0,C,12,0,183,0,0.0421,
+lotto da riusare,R2,2.0,90,60.0,ds_a0,D,146,0,2623,0,0.0446,
+lotto da riusare,R2,2.0,90,60.0,ds_a0,E,2,0,72,0,0.04,
+lotto da riusare,R2,2.0,90,60.0,ds_a05,B,7,0,60,0,0.0013,
+lotto da riusare,R2,2.0,90,60.0,ds_a05,C,12,0,183,0,0.0055,
+lotto da riusare,R2,2.0,90,60.0,ds_a05,D,146,0,2623,0,0.0277,
+lotto da riusare,R2,2.0,90,60.0,ds_a05,E,2,0,72,0,0.0391,
+lotto da riusare,R2,2.0,90,60.0,ds_a08,B,7,0,60,0,0.0002,
+lotto da riusare,R2,2.0,90,60.0,ds_a08,C,12,0,183,0,0.0018,
+lotto da riusare,R2,2.0,90,60.0,ds_a08,D,146,0,2623,0,0.0227,
+lotto da riusare,R2,2.0,90,60.0,ds_a08,E,2,0,72,0,0.0391,
+lotto da riusare,R2,2.0,90,75.0,acq,B,7,0,60,0,0.0024,
+lotto da riusare,R2,2.0,90,75.0,acq,C,12,0,183,0,0.0171,
+lotto da riusare,R2,2.0,90,75.0,acq,D,146,0,2623,0,0.1129,
+lotto da riusare,R2,2.0,90,75.0,acq,E,2,0,72,0,0.1942,
+lotto da riusare,R2,2.0,90,75.0,ces,B,7,0,60,0,0.2133,
+lotto da riusare,R2,2.0,90,75.0,ces,C,12,0,183,0,0.2066,
+lotto da riusare,R2,2.0,90,75.0,ces,D,146,0,2623,0,0.2143,
+lotto da riusare,R2,2.0,90,75.0,ces,E,2,0,72,0,0.1973,
+lotto da riusare,R2,2.0,90,75.0,ds_a0,B,7,0,60,0,0.2132,
+lotto da riusare,R2,2.0,90,75.0,ds_a0,C,12,0,183,0,0.2065,
+lotto da riusare,R2,2.0,90,75.0,ds_a0,D,146,0,2623,0,0.2142,
+lotto da riusare,R2,2.0,90,75.0,ds_a0,E,2,0,72,0,0.1971,
+lotto da riusare,R2,2.0,90,75.0,ds_a05,B,7,0,60,0,0.0203,
+lotto da riusare,R2,2.0,90,75.0,ds_a05,C,12,0,183,0,0.0497,
+lotto da riusare,R2,2.0,90,75.0,ds_a05,D,146,0,2623,0,0.1485,
+lotto da riusare,R2,2.0,90,75.0,ds_a05,E,2,0,72,0,0.1955,
+lotto da riusare,R2,2.0,90,75.0,ds_a08,B,7,0,60,0,0.0055,
+lotto da riusare,R2,2.0,90,75.0,ds_a08,C,12,0,183,0,0.026,
+lotto da riusare,R2,2.0,90,75.0,ds_a08,D,146,0,2623,0,0.1244,
+lotto da riusare,R2,2.0,90,75.0,ds_a08,E,2,0,72,0,0.1947,
+lotto da riusare,R2,2.0,90,90.0,acq,B,7,0,60,0,0.0184,5885.9635
+lotto da riusare,R2,2.0,90,90.0,acq,C,12,0,183,0,0.0713,3453.2152
+lotto da riusare,R2,2.0,90,90.0,acq,D,146,3,2623,366,0.3456,592.3326
+lotto da riusare,R2,2.0,90,90.0,acq,E,2,1,72,8,0.5152,-44.0569
+lotto da riusare,R2,2.0,90,90.0,ces,B,7,6,60,53,0.5519,-219.0427
+lotto da riusare,R2,2.0,90,90.0,ces,C,12,11,183,168,0.5387,-127.4841
+lotto da riusare,R2,2.0,90,90.0,ces,D,146,137,2623,2309,0.5522,-219.3749
+lotto da riusare,R2,2.0,90,90.0,ces,E,2,1,72,8,0.5203,-60.7973
+lotto da riusare,R2,2.0,90,90.0,ds_a0,B,7,6,60,53,0.5517,-218.0427
+lotto da riusare,R2,2.0,90,90.0,ds_a0,C,12,11,183,168,0.5385,-126.4841
+lotto da riusare,R2,2.0,90,90.0,ds_a0,D,146,137,2623,2309,0.5519,-218.3749
+lotto da riusare,R2,2.0,90,90.0,ds_a0,E,2,1,72,8,0.5199,-59.7973
+lotto da riusare,R2,2.0,90,90.0,ds_a05,B,7,0,60,0,0.0847,2827.464
+lotto da riusare,R2,2.0,90,90.0,ds_a05,C,12,0,183,0,0.1852,1615.8568
+lotto da riusare,R2,2.0,90,90.0,ds_a05,D,146,24,2623,651,0.4266,210.9383
+lotto da riusare,R2,2.0,90,90.0,ds_a05,E,2,1,72,8,0.5179,-53.6988
+lotto da riusare,R2,2.0,90,90.0,ds_a08,B,7,0,60,0,0.0328,4646.3593
+lotto da riusare,R2,2.0,90,90.0,ds_a08,C,12,0,183,0,0.1017,2699.7949
+lotto da riusare,R2,2.0,90,90.0,ds_a08,D,146,3,2623,366,0.3741,442.4559
+lotto da riusare,R2,2.0,90,90.0,ds_a08,E,2,1,72,8,0.5161,-48.9697
+lotto da riusare,R2,2.0,90,110.0,acq,B,7,0,60,0,0.0866,
+lotto da riusare,R2,2.0,90,110.0,acq,C,12,0,183,0,0.2566,
+lotto da riusare,R2,2.0,90,110.0,acq,D,146,143,2623,2573,0.7307,
+lotto da riusare,R2,2.0,90,110.0,acq,E,2,2,72,72,0.9506,
+lotto da riusare,R2,2.0,90,110.0,ces,B,7,7,60,60,0.9736,
+lotto da riusare,R2,2.0,90,110.0,ces,C,12,12,183,183,0.9704,
+lotto da riusare,R2,2.0,90,110.0,ces,D,146,145,2623,2580,0.9716,
+lotto da riusare,R2,2.0,90,110.0,ces,E,2,2,72,72,0.9574,
+lotto da riusare,R2,2.0,90,110.0,ds_a0,B,7,7,60,60,0.9735,
+lotto da riusare,R2,2.0,90,110.0,ds_a0,C,12,12,183,183,0.9703,
+lotto da riusare,R2,2.0,90,110.0,ds_a0,D,146,145,2623,2580,0.9715,
+lotto da riusare,R2,2.0,90,110.0,ds_a0,E,2,2,72,72,0.9572,
+lotto da riusare,R2,2.0,90,110.0,ds_a05,B,7,0,60,0,0.3024,
+lotto da riusare,R2,2.0,90,110.0,ds_a05,C,12,8,183,146,0.5255,
+lotto da riusare,R2,2.0,90,110.0,ds_a05,D,146,145,2623,2580,0.8496,
+lotto da riusare,R2,2.0,90,110.0,ds_a05,E,2,2,72,72,0.9545,
+lotto da riusare,R2,2.0,90,110.0,ds_a08,B,7,0,60,0,0.1385,
+lotto da riusare,R2,2.0,90,110.0,ds_a08,C,12,0,183,0,0.3405,
+lotto da riusare,R2,2.0,90,110.0,ds_a08,D,146,143,2623,2573,0.7743,
+lotto da riusare,R2,2.0,90,110.0,ds_a08,E,2,2,72,72,0.952,
+lotto da riusare,R2,2.0,90,130.0,acq,B,7,0,60,0,0.2314,
+lotto da riusare,R2,2.0,90,130.0,acq,C,12,9,183,161,0.516,
+lotto da riusare,R2,2.0,90,130.0,acq,D,146,146,2623,2623,0.9084,
+lotto da riusare,R2,2.0,90,130.0,acq,E,2,2,72,72,0.9988,
+lotto da riusare,R2,2.0,90,130.0,ces,B,7,7,60,60,0.9998,
+lotto da riusare,R2,2.0,90,130.0,ces,C,12,12,183,183,0.9999,
+lotto da riusare,R2,2.0,90,130.0,ces,D,146,146,2623,2623,0.9972,
+lotto da riusare,R2,2.0,90,130.0,ces,E,2,2,72,72,0.9996,
+lotto da riusare,R2,2.0,90,130.0,ds_a0,B,7,7,60,60,0.9998,
+lotto da riusare,R2,2.0,90,130.0,ds_a0,C,12,12,183,183,0.9999,
+lotto da riusare,R2,2.0,90,130.0,ds_a0,D,146,146,2623,2623,0.9972,
+lotto da riusare,R2,2.0,90,130.0,ds_a0,E,2,2,72,72,0.9996,
+lotto da riusare,R2,2.0,90,130.0,ds_a05,B,7,5,60,28,0.602,
+lotto da riusare,R2,2.0,90,130.0,ds_a05,C,12,12,183,183,0.826,
+lotto da riusare,R2,2.0,90,130.0,ds_a05,D,146,146,2623,2623,0.9763,
+lotto da riusare,R2,2.0,90,130.0,ds_a05,E,2,2,72,72,0.9994,
+lotto da riusare,R2,2.0,90,130.0,ds_a08,B,7,2,60,11,0.3418,
+lotto da riusare,R2,2.0,90,130.0,ds_a08,C,12,9,183,161,0.629,
+lotto da riusare,R2,2.0,90,130.0,ds_a08,D,146,146,2623,2623,0.9388,
+lotto da riusare,R2,2.0,90,130.0,ds_a08,E,2,2,72,72,0.999,
+lotto edificabile,nuovo,0.5,30,60.0,acq,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,acq,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,acq,D,176,0,12448,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,acq,E,15,0,787,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ces,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ces,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ces,D,176,0,12448,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ces,E,15,0,787,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a0,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a0,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a0,D,176,0,12448,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a0,E,15,0,787,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a05,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a05,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a05,D,176,0,12448,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a05,E,15,0,787,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a08,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a08,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a08,D,176,0,12448,0,0.0,
+lotto edificabile,nuovo,0.5,30,60.0,ds_a08,E,15,0,787,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,acq,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,acq,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,acq,D,176,0,12448,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,acq,E,15,0,787,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ces,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ces,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ces,D,176,0,12448,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ces,E,15,0,787,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a0,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a0,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a0,D,176,0,12448,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a0,E,15,0,787,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a05,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a05,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a05,D,176,0,12448,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a05,E,15,0,787,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a08,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a08,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a08,D,176,0,12448,0,0.0,
+lotto edificabile,nuovo,0.5,30,75.0,ds_a08,E,15,0,787,0,0.0,
+lotto edificabile,nuovo,0.5,30,90.0,acq,B,3,0,218,0,0.0,2374.7739
+lotto edificabile,nuovo,0.5,30,90.0,acq,C,22,0,2936,0,0.0,1687.0673
+lotto edificabile,nuovo,0.5,30,90.0,acq,D,176,0,12448,0,0.0,958.6066
+lotto edificabile,nuovo,0.5,30,90.0,acq,E,15,0,787,0,0.0,756.5793
+lotto edificabile,nuovo,0.5,30,90.0,ces,B,3,0,218,0,0.0,746.0296
+lotto edificabile,nuovo,0.5,30,90.0,ces,C,22,0,2936,0,0.0,746.0296
+lotto edificabile,nuovo,0.5,30,90.0,ces,D,176,0,12448,0,0.0,746.0296
+lotto edificabile,nuovo,0.5,30,90.0,ces,E,15,0,787,0,0.0,746.0296
+lotto edificabile,nuovo,0.5,30,90.0,ds_a0,B,3,0,218,0,0.0,747.0296
+lotto edificabile,nuovo,0.5,30,90.0,ds_a0,C,22,0,2936,0,0.0,747.0296
+lotto edificabile,nuovo,0.5,30,90.0,ds_a0,D,176,0,12448,0,0.0,747.0296
+lotto edificabile,nuovo,0.5,30,90.0,ds_a0,E,15,0,787,0,0.0,747.0296
+lotto edificabile,nuovo,0.5,30,90.0,ds_a05,B,3,0,218,0,0.0,1569.0971
+lotto edificabile,nuovo,0.5,30,90.0,ds_a05,C,22,0,2936,0,0.0,1226.2421
+lotto edificabile,nuovo,0.5,30,90.0,ds_a05,D,176,0,12448,0,0.0,855.6263
+lotto edificabile,nuovo,0.5,30,90.0,ds_a05,E,15,0,787,0,0.0,750.3907
+lotto edificabile,nuovo,0.5,30,90.0,ds_a08,B,3,0,218,0,0.0,2052.1602
+lotto edificabile,nuovo,0.5,30,90.0,ds_a08,C,22,0,2936,0,0.0,1501.7847
+lotto edificabile,nuovo,0.5,30,90.0,ds_a08,D,176,0,12448,0,0.0,922.0618
+lotto edificabile,nuovo,0.5,30,90.0,ds_a08,E,15,0,787,0,0.0,753.5732
+lotto edificabile,nuovo,0.5,30,110.0,acq,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,110.0,acq,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,110.0,acq,D,176,0,12448,0,0.0001,
+lotto edificabile,nuovo,0.5,30,110.0,acq,E,15,0,787,0,0.0002,
+lotto edificabile,nuovo,0.5,30,110.0,ces,B,3,0,218,0,0.0002,
+lotto edificabile,nuovo,0.5,30,110.0,ces,C,22,0,2936,0,0.0002,
+lotto edificabile,nuovo,0.5,30,110.0,ces,D,176,0,12448,0,0.0002,
+lotto edificabile,nuovo,0.5,30,110.0,ces,E,15,0,787,0,0.0002,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a0,B,3,0,218,0,0.0002,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a0,C,22,0,2936,0,0.0002,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a0,D,176,0,12448,0,0.0002,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a0,E,15,0,787,0,0.0002,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a05,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a05,C,22,0,2936,0,0.0001,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a05,D,176,0,12448,0,0.0001,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a05,E,15,0,787,0,0.0002,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a08,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a08,C,22,0,2936,0,0.0,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a08,D,176,0,12448,0,0.0001,
+lotto edificabile,nuovo,0.5,30,110.0,ds_a08,E,15,0,787,0,0.0002,
+lotto edificabile,nuovo,0.5,30,130.0,acq,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,130.0,acq,C,22,0,2936,0,0.0001,
+lotto edificabile,nuovo,0.5,30,130.0,acq,D,176,0,12448,0,0.0012,
+lotto edificabile,nuovo,0.5,30,130.0,acq,E,15,0,787,0,0.0048,
+lotto edificabile,nuovo,0.5,30,130.0,ces,B,3,0,218,0,0.0065,
+lotto edificabile,nuovo,0.5,30,130.0,ces,C,22,0,2936,0,0.0065,
+lotto edificabile,nuovo,0.5,30,130.0,ces,D,176,0,12448,0,0.0065,
+lotto edificabile,nuovo,0.5,30,130.0,ces,E,15,0,787,0,0.0065,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a0,B,3,0,218,0,0.0065,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a0,C,22,0,2936,0,0.0065,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a0,D,176,0,12448,0,0.0065,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a0,E,15,0,787,0,0.0065,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a05,B,3,0,218,0,0.0001,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a05,C,22,0,2936,0,0.0001,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a05,D,176,0,12448,0,0.0016,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a05,E,15,0,787,0,0.0053,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a08,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a08,C,22,0,2936,0,0.0001,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a08,D,176,0,12448,0,0.0012,
+lotto edificabile,nuovo,0.5,30,130.0,ds_a08,E,15,0,787,0,0.0049,
+lotto edificabile,nuovo,0.5,60,60.0,acq,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,60,60.0,acq,C,22,0,2936,0,0.0001,
+lotto edificabile,nuovo,0.5,60,60.0,acq,D,176,0,12448,0,0.0002,
+lotto edificabile,nuovo,0.5,60,60.0,acq,E,15,0,787,0,0.0004,
+lotto edificabile,nuovo,0.5,60,60.0,ces,B,3,0,218,0,0.0005,
+lotto edificabile,nuovo,0.5,60,60.0,ces,C,22,0,2936,0,0.0005,
+lotto edificabile,nuovo,0.5,60,60.0,ces,D,176,0,12448,0,0.0005,
+lotto edificabile,nuovo,0.5,60,60.0,ces,E,15,0,787,0,0.0005,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a0,B,3,0,218,0,0.0005,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a0,C,22,0,2936,0,0.0005,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a0,D,176,0,12448,0,0.0005,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a0,E,15,0,787,0,0.0005,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a05,B,3,0,218,0,0.0001,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a05,C,22,0,2936,0,0.0001,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a05,D,176,0,12448,0,0.0002,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a05,E,15,0,787,0,0.0005,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a08,B,3,0,218,0,0.0,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a08,C,22,0,2936,0,0.0001,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a08,D,176,0,12448,0,0.0002,
+lotto edificabile,nuovo,0.5,60,60.0,ds_a08,E,15,0,787,0,0.0004,
+lotto edificabile,nuovo,0.5,60,75.0,acq,B,3,0,218,0,0.0001,
+lotto edificabile,nuovo,0.5,60,75.0,acq,C,22,0,2936,0,0.0007,
+lotto edificabile,nuovo,0.5,60,75.0,acq,D,176,0,12448,0,0.0057,
+lotto edificabile,nuovo,0.5,60,75.0,acq,E,15,0,787,0,0.0148,
+lotto edificabile,nuovo,0.5,60,75.0,ces,B,3,0,218,0,0.0169,
+lotto edificabile,nuovo,0.5,60,75.0,ces,C,22,0,2936,0,0.0169,
+lotto edificabile,nuovo,0.5,60,75.0,ces,D,176,0,12448,0,0.0169,
+lotto edificabile,nuovo,0.5,60,75.0,ces,E,15,0,787,0,0.0169,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a0,B,3,0,218,0,0.0169,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a0,C,22,0,2936,0,0.0169,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a0,D,176,0,12448,0,0.0169,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a0,E,15,0,787,0,0.0169,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a05,B,3,0,218,0,0.0002,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a05,C,22,0,2936,0,0.0018,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a05,D,176,0,12448,0,0.0085,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a05,E,15,0,787,0,0.0158,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a08,B,3,0,218,0,0.0001,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a08,C,22,0,2936,0,0.001,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a08,D,176,0,12448,0,0.0064,
+lotto edificabile,nuovo,0.5,60,75.0,ds_a08,E,15,0,787,0,0.0152,
+lotto edificabile,nuovo,0.5,60,90.0,acq,B,3,0,218,0,0.0002,1891.4627
+lotto edificabile,nuovo,0.5,60,90.0,acq,C,22,0,2936,0,0.0101,1209.0376
+lotto edificabile,nuovo,0.5,60,90.0,acq,D,176,0,12448,0,0.0517,487.6484
+lotto edificabile,nuovo,0.5,60,90.0,acq,E,15,0,787,0,0.1036,324.6018
+lotto edificabile,nuovo,0.5,60,90.0,ces,B,3,0,218,0,0.1143,317.4833
+lotto edificabile,nuovo,0.5,60,90.0,ces,C,22,0,2936,0,0.1143,317.4833
+lotto edificabile,nuovo,0.5,60,90.0,ces,D,176,0,12448,0,0.1143,317.4833
+lotto edificabile,nuovo,0.5,60,90.0,ces,E,15,0,787,0,0.1143,317.4833
+lotto edificabile,nuovo,0.5,60,90.0,ds_a0,B,3,0,218,0,0.1136,318.4833
+lotto edificabile,nuovo,0.5,60,90.0,ds_a0,C,22,0,2936,0,0.1136,318.4833
+lotto edificabile,nuovo,0.5,60,90.0,ds_a0,D,176,0,12448,0,0.1136,318.4833
+lotto edificabile,nuovo,0.5,60,90.0,ds_a0,E,15,0,787,0,0.1136,318.4833
+lotto edificabile,nuovo,0.5,60,90.0,ds_a05,B,3,0,218,0,0.004,1099.2574
+lotto edificabile,nuovo,0.5,60,90.0,ds_a05,C,22,0,2936,0,0.0229,760.6848
+lotto edificabile,nuovo,0.5,60,90.0,ds_a05,D,176,0,12448,0,0.0692,404.6174
+lotto edificabile,nuovo,0.5,60,90.0,ds_a05,E,15,0,787,0,0.108,320.7018
+lotto edificabile,nuovo,0.5,60,90.0,ds_a08,B,3,0,218,0,0.0009,1570.9138
+lotto edificabile,nuovo,0.5,60,90.0,ds_a08,C,22,0,2936,0,0.0135,1027.6345
+lotto edificabile,nuovo,0.5,60,90.0,ds_a08,D,176,0,12448,0,0.0572,455.2616
+lotto edificabile,nuovo,0.5,60,90.0,ds_a08,E,15,0,787,0,0.1054,323.1068
+lotto edificabile,nuovo,0.5,60,110.0,acq,B,3,0,218,0,0.0081,
+lotto edificabile,nuovo,0.5,60,110.0,acq,C,22,0,2936,0,0.0744,
+lotto edificabile,nuovo,0.5,60,110.0,acq,D,176,0,12448,0,0.2729,
+lotto edificabile,nuovo,0.5,60,110.0,acq,E,15,0,787,0,0.4419,
+lotto edificabile,nuovo,0.5,60,110.0,ces,B,3,0,218,0,0.4648,
+lotto edificabile,nuovo,0.5,60,110.0,ces,C,22,0,2936,0,0.4648,
+lotto edificabile,nuovo,0.5,60,110.0,ces,D,176,0,12448,0,0.4648,
+lotto edificabile,nuovo,0.5,60,110.0,ces,E,15,0,787,0,0.4648,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a0,B,3,0,218,0,0.4641,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a0,C,22,0,2936,0,0.4641,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a0,D,176,0,12448,0,0.4641,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a0,E,15,0,787,0,0.4641,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a05,B,3,0,218,0,0.0432,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a05,C,22,0,2936,0,0.1473,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a05,D,176,0,12448,0,0.3433,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a05,E,15,0,787,0,0.4523,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a08,B,3,0,218,0,0.0146,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a08,C,22,0,2936,0,0.095,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a08,D,176,0,12448,0,0.296,
+lotto edificabile,nuovo,0.5,60,110.0,ds_a08,E,15,0,787,0,0.4459,
+lotto edificabile,nuovo,0.5,60,130.0,acq,B,3,0,218,0,0.0441,
+lotto edificabile,nuovo,0.5,60,130.0,acq,C,22,2,2936,303,0.2495,
+lotto edificabile,nuovo,0.5,60,130.0,acq,D,176,155,12448,11762,0.6817,
+lotto edificabile,nuovo,0.5,60,130.0,acq,E,15,15,787,787,0.9319,
+lotto edificabile,nuovo,0.5,60,130.0,ces,B,3,3,218,218,0.9582,
+lotto edificabile,nuovo,0.5,60,130.0,ces,C,22,22,2936,2936,0.9582,
+lotto edificabile,nuovo,0.5,60,130.0,ces,D,176,176,12448,12448,0.9582,
+lotto edificabile,nuovo,0.5,60,130.0,ces,E,15,15,787,787,0.9582,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a0,B,3,3,218,218,0.9568,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a0,C,22,22,2936,2936,0.9568,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a0,D,176,176,12448,12448,0.9568,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a0,E,15,15,787,787,0.9568,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a05,B,3,0,218,0,0.1851,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a05,C,22,10,2936,2574,0.448,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a05,D,176,174,12448,12389,0.8071,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a05,E,15,15,787,787,0.945,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a08,B,3,0,218,0,0.0755,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a08,C,22,10,2936,2574,0.3052,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a08,D,176,161,12448,11963,0.7268,
+lotto edificabile,nuovo,0.5,60,130.0,ds_a08,E,15,15,787,787,0.9369,
+lotto edificabile,nuovo,0.5,90,60.0,acq,B,3,0,218,0,0.0006,
+lotto edificabile,nuovo,0.5,90,60.0,acq,C,22,0,2936,0,0.0067,
+lotto edificabile,nuovo,0.5,90,60.0,acq,D,176,0,12448,0,0.0273,
+lotto edificabile,nuovo,0.5,90,60.0,acq,E,15,0,787,0,0.047,
+lotto edificabile,nuovo,0.5,90,60.0,ces,B,3,0,218,0,0.0506,
+lotto edificabile,nuovo,0.5,90,60.0,ces,C,22,0,2936,0,0.0506,
+lotto edificabile,nuovo,0.5,90,60.0,ces,D,176,0,12448,0,0.0506,
+lotto edificabile,nuovo,0.5,90,60.0,ces,E,15,0,787,0,0.0506,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a0,B,3,0,218,0,0.0506,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a0,C,22,0,2936,0,0.0506,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a0,D,176,0,12448,0,0.0506,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a0,E,15,0,787,0,0.0506,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a05,B,3,0,218,0,0.0034,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a05,C,22,0,2936,0,0.0139,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a05,D,176,0,12448,0,0.0345,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a05,E,15,0,787,0,0.0482,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a08,B,3,0,218,0,0.0011,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a08,C,22,0,2936,0,0.0085,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a08,D,176,0,12448,0,0.0298,
+lotto edificabile,nuovo,0.5,90,60.0,ds_a08,E,15,0,787,0,0.0476,
+lotto edificabile,nuovo,0.5,90,75.0,acq,B,3,0,218,0,0.0083,
+lotto edificabile,nuovo,0.5,90,75.0,acq,C,22,0,2936,0,0.0462,
+lotto edificabile,nuovo,0.5,90,75.0,acq,D,176,0,12448,0,0.144,
+lotto edificabile,nuovo,0.5,90,75.0,acq,E,15,0,787,0,0.223,
+lotto edificabile,nuovo,0.5,90,75.0,ces,B,3,0,218,0,0.2329,
+lotto edificabile,nuovo,0.5,90,75.0,ces,C,22,0,2936,0,0.2329,
+lotto edificabile,nuovo,0.5,90,75.0,ces,D,176,0,12448,0,0.2329,
+lotto edificabile,nuovo,0.5,90,75.0,ces,E,15,0,787,0,0.2329,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a0,B,3,0,218,0,0.2321,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a0,C,22,0,2936,0,0.2321,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a0,D,176,0,12448,0,0.2321,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a0,E,15,0,787,0,0.2321,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a05,B,3,0,218,0,0.0329,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a05,C,22,0,2936,0,0.0874,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a05,D,176,0,12448,0,0.1777,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a05,E,15,0,787,0,0.2272,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a08,B,3,0,218,0,0.0138,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a08,C,22,0,2936,0,0.058,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a08,D,176,0,12448,0,0.1556,
+lotto edificabile,nuovo,0.5,90,75.0,ds_a08,E,15,0,787,0,0.2246,
+lotto edificabile,nuovo,0.5,90,90.0,acq,B,3,0,218,0,0.0383,1464.1266
+lotto edificabile,nuovo,0.5,90,90.0,acq,C,22,0,2936,0,0.1612,789.3269
+lotto edificabile,nuovo,0.5,90,90.0,acq,D,176,36,12448,7377,0.4164,75.4147
+lotto edificabile,nuovo,0.5,90,90.0,acq,E,15,15,787,787,0.5721,-65.1748
+lotto edificabile,nuovo,0.5,90,90.0,ces,B,3,3,218,218,0.5886,-72.0802
+lotto edificabile,nuovo,0.5,90,90.0,ces,C,22,22,2936,2936,0.5886,-72.0802
+lotto edificabile,nuovo,0.5,90,90.0,ces,D,176,176,12448,12448,0.5886,-72.0802
+lotto edificabile,nuovo,0.5,90,90.0,ces,E,15,15,787,787,0.5886,-72.0802
+lotto edificabile,nuovo,0.5,90,90.0,ds_a0,B,3,3,218,218,0.5858,-71.0802
+lotto edificabile,nuovo,0.5,90,90.0,ds_a0,C,22,22,2936,2936,0.5858,-71.0802
+lotto edificabile,nuovo,0.5,90,90.0,ds_a0,D,176,176,12448,12448,0.5858,-71.0802
+lotto edificabile,nuovo,0.5,90,90.0,ds_a0,E,15,15,787,787,0.5858,-71.0802
+lotto edificabile,nuovo,0.5,90,90.0,ds_a05,B,3,0,218,0,0.127,687.8789
+lotto edificabile,nuovo,0.5,90,90.0,ds_a05,C,22,0,2936,0,0.2769,359.7463
+lotto edificabile,nuovo,0.5,90,90.0,ds_a05,D,176,76,12448,9041,0.4869,10.7624
+lotto edificabile,nuovo,0.5,90,90.0,ds_a05,E,15,15,787,787,0.5807,-69.9405
+lotto edificabile,nuovo,0.5,90,90.0,ds_a08,B,3,0,218,0,0.0629,1148.9823
+lotto edificabile,nuovo,0.5,90,90.0,ds_a08,C,22,0,2936,0,0.1932,617.2523
+lotto edificabile,nuovo,0.5,90,90.0,ds_a08,D,176,42,12448,8019,0.4412,50.8368
+lotto edificabile,nuovo,0.5,90,90.0,ds_a08,E,15,15,787,787,0.5757,-66.1156
+lotto edificabile,nuovo,0.5,90,110.0,acq,B,3,0,218,0,0.1512,
+lotto edificabile,nuovo,0.5,90,110.0,acq,C,22,10,2936,2574,0.4152,
+lotto edificabile,nuovo,0.5,90,110.0,acq,D,176,174,12448,12389,0.806,
+lotto edificabile,nuovo,0.5,90,110.0,acq,E,15,15,787,787,0.9692,
+lotto edificabile,nuovo,0.5,90,110.0,ces,B,3,3,218,218,0.9882,
+lotto edificabile,nuovo,0.5,90,110.0,ces,C,22,22,2936,2936,0.9882,
+lotto edificabile,nuovo,0.5,90,110.0,ces,D,176,176,12448,12448,0.9882,
+lotto edificabile,nuovo,0.5,90,110.0,ces,E,15,15,787,787,0.9882,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a0,B,3,3,218,218,0.9877,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a0,C,22,22,2936,2936,0.9877,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a0,D,176,176,12448,12448,0.9877,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a0,E,15,15,787,787,0.9877,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a05,B,3,1,218,204,0.3937,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a05,C,22,17,2936,2809,0.6449,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a05,D,176,176,12448,12448,0.9005,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a05,E,15,15,787,787,0.9788,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a08,B,3,0,218,0,0.2181,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a08,C,22,10,2936,2574,0.4897,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a08,D,176,174,12448,12389,0.8422,
+lotto edificabile,nuovo,0.5,90,110.0,ds_a08,E,15,15,787,787,0.9728,
+lotto edificabile,nuovo,0.5,90,130.0,acq,B,3,1,218,204,0.3337,
+lotto edificabile,nuovo,0.5,90,130.0,acq,C,22,17,2936,2809,0.6456,
+lotto edificabile,nuovo,0.5,90,130.0,acq,D,176,176,12448,12448,0.9441,
+lotto edificabile,nuovo,0.5,90,130.0,acq,E,15,15,787,787,0.9977,
+lotto edificabile,nuovo,0.5,90,130.0,ces,B,3,3,218,218,1.0,
+lotto edificabile,nuovo,0.5,90,130.0,ces,C,22,22,2936,2936,1.0,
+lotto edificabile,nuovo,0.5,90,130.0,ces,D,176,176,12448,12448,1.0,
+lotto edificabile,nuovo,0.5,90,130.0,ces,E,15,15,787,787,1.0,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a0,B,3,3,218,218,1.0,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a0,C,22,22,2936,2936,1.0,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a0,D,176,176,12448,12448,1.0,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a0,E,15,15,787,787,1.0,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a05,B,3,3,218,218,0.6866,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a05,C,22,22,2936,2936,0.8754,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a05,D,176,176,12448,12448,0.9889,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a05,E,15,15,787,787,0.9998,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a08,B,3,1,218,204,0.4465,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a08,C,22,20,2936,2882,0.7288,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a08,D,176,176,12448,12448,0.9649,
+lotto edificabile,nuovo,0.5,90,130.0,ds_a08,E,15,15,787,787,0.9988,
+lotto edificabile,nuovo,1.0,30,60.0,acq,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,acq,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,acq,D,176,0,24985,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,acq,E,15,0,1580,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ces,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ces,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ces,D,176,0,24985,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ces,E,15,0,1580,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a0,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a0,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a0,D,176,0,24985,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a0,E,15,0,1580,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a05,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a05,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a05,D,176,0,24985,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a05,E,15,0,1580,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a08,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a08,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a08,D,176,0,24985,0,0.0,
+lotto edificabile,nuovo,1.0,30,60.0,ds_a08,E,15,0,1580,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,acq,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,acq,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,acq,D,176,0,24985,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,acq,E,15,0,1580,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ces,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ces,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ces,D,176,0,24985,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ces,E,15,0,1580,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a0,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a0,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a0,D,176,0,24985,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a0,E,15,0,1580,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a05,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a05,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a05,D,176,0,24985,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a05,E,15,0,1580,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a08,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a08,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a08,D,176,0,24985,0,0.0,
+lotto edificabile,nuovo,1.0,30,75.0,ds_a08,E,15,0,1580,0,0.0,
+lotto edificabile,nuovo,1.0,30,90.0,acq,B,3,0,437,0,0.0,4749.5477
+lotto edificabile,nuovo,1.0,30,90.0,acq,C,22,0,5883,0,0.0,2791.0072
+lotto edificabile,nuovo,1.0,30,90.0,acq,D,176,0,24985,0,0.0,1810.8331
+lotto edificabile,nuovo,1.0,30,90.0,acq,E,15,0,1580,0,0.0,1492.4741
+lotto edificabile,nuovo,1.0,30,90.0,ces,B,3,0,437,0,0.0,1492.0593
+lotto edificabile,nuovo,1.0,30,90.0,ces,C,22,0,5883,0,0.0,1492.0593
+lotto edificabile,nuovo,1.0,30,90.0,ces,D,176,0,24985,0,0.0,1492.0593
+lotto edificabile,nuovo,1.0,30,90.0,ces,E,15,0,1580,0,0.0,1492.0593
+lotto edificabile,nuovo,1.0,30,90.0,ds_a0,B,3,0,437,0,0.0,1493.0593
+lotto edificabile,nuovo,1.0,30,90.0,ds_a0,C,22,0,5883,0,0.0,1493.0593
+lotto edificabile,nuovo,1.0,30,90.0,ds_a0,D,176,0,24985,0,0.0,1493.0593
+lotto edificabile,nuovo,1.0,30,90.0,ds_a0,E,15,0,1580,0,0.0,1493.0593
+lotto edificabile,nuovo,1.0,30,90.0,ds_a05,B,3,0,437,0,0.0,3138.1943
+lotto edificabile,nuovo,1.0,30,90.0,ds_a05,C,22,0,5883,0,0.0,2161.0144
+lotto edificabile,nuovo,1.0,30,90.0,ds_a05,D,176,0,24985,0,0.0,1655.8559
+lotto edificabile,nuovo,1.0,30,90.0,ds_a05,E,15,0,1580,0,0.0,1492.1094
+lotto edificabile,nuovo,1.0,30,90.0,ds_a08,B,3,0,437,0,0.0,4104.3203
+lotto edificabile,nuovo,1.0,30,90.0,ds_a08,C,22,0,5883,0,0.0,2538.8625
+lotto edificabile,nuovo,1.0,30,90.0,ds_a08,D,176,0,24985,0,0.0,1752.5726
+lotto edificabile,nuovo,1.0,30,90.0,ds_a08,E,15,0,1580,0,0.0,1492.3468
+lotto edificabile,nuovo,1.0,30,110.0,acq,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,110.0,acq,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,110.0,acq,D,176,0,24985,0,0.0001,
+lotto edificabile,nuovo,1.0,30,110.0,acq,E,15,0,1580,0,0.0002,
+lotto edificabile,nuovo,1.0,30,110.0,ces,B,3,0,437,0,0.0002,
+lotto edificabile,nuovo,1.0,30,110.0,ces,C,22,0,5883,0,0.0002,
+lotto edificabile,nuovo,1.0,30,110.0,ces,D,176,0,24985,0,0.0002,
+lotto edificabile,nuovo,1.0,30,110.0,ces,E,15,0,1580,0,0.0002,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a0,B,3,0,437,0,0.0002,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a0,C,22,0,5883,0,0.0002,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a0,D,176,0,24985,0,0.0002,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a0,E,15,0,1580,0,0.0002,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a05,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a05,C,22,0,5883,0,0.0001,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a05,D,176,0,24985,0,0.0002,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a05,E,15,0,1580,0,0.0002,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a08,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a08,C,22,0,5883,0,0.0,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a08,D,176,0,24985,0,0.0001,
+lotto edificabile,nuovo,1.0,30,110.0,ds_a08,E,15,0,1580,0,0.0002,
+lotto edificabile,nuovo,1.0,30,130.0,acq,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,130.0,acq,C,22,0,5883,0,0.0001,
+lotto edificabile,nuovo,1.0,30,130.0,acq,D,176,0,24985,0,0.0018,
+lotto edificabile,nuovo,1.0,30,130.0,acq,E,15,0,1580,0,0.0057,
+lotto edificabile,nuovo,1.0,30,130.0,ces,B,3,0,437,0,0.0065,
+lotto edificabile,nuovo,1.0,30,130.0,ces,C,22,0,5883,0,0.0065,
+lotto edificabile,nuovo,1.0,30,130.0,ces,D,176,0,24985,0,0.0065,
+lotto edificabile,nuovo,1.0,30,130.0,ces,E,15,0,1580,0,0.0065,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a0,B,3,0,437,0,0.0065,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a0,C,22,0,5883,0,0.0065,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a0,D,176,0,24985,0,0.0065,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a0,E,15,0,1580,0,0.0065,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a05,B,3,0,437,0,0.0001,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a05,C,22,0,5883,0,0.0001,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a05,D,176,0,24985,0,0.0023,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a05,E,15,0,1580,0,0.006,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a08,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a08,C,22,0,5883,0,0.0001,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a08,D,176,0,24985,0,0.002,
+lotto edificabile,nuovo,1.0,30,130.0,ds_a08,E,15,0,1580,0,0.0057,
+lotto edificabile,nuovo,1.0,60,60.0,acq,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,60,60.0,acq,C,22,0,5883,0,0.0001,
+lotto edificabile,nuovo,1.0,60,60.0,acq,D,176,0,24985,0,0.0002,
+lotto edificabile,nuovo,1.0,60,60.0,acq,E,15,0,1580,0,0.0004,
+lotto edificabile,nuovo,1.0,60,60.0,ces,B,3,0,437,0,0.0005,
+lotto edificabile,nuovo,1.0,60,60.0,ces,C,22,0,5883,0,0.0005,
+lotto edificabile,nuovo,1.0,60,60.0,ces,D,176,0,24985,0,0.0005,
+lotto edificabile,nuovo,1.0,60,60.0,ces,E,15,0,1580,0,0.0005,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a0,B,3,0,437,0,0.0005,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a0,C,22,0,5883,0,0.0005,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a0,D,176,0,24985,0,0.0005,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a0,E,15,0,1580,0,0.0005,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a05,B,3,0,437,0,0.0001,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a05,C,22,0,5883,0,0.0001,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a05,D,176,0,24985,0,0.0002,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a05,E,15,0,1580,0,0.0005,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a08,B,3,0,437,0,0.0,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a08,C,22,0,5883,0,0.0001,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a08,D,176,0,24985,0,0.0002,
+lotto edificabile,nuovo,1.0,60,60.0,ds_a08,E,15,0,1580,0,0.0004,
+lotto edificabile,nuovo,1.0,60,75.0,acq,B,3,0,437,0,0.0001,
+lotto edificabile,nuovo,1.0,60,75.0,acq,C,22,0,5883,0,0.0007,
+lotto edificabile,nuovo,1.0,60,75.0,acq,D,176,0,24985,0,0.0079,
+lotto edificabile,nuovo,1.0,60,75.0,acq,E,15,0,1580,0,0.016,
+lotto edificabile,nuovo,1.0,60,75.0,ces,B,3,0,437,0,0.0169,
+lotto edificabile,nuovo,1.0,60,75.0,ces,C,22,0,5883,0,0.0169,
+lotto edificabile,nuovo,1.0,60,75.0,ces,D,176,0,24985,0,0.0169,
+lotto edificabile,nuovo,1.0,60,75.0,ces,E,15,0,1580,0,0.0169,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a0,B,3,0,437,0,0.0169,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a0,C,22,0,5883,0,0.0169,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a0,D,176,0,24985,0,0.0169,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a0,E,15,0,1580,0,0.0169,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a05,B,3,0,437,0,0.0002,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a05,C,22,0,5883,0,0.002,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a05,D,176,0,24985,0,0.0103,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a05,E,15,0,1580,0,0.0166,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a08,B,3,0,437,0,0.0001,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a08,C,22,0,5883,0,0.0011,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a08,D,176,0,24985,0,0.0085,
+lotto edificabile,nuovo,1.0,60,75.0,ds_a08,E,15,0,1580,0,0.0163,
+lotto edificabile,nuovo,1.0,60,90.0,acq,B,3,0,437,0,0.0002,3782.9253
+lotto edificabile,nuovo,1.0,60,90.0,acq,C,22,0,5883,0,0.0111,1837.2598
+lotto edificabile,nuovo,1.0,60,90.0,acq,D,176,0,24985,0,0.0643,874.7927
+lotto edificabile,nuovo,1.0,60,90.0,acq,E,15,0,1580,0,0.1109,635.271
+lotto edificabile,nuovo,1.0,60,90.0,ces,B,3,0,437,0,0.1143,634.9667
+lotto edificabile,nuovo,1.0,60,90.0,ces,C,22,0,5883,0,0.1143,634.9667
+lotto edificabile,nuovo,1.0,60,90.0,ces,D,176,0,24985,0,0.1143,634.9667
+lotto edificabile,nuovo,1.0,60,90.0,ces,E,15,0,1580,0,0.1143,634.9667
+lotto edificabile,nuovo,1.0,60,90.0,ds_a0,B,3,0,437,0,0.1139,635.9667
+lotto edificabile,nuovo,1.0,60,90.0,ds_a0,C,22,0,5883,0,0.1139,635.9667
+lotto edificabile,nuovo,1.0,60,90.0,ds_a0,D,176,0,24985,0,0.1139,635.9667
+lotto edificabile,nuovo,1.0,60,90.0,ds_a0,E,15,0,1580,0,0.1139,635.9667
+lotto edificabile,nuovo,1.0,60,90.0,ds_a05,B,3,0,437,0,0.004,2198.5147
+lotto edificabile,nuovo,1.0,60,90.0,ds_a05,C,22,0,5883,0,0.0246,1238.3406
+lotto edificabile,nuovo,1.0,60,90.0,ds_a05,D,176,0,24985,0,0.0792,758.6625
+lotto edificabile,nuovo,1.0,60,90.0,ds_a05,E,15,0,1580,0,0.1124,635.1654
+lotto edificabile,nuovo,1.0,60,90.0,ds_a08,B,3,0,437,0,0.0009,3141.8277
+lotto edificabile,nuovo,1.0,60,90.0,ds_a08,C,22,0,5883,0,0.0147,1595.0667
+lotto edificabile,nuovo,1.0,60,90.0,ds_a08,D,176,0,24985,0,0.0691,827.4769
+lotto edificabile,nuovo,1.0,60,90.0,ds_a08,E,15,0,1580,0,0.1115,635.271
+lotto edificabile,nuovo,1.0,60,110.0,acq,B,3,0,437,0,0.0081,
+lotto edificabile,nuovo,1.0,60,110.0,acq,C,22,0,5883,0,0.0804,
+lotto edificabile,nuovo,1.0,60,110.0,acq,D,176,0,24985,0,0.3169,
+lotto edificabile,nuovo,1.0,60,110.0,acq,E,15,0,1580,0,0.4578,
+lotto edificabile,nuovo,1.0,60,110.0,ces,B,3,0,437,0,0.4648,
+lotto edificabile,nuovo,1.0,60,110.0,ces,C,22,0,5883,0,0.4648,
+lotto edificabile,nuovo,1.0,60,110.0,ces,D,176,0,24985,0,0.4648,
+lotto edificabile,nuovo,1.0,60,110.0,ces,E,15,0,1580,0,0.4648,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a0,B,3,0,437,0,0.4646,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a0,C,22,0,5883,0,0.4646,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a0,D,176,0,24985,0,0.4646,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a0,E,15,0,1580,0,0.4646,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a05,B,3,0,437,0,0.0432,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a05,C,22,0,5883,0,0.1554,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a05,D,176,0,24985,0,0.3725,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a05,E,15,0,1580,0,0.4612,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a08,B,3,0,437,0,0.0146,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a08,C,22,0,5883,0,0.1019,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a08,D,176,0,24985,0,0.3354,
+lotto edificabile,nuovo,1.0,60,110.0,ds_a08,E,15,0,1580,0,0.4592,
+lotto edificabile,nuovo,1.0,60,130.0,acq,B,3,0,437,0,0.0441,
+lotto edificabile,nuovo,1.0,60,130.0,acq,C,22,2,5883,608,0.2672,
+lotto edificabile,nuovo,1.0,60,130.0,acq,D,176,161,24985,24306,0.7487,
+lotto edificabile,nuovo,1.0,60,130.0,acq,E,15,15,1580,1580,0.9505,
+lotto edificabile,nuovo,1.0,60,130.0,ces,B,3,3,437,437,0.9582,
+lotto edificabile,nuovo,1.0,60,130.0,ces,C,22,22,5883,5883,0.9582,
+lotto edificabile,nuovo,1.0,60,130.0,ces,D,176,176,24985,24985,0.9582,
+lotto edificabile,nuovo,1.0,60,130.0,ces,E,15,15,1580,1580,0.9582,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a0,B,3,3,437,437,0.9572,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a0,C,22,22,5883,5883,0.9572,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a0,D,176,176,24985,24985,0.9572,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a0,E,15,15,1580,1580,0.9572,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a05,B,3,0,437,0,0.1851,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a05,C,22,11,5883,5278,0.4655,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a05,D,176,175,24985,24970,0.8448,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a05,E,15,15,1580,1580,0.9545,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a08,B,3,0,437,0,0.0755,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a08,C,22,11,5883,5278,0.3237,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a08,D,176,166,24985,24597,0.7834,
+lotto edificabile,nuovo,1.0,60,130.0,ds_a08,E,15,15,1580,1580,0.9522,
+lotto edificabile,nuovo,1.0,90,60.0,acq,B,3,0,437,0,0.0006,
+lotto edificabile,nuovo,1.0,90,60.0,acq,C,22,0,5883,0,0.0073,
+lotto edificabile,nuovo,1.0,90,60.0,acq,D,176,0,24985,0,0.0321,
+lotto edificabile,nuovo,1.0,90,60.0,acq,E,15,0,1580,0,0.0493,
+lotto edificabile,nuovo,1.0,90,60.0,ces,B,3,0,437,0,0.0506,
+lotto edificabile,nuovo,1.0,90,60.0,ces,C,22,0,5883,0,0.0506,
+lotto edificabile,nuovo,1.0,90,60.0,ces,D,176,0,24985,0,0.0506,
+lotto edificabile,nuovo,1.0,90,60.0,ces,E,15,0,1580,0,0.0506,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a0,B,3,0,437,0,0.0506,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a0,C,22,0,5883,0,0.0506,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a0,D,176,0,24985,0,0.0506,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a0,E,15,0,1580,0,0.0506,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a05,B,3,0,437,0,0.0034,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a05,C,22,0,5883,0,0.0149,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a05,D,176,0,24985,0,0.0379,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a05,E,15,0,1580,0,0.0497,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a08,B,3,0,437,0,0.0011,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a08,C,22,0,5883,0,0.0092,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a08,D,176,0,24985,0,0.0342,
+lotto edificabile,nuovo,1.0,90,60.0,ds_a08,E,15,0,1580,0,0.0496,
+lotto edificabile,nuovo,1.0,90,75.0,acq,B,3,0,437,0,0.0083,
+lotto edificabile,nuovo,1.0,90,75.0,acq,C,22,0,5883,0,0.0494,
+lotto edificabile,nuovo,1.0,90,75.0,acq,D,176,0,24985,0,0.1645,
+lotto edificabile,nuovo,1.0,90,75.0,acq,E,15,0,1580,0,0.23,
+lotto edificabile,nuovo,1.0,90,75.0,ces,B,3,0,437,0,0.2329,
+lotto edificabile,nuovo,1.0,90,75.0,ces,C,22,0,5883,0,0.2329,
+lotto edificabile,nuovo,1.0,90,75.0,ces,D,176,0,24985,0,0.2329,
+lotto edificabile,nuovo,1.0,90,75.0,ces,E,15,0,1580,0,0.2329,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a0,B,3,0,437,0,0.2321,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a0,C,22,0,5883,0,0.2321,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a0,D,176,0,24985,0,0.2321,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a0,E,15,0,1580,0,0.2321,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a05,B,3,0,437,0,0.0329,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a05,C,22,0,5883,0,0.0912,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a05,D,176,0,24985,0,0.1909,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a05,E,15,0,1580,0,0.2311,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a08,B,3,0,437,0,0.0138,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a08,C,22,0,5883,0,0.0615,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a08,D,176,0,24985,0,0.1737,
+lotto edificabile,nuovo,1.0,90,75.0,ds_a08,E,15,0,1580,0,0.2304,
+lotto edificabile,nuovo,1.0,90,90.0,acq,B,3,0,437,0,0.0383,2928.2532
+lotto edificabile,nuovo,1.0,90,90.0,acq,C,22,0,5883,0,0.1712,1004.6033
+lotto edificabile,nuovo,1.0,90,90.0,acq,D,176,70,24985,18754,0.4581,69.0884
+lotto edificabile,nuovo,1.0,90,90.0,acq,E,15,15,1580,1580,0.5845,-143.2579
+lotto edificabile,nuovo,1.0,90,90.0,ces,B,3,3,437,437,0.5886,-144.1604
+lotto edificabile,nuovo,1.0,90,90.0,ces,C,22,22,5883,5883,0.5886,-144.1604
+lotto edificabile,nuovo,1.0,90,90.0,ces,D,176,176,24985,24985,0.5886,-144.1604
+lotto edificabile,nuovo,1.0,90,90.0,ces,E,15,15,1580,1580,0.5886,-144.1604
+lotto edificabile,nuovo,1.0,90,90.0,ds_a0,B,3,3,437,437,0.5872,-143.1604
+lotto edificabile,nuovo,1.0,90,90.0,ds_a0,C,22,22,5883,5883,0.5872,-143.1604
+lotto edificabile,nuovo,1.0,90,90.0,ds_a0,D,176,176,24985,24985,0.5872,-143.1604
+lotto edificabile,nuovo,1.0,90,90.0,ds_a0,E,15,15,1580,1580,0.5872,-143.1604
+lotto edificabile,nuovo,1.0,90,90.0,ds_a05,B,3,0,437,0,0.127,1375.7579
+lotto edificabile,nuovo,1.0,90,90.0,ds_a05,C,22,0,5883,0,0.2866,435.2033
+lotto edificabile,nuovo,1.0,90,90.0,ds_a05,D,176,104,24985,21427,0.5125,-27.0255
+lotto edificabile,nuovo,1.0,90,90.0,ds_a05,E,15,15,1580,1580,0.587,-143.2579
+lotto edificabile,nuovo,1.0,90,90.0,ds_a08,B,3,0,437,0,0.0629,2297.9645
+lotto edificabile,nuovo,1.0,90,90.0,ds_a08,C,22,0,5883,0,0.2035,776.6572
+lotto edificabile,nuovo,1.0,90,90.0,ds_a08,D,176,77,24985,20193,0.4774,37.1392
+lotto edificabile,nuovo,1.0,90,90.0,ds_a08,E,15,15,1580,1580,0.5856,-143.2579
+lotto edificabile,nuovo,1.0,90,110.0,acq,B,3,0,437,0,0.1512,
+lotto edificabile,nuovo,1.0,90,110.0,acq,C,22,11,5883,5278,0.4339,
+lotto edificabile,nuovo,1.0,90,110.0,acq,D,176,175,24985,24970,0.8496,
+lotto edificabile,nuovo,1.0,90,110.0,acq,E,15,15,1580,1580,0.9819,
+lotto edificabile,nuovo,1.0,90,110.0,ces,B,3,3,437,437,0.9882,
+lotto edificabile,nuovo,1.0,90,110.0,ces,C,22,22,5883,5883,0.9882,
+lotto edificabile,nuovo,1.0,90,110.0,ces,D,176,176,24985,24985,0.9882,
+lotto edificabile,nuovo,1.0,90,110.0,ces,E,15,15,1580,1580,0.9882,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a0,B,3,3,437,437,0.9877,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a0,C,22,22,5883,5883,0.9877,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a0,D,176,176,24985,24985,0.9877,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a0,E,15,15,1580,1580,0.9877,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a05,B,3,1,437,408,0.3937,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a05,C,22,17,5883,5627,0.6582,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a05,D,176,176,24985,24985,0.9215,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a05,E,15,15,1580,1580,0.9852,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a08,B,3,0,437,0,0.2181,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a08,C,22,11,5883,5278,0.5073,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a08,D,176,175,24985,24970,0.8774,
+lotto edificabile,nuovo,1.0,90,110.0,ds_a08,E,15,15,1580,1580,0.9833,
+lotto edificabile,nuovo,1.0,90,130.0,acq,B,3,1,437,408,0.3337,
+lotto edificabile,nuovo,1.0,90,130.0,acq,C,22,17,5883,5627,0.6626,
+lotto edificabile,nuovo,1.0,90,130.0,acq,D,176,176,24985,24985,0.9598,
+lotto edificabile,nuovo,1.0,90,130.0,acq,E,15,15,1580,1580,0.9995,
+lotto edificabile,nuovo,1.0,90,130.0,ces,B,3,3,437,437,1.0,
+lotto edificabile,nuovo,1.0,90,130.0,ces,C,22,22,5883,5883,1.0,
+lotto edificabile,nuovo,1.0,90,130.0,ces,D,176,176,24985,24985,1.0,
+lotto edificabile,nuovo,1.0,90,130.0,ces,E,15,15,1580,1580,1.0,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a0,B,3,3,437,437,1.0,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a0,C,22,22,5883,5883,1.0,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a0,D,176,176,24985,24985,1.0,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a0,E,15,15,1580,1580,1.0,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a05,B,3,3,437,437,0.6866,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a05,C,22,22,5883,5883,0.8816,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a05,D,176,176,24985,24985,0.9922,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a05,E,15,15,1580,1580,1.0,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a08,B,3,1,437,408,0.4465,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a08,C,22,20,5883,5775,0.7422,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a08,D,176,176,24985,24985,0.975,
+lotto edificabile,nuovo,1.0,90,130.0,ds_a08,E,15,15,1580,1580,0.9997,
+lotto edificabile,nuovo,2.0,30,60.0,acq,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,acq,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,acq,D,176,0,50063,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,acq,E,15,0,3165,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ces,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ces,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ces,D,176,0,50063,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ces,E,15,0,3165,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a0,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a0,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a0,D,176,0,50063,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a0,E,15,0,3165,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a05,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a05,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a05,D,176,0,50063,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a05,E,15,0,3165,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a08,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a08,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a08,D,176,0,50063,0,0.0,
+lotto edificabile,nuovo,2.0,30,60.0,ds_a08,E,15,0,3165,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,acq,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,acq,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,acq,D,176,0,50063,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,acq,E,15,0,3165,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ces,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ces,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ces,D,176,0,50063,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ces,E,15,0,3165,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a0,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a0,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a0,D,176,0,50063,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a0,E,15,0,3165,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a05,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a05,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a05,D,176,0,50063,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a05,E,15,0,3165,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a08,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a08,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a08,D,176,0,50063,0,0.0,
+lotto edificabile,nuovo,2.0,30,75.0,ds_a08,E,15,0,3165,0,0.0,
+lotto edificabile,nuovo,2.0,30,90.0,acq,B,3,0,875,0,0.0,9499.0955
+lotto edificabile,nuovo,2.0,30,90.0,acq,C,22,0,11782,0,0.0,4801.7914
+lotto edificabile,nuovo,2.0,30,90.0,acq,D,176,0,50063,0,0.0,3164.0238
+lotto edificabile,nuovo,2.0,30,90.0,acq,E,15,0,3165,0,0.0,2984.9482
+lotto edificabile,nuovo,2.0,30,90.0,ces,B,3,0,875,0,0.0,2984.1186
+lotto edificabile,nuovo,2.0,30,90.0,ces,C,22,0,11782,0,0.0,2984.1186
+lotto edificabile,nuovo,2.0,30,90.0,ces,D,176,0,50063,0,0.0,2984.1186
+lotto edificabile,nuovo,2.0,30,90.0,ces,E,15,0,3165,0,0.0,2984.1186
+lotto edificabile,nuovo,2.0,30,90.0,ds_a0,B,3,0,875,0,0.0,2985.1186
+lotto edificabile,nuovo,2.0,30,90.0,ds_a0,C,22,0,11782,0,0.0,2985.1186
+lotto edificabile,nuovo,2.0,30,90.0,ds_a0,D,176,0,50063,0,0.0,2985.1186
+lotto edificabile,nuovo,2.0,30,90.0,ds_a0,E,15,0,3165,0,0.0,2985.1186
+lotto edificabile,nuovo,2.0,30,90.0,ds_a05,B,3,0,875,0,0.0,6276.3886
+lotto edificabile,nuovo,2.0,30,90.0,ds_a05,C,22,0,11782,0,0.0,3932.3267
+lotto edificabile,nuovo,2.0,30,90.0,ds_a05,D,176,0,50063,0,0.0,3069.8678
+lotto edificabile,nuovo,2.0,30,90.0,ds_a05,E,15,0,3165,0,0.0,2984.2189
+lotto edificabile,nuovo,2.0,30,90.0,ds_a08,B,3,0,875,0,0.0,8208.6407
+lotto edificabile,nuovo,2.0,30,90.0,ds_a08,C,22,0,11782,0,0.0,4457.4581
+lotto edificabile,nuovo,2.0,30,90.0,ds_a08,D,176,0,50063,0,0.0,3125.6182
+lotto edificabile,nuovo,2.0,30,90.0,ds_a08,E,15,0,3165,0,0.0,2984.6937
+lotto edificabile,nuovo,2.0,30,110.0,acq,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,110.0,acq,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,110.0,acq,D,176,0,50063,0,0.0001,
+lotto edificabile,nuovo,2.0,30,110.0,acq,E,15,0,3165,0,0.0002,
+lotto edificabile,nuovo,2.0,30,110.0,ces,B,3,0,875,0,0.0002,
+lotto edificabile,nuovo,2.0,30,110.0,ces,C,22,0,11782,0,0.0002,
+lotto edificabile,nuovo,2.0,30,110.0,ces,D,176,0,50063,0,0.0002,
+lotto edificabile,nuovo,2.0,30,110.0,ces,E,15,0,3165,0,0.0002,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a0,B,3,0,875,0,0.0002,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a0,C,22,0,11782,0,0.0002,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a0,D,176,0,50063,0,0.0002,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a0,E,15,0,3165,0,0.0002,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a05,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a05,C,22,0,11782,0,0.0001,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a05,D,176,0,50063,0,0.0002,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a05,E,15,0,3165,0,0.0002,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a08,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a08,C,22,0,11782,0,0.0,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a08,D,176,0,50063,0,0.0001,
+lotto edificabile,nuovo,2.0,30,110.0,ds_a08,E,15,0,3165,0,0.0002,
+lotto edificabile,nuovo,2.0,30,130.0,acq,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,130.0,acq,C,22,0,11782,0,0.0001,
+lotto edificabile,nuovo,2.0,30,130.0,acq,D,176,0,50063,0,0.0027,
+lotto edificabile,nuovo,2.0,30,130.0,acq,E,15,0,3165,0,0.0059,
+lotto edificabile,nuovo,2.0,30,130.0,ces,B,3,0,875,0,0.0065,
+lotto edificabile,nuovo,2.0,30,130.0,ces,C,22,0,11782,0,0.0065,
+lotto edificabile,nuovo,2.0,30,130.0,ces,D,176,0,50063,0,0.0065,
+lotto edificabile,nuovo,2.0,30,130.0,ces,E,15,0,3165,0,0.0065,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a0,B,3,0,875,0,0.0065,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a0,C,22,0,11782,0,0.0065,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a0,D,176,0,50063,0,0.0065,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a0,E,15,0,3165,0,0.0065,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a05,B,3,0,875,0,0.0001,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a05,C,22,0,11782,0,0.0001,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a05,D,176,0,50063,0,0.0033,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a05,E,15,0,3165,0,0.0061,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a08,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a08,C,22,0,11782,0,0.0001,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a08,D,176,0,50063,0,0.0029,
+lotto edificabile,nuovo,2.0,30,130.0,ds_a08,E,15,0,3165,0,0.0059,
+lotto edificabile,nuovo,2.0,60,60.0,acq,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,60,60.0,acq,C,22,0,11782,0,0.0001,
+lotto edificabile,nuovo,2.0,60,60.0,acq,D,176,0,50063,0,0.0002,
+lotto edificabile,nuovo,2.0,60,60.0,acq,E,15,0,3165,0,0.0005,
+lotto edificabile,nuovo,2.0,60,60.0,ces,B,3,0,875,0,0.0005,
+lotto edificabile,nuovo,2.0,60,60.0,ces,C,22,0,11782,0,0.0005,
+lotto edificabile,nuovo,2.0,60,60.0,ces,D,176,0,50063,0,0.0005,
+lotto edificabile,nuovo,2.0,60,60.0,ces,E,15,0,3165,0,0.0005,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a0,B,3,0,875,0,0.0005,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a0,C,22,0,11782,0,0.0005,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a0,D,176,0,50063,0,0.0005,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a0,E,15,0,3165,0,0.0005,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a05,B,3,0,875,0,0.0001,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a05,C,22,0,11782,0,0.0001,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a05,D,176,0,50063,0,0.0003,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a05,E,15,0,3165,0,0.0005,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a08,B,3,0,875,0,0.0,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a08,C,22,0,11782,0,0.0001,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a08,D,176,0,50063,0,0.0002,
+lotto edificabile,nuovo,2.0,60,60.0,ds_a08,E,15,0,3165,0,0.0005,
+lotto edificabile,nuovo,2.0,60,75.0,acq,B,3,0,875,0,0.0001,
+lotto edificabile,nuovo,2.0,60,75.0,acq,C,22,0,11782,0,0.0008,
+lotto edificabile,nuovo,2.0,60,75.0,acq,D,176,0,50063,0,0.0106,
+lotto edificabile,nuovo,2.0,60,75.0,acq,E,15,0,3165,0,0.0163,
+lotto edificabile,nuovo,2.0,60,75.0,ces,B,3,0,875,0,0.0169,
+lotto edificabile,nuovo,2.0,60,75.0,ces,C,22,0,11782,0,0.0169,
+lotto edificabile,nuovo,2.0,60,75.0,ces,D,176,0,50063,0,0.0169,
+lotto edificabile,nuovo,2.0,60,75.0,ces,E,15,0,3165,0,0.0169,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a0,B,3,0,875,0,0.0169,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a0,C,22,0,11782,0,0.0169,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a0,D,176,0,50063,0,0.0169,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a0,E,15,0,3165,0,0.0169,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a05,B,3,0,875,0,0.0002,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a05,C,22,0,11782,0,0.0022,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a05,D,176,0,50063,0,0.0126,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a05,E,15,0,3165,0,0.0167,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a08,B,3,0,875,0,0.0001,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a08,C,22,0,11782,0,0.0011,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a08,D,176,0,50063,0,0.0112,
+lotto edificabile,nuovo,2.0,60,75.0,ds_a08,E,15,0,3165,0,0.0165,
+lotto edificabile,nuovo,2.0,60,90.0,acq,B,3,0,875,0,0.0002,7565.8506
+lotto edificabile,nuovo,2.0,60,90.0,acq,C,22,0,11782,0,0.0122,2895.3747
+lotto edificabile,nuovo,2.0,60,90.0,acq,D,176,0,50063,0,0.0802,1388.2519
+lotto edificabile,nuovo,2.0,60,90.0,acq,E,15,0,3165,0,0.1118,1270.3338
+lotto edificabile,nuovo,2.0,60,90.0,ces,B,3,0,875,0,0.1143,1269.9334
+lotto edificabile,nuovo,2.0,60,90.0,ces,C,22,0,11782,0,0.1143,1269.9334
+lotto edificabile,nuovo,2.0,60,90.0,ces,D,176,0,50063,0,0.1143,1269.9334
+lotto edificabile,nuovo,2.0,60,90.0,ces,E,15,0,3165,0,0.1143,1269.9334
+lotto edificabile,nuovo,2.0,60,90.0,ds_a0,B,3,0,875,0,0.1141,1270.9334
+lotto edificabile,nuovo,2.0,60,90.0,ds_a0,C,22,0,11782,0,0.1141,1270.9334
+lotto edificabile,nuovo,2.0,60,90.0,ds_a0,D,176,0,50063,0,0.1141,1270.9334
+lotto edificabile,nuovo,2.0,60,90.0,ds_a0,E,15,0,3165,0,0.1141,1270.9334
+lotto edificabile,nuovo,2.0,60,90.0,ds_a05,B,3,0,875,0,0.004,4397.0295
+lotto edificabile,nuovo,2.0,60,90.0,ds_a05,C,22,0,11782,0,0.0284,2093.8867
+lotto edificabile,nuovo,2.0,60,90.0,ds_a05,D,176,0,50063,0,0.0917,1325.0829
+lotto edificabile,nuovo,2.0,60,90.0,ds_a05,E,15,0,3165,0,0.1129,1270.3307
+lotto edificabile,nuovo,2.0,60,90.0,ds_a08,B,3,0,875,0,0.0009,6283.6553
+lotto edificabile,nuovo,2.0,60,90.0,ds_a08,C,22,0,11782,0,0.0167,2572.5993
+lotto edificabile,nuovo,2.0,60,90.0,ds_a08,D,176,0,50063,0,0.084,1363.3847
+lotto edificabile,nuovo,2.0,60,90.0,ds_a08,E,15,0,3165,0,0.1123,1270.3307
+lotto edificabile,nuovo,2.0,60,110.0,acq,B,3,0,875,0,0.0081,
+lotto edificabile,nuovo,2.0,60,110.0,acq,C,22,0,11782,0,0.0913,
+lotto edificabile,nuovo,2.0,60,110.0,acq,D,176,0,50063,0,0.3721,
+lotto edificabile,nuovo,2.0,60,110.0,acq,E,15,0,3165,0,0.4597,
+lotto edificabile,nuovo,2.0,60,110.0,ces,B,3,0,875,0,0.4648,
+lotto edificabile,nuovo,2.0,60,110.0,ces,C,22,0,11782,0,0.4648,
+lotto edificabile,nuovo,2.0,60,110.0,ces,D,176,0,50063,0,0.4648,
+lotto edificabile,nuovo,2.0,60,110.0,ces,E,15,0,3165,0,0.4648,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a0,B,3,0,875,0,0.4648,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a0,C,22,0,11782,0,0.4648,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a0,D,176,0,50063,0,0.4648,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a0,E,15,0,3165,0,0.4648,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a05,B,3,0,875,0,0.0432,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a05,C,22,0,11782,0,0.1783,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a05,D,176,0,50063,0,0.4086,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a05,E,15,0,3165,0,0.4622,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a08,B,3,0,875,0,0.0146,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a08,C,22,0,11782,0,0.1163,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a08,D,176,0,50063,0,0.3847,
+lotto edificabile,nuovo,2.0,60,110.0,ds_a08,E,15,0,3165,0,0.4608,
+lotto edificabile,nuovo,2.0,60,130.0,acq,B,3,0,875,0,0.0441,
+lotto edificabile,nuovo,2.0,60,130.0,acq,C,22,2,11782,1218,0.308,
+lotto edificabile,nuovo,2.0,60,130.0,acq,D,176,169,50063,49721,0.8321,
+lotto edificabile,nuovo,2.0,60,130.0,acq,E,15,15,3165,3165,0.9527,
+lotto edificabile,nuovo,2.0,60,130.0,ces,B,3,3,875,875,0.9582,
+lotto edificabile,nuovo,2.0,60,130.0,ces,C,22,22,11782,11782,0.9582,
+lotto edificabile,nuovo,2.0,60,130.0,ces,D,176,176,50063,50063,0.9582,
+lotto edificabile,nuovo,2.0,60,130.0,ces,E,15,15,3165,3165,0.9582,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a0,B,3,3,875,875,0.9577,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a0,C,22,22,11782,11782,0.9577,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a0,D,176,176,50063,50063,0.9577,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a0,E,15,15,3165,3165,0.9577,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a05,B,3,0,875,0,0.1851,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a05,C,22,14,11782,10903,0.5287,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a05,D,176,175,50063,50033,0.8908,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a05,E,15,15,3165,3165,0.9556,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a08,B,3,0,875,0,0.0755,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a08,C,22,11,11782,10565,0.3747,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a08,D,176,170,50063,49758,0.8535,
+lotto edificabile,nuovo,2.0,60,130.0,ds_a08,E,15,15,3165,3165,0.9539,
+lotto edificabile,nuovo,2.0,90,60.0,acq,B,3,0,875,0,0.0006,
+lotto edificabile,nuovo,2.0,90,60.0,acq,C,22,0,11782,0,0.0081,
+lotto edificabile,nuovo,2.0,90,60.0,acq,D,176,0,50063,0,0.0382,
+lotto edificabile,nuovo,2.0,90,60.0,acq,E,15,0,3165,0,0.0497,
+lotto edificabile,nuovo,2.0,90,60.0,ces,B,3,0,875,0,0.0506,
+lotto edificabile,nuovo,2.0,90,60.0,ces,C,22,0,11782,0,0.0506,
+lotto edificabile,nuovo,2.0,90,60.0,ces,D,176,0,50063,0,0.0506,
+lotto edificabile,nuovo,2.0,90,60.0,ces,E,15,0,3165,0,0.0506,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a0,B,3,0,875,0,0.0506,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a0,C,22,0,11782,0,0.0506,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a0,D,176,0,50063,0,0.0506,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a0,E,15,0,3165,0,0.0506,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a05,B,3,0,875,0,0.0034,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a05,C,22,0,11782,0,0.0172,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a05,D,176,0,50063,0,0.0423,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a05,E,15,0,3165,0,0.0499,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a08,B,3,0,875,0,0.0011,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a08,C,22,0,11782,0,0.0105,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a08,D,176,0,50063,0,0.0396,
+lotto edificabile,nuovo,2.0,90,60.0,ds_a08,E,15,0,3165,0,0.0498,
+lotto edificabile,nuovo,2.0,90,75.0,acq,B,3,0,875,0,0.0083,
+lotto edificabile,nuovo,2.0,90,75.0,acq,C,22,0,11782,0,0.0567,
+lotto edificabile,nuovo,2.0,90,75.0,acq,D,176,0,50063,0,0.1902,
+lotto edificabile,nuovo,2.0,90,75.0,acq,E,15,0,3165,0,0.2308,
+lotto edificabile,nuovo,2.0,90,75.0,ces,B,3,0,875,0,0.2329,
+lotto edificabile,nuovo,2.0,90,75.0,ces,C,22,0,11782,0,0.2329,
+lotto edificabile,nuovo,2.0,90,75.0,ces,D,176,0,50063,0,0.2329,
+lotto edificabile,nuovo,2.0,90,75.0,ces,E,15,0,3165,0,0.2329,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a0,B,3,0,875,0,0.2328,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a0,C,22,0,11782,0,0.2328,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a0,D,176,0,50063,0,0.2328,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a0,E,15,0,3165,0,0.2328,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a05,B,3,0,875,0,0.0329,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a05,C,22,0,11782,0,0.1026,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a05,D,176,0,50063,0,0.2072,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a05,E,15,0,3165,0,0.2316,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a08,B,3,0,875,0,0.0138,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a08,C,22,0,11782,0,0.0702,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a08,D,176,0,50063,0,0.1963,
+lotto edificabile,nuovo,2.0,90,75.0,ds_a08,E,15,0,3165,0,0.2312,
+lotto edificabile,nuovo,2.0,90,90.0,acq,B,3,0,875,0,0.0383,5856.5063
+lotto edificabile,nuovo,2.0,90,90.0,acq,C,22,0,11782,0,0.196,1240.6347
+lotto edificabile,nuovo,2.0,90,90.0,acq,D,176,115,50063,43382,0.5099,-177.3254
+lotto edificabile,nuovo,2.0,90,90.0,acq,E,15,15,3165,3165,0.5857,-286.5159
+lotto edificabile,nuovo,2.0,90,90.0,ces,B,3,3,875,875,0.5886,-288.3209
+lotto edificabile,nuovo,2.0,90,90.0,ces,C,22,22,11782,11782,0.5886,-288.3209
+lotto edificabile,nuovo,2.0,90,90.0,ces,D,176,176,50063,50063,0.5886,-288.3209
+lotto edificabile,nuovo,2.0,90,90.0,ces,E,15,15,3165,3165,0.5886,-288.3209
+lotto edificabile,nuovo,2.0,90,90.0,ds_a0,B,3,3,875,875,0.5877,-287.3209
+lotto edificabile,nuovo,2.0,90,90.0,ds_a0,C,22,22,11782,11782,0.5877,-287.3209
+lotto edificabile,nuovo,2.0,90,90.0,ds_a0,D,176,176,50063,50063,0.5877,-287.3209
+lotto edificabile,nuovo,2.0,90,90.0,ds_a0,E,15,15,3165,3165,0.5877,-287.3209
+lotto edificabile,nuovo,2.0,90,90.0,ds_a05,B,3,0,875,0,0.127,2751.5158
+lotto edificabile,nuovo,2.0,90,90.0,ds_a05,C,22,0,11782,0,0.3205,488.6161
+lotto edificabile,nuovo,2.0,90,90.0,ds_a05,D,176,141,50063,47709,0.5439,-227.169
+lotto edificabile,nuovo,2.0,90,90.0,ds_a05,E,15,15,3165,3165,0.5875,-286.5159
+lotto edificabile,nuovo,2.0,90,90.0,ds_a08,B,3,0,875,0,0.0629,4595.9291
+lotto edificabile,nuovo,2.0,90,90.0,ds_a08,C,22,0,11782,0,0.233,935.0474
+lotto edificabile,nuovo,2.0,90,90.0,ds_a08,D,176,121,50063,46156,0.5222,-200.562
+lotto edificabile,nuovo,2.0,90,90.0,ds_a08,E,15,15,3165,3165,0.5865,-286.5159
+lotto edificabile,nuovo,2.0,90,110.0,acq,B,3,0,875,0,0.1512,
+lotto edificabile,nuovo,2.0,90,110.0,acq,C,22,14,11782,10903,0.4969,
+lotto edificabile,nuovo,2.0,90,110.0,acq,D,176,175,50063,50033,0.9029,
+lotto edificabile,nuovo,2.0,90,110.0,acq,E,15,15,3165,3165,0.9836,
+lotto edificabile,nuovo,2.0,90,110.0,ces,B,3,3,875,875,0.9882,
+lotto edificabile,nuovo,2.0,90,110.0,ces,C,22,22,11782,11782,0.9882,
+lotto edificabile,nuovo,2.0,90,110.0,ces,D,176,176,50063,50063,0.9882,
+lotto edificabile,nuovo,2.0,90,110.0,ces,E,15,15,3165,3165,0.9882,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a0,B,3,3,875,875,0.9878,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a0,C,22,22,11782,11782,0.9878,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a0,D,176,176,50063,50063,0.9878,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a0,E,15,15,3165,3165,0.9878,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a05,B,3,1,875,816,0.3937,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a05,C,22,21,11782,11733,0.7188,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a05,D,176,176,50063,50063,0.9468,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a05,E,15,15,3165,3165,0.986,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a08,B,3,0,875,0,0.2181,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a08,C,22,14,11782,10903,0.5731,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a08,D,176,175,50063,50033,0.9202,
+lotto edificabile,nuovo,2.0,90,110.0,ds_a08,E,15,15,3165,3165,0.9846,
+lotto edificabile,nuovo,2.0,90,130.0,acq,B,3,1,875,816,0.3337,
+lotto edificabile,nuovo,2.0,90,130.0,acq,C,22,21,11782,11733,0.7421,
+lotto edificabile,nuovo,2.0,90,130.0,acq,D,176,176,50063,50063,0.978,
+lotto edificabile,nuovo,2.0,90,130.0,acq,E,15,15,3165,3165,0.9996,
+lotto edificabile,nuovo,2.0,90,130.0,ces,B,3,3,875,875,1.0,
+lotto edificabile,nuovo,2.0,90,130.0,ces,C,22,22,11782,11782,1.0,
+lotto edificabile,nuovo,2.0,90,130.0,ces,D,176,176,50063,50063,1.0,
+lotto edificabile,nuovo,2.0,90,130.0,ces,E,15,15,3165,3165,1.0,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a0,B,3,3,875,875,1.0,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a0,C,22,22,11782,11782,1.0,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a0,D,176,176,50063,50063,1.0,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a0,E,15,15,3165,3165,1.0,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a05,B,3,3,875,875,0.6866,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a05,C,22,22,11782,11782,0.9251,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a05,D,176,176,50063,50063,0.9958,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a05,E,15,15,3165,3165,1.0,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a08,B,3,1,875,816,0.4465,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a08,C,22,22,11782,11782,0.8143,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a08,D,176,176,50063,50063,0.9865,
+lotto edificabile,nuovo,2.0,90,130.0,ds_a08,E,15,15,3165,3165,0.9998,

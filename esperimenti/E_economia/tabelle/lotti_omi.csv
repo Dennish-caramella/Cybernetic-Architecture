@@ -1,0 +1,434 @@
+id,zona,zona_centroide,fascia,classe,p_lo,p_mid,p_hi,canone
+R00001,E5,E5,E,lotto da riusare,2625.0,3350.0,3500.0,11.8
+R00002,D25,D25,D,lotto da riusare,3150.0,4000.0,4500.0,13.7
+R00003,D25,D25,D,lotto da riusare,3150.0,4000.0,4500.0,13.7
+R00004,E8,E8,E,lotto da riusare,2275.0,3225.0,3700.0,9.9
+R00005,D21,D21,D,lotto da riusare,3350.0,4600.0,5100.0,15.0
+R00006,D40,D40,D,lotto da riusare,3125.0,4300.0,5000.0,14.5
+R00007,D21,D21,D,lotto da riusare,3350.0,4600.0,5100.0,15.0
+R00008,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00009,D21,D21,D,lotto da riusare,3350.0,4600.0,5100.0,15.0
+R00010,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00011,D21,D21,D,lotto da riusare,3350.0,4600.0,5100.0,15.0
+R00012,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00013,D21,D21,D,lotto da riusare,3350.0,4600.0,5100.0,15.0
+R00014,C17,C17,C,lotto da riusare,6150.0,8450.0,10000.0,18.5
+R00015,D21,D21,D,lotto da riusare,3350.0,4600.0,5100.0,15.0
+R00016,D24,D24,D,lotto da riusare,3900.0,5300.0,6300.0,16.0
+R00017,D21,D21,D,lotto da riusare,3350.0,4600.0,5100.0,15.0
+R00018,D24,D24,D,lotto da riusare,3900.0,5300.0,6300.0,16.0
+R00019,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00020,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00021,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00022,D31,D31,D,lotto da riusare,3550.0,4850.0,5300.0,14.5
+R00023,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00024,D31,D31,D,lotto da riusare,3550.0,4850.0,5300.0,14.5
+R00025,D31,D31,D,lotto da riusare,3550.0,4850.0,5300.0,14.5
+R00026,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00027,D21,D21,D,lotto da riusare,3350.0,4600.0,5100.0,15.0
+R00028,D31,D31,D,lotto da riusare,3550.0,4850.0,5300.0,14.5
+R00029,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00030,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00031,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00032,B17,B17,B,lotto da riusare,7150.0,9700.0,11500.0,26.4
+R00033,B21,B21,B,lotto da riusare,6150.0,8450.0,9500.0,22.0
+R00034,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00035,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00036,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00037,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00038,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00039,C18,C18,C,lotto da riusare,5450.0,7450.0,8500.0,19.9
+R00040,C16,C16,C,lotto da riusare,5300.0,7750.0,9000.0,18.0
+R00041,C16,C16,C,lotto da riusare,5300.0,7750.0,9000.0,18.0
+R00042,D31,D31,D,lotto da riusare,3550.0,4850.0,5300.0,14.5
+R00043,C16,C16,C,lotto da riusare,5300.0,7750.0,9000.0,18.0
+R00044,D18,D18,D,lotto da riusare,3375.0,4850.0,5700.0,15.0
+R00045,D31,D31,D,lotto da riusare,3550.0,4850.0,5300.0,14.5
+R00046,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00047,B21,B21,B,lotto da riusare,6150.0,8450.0,9500.0,22.0
+R00048,B16,B16,B,lotto da riusare,8200.0,11750.0,14000.0,28.5
+R00049,B17,B17,B,lotto da riusare,7150.0,9700.0,11500.0,26.4
+R00050,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00051,D32,D32,D,lotto da riusare,3000.0,4150.0,4900.0,11.8
+R00052,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00053,D31,D31,D,lotto da riusare,3550.0,4850.0,5300.0,14.5
+R00054,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00055,C16,C16,C,lotto da riusare,5300.0,7750.0,9000.0,18.0
+R00056,D31,D31,D,lotto da riusare,3550.0,4850.0,5300.0,14.5
+R00057,D31,D31,D,lotto da riusare,3550.0,4850.0,5300.0,14.5
+R00058,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00059,C15,C15,C,lotto da riusare,4950.0,6850.0,7800.0,19.0
+R00060,C15,C15,C,lotto da riusare,4950.0,6850.0,7800.0,19.0
+R00061,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00062,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00063,B18,B18,B,lotto da riusare,7750.0,11050.0,13000.0,29.0
+R00064,B16,B16,B,lotto da riusare,8200.0,11750.0,14000.0,28.5
+R00065,C12,C12,C,lotto da riusare,6300.0,8750.0,10300.0,23.5
+R00066,C15,C15,C,lotto da riusare,4950.0,6850.0,7800.0,19.0
+R00067,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00068,C15,C15,C,lotto da riusare,4950.0,6850.0,7800.0,19.0
+R00069,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00070,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00071,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00072,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00073,D18,D18,D,lotto da riusare,3375.0,4850.0,5700.0,15.0
+R00074,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00075,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00076,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00077,D18,D18,D,lotto da riusare,3375.0,4850.0,5700.0,15.0
+R00078,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00079,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00080,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00081,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00082,D33,D33,D,lotto da riusare,3400.0,4350.0,4700.0,14.6
+R00083,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00084,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00085,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00086,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00087,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00088,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00089,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00090,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00091,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00092,D18,D18,D,lotto da riusare,3375.0,4850.0,5700.0,15.0
+R00093,C12,C12,C,lotto da riusare,6300.0,8750.0,10300.0,23.5
+R00094,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00095,D20,D20,D,lotto da riusare,3750.0,4950.0,5600.0,14.9
+R00096,D20,D20,D,lotto da riusare,3750.0,4950.0,5600.0,14.9
+R00097,D20,D20,D,lotto da riusare,3750.0,4950.0,5600.0,14.9
+R00098,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00099,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00100,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00101,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00102,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00103,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00104,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00105,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00106,D18,D18,D,lotto da riusare,3375.0,4850.0,5700.0,15.0
+R00107,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00108,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00109,D16,D16,D,lotto da riusare,3750.0,5450.0,6600.0,15.0
+R00110,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00111,D16,D16,D,lotto da riusare,3750.0,5450.0,6600.0,15.0
+R00112,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00113,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00114,D16,D16,D,lotto da riusare,3750.0,5450.0,6600.0,15.0
+R00115,D16,D16,D,lotto da riusare,3750.0,5450.0,6600.0,15.0
+R00116,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00117,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00118,D16,D16,D,lotto da riusare,3750.0,5450.0,6600.0,15.0
+R00119,D36,D36,D,lotto da riusare,4100.0,5750.0,6800.0,14.0
+R00120,D16,D16,D,lotto da riusare,3750.0,5450.0,6600.0,15.0
+R00121,D16,D16,D,lotto da riusare,3750.0,5450.0,6600.0,15.0
+R00122,D16,D16,D,lotto da riusare,3750.0,5450.0,6600.0,15.0
+R00123,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00124,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00125,D18,D18,D,lotto da riusare,3375.0,4850.0,5700.0,15.0
+R00126,D12,D12,D,lotto da riusare,4700.0,6850.0,8000.0,15.5
+R00127,D18,D18,D,lotto da riusare,3375.0,4850.0,5700.0,15.0
+R00128,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00129,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00130,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00131,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00132,D18,D18,D,lotto da riusare,3375.0,4850.0,5700.0,15.0
+R00133,D37,D37,D,lotto da riusare,3150.0,4200.0,4800.0,14.9
+R00134,D16,D16,D,lotto da riusare,3750.0,5450.0,6600.0,15.0
+R00135,D12,D12,D,lotto da riusare,4700.0,6850.0,8000.0,15.5
+R00136,D38,D38,D,lotto da riusare,3600.0,4450.0,4800.0,14.0
+R00137,D13,D13,D,lotto da riusare,3600.0,4850.0,5500.0,16.9
+R00138,D38,D38,D,lotto da riusare,3600.0,4450.0,4800.0,14.0
+R00139,D37,D37,D,lotto da riusare,3150.0,4200.0,4800.0,14.9
+R00140,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00141,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00142,D13,D13,D,lotto da riusare,3600.0,4850.0,5500.0,16.9
+R00143,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00144,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00145,D37,D37,D,lotto da riusare,3150.0,4200.0,4800.0,14.9
+R00146,D37,D37,D,lotto da riusare,3150.0,4200.0,4800.0,14.9
+R00147,D13,D13,D,lotto da riusare,3600.0,4850.0,5500.0,16.9
+R00148,D13,D13,D,lotto da riusare,3600.0,4850.0,5500.0,16.9
+R00149,D13,D13,D,lotto da riusare,3600.0,4850.0,5500.0,16.9
+R00150,D13,D13,D,lotto da riusare,3600.0,4850.0,5500.0,16.9
+R00151,D13,D13,D,lotto da riusare,3600.0,4850.0,5500.0,16.9
+R00152,D37,D37,D,lotto da riusare,3150.0,4200.0,4800.0,14.9
+R00153,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00154,D37,D37,D,lotto da riusare,3150.0,4200.0,4800.0,14.9
+R00155,D38,D38,D,lotto da riusare,3600.0,4450.0,4800.0,14.0
+R00156,D37,D37,D,lotto da riusare,3150.0,4200.0,4800.0,14.9
+R00157,D10,D10,D,lotto da riusare,3450.0,4700.0,5300.0,15.7
+R00158,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00159,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00160,D35,D35,D,lotto da riusare,3425.0,4950.0,5700.0,13.7
+R00161,D13,D13,D,lotto da riusare,3600.0,4850.0,5500.0,16.9
+R00162,D37,D37,D,lotto da riusare,3150.0,4200.0,4800.0,14.9
+R00163,D37,D37,D,lotto da riusare,3150.0,4200.0,4800.0,14.9
+R00164,D10,D10,D,lotto da riusare,3450.0,4700.0,5300.0,15.7
+R00165,D38,D38,D,lotto da riusare,3600.0,4450.0,4800.0,14.0
+R00166,D13,D13,D,lotto da riusare,3600.0,4850.0,5500.0,16.9
+R00167,D10,D10,D,lotto da riusare,3450.0,4700.0,5300.0,15.7
+E00168,E5,E5,E,lotto edificabile,2625.0,3350.0,3500.0,11.8
+E00169,E5,E5,E,lotto edificabile,2625.0,3350.0,3500.0,11.8
+E00170,E5,E5,E,lotto edificabile,2625.0,3350.0,3500.0,11.8
+E00171,E5,E5,E,lotto edificabile,2625.0,3350.0,3500.0,11.8
+E00172,E6,E6,E,lotto edificabile,3050.0,3850.0,4200.0,14.0
+E00173,E5,E5,E,lotto edificabile,2625.0,3350.0,3500.0,11.8
+E00174,D39,D39,D,lotto edificabile,3900.0,4800.0,5700.0,14.0
+E00175,E6,E6,E,lotto edificabile,3050.0,3850.0,4200.0,14.0
+E00176,D39,D39,D,lotto edificabile,3900.0,4800.0,5700.0,14.0
+E00177,D39,D39,D,lotto edificabile,3900.0,4800.0,5700.0,14.0
+E00178,D39,D39,D,lotto edificabile,3900.0,4800.0,5700.0,14.0
+E00179,E5,E5,E,lotto edificabile,2625.0,3350.0,3500.0,11.8
+E00180,D39,D39,D,lotto edificabile,3900.0,4800.0,5700.0,14.0
+E00181,D39,D39,D,lotto edificabile,3900.0,4800.0,5700.0,14.0
+E00182,D39,D39,D,lotto edificabile,3900.0,4800.0,5700.0,14.0
+E00183,D25,D25,D,lotto edificabile,3150.0,4000.0,4500.0,13.7
+E00184,D39,D39,D,lotto edificabile,3900.0,4800.0,5700.0,14.0
+E00185,D39,D39,D,lotto edificabile,3900.0,4800.0,5700.0,14.0
+E00186,D25,D25,D,lotto edificabile,3150.0,4000.0,4500.0,13.7
+E00187,D39,D39,D,lotto edificabile,3900.0,4800.0,5700.0,14.0
+E00188,D39,D39,D,lotto edificabile,3900.0,4800.0,5700.0,14.0
+E00189,D25,D25,D,lotto edificabile,3150.0,4000.0,4500.0,13.7
+E00190,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00191,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00192,D25,D25,D,lotto edificabile,3150.0,4000.0,4500.0,13.7
+E00193,D28,D28,D,lotto edificabile,3800.0,4950.0,5500.0,15.5
+E00194,D25,D25,D,lotto edificabile,3150.0,4000.0,4500.0,13.7
+E00195,D25,D25,D,lotto edificabile,3150.0,4000.0,4500.0,13.7
+E00196,D28,D28,D,lotto edificabile,3800.0,4950.0,5500.0,15.5
+E00197,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00198,D28,D28,D,lotto edificabile,3800.0,4950.0,5500.0,15.5
+E00199,E6,E6,E,lotto edificabile,3050.0,3850.0,4200.0,14.0
+E00200,D28,D28,D,lotto edificabile,3800.0,4950.0,5500.0,15.5
+E00201,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00202,D28,D28,D,lotto edificabile,3800.0,4950.0,5500.0,15.5
+E00203,D28,D28,D,lotto edificabile,3800.0,4950.0,5500.0,15.5
+E00204,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00205,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00206,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00207,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00208,D25,D25,D,lotto edificabile,3150.0,4000.0,4500.0,13.7
+E00209,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00210,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00211,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00212,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00213,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00214,D40,D40,D,lotto edificabile,3125.0,4300.0,5000.0,14.5
+E00215,E8,E8,E,lotto edificabile,2275.0,3225.0,3700.0,9.9
+E00216,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00217,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00218,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00219,C17,C17,C,lotto edificabile,6150.0,8450.0,10000.0,18.5
+E00220,D24,D24,D,lotto edificabile,3900.0,5300.0,6300.0,16.0
+E00221,E8,E8,E,lotto edificabile,2275.0,3225.0,3700.0,9.9
+E00222,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00223,D32,D32,D,lotto edificabile,3000.0,4150.0,4900.0,11.8
+E00224,E8,E8,E,lotto edificabile,2275.0,3225.0,3700.0,9.9
+E00225,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00226,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00227,C17,C17,C,lotto edificabile,6150.0,8450.0,10000.0,18.5
+E00228,C17,C17,C,lotto edificabile,6150.0,8450.0,10000.0,18.5
+E00229,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00230,D24,D24,D,lotto edificabile,3900.0,5300.0,6300.0,16.0
+E00231,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00232,D24,D24,D,lotto edificabile,3900.0,5300.0,6300.0,16.0
+E00233,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00234,C13,C13,C,lotto edificabile,8300.0,10400.0,12500.0,28.0
+E00235,D31,D31,D,lotto edificabile,3550.0,4850.0,5300.0,14.5
+E00236,C13,C13,C,lotto edificabile,8300.0,10400.0,12500.0,28.0
+E00237,D31,D31,D,lotto edificabile,3550.0,4850.0,5300.0,14.5
+E00238,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00239,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00240,E7,E7,E,lotto edificabile,2425.0,2900.0,3100.0,9.9
+E00241,D31,D31,D,lotto edificabile,3550.0,4850.0,5300.0,14.5
+E00242,C18,C18,C,lotto edificabile,5450.0,7450.0,8500.0,19.9
+E00243,D32,D32,D,lotto edificabile,3000.0,4150.0,4900.0,11.8
+E00244,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00245,D32,D32,D,lotto edificabile,3000.0,4150.0,4900.0,11.8
+E00246,E7,E7,E,lotto edificabile,2425.0,2900.0,3100.0,9.9
+E00247,C18,C18,C,lotto edificabile,5450.0,7450.0,8500.0,19.9
+E00248,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00249,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00250,D32,D32,D,lotto edificabile,3000.0,4150.0,4900.0,11.8
+E00251,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00252,C18,C18,C,lotto edificabile,5450.0,7450.0,8500.0,19.9
+E00253,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00254,D31,D31,D,lotto edificabile,3550.0,4850.0,5300.0,14.5
+E00255,E7,E7,E,lotto edificabile,2425.0,2900.0,3100.0,9.9
+E00256,D32,D32,D,lotto edificabile,3000.0,4150.0,4900.0,11.8
+E00257,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00258,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00259,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00260,D32,D32,D,lotto edificabile,3000.0,4150.0,4900.0,11.8
+E00261,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00262,D21,D21,D,lotto edificabile,3350.0,4600.0,5100.0,15.0
+E00263,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00264,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00265,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00266,D36,D36,D,lotto edificabile,4100.0,5750.0,6800.0,14.0
+E00267,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00268,B17,B17,B,lotto edificabile,7150.0,9700.0,11500.0,26.4
+E00269,C16,C16,C,lotto edificabile,5300.0,7750.0,9000.0,18.0
+E00270,D36,D36,D,lotto edificabile,4100.0,5750.0,6800.0,14.0
+E00271,B18,B18,B,lotto edificabile,7750.0,11050.0,13000.0,29.0
+E00272,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00273,D36,D36,D,lotto edificabile,4100.0,5750.0,6800.0,14.0
+E00274,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00275,D33,D33,D,lotto edificabile,3400.0,4350.0,4700.0,14.6
+E00276,D33,D33,D,lotto edificabile,3400.0,4350.0,4700.0,14.6
+E00277,C12,C12,C,lotto edificabile,6300.0,8750.0,10300.0,23.5
+E00278,B19,B19,B,lotto edificabile,7750.0,10550.0,12000.0,27.0
+E00279,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00280,D33,D33,D,lotto edificabile,3400.0,4350.0,4700.0,14.6
+E00281,D33,D33,D,lotto edificabile,3400.0,4350.0,4700.0,14.6
+E00282,D18,D18,D,lotto edificabile,3375.0,4850.0,5700.0,15.0
+E00283,D33,D33,D,lotto edificabile,3400.0,4350.0,4700.0,14.6
+E00284,D33,D33,D,lotto edificabile,3400.0,4350.0,4700.0,14.6
+E00285,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00286,D33,D33,D,lotto edificabile,3400.0,4350.0,4700.0,14.6
+E00287,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00288,D33,D33,D,lotto edificabile,3400.0,4350.0,4700.0,14.6
+E00289,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00290,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00291,D33,D33,D,lotto edificabile,3400.0,4350.0,4700.0,14.6
+E00292,D33,D33,D,lotto edificabile,3400.0,4350.0,4700.0,14.6
+E00293,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00294,D18,D18,D,lotto edificabile,3375.0,4850.0,5700.0,15.0
+E00295,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00296,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00297,D18,D18,D,lotto edificabile,3375.0,4850.0,5700.0,15.0
+E00298,D20,D20,D,lotto edificabile,3750.0,4950.0,5600.0,14.9
+E00299,D18,D18,D,lotto edificabile,3375.0,4850.0,5700.0,15.0
+E00300,D33,D33,D,lotto edificabile,3400.0,4350.0,4700.0,14.6
+E00301,D36,D36,D,lotto edificabile,4100.0,5750.0,6800.0,14.0
+E00302,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00303,D36,D36,D,lotto edificabile,4100.0,5750.0,6800.0,14.0
+E00304,D34,D34,D,lotto edificabile,3750.0,4600.0,4900.0,15.0
+E00305,D34,D34,D,lotto edificabile,3750.0,4600.0,4900.0,15.0
+E00306,D34,D34,D,lotto edificabile,3750.0,4600.0,4900.0,15.0
+E00307,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00308,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00309,D36,D36,D,lotto edificabile,4100.0,5750.0,6800.0,14.0
+E00310,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00311,D16,D16,D,lotto edificabile,3750.0,5450.0,6600.0,15.0
+E00312,D12,D12,D,lotto edificabile,4700.0,6850.0,8000.0,15.5
+E00313,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00314,D12,D12,D,lotto edificabile,4700.0,6850.0,8000.0,15.5
+E00315,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00316,D16,D16,D,lotto edificabile,3750.0,5450.0,6600.0,15.0
+E00317,D16,D16,D,lotto edificabile,3750.0,5450.0,6600.0,15.0
+E00318,D16,D16,D,lotto edificabile,3750.0,5450.0,6600.0,15.0
+E00319,D16,D16,D,lotto edificabile,3750.0,5450.0,6600.0,15.0
+E00320,D16,D16,D,lotto edificabile,3750.0,5450.0,6600.0,15.0
+E00321,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00322,D37,D37,D,lotto edificabile,3150.0,4200.0,4800.0,14.9
+E00323,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00324,D18,D18,D,lotto edificabile,3375.0,4850.0,5700.0,15.0
+E00325,D16,D16,D,lotto edificabile,3750.0,5450.0,6600.0,15.0
+E00326,D37,D37,D,lotto edificabile,3150.0,4200.0,4800.0,14.9
+E00327,D12,D12,D,lotto edificabile,4700.0,6850.0,8000.0,15.5
+E00328,D18,D18,D,lotto edificabile,3375.0,4850.0,5700.0,15.0
+E00329,D10,D10,D,lotto edificabile,3450.0,4700.0,5300.0,15.7
+E00330,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00331,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00332,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00333,D10,D10,D,lotto edificabile,3450.0,4700.0,5300.0,15.7
+E00334,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00335,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00336,D10,D10,D,lotto edificabile,3450.0,4700.0,5300.0,15.7
+E00337,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00338,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00339,D37,D37,D,lotto edificabile,3150.0,4200.0,4800.0,14.9
+E00340,D37,D37,D,lotto edificabile,3150.0,4200.0,4800.0,14.9
+E00341,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00342,D37,D37,D,lotto edificabile,3150.0,4200.0,4800.0,14.9
+E00343,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00344,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00345,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00346,D37,D37,D,lotto edificabile,3150.0,4200.0,4800.0,14.9
+E00347,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00348,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00349,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00350,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00351,D37,D37,D,lotto edificabile,3150.0,4200.0,4800.0,14.9
+E00352,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00353,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00354,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00355,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00356,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00357,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00358,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00359,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00360,D35,D35,D,lotto edificabile,3425.0,4950.0,5700.0,13.7
+E00361,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00362,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00363,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00364,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00365,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00366,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00367,D10,D10,D,lotto edificabile,3450.0,4700.0,5300.0,15.7
+E00368,D37,D37,D,lotto edificabile,3150.0,4200.0,4800.0,14.9
+E00369,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00370,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00371,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00372,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00373,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00374,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00375,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00376,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00377,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00378,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00379,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00380,D38,D38,D,lotto edificabile,3600.0,4450.0,4800.0,14.0
+E00381,D10,D10,D,lotto edificabile,3450.0,4700.0,5300.0,15.7
+E00382,D13,D13,D,lotto edificabile,3600.0,4850.0,5500.0,16.9
+E00383,D10,D10,D,lotto edificabile,3450.0,4700.0,5300.0,15.7
+G00652,D25,D25,D,"edificabile per destinazione, non verificato",3150.0,4000.0,4500.0,13.7
+G00653,D25,D25,D,"edificabile per destinazione, non verificato",3150.0,4000.0,4500.0,13.7
+G00654,D25,D25,D,"edificabile per destinazione, non verificato",3150.0,4000.0,4500.0,13.7
+G00655,D25,D25,D,"edificabile per destinazione, non verificato",3150.0,4000.0,4500.0,13.7
+G00656,D25,D25,D,"edificabile per destinazione, non verificato",3150.0,4000.0,4500.0,13.7
+G00657,D25,D25,D,"edificabile per destinazione, non verificato",3150.0,4000.0,4500.0,13.7
+G00658,D25,D25,D,"edificabile per destinazione, non verificato",3150.0,4000.0,4500.0,13.7
+G00659,D25,D25,D,"edificabile per destinazione, non verificato",3150.0,4000.0,4500.0,13.7
+G00660,D25,D25,D,"edificabile per destinazione, non verificato",3150.0,4000.0,4500.0,13.7
+G00661,D25,D25,D,"edificabile per destinazione, non verificato",3150.0,4000.0,4500.0,13.7
+G00662,D25,D25,D,"edificabile per destinazione, non verificato",3150.0,4000.0,4500.0,13.7
+G00663,D21,D21,D,"edificabile per destinazione, non verificato",3350.0,4600.0,5100.0,15.0
+G00664,D21,D21,D,"edificabile per destinazione, non verificato",3350.0,4600.0,5100.0,15.0
+G00665,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00666,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00667,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00668,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00669,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00670,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00671,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00672,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00673,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00674,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00675,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00676,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00677,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00678,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00679,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00680,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00681,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00682,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00683,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00684,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00685,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00686,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00687,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00688,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00689,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00690,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00691,D31,D31,D,"edificabile per destinazione, non verificato",3550.0,4850.0,5300.0,14.5
+G00692,D18,D18,D,"edificabile per destinazione, non verificato",3375.0,4850.0,5700.0,15.0
+G00693,D18,D18,D,"edificabile per destinazione, non verificato",3375.0,4850.0,5700.0,15.0
+G00694,D18,D18,D,"edificabile per destinazione, non verificato",3375.0,4850.0,5700.0,15.0
+G00695,D18,D18,D,"edificabile per destinazione, non verificato",3375.0,4850.0,5700.0,15.0
+G00696,D18,D18,D,"edificabile per destinazione, non verificato",3375.0,4850.0,5700.0,15.0
+G00697,D18,D18,D,"edificabile per destinazione, non verificato",3375.0,4850.0,5700.0,15.0
+G00698,D18,D18,D,"edificabile per destinazione, non verificato",3375.0,4850.0,5700.0,15.0
+G00699,D18,D18,D,"edificabile per destinazione, non verificato",3375.0,4850.0,5700.0,15.0
+G00700,D18,D18,D,"edificabile per destinazione, non verificato",3375.0,4850.0,5700.0,15.0
+G00701,D18,D18,D,"edificabile per destinazione, non verificato",3375.0,4850.0,5700.0,15.0
