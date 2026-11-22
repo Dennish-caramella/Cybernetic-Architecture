@@ -10,6 +10,8 @@ Termini canonici del progetto. Solo definizioni, nessun dettaglio di implementaz
 
 **Area di attivazione**: area dismessa con potenziale strategico non residenziale (verde, spazio pubblico, servizi) che può migliorare la qualità dei lotti vicini. È la terza classe della Base L, accanto a lotto edificabile e lotto da riusare. *Da evitare*: chiamarla "lotto" se non è destinata ad abitazioni.
 
+**Lotto GFU** (classe "edificabile per destinazione, non verificato"): lotto in una Grande Funzione Urbana del PGT 2030 (perimetro 2012 sostitutivo), la cui destinazione e il cui stato fisico non sono verificati. Sta fuori dai totali dei lotti; la capacità si riporta solo come scenario. *Da evitare*: contarlo come lotto edificabile.
+
 **Ancora**: un luogo che il nucleo abitativo deve raggiungere spesso (lavoro, scuola, università, cura).
 
 **Vettore dei desideri**: la descrizione delle esigenze di un nucleo abitativo: ancore, pesi sui criteri del lotto, budget e composizione.

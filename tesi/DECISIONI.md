@@ -62,3 +62,9 @@ Dennis: "procedi con il nuovo passaggio". **Lettura di Claude, da confermare**: 
 - **Tessuto consolidato** solo con cantiere documentato da fonte ufficiale o confermato da entrambi i codificatori del censimento. Bovisa resta "da verificare" (è una GFU); viale Molise (PA3) non è tessuto consolidato senza atto approvato.
 - **C5 con codifiche nuove**: la v6 ha mostrato dove fallisce (GFU 0,26); togliere le GFU e ricalcolare C5 sulle stesse codifiche sarebbe circolare. La v7 si valida con codifiche cieche nuove, fatte da due modelli diversi da quello delle codifiche precedenti, su un campione nuovo pre-registrato.
 - La verifica di Dennis sui 17 lotti GFU resta facoltativa: con le GFU fuori dai totali non blocca la base.
+
+## 2026-11-22 — Base L v7 congelata (decisione di Dennis)
+- **Regole della v7 confermate** (tacitamente col "chiudiamo la base" e poi esplicitamente col "diamo per passato"): GFU in classe separata fuori dai totali, tessuto consolidato solo con cantiere documentato.
+- **Controllo umano di C5**: Dennis ha codificato 60 lotti. Quota pesata 0,737 (0,730 con la sua precisazione che "sembra agricolo" = verde curato, V): **inconcludente** per la fascia pre-registrata 0,65–0,75. Per i lotti con capacità (edificabili e da riusare) 38 su 40 liberi o dismessi (informativo).
+- **Decisione di Dennis: dare il test per passato** e andare avanti con le altre basi. Registrato come **decisione, non come misura** (come C7 della v3): per la regola pre-registrata C5 resta inconcludente. Nessun secondo giro di controllo.
+- Limiti che restano (REVISIONE.md v7): codificatori modelli linguistici, un solo codificatore umano, 60 lotti; aree di attivazione piccole o verdi non giudicabili da foto; lotti da riusare e AdP deboli; maschera dei corpi idrici e due scenari di capacità non fatti.

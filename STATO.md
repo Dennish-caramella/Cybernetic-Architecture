@@ -24,7 +24,7 @@ Aggiornato 2026-11-22. Decisioni di impianto: `tesi/DECISIONI.md`. Storia: `gior
 Mappa: issue #15 (Base L → banco, Base P, Base E, pre-registrazione → A1–A4, B0–B6, confronto, sintesi). Regole: `esperimenti/PROTOCOLLO_LABORATORIO.md`; agenti in `.claude/agents/`.
 - **Base L v5** (#38, `esperimenti/L_lotti_v5/`): ambiti PGT 2030; 216 edificabili / 176 riuso / 309 attivazione; ~32.900 alloggi a FAR 1. C1–C4, C6, C8 e C5 passano (C5 di misura, 0,708; codificatori LLM probabilmente non indipendenti); **C9 non passa** (11/29). Revisione: **cambia**. **Ferma: decide Dennis** su C9 (documenti del Comune), validità dei codificatori LLM, GFU (Piazza d'Armi), riuso, altri AdP/PII.
 - **Base L v6** (#39, `esperimenti/L_lotti_v6/`): 220 E / 160 R / 269 A + 52 tessuto consolidato; capacità a FAR 1 in una forbice 29.000–45.700. **C5 falso (0,686)**: le GFU come edificabili sono libere in foto solo 0,26. Revisione: cambia. Ferma: decide Dennis (GFU separate, regola cantiere, verifica dei 17 lotti GFU, v7).
-- **Base L v7** (#40, `esperimenti/L_lotti_v7/`): GFU in classe separata (50 lotti), 216 E / 167 R / 268 A, capacità edificabili 32.885 a FAR 1 (forbice 29.000–45.700). C5a 0,722 passa per regola, ma la revisione propone **ripeti C5**: dipende dalla sostituzione Fable → Opus (Haiku da solo 0,68). Regole v7 da confermare da Dennis. Non congelata.
+- **Base L v7** (#40, `esperimenti/L_lotti_v7/`): **congelata il 22/11 per decisione di Dennis** (C5 inconcludente: controllo umano 0,737; non è un "passa" misurato). 216 E / 167 R / 268 A + 50 GFU in classe separata; capacità edificabili a FAR 1 in forbice 32.885–45.683. Limiti in `VERSIONE.md`. Prossimo: Base P (#18), Base E (#19).
 - v1–v4: prove documentate, non basi.
 
 ## Decisione del 10/11

@@ -75,7 +75,7 @@ if os.path.exists(kf):
         d = os.path.join(HERE, f"controllo_codificatore_{n}")
         for b, kb in k.groupby("blocco"):
             bd = os.path.join(d, f"blocco_{b:02d}"); want = sorted(c + ".jpg" for c in kb.codice)
-            assert sorted(os.listdir(bd)) == ["ISTRUZIONI.txt", "codifica.csv", "img", "img_s2"] and sorted(os.listdir(os.path.join(bd, "img"))) == want == sorted(os.listdir(os.path.join(bd, "img_s2")))
+            assert sorted(os.listdir(bd)) == sorted(set(["ISTRUZIONI.txt", "codifica.csv", "img", "img_s2"]) | (set(os.listdir(bd)) & {"codifica.sha256"})) and sorted(os.listdir(os.path.join(bd, "img"))) == want == sorted(os.listdir(os.path.join(bd, "img_s2")))
             assert pd.read_csv(os.path.join(bd, "codifica.csv"), dtype=str).codice.tolist() == kb.codice.tolist()
     # autoverifica di criteri_c5 su fogli sintetici (lotti tutti L, base tutta U): C5a = 1, kappa = 1, C5 vero; scrive solo in una cartella temporanea
     camp = k.merge(L[["id", "geometry"]], on="id", how="left"); camp = gpd.GeoDataFrame(camp, geometry="geometry", crs=32632)

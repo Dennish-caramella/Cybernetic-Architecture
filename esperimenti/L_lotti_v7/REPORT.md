@@ -1,6 +1,6 @@
 # Report di laboratorio — Base L v7: GFU separate e validazione cieca nuova (ticket #40)
 
-Stato: **C1–C6 e C8 passano secondo la regola** (C5a = 0,722), ma la revisione indipendente propone **ripeti C5** (§7): il passaggio dipende dalla deviazione sul codificatore 1. Non congelata. Report assemblato dal coordinatore.
+Stato: **congelata il 22/11 per decisione di Dennis** (`VERSIONE.md`): C1–C4, C6, C8 passano; C5 dei modelli 0,722 ma dipende dalla deviazione sul codificatore 1 (revisione: ripeti); **controllo umano 0,737 (0,730 con la precisazione di Dennis su H36 e H57): inconcludente** per la fascia pre-registrata 0,65–0,75, dato per passato da Dennis come decisione, non come misura. Report assemblato dal coordinatore.
 
 ## 1. Ipotesi e soglia
 Testo completo in `esecuzioni/00_preregistrazione.txt` (versione 2, SHA-256 `7f98ab31…`, commit 114bea1 del 16/11 21:07Z, prima di ogni esecuzione). La prima stesura (`9342f700…`, commit e5ca67b) è superata: la regola del cantiere chiedeva una fonte ufficiale "nella riga" e non "riferita al cantiere"; la correzione è stata fatta dopo un conteggio in sola lettura ed è dichiarata.
@@ -41,7 +41,7 @@ Lotti da riusare: 672 / 1.429 / 2.938 (recupero 2.898). Forbice degli edificabil
 - Lotti in comune con v5 (30) e v6 (61): kappa tra 0,59 e 0,90; quote simili a quelle di allora (informativo).
 
 ## 5. Esito
-Secondo la regola pre-registrata i criteri passano; la revisione propone **ripeti** per C5 (G1: il passaggio dipende dalla sostituzione Fable → Opus; con il codificatore pre-registrato la proiezione è C5a ≈ 0,68 [I]). Base **non congelata**: decide Dennis (§7).
+Secondo la regola pre-registrata i criteri passano; la revisione propone **ripeti** per C5 (G1: il passaggio dipende dalla sostituzione Fable → Opus; con il codificatore pre-registrato la proiezione è C5a ≈ 0,68 [I]). Controllo umano di Dennis (60 lotti, `controllo_umano/ESITO_umano.txt`): 51 liberi o dismessi, 7 non giudicabili (6 in aree di attivazione fuori ambito), 2 in uso; edificabili e da riusare 38 su 40 (informativo); i modelli sono più severi di Dennis sui 35 lotti in comune (Dennis 0,94, Opus 0,74, Haiku 0,60). Base congelata per decisione di Dennis (§8).
 
 ## 6. Limiti
 - C5a passa per la media dei due codificatori: **il codificatore 2 da solo (0,684) sarebbe sotto 0,70**. La differenza tra modelli (0,76 contro 0,68) è dello stesso ordine del margine dalla soglia.
@@ -62,4 +62,4 @@ Testo completo in `REVISIONE.md` (`revisore-metodologico`; altra istanza dello s
 - Raccomandazione per chiudere C5: Dennis codifica alla cieca un sottocampione stratificato nuovo (es. 60 lotti) con soglia 0,70 pre-registrata; in alternativa completare Fable con crediti. Sconsigliato accettare il "passa" così com'è.
 
 ## 8. Cosa passa alla prova successiva
-Se la revisione non segnala difetti gravi: base L v7 congelata (`VERSIONE.md`) con le classi edificabile / da riusare / attivazione e la classe GFU separata; capacità dichiarata come forbice di scenari; avvertenze sui lotti in ambito AdP e sul riuso per banco, Base P, Base E, A1–A4.
+Base L v7 congelata per decisione di Dennis il 22/11 (`VERSIONE.md`; limiti nelle sezioni §6 e §7) con le classi edificabile / da riusare / attivazione e la classe GFU separata; capacità dichiarata come forbice di scenari; avvertenze sui lotti in ambito AdP e sul riuso per banco, Base P, Base E, A1–A4.
