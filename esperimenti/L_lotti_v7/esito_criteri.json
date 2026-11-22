@@ -473,32 +473,13 @@
  "C8": true,
  "passa": false,
  "registro": {
-  "utc": "2026-11-16T220512Z",
-  "commit": "114bea15cb9c93ecb0a9d53fdd7c784a14db3a8c",
+  "utc": "2026-11-22T152601Z",
+  "commit": "3da1708988944477964a9b8f8e50901f3c2678cd",
   "modifiche_non_committate": [
-   "?? esperimenti/L_lotti_v7/README.md",
-   "?? esperimenti/L_lotti_v7/chiavi/",
-   "?? esperimenti/L_lotti_v7/controllo_codificatore_1/",
-   "?? esperimenti/L_lotti_v7/controllo_codificatore_2/",
-   "?? esperimenti/L_lotti_v7/esecuzioni/2026-11-16T211434Z_pilota/",
-   "?? esperimenti/L_lotti_v7/esecuzioni/2026-11-16T212447Z_completa/",
-   "?? esperimenti/L_lotti_v7/esecuzioni/2026-11-16T213416Z_completa/",
-   "?? esperimenti/L_lotti_v7/esecuzioni/log_completa1.txt",
-   "?? esperimenti/L_lotti_v7/esecuzioni/log_completa2.txt",
-   "?? esperimenti/L_lotti_v7/esecuzioni/log_completa3_prepara.txt",
-   "?? esperimenti/L_lotti_v7/esecuzioni/log_completa4_verifica_chiave.txt",
-   "?? esperimenti/L_lotti_v7/esecuzioni/log_sens_cantiere_superata.txt",
-   "?? esperimenti/L_lotti_v7/esecuzioni/log_sens_cantiere_v6.txt",
-   "?? esperimenti/L_lotti_v7/esecuzioni/registro.txt",
-   "?? esperimenti/L_lotti_v7/esito_criteri.json",
-   "?? esperimenti/L_lotti_v7/lotti_v7.gpkg",
-   "?? esperimenti/L_lotti_v7/requirements.txt",
-   "?? esperimenti/L_lotti_v7/run.py",
-   "?? esperimenti/L_lotti_v7/tabelle/",
-   "?? esperimenti/L_lotti_v7/test_lotti.py"
+   "M esperimenti/L_lotti_v7/esecuzioni/log_criteri.txt"
   ],
   "sha256_run_py": "f5fdd0c85bf409e3159fc0e0c4d89da387d541f87b4081a18c583f9646746fb4",
   "python": "3.13.18",
-  "durata_s": 562
+  "durata_s": 615
  }
 }

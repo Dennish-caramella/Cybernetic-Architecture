@@ -1,0 +1,337 @@
+codice,Q1,LCD,eterogeneo,tetto,veg,uso,s2,nota,istanza,ora_utc
+C501,U,0,,T3,V0,U+,N,piazzale asfaltato in uso con auto tettoia a telaio forse senza copertura,c1o_b01,2026-11-22T15:11:46Z
+C502,L,3,,,,,M,incolto con arbusti s2 più chiaro forse sterro (incerto),c1o_b01,2026-11-22T15:11:53Z
+C503,L,3,,T1,V2,U?,N,lotto inselvatichito con alberi piccolo manufatto basso (L o D incerto),c1o_b01,2026-11-22T15:12:01Z
+C504,D,3,,T3,V1,U-,M,rudere con copertura crollata e travi a vista s2 chiaro forse demolito (incerto),c1o_b01,2026-11-22T15:12:08Z
+C505,L,3,,,,,S,relitto tra ferrovia e viadotto con alberi e incolto,c1o_b01,2026-11-22T15:12:13Z
+C506,D,3,,T3,V1,U-,M,capannone senza copertura solo orditura con vegetazione s2 area circostante sterrata,c1o_b01,2026-11-22T15:12:20Z
+C507,L,3,,,,,M,prato incolto s2 ampia area chiara forse sterro o cantiere,c1o_b01,2026-11-22T15:12:26Z
+C508,U,0,,T1,V0,U?,N,edificio residenziale con giardino alberato in ombra,c1o_b01,2026-11-22T15:12:33Z
+C509,L,3,,,,,S,più contorni sovrapposti codificato il perimetro esterno incolto e sterrato con parcheggio pieno a sud,c1o_b01,2026-11-22T15:12:41Z
+C510,L,3,,,,,N,fascia alberata fitta e striscia di terra nuda (L o V incerto),c1o_b01,2026-11-22T15:12:49Z
+C511,L,3,,,,,N,ritaglio incolto con alberi e qualche detrito include tratto di strada,c1o_b01,2026-11-22T15:12:57Z
+C512,V,0,,,,,N,spartitraffico alberato tra strada e parcheggio (V o I incerto),c1o_b01,2026-11-22T15:13:06Z
+C513,I,1,E,T1,V1,U+,S,piazzale di servizio con mezzi e baracche più anello stradale e alberi (I o U incerto),c1o_b01,2026-11-22T15:13:15Z
+C514,U,0,,T1,V0,U+,S,palazzina residenziale in uso con giardino,c1o_b01,2026-11-22T15:13:23Z
+C515,L,3,,,,,S,incolto con erbe e arbusti accanto a svincolo,c1o_b01,2026-11-22T15:13:31Z
+C516,L,3,,,,,N,lotto urbano a terra nuda e erba secca con materiali accatastati,c1o_b01,2026-11-22T15:13:40Z
+C517,U,0,,T1,V1,U?,N,edificio basso con tetto scuro coperto in parte da alberi (U o D incerto),c1o_b01,2026-11-22T15:13:50Z
+C518,U,0,,,,,N,piazzale con auto parcheggiate in area ferroviaria produttiva edifici solo al bordo,c1o_b01,2026-11-22T15:14:00Z
+C519,I,1,E,T1,V1,U+,S,poligoni multipli in scalo ferroviario binari capannoni e cuneo alberato con sterrato (molto incerto),c1o_b01,2026-11-22T15:14:11Z
+C520,U,0,,T1,V0,U?,N,edificio residenziale in centro storico con terrazza e cortile,c1o_b01,2026-11-22T15:14:21Z
+C521,D,3,,T2,V2,U-,M,ex area industriale con platee demolite e vegetazione spontanea s2 sterrata e nuovi capannoni a est (D o L incerto),c1o_b01,2026-11-22T15:14:32Z
+C522,U,0,,T1,V0,U+,N,tetto a falde integro e cortile con auto,c1o_b02,2026-11-22T15:11:45Z
+C523,U,0,,T1,V1,U?,N,edificio lungo a falde integro; chiome alberi stradali sul bordo,c1o_b02,2026-11-22T15:11:51Z
+C524,U,0,,T1,V0,U?,N,complesso a corti con tetti integri,c1o_b02,2026-11-22T15:11:56Z
+C525,L,3,,,,,S,incolto tra svincolo e capannoni,c1o_b02,2026-11-22T15:12:01Z
+C526,U,0,,T1,V0,U?,N,capannone a shed integro; uso non leggibile dall'alto,c1o_b02,2026-11-22T15:12:06Z
+C527,L,3,,T1,V1,U?,M,grande incolto con un edificio a tetto piano; in s2 parte sud verde,c1o_b02,2026-11-22T15:12:12Z
+C528,L,3,,,,,S,incolto con alberi e erba alta presso ferrovia,c1o_b02,2026-11-22T15:12:18Z
+C529,D,3,,T2,V1,U-,M,capannone con vegetazione nei compluvi e chiazze sul tetto; in s2 contorno chiaro incerto,c1o_b02,2026-11-22T15:12:26Z
+C530,L,3,,,,,S,striscia di prato e alberi spontanei; incerto tra L e V,c1o_b02,2026-11-22T15:12:32Z
+C531,U,0,,T1,V0,U+,N,edificio a tetto basso integro; parcheggio adiacente con auto,c1o_b02,2026-11-22T15:12:38Z
+C532,D,3,,T3,V2,U-,N,muri senza copertura invasi da vegetazione; incerto tra D e L,c1o_b02,2026-11-22T15:12:43Z
+C533,U,0,,T1,V0,U+,N,edificio su strada con tetto integro e balconi con vasi,c1o_b02,2026-11-22T15:12:56Z
+C534,U,0,,T1,V0,U+,N,palazzina residenziale con balconi e tende; vista obliqua,c1o_b02,2026-11-22T15:13:03Z
+C535,U,1,,T1,V0,U+,S,lotto periurbano con casa roulotte e auto; prato secco come pertinenza incerto tra U e L,c1o_b02,2026-11-22T15:13:12Z
+C536,U,1,,T1,V1,U?,M,grande capannone integro e lotto incolto a sud-est; in s2 angolo sud-est chiaro forse edificato,c1o_b02,2026-11-22T15:13:22Z
+C537,L,3,,,,,S,prato incolto con alberi attorno a palazzina esclusa dal contorno,c1o_b02,2026-11-22T15:13:30Z
+C538,V,0,,,,,S,parco nuovo con viali e alberi giovani attorno a cascina esclusa; prato secco,c1o_b02,2026-11-22T15:13:39Z
+C539,L,2,,T1,V2,U?,S,contorno a fascia lungo ferrovia con incolto arbustivo e piccolo edificio; parte binari; contorno di lettura difficile,c1o_b02,2026-11-22T15:13:52Z
+C540,L,2,,T1,V2,U+,S,prato secco e alberi spontanei con casette a nord-est; LCD tra 2 e 3,c1o_b02,2026-11-22T15:14:02Z
+C541,D,3,,T1,V2,U?,S,casa isolata con tetto integro in lotto invaso da vegetazione; incerto tra D e L,c1o_b02,2026-11-22T15:14:11Z
+C542,L,3,,T1,V1,U?,S,piazzale sterrato vuoto con piccolo edificio bianco a sud-ovest; capannone sul bordo est forse fuori contorno,c1o_b02,2026-11-22T15:14:18Z
+C543,L,3,,,,,S,incolto con arbusti; contorno autointersecato,c1o_b03,2026-11-22T15:11:44Z
+C544,U,0,,T1,V0,U?,N,edificio a corte con tetto piano in ombra al centro,c1o_b03,2026-11-22T15:11:50Z
+C545,V,0,,,,,M,campo agricolo mietuto; in s2 area scura forse acqua di cava o coltura (incerto),c1o_b03,2026-11-22T15:11:59Z
+C546,L,3,,,,,N,fascia lungo canale con sterrato incolto e alberi,c1o_b03,2026-11-22T15:12:05Z
+C547,D,3,,T2,V1,U-,M,capannone con aperture nel tetto; in s2 intorno sembra sterrato chiaro al posto del verde,c1o_b03,2026-11-22T15:12:12Z
+C548,L,3,,,,,S,prato secco con alberi accanto a parco; incerto tra L e V,c1o_b03,2026-11-22T15:12:19Z
+C549,L,3,,,,,S,lotto incolto con vegetazione spontanea tra capannoni,c1o_b03,2026-11-22T15:12:25Z
+C550,U,0,E,T1,V0,U+,N,area piccola: chiome alberi e pavimentato di pertinenza con tettoia; uso da auto e piscina vicine,c1o_b03,2026-11-22T15:12:34Z
+C551,D,2,,T1,V2,U?,N,cortile interno invaso da vegetazione e macerie con piccolo edificio a tetto integro,c1o_b03,2026-11-22T15:12:43Z
+C552,U,0,,T1,V0,U+,M,edifici in uso con auto in cortile; in s2 parte est appare chiara (forse tetti rifatti; incerto),c1o_b03,2026-11-22T15:12:51Z
+C553,L,3,,,,,S,relitto boscato spontaneo tra svincoli stradali,c1o_b03,2026-11-22T15:12:58Z
+C554,L,2,E,T1,V2,U+,N,lotto con vegetazione spontanea e platea vuota; piccolo edificio e auto parcheggiate,c1o_b03,2026-11-22T15:13:07Z
+C555,V,0,E,,,,N,sagrato o cortile alberato pavimentato accanto a chiesa; incerto tra V e U,c1o_b03,2026-11-22T15:13:16Z
+C556,L,2,,,,,M,lotto a prato non curato con vialetti pavimentati; in s2 area beige tipo cantiere,c1o_b03,2026-11-22T15:13:25Z
+C557,D,3,,T2,V2,U-,M,complesso industriale con grandi capannoni e vegetazione su tetti e piazzali; contorno multiplo; in s2 parti sud ed est chiare forse sterro,c1o_b03,2026-11-22T15:13:36Z
+C558,U,1,,T1,V1,U+,N,cortile sterrato usato come parcheggio con edifici bassi,c1o_b03,2026-11-22T15:13:47Z
+C559,D,3,,T3,V2,U-,N,rudere senza copertura con muri visibili invaso da alberi,c1o_b03,2026-11-22T15:13:56Z
+C560,U,0,,T1,V0,U+,N,edificio residenziale con tetto in coppi integro e auto intorno,c1o_b03,2026-11-22T15:14:05Z
+C561,D,3,,T3,V1,U-,N,edifici con crolli parziali e macerie all'interno; incerto tra T2 e T3,c1o_b03,2026-11-22T15:14:14Z
+C562,V,1,,,,,S,parco alberato con sentieri e prato secco; striscia a est meno curata,c1o_b03,2026-11-22T15:14:23Z
+C563,L,3,,,,,S,prato incolto con alberi presso ferrovia; coda con parcheggio in uso,c1o_b03,2026-11-22T15:14:33Z
+C564,L,3,,,,,N,striscia incolta con filare alberi,c1o_b04,2026-11-22T15:11:46Z
+C565,U,0,E,,,,N,cortile interno in ombra con alberi e auto,c1o_b04,2026-11-22T15:11:52Z
+C566,D,3,,T1,V1,U?,S,scalo ferroviario con binari arrugginiti e carri fermi incerto D/I,c1o_b04,2026-11-22T15:12:01Z
+C567,U,0,,T1,V0,U+,N,edificio residenziale con cortile e auto,c1o_b04,2026-11-22T15:12:06Z
+C568,L,3,,,,,S,prato con alberi in svincolo stradale sfalciato incerto L/V,c1o_b04,2026-11-22T15:12:13Z
+C569,L,3,,,,,S,prato e boscaglia spontanea dietro distributore,c1o_b04,2026-11-22T15:12:18Z
+C570,D,3,,T3,V2,U-,S,isolato con tetti crollati e vegetazione copertura bianca incerta,c1o_b04,2026-11-22T15:12:26Z
+C571,U,0,,T1,V0,U?,N,edificio storico con cortile in ombra,c1o_b04,2026-11-22T15:12:32Z
+C572,U,0,,T1,V0,U?,N,parte di edificio residenziale con pannelli in copertura,c1o_b04,2026-11-22T15:12:39Z
+C573,U,0,,T1,V0,U?,N,edificio a corte in centro storico tetti integri,c1o_b04,2026-11-22T15:12:46Z
+C574,L,3,,T1,V1,U?,M,piazzale parcheggio quasi vuoto accanto a scavo incerto L/U s2 area scura forse nuovo edificio,c1o_b04,2026-11-22T15:12:54Z
+C575,L,3,,T1,V1,U?,M,grande area sterrata con piazzale vuoto e incolto s2 piu verde,c1o_b04,2026-11-22T15:13:02Z
+C576,L,3,,,,,S,incolto con arbusti dentro svincolo e tratti di rampa,c1o_b04,2026-11-22T15:13:09Z
+C577,D,3,,T2,V2,U-,M,capannoni con tetti danneggiati e vegetazione s2 area circostante sterrata,c1o_b04,2026-11-22T15:13:17Z
+C578,L,3,,,,,S,lotto a prato secco incolto con alberi,c1o_b04,2026-11-22T15:13:24Z
+C579,L,3,,,,,S,lotto incolto con auto parcheggiate sul fronte strada,c1o_b04,2026-11-22T15:13:32Z
+C580,U,0,,T1,V0,U+,N,edificio residenziale con terrazzi abitati,c1o_b04,2026-11-22T15:13:40Z
+C581,X,,,T1,V0,U?,N,striscia tra edifici quasi tutta in ombra non giudicabile immagine visibile,c1o_b04,2026-11-22T15:13:50Z
+C582,L,3,,,,,S,area demolita con platee in cemento e vegetazione rada incerto L/D,c1o_b04,2026-11-22T15:13:59Z
+C583,U,0,,,,,N,striscia di parcheggio con auto e chiome di alberi incerto U/I,c1o_b04,2026-11-22T15:14:08Z
+C584,D,3,,T2,V1,U-,N,fabbricato isolato con tetto in coppi usurato tra incolto e ferrovia incerto D/U,c1o_b04,2026-11-22T15:14:17Z
+C585,U,0,,T1,V0,U+,N,isolato urbano denso,c1o_b05,2026-11-22T15:11:45Z
+C586,D,3,,T2,V1,U-,N,capannone con copertura degradata,c1o_b05,2026-11-22T15:11:49Z
+C587,L,3,,,,,S,incolto con arbusti lungo ferrovia,c1o_b05,2026-11-22T15:11:56Z
+C588,D,3,,T2,V2,U-,M,alberi su corte e tetti; s2 tetto centrale più chiaro (incerto),c1o_b05,2026-11-22T15:12:02Z
+C589,U,0,,T1,V0,U+,S,copertura chiara di edificio in complesso attivo,c1o_b05,2026-11-22T15:12:07Z
+C590,L,3,,,,,S,boscaglia spontanea fitta; incerto L o V,c1o_b05,2026-11-22T15:12:13Z
+C591,V,0,,,,,N,giardino alberato in corte; molta ombra,c1o_b05,2026-11-22T15:12:19Z
+C592,U,0,,T1,V0,U?,N,corpi interni di isolato con cortiletto,c1o_b05,2026-11-22T15:12:25Z
+C593,L,3,,,,,M,lotto incolto con tracce di sterro; s2 superfici chiare nuove,c1o_b05,2026-11-22T15:12:31Z
+C594,V,1,,T1,V1,U+,N,giardino con gazebo e baracchine; incerto V o L,c1o_b05,2026-11-22T15:12:38Z
+C595,L,3,,,,,N,striscia incolta tra edificio e ferrovia con detriti,c1o_b05,2026-11-22T15:12:44Z
+C596,L,2,,T1,V1,U?,M,ampio piazzale ferroviario vuoto più striscia edificata a ovest; scala piccola; s2 più verde,c1o_b05,2026-11-22T15:12:53Z
+C597,L,3,,,,,S,striscia di prato incolto tra due strade,c1o_b05,2026-11-22T15:12:59Z
+C598,L,3,,,,,S,prato incolto con traliccio; s2 sterro adiacente a est fuori contorno,c1o_b05,2026-11-22T15:13:06Z
+C599,V,0,,,,,S,campi coltivati (contorno in due parti),c1o_b05,2026-11-22T15:13:13Z
+C600,L,3,,,,,S,prato e bosco in svincolo autostradale; incerto L o V,c1o_b05,2026-11-22T15:13:21Z
+C601,D,3,,T2,V2,U-,N,villino con tetto bucato in giardino inselvatichito; incerto D o L,c1o_b05,2026-11-22T15:13:30Z
+C602,L,3,,T1,V1,U?,S,ex scalo con platee vuote e un edificio lungo; secondo piccolo contorno circolare interno (codificato il rettangolo),c1o_b05,2026-11-22T15:13:40Z
+C603,L,3,,,,,S,alberi e arbusti fitti non curati accanto a edificio; incerto L o V,c1o_b05,2026-11-22T15:13:48Z
+C604,U,0,,T1,V0,U+,N,capannone a falde con auto accanto,c1o_b05,2026-11-22T15:13:55Z
+C605,D,2,,T2,V1,U?,N,capannoni con lacune in copertura sul lato est e cortile vuoto; incerto D o U,c1o_b05,2026-11-22T15:14:02Z
+C606,L,3,,,,,S,prato incolto non falciato,c1o_b06,2026-11-22T15:11:45Z
+C607,L,2,,T0,V2,U+,N,vegetazione arborea spontanea e baracca coperta da telo blu,c1o_b06,2026-11-22T15:11:52Z
+C608,U,0,,T1,V0,U?,N,edificio con cortile e giardino interno in tessuto urbano denso,c1o_b06,2026-11-22T15:11:59Z
+C609,U,0,,T1,V0,U+,N,edifici in uso con impianti in copertura centro urbano,c1o_b06,2026-11-22T15:12:05Z
+C610,V,1,,,,,N,fascia verde con alberi giovani in filare e prato secco incerto V/L,c1o_b06,2026-11-22T15:12:12Z
+C611,U,0,,T1,V0,U?,N,contorno frammentato non chiuso su copertura a shed di capannone incerto,c1o_b06,2026-11-22T15:12:19Z
+C612,L,3,,,,,S,lotto incolto con alberi spontanei e radure sterrate,c1o_b06,2026-11-22T15:12:25Z
+C613,L,3,,T3,V2,U-,N,area di demolizione con muri perimetrali senza tetto e infestanti incerto L/D,c1o_b06,2026-11-22T15:12:34Z
+C614,D,3,,T1,V1,U-,N,due contorni: capannone stretto e piazzale con infestanti senza segni d uso; secondo contorno frammentato su tetti,c1o_b06,2026-11-22T15:12:42Z
+C615,U,0,,T1,V0,U+,N,cortina di edifici residenziali con balconi e cortile interno in ombra,c1o_b06,2026-11-22T15:12:49Z
+C616,D,3,,T1,V1,U-,M,tetto integro di capannone a stecca in complesso con piazzali fessurati e nessun segno d uso incerto D/U; in S2 file di edifici non piu distinguibili,c1o_b06,2026-11-22T15:12:59Z
+C617,L,3,,,,,S,striscia di vegetazione arborea spontanea tra muri forse trincea in ombra,c1o_b06,2026-11-22T15:13:06Z
+C618,L,3,,,,,S,piazzale sterrato vuoto con tracce di stalli e pochi mezzi al bordo incerto L/I,c1o_b06,2026-11-22T15:13:14Z
+C619,C,2,E,T2,V1,U?,N,meta edificio con tetto integro e meta senza copertura con macerie forse cantiere di ristrutturazione incerto C/D/U,c1o_b06,2026-11-22T15:13:24Z
+C620,L,3,,,,,S,ampio incolto con alberi spontanei e vecchi tracciati; piccoli rettangoli interni senza edifici visibili,c1o_b06,2026-11-22T15:13:33Z
+C621,U,0,,T1,V0,U?,N,contorno a L non del tutto chiuso su porzione di edificio a gradoni e marciapiede; accanto a lotto incolto escluso,c1o_b06,2026-11-22T15:13:42Z
+C622,L,3,,,,,M,prato incolto con alberi e chiazza sterrata; in S2 fascia chiara uniforme forse sterro o erba secca,c1o_b06,2026-11-22T15:13:51Z
+C623,L,3,,T0,V2,U-,S,grande scalo dismesso sterrato e incolto con alberi spontanei; piccoli manufatti segnati in rosso non leggibili,c1o_b06,2026-11-22T15:14:01Z
+C624,D,3,,T3,V2,U-,M,capannone con copertura scheletrica o crollata e piazzali invasi da vegetazione incerto D/L; in S2 area uniforme bruno-arancio forse demolito o sterro,c1o_b06,2026-11-22T15:14:13Z
+C625,L,2,,,,,S,incolto arbustivo con sentieri e sterro; comprende tratto di strada e orti urbani,c1o_b06,2026-11-22T15:14:23Z
+C626,U,0,,,,,N,corsia asfaltata tra due capannoni con mezzi e container parcheggiati incerto U/I,c1o_b06,2026-11-22T15:14:33Z
+C627,L,1,E,T2,V1,U?,S,acqua del lago oltre metà area non codificabile; codificata la parte a terra (piazzale cava e impianto),c1o_b07,2026-11-22T15:11:56Z
+C628,U,0,,T1,V1,U?,N,cortile laterale con vegetazione e materiali,c1o_b07,2026-11-22T15:11:56Z
+C629,L,3,,,,,S,prati e incolti; prato verde a sud forse sfalciato (V incerto),c1o_b07,2026-11-22T15:12:07Z
+C630,D,3,,T1,V2,U-,S,complesso a corte con alberi spontanei nei cortili; tetti apparentemente integri,c1o_b07,2026-11-22T15:12:12Z
+C631,U,0,,T1,V0,U+,N,capannoni presso scalo ferroviario con auto parcheggiate,c1o_b07,2026-11-22T15:12:15Z
+C632,V,0,,T1,V1,U+,S,orti urbani coltivati con capanni; incolto e macerie a sud (LCD vicino a 1),c1o_b07,2026-11-22T15:12:21Z
+C633,U,0,,T1,V0,U+,N,edificio urbano con terrazze; contorno multiplo; parte in ombra,c1o_b07,2026-11-22T15:12:27Z
+C634,L,3,,,,,S,lotto intercluso a incolto con alberi spontanei,c1o_b07,2026-11-22T15:12:33Z
+C635,I,0,,T1,V1,U+,S,fascio ferroviario e piazzale stazione; scala ampia con dettaglio scarso,c1o_b07,2026-11-22T15:12:40Z
+C636,U,0,,T1,V0,U?,N,edifici in cortina con terrazze e lucernari; ombra sul lato ovest,c1o_b07,2026-11-22T15:12:46Z
+C637,L,3,,,,,S,relitto stradale con alberi e prato non curato (V incerto),c1o_b07,2026-11-22T15:12:52Z
+C638,L,3,,,,,S,bosco spontaneo con pista sterrata e deposito materiali in uso sul lato est,c1o_b07,2026-11-22T15:12:58Z
+C639,U,0,,T1,V0,U?,N,area minima: pergolato su terrazza e striscia stretta tra edifici,c1o_b07,2026-11-22T15:13:05Z
+C640,U,0,,T1,V0,U?,N,edificio in linea con tetto a coppi integro; auto parcheggiate subito fuori contorno; uso non certo (D possibile),c1o_b07,2026-11-22T15:13:12Z
+C641,U,0,,T1,V0,U+,N,edificio urbano con terrazze e impianti; cortile interno in ombra,c1o_b07,2026-11-22T15:13:18Z
+C642,L,3,,,,,M,prato non curato (forse prato da sfalcio); in s2 superfici chiare nuove: probabile cantiere o edifici,c1o_b07,2026-11-22T15:13:25Z
+C643,I,1,E,,,,N,striscia di accesso con alberature e piccolo piazzale in ombra a sud-ovest; incerto,c1o_b07,2026-11-22T15:13:33Z
+C644,U,0,,T1,V0,U+,N,residenziale con balconi fioriti e giardino condominiale curato nel cortile,c1o_b07,2026-11-22T15:13:40Z
+C645,L,2,,T1,V1,U+,S,incolto e sterrato con alberi spontanei a est; deposito materiali in uso con capannoni a ovest,c1o_b07,2026-11-22T15:13:48Z
+C646,D,3,,T3,V2,U-,N,edificio senza copertura con muri a vista e alberi sopra; rudere,c1o_b07,2026-11-22T15:13:55Z
+C647,L,3,,,,,S,prati non curati con alberi sparsi; striscia sud su campo arato; contorno multiplo,c1o_b07,2026-11-22T15:14:00Z
+C648,U,0,,T1,V1,U?,N,capannoni tetto integro cortile con ghiaia e albero,c1o_b08,2026-11-22T15:11:45Z
+C649,L,2,,,,,S,prato incolto a est parte ovest falciata forse agricola,c1o_b08,2026-11-22T15:11:52Z
+C650,L,3,,,,,M,piazzale vuoto e binari dismessi inerbiti; in s2 area sterrata,c1o_b08,2026-11-22T15:11:58Z
+C651,L,3,,,,,N,prato incolto fra rampe svincolo con tratto di rampa; LCD tra 2 e 3,c1o_b08,2026-11-22T15:12:04Z
+C652,U,0,,T1,V1,U?,N,edificio con tetti a toppe e vegetazione fitta attorno; uso incerto; in s2 area chiara a est fuori contorno,c1o_b08,2026-11-22T15:12:11Z
+C653,U,0,,T1,V1,U?,N,complesso con corpo ad anello e fila di edifici; fascia alberata a est; uso non evidente,c1o_b08,2026-11-22T15:12:18Z
+C654,U,0,,T1,V1,U+,N,striscia stretta con piccoli edifici e auto lungo la corte,c1o_b08,2026-11-22T15:12:24Z
+C655,U,0,,T1,V0,U+,N,isolato residenziale denso con corti; contorno frammentato in tre parti,c1o_b08,2026-11-22T15:12:31Z
+C656,V,0,,,,,M,impianto arboreo giovane in filari; in s2 chioma fitta scura,c1o_b08,2026-11-22T15:12:37Z
+C657,C,3,,,,,M,cantiere attivo con scavi mezzi e baracche (Q2 non compilato: solo baracche); in s2 sembra edificato,c1o_b08,2026-11-22T15:12:46Z
+C658,L,3,,,,,M,incolto con arbusti e alberi spontanei; in s2 area chiara probabile sterro o cantiere,c1o_b08,2026-11-22T15:12:52Z
+C659,U,0,,T1,V1,U+,N,edificio urbano con terrazzi e piccolo giardino interno,c1o_b08,2026-11-22T15:12:59Z
+C660,L,3,,,,,S,alberi e prato spontanei interni a svincolo con tratto di rampa e bordo laghetto; LCD tra 2 e 3,c1o_b08,2026-11-22T15:13:08Z
+C661,L,2,,T1,V2,U?,N,piazzale vuoto con erbe e alberi spontanei piu basso edificio; quota L vicina a meta,c1o_b08,2026-11-22T15:13:17Z
+C662,L,2,,,,,S,vegetazione spontanea e sentieri lungo canale; orti informali con baracche a ovest (Q2 non compilato); strada a nord,c1o_b08,2026-11-22T15:13:26Z
+C663,V,0,,,,,N,giardino alberato in corte interna molto in ombra; curato o incolto incerto,c1o_b08,2026-11-22T15:13:34Z
+C664,U,0,,T1,V0,U?,N,edificio d'angolo con tetto grigio integro; segni d'uso non chiari dall'alto,c1o_b08,2026-11-22T15:13:42Z
+C665,D,2,E,T2,V2,U?,M,comparto industriale misto: capannoni degradati e piazzali inerbiti a est e alberi; capannoni sud forse in uso; in s2 parte est piu chiara forse demolizioni,c1o_b08,2026-11-22T15:13:54Z
+C666,U,0,,T1,V0,U?,N,edificio su strada con corpo retrostante in ombra; parte nord poco leggibile,c1o_b08,2026-11-22T15:14:03Z
+C667,I,1,E,,,,M,scalo con binari attivi e banchina; parte nord-est binari dismessi inerbiti; LCD tra 1 e 2; in s2 parte nord-est sterrata,c1o_b08,2026-11-22T15:14:14Z
+C668,D,3,,T2,V2,U-,S,capannoni a shed con coperture arrugginite e lacunose e vegetazione nel corridoio centrale,c1o_b08,2026-11-22T15:14:24Z
+C669,L,3,,,,,S,incolto con deposito materiali a nord,c1o_b09,2026-11-22T15:12:17Z
+C670,U,1,E,,,,N,pertinenza con campo sportivo alberi e striscia sterrata,c1o_b09,2026-11-22T15:12:25Z
+C671,L,3,,,,,M,sterrato e scarpata incolta in area tipo ex stadio - s2 piu verde,c1o_b09,2026-11-22T15:12:33Z
+C672,L,3,,,,,M,bosco spontaneo prato umido e parte di stagno - s2 zona sud piu chiara forse sterro incerto,c1o_b09,2026-11-22T15:12:40Z
+C673,L,3,,,,,S,incolto erboso tra strade sterrate,c1o_b09,2026-11-22T15:12:45Z
+C674,U,0,,T1,V1,U?,N,contorno sottile a L su bordo capannone e piccolo annesso - incerto,c1o_b09,2026-11-22T15:12:53Z
+C675,L,3,,T0,V2,U-,S,strisce lungo sterrato e bosco spontaneo con piccolo manufatto al vertice incerto,c1o_b09,2026-11-22T15:13:01Z
+C676,U,0,,T1,V0,U+,N,edificio con terrazzi e cortile in ombra non leggibile - riflesso solare,c1o_b09,2026-11-22T15:13:08Z
+C677,D,3,E,T3,V1,U-,N,fila di corpi senza tetto e piazzale vuoto a ovest - D vs L quasi pari,c1o_b09,2026-11-22T15:13:17Z
+C678,U,0,,T1,V0,U?,N,edificio a corte in tessuto urbano denso tetti integri,c1o_b09,2026-11-22T15:13:23Z
+C679,U,0,,T1,V0,U+,N,edificio residenziale con terrazze arredate e giardino curato,c1o_b09,2026-11-22T15:13:29Z
+C680,L,3,,,,,S,piazzale sterrato vuoto lungo scalo ferroviario - possibile I se area di servizio,c1o_b09,2026-11-22T15:13:36Z
+C681,L,3,,T3,V2,U-,N,lotto invaso da vegetazione con piccolo rudere senza tetto - casa a est in gran parte fuori contorno,c1o_b09,2026-11-22T15:13:46Z
+C682,L,3,,T1,V1,U?,S,incolto tra ferrovia e canale con sentieri e viadotto - edificio basso al bordo sud-ovest incerto se dentro,c1o_b09,2026-11-22T15:13:55Z
+C683,U,0,,T1,V1,U+,N,capannoni con tetti integri e auto in cortile,c1o_b09,2026-11-22T15:14:03Z
+C684,V,0,E,T1,V0,U+,N,alberatura con parcheggio pieno e parte di edificio lungo - V vs U incerto,c1o_b09,2026-11-22T15:14:13Z
+C685,U,1,,T2,V1,U?,N,corpi su strada con coppi macchiati forse danneggiati e tetto piano chiaro - stato incerto,c1o_b09,2026-11-22T15:14:23Z
+C686,L,3,,,,,N,radura erbosa forse sfalciata e bosco spontaneo a sud - L vs V incerto,c1o_b09,2026-11-22T15:14:31Z
+C687,U,0,,T1,V0,U?,N,tetti piani in isolato denso - meta ovest in ombra profonda non leggibile,c1o_b09,2026-11-22T15:14:39Z
+C688,U,0,,T1,V0,U?,N,palazzina residenziale tetto a falde integro con lucernari,c1o_b09,2026-11-22T15:14:46Z
+C689,U,0,,T1,V0,U?,S,capannone industriale tetti integri con lucernari - s2 tetto piu giallastro incerto,c1o_b09,2026-11-22T15:14:52Z
+C690,D,3,,T2,V1,U-,N,edificio con parte senza tetto e vegetazione interna,c1o_b10,2026-11-22T15:12:16Z
+C691,L,3,,,,,S,incolto con alberi e sterrato,c1o_b10,2026-11-22T15:12:24Z
+C692,D,3,,T1,V1,U?,M,incerto tra D e U: tetto integro ma macchiato e nessun segno d'uso; in s2 area più chiara,c1o_b10,2026-11-22T15:12:30Z
+C693,L,3,,,,,N,prato secco e sterrato; piccola fascia di marciapiede,c1o_b10,2026-11-22T15:12:34Z
+C694,L,3,,,,,M,incolto con tracce di mezzi accanto a cantiere; in s2 sembra edificato,c1o_b10,2026-11-22T15:12:39Z
+C695,U,1,E,T1,V1,U+,M,due poligoni: striscia lungo binari incolta e lotto con tendone e piazzale asfaltato; capannoni a sud-ovest forse dismessi; in s2 lotto edificato,c1o_b10,2026-11-22T15:12:47Z
+C696,U,0,,T1,V1,U?,N,area piccola: copertura piana e cortile alberato con scala elicoidale,c1o_b10,2026-11-22T15:12:53Z
+C697,V,0,E,T1,V1,U+,S,complesso a padiglioni con fitta alberatura; parcheggio pieno a nord-ovest; incerto tra V e U,c1o_b10,2026-11-22T15:13:02Z
+C698,U,0,,T1,V1,U+,N,parcheggio pieno con alberi e parte di edificio a tetto rosso,c1o_b10,2026-11-22T15:13:08Z
+C699,L,3,,T1,V1,U?,S,vasto prato incolto e boscaglia spontanea; parcheggio in uso a sud; pochi manufatti minori a est,c1o_b10,2026-11-22T15:13:16Z
+C700,U,0,,T1,V1,U?,N,edificio residenziale con terrazze e verde secco ai bordi,c1o_b10,2026-11-22T15:13:22Z
+C701,U,0,,T1,V0,U+,S,condominio con cortile e box; auto nel cortile,c1o_b10,2026-11-22T15:13:28Z
+C702,D,3,,,,,M,fascio di binari invasi da vegetazione; incerto tra D e L; in s2 parte sud sterrata,c1o_b10,2026-11-22T15:13:36Z
+C703,L,2,,,,,N,lotto triangolare incolto con arbusti più striscia pavimentata lungo la strada; cantiere adiacente,c1o_b10,2026-11-22T15:13:44Z
+C704,L,3,,T1,V1,U?,S,prato falciato senza arredi e piazzale vuoto con capannone; incerto tra L e V,c1o_b10,2026-11-22T15:13:52Z
+C705,I,1,E,T2,V1,U+,N,piazzale ferroviario di servizio con materiali e parte di edificio; estremità nord del tetto forse demolita con macerie,c1o_b10,2026-11-22T15:14:01Z
+C706,L,3,,,,,S,lotto triangolare a prato incolto,c1o_b10,2026-11-22T15:14:07Z
+C707,L,3,,,,,N,striscia di boscaglia spontanea tra binari e strada; un binario in uso sul bordo; in s2 vegetazione poco leggibile,c1o_b10,2026-11-22T15:14:15Z
+C708,U,0,,T1,V1,U?,N,cortile interno alberato e parte di edificio a falde; area in ombra,c1o_b10,2026-11-22T15:14:21Z
+C709,U,0,,T1,V0,U?,N,edificio con tetto scuro a falde integro; giardino incolto adiacente fuori contorno,c1o_b10,2026-11-22T15:14:29Z
+C710,L,2,,,,,S,lotto a prato secco incolto e tratto di strada,c1o_b10,2026-11-22T15:14:34Z
+C711,U,0,,T1,V1,U?,N,cortile alberato macchie scure sul tetto,c1o_b11,2026-11-22T15:12:16Z
+C712,U,0,,T1,V0,U+,S,magazzino ferroviario con mezzi e auto accanto,c1o_b11,2026-11-22T15:12:21Z
+C713,D,3,,T3,V2,U-,N,rudere senza copertura con vegetazione all'interno,c1o_b11,2026-11-22T15:12:26Z
+C714,L,3,,,,,M,incolto arbustivo con radure in s2 superficie chiara con segni lineari,c1o_b11,2026-11-22T15:12:31Z
+C715,U,0,,T1,V0,U+,S,doppio contorno codificato quello esterno complesso con campo sportivo,c1o_b11,2026-11-22T15:12:36Z
+C716,U,0,,T1,V0,U?,N,incerto gran parte in ombra cortile interno tra edifici,c1o_b11,2026-11-22T15:12:41Z
+C717,U,0,,T1,V0,U?,N,edifici urbani tetti piani integri parte in ombra,c1o_b11,2026-11-22T15:12:46Z
+C718,V,0,,T1,V0,U?,N,giardino alberato circa metà e parte di villa incerto V contro U,c1o_b11,2026-11-22T15:12:53Z
+C719,L,3,,,,,S,alberatura spontanea incolta accanto a capannoni con piazzale invaso incerto L contro V,c1o_b11,2026-11-22T15:12:59Z
+C720,L,2,,,,,M,scarpata svincolo erba secca con aiuole pacciamate in s2 più verde,c1o_b11,2026-11-22T15:13:07Z
+C721,L,1,E,T1,V1,U+,S,area ferroviaria con piazzale sterrato vuoto campi sportivi e alberi incerto L contro I,c1o_b11,2026-11-22T15:13:14Z
+C722,L,3,,,,,M,area sgombra con platee di demolizione accanto a cantiere in s2 sagome edificate,c1o_b11,2026-11-22T15:13:22Z
+C723,L,3,,,,,S,fascia boscata spontanea lungo la ferrovia,c1o_b11,2026-11-22T15:13:29Z
+C724,D,3,,T1,V2,U-,S,corpi a corte con cortili invasi da alberi tetti apparentemente integri,c1o_b11,2026-11-22T15:13:37Z
+C725,U,0,,T1,V0,U?,S,capannone a copertura chiara con file di lucernari o listelli incerto T1 contro T2,c1o_b11,2026-11-22T15:13:46Z
+C726,D,3,,T2,V1,U-,M,tetto piano degradato con aperture e alberi incolti intorno in s2 area circostante chiara forse sgombrata,c1o_b11,2026-11-22T15:13:54Z
+C727,U,0,,T1,V0,U+,M,centro sportivo con campi da tennis e padel in s2 campi non riconoscibili toni chiari,c1o_b11,2026-11-22T15:14:03Z
+C728,V,1,E,T1,V1,U+,S,orti informali con baracche alberi e spiazzo sterrato incerto V contro L,c1o_b11,2026-11-22T15:14:12Z
+C729,L,3,,,,,S,due poligoni con macchie arboree ed erba secca tra svincoli incerto L contro V,c1o_b11,2026-11-22T15:14:20Z
+C730,U,1,,T1,V1,U+,N,piazzale pieno di auto con tettoia e bordo infestato,c1o_b11,2026-11-22T15:14:29Z
+C731,L,3,,,,,M,incolto secco con tracciato e cataste di materiale in s2 più verde forse stagionale,c1o_b11,2026-11-22T15:14:36Z
+C732,U,0,,T1,V0,U+,N,residenziale in uso con giardino,c1o_b12,2026-11-22T15:12:17Z
+C733,U,0,,T1,V1,U+,S,capannone commerciale e vecchi edifici con alberi a sud,c1o_b12,2026-11-22T15:12:23Z
+C734,U,0,,T1,V1,U?,N,cortile alberato interno a isolato residenziale; incerto U o V; striscia di tetto con oggetti,c1o_b12,2026-11-22T15:12:31Z
+C735,L,2,,,,,N,striscia sottile lungo fascio binari: sterrato a nord e incolto verde a sud; incerto L o I; scala piccola,c1o_b12,2026-11-22T15:12:38Z
+C736,D,3,,T1,V1,U-,M,solo falda di tetto in coppi apparentemente integra in complesso con tettoie scoperchiate; incerto D o U,c1o_b12,2026-11-22T15:12:46Z
+C737,L,3,,,,,N,prato falciato libero accanto a strada nuova; incerto L o V,c1o_b12,2026-11-22T15:12:52Z
+C738,L,2,,,,,N,terreno nudo e incolto con vasca impermeabilizzata (circa un quarto); LCD tra 2 e 3,c1o_b12,2026-11-22T15:13:01Z
+C739,L,2,E,T1,V1,U+,N,incolto con alberi e sabbia al centro; cantiere a ovest e sud; strade incluse,c1o_b12,2026-11-22T15:13:09Z
+C740,U,0,,T1,V0,U+,N,edificio urbano centrale con tetti piani e terrazze in uso,c1o_b12,2026-11-22T15:13:14Z
+C741,L,3,,T1,V1,U?,N,lotto incolto con piccola baracca e resti di manufatti bassi,c1o_b12,2026-11-22T15:13:22Z
+C742,D,3,,T2,V1,U-,M,capannoni industriali dismessi con coperture forate e parte centrale crollata; in s2 sembra spianato,c1o_b12,2026-11-22T15:13:30Z
+C743,U,1,,T1,V1,U?,S,grande edificio con copertura bianca integra; prato incolto a nordovest e piazzale sterrato a nordest,c1o_b12,2026-11-22T15:13:37Z
+C744,L,2,,,,,S,area tra svincoli: incolto a ovest e prato falciato con filare e percorso a est; quasi metà e metà,c1o_b12,2026-11-22T15:13:45Z
+C745,D,3,,T2,V2,U-,N,struttura incompiuta o abbandonata: solaio con ferri sporgenti e telaio scoperto invaso da vegetazione; incerto D o C,c1o_b12,2026-11-22T15:13:55Z
+C746,D,3,,T1,V1,U-,N,solo copertura grigia integra di stecca su strada; piazzale adiacente vuoto con erbacce; incerto D o U,c1o_b12,2026-11-22T15:14:06Z
+C747,L,3,,,,,M,lotto sterrato con incolto ai bordi; in s2 appare inverdito,c1o_b12,2026-11-22T15:14:13Z
+C748,V,1,,,,,S,aiuola di svincolo con prato e alberi giovani di nuovo impianto; bordo sud a erba secca,c1o_b12,2026-11-22T15:14:22Z
+C749,L,3,,,,,S,grande lotto vuoto con resti di pavimentazioni e incolto,c1o_b12,2026-11-22T15:14:29Z
+C750,U,1,,T1,V1,U+,S,edificio basso con copertura chiara e giardino alberato; terra nuda a est; auto nel lotto,c1o_b12,2026-11-22T15:14:37Z
+C751,X,,,,,,N,immagine visibile ma contorno lineare lungo ferrovia a scala 2 km: interno non leggibile (forse fascia verde o sedime ferroviario),c1o_b12,2026-11-22T15:14:46Z
+C752,I,1,,,,,S,binario sotto cavalcavia e tratto di strada con alberi ed erba secca; uso del binario non verificabile,c1o_b12,2026-11-22T15:14:52Z
+C753,D,3,,T3,V1,U-,N,capannone con copertura scheletrica a vista,c1o_b13,2026-11-22T15:12:17Z
+C754,L,2,,,,,N,binario e scarpata incolta; incerto L vs I,c1o_b13,2026-11-22T15:12:24Z
+C755,C,3,,T1,V0,U+,M,cantiere con baracche e striscia di sterrato a ovest,c1o_b13,2026-11-22T15:12:30Z
+C756,L,1,E,T1,V2,U?,N,alberi spontanei e capannoni bassi; incerto L vs U,c1o_b13,2026-11-22T15:12:37Z
+C757,L,3,,,,,S,bosco spontaneo con sentiero,c1o_b13,2026-11-22T15:12:41Z
+C758,U,0,,T1,V0,U+,N,isolato residenziale con cortile e balconi,c1o_b13,2026-11-22T15:12:46Z
+C759,U,0,,T1,V0,U+,N,edificio a L con cortile alberato e auto,c1o_b13,2026-11-22T15:12:52Z
+C760,D,3,,T3,V2,U-,M,telai senza copertura e piazzale invaso; s2 chiaro forse sterro,c1o_b13,2026-11-22T15:12:59Z
+C761,L,3,,,,,S,sponda fluviale con vegetazione spontanea e parte d'alveo,c1o_b13,2026-11-22T15:13:06Z
+C762,U,0,,T1,V0,U+,N,palazzina con terrazzi e giardino di pertinenza; incerto U vs V,c1o_b13,2026-11-22T15:13:13Z
+C763,D,3,,T1,V1,U?,N,shed a denti di sega con tegole usurate; incerto D vs U,c1o_b13,2026-11-22T15:13:22Z
+C764,L,3,,,,,S,prato incolto tra strade; forse sfalciato,c1o_b13,2026-11-22T15:13:29Z
+C765,U,0,,T1,V1,U?,N,edificio basso a tetto piano con cortiletto e albero,c1o_b13,2026-11-22T15:13:36Z
+C766,U,0,,T1,V0,U+,N,edificio con terrazzi verdi e corte con auto,c1o_b13,2026-11-22T15:13:42Z
+C767,V,0,,,,,S,striscia di prato curato e vialetto tra condomini,c1o_b13,2026-11-22T15:13:49Z
+C768,I,1,E,,,,N,strada con strisce e aiuola alberata spontanea,c1o_b13,2026-11-22T15:13:57Z
+C769,L,3,,T2,V1,U-,M,incolto e piazzale asfaltato vuoto con capannoni degradati; s2 capannoni forse demoliti,c1o_b13,2026-11-22T15:14:06Z
+C770,L,3,,,,,S,lotto invaso da alberi; forse resti di struttura sotto la chioma,c1o_b13,2026-11-22T15:14:14Z
+C771,I,0,,,,,N,fascio di binari attivi con catenaria,c1o_b13,2026-11-22T15:14:20Z
+C772,L,3,,T2,V2,U-,N,incolto con tettoia o serra bucata e ruderi; incerto L vs D,c1o_b13,2026-11-22T15:14:29Z
+C773,U,0,,,,,N,stretto passaggio tra edifici con oggetti e piante in vaso; area minuscola,c1o_b13,2026-11-22T15:14:35Z
+C774,L,3,,,,,N,piazzale con stalli quasi vuoto - incerto L/I,c1o_b14,2026-11-22T15:12:15Z
+C775,L,3,,,,,S,vegetazione spontanea arborea fitta,c1o_b14,2026-11-22T15:12:21Z
+C776,L,3,,,,,N,prato secco con alberi e vialetti e piazzale vuoto - incerto L/V,c1o_b14,2026-11-22T15:12:28Z
+C777,V,1,E,T1,V1,U+,N,possibile vivaio con capannoni e auto - mix V/U/L incerto,c1o_b14,2026-11-22T15:12:35Z
+C778,L,3,,T2,V1,U?,N,cascina con prato incolto e area di macerie o fondazioni - un veicolo,c1o_b14,2026-11-22T15:12:43Z
+C779,U,0,,T1,V1,U?,N,capannone con tetto integro accanto a deposito materiali,c1o_b14,2026-11-22T15:12:49Z
+C780,U,0,E,T1,V0,U?,N,edificio residenziale con giardino e cortile - mix U/V,c1o_b14,2026-11-22T15:12:55Z
+C781,L,3,,,,,M,lotto incolto tra capannoni - in s2 appare piu verde scuro (incerto),c1o_b14,2026-11-22T15:13:03Z
+C782,L,3,,,,,S,striscia lunga tra ferrovia e canale - incolto verde con area bianca di cantiere o sterro a ovest - scala 1381 m poco leggibile - incerto L/I,c1o_b14,2026-11-22T15:13:12Z
+C783,U,0,,T1,V1,U?,N,edificio urbano con tetto in coppi irregolare e macchie - possibile degrado (incerto T1/T2),c1o_b14,2026-11-22T15:13:20Z
+C784,U,0,,T1,V0,U+,S,capannone logistico con fotovoltaico e camion alle baie,c1o_b14,2026-11-22T15:13:27Z
+C785,U,0,,T1,V0,U+,N,stecca residenziale con tetto integro e auto adiacenti,c1o_b14,2026-11-22T15:13:35Z
+C786,L,3,,,,,M,grande lotto incolto con tracce di mezzi - in s2 bande e campiture nuove (incerto M/S),c1o_b14,2026-11-22T15:13:43Z
+C787,L,3,,T1,V2,U?,S,boscaglia spontanea e prato incolto con piccolo cortile e annessi a sud-ovest,c1o_b14,2026-11-22T15:13:53Z
+C788,D,3,,T2,V2,U-,N,complesso dismesso con tetti forati e detriti e vegetazione nei cortili,c1o_b14,2026-11-22T15:14:02Z
+C789,L,3,,,,,M,incolto con arbusti e suolo nudo presso svincolo - in s2 area molto piu sterrata (possibile cantiere o scavo),c1o_b14,2026-11-22T15:14:11Z
+C790,L,3,,,,,S,prato secco residuale tra strada e passerella o viadotto - pochi alberi,c1o_b14,2026-11-22T15:14:20Z
+C791,V,0,,,,,S,chiome alberate di parco o giardino urbano - suolo non visibile (incerto V/L),c1o_b14,2026-11-22T15:14:29Z
+C792,D,3,,T2,V1,U-,M,complesso a padiglioni con piazzali vuoti e alberi spontanei tra i corpi - tetti apparentemente interi (incerto T1/T2 e D/U) - in s2 padiglioni non piu distinguibili (possibile demolizione),c1o_b14,2026-11-22T15:14:41Z
+C793,L,3,,,,,N,striscia con vegetazione spontanea fitta lungo strada - possibili resti di muri sotto chiome e accanto struttura senza tetto fuori contorno (incerto L/D),c1o_b14,2026-11-22T15:14:52Z
+C794,I,0,,T1,V0,U+,N,contorno quasi tutto su strada e marciapiede con auto - solo un margine di capannone sul bordo est,c1o_b14,2026-11-22T15:15:03Z
+C795,U,0,,T1,V0,U+,S,complesso residenziale con cortile,c1o_b15,2026-11-22T15:12:14Z
+C796,L,1,E,T1,V1,U?,S,tensostruttura con prato incolto e alberi attorno,c1o_b15,2026-11-22T15:12:20Z
+C797,L,3,,,,,N,striscia di vegetazione spontanea; area accanto forse cambiata in s2,c1o_b15,2026-11-22T15:12:25Z
+C798,L,2,,T1,V2,U?,N,cortile incolto alberato con edificio basso lungo il lato ovest; LCD al limite 2-3,c1o_b15,2026-11-22T15:12:33Z
+C799,U,0,,T1,V0,U+,N,edifici a corte con tetti integri e auto nel cortile,c1o_b15,2026-11-22T15:12:37Z
+C800,V,0,,,,,S,campo coltivato; nuovo edificato a sud fuori contorno in s2,c1o_b15,2026-11-22T15:12:43Z
+C801,U,1,E,T1,V2,U?,M,capannoni ferroviari integri e fascia sud con vegetazione spontanea; in s2 area sgomberata o sterro; Q1 U o L incerto,c1o_b15,2026-11-22T15:12:52Z
+C802,L,3,,,,,S,fascia boscata spontanea al margine di parco; L o V incerto,c1o_b15,2026-11-22T15:13:00Z
+C803,U,1,,T1,V1,U+,S,edificio commerciale con ampio piazzale quasi vuoto e qualche auto; U o L incerto,c1o_b15,2026-11-22T15:13:08Z
+C804,D,3,,T2,V2,U-,M,capannoni con tetti degradati e vegetazione su tetto ovest; s2 forse demolito (incerto),c1o_b15,2026-11-22T15:13:16Z
+C805,V,0,,,,,S,aiuola di svincolo stradale a prato sfalciato con alberi; V o L o I incerto,c1o_b15,2026-11-22T15:13:23Z
+C806,D,3,,T2,V2,U-,N,edificio dismesso con tetto bucato e alberi interni; parte di strada a est; LCD 2-3,c1o_b15,2026-11-22T15:13:32Z
+C807,U,0,,T1,V1,U?,N,edificio storico a corte con tetti in coppi integri; piccola porzione nord forse scoperta o in lavori,c1o_b15,2026-11-22T15:13:39Z
+C808,U,0,,T1,V1,U?,N,edificio urbano con terrazzi e cortile; area piccola,c1o_b15,2026-11-22T15:13:46Z
+C809,L,3,,,,,S,terreno incolto e terrapieno tra svincolo e quartiere,c1o_b15,2026-11-22T15:13:53Z
+C810,U,1,E,T1,V1,U+,N,capannoni ferroviari e parcheggio con auto; alcune falde scure forse danneggiate; uso dei capannoni incerto,c1o_b15,2026-11-22T15:14:04Z
+C811,U,0,,T1,V1,U+,N,isolato di centro storico denso con tetti integri e terrazzi,c1o_b15,2026-11-22T15:14:10Z
+C812,L,3,,,,,S,vasta area libera di suolo nudo e incolto con tracce di vecchi tracciati,c1o_b15,2026-11-22T15:14:18Z
+C813,U,1,E,T1,V1,U+,N,mosaico di edifici in uso parcheggi alberi e fascia lungo ferrovia; qualche area sterrata al centro,c1o_b15,2026-11-22T15:14:27Z
+C814,L,3,,,,,N,piccolo lotto con vegetazione fitta apparentemente spontanea; L o V incerto,c1o_b15,2026-11-22T15:14:35Z
+C815,L,3,,,,,M,incolto con boscaglia e sterrati; contorno irregolare e frastagliato; in s2 parte est piu chiara forse sterro,c1o_b15,2026-11-22T15:14:42Z
+C816,L,2,,,,,S,striscia in svincolo prato incolto e rampe,c1o_b16,2026-11-22T15:12:16Z
+C817,L,2,E,T1,V1,U?,M,scalo con sterro e binari dismessi a nord e binari attivi a sud in s2 sterro esteso,c1o_b16,2026-11-22T15:12:24Z
+C818,L,3,,T1,V2,U?,M,ex binari invasi da vegetazione spontanea - in s2 sterrato senza alberi,c1o_b16,2026-11-22T15:12:31Z
+C819,L,3,,,,,S,prato incolto in svincolo con viadotto - LCD tra 2 e 3,c1o_b16,2026-11-22T15:12:37Z
+C820,I,0,,T1,V0,U+,N,piazzale con binari di deposito in uso - incerto tra I e U,c1o_b16,2026-11-22T15:12:43Z
+C821,U,0,,T1,V1,U?,N,palazzina con cortile alberato in ombra,c1o_b16,2026-11-22T15:12:49Z
+C822,L,3,,,,,M,binari dismessi con vegetazione spontanea - in s2 parti sterrate,c1o_b16,2026-11-22T15:12:55Z
+C823,L,2,,,,,S,carreggiata e scarpata incolta - incerto tra L e I,c1o_b16,2026-11-22T15:13:03Z
+C824,D,3,,T1,V1,U-,S,edificio a U tetto integro ma alberi incolti attorno e nessun segno d uso - incerto tra D e U,c1o_b16,2026-11-22T15:13:11Z
+C825,L,3,E,T2,V1,U?,M,prato incolto ed edificio con tetto in parte scoperto forse lavori - in s2 area chiara,c1o_b16,2026-11-22T15:13:21Z
+C826,V,0,,,,,S,prato agricolo verde curato,c1o_b16,2026-11-22T15:13:26Z
+C827,L,2,E,T1,V1,U?,S,fascia lungo ferrovia con vegetazione e binari laterali - scala grande lettura incerta,c1o_b16,2026-11-22T15:13:35Z
+C828,U,0,,T1,V1,U+,N,parcheggio pieno alberato con piccoli edifici,c1o_b16,2026-11-22T15:13:42Z
+C829,L,3,,T3,V2,U-,N,lotto con alberi spontanei fitti e forse rudere o macerie al centro - Q2 incerta,c1o_b16,2026-11-22T15:13:51Z
+C830,U,0,,T1,V0,U?,N,tetto a falde integro in isolato urbano,c1o_b16,2026-11-22T15:13:58Z
+C831,U,0,,T1,V0,U?,N,edificio d angolo con tetti integri,c1o_b16,2026-11-22T15:14:05Z
+C832,V,0,,,,,S,campo con solchi di lavorazione secco - incerto tra V e L,c1o_b16,2026-11-22T15:14:14Z
+C833,U,0,,T1,V1,U?,N,cortile interno tra stecche residenziali in ombra - lettura limitata,c1o_b16,2026-11-22T15:14:22Z
+C834,L,3,,,,,S,prato incolto con alberi spontanei lungo strada,c1o_b16,2026-11-22T15:14:29Z
+C835,L,3,,T1,V2,U-,S,area incolta tra strada e ferrovia con piccolo capanno,c1o_b16,2026-11-22T15:14:38Z
+C836,U,0,,T1,V1,U?,S,edificio a corte tetto integro e cortile interno con vegetazione - incerto tra U e D,c1o_b16,2026-11-22T15:14:44Z
