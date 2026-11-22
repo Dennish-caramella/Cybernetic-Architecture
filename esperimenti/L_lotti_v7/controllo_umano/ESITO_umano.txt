@@ -1,0 +1,10 @@
+p (X = non successo) = 0.737  SE 0.071  IC95 [0.598; 0.877]  successi per strato {'D-A': 9, 'D-E': 9, 'D-R': 10, 'F-A': 4, 'F-E': 9, 'F-R': 10}
+esito pre-registrato: INCONCLUDENTE (0,65-0,75)
+X: 7 | sensibilità X escluse: p = 0.990
+sensibilità note 'agricolo' come V (H36, H57): ['H36', 'H57'] p = 0.730
+per classe: {'area di attivazione': 0.65, 'lotto da riusare': 1.0, 'lotto edificabile': 0.9} | fuori ambito 0.77 in ambito 0.93 (medie semplici)
+distribuzione Q1: {'D': 36, 'L': 15, 'X': 7, 'U': 2}
+Opus: 35 lotti in comune | quota Dennis 0.94 vs Opus 0.74 | accordo 0.74 kappa 0.10 | Dennis sì/Opus no 8, Dennis no/Opus sì 1
+Haiku: 35 lotti in comune | quota Dennis 0.94 vs Haiku 0.60 | accordo 0.60 kappa 0.03 | Dennis sì/Haiku no 13, Dennis no/Haiku sì 1
+[informativo, non decide] E+R: 38/40 = 0.95; attivazione: 13/20 = 0.65
+X per strato: {'F-A': 6, 'F-E': 1}
