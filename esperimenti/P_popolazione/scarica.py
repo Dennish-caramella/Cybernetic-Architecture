@@ -35,6 +35,7 @@ ALTRI = [  # (nome, url, licenza dichiarata dal sito, header Accept)
     ("mef_comunale_2024.zip", MEF + "Redditi_e_principali_variabili_IRPEF_su_base_comunale_CSV_2024.zip", "MEF-DF open data (licenza non letta in sessione)", None),
     ("mef_subcomunale_2024.zip", MEF + "Redditi_e_principali_variabili_IRPEF_su_base_subcomunale_CSV_2024.zip", "MEF-DF open data (licenza non letta in sessione)", None),
     ("istat_hudw_2021.csv", SDMX + "DF_DCSS_HUDW_1_COM,1.0/.015146........", "ISTAT CC BY 3.0 IT (dichiarata sul sito ISTAT, non riletta)", "application/vnd.sdmx.data+csv;version=1.0.0"),
+    ("istat_comuni_2024_g.zip", "https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/2024/Limiti01012024_g.zip", "ISTAT CC BY 3.0 IT (dichiarata sul sito ISTAT, non riletta)", None),
     ("istat_redd_fam_lomb.csv", SDMX + "32_292_DF_DCCV_REDNETFAMFONTERED_9,1.0/.ITC4............", "ISTAT CC BY 3.0 IT (dichiarata sul sito ISTAT, non riletta)", "application/vnd.sdmx.data+csv;version=1.0.0"),
 ]
 

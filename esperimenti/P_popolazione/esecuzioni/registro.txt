@@ -2,3 +2,9 @@
 2026-11-22T21:17Z Scelte D1-D10 accettate PROVVISORIAMENTE dal coordinatore, NON da Dennis (tesi/DECISIONI.md, voce 2026-11-22 "Base P: scelte D1-D10 accettate provvisoriamente dal coordinatore"). Se Dennis ne cambia una: nuova pre-registrazione e nuova versione.
 2026-11-22T21:17Z Inizio fase 2 (download). Nessuna esecuzione di run.py prima di questa riga.
 2026-11-22T21:19:30Z scarica.py: 25 file in _cache/P_popolazione/raw, metadati in dati_metadati.csv (sha256 per file)
+2026-11-22T21:22:19Z scarica.py: aggiunto istat_comuni_2024_g.zip (centroidi dei comuni per le ancore di lavoro fuori Milano, previste in 4.6 ma omesse dalla lista 3.3: errore di acquisizione)
+2026-11-22T21:25:37Z run.py controlla: margini dal grezzo = CSV delle note (scarto 0 su tutti: ds1441 NIL/tipologia/eta/componenti, ds139, ds1457, ISTAT 2021, MEF classi, ds752, ds71, totale minori ds205)
+2026-11-22T21:26:10Z correzione di codice (pilota): civici filtrati su STATOCIVICO=Applicato, RESIDENZIALE=1, non soppressi (il filtro DATA_SOPPRESSIONE=='0' scartava tutto: campo float/NaN); scuole: scartate le geometrie vuote (198 nidi senza coordinate)
+2026-11-22T21:26:21Z pilota (3 NIL) eseguito: hash 372ccfbe..., nessun P4
+2026-11-22T21:26:35Z esecuzione completa interrotta da errore di codice (array di sola lettura nel ripiego zona OMI), nessun criterio calcolato; corretto con copia esplicita
+2026-11-22T21:32:20Z esecuzione completa 1 (hash a5b9ded7...): P2 'coordinate valide' fallito per ERRORE DI CODICE (codice sezione di destinazione ds390 letto come stringa, nessuna corrispondenza con ds98 -> 577.770 ancore lavoro senza coordinate). Corretto: sezione numerica; la modalita 'Non determinata' (32.247 su 372.123 pendolari interni per lavoro, 8,7%) esclusa e pesi rinormalizzati [dettaglio non previsto dalla pre-registrazione]. P1 di questa esecuzione: falliscono M4, M5a, M5b (non dipendono dall'errore). P4 non valutato.

@@ -1,0 +1,80 @@
+{
+ "seme": 20261122,
+ "hash_contenuto": "a5b9ded78390b08d0ab56d13b1b265827426f44b50a1c15d1a720b599ed9827f",
+ "P1_passa": false,
+ "P2": {
+  "NIL valido": true,
+  "categoria/titolo/dim": true,
+  "mono <=> dim 1 (tipologia Monocomponente)": true,
+  "anziani soli: dim 1, eta >= 65": true,
+  "famiglie con minori: >=1 minore, dim >=2": true,
+  "minori <= dim-1": true,
+  "netto >= 0": true,
+  "isee >= 0": true,
+  "budget > 0 se reddito > 0": true,
+  "minori -> >=1 ancora scuola": true,
+  "studente -> 1 ancora universita": true,
+  "percettore non pensionato -> 1 ancora lavoro": true,
+  "coordinate valide": false,
+  "ancore non 'fuori Milano' dentro il confine": false,
+  "residenza dentro il confine": true,
+  "studenti e arrivi marcati": true,
+  "nessun campo da LLM": true
+ },
+ "P2_info": {
+  "ancore_fuori_confine": 577813,
+  "residenze_fuori": 0
+ },
+ "P5": {
+  "n": 343108,
+  "G1_tau_mediana": 1.0,
+  "P5a": true,
+  "G2_quota_tau_le_080": 0.756764633876214,
+  "P5b": true,
+  "G2_quota_per_tipo": {
+   "lessicografiche": 0.8009026135159844,
+   "omofile": 1.0,
+   "polarizzate": 0.0,
+   "soglia": 0.9796860036565194,
+   "rumore": 1.0
+  },
+  "G3_sha256_veri": "1dbf7de19c841fa7573ee5caad04bf8b5c2c19bb6ac6a6c21d2fda77fdd92d9f",
+  "P5c": true
+ },
+ "rep": {
+  "convergenza": {
+   "ipf3": {
+    "convergito": true,
+    "cicli": 45
+   }
+  },
+  "minori_quota_res": 0.18172191027422258,
+  "p_minori": 0.6564905664909444,
+  "nil_senza_civici": [],
+  "fuori_zona_quotata": 3716
+ },
+ "congiunte_vere": [
+  {
+   "margine": "INFO congiunta vera NIL x tipologia x eta (ds1441)",
+   "livello": "info",
+   "celle": 2784,
+   "obiettivo_tot": 780935.0,
+   "TAE": 48392.0,
+   "TAE_N": 0.061966744991580607,
+   "err_rel_max_celle100": 0.7567567567567568,
+   "err_abs_max_celle_lt100": 234.0,
+   "SRMSE": 0.12953800391643017
+  },
+  {
+   "margine": "INFO congiunta vera tipologia x componenti (ds1441)",
+   "livello": "info",
+   "celle": 40,
+   "obiettivo_tot": 780935.0,
+   "TAE": 78496.0,
+   "TAE_N": 0.10051540781242997,
+   "err_rel_max_celle100": 3.663082437275986,
+   "err_abs_max_celle_lt100": 9690.0,
+   "SRMSE": 0.18790369968181037
+  }
+ ]
+}
