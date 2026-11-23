@@ -95,3 +95,6 @@ La Base P v1 ha esito "cambia" (P1, P3 falliscono). La v2 (`esperimenti/P_popola
 4. **Scelte provvisorie confermate da Dennis**: Base P D1–D10, N1–N6, H-N3 (titolo indipendente dall'età come base, variante per età come scenario obbligatorio a valle); Base E H1–H19.
 5. **Base E v2 congelata**.
 Inoltre: il banco si rifà sulla base dello Spatial Milano Lab (NIL e strati disegnati dai dati, senza sfondi esterni), come deciso il 09/11.
+
+## 2026-11-23 — Base P v4: modello del reddito (scelta provvisoria del coordinatore)
+Dennis: "procedi con i prossimi step", senza scegliere tra le strade per il reddito. Il coordinatore adotta la propria raccomandazione: **(b)** distinguere percettore principale e secondari (i redditi parziali MEF non diventano il reddito di un nucleo intero) **+ (c)** aggiungere trasferimenti e redditi non IRPEF dove c'è una fonte; (a) EU-SILC per tipo di nucleo o microdati solo come controllo se si trovano. Validazione esterna nuova del reddito da cercare (P4c non è più cieco). Da confermare con Dennis.
