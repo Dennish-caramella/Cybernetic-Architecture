@@ -372,6 +372,29 @@ def sintesi(D):
     return g, p
 
 
+def cstar_regioni(th, masks):
+    """[v2, revisione 7.9.2] c* con suolo gratuito per durata nelle tre regioni (tarata, cubo con vincolo, bandi deserti)."""
+    rows = []
+    for var, rec in [("nuovo", False), ("R1 recupero", True)]:
+        for T in TT:
+            c = cstar(th, 0.0, T, rec=rec)
+            for reg, m in [("tarata (Theta*_cal)", masks["cal"]), ("cubo (Theta*)", masks["cubo"]), ("bandi deserti (Theta_rov*)", masks["rov"])]:
+                rows.append(dict(variante=var, T=T, regione=reg, n_punti=int(m.sum()),
+                                 **dict(zip(["cstar_q05", "cstar_q50", "cstar_q95"], np.quantile(c[m], [.05, .5, .95])))))
+    return pd.DataFrame(rows).round(2)
+
+
+def e6_fuori_elenco(E6):
+    """[v2, revisione 7.9.3] informativo: robustezza rispetto a TUTTI i parametri (un parametro alla volta, al punto base)."""
+    fl = [c for c in E6.columns if c.startswith("flip_")]
+    x = E6[["classe", "T", "c0", "regime", "VF", "robusta"]].copy()
+    x["max_tutti"] = E6[fl].max(axis=1)
+    x["param_max_tutti"] = np.where(x.max_tutti > 0, E6[fl].idxmax(axis=1).str.replace("flip_", ""), "")
+    x["robusta_anche_fuori_elenco"] = x.max_tutti <= 0.5
+    return x.round(4)
+
+
+NUOVE = ["c_star_per_regione.csv", "E6_fuori_elenco.csv"]   # [v2] fuori da TAB: l'hash di contenuto delle tabelle esistenti non cambia
 TAB = ["delta_L_lotti.csv.gz", "regione_sintesi.csv", "sintesi_proprieta.csv", "E6_celle.csv", "tornado.csv", "prcc.csv",
        "bonifica.csv", "dcf_developer.csv", "lotti_omi.csv", "gfu_scenario.csv"]
 
@@ -396,6 +419,8 @@ def run(outdir):
     Dm = D.sort_values(["id", "variante", "FAR", "T", "c0", "regime", "VF"], na_position="first")
     for name, df in zip(TAB, [Dm[~Dm.gfu], g, p, E6, tor, pr, bon, dcf, S, Dm[Dm.gfu & (Dm.c0 == 90)]]):
         rnd(df).to_csv(outdir / name, index=False, compression={"method": "gzip", "mtime": 0} if name.endswith(".gz") else None)  # [v2] < 20 MB
+    cstar_regioni(th, masks).to_csv(outdir / NUOVE[0], index=False); e6_fuori_elenco(E6).to_csv(outdir / NUOVE[1], index=False)
+    res["hash_tabelle_nuove"] = {f: sha(outdir / f) for f in NUOVE}
     return res, content_hash(outdir)
 
 

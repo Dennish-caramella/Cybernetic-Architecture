@@ -37,6 +37,10 @@ E1 (hash `024ac9ea…` in 4 ripetizioni), E2 (T1–T12), E3 (tautologico, dichia
 - **F-d**: il Piano Casa sta in pari in parte per costruzione; i bandi deserti [S] indicano che nemmeno l'operatore misto è in pari con sicurezza.
 - **F-e, F-f**: le quote sono quote della regione dei parametri, non probabilità; errore di taratura non misurato; la Base E non è un vincolo di fattibilità in B0–B6.
 
+### Aggiunte richieste dalla revisione (condizioni 2–3, registro voci 12–13; hash di contenuto invariato)
+- `tabelle/c_star_per_regione.csv`: c* (€/m²/anno, mediana e 5–95%) per tre regioni. Nuovo: 30 anni 198 / 223 / 255; 60 anni 130 / 148 / 172; 90 anni 108 / 124 / 147 (tarata / cubo / bandi deserti). Recupero: 60 anni 111 / 128 / 152; 90 anni 93 / 108 / 130. Solo per il nuovo a 90 anni nella regione tarata il 5% inferiore scende sotto 90.
+- `tabelle/E6_fuori_elenco.csv` (informativa): 102 celle su 135 robuste anche fuori dall'elenco (costo di costruzione, ρ, posizione del prezzo nell'intervallo OMI). Le celle di F-a restano robuste; F-b resta non robusta.
+
 ## 6. Limiti
 K1 è un vincolo di segno contraddetto in parte dai bandi deserti [S]; ramo developer non tarato su compravendite; π_new, η e il vincolo su r scelti conoscendo la v1; lato cooperativa senza geografia; oneri [S]; un solo listino per ρ e costi; tassi CDP/BEI non trovati.
 

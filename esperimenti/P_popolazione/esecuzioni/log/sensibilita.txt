@@ -3,3 +3,12 @@ S1_T1
 S2_stud50k
 S2_stud90k
 S2_res16k
+S3_annunci
+S4_rho_p05
+S4_rho_eta
+S5_convivenza
+S6_sap_esclusi
+S7_dim2
+S7_shift
+S8_residuo
+S9_q05

@@ -1,0 +1,19 @@
+variante,T,regione,n_punti,cstar_q05,cstar_q50,cstar_q95
+nuovo,30,tarata (Theta*_cal),10912,153.16,197.93,243.27
+nuovo,30,cubo (Theta*),18982,159.91,222.55,307.01
+nuovo,30,bandi deserti (Theta_rov*),9419,210.87,255.0,324.35
+nuovo,60,tarata (Theta*_cal),10912,96.84,129.9,161.7
+nuovo,60,cubo (Theta*),18982,101.99,147.91,212.4
+nuovo,60,bandi deserti (Theta_rov*),9419,140.44,172.17,225.82
+nuovo,90,tarata (Theta*_cal),10912,78.0,108.21,137.43
+nuovo,90,cubo (Theta*),18982,82.68,124.34,184.51
+nuovo,90,bandi deserti (Theta_rov*),9419,117.14,146.85,197.97
+R1 recupero,30,tarata (Theta*_cal),10912,114.01,170.08,242.63
+R1 recupero,30,cubo (Theta*),18982,121.34,193.09,298.63
+R1 recupero,30,bandi deserti (Theta_rov*),9419,152.56,224.83,321.29
+R1 recupero,60,tarata (Theta*_cal),10912,72.82,111.27,161.1
+R1 recupero,60,cubo (Theta*),18982,78.06,128.19,205.68
+R1 recupero,60,bandi deserti (Theta_rov*),9419,102.46,152.43,222.24
+R1 recupero,90,tarata (Theta*_cal),10912,59.18,92.7,136.08
+R1 recupero,90,cubo (Theta*),18982,63.97,108.05,177.51
+R1 recupero,90,bandi deserti (Theta_rov*),9419,86.09,130.04,193.39

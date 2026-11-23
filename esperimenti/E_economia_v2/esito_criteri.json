@@ -109,6 +109,10 @@
   "quota_centroide_uguale": 1.0
  },
  "E3_integrita_tautologica": true,
+ "hash_tabelle_nuove": {
+  "c_star_per_regione.csv": "0c44a0f4241cea068aab124d3eb84625560ef23a55ab3a8d84a176913e457d15",
+  "E6_fuori_elenco.csv": "51c19019df296c02174bb09136ee1c5f4b59fc0950e5df9e1867e31a4aac6a4e"
+ },
  "E1": {
   "hash_1": "024ac9ea2a2b50314dab71a6afc200416c3be7346b188f5f6e788b4ece725454",
   "hash_2": "024ac9ea2a2b50314dab71a6afc200416c3be7346b188f5f6e788b4ece725454",
