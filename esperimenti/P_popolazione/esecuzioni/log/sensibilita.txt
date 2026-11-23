@@ -1,3 +1,6 @@
 base
 S1_T1
 S2_stud50k
+S2_stud90k
+S2_res16k
+S3_annunci
