@@ -1,0 +1,2 @@
+Base P v2 (ticket #18): popolazione sintetica dei nuclei abitativi di Milano dalla congiunta vera di ds1441; regole in `esecuzioni/00_preregistrazione.txt`, ogni passo in `esecuzioni/registro.txt`. Dati grezzi: cache della v1 (`scarica.py`, hash in `dati_metadati.csv`).
+Da zero: `python3 -I run.py controlla && python3 -I run.py esegui --scrivi && python3 -I test_popolazione.py && python3 -I run.py robustezza && python3 -I run.py sensibilita` (seme 20261122).

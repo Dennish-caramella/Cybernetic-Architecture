@@ -1,0 +1,13 @@
+{
+ "stesso_hash": true,
+ "P1_tutti_10_semi": false,
+ "cv": {
+  "studenti fuori sede": 0.0,
+  "famiglie con figli minorenni": 0.002733343601945949,
+  "anziani soli": 0.0,
+  "giovani coppie": 0.0,
+  "giovani soli e nuovi arrivati": 0.00031013048594350054,
+  "nessuna categoria": 0.000702574069372671
+ },
+ "P3_cv_ok": true
+}
