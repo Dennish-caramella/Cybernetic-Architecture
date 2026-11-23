@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Banco di laboratorio — Base L v7, Milano</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWs7OeD5i6ruC9JZL1gERT1wjtwXFlh7CjE7ZJ+/vcRZRkIYIb6p4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+:root{--bg:#fff;--fg:#1d1d1f;--mu:#5f6368;--bd:#d9d9de;--pn:#f6f6f8;--wa:#fff4e0;--E:#1b7f5f;--R:#c65400;--A:#6a5fb0;--G:#c2185b;--N:#4a6fa5}
+@media (prefers-color-scheme:dark){:root{--bg:#16171a;--fg:#e8e8ea;--mu:#a3a7ad;--bd:#33363c;--pn:#1f2125;--wa:#3a2f1a;--E:#4fc79c;--R:#ff9a4d;--A:#a99cf0;--G:#f06292;--N:#8fb2e6}
+ .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9)}}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:14px/1.4 system-ui,sans-serif}
+header{padding:8px 12px;border-bottom:1px solid var(--bd)}h1{font-size:16px;margin:0}header p{margin:2px 0 0;color:var(--mu);font-size:12px}
+main{display:grid;grid-template-columns:1fr 380px;height:calc(100% - 52px)}#map{height:100%;background:var(--pn)}
+aside{overflow:auto;border-left:1px solid var(--bd);padding:8px 12px;background:var(--bg)}
+@media (max-width:760px){main{display:block;height:auto}#map{height:60vh}aside{border-left:0;border-top:1px solid var(--bd)}}
+h2{font-size:14px;margin:12px 0 4px}details{border:1px solid var(--bd);border-radius:6px;padding:4px 8px;margin:6px 0;background:var(--pn)}summary{cursor:pointer;font-weight:600}
+.warn{background:var(--wa);border-radius:6px;padding:6px 8px;margin:6px 0;font-size:13px}.warn ul{margin:2px 0;padding-left:18px}
+table{border-collapse:collapse;width:100%;font-size:13px}td,th{border-bottom:1px solid var(--bd);padding:2px 4px;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+td.n,th.n{text-align:right;white-space:nowrap}.mu{color:var(--mu);font-size:12px}
+.sw{display:inline-block;width:12px;height:12px;border:2px solid;margin-right:4px;vertical-align:-2px}.sw.G{border-style:dashed}
+label{display:block;margin:2px 0}select,input{max-width:100%;font:inherit;background:var(--bg);color:var(--fg);border:1px solid var(--bd);border-radius:4px;padding:2px 4px}
+.m{font-family:ui-monospace,monospace;font-size:12px;color:var(--mu)}a{color:var(--N)}
+.leaflet-container{font:inherit}.leaflet-popup-content-wrapper,.leaflet-popup-tip,.leaflet-tooltip{background:var(--bg);color:var(--fg)}
+</style>
+</head>
+<body>
+<header><h1>Banco di laboratorio — Base L v7 sui NIL di Milano</h1>
+<p>Lotti in tre classi più la classe GFU separata; scheda di ogni lotto con fonti; Base E v2 dove c'è. Clic su un lotto per la scheda.</p></header>
+<main><div id="map" role="region" aria-label="Mappa dei lotti"></div>
+<aside>
+<div class="warn" id="avvertenze"><b>Avvertenze</b><ul>
+<li>La <b>capacità è una forbice</b> (FAR 0,5 / 1 / 2), non un valore unico [H].</li>
+<li>I <b>lotti GFU non sono validati</b>: perimetri 2012 sostitutivi [H], destinazione non verificata [L]; fuori dai totali, capacità solo come scenario.</li>
+<li>La validazione fotografica <b>C5 è inconcludente</b> (controllo umano 0,737 nella fascia 0,65–0,75): la base è congelata <b>per decisione di Dennis</b> (22/11), non per una misura.</li>
+<li>La <b>Base E v2 non è un vincolo</b> di fattibilità: non è congelata, le scelte H1–H19 sono provvisorie del coordinatore, le quote sono quote della regione dei parametri, non probabilità.</li>
+</ul></div>
+
+<h2>Filtri</h2>
+<div id="fcl"></div>
+<label>Proprietà <select id="fpr"><option value="">tutte</option><option>pubblico comunale</option><option>Demanio</option><option>non agganciata</option></select></label>
+<label>Ambito PGT 2030 <select id="fam"><option value="">tutti</option><option value="PA">PA (piano attuativo)</option><option value="ADP">AdP Scali</option><option value="GFU">GFU</option><option value="-">fuori ambito</option></select></label>
+<label>Stato attuativo <select id="fst"><option value="">tutti</option><option value="A">A attuazione avviata</option><option value="B">B in istruttoria</option><option value="C">C solo previsione</option><option value="non determinato [L]">N non determinato [L]</option><option value="-">non censito</option></select></label>
+<label>Cerca id <input id="fid" placeholder="es. E00168" size="10"></label>
+
+<h2>Totali</h2>
+<table id="tot"></table>
+<p class="mu" id="totnote"></p>
+
+<h2>Scheda del lotto</h2>
+<div id="scheda" class="mu">Nessun lotto selezionato.</div>
+
+<details><summary>Base E v2: canone di pareggio e cessione (tutti i lotti)</summary><div id="ecopag"></div></details>
+<details><summary>Legenda delle marche</summary>
+<table>
+<tr><td>[V]</td><td>verificato: valore letto da file o fonte aperta. Qui i valori vengono dalle basi del laboratorio; lo SHA-256 dei file è controllato al build.</td></tr>
+<tr><td>[S]</td><td>fonte secondaria (stampa, operatori, fonte non ufficiale).</td></tr>
+<tr><td>[I]</td><td>inferenza dai dati.</td></tr>
+<tr><td>[H]</td><td>ipotesi o parametro scelto (es. FAR, 80 m² per alloggio, scelte H della Base E).</td></tr>
+<tr><td>[L]</td><td>lacuna: il dato manca.</td></tr>
+</table></details>
+<details><summary>Fonti, licenze e riproducibilità</summary><div id="fonti"></div></details>
+</aside></main>
+<script>
+const D=/*__DATA__*/null;
+const K={E:"lotto edificabile",R:"lotto da riusare",A:"area di attivazione",G:"edificabile per destinazione, non verificato (GFU)"};
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const f=x=>x==null?"—":Number(x).toLocaleString("it-IT");
+const e=s=>String(s??"—").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const map=L.map("map",{preferCanvas:true}).setView([45.464,9.19],12);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL)'}).addTo(map);
+const cnt={};D.lotti.features.forEach(x=>{const p=x.properties,c=cnt[p.nil_id]??={};c[p.k]=(c[p.k]||0)+1});
+const nil=L.geoJSON(D.nil,{style:{color:css("--N"),weight:1,fill:false,opacity:.7},interactive:false}).addTo(map);
+const nilT=L.geoJSON(D.nil,{style:{stroke:false,fillOpacity:0},onEachFeature:(x,l)=>{const c=cnt[x.properties.id]||{};
+ l.bindTooltip(`<b>NIL ${x.properties.id} ${e(x.properties.n)}</b><br>E ${c.E||0} · R ${c.R||0} · A ${c.A||0} · GFU ${c.G||0}`,{sticky:true})}}).addTo(map);
+const sty=p=>({color:css("--"+p.k),weight:p.k=="G"?2:1.5,dashArray:p.k=="G"?"5 4":null,fillOpacity:p.k=="G"?.05:.35});
+const lots=L.geoJSON(D.lotti,{style:x=>sty(x.properties),onEachFeature:(x,l)=>l.on("click",()=>scheda(x.properties,l))}).addTo(map);
+L.control.layers(null,{"NIL (ds964)":nil,"Lotti Base L v7":lots}).addTo(map);
+const all=lots.getLayers();
+document.getElementById("fcl").innerHTML=Object.entries(K).map(([k,v])=>`<label><input type="checkbox" data-k="${k}" checked> <span class="sw ${k}" style="border-color:var(--${k})"></span>${e(v)}</label>`).join("");
+function ok(p){const c=[...document.querySelectorAll("#fcl input:checked")].map(i=>i.dataset.k),pr=fpr.value,am=fam.value,st=fst.value;
+ return c.includes(p.k)&&(!pr||p.proprieta==pr)&&(!am||(am=="-"?!p.gruppo_ambito:p.gruppo_ambito==am))&&(!st||(st=="-"?!p.stato_riferimento:p.stato_riferimento==st))}
+function filtra(){const v={};all.forEach(l=>{const p=l.feature.properties,s=ok(p);s?(lots.hasLayer(l)||lots.addLayer(l)):lots.removeLayer(l);if(s)v[p.k]=(v[p.k]||0)+1});tot(v)}
+function tot(v){const c=D.tot.cap,r=k=>`<tr><td><span class="sw ${k}" style="border-color:var(--${k})"></span>${e(K[k])}</td><td class="n" data-k="${k}">${f(v[k]||0)} / ${f(D.tot.n[k])}</td><td class="n">${k=="E"||k=="R"?c[k].map(f).join(" / "):k=="G"?"solo scenario":"non applicabile"}</td></tr>`;
+ document.getElementById("tot").innerHTML=`<tr><th>Classe</th><th class="n">visibili / totale</th><th class="n">alloggi FAR 0,5 / 1 / 2 [H]</th></tr>`+["E","R","A","G"].map(r).join("");
+ document.getElementById("totnote").innerHTML=`Totale della base (edificabili): ${c.E.map(f).join(" / ")} alloggi. Da riusare con recupero: ${f(D.tot.cap_rec_R)}. GFU e aree di attivazione fuori dai totali. Scenari con le GFU (non validati): `+D.tot.gfu_scen.map(s=>`${e(s[0])}: ${s.slice(1).map(f).join(" / ")}`).join("; ")+" [H]. Fonte: Base L v7, <span class=m>tabelle/scenari_capacita.csv</span>.";}
+["fpr","fam","fst"].forEach(i=>document.getElementById(i).onchange=filtra);document.getElementById("fcl").onchange=filtra;
+fid.onchange=()=>{const l=all.find(l=>l.feature.properties.id==fid.value.trim().toUpperCase());if(l){map.fitBounds(l.getBounds(),{maxZoom:17});scheda(l.feature.properties,l)}else scheda(null)};
+let sel=null;
+function row(a,b,m){return `<tr><th>${a}</th><td>${b} ${m?`<span class=m>${m}</span>`:""}</td></tr>`}
+function scheda(p,l){if(sel)sel.setStyle(sty(sel.feature.properties));const s=document.getElementById("scheda");if(!p){s.textContent="Nessun lotto con questo id.";return}
+ sel=l;l.setStyle({weight:4});let h=`<table><tr><th>Id</th><td><b>${e(p.id)}</b></td></tr>`+row("Classe",e(K[p.k]),"[V] Base L v7");
+ if(p.k=="G")h+=row("Nota","<b>non verificato</b>: "+e(p.verifica_destinazione)+"; classe se verificata: "+e(p.classe_se_verificata),"[H] [L]");
+ h+=row("Superficie",f(p.area_m2)+" m²","[V] catasto, EPSG:32632");
+ const C=a=>a.map(f).join(" / ")+" alloggi (FAR 0,5 / 1 / 2)";
+ if(p.k=="E")h+=row("Capacità",C([p.cap_far05,p.cap_far1,p.cap_far2]),"[H] ⌊0,70·FAR·area/80⌋");
+ if(p.k=="R")h+=row("Capacità",C([p.cap_far05,p.cap_far1,p.cap_far2])+" con demolizione e ricostruzione; recupero "+f(p.cap_recupero)+"; scenario principale: "+e(p.scenario_principale),"[H] recupero ⌊0,70·volume/3,2/80⌋");
+ if(p.k=="A")h+=row("Capacità","non applicabile (area di attivazione, non destinata ad abitazioni)","");
+ if(p.k=="G")h+=row("Capacità","solo scenario, non verificato: "+C([p.cap_scen_far05,p.cap_scen_far1,p.cap_scen_far2])+(p.cap_scen_recupero?"; recupero "+f(p.cap_scen_recupero):"")+". Fuori dai totali.","[H]");
+ h+=row("Origine",e(p.origine)+(p.nota?" — "+e(p.nota):""),"[V] "+e(p.fonti));
+ h+=row("NIL",e(p.nil_nome),"[V] ds964");
+ h+=row("Ambito PGT 2030",p.gruppo_ambito?`${e(p.ambito_pgt)} (${e(p.codice_pgt)}, ${e(p.gruppo_ambito)}); ${e(p.strumento)}; data ${e(p.data_ambito)}; residenza 2030: ${e(p.residenza_2030)}`+(p.fonte_ambito?`; <a href="${e(p.fonte_ambito)}" target="_blank" rel="noopener">fonte</a>`:""):"fuori dagli ambiti 2030",p.gruppo_ambito=="GFU"?"[H] perimetro 2012 sostitutivo":"[V] pgt2030");
+ const sm=p.marca_stato_riferimento;h+=row("Stato attuativo",p.stato_riferimento?e(p.stato_riferimento)+(p.fonte_stato_c1?` (<a href="${e(p.fonte_stato_c1)}" target="_blank" rel="noopener">fonte codifica 1</a>)`:""):"non censito (fuori dagli ambiti)",sm?(sm=="[L]"?"[L] censimento":"censimento, fonte "+e(sm)):"");
+ h+=row("Proprietà",e(p.proprieta)+(p.proprieta=="non agganciata"?" (non significa privata)":"")+(p.proprieta_conflitto?"; conflitto tra fonti":""),"[V] ds677, Demanio"+(p.proprieta=="non agganciata"?" · [L] proprietà ignota":""));
+ if(p.vincoli_noti)h+=row("Vincoli noti",e(p.vincoli_noti),"[V] ds600, PGT");
+ if(p.potenziale_vuoto)h+=row("Possibile area con potenziale","sì (attributo informativo)","[H] DUSAF 133/134 + DBT");
+ if(p.omi)h+=row("Zona OMI",e(p.omi),"[V] OMI 2025/2");
+ if(p.k=="E"||p.k=="R"){const q=p.eco;let t="";
+  if(!q)t="Acquisto non mostrato: fascia OMI E (E7 non informativo) o fascia mancante. Solo i valori di pagina valgono per questo lotto.";
+  else for(const [v,a] of Object.entries(q))t+=`<div><b>${{nuovo:"nuovo",R2:"demolizione e ricostruzione",R1:"recupero (quota non robusta)"}[v]}</b>: canone di pareggio con suolo a mercato ${a[0]}–${a[2]} €/m²/anno (mediana ${a[1]}); quota della regione tarata in cui l'acquisto regge a 90 €/m²/anno: ${String(a[3]).replace(".",",")}</div>`;
+  h+=row("Base E v2",t+`<div class=mu>60 anni, FAR 1, valore finale nullo, regione tarata, 5–95%. Quote della regione dei parametri, non probabilità. Non è un vincolo.</div>`,"[H] H1–H19 provvisorie");}
+ h+=row("Licenze",e(p.licenze),"");s.innerHTML=h+"</table>";}
+const c=D.ces,pc=x=>String(x).replace(".",",");
+document.getElementById("ecopag").innerHTML=`<p class=mu>Canone di pareggio con suolo gratuito (nuovo, €/m²/anno, 5–50–95%) [H]. Uguale per tutti i lotti: il lato cooperativa non ha geografia. Fonte: Base E v2, <span class=m>tabelle/c_star_per_regione.csv</span>.</p>
+<table><tr><th>Durata</th><th>Regione</th><th class=n>5%</th><th class=n>mediana</th><th class=n>95%</th></tr>${D.cstar.map(r=>`<tr><td>${r[0]} anni</td><td>${e(r[1])}${r[1].startsWith("bandi")?" [S]":""}</td><td class=n>${r[2]}</td><td class=n>${r[3]}</td><td class=n>${r[4]}</td></tr>`).join("")}</table>
+<p>Cessione del diritto di superficie (nuovo, 90 €/m²/anno, FAR 1): quota della regione tarata in cui la cooperativa regge ${pc(c[60][0])} a 60 anni e ${pc(c[90][0])} a 90 anni; a 90 anni per strato di r − g da ${pc(c[90][2])} (S0) a ${pc(c[90][5])} (S3); ${pc(c[90][1])} nella regione dei bandi deserti [S], che segue quasi per costruzione dal modello [I]. <b>Non robusta</b>: dipende da η (0,07–0,24 per terzi di η, REPORT E v2 §5), senza fonte [H]. Uguale per tutti i lotti: non si contano i lotti.</p>
+<p class=mu>Formulazioni ammesse dal REPORT E v2 (§5, §8): canone di pareggio come forbice; acquisto solo per le fasce B, C, D; cessione solo come quota con strati. In nessuna regione 90 €/m²/anno bastano con suolo gratuito a 60 anni.</p>`;
+document.getElementById("fonti").innerHTML=`<p>Sfondo: tile OpenStreetMap (© OpenStreetMap contributors, ODbL). In tema scuro le tile sono invertite con un filtro CSS. Nessuna immagine AGEA (licenza di sola visione).</p>
+<p>NIL: Comune di Milano, NIL vigenti PGT 2030 (ds964), CC BY 4.0, <a href="${e(D.nil_url)}" target="_blank" rel="noopener">GeoJSON</a>. Lotti: Base L v7 (congelata il 22/11/2026, VERSIONE.md); licenze per lotto nella scheda. Economia: Base E v2 (candidata, non congelata; OMI 2025/2).</p>
+<p>Geometrie semplificate per la pagina (Douglas–Peucker con topologia preservata): lotti ${D.tol[0]} m, NIL ${D.tol[1]} m; superfici e capacità sono quelle della base, calcolate sulle geometrie originali.</p>
+<p>SHA-256 dei file letti al build (<span class=m>esperimenti/banco/build.py</span>):</p><table>${Object.entries(D.sha).map(([k,v])=>`<tr><td class=m>${e(k)}</td><td class=m>${v.slice(0,16)}…</td></tr>`).join("")}</table>
+<p class=mu>Leaflet 1.9.4 da cdnjs con SRI.</p>`;
+filtra();
+</script>
+</body>
+</html>

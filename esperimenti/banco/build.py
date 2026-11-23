@@ -41,7 +41,7 @@ assert int(L.cap_recupero.fillna(0)[L.k == "R"].sum()) == 2898
 sc = pd.read_csv(os.path.join(L7, "tabelle", "scenari_capacita.csv"))
 assert sc.iloc[0][["far05", "far1", "far2"]].tolist() == cap["E"]
 gfu = sc[sc.classi == "lotti edificabili"].iloc[1:]  # scenari (ii) e (iii)
-gs = [int(L.loc[(L.k == "G"), c].sum()) for c in ("cap_scen_far05", "cap_scen_far1", "cap_scen_far2")]
+gs = [int(L.loc[(L.k == "G") & (L.classe_se_verificata == "lotto edificabile"), c].sum()) for c in ("cap_scen_far05", "cap_scen_far1", "cap_scen_far2")]
 assert [a + b for a, b in zip(cap["E"], gs)] == gfu.iloc[1][["far05", "far1", "far2"]].tolist()
 
 # ---- Base E v2 (solo lotti edificabili e da riusare; acquisto solo fasce B, C, D: REPORT E v2 §8, E7)
@@ -71,7 +71,7 @@ def gj(g, tol, nd):
 
 S = lambda v: None if v is None or (isinstance(v, float) and np.isnan(v)) or v == "" else v
 F = ["id", "k", "area_m2", "cap_far05", "cap_far1", "cap_far2", "cap_recupero", "cap_scen_far05", "cap_scen_far1", "cap_scen_far2",
-     "cap_scen_recupero", "scenario_principale", "origine", "nota", "nil_nome", "ambito_pgt", "codice_pgt", "gruppo_ambito", "strumento",
+     "cap_scen_recupero", "scenario_principale", "origine", "nota", "nil_id", "nil_nome", "ambito_pgt", "codice_pgt", "gruppo_ambito", "strumento",
      "data_ambito", "fonte_ambito", "residenza_2030", "stato_riferimento", "marca_stato_riferimento", "fonte_stato_c1", "proprieta",
      "proprieta_conflitto", "vincoli_noti", "potenziale_vuoto", "verifica_destinazione", "classe_se_verificata", "fonti", "licenze"]
 lotti = []
