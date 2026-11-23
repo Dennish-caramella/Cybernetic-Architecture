@@ -1,5 +1,11 @@
 
 /* banco: lotti della Base L v7 */
+/* colori delle classi: tema scuro come prima; mappa chiara (anche il pannello, che sta dentro .map) scuri, >= 3:1 sul fondo (revisione D7) */
+.map { --kE: #2fb8ad; --kR: #ff9a4d; --kA: #a185ea; --kG: #f78fdb; }
+.map[data-base="light"] { --kE: #0e7c74; --kR: #b5530a; --kA: #6b4bc7; --kG: #b02a85; }
+#lotti path.kE { stroke: var(--kE); fill: var(--kE); } #lotti path.kR { stroke: var(--kR); fill: var(--kR); }
+#lotti path.kA { stroke: var(--kA); fill: var(--kA); } #lotti path.kG { stroke: var(--kG); fill: var(--kG); }
+#lotti.off, .flat.off #lotti { visibility: hidden; } /* niente fuoco da tastiera su lotti nascosti */
 #lotti path { fill-rule: evenodd; fill-opacity: .35; stroke-width: 1.3px; vector-effect: non-scaling-stroke; }
 #lotti path.kG { fill-opacity: .06; stroke-dasharray: 4 3; stroke-width: 1.6px; }
 #lotti:not(.off) path { pointer-events: auto; cursor: pointer; }

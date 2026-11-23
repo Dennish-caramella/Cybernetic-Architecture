@@ -24,23 +24,52 @@ const ok = (c, m) => { console.log((c ? "PASSA " : "FALLISCE ") + m); if (!c) pr
         sw: document.documentElement.scrollWidth, bg: getComputedStyle(document.body).backgroundColor, vis: !$("bLotti").hidden && !$("dash").classList.contains("fold") };
     });
     ok(err.length == 0, `B5 ${t} zero errori JS ${err.join(" | ")}`);
-    ok(r.n.E == 216 && r.n.R == 167 && r.n.A == 268 && r.n.G == 50 && r.dom == 701, `B2 ${t} 701 lotti disegnati ${JSON.stringify(r.n)}`);
+    ok(r.n.E == 216 && r.n.R == 167 && r.n.A == 268 && r.n.G == 50 && r.dom == 701, `B2 ${t} 701 elementi disegnati (383 lotti, 268 aree di attivazione, 50 GFU) ${JSON.stringify(r.n)}`);
     ok(r.cls.join(";") == "E 216 / 216;R 167 / 167;A 268 / 268;G 50 / 50", `B2 ${t} conteggi in pagina ${r.cls.join("; ")}`);
     ok(r.nil == 88, `B3 ${t} 88 NIL del Lab`);
     ok(!r.dash.some((k) => ["city", "lab", "pp"].includes(k)) && r.dash.includes("lotti") && r.dash.includes("land") && r.dash.includes("pgt") && r.dash.includes("bld"), `B4 ${t} dashboard ${r.dash.join(",")}`);
     ok(r.bad.length == 0 && r.gdash, `B6 ${t} nessuna capacità per attivazione e GFU; GFU tratteggiate`);
     ok(r.tot.includes("16.389 / 32.885 / 65.885") && r.tot.includes("fuori dai totali"), `B6 ${t} totali edificabili`);
-    ok(r.warn == 4 && /forbice/.test(r.page) && /non sono validati/.test(r.page) && /inconcludente/.test(r.page) && /non è un vincolo/.test(r.page), `B8 ${t} quattro avvertenze`);
+    ok(r.warn == 5 && /forbice/.test(r.page) && /non sono validati/.test(r.page) && /inconcludente/.test(r.page) && /non è un vincolo/.test(r.page) && /corpi idrici/.test(r.page) && /0,49/.test(r.page), `B8 ${t} cinque avvertenze (D5: validazione debole, corpi idrici)`);
     ok(!/lotti reggono|lotti che reggono/i.test(r.page) && !/Cooperativa ed edificio/i.test(r.page), `B8 ${t} nessun conteggio per la cessione, nessun pannello Cooperativa`);
     ok(r.vis, `${t} pannello dei lotti visibile`);
     ok([...ext].every((h) => h == "fonts.googleapis.com" || h == "fonts.gstatic.com"), `B1 ${t} host esterni: ${[...ext].join(", ") || "nessuno"}`);
     if (w == 400) ok(r.sw <= 400, `B5 ${t} nessuno scorrimento orizzontale (${r.sw})`);
     ok((scheme == "dark") == (r.bg == "rgb(0, 0, 0)"), `B5 ${t} tema ${r.bg}`);
+    // revisione D1, D2, D6, D7
+    const rv = await p.evaluate(() => { let rk; try { TOOLS().find((x) => x.name == "get_ranking").execute({ indicator: "d_tau" }); rk = "accettato"; } catch (x) { rk = "rifiutato"; }
+      const L = (h) => { const c = h.match(/\d+/g).slice(0, 3).map((x) => +x / 255).map((x) => x <= 0.04045 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4); return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]; };
+      const cr = (a, b) => { const x = L(a), y = L(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
+      const hex = (h) => { h = h.trim().replace("#", ""); return `rgb(${parseInt(h.slice(0, 2), 16)}, ${parseInt(h.slice(2, 4), 16)}, ${parseInt(h.slice(4, 6), 16)})`; };
+      const land = hex(getComputedStyle($("map")).getPropertyValue("--land")), lc = {};
+      ["E", "R", "A", "G"].forEach((k) => { lc[k] = +cr(getComputedStyle(LOTS.find((x) => x.p.k == k).el).stroke, land).toFixed(2); });
+      return { ind: IND_LIST, rk, rules: rules(), k1l: $("k1l").textContent, lc, live: $("lsch").getAttribute("aria-live"), tab0: LOTS.filter((x) => x.el.tabIndex === 0).length }; });
+    ok(!/undefined/.test(rv.ind) && !/\b(pp_resb|pp_res|pp_neg|pp_rti|d_tau|d_dec|d_ist)\b/.test(rv.ind) && rv.rk == "rifiutato", `D1 ${t} indicatori del modello di domanda escluso fuori dalla chat (get_ranking d_tau ${rv.rk})`);
+    ok(/383/.test(rv.k1l) && !/su 701/.test(rv.k1l) && /383 lotti/.test(rv.rules) && !/701 lotti/.test(rv.rules + r.page), `D2 ${t} conteggi per classe nel KPI e nella chat: ${rv.k1l}`);
+    ok(Object.values(rv.lc).every((x) => x >= (scheme == "light" ? 3 : 5)), `D7 ${t} contrasto delle classi sul fondo della mappa ${JSON.stringify(rv.lc)}`);
+    ok(rv.live == "polite" && rv.tab0 == 1, `D7 ${t} aria-live sulla scheda, un lotto nella sequenza di Tab`);
+    await p.evaluate(() => LOTS.find((x) => x.el.tabIndex === 0).el.focus()); const f0 = await p.evaluate(() => document.activeElement.textContent);
+    await p.keyboard.press("ArrowRight"); const f1 = await p.evaluate(() => document.activeElement.textContent);
+    await p.keyboard.press("Enter"); await p.waitForTimeout(100);
+    const kb = await p.evaluate(() => ({ sel: selLot && selLot.p.id, foc: document.activeElement.textContent, sch: $("lsch").textContent }));
+    ok(f0 != f1 && f1.startsWith(kb.sel) && kb.foc == f1 && kb.sch.includes(kb.sel), `D7 ${t} tastiera: frecce ${f0.slice(0, 6)} → ${f1.slice(0, 6)}, Invio apre la scheda di ${kb.sel}, fuoco conservato`);
+    const ec = await p.evaluate(async () => { dash = "eco"; met = "poor"; render(); await new Promise((r) => setTimeout(r, 200)); const x = { vis: !$("bNote").hidden, t: $("bNote").textContent }; dash = "lotti"; met = "lcl"; render(); return x; });
+    ok(ec.vis && /CAP 20157/.test(ec.t) && /artefatto di dato/.test(ec.t) && /un solo reddito/.test(ec.t), `D6 ${t} avvertenza su Stipendi e affitti`);
     const sch = async (id) => { await p.fill("#lid", id); await p.dispatchEvent("#lid", "change"); await p.waitForTimeout(100); return p.textContent("#lsch"); };
     const aid = await p.evaluate(() => LOTS.find((L) => L.p.k == "A").p.id);
     const a = await sch(aid), g = await sch("G00652"), e = await sch("E00268");
     ok(/non verificato/.test(g) && /Fuori dai totali/.test(g), `B6 ${t} scheda GFU`);
     ok(/non applicabile/.test(a) && !/alloggi/.test(a), `B6 ${t} scheda attivazione senza capacità`);
+    // M7: tre lotti contro lotti_v7.gpkg (valori letti con geopandas il 23/11/2026; SHA-256 del gpkg controllato da build.py)
+    const REF = { E00349: [14489, 63, 126, 253, null, null, "non agganciata", "LAMBRATE - ORTICA"], R00127: [6882, 30, 60, 120, 72, null, "non agganciata", "LODI - CORVETTO"],
+      E00205: [6805, 29, 59, 119, null, "GFU", "non agganciata", "RONCHETTO SUL NAVIGLIO - Q.RE LODOVICO IL MORO"] };
+    for (const [id, x] of Object.entries(REF)) {
+      const q = await p.evaluate((id) => LOTS.find((L) => L.p.id == id).p, id), s = await sch(id);
+      const got = [q.area_m2, q.cap_far05, q.cap_far1, q.cap_far2, q.cap_recupero ?? null, q.gruppo_ambito ?? null, q.proprieta, q.nil_nome];
+      ok(JSON.stringify(got) == JSON.stringify(x) && s.includes(x[0].toLocaleString("it-IT") + " m²") && !/\[L\] \[L\]|\[V\] catasto/.test(s) && /area della geometria/.test(s) && /Fonti della base/.test(s)
+        && (id != "E00205" || /in ambito, stato non censito/.test(s)), `M7 D3 D4 M6 ${t} ${id} come nel gpkg e scheda corretta ${JSON.stringify(got)}`);
+    }
+    ok(/lago su oltre metà/.test(await sch("E00170")), `D5 ${t} nota sui corpi idrici per E00170`);
     ok(/alloggi \(FAR 0,5 \/ 1 \/ 2\)/.test(e) && /Base E v2/.test(e) && /canone di pareggio/.test(e) && /Proprietà/.test(e) && /Stato attuativo/.test(e), `${t} scheda edificabile con Base E v2`);
     if (SHOT && !offline) await p.screenshot({ path: path.join(SHOT, `banco_${w}_${scheme}.png`), fullPage: w == 400 });
     await p.click('#lcl button[data-k="E"]');

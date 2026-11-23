@@ -85,6 +85,10 @@ js = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":"))
 page = open(PAGE, encoding="utf-8").read()
 lay = {k: json.load(open(os.path.join(LAB, "recuperati_da_artifact", f"{k}.json"), encoding="utf-8")) for k in ("dusaf", "pgt")}
 CSS = open(os.path.join(H, "banco.css"), encoding="utf-8").read()
+ECO_NOTE = ("<b>Attenzione</b>: redditi e stipendi sono dati MEF per CAP riportati ai NIL, non valori per NIL; i NIL piccoli copiano il CAP. "
+            "Esempio: 40,57% di redditi sotto 15 mila in 4 NIL (Cascina Merlata, Roserio, Stephenson, Quarto Oggiaro - Vialba - Musocco), tutti dal CAP 20157; "
+            "per Stephenson (172 abitanti) è un artefatto di dato (CAP imputato): riesame del Lab, secondo_cervello/ricerche/06_riesame_spatial_milano_lab.md §3.5. "
+            "Affitto / stipendio usa un solo reddito. Indicatori del Lab, non di una base congelata: non usarli per A1–A4.")
 PATCH = [
     ("<title>Spatial Milano Lab</title>", "<title>Banco di laboratorio</title>"),
     ("</style>", CSS + "</style>"),
@@ -92,6 +96,8 @@ PATCH = [
      '<g id="labsites" class="lyr off" aria-label="Siti candidati per social housing"></g>\n      <g id="lotti" class="lyr off" aria-label="Lotti della Base L v7"></g>'),
     ('<div class="lab" id="bLab" hidden></div>', '<div class="lab" id="bLab" hidden></div>\n        <div class="lab" id="bLotti" hidden></div>'),
     ("const MLAB = {", 'delete D.city; delete D.lab; delete D.pp; // fuori: edifici 3D (tasselli DBT non nel repo), modelli di analisi del Lab (DECISIONI 09/11)\n'
+     'for (const k in M) if (M[k].g === "pp") delete M[k]; // indicatori del modello di domanda escluso: fuori anche dalla chat (revisione D1)\n'
+     'D.eco.note = ' + js(ECO_NOTE) + ';\n'
      'D.lotti = { t: "Base L v7: lotti", mode: "lotti", m: ["lcl"], lay: [] };\nconst LAYDATA = ' + js(lay) + ';\nconst MLAB = { lcl: "Classi",'),
     ('const LAYERS = { metro: "Metro", omi: "Zone OMI" };', 'const LAYERS = { metro: "Metro", omi: "Zone OMI", lotti: "Lotti Base L v7" };'),
     ("const lay = { metro: false, omi: false };", "const lay = { metro: false, omi: false, lotti: false };"),
@@ -115,7 +121,7 @@ for a, b in PATCH:
     page = page.replace(a, b)
 # righe del chat: niente strumenti né fasi del Lab rimossi
 import re
-page, k1 = re.subn(r"\nLaboratorio \(dashboard lab[^\n]*", "\nBase L v7 (dashboard lotti): 701 lotti in quattro classi; capacità come forbice; GFU non verificate; la Base E v2 non è un vincolo.", page)
+page, k1 = re.subn(r"\nLaboratorio \(dashboard lab[^\n]*", "\nBase L v7 (dashboard lotti): 383 lotti (216 edificabili, 167 da riusare), 268 aree di attivazione (non sono lotti) e 50 lotti GFU non verificati, fuori dai totali; capacità come forbice; la Base E v2 non è un vincolo.", page)
 page, k2 = re.subn(r" Per gli edifici di un quartiere usa show_buildings[^.]*\.", "", page)
 page, k3 = re.subn(r"const lab = want \|\| [^\n]*", "const lab = /lott|base l|edificabil|riusa|attivazione|gfu|laborator|social housing/.test(lc) ? 9 : 0;", page)
 page, k4 = re.subn(r"const want = [^\n]*", "const want = null;", page)
