@@ -1,0 +1,78 @@
+{
+ "seme": 20261122,
+ "hash_contenuto": "b34aef34fc03a5871a9e748bd58bc84c705f6603f480e7dc499688e233ad3998",
+ "P1_passa": false,
+ "P2": {
+  "NIL valido": true,
+  "categoria/titolo/dim": true,
+  "dim 1 <=> tipologia Monocomponente o In convivenza": true,
+  "congiunta residenti = M0 cella per cella": true,
+  "anziani soli: dim 1, eta >= 65": true,
+  "famiglie con minori: >=1 minore, dim >=2": true,
+  "minori <= dim-1": true,
+  "netto >= 0": true,
+  "isee >= 0": true,
+  "budget > 0 se reddito > 0": true,
+  "minori -> >=1 ancora scuola": true,
+  "studente -> 1 ancora universita": true,
+  "percettore non pensionato -> 1 ancora lavoro": true,
+  "coordinate valide": true,
+  "ancore non 'fuori Milano' dentro il confine": true,
+  "residenza dentro il confine": true,
+  "studenti e arrivi marcati": true,
+  "nessun campo da LLM": true
+ },
+ "P2_info": {
+  "ancore_fuori_confine": 0,
+  "residenze_fuori": 0
+ },
+ "P5": {
+  "n": 343094,
+  "G1_tau_mediana": 1.0,
+  "P5a": true,
+  "G2_quota_tau_le_080": 0.9561140678647834,
+  "P5b": true,
+  "G2_quota_per_tipo": {
+   "lessicografiche": 0.8013583328495966,
+   "omofile": 1.0,
+   "polarizzate": 1.0,
+   "soglia": 0.9801358135755536,
+   "rumore": 1.0
+  },
+  "G3_sha256_veri": "0a5e516a060a39eb6e8ffd8dbbebe81ed4fc45ab6f14a7d56188f254b7d04299",
+  "P5c": true
+ },
+ "rep": {
+  "minori_quota_res": 0.1543150198159898,
+  "ripiego_RC": {
+   "0": 475,
+   "1": 673,
+   "2": 244
+  },
+  "ripiego_RM": {
+   "0": 521,
+   "1": 599,
+   "2": 272
+  },
+  "p_minori": 0.8563789066018332,
+  "nil_senza_civici": [],
+  "fuori_zona_quotata": 3717
+ },
+ "info_minori": [
+  {
+   "spearman": 0.45556608587883646,
+   "scarto_ass_max": 0.587938596491228,
+   "citta_2025": 0.1543150198159898,
+   "ripiego_RC": {
+    "0": 475,
+    "1": 673,
+    "2": 244
+   },
+   "ripiego_RM": {
+    "0": 521,
+    "1": 599,
+    "2": 272
+   }
+  }
+ ]
+}
