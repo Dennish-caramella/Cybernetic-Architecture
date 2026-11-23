@@ -1,0 +1,2 @@
+25a31fcb8b6793ffd8b16939deb594e535bec6d2 2026-11-23T21:41:42Z commit della pre-registrazione v4 (00_preregistrazione.txt sha256 87392129a7b7394106ce0558e17787d41e32320ffae60b4741e85912a6038723)
+2026-11-23T21:43:13Z Scelta (b)+(c) e parametri [H-R] provvisori del coordinatore (tesi/DECISIONI.md, 23/11 "Base P v4: modello del reddito"), da confermare con Dennis. D, N, H-N3 confermate da Dennis (23/11). Copia del codice v3; nessuna esecuzione prima di questa riga.
