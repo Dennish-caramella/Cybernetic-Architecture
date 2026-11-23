@@ -1,0 +1,26 @@
+base
+S1_T1
+S2_stud50k
+S2_stud90k
+S2_res16k
+S3_annunci
+S4_rho_p05
+S4_rho_eta
+S5_conviventi
+S6_sap_esclusi
+S7_dim2
+S7_shift
+S8_residuo
+S9_q05
+S9_q09
+         scenario       categoria    tutti  richiedenti  fascia_grigia_quota_rich  isee_14_16_quota_rich  budget_mediano_rich  rapporto_su_base
+51  S5_conviventi  giovani coppie  10814.0       4854.0                  0.094355               0.037289           858.797731          3.657875
+scenario                          S1_T1  S2_res16k  S2_stud50k  S2_stud90k  S3_annunci  S4_rho_eta  S4_rho_p05  S5_conviventi  S6_sap_esclusi   S7_dim2  S7_shift  S8_residuo    S9_q05    S9_q09      base
+categoria                                                                                                                                                                                                  
+anziani soli                    24162.0    41576.0     41576.0     41576.0     41576.0     41576.0     41576.0        41576.0         31461.0   41574.0   41576.0     41576.0   41576.0   41576.0   41576.0
+famiglie con figli minorenni    41305.0    40144.0     40144.0     40144.0     40144.0     40144.0     40144.0        40144.0         30477.0   39844.0   40144.0     40144.0   40144.0   40144.0   40144.0
+giovani coppie                   2053.0     1327.0      1327.0      1327.0      1327.0      1327.0      1327.0         4854.0          1142.0    1181.0    1327.0      1327.0    1327.0    1327.0    1327.0
+giovani soli e nuovi arrivati   90829.0    60766.0     60766.0     60766.0     60766.0     60766.0     60766.0        59234.0         52948.0   53470.0   60766.0     60766.0   60766.0   60766.0   60766.0
+nessuna categoria              125759.0   140295.0    140295.0    140295.0    140295.0    140295.0    140295.0       138300.0        105623.0  140278.0  140295.0    140295.0  140295.0  140295.0  140295.0
+studenti fuori sede             59000.0    54000.0     39000.0     79000.0     59000.0     59000.0     59000.0        59000.0         59000.0   59000.0   59000.0     59000.0   59000.0   59000.0   59000.0
+FINE

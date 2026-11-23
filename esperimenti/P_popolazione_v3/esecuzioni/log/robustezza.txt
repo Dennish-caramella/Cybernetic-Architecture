@@ -1,3 +1,13 @@
 20261122 7ec73ec8c681 True
 20261122 7ec73ec8c681 True
 20261123 7362fc86b353 True
+20261124 bc1b715f6ae4 True
+20261125 1f7c547ae895 True
+20261126 2f95e5e71aa5 True
+20261127 8e5c7fa50b7c True
+20261128 f3022c1e131f True
+20261129 66ac837eee5e True
+20261130 bbe7b90a753b True
+20261131 ab96d7c0302c True
+20261132 541869044e85 True
+{'stesso_hash': True, 'P1_tutti_10_semi': True, 'cv': {'studenti fuori sede': 0.0, 'famiglie con figli minorenni': 0.0026766353374016606, 'anziani soli': 0.0001653893741775793, 'giovani coppie': 0.0034312520342613504, 'giovani soli e nuovi arrivati': 0.0003030088696328807, 'nessuna categoria': 0.0007061706835668522}, 'P3_cv_ok': True}
