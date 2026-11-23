@@ -1,0 +1,19 @@
+OK  NIL valido
+OK  categoria/titolo/dim
+OK  dim 1 <=> tipologia Monocomponente o In convivenza
+OK  congiunta residenti = M0 cella per cella
+OK  anziani soli: dim 1, eta >= 65
+OK  famiglie con minori: >=1 minore, dim >=2
+OK  minori <= dim-1
+OK  netto >= 0
+OK  isee >= 0
+OK  budget > 0 se reddito > 0
+OK  minori -> >=1 ancora scuola
+OK  studente -> 1 ancora universita
+OK  percettore non pensionato -> 1 ancora lavoro
+OK  coordinate valide
+OK  ancore non 'fuori Milano' dentro il confine
+OK  residenza dentro il confine
+OK  studenti e arrivi marcati
+OK  nessun campo da LLM
+{'ancore_fuori_confine': 0, 'residenze_fuori': 0}
