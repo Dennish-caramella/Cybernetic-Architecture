@@ -7,3 +7,4 @@ eeaeca19f5d23066c86696ab6e85c4cf119f0bf2 2026-11-23T07:08:35Z commit della pre-r
 2026-11-23T08:35:04Z robustezza: stesso hash per due esecuzioni col seme principale; CV dei richiedenti fra i 10 semi <= 0,27% (giovani coppie 0%); P1 fallisce su M8 in tutti i 12 casi -> P3 FALLISCE (la clausola 'P1 e P2 passano per tutti i semi'). Sensibilita S1-S9 completate: fattore 2 superato solo da S5 (giovani coppie x3,68). Fine fase 2 v2: esito CAMBIA, P4 non aperto.
 2026-11-23T08:44:09Z test_popolazione.py sui file v2: vedi riga successiva
 2026-11-23T08:44:15Z test_popolazione.py: 18 invarianti su 18 OK sui file scritti (in memoria 19: il test non ripete il controllo M0 della congiunta)
+2026-11-23T11:22:27Z CORREZIONE di due righe precedenti di questo registro: gli invarianti P2 sono 18, non 19, e il test sui file li ripete tutti e 18, compreso il controllo della congiunta M0. Fase 2 conclusa.
