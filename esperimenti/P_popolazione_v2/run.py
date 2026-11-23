@@ -52,7 +52,9 @@ def fix(s): return s.astype(str).str.replace("Ã¹", "u").str.replace("Ã ", "a"
 def codice(s): return s.astype(str).str.extract(r"\((\d+)\)\s*$")[0].astype(int)
 
 # ------------------------------------------------------------------ dati (solo margini adattati)
+_D = {}
 def carica():
+    if _D: return _D
     f = zcsv("ds1441.zip", sep=";", encoding="latin1", usecols=["Anno", "Quartiere", "Classe_eta_capofamiglia", "Numero_componenti", "Tipologia_familiare", "Famiglie"])
     y = f[f.Anno == 2025].copy()
     for c in ["Classe_eta_capofamiglia", "Numero_componenti", "Tipologia_familiare"]: y[c] = fix(y[c])
@@ -103,8 +105,9 @@ def carica():
     media_top = am[-1] / M9[-1]
     u = pd.read_csv(raw("ds752_2024_25.csv"), sep=";", encoding="latin1"); M11 = u.groupby("AteneoNOME").Isc.sum()
     mv = pd.read_csv(raw("ds71.csv"), sep=";", encoding="latin1"); M12 = float(mv[mv.iloc[:, 0] == 2024].iloc[0, 3])
-    return dict(M0=M0, RC=RC, RM=RM, NIL=NIL, M1=M1, M2=M2, M3a=M3a, M3b=M3b, M4=M4, M5=M5, M6=M6, M7=M7, M8seed=M8seed, M9=M9, media_top=media_top,
+    _D.update(M0=M0, RC=RC, RM=RM, NIL=NIL, M1=M1, M2=M2, M3a=M3a, M3b=M3b, M4=M4, M5=M5, M6=M6, M7=M7, M8seed=M8seed, M9=M9, media_top=media_top,
                 M11=M11, M12=M12, imm=imm, vero=vero, ds139=g)
+    return _D
 
 def controlla():
     D = carica(); P = os.path.join(NOTE, "popolazioni"); err = []
@@ -128,6 +131,9 @@ def controlla():
     err.append(("ds752 2024/25", np.abs(s.reindex(D["M11"].index).values - D["M11"].values).max()))
     mv = pd.read_csv(os.path.join(P, "movimento_anagrafico_2010_2024_ds71.csv")); err.append(("ds71 immigrati 2024", abs(mv[mv.anno == 2024].immigrati.iloc[0] - D["M12"])))
     err.append(("ds205 minori totale (nota 06: 196.577)", abs(D["M6"] - 196577)))
+    M0 = D["M0"]; err += [("[v2] M0 -> M1", np.abs(M0.sum((1, 3)) - D["M1"]).max()), ("[v2] M0 -> M2", np.abs(M0.sum((0, 3)).T - D["M2"]).max()),
+            ("[v2] M0 -> M4", np.abs(M0.sum((0, 1, 2)) - D["M4"]).max()), ("[v2] M0 -> M3a", np.abs(M0[:, 2:, MONO].sum((1, 2)) - D["M3a"]).max()),
+            ("[v2] M0 -> M3b", np.abs(M0[:, 0].sum((1, 2)) - D["M3b"]).max()), ("[v2] quote r in [0,1]", float(max(np.nanmax(D["RC"][0]), np.nanmax(D["RM"][0])) > 1 or min(np.nanmin(D["RC"][0]), np.nanmin(D["RM"][0])) < 0))]
     ok = all(e < 1e-6 for _, e in err)
     for n, e in err: print(f"{'OK ' if e < 1e-6 else 'DIV'} {n}: scarto massimo {e}")
     print("CONTROLLO MARGINI:", "coincidono" if ok else "NON coincidono -> fermarsi"); return ok
