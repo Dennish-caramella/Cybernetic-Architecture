@@ -1,0 +1,2 @@
+REGISTRO DI ESECUZIONE — Base E v2 (ticket #19)
+1. 2026-11-23 01:28:13Z commit 34c09dc: pre-registrazione v2 00_preregistrazione.txt, SHA-256 01d503634c586138316880f8fd38ea097a40001e0617e55dd5b2278edeebe769 (verificato prima di ogni esecuzione). Scelte H10-H19 accettate provvisoriamente dal coordinatore, NON da Dennis (tesi/DECISIONI.md). Valgono anche H1-H9 della v1, anch'esse provvisorie.

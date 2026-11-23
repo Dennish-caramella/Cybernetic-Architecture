@@ -391,7 +391,7 @@ def p1(t, D, rep):
     e["passa"] = (e.TAE_N <= e.soglia_TAE_N + 1e-12) & ((e.livello != "NIL") | (((e.err_rel_max_celle100.fillna(0) <= .05)) & (e.err_abs_max_celle_lt100.fillna(0) <= 10)))
     return e
 
-def p2(t, anc):
+def p2(t, anc, tol_netto=0.0):  # tol_netto: solo per i file arrotondati a 2 decimali (test)
     G = geo(); r = t[t.origine != "studente"]; c = {}
     c["NIL valido"] = r.nil.isin(carica_nil()).all()
     c["categoria/titolo/dim"] = t.categoria.notna().all() and t.titolo.notna().all() and (t.dim >= 1).all()
@@ -400,7 +400,7 @@ def p2(t, anc):
     f = t[t.categoria == CAT[1]]; c["famiglie con minori: >=1 minore, dim >=2"] = ((f.minori >= 1) & (f.dim >= 2)).all()
     c["minori <= dim-1"] = (t.minori <= t.dim - 1).all()
     c["netto >= 0"] = (t.netto >= 0).all(); c["isee >= 0"] = (r.isee >= 0).all()
-    c["budget > 0 se reddito > 0"] = (t.budget[t.netto > 0] > 0).all() and (t.budget[t.origine == "studente"] > 0).all()
+    c["budget > 0 se reddito > 0"] = (t.budget[t.netto > tol_netto] > 0).all() and (t.budget[t.origine == "studente"] > 0).all()
     cnt = anc.groupby(["id", "tipo"]).size().unstack(fill_value=0)
     sc = cnt[[k for k in cnt.columns if k.startswith("scuola")]].sum(axis=1).reindex(t.id, fill_value=0).values
     c["minori -> >=1 ancora scuola"] = (sc[t.minori.values > 0] >= 1).all()
