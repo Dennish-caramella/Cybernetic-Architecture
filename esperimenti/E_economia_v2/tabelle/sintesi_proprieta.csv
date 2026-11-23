@@ -1,0 +1,946 @@
+proprieta,FAR,T,c0,regime,VF,lotti,quota_cal_media,dL_q50_mediana
+Demanio,0.5,30,60.0,acq,0,1,0.0,
+Demanio,0.5,30,60.0,acq,e,1,0.0,
+Demanio,0.5,30,60.0,acq,s,1,0.0,
+Demanio,0.5,30,60.0,ces,0,1,0.0,
+Demanio,0.5,30,60.0,ds_a0,0,1,0.0,
+Demanio,0.5,30,60.0,ds_a05,0,1,0.0,
+Demanio,0.5,30,60.0,ds_a08,0,1,0.0,
+Demanio,0.5,30,75.0,acq,0,1,0.0,
+Demanio,0.5,30,75.0,acq,e,1,0.0019,
+Demanio,0.5,30,75.0,acq,s,1,0.0,
+Demanio,0.5,30,75.0,ces,0,1,0.0,
+Demanio,0.5,30,75.0,ds_a0,0,1,0.0,
+Demanio,0.5,30,75.0,ds_a05,0,1,0.0,
+Demanio,0.5,30,75.0,ds_a08,0,1,0.0,
+Demanio,0.5,30,90.0,acq,0,1,0.0,843.0
+Demanio,0.5,30,90.0,acq,e,1,0.0401,417.0
+Demanio,0.5,30,90.0,acq,s,1,0.0,819.0
+Demanio,0.5,30,90.0,ces,0,1,0.0,807.0
+Demanio,0.5,30,90.0,ds_a0,0,1,0.0,808.0
+Demanio,0.5,30,90.0,ds_a05,0,1,0.0,821.0
+Demanio,0.5,30,90.0,ds_a08,0,1,0.0,833.0
+Demanio,0.5,30,110.0,acq,0,1,0.0,
+Demanio,0.5,30,110.0,acq,e,1,0.3015,
+Demanio,0.5,30,110.0,acq,s,1,0.0,
+Demanio,0.5,30,110.0,ces,0,1,0.0,
+Demanio,0.5,30,110.0,ds_a0,0,1,0.0,
+Demanio,0.5,30,110.0,ds_a05,0,1,0.0,
+Demanio,0.5,30,110.0,ds_a08,0,1,0.0,
+Demanio,0.5,30,130.0,acq,0,1,0.0007,
+Demanio,0.5,30,130.0,acq,e,1,0.7391,
+Demanio,0.5,30,130.0,acq,s,1,0.0017,
+Demanio,0.5,30,130.0,ces,0,1,0.0037,
+Demanio,0.5,30,130.0,ds_a0,0,1,0.0035,
+Demanio,0.5,30,130.0,ds_a05,0,1,0.0011,
+Demanio,0.5,30,130.0,ds_a08,0,1,0.0009,
+Demanio,0.5,60,60.0,acq,0,1,0.0,
+Demanio,0.5,60,60.0,acq,e,1,0.0016,
+Demanio,0.5,60,60.0,acq,s,1,0.0,
+Demanio,0.5,60,60.0,ces,0,1,0.0,
+Demanio,0.5,60,60.0,ds_a0,0,1,0.0,
+Demanio,0.5,60,60.0,ds_a05,0,1,0.0,
+Demanio,0.5,60,60.0,ds_a08,0,1,0.0,
+Demanio,0.5,60,75.0,acq,0,1,0.0001,
+Demanio,0.5,60,75.0,acq,e,1,0.0389,
+Demanio,0.5,60,75.0,acq,s,1,0.0003,
+Demanio,0.5,60,75.0,ces,0,1,0.0007,
+Demanio,0.5,60,75.0,ds_a0,0,1,0.0006,
+Demanio,0.5,60,75.0,ds_a05,0,1,0.0002,
+Demanio,0.5,60,75.0,ds_a08,0,1,0.0001,
+Demanio,0.5,60,90.0,acq,0,1,0.0094,531.0
+Demanio,0.5,60,90.0,acq,e,1,0.2085,248.0
+Demanio,0.5,60,90.0,acq,s,1,0.0141,517.0
+Demanio,0.5,60,90.0,ces,0,1,0.0206,497.0
+Demanio,0.5,60,90.0,ds_a0,0,1,0.0206,498.0
+Demanio,0.5,60,90.0,ds_a05,0,1,0.0131,514.0
+Demanio,0.5,60,90.0,ds_a08,0,1,0.0113,522.0
+Demanio,0.5,60,110.0,acq,0,1,0.1317,
+Demanio,0.5,60,110.0,acq,e,1,0.6258,
+Demanio,0.5,60,110.0,acq,s,1,0.1485,
+Demanio,0.5,60,110.0,ces,0,1,0.1735,
+Demanio,0.5,60,110.0,ds_a0,0,1,0.172,
+Demanio,0.5,60,110.0,ds_a05,0,1,0.1508,
+Demanio,0.5,60,110.0,ds_a08,0,1,0.1403,
+Demanio,0.5,60,130.0,acq,0,1,0.4511,
+Demanio,0.5,60,130.0,acq,e,1,0.9338,
+Demanio,0.5,60,130.0,acq,s,1,0.472,
+Demanio,0.5,60,130.0,ces,0,1,0.502,
+Demanio,0.5,60,130.0,ds_a0,0,1,0.5005,
+Demanio,0.5,60,130.0,ds_a05,0,1,0.4801,
+Demanio,0.5,60,130.0,ds_a08,0,1,0.4642,
+Demanio,0.5,90,60.0,acq,0,1,0.0005,
+Demanio,0.5,90,60.0,acq,e,1,0.0112,
+Demanio,0.5,90,60.0,acq,s,1,0.0008,
+Demanio,0.5,90,60.0,ces,0,1,0.0013,
+Demanio,0.5,90,60.0,ds_a0,0,1,0.0013,
+Demanio,0.5,90,60.0,ds_a05,0,1,0.0008,
+Demanio,0.5,90,60.0,ds_a08,0,1,0.0005,
+Demanio,0.5,90,75.0,acq,0,1,0.0204,
+Demanio,0.5,90,75.0,acq,e,1,0.109,
+Demanio,0.5,90,75.0,acq,s,1,0.0247,
+Demanio,0.5,90,75.0,ces,0,1,0.033,
+Demanio,0.5,90,75.0,ds_a0,0,1,0.0325,
+Demanio,0.5,90,75.0,ds_a05,0,1,0.0259,
+Demanio,0.5,90,75.0,ds_a08,0,1,0.0224,
+Demanio,0.5,90,90.0,acq,0,1,0.1388,322.0
+Demanio,0.5,90,90.0,acq,e,1,0.3538,131.0
+Demanio,0.5,90,90.0,acq,s,1,0.1484,314.0
+Demanio,0.5,90,90.0,ces,0,1,0.1728,290.0
+Demanio,0.5,90,90.0,ds_a0,0,1,0.1718,291.0
+Demanio,0.5,90,90.0,ds_a05,0,1,0.1555,306.0
+Demanio,0.5,90,90.0,ds_a08,0,1,0.1455,314.0
+Demanio,0.5,90,110.0,acq,0,1,0.4982,
+Demanio,0.5,90,110.0,acq,e,1,0.7755,
+Demanio,0.5,90,110.0,acq,s,1,0.5086,
+Demanio,0.5,90,110.0,ces,0,1,0.5404,
+Demanio,0.5,90,110.0,ds_a0,0,1,0.5389,
+Demanio,0.5,90,110.0,ds_a05,0,1,0.5212,
+Demanio,0.5,90,110.0,ds_a08,0,1,0.509,
+Demanio,0.5,90,130.0,acq,0,1,0.8643,
+Demanio,0.5,90,130.0,acq,e,1,0.9701,
+Demanio,0.5,90,130.0,acq,s,1,0.8692,
+Demanio,0.5,90,130.0,ces,0,1,0.8876,
+Demanio,0.5,90,130.0,ds_a0,0,1,0.8865,
+Demanio,0.5,90,130.0,ds_a05,0,1,0.8797,
+Demanio,0.5,90,130.0,ds_a08,0,1,0.8727,
+Demanio,1.0,30,60.0,acq,0,1,0.0,
+Demanio,1.0,30,60.0,acq,e,1,0.0,
+Demanio,1.0,30,60.0,acq,s,1,0.0,
+Demanio,1.0,30,60.0,ces,0,1,0.0,
+Demanio,1.0,30,60.0,ds_a0,0,1,0.0,
+Demanio,1.0,30,60.0,ds_a05,0,1,0.0,
+Demanio,1.0,30,60.0,ds_a08,0,1,0.0,
+Demanio,1.0,30,75.0,acq,0,1,0.0,
+Demanio,1.0,30,75.0,acq,e,1,0.0019,
+Demanio,1.0,30,75.0,acq,s,1,0.0,
+Demanio,1.0,30,75.0,ces,0,1,0.0,
+Demanio,1.0,30,75.0,ds_a0,0,1,0.0,
+Demanio,1.0,30,75.0,ds_a05,0,1,0.0,
+Demanio,1.0,30,75.0,ds_a08,0,1,0.0,
+Demanio,1.0,30,90.0,acq,0,1,0.0,1687.0
+Demanio,1.0,30,90.0,acq,e,1,0.0401,835.0
+Demanio,1.0,30,90.0,acq,s,1,0.0,1638.0
+Demanio,1.0,30,90.0,ces,0,1,0.0,1613.0
+Demanio,1.0,30,90.0,ds_a0,0,1,0.0,1614.0
+Demanio,1.0,30,90.0,ds_a05,0,1,0.0,1641.0
+Demanio,1.0,30,90.0,ds_a08,0,1,0.0,1666.0
+Demanio,1.0,30,110.0,acq,0,1,0.0,
+Demanio,1.0,30,110.0,acq,e,1,0.3015,
+Demanio,1.0,30,110.0,acq,s,1,0.0,
+Demanio,1.0,30,110.0,ces,0,1,0.0,
+Demanio,1.0,30,110.0,ds_a0,0,1,0.0,
+Demanio,1.0,30,110.0,ds_a05,0,1,0.0,
+Demanio,1.0,30,110.0,ds_a08,0,1,0.0,
+Demanio,1.0,30,130.0,acq,0,1,0.0007,
+Demanio,1.0,30,130.0,acq,e,1,0.7391,
+Demanio,1.0,30,130.0,acq,s,1,0.0017,
+Demanio,1.0,30,130.0,ces,0,1,0.0037,
+Demanio,1.0,30,130.0,ds_a0,0,1,0.0037,
+Demanio,1.0,30,130.0,ds_a05,0,1,0.0011,
+Demanio,1.0,30,130.0,ds_a08,0,1,0.0009,
+Demanio,1.0,60,60.0,acq,0,1,0.0,
+Demanio,1.0,60,60.0,acq,e,1,0.0016,
+Demanio,1.0,60,60.0,acq,s,1,0.0,
+Demanio,1.0,60,60.0,ces,0,1,0.0,
+Demanio,1.0,60,60.0,ds_a0,0,1,0.0,
+Demanio,1.0,60,60.0,ds_a05,0,1,0.0,
+Demanio,1.0,60,60.0,ds_a08,0,1,0.0,
+Demanio,1.0,60,75.0,acq,0,1,0.0001,
+Demanio,1.0,60,75.0,acq,e,1,0.0389,
+Demanio,1.0,60,75.0,acq,s,1,0.0003,
+Demanio,1.0,60,75.0,ces,0,1,0.0007,
+Demanio,1.0,60,75.0,ds_a0,0,1,0.0006,
+Demanio,1.0,60,75.0,ds_a05,0,1,0.0002,
+Demanio,1.0,60,75.0,ds_a08,0,1,0.0001,
+Demanio,1.0,60,90.0,acq,0,1,0.0094,1062.0
+Demanio,1.0,60,90.0,acq,e,1,0.2085,497.0
+Demanio,1.0,60,90.0,acq,s,1,0.0141,1035.0
+Demanio,1.0,60,90.0,ces,0,1,0.0206,995.0
+Demanio,1.0,60,90.0,ds_a0,0,1,0.0206,996.0
+Demanio,1.0,60,90.0,ds_a05,0,1,0.0131,1027.0
+Demanio,1.0,60,90.0,ds_a08,0,1,0.0113,1043.0
+Demanio,1.0,60,110.0,acq,0,1,0.1317,
+Demanio,1.0,60,110.0,acq,e,1,0.6258,
+Demanio,1.0,60,110.0,acq,s,1,0.1485,
+Demanio,1.0,60,110.0,ces,0,1,0.1735,
+Demanio,1.0,60,110.0,ds_a0,0,1,0.1725,
+Demanio,1.0,60,110.0,ds_a05,0,1,0.1508,
+Demanio,1.0,60,110.0,ds_a08,0,1,0.1403,
+Demanio,1.0,60,130.0,acq,0,1,0.4511,
+Demanio,1.0,60,130.0,acq,e,1,0.9338,
+Demanio,1.0,60,130.0,acq,s,1,0.472,
+Demanio,1.0,60,130.0,ces,0,1,0.502,
+Demanio,1.0,60,130.0,ds_a0,0,1,0.5011,
+Demanio,1.0,60,130.0,ds_a05,0,1,0.4801,
+Demanio,1.0,60,130.0,ds_a08,0,1,0.4642,
+Demanio,1.0,90,60.0,acq,0,1,0.0005,
+Demanio,1.0,90,60.0,acq,e,1,0.0112,
+Demanio,1.0,90,60.0,acq,s,1,0.0008,
+Demanio,1.0,90,60.0,ces,0,1,0.0013,
+Demanio,1.0,90,60.0,ds_a0,0,1,0.0013,
+Demanio,1.0,90,60.0,ds_a05,0,1,0.0008,
+Demanio,1.0,90,60.0,ds_a08,0,1,0.0005,
+Demanio,1.0,90,75.0,acq,0,1,0.0204,
+Demanio,1.0,90,75.0,acq,e,1,0.109,
+Demanio,1.0,90,75.0,acq,s,1,0.0247,
+Demanio,1.0,90,75.0,ces,0,1,0.033,
+Demanio,1.0,90,75.0,ds_a0,0,1,0.0329,
+Demanio,1.0,90,75.0,ds_a05,0,1,0.0259,
+Demanio,1.0,90,75.0,ds_a08,0,1,0.0224,
+Demanio,1.0,90,90.0,acq,0,1,0.1388,645.0
+Demanio,1.0,90,90.0,acq,e,1,0.3538,261.0
+Demanio,1.0,90,90.0,acq,s,1,0.1484,628.0
+Demanio,1.0,90,90.0,ces,0,1,0.1728,580.0
+Demanio,1.0,90,90.0,ds_a0,0,1,0.1722,581.0
+Demanio,1.0,90,90.0,ds_a05,0,1,0.1555,612.0
+Demanio,1.0,90,90.0,ds_a08,0,1,0.1455,628.0
+Demanio,1.0,90,110.0,acq,0,1,0.4982,
+Demanio,1.0,90,110.0,acq,e,1,0.7755,
+Demanio,1.0,90,110.0,acq,s,1,0.5086,
+Demanio,1.0,90,110.0,ces,0,1,0.5404,
+Demanio,1.0,90,110.0,ds_a0,0,1,0.5396,
+Demanio,1.0,90,110.0,ds_a05,0,1,0.5212,
+Demanio,1.0,90,110.0,ds_a08,0,1,0.509,
+Demanio,1.0,90,130.0,acq,0,1,0.8643,
+Demanio,1.0,90,130.0,acq,e,1,0.9701,
+Demanio,1.0,90,130.0,acq,s,1,0.8692,
+Demanio,1.0,90,130.0,ces,0,1,0.8876,
+Demanio,1.0,90,130.0,ds_a0,0,1,0.8872,
+Demanio,1.0,90,130.0,ds_a05,0,1,0.8797,
+Demanio,1.0,90,130.0,ds_a08,0,1,0.8727,
+Demanio,2.0,30,60.0,acq,0,1,0.0,
+Demanio,2.0,30,60.0,acq,e,1,0.0,
+Demanio,2.0,30,60.0,acq,s,1,0.0,
+Demanio,2.0,30,60.0,ces,0,1,0.0,
+Demanio,2.0,30,60.0,ds_a0,0,1,0.0,
+Demanio,2.0,30,60.0,ds_a05,0,1,0.0,
+Demanio,2.0,30,60.0,ds_a08,0,1,0.0,
+Demanio,2.0,30,75.0,acq,0,1,0.0,
+Demanio,2.0,30,75.0,acq,e,1,0.0019,
+Demanio,2.0,30,75.0,acq,s,1,0.0,
+Demanio,2.0,30,75.0,ces,0,1,0.0,
+Demanio,2.0,30,75.0,ds_a0,0,1,0.0,
+Demanio,2.0,30,75.0,ds_a05,0,1,0.0,
+Demanio,2.0,30,75.0,ds_a08,0,1,0.0,
+Demanio,2.0,30,90.0,acq,0,1,0.0,3374.0
+Demanio,2.0,30,90.0,acq,e,1,0.0401,1669.0
+Demanio,2.0,30,90.0,acq,s,1,0.0,3276.0
+Demanio,2.0,30,90.0,ces,0,1,0.0,3227.0
+Demanio,2.0,30,90.0,ds_a0,0,1,0.0,3228.0
+Demanio,2.0,30,90.0,ds_a05,0,1,0.0,3282.0
+Demanio,2.0,30,90.0,ds_a08,0,1,0.0,3333.0
+Demanio,2.0,30,110.0,acq,0,1,0.0,
+Demanio,2.0,30,110.0,acq,e,1,0.3015,
+Demanio,2.0,30,110.0,acq,s,1,0.0,
+Demanio,2.0,30,110.0,ces,0,1,0.0,
+Demanio,2.0,30,110.0,ds_a0,0,1,0.0,
+Demanio,2.0,30,110.0,ds_a05,0,1,0.0,
+Demanio,2.0,30,110.0,ds_a08,0,1,0.0,
+Demanio,2.0,30,130.0,acq,0,1,0.0007,
+Demanio,2.0,30,130.0,acq,e,1,0.7391,
+Demanio,2.0,30,130.0,acq,s,1,0.0017,
+Demanio,2.0,30,130.0,ces,0,1,0.0037,
+Demanio,2.0,30,130.0,ds_a0,0,1,0.0037,
+Demanio,2.0,30,130.0,ds_a05,0,1,0.0011,
+Demanio,2.0,30,130.0,ds_a08,0,1,0.0009,
+Demanio,2.0,60,60.0,acq,0,1,0.0,
+Demanio,2.0,60,60.0,acq,e,1,0.0016,
+Demanio,2.0,60,60.0,acq,s,1,0.0,
+Demanio,2.0,60,60.0,ces,0,1,0.0,
+Demanio,2.0,60,60.0,ds_a0,0,1,0.0,
+Demanio,2.0,60,60.0,ds_a05,0,1,0.0,
+Demanio,2.0,60,60.0,ds_a08,0,1,0.0,
+Demanio,2.0,60,75.0,acq,0,1,0.0001,
+Demanio,2.0,60,75.0,acq,e,1,0.0389,
+Demanio,2.0,60,75.0,acq,s,1,0.0003,
+Demanio,2.0,60,75.0,ces,0,1,0.0007,
+Demanio,2.0,60,75.0,ds_a0,0,1,0.0006,
+Demanio,2.0,60,75.0,ds_a05,0,1,0.0002,
+Demanio,2.0,60,75.0,ds_a08,0,1,0.0001,
+Demanio,2.0,60,90.0,acq,0,1,0.0094,2124.0
+Demanio,2.0,60,90.0,acq,e,1,0.2085,994.0
+Demanio,2.0,60,90.0,acq,s,1,0.0141,2069.0
+Demanio,2.0,60,90.0,ces,0,1,0.0206,1989.0
+Demanio,2.0,60,90.0,ds_a0,0,1,0.0206,1990.0
+Demanio,2.0,60,90.0,ds_a05,0,1,0.0131,2054.0
+Demanio,2.0,60,90.0,ds_a08,0,1,0.0113,2087.0
+Demanio,2.0,60,110.0,acq,0,1,0.1317,
+Demanio,2.0,60,110.0,acq,e,1,0.6258,
+Demanio,2.0,60,110.0,acq,s,1,0.1485,
+Demanio,2.0,60,110.0,ces,0,1,0.1735,
+Demanio,2.0,60,110.0,ds_a0,0,1,0.173,
+Demanio,2.0,60,110.0,ds_a05,0,1,0.1508,
+Demanio,2.0,60,110.0,ds_a08,0,1,0.1403,
+Demanio,2.0,60,130.0,acq,0,1,0.4511,
+Demanio,2.0,60,130.0,acq,e,1,0.9338,
+Demanio,2.0,60,130.0,acq,s,1,0.472,
+Demanio,2.0,60,130.0,ces,0,1,0.502,
+Demanio,2.0,60,130.0,ds_a0,0,1,0.5014,
+Demanio,2.0,60,130.0,ds_a05,0,1,0.4801,
+Demanio,2.0,60,130.0,ds_a08,0,1,0.4642,
+Demanio,2.0,90,60.0,acq,0,1,0.0005,
+Demanio,2.0,90,60.0,acq,e,1,0.0112,
+Demanio,2.0,90,60.0,acq,s,1,0.0008,
+Demanio,2.0,90,60.0,ces,0,1,0.0013,
+Demanio,2.0,90,60.0,ds_a0,0,1,0.0013,
+Demanio,2.0,90,60.0,ds_a05,0,1,0.0008,
+Demanio,2.0,90,60.0,ds_a08,0,1,0.0005,
+Demanio,2.0,90,75.0,acq,0,1,0.0204,
+Demanio,2.0,90,75.0,acq,e,1,0.109,
+Demanio,2.0,90,75.0,acq,s,1,0.0247,
+Demanio,2.0,90,75.0,ces,0,1,0.033,
+Demanio,2.0,90,75.0,ds_a0,0,1,0.033,
+Demanio,2.0,90,75.0,ds_a05,0,1,0.0259,
+Demanio,2.0,90,75.0,ds_a08,0,1,0.0224,
+Demanio,2.0,90,90.0,acq,0,1,0.1388,1289.0
+Demanio,2.0,90,90.0,acq,e,1,0.3538,523.0
+Demanio,2.0,90,90.0,acq,s,1,0.1484,1256.0
+Demanio,2.0,90,90.0,ces,0,1,0.1728,1159.0
+Demanio,2.0,90,90.0,ds_a0,0,1,0.1724,1160.0
+Demanio,2.0,90,90.0,ds_a05,0,1,0.1555,1224.0
+Demanio,2.0,90,90.0,ds_a08,0,1,0.1455,1256.0
+Demanio,2.0,90,110.0,acq,0,1,0.4982,
+Demanio,2.0,90,110.0,acq,e,1,0.7755,
+Demanio,2.0,90,110.0,acq,s,1,0.5086,
+Demanio,2.0,90,110.0,ces,0,1,0.5404,
+Demanio,2.0,90,110.0,ds_a0,0,1,0.54,
+Demanio,2.0,90,110.0,ds_a05,0,1,0.5212,
+Demanio,2.0,90,110.0,ds_a08,0,1,0.509,
+Demanio,2.0,90,130.0,acq,0,1,0.8643,
+Demanio,2.0,90,130.0,acq,e,1,0.9701,
+Demanio,2.0,90,130.0,acq,s,1,0.8692,
+Demanio,2.0,90,130.0,ces,0,1,0.8876,
+Demanio,2.0,90,130.0,ds_a0,0,1,0.8874,
+Demanio,2.0,90,130.0,ds_a05,0,1,0.8797,
+Demanio,2.0,90,130.0,ds_a08,0,1,0.8727,
+non agganciata,0.5,30,60.0,acq,0,147,0.0,
+non agganciata,0.5,30,60.0,acq,e,147,0.0,
+non agganciata,0.5,30,60.0,acq,s,147,0.0,
+non agganciata,0.5,30,60.0,ces,0,147,0.0,
+non agganciata,0.5,30,60.0,ds_a0,0,147,0.0,
+non agganciata,0.5,30,60.0,ds_a05,0,147,0.0,
+non agganciata,0.5,30,60.0,ds_a08,0,147,0.0,
+non agganciata,0.5,30,75.0,acq,0,147,0.0,
+non agganciata,0.5,30,75.0,acq,e,147,0.0002,
+non agganciata,0.5,30,75.0,acq,s,147,0.0,
+non agganciata,0.5,30,75.0,ces,0,147,0.0,
+non agganciata,0.5,30,75.0,ds_a0,0,147,0.0,
+non agganciata,0.5,30,75.0,ds_a05,0,147,0.0,
+non agganciata,0.5,30,75.0,ds_a08,0,147,0.0,
+non agganciata,0.5,30,90.0,acq,0,147,0.0,1264.0
+non agganciata,0.5,30,90.0,acq,e,147,0.0059,829.0
+non agganciata,0.5,30,90.0,acq,s,147,0.0,980.0
+non agganciata,0.5,30,90.0,ces,0,147,0.0,807.0
+non agganciata,0.5,30,90.0,ds_a0,0,147,0.0,808.0
+non agganciata,0.5,30,90.0,ds_a05,0,147,0.0,1025.0
+non agganciata,0.5,30,90.0,ds_a08,0,147,0.0,1151.0
+non agganciata,0.5,30,110.0,acq,0,147,0.0,
+non agganciata,0.5,30,110.0,acq,e,147,0.0778,
+non agganciata,0.5,30,110.0,acq,s,147,0.0,
+non agganciata,0.5,30,110.0,ces,0,147,0.0,
+non agganciata,0.5,30,110.0,ds_a0,0,147,0.0,
+non agganciata,0.5,30,110.0,ds_a05,0,147,0.0,
+non agganciata,0.5,30,110.0,ds_a08,0,147,0.0,
+non agganciata,0.5,30,130.0,acq,0,147,0.0,
+non agganciata,0.5,30,130.0,acq,e,147,0.2969,
+non agganciata,0.5,30,130.0,acq,s,147,0.0003,
+non agganciata,0.5,30,130.0,ces,0,147,0.0037,
+non agganciata,0.5,30,130.0,ds_a0,0,147,0.0035,
+non agganciata,0.5,30,130.0,ds_a05,0,147,0.0001,
+non agganciata,0.5,30,130.0,ds_a08,0,147,0.0001,
+non agganciata,0.5,60,60.0,acq,0,147,0.0,
+non agganciata,0.5,60,60.0,acq,e,147,0.0001,
+non agganciata,0.5,60,60.0,acq,s,147,0.0,
+non agganciata,0.5,60,60.0,ces,0,147,0.0,
+non agganciata,0.5,60,60.0,ds_a0,0,147,0.0,
+non agganciata,0.5,60,60.0,ds_a05,0,147,0.0,
+non agganciata,0.5,60,60.0,ds_a08,0,147,0.0,
+non agganciata,0.5,60,75.0,acq,0,147,0.0,
+non agganciata,0.5,60,75.0,acq,e,147,0.007,
+non agganciata,0.5,60,75.0,acq,s,147,0.0,
+non agganciata,0.5,60,75.0,ces,0,147,0.0007,
+non agganciata,0.5,60,75.0,ds_a0,0,147,0.0006,
+non agganciata,0.5,60,75.0,ds_a05,0,147,0.0,
+non agganciata,0.5,60,75.0,ds_a08,0,147,0.0,
+non agganciata,0.5,60,90.0,acq,0,147,0.0012,941.0
+non agganciata,0.5,60,90.0,acq,e,147,0.0588,650.0
+non agganciata,0.5,60,90.0,acq,s,147,0.0035,751.0
+non agganciata,0.5,60,90.0,ces,0,147,0.0206,497.0
+non agganciata,0.5,60,90.0,ds_a0,0,147,0.0206,498.0
+non agganciata,0.5,60,90.0,ds_a05,0,147,0.0027,705.0
+non agganciata,0.5,60,90.0,ds_a08,0,147,0.0016,829.0
+non agganciata,0.5,60,110.0,acq,0,147,0.0271,
+non agganciata,0.5,60,110.0,acq,e,147,0.2699,
+non agganciata,0.5,60,110.0,acq,s,147,0.0562,
+non agganciata,0.5,60,110.0,ces,0,147,0.1735,
+non agganciata,0.5,60,110.0,ds_a0,0,147,0.172,
+non agganciata,0.5,60,110.0,ds_a05,0,147,0.0528,
+non agganciata,0.5,60,110.0,ds_a08,0,147,0.0344,
+non agganciata,0.5,60,130.0,acq,0,147,0.1447,
+non agganciata,0.5,60,130.0,acq,e,147,0.5576,
+non agganciata,0.5,60,130.0,acq,s,147,0.2398,
+non agganciata,0.5,60,130.0,ces,0,147,0.502,
+non agganciata,0.5,60,130.0,ds_a0,0,147,0.5005,
+non agganciata,0.5,60,130.0,ds_a05,0,147,0.2492,
+non agganciata,0.5,60,130.0,ds_a08,0,147,0.1808,
+non agganciata,0.5,90,60.0,acq,0,147,0.0,
+non agganciata,0.5,90,60.0,acq,e,147,0.0018,
+non agganciata,0.5,90,60.0,acq,s,147,0.0001,
+non agganciata,0.5,90,60.0,ces,0,147,0.0013,
+non agganciata,0.5,90,60.0,ds_a0,0,147,0.0013,
+non agganciata,0.5,90,60.0,ds_a05,0,147,0.0001,
+non agganciata,0.5,90,60.0,ds_a08,0,147,0.0001,
+non agganciata,0.5,90,75.0,acq,0,147,0.0033,
+non agganciata,0.5,90,75.0,acq,e,147,0.0295,
+non agganciata,0.5,90,75.0,acq,s,147,0.0068,
+non agganciata,0.5,90,75.0,ces,0,147,0.033,
+non agganciata,0.5,90,75.0,ds_a0,0,147,0.0325,
+non agganciata,0.5,90,75.0,ds_a05,0,147,0.0073,
+non agganciata,0.5,90,75.0,ds_a08,0,147,0.0044,
+non agganciata,0.5,90,90.0,acq,0,147,0.0355,725.0
+non agganciata,0.5,90,90.0,acq,e,147,0.1389,528.0
+non agganciata,0.5,90,90.0,acq,s,147,0.0585,596.0
+non agganciata,0.5,90,90.0,ces,0,147,0.1728,290.0
+non agganciata,0.5,90,90.0,ds_a0,0,147,0.1718,291.0
+non agganciata,0.5,90,90.0,ds_a05,0,147,0.0665,493.0
+non agganciata,0.5,90,90.0,ds_a08,0,147,0.0452,615.0
+non agganciata,0.5,90,110.0,acq,0,147,0.195,
+non agganciata,0.5,90,110.0,acq,e,147,0.4129,
+non agganciata,0.5,90,110.0,acq,s,147,0.2648,
+non agganciata,0.5,90,110.0,ces,0,147,0.5404,
+non agganciata,0.5,90,110.0,ds_a0,0,147,0.5389,
+non agganciata,0.5,90,110.0,ds_a05,0,147,0.3112,
+non agganciata,0.5,90,110.0,ds_a08,0,147,0.2373,
+non agganciata,0.5,90,130.0,acq,0,147,0.4619,
+non agganciata,0.5,90,130.0,acq,e,147,0.6727,
+non agganciata,0.5,90,130.0,acq,s,147,0.5622,
+non agganciata,0.5,90,130.0,ces,0,147,0.8876,
+non agganciata,0.5,90,130.0,ds_a0,0,147,0.8865,
+non agganciata,0.5,90,130.0,ds_a05,0,147,0.6561,
+non agganciata,0.5,90,130.0,ds_a08,0,147,0.5425,
+non agganciata,1.0,30,60.0,acq,0,147,0.0,
+non agganciata,1.0,30,60.0,acq,e,147,0.0,
+non agganciata,1.0,30,60.0,acq,s,147,0.0,
+non agganciata,1.0,30,60.0,ces,0,147,0.0,
+non agganciata,1.0,30,60.0,ds_a0,0,147,0.0,
+non agganciata,1.0,30,60.0,ds_a05,0,147,0.0,
+non agganciata,1.0,30,60.0,ds_a08,0,147,0.0,
+non agganciata,1.0,30,75.0,acq,0,147,0.0,
+non agganciata,1.0,30,75.0,acq,e,147,0.0004,
+non agganciata,1.0,30,75.0,acq,s,147,0.0,
+non agganciata,1.0,30,75.0,ces,0,147,0.0,
+non agganciata,1.0,30,75.0,ds_a0,0,147,0.0,
+non agganciata,1.0,30,75.0,ds_a05,0,147,0.0,
+non agganciata,1.0,30,75.0,ds_a08,0,147,0.0,
+non agganciata,1.0,30,90.0,acq,0,147,0.0,2349.0
+non agganciata,1.0,30,90.0,acq,e,147,0.0099,1483.0
+non agganciata,1.0,30,90.0,acq,s,147,0.0,1898.0
+non agganciata,1.0,30,90.0,ces,0,147,0.0,1613.0
+non agganciata,1.0,30,90.0,ds_a0,0,147,0.0,1614.0
+non agganciata,1.0,30,90.0,ds_a05,0,147,0.0,1975.0
+non agganciata,1.0,30,90.0,ds_a08,0,147,0.0,2178.0
+non agganciata,1.0,30,110.0,acq,0,147,0.0,
+non agganciata,1.0,30,110.0,acq,e,147,0.1136,
+non agganciata,1.0,30,110.0,acq,s,147,0.0,
+non agganciata,1.0,30,110.0,ces,0,147,0.0,
+non agganciata,1.0,30,110.0,ds_a0,0,147,0.0,
+non agganciata,1.0,30,110.0,ds_a05,0,147,0.0,
+non agganciata,1.0,30,110.0,ds_a08,0,147,0.0,
+non agganciata,1.0,30,130.0,acq,0,147,0.0001,
+non agganciata,1.0,30,130.0,acq,e,147,0.3799,
+non agganciata,1.0,30,130.0,acq,s,147,0.0005,
+non agganciata,1.0,30,130.0,ces,0,147,0.0037,
+non agganciata,1.0,30,130.0,ds_a0,0,147,0.0037,
+non agganciata,1.0,30,130.0,ds_a05,0,147,0.0002,
+non agganciata,1.0,30,130.0,ds_a08,0,147,0.0001,
+non agganciata,1.0,60,60.0,acq,0,147,0.0,
+non agganciata,1.0,60,60.0,acq,e,147,0.0003,
+non agganciata,1.0,60,60.0,acq,s,147,0.0,
+non agganciata,1.0,60,60.0,ces,0,147,0.0,
+non agganciata,1.0,60,60.0,ds_a0,0,147,0.0,
+non agganciata,1.0,60,60.0,ds_a05,0,147,0.0,
+non agganciata,1.0,60,60.0,ds_a08,0,147,0.0,
+non agganciata,1.0,60,75.0,acq,0,147,0.0,
+non agganciata,1.0,60,75.0,acq,e,147,0.0112,
+non agganciata,1.0,60,75.0,acq,s,147,0.0001,
+non agganciata,1.0,60,75.0,ces,0,147,0.0007,
+non agganciata,1.0,60,75.0,ds_a0,0,147,0.0006,
+non agganciata,1.0,60,75.0,ds_a05,0,147,0.0,
+non agganciata,1.0,60,75.0,ds_a08,0,147,0.0,
+non agganciata,1.0,60,90.0,acq,0,147,0.0021,1707.0
+non agganciata,1.0,60,90.0,acq,e,147,0.0829,1114.0
+non agganciata,1.0,60,90.0,acq,s,147,0.005,1400.0
+non agganciata,1.0,60,90.0,ces,0,147,0.0206,995.0
+non agganciata,1.0,60,90.0,ds_a0,0,147,0.0206,996.0
+non agganciata,1.0,60,90.0,ds_a05,0,147,0.0042,1335.0
+non agganciata,1.0,60,90.0,ds_a08,0,147,0.0027,1529.0
+non agganciata,1.0,60,110.0,acq,0,147,0.0426,
+non agganciata,1.0,60,110.0,acq,e,147,0.3357,
+non agganciata,1.0,60,110.0,acq,s,147,0.0712,
+non agganciata,1.0,60,110.0,ces,0,147,0.1735,
+non agganciata,1.0,60,110.0,ds_a0,0,147,0.1725,
+non agganciata,1.0,60,110.0,ds_a05,0,147,0.0693,
+non agganciata,1.0,60,110.0,ds_a08,0,147,0.0509,
+non agganciata,1.0,60,130.0,acq,0,147,0.198,
+non agganciata,1.0,60,130.0,acq,e,147,0.6317,
+non agganciata,1.0,60,130.0,acq,s,147,0.2812,
+non agganciata,1.0,60,130.0,ces,0,147,0.502,
+non agganciata,1.0,60,130.0,ds_a0,0,147,0.5011,
+non agganciata,1.0,60,130.0,ds_a05,0,147,0.2917,
+non agganciata,1.0,60,130.0,ds_a08,0,147,0.2321,
+non agganciata,1.0,90,60.0,acq,0,147,0.0001,
+non agganciata,1.0,90,60.0,acq,e,147,0.0031,
+non agganciata,1.0,90,60.0,acq,s,147,0.0002,
+non agganciata,1.0,90,60.0,ces,0,147,0.0013,
+non agganciata,1.0,90,60.0,ds_a0,0,147,0.0013,
+non agganciata,1.0,90,60.0,ds_a05,0,147,0.0002,
+non agganciata,1.0,90,60.0,ds_a08,0,147,0.0001,
+non agganciata,1.0,90,75.0,acq,0,147,0.0054,
+non agganciata,1.0,90,75.0,acq,e,147,0.0422,
+non agganciata,1.0,90,75.0,acq,s,147,0.0094,
+non agganciata,1.0,90,75.0,ces,0,147,0.033,
+non agganciata,1.0,90,75.0,ds_a0,0,147,0.0329,
+non agganciata,1.0,90,75.0,ds_a05,0,147,0.0101,
+non agganciata,1.0,90,75.0,ds_a08,0,147,0.0069,
+non agganciata,1.0,90,90.0,acq,0,147,0.0521,1263.0
+non agganciata,1.0,90,90.0,acq,e,147,0.1772,869.0
+non agganciata,1.0,90,90.0,acq,s,147,0.0738,1062.0
+non agganciata,1.0,90,90.0,ces,0,147,0.1728,580.0
+non agganciata,1.0,90,90.0,ds_a0,0,147,0.1722,581.0
+non agganciata,1.0,90,90.0,ds_a05,0,147,0.0819,907.0
+non agganciata,1.0,90,90.0,ds_a08,0,147,0.0621,1093.0
+non agganciata,1.0,90,110.0,acq,0,147,0.2499,
+non agganciata,1.0,90,110.0,acq,e,147,0.481,
+non agganciata,1.0,90,110.0,acq,s,147,0.3089,
+non agganciata,1.0,90,110.0,ces,0,147,0.5404,
+non agganciata,1.0,90,110.0,ds_a0,0,147,0.5396,
+non agganciata,1.0,90,110.0,ds_a05,0,147,0.3501,
+non agganciata,1.0,90,110.0,ds_a08,0,147,0.2875,
+non agganciata,1.0,90,130.0,acq,0,147,0.5394,
+non agganciata,1.0,90,130.0,acq,e,147,0.7308,
+non agganciata,1.0,90,130.0,acq,s,147,0.6205,
+non agganciata,1.0,90,130.0,ces,0,147,0.8876,
+non agganciata,1.0,90,130.0,ds_a0,0,147,0.8872,
+non agganciata,1.0,90,130.0,ds_a05,0,147,0.6984,
+non agganciata,1.0,90,130.0,ds_a08,0,147,0.6061,
+non agganciata,2.0,30,60.0,acq,0,147,0.0,
+non agganciata,2.0,30,60.0,acq,e,147,0.0,
+non agganciata,2.0,30,60.0,acq,s,147,0.0,
+non agganciata,2.0,30,60.0,ces,0,147,0.0,
+non agganciata,2.0,30,60.0,ds_a0,0,147,0.0,
+non agganciata,2.0,30,60.0,ds_a05,0,147,0.0,
+non agganciata,2.0,30,60.0,ds_a08,0,147,0.0,
+non agganciata,2.0,30,75.0,acq,0,147,0.0,
+non agganciata,2.0,30,75.0,acq,e,147,0.0005,
+non agganciata,2.0,30,75.0,acq,s,147,0.0,
+non agganciata,2.0,30,75.0,ces,0,147,0.0,
+non agganciata,2.0,30,75.0,ds_a0,0,147,0.0,
+non agganciata,2.0,30,75.0,ds_a05,0,147,0.0,
+non agganciata,2.0,30,75.0,ds_a08,0,147,0.0,
+non agganciata,2.0,30,90.0,acq,0,147,0.0,3774.0
+non agganciata,2.0,30,90.0,acq,e,147,0.0144,2035.0
+non agganciata,2.0,30,90.0,acq,s,147,0.0,3444.0
+non agganciata,2.0,30,90.0,ces,0,147,0.0,3227.0
+non agganciata,2.0,30,90.0,ds_a0,0,147,0.0,3228.0
+non agganciata,2.0,30,90.0,ds_a05,0,147,0.0,3485.0
+non agganciata,2.0,30,90.0,ds_a08,0,147,0.0,3644.0
+non agganciata,2.0,30,110.0,acq,0,147,0.0,
+non agganciata,2.0,30,110.0,acq,e,147,0.1539,
+non agganciata,2.0,30,110.0,acq,s,147,0.0,
+non agganciata,2.0,30,110.0,ces,0,147,0.0,
+non agganciata,2.0,30,110.0,ds_a0,0,147,0.0,
+non agganciata,2.0,30,110.0,ds_a05,0,147,0.0,
+non agganciata,2.0,30,110.0,ds_a08,0,147,0.0,
+non agganciata,2.0,30,130.0,acq,0,147,0.0001,
+non agganciata,2.0,30,130.0,acq,e,147,0.4748,
+non agganciata,2.0,30,130.0,acq,s,147,0.0007,
+non agganciata,2.0,30,130.0,ces,0,147,0.0037,
+non agganciata,2.0,30,130.0,ds_a0,0,147,0.0037,
+non agganciata,2.0,30,130.0,ds_a05,0,147,0.0003,
+non agganciata,2.0,30,130.0,ds_a08,0,147,0.0002,
+non agganciata,2.0,60,60.0,acq,0,147,0.0,
+non agganciata,2.0,60,60.0,acq,e,147,0.0004,
+non agganciata,2.0,60,60.0,acq,s,147,0.0,
+non agganciata,2.0,60,60.0,ces,0,147,0.0,
+non agganciata,2.0,60,60.0,ds_a0,0,147,0.0,
+non agganciata,2.0,60,60.0,ds_a05,0,147,0.0,
+non agganciata,2.0,60,60.0,ds_a08,0,147,0.0,
+non agganciata,2.0,60,75.0,acq,0,147,0.0,
+non agganciata,2.0,60,75.0,acq,e,147,0.0159,
+non agganciata,2.0,60,75.0,acq,s,147,0.0001,
+non agganciata,2.0,60,75.0,ces,0,147,0.0007,
+non agganciata,2.0,60,75.0,ds_a0,0,147,0.0006,
+non agganciata,2.0,60,75.0,ds_a05,0,147,0.0,
+non agganciata,2.0,60,75.0,ds_a08,0,147,0.0,
+non agganciata,2.0,60,90.0,acq,0,147,0.0031,2483.0
+non agganciata,2.0,60,90.0,acq,e,147,0.1099,1333.0
+non agganciata,2.0,60,90.0,acq,s,147,0.0066,2293.0
+non agganciata,2.0,60,90.0,ces,0,147,0.0206,1989.0
+non agganciata,2.0,60,90.0,ds_a0,0,147,0.0206,1990.0
+non agganciata,2.0,60,90.0,ds_a05,0,147,0.0058,2232.0
+non agganciata,2.0,60,90.0,ds_a08,0,147,0.0039,2365.0
+non agganciata,2.0,60,110.0,acq,0,147,0.0599,
+non agganciata,2.0,60,110.0,acq,e,147,0.4112,
+non agganciata,2.0,60,110.0,acq,s,147,0.0883,
+non agganciata,2.0,60,110.0,ces,0,147,0.1735,
+non agganciata,2.0,60,110.0,ds_a0,0,147,0.173,
+non agganciata,2.0,60,110.0,ds_a05,0,147,0.088,
+non agganciata,2.0,60,110.0,ds_a08,0,147,0.0695,
+non agganciata,2.0,60,130.0,acq,0,147,0.2584,
+non agganciata,2.0,60,130.0,acq,e,147,0.7193,
+non agganciata,2.0,60,130.0,acq,s,147,0.3293,
+non agganciata,2.0,60,130.0,ces,0,147,0.502,
+non agganciata,2.0,60,130.0,ds_a0,0,147,0.5014,
+non agganciata,2.0,60,130.0,ds_a05,0,147,0.3413,
+non agganciata,2.0,60,130.0,ds_a08,0,147,0.2904,
+non agganciata,2.0,90,60.0,acq,0,147,0.0001,
+non agganciata,2.0,90,60.0,acq,e,147,0.0045,
+non agganciata,2.0,90,60.0,acq,s,147,0.0003,
+non agganciata,2.0,90,60.0,ces,0,147,0.0013,
+non agganciata,2.0,90,60.0,ds_a0,0,147,0.0013,
+non agganciata,2.0,90,60.0,ds_a05,0,147,0.0003,
+non agganciata,2.0,90,60.0,ds_a08,0,147,0.0002,
+non agganciata,2.0,90,75.0,acq,0,147,0.0077,
+non agganciata,2.0,90,75.0,acq,e,147,0.0566,
+non agganciata,2.0,90,75.0,acq,s,147,0.0123,
+non agganciata,2.0,90,75.0,ces,0,147,0.033,
+non agganciata,2.0,90,75.0,ds_a0,0,147,0.033,
+non agganciata,2.0,90,75.0,ds_a05,0,147,0.0134,
+non agganciata,2.0,90,75.0,ds_a08,0,147,0.0096,
+non agganciata,2.0,90,90.0,acq,0,147,0.0707,1631.0
+non agganciata,2.0,90,90.0,acq,e,147,0.2209,868.0
+non agganciata,2.0,90,90.0,acq,s,147,0.0912,1512.0
+non agganciata,2.0,90,90.0,ces,0,147,0.1728,1159.0
+non agganciata,2.0,90,90.0,ds_a0,0,147,0.1724,1160.0
+non agganciata,2.0,90,90.0,ds_a05,0,147,0.0995,1395.0
+non agganciata,2.0,90,90.0,ds_a08,0,147,0.0812,1520.0
+non agganciata,2.0,90,110.0,acq,0,147,0.3125,
+non agganciata,2.0,90,110.0,acq,e,147,0.5604,
+non agganciata,2.0,90,110.0,acq,s,147,0.3603,
+non agganciata,2.0,90,110.0,ces,0,147,0.5404,
+non agganciata,2.0,90,110.0,ds_a0,0,147,0.54,
+non agganciata,2.0,90,110.0,ds_a05,0,147,0.3961,
+non agganciata,2.0,90,110.0,ds_a08,0,147,0.3454,
+non agganciata,2.0,90,130.0,acq,0,147,0.6298,
+non agganciata,2.0,90,130.0,acq,e,147,0.8017,
+non agganciata,2.0,90,130.0,acq,s,147,0.6902,
+non agganciata,2.0,90,130.0,ces,0,147,0.8876,
+non agganciata,2.0,90,130.0,ds_a0,0,147,0.8874,
+non agganciata,2.0,90,130.0,ds_a05,0,147,0.7514,
+non agganciata,2.0,90,130.0,ds_a08,0,147,0.6817,
+pubblico comunale,0.5,30,60.0,acq,0,68,0.0,
+pubblico comunale,0.5,30,60.0,acq,e,68,0.0,
+pubblico comunale,0.5,30,60.0,acq,s,68,0.0,
+pubblico comunale,0.5,30,60.0,ces,0,68,0.0,
+pubblico comunale,0.5,30,60.0,ds_a0,0,68,0.0,
+pubblico comunale,0.5,30,60.0,ds_a05,0,68,0.0,
+pubblico comunale,0.5,30,60.0,ds_a08,0,68,0.0,
+pubblico comunale,0.5,30,75.0,acq,0,68,0.0,
+pubblico comunale,0.5,30,75.0,acq,e,68,0.0005,
+pubblico comunale,0.5,30,75.0,acq,s,68,0.0,
+pubblico comunale,0.5,30,75.0,ces,0,68,0.0,
+pubblico comunale,0.5,30,75.0,ds_a0,0,68,0.0,
+pubblico comunale,0.5,30,75.0,ds_a05,0,68,0.0,
+pubblico comunale,0.5,30,75.0,ds_a08,0,68,0.0,
+pubblico comunale,0.5,30,90.0,acq,0,68,0.0,1197.0
+pubblico comunale,0.5,30,90.0,acq,e,68,0.0093,763.0
+pubblico comunale,0.5,30,90.0,acq,s,68,0.0,957.0
+pubblico comunale,0.5,30,90.0,ces,0,68,0.0,807.0
+pubblico comunale,0.5,30,90.0,ds_a0,0,68,0.0,808.0
+pubblico comunale,0.5,30,90.0,ds_a05,0,68,0.0,996.0
+pubblico comunale,0.5,30,90.0,ds_a08,0,68,0.0,1104.0
+pubblico comunale,0.5,30,110.0,acq,0,68,0.0,
+pubblico comunale,0.5,30,110.0,acq,e,68,0.0972,
+pubblico comunale,0.5,30,110.0,acq,s,68,0.0,
+pubblico comunale,0.5,30,110.0,ces,0,68,0.0,
+pubblico comunale,0.5,30,110.0,ds_a0,0,68,0.0,
+pubblico comunale,0.5,30,110.0,ds_a05,0,68,0.0,
+pubblico comunale,0.5,30,110.0,ds_a08,0,68,0.0,
+pubblico comunale,0.5,30,130.0,acq,0,68,0.0002,
+pubblico comunale,0.5,30,130.0,acq,e,68,0.3337,
+pubblico comunale,0.5,30,130.0,acq,s,68,0.0005,
+pubblico comunale,0.5,30,130.0,ces,0,68,0.0037,
+pubblico comunale,0.5,30,130.0,ds_a0,0,68,0.0035,
+pubblico comunale,0.5,30,130.0,ds_a05,0,68,0.0003,
+pubblico comunale,0.5,30,130.0,ds_a08,0,68,0.0002,
+pubblico comunale,0.5,60,60.0,acq,0,68,0.0,
+pubblico comunale,0.5,60,60.0,acq,e,68,0.0003,
+pubblico comunale,0.5,60,60.0,acq,s,68,0.0,
+pubblico comunale,0.5,60,60.0,ces,0,68,0.0,
+pubblico comunale,0.5,60,60.0,ds_a0,0,68,0.0,
+pubblico comunale,0.5,60,60.0,ds_a05,0,68,0.0,
+pubblico comunale,0.5,60,60.0,ds_a08,0,68,0.0,
+pubblico comunale,0.5,60,75.0,acq,0,68,0.0,
+pubblico comunale,0.5,60,75.0,acq,e,68,0.0099,
+pubblico comunale,0.5,60,75.0,acq,s,68,0.0001,
+pubblico comunale,0.5,60,75.0,ces,0,68,0.0007,
+pubblico comunale,0.5,60,75.0,ds_a0,0,68,0.0006,
+pubblico comunale,0.5,60,75.0,ds_a05,0,68,0.0,
+pubblico comunale,0.5,60,75.0,ds_a08,0,68,0.0,
+pubblico comunale,0.5,60,90.0,acq,0,68,0.0022,875.0
+pubblico comunale,0.5,60,90.0,acq,e,68,0.0719,582.0
+pubblico comunale,0.5,60,90.0,acq,s,68,0.0046,714.0
+pubblico comunale,0.5,60,90.0,ces,0,68,0.0206,497.0
+pubblico comunale,0.5,60,90.0,ds_a0,0,68,0.0206,498.0
+pubblico comunale,0.5,60,90.0,ds_a05,0,68,0.0038,676.0
+pubblico comunale,0.5,60,90.0,ds_a08,0,68,0.0027,780.0
+pubblico comunale,0.5,60,110.0,acq,0,68,0.0362,
+pubblico comunale,0.5,60,110.0,acq,e,68,0.2997,
+pubblico comunale,0.5,60,110.0,acq,s,68,0.0641,
+pubblico comunale,0.5,60,110.0,ces,0,68,0.1735,
+pubblico comunale,0.5,60,110.0,ds_a0,0,68,0.172,
+pubblico comunale,0.5,60,110.0,ds_a05,0,68,0.0614,
+pubblico comunale,0.5,60,110.0,ds_a08,0,68,0.0436,
+pubblico comunale,0.5,60,130.0,acq,0,68,0.1705,
+pubblico comunale,0.5,60,130.0,acq,e,68,0.5874,
+pubblico comunale,0.5,60,130.0,acq,s,68,0.2593,
+pubblico comunale,0.5,60,130.0,ces,0,68,0.502,
+pubblico comunale,0.5,60,130.0,ds_a0,0,68,0.5005,
+pubblico comunale,0.5,60,130.0,ds_a05,0,68,0.2687,
+pubblico comunale,0.5,60,130.0,ds_a08,0,68,0.2045,
+pubblico comunale,0.5,90,60.0,acq,0,68,0.0001,
+pubblico comunale,0.5,90,60.0,acq,e,68,0.0029,
+pubblico comunale,0.5,90,60.0,acq,s,68,0.0002,
+pubblico comunale,0.5,90,60.0,ces,0,68,0.0013,
+pubblico comunale,0.5,90,60.0,ds_a0,0,68,0.0013,
+pubblico comunale,0.5,90,60.0,ds_a05,0,68,0.0002,
+pubblico comunale,0.5,90,60.0,ds_a08,0,68,0.0001,
+pubblico comunale,0.5,90,75.0,acq,0,68,0.0051,
+pubblico comunale,0.5,90,75.0,acq,e,68,0.0366,
+pubblico comunale,0.5,90,75.0,acq,s,68,0.0085,
+pubblico comunale,0.5,90,75.0,ces,0,68,0.033,
+pubblico comunale,0.5,90,75.0,ds_a0,0,68,0.0325,
+pubblico comunale,0.5,90,75.0,ds_a05,0,68,0.0089,
+pubblico comunale,0.5,90,75.0,ds_a08,0,68,0.0062,
+pubblico comunale,0.5,90,90.0,acq,0,68,0.0448,656.0
+pubblico comunale,0.5,90,90.0,acq,e,68,0.1571,459.0
+pubblico comunale,0.5,90,90.0,acq,s,68,0.0664,549.0
+pubblico comunale,0.5,90,90.0,ces,0,68,0.1728,290.0
+pubblico comunale,0.5,90,90.0,ds_a0,0,68,0.1718,291.0
+pubblico comunale,0.5,90,90.0,ds_a05,0,68,0.0742,463.0
+pubblico comunale,0.5,90,90.0,ds_a08,0,68,0.0541,565.0
+pubblico comunale,0.5,90,110.0,acq,0,68,0.2203,
+pubblico comunale,0.5,90,110.0,acq,e,68,0.443,
+pubblico comunale,0.5,90,110.0,acq,s,68,0.2854,
+pubblico comunale,0.5,90,110.0,ces,0,68,0.5404,
+pubblico comunale,0.5,90,110.0,ds_a0,0,68,0.5389,
+pubblico comunale,0.5,90,110.0,ds_a05,0,68,0.3285,
+pubblico comunale,0.5,90,110.0,ds_a08,0,68,0.26,
+pubblico comunale,0.5,90,130.0,acq,0,68,0.4954,
+pubblico comunale,0.5,90,130.0,acq,e,68,0.6957,
+pubblico comunale,0.5,90,130.0,acq,s,68,0.5868,
+pubblico comunale,0.5,90,130.0,ces,0,68,0.8876,
+pubblico comunale,0.5,90,130.0,ds_a0,0,68,0.8865,
+pubblico comunale,0.5,90,130.0,ds_a05,0,68,0.6736,
+pubblico comunale,0.5,90,130.0,ds_a08,0,68,0.5684,
+pubblico comunale,1.0,30,60.0,acq,0,68,0.0,
+pubblico comunale,1.0,30,60.0,acq,e,68,0.0,
+pubblico comunale,1.0,30,60.0,acq,s,68,0.0,
+pubblico comunale,1.0,30,60.0,ces,0,68,0.0,
+pubblico comunale,1.0,30,60.0,ds_a0,0,68,0.0,
+pubblico comunale,1.0,30,60.0,ds_a05,0,68,0.0,
+pubblico comunale,1.0,30,60.0,ds_a08,0,68,0.0,
+pubblico comunale,1.0,30,75.0,acq,0,68,0.0,
+pubblico comunale,1.0,30,75.0,acq,e,68,0.0007,
+pubblico comunale,1.0,30,75.0,acq,s,68,0.0,
+pubblico comunale,1.0,30,75.0,ces,0,68,0.0,
+pubblico comunale,1.0,30,75.0,ds_a0,0,68,0.0,
+pubblico comunale,1.0,30,75.0,ds_a05,0,68,0.0,
+pubblico comunale,1.0,30,75.0,ds_a08,0,68,0.0,
+pubblico comunale,1.0,30,90.0,acq,0,68,0.0,2289.0
+pubblico comunale,1.0,30,90.0,acq,e,68,0.0133,1425.0
+pubblico comunale,1.0,30,90.0,acq,s,68,0.0,1877.0
+pubblico comunale,1.0,30,90.0,ces,0,68,0.0,1613.0
+pubblico comunale,1.0,30,90.0,ds_a0,0,68,0.0,1614.0
+pubblico comunale,1.0,30,90.0,ds_a05,0,68,0.0,1946.0
+pubblico comunale,1.0,30,90.0,ds_a08,0,68,0.0,2134.0
+pubblico comunale,1.0,30,110.0,acq,0,68,0.0,
+pubblico comunale,1.0,30,110.0,acq,e,68,0.1275,
+pubblico comunale,1.0,30,110.0,acq,s,68,0.0,
+pubblico comunale,1.0,30,110.0,ces,0,68,0.0,
+pubblico comunale,1.0,30,110.0,ds_a0,0,68,0.0,
+pubblico comunale,1.0,30,110.0,ds_a05,0,68,0.0,
+pubblico comunale,1.0,30,110.0,ds_a08,0,68,0.0,
+pubblico comunale,1.0,30,130.0,acq,0,68,0.0002,
+pubblico comunale,1.0,30,130.0,acq,e,68,0.3995,
+pubblico comunale,1.0,30,130.0,acq,s,68,0.0007,
+pubblico comunale,1.0,30,130.0,ces,0,68,0.0037,
+pubblico comunale,1.0,30,130.0,ds_a0,0,68,0.0037,
+pubblico comunale,1.0,30,130.0,ds_a05,0,68,0.0004,
+pubblico comunale,1.0,30,130.0,ds_a08,0,68,0.0003,
+pubblico comunale,1.0,60,60.0,acq,0,68,0.0,
+pubblico comunale,1.0,60,60.0,acq,e,68,0.0005,
+pubblico comunale,1.0,60,60.0,acq,s,68,0.0,
+pubblico comunale,1.0,60,60.0,ces,0,68,0.0,
+pubblico comunale,1.0,60,60.0,ds_a0,0,68,0.0,
+pubblico comunale,1.0,60,60.0,ds_a05,0,68,0.0,
+pubblico comunale,1.0,60,60.0,ds_a08,0,68,0.0,
+pubblico comunale,1.0,60,75.0,acq,0,68,0.0,
+pubblico comunale,1.0,60,75.0,acq,e,68,0.0139,
+pubblico comunale,1.0,60,75.0,acq,s,68,0.0001,
+pubblico comunale,1.0,60,75.0,ces,0,68,0.0007,
+pubblico comunale,1.0,60,75.0,ds_a0,0,68,0.0006,
+pubblico comunale,1.0,60,75.0,ds_a05,0,68,0.0001,
+pubblico comunale,1.0,60,75.0,ds_a08,0,68,0.0,
+pubblico comunale,1.0,60,90.0,acq,0,68,0.0031,1645.0
+pubblico comunale,1.0,60,90.0,acq,e,68,0.0922,1057.0
+pubblico comunale,1.0,60,90.0,acq,s,68,0.0059,1368.0
+pubblico comunale,1.0,60,90.0,ces,0,68,0.0206,995.0
+pubblico comunale,1.0,60,90.0,ds_a0,0,68,0.0206,996.0
+pubblico comunale,1.0,60,90.0,ds_a05,0,68,0.0052,1306.0
+pubblico comunale,1.0,60,90.0,ds_a08,0,68,0.0038,1483.0
+pubblico comunale,1.0,60,110.0,acq,0,68,0.0499,
+pubblico comunale,1.0,60,110.0,acq,e,68,0.3523,
+pubblico comunale,1.0,60,110.0,acq,s,68,0.0768,
+pubblico comunale,1.0,60,110.0,ces,0,68,0.1735,
+pubblico comunale,1.0,60,110.0,ds_a0,0,68,0.1725,
+pubblico comunale,1.0,60,110.0,ds_a05,0,68,0.0751,
+pubblico comunale,1.0,60,110.0,ds_a08,0,68,0.0577,
+pubblico comunale,1.0,60,130.0,acq,0,68,0.2143,
+pubblico comunale,1.0,60,130.0,acq,e,68,0.6461,
+pubblico comunale,1.0,60,130.0,acq,s,68,0.293,
+pubblico comunale,1.0,60,130.0,ces,0,68,0.502,
+pubblico comunale,1.0,60,130.0,ds_a0,0,68,0.5011,
+pubblico comunale,1.0,60,130.0,ds_a05,0,68,0.3029,
+pubblico comunale,1.0,60,130.0,ds_a08,0,68,0.246,
+pubblico comunale,1.0,90,60.0,acq,0,68,0.0002,
+pubblico comunale,1.0,90,60.0,acq,e,68,0.0041,
+pubblico comunale,1.0,90,60.0,acq,s,68,0.0003,
+pubblico comunale,1.0,90,60.0,ces,0,68,0.0013,
+pubblico comunale,1.0,90,60.0,ds_a0,0,68,0.0013,
+pubblico comunale,1.0,90,60.0,ds_a05,0,68,0.0002,
+pubblico comunale,1.0,90,60.0,ds_a08,0,68,0.0002,
+pubblico comunale,1.0,90,75.0,acq,0,68,0.0071,
+pubblico comunale,1.0,90,75.0,acq,e,68,0.0474,
+pubblico comunale,1.0,90,75.0,acq,s,68,0.0108,
+pubblico comunale,1.0,90,75.0,ces,0,68,0.033,
+pubblico comunale,1.0,90,75.0,ds_a0,0,68,0.0329,
+pubblico comunale,1.0,90,75.0,ds_a05,0,68,0.0114,
+pubblico comunale,1.0,90,75.0,ds_a08,0,68,0.0085,
+pubblico comunale,1.0,90,90.0,acq,0,68,0.0589,1205.0
+pubblico comunale,1.0,90,90.0,acq,e,68,0.1883,811.0
+pubblico comunale,1.0,90,90.0,acq,s,68,0.0791,1022.0
+pubblico comunale,1.0,90,90.0,ces,0,68,0.1728,580.0
+pubblico comunale,1.0,90,90.0,ds_a0,0,68,0.1722,581.0
+pubblico comunale,1.0,90,90.0,ds_a05,0,68,0.0869,879.0
+pubblico comunale,1.0,90,90.0,ds_a08,0,68,0.0682,1054.0
+pubblico comunale,1.0,90,110.0,acq,0,68,0.2647,
+pubblico comunale,1.0,90,110.0,acq,e,68,0.4974,
+pubblico comunale,1.0,90,110.0,acq,s,68,0.3212,
+pubblico comunale,1.0,90,110.0,ces,0,68,0.5404,
+pubblico comunale,1.0,90,110.0,ds_a0,0,68,0.5396,
+pubblico comunale,1.0,90,110.0,ds_a05,0,68,0.36,
+pubblico comunale,1.0,90,110.0,ds_a08,0,68,0.3004,
+pubblico comunale,1.0,90,130.0,acq,0,68,0.5569,
+pubblico comunale,1.0,90,130.0,acq,e,68,0.7421,
+pubblico comunale,1.0,90,130.0,acq,s,68,0.6336,
+pubblico comunale,1.0,90,130.0,ces,0,68,0.8876,
+pubblico comunale,1.0,90,130.0,ds_a0,0,68,0.8872,
+pubblico comunale,1.0,90,130.0,ds_a05,0,68,0.7078,
+pubblico comunale,1.0,90,130.0,ds_a08,0,68,0.6192,
+pubblico comunale,2.0,30,60.0,acq,0,68,0.0,
+pubblico comunale,2.0,30,60.0,acq,e,68,0.0,
+pubblico comunale,2.0,30,60.0,acq,s,68,0.0,
+pubblico comunale,2.0,30,60.0,ces,0,68,0.0,
+pubblico comunale,2.0,30,60.0,ds_a0,0,68,0.0,
+pubblico comunale,2.0,30,60.0,ds_a05,0,68,0.0,
+pubblico comunale,2.0,30,60.0,ds_a08,0,68,0.0,
+pubblico comunale,2.0,30,75.0,acq,0,68,0.0,
+pubblico comunale,2.0,30,75.0,acq,e,68,0.0009,
+pubblico comunale,2.0,30,75.0,acq,s,68,0.0,
+pubblico comunale,2.0,30,75.0,ces,0,68,0.0,
+pubblico comunale,2.0,30,75.0,ds_a0,0,68,0.0,
+pubblico comunale,2.0,30,75.0,ds_a05,0,68,0.0,
+pubblico comunale,2.0,30,75.0,ds_a08,0,68,0.0,
+pubblico comunale,2.0,30,90.0,acq,0,68,0.0,3742.0
+pubblico comunale,2.0,30,90.0,acq,e,68,0.0189,2005.0
+pubblico comunale,2.0,30,90.0,acq,s,68,0.0,3430.0
+pubblico comunale,2.0,30,90.0,ces,0,68,0.0,3227.0
+pubblico comunale,2.0,30,90.0,ds_a0,0,68,0.0,3228.0
+pubblico comunale,2.0,30,90.0,ds_a05,0,68,0.0,3472.0
+pubblico comunale,2.0,30,90.0,ds_a08,0,68,0.0,3624.0
+pubblico comunale,2.0,30,110.0,acq,0,68,0.0,
+pubblico comunale,2.0,30,110.0,acq,e,68,0.17,
+pubblico comunale,2.0,30,110.0,acq,s,68,0.0,
+pubblico comunale,2.0,30,110.0,ces,0,68,0.0,
+pubblico comunale,2.0,30,110.0,ds_a0,0,68,0.0,
+pubblico comunale,2.0,30,110.0,ds_a05,0,68,0.0,
+pubblico comunale,2.0,30,110.0,ds_a08,0,68,0.0,
+pubblico comunale,2.0,30,130.0,acq,0,68,0.0003,
+pubblico comunale,2.0,30,130.0,acq,e,68,0.4928,
+pubblico comunale,2.0,30,130.0,acq,s,68,0.0009,
+pubblico comunale,2.0,30,130.0,ces,0,68,0.0037,
+pubblico comunale,2.0,30,130.0,ds_a0,0,68,0.0037,
+pubblico comunale,2.0,30,130.0,ds_a05,0,68,0.0005,
+pubblico comunale,2.0,30,130.0,ds_a08,0,68,0.0004,
+pubblico comunale,2.0,60,60.0,acq,0,68,0.0,
+pubblico comunale,2.0,60,60.0,acq,e,68,0.0007,
+pubblico comunale,2.0,60,60.0,acq,s,68,0.0,
+pubblico comunale,2.0,60,60.0,ces,0,68,0.0,
+pubblico comunale,2.0,60,60.0,ds_a0,0,68,0.0,
+pubblico comunale,2.0,60,60.0,ds_a05,0,68,0.0,
+pubblico comunale,2.0,60,60.0,ds_a08,0,68,0.0,
+pubblico comunale,2.0,60,75.0,acq,0,68,0.0,
+pubblico comunale,2.0,60,75.0,acq,e,68,0.0193,
+pubblico comunale,2.0,60,75.0,acq,s,68,0.0001,
+pubblico comunale,2.0,60,75.0,ces,0,68,0.0007,
+pubblico comunale,2.0,60,75.0,ds_a0,0,68,0.0006,
+pubblico comunale,2.0,60,75.0,ds_a05,0,68,0.0001,
+pubblico comunale,2.0,60,75.0,ds_a08,0,68,0.0001,
+pubblico comunale,2.0,60,90.0,acq,0,68,0.0046,2457.0
+pubblico comunale,2.0,60,90.0,acq,e,68,0.1208,1304.0
+pubblico comunale,2.0,60,90.0,acq,s,68,0.0078,2277.0
+pubblico comunale,2.0,60,90.0,ces,0,68,0.0206,1989.0
+pubblico comunale,2.0,60,90.0,ds_a0,0,68,0.0206,1990.0
+pubblico comunale,2.0,60,90.0,ds_a05,0,68,0.0071,2220.0
+pubblico comunale,2.0,60,90.0,ds_a08,0,68,0.0053,2347.0
+pubblico comunale,2.0,60,110.0,acq,0,68,0.069,
+pubblico comunale,2.0,60,110.0,acq,e,68,0.4265,
+pubblico comunale,2.0,60,110.0,acq,s,68,0.0947,
+pubblico comunale,2.0,60,110.0,ces,0,68,0.1735,
+pubblico comunale,2.0,60,110.0,ds_a0,0,68,0.173,
+pubblico comunale,2.0,60,110.0,ds_a05,0,68,0.0944,
+pubblico comunale,2.0,60,110.0,ds_a08,0,68,0.0777,
+pubblico comunale,2.0,60,130.0,acq,0,68,0.2756,
+pubblico comunale,2.0,60,130.0,acq,e,68,0.7278,
+pubblico comunale,2.0,60,130.0,acq,s,68,0.3403,
+pubblico comunale,2.0,60,130.0,ces,0,68,0.502,
+pubblico comunale,2.0,60,130.0,ds_a0,0,68,0.5014,
+pubblico comunale,2.0,60,130.0,ds_a05,0,68,0.3506,
+pubblico comunale,2.0,60,130.0,ds_a08,0,68,0.3042,
+pubblico comunale,2.0,90,60.0,acq,0,68,0.0002,
+pubblico comunale,2.0,90,60.0,acq,e,68,0.0057,
+pubblico comunale,2.0,90,60.0,acq,s,68,0.0004,
+pubblico comunale,2.0,90,60.0,ces,0,68,0.0013,
+pubblico comunale,2.0,90,60.0,ds_a0,0,68,0.0013,
+pubblico comunale,2.0,90,60.0,ds_a05,0,68,0.0004,
+pubblico comunale,2.0,90,60.0,ds_a08,0,68,0.0003,
+pubblico comunale,2.0,90,75.0,acq,0,68,0.01,
+pubblico comunale,2.0,90,75.0,acq,e,68,0.0626,
+pubblico comunale,2.0,90,75.0,acq,s,68,0.014,
+pubblico comunale,2.0,90,75.0,ces,0,68,0.033,
+pubblico comunale,2.0,90,75.0,ds_a0,0,68,0.033,
+pubblico comunale,2.0,90,75.0,ds_a05,0,68,0.0149,
+pubblico comunale,2.0,90,75.0,ds_a08,0,68,0.0116,
+pubblico comunale,2.0,90,90.0,acq,0,68,0.0788,1600.0
+pubblico comunale,2.0,90,90.0,acq,e,68,0.2321,840.0
+pubblico comunale,2.0,90,90.0,acq,s,68,0.0971,1492.0
+pubblico comunale,2.0,90,90.0,ces,0,68,0.1728,1159.0
+pubblico comunale,2.0,90,90.0,ds_a0,0,68,0.1724,1160.0
+pubblico comunale,2.0,90,90.0,ds_a05,0,68,0.1048,1382.0
+pubblico comunale,2.0,90,90.0,ds_a08,0,68,0.0882,1500.0
+pubblico comunale,2.0,90,110.0,acq,0,68,0.327,
+pubblico comunale,2.0,90,110.0,acq,e,68,0.5734,
+pubblico comunale,2.0,90,110.0,acq,s,68,0.3714,
+pubblico comunale,2.0,90,110.0,ces,0,68,0.5404,
+pubblico comunale,2.0,90,110.0,ds_a0,0,68,0.54,
+pubblico comunale,2.0,90,110.0,ds_a05,0,68,0.404,
+pubblico comunale,2.0,90,110.0,ds_a08,0,68,0.3568,
+pubblico comunale,2.0,90,130.0,acq,0,68,0.6426,
+pubblico comunale,2.0,90,130.0,acq,e,68,0.8067,
+pubblico comunale,2.0,90,130.0,acq,s,68,0.6995,
+pubblico comunale,2.0,90,130.0,ces,0,68,0.8876,
+pubblico comunale,2.0,90,130.0,ds_a0,0,68,0.8874,
+pubblico comunale,2.0,90,130.0,ds_a05,0,68,0.7564,
+pubblico comunale,2.0,90,130.0,ds_a08,0,68,0.69,

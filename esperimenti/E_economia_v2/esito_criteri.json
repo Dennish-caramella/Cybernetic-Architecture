@@ -1,0 +1,136 @@
+{
+ "n_cubo": 20000,
+ "n_Theta_star": 18982,
+ "n_Theta_cal": 11891,
+ "n_Theta_star_cal": 10912,
+ "n_Theta_rov_star": 9419,
+ "varianti_K1": {
+  "K1b": {
+   "n_Theta_star_cal": 14559
+  },
+  "bonifica_peggiore": {
+   "n_Theta_star_cal": 10857
+  },
+  "libere_con_margine": {
+   "n_Theta_star_cal": 9107
+  }
+ },
+ "strati_Theta_cal": {
+  "S0": 56,
+  "S1": 923,
+  "S2": 2800,
+  "S3": 8112
+ },
+ "K1": [
+  {
+   "compendio": "Ex Palasharp",
+   "zona": "E6",
+   "quota_Theta_star_ok": 0.6332841639447898,
+   "VAN_su_C_q50_Theta_star": 0.044416472152480596
+  },
+  {
+   "compendio": "San Romanello",
+   "zona": "E5",
+   "quota_Theta_star_ok": 0.5748603940575282,
+   "VAN_su_C_q50_Theta_star": 0.0025378265392098165
+  },
+  {
+   "compendio": "Bovisasca",
+   "zona": "D32",
+   "quota_Theta_star_ok": 0.6859129701822779,
+   "VAN_su_C_q50_Theta_star": 0.08602055585692822
+  }
+ ],
+ "centrale_in_K1": true,
+ "E4": true,
+ "taratura_non_informativa": false,
+ "E6_celle_robuste": 110,
+ "E6_celle": 135,
+ "lotti_rappresentativi": {
+  "B": "E00268",
+  "C+D": "E00182",
+  "E": "E00173"
+ },
+ "E7": {
+  "VRA_mediano_DE_FAR1_euro_m2_SL": 583.7594196480838,
+  "rapporto_asta_678": 0.8610020938762298,
+  "DE_tutte_non_informative": false,
+  "celle_DE": 18,
+  "celle_DE_non_informative": 9
+ },
+ "recupero_per_rho": {
+  "<0,8": 0.507250341997264,
+  "0,8-1,0": 0.10542086624897848,
+  ">1,0": 0.013664249860568878
+ },
+ "varianti_punto_base": {
+  "base": {
+   "cstar_L0_T60": 121.61423290785216,
+   "cstar_L0_T90": 100.76453032744264
+  },
+  "IVA 10%": {
+   "cstar_L0_T60": 137.79146434924417,
+   "cstar_L0_T90": 114.16831612795154
+  },
+  "eta 0,70": {
+   "cstar_L0_T60": 154.04613698735193,
+   "cstar_L0_T90": 127.63626650548888
+  }
+ },
+ "punto_base": {
+  "eta": 0.8866749665135867,
+  "u_p": 0.5314041970240942,
+  "pi_new": 0.2178144048161157,
+  "c_new": 1944.6626052704855,
+  "rho": 0.8961035661021087,
+  "d": 29.961968095467114,
+  "sigma": 0.11893792495411028,
+  "o": 95.05595140843127,
+  "k": 0.07473139373139094,
+  "omega": 0.6957309913061216,
+  "pi_R": 0.15084848539720466,
+  "m_v": 0.029966650046099795,
+  "i_c": 0.05998865996168065,
+  "lam_c": 0.6012255021488309,
+  "T_c": 2.9767797415054282,
+  "tau": 0.07505163669212314,
+  "y_ERS": 0.04741598873584093,
+  "g_m": 0.0058824620944433435,
+  "v": 0.03930709318267034,
+  "q": 0.21680068846948633,
+  "delta": 0.008685728309238238,
+  "D": 0.6661607521789205,
+  "i_D": 0.021330714564734204,
+  "i_E": -0.0043081803109040195
+ },
+ "T1": {
+  "assegnati": 433,
+  "totale": 433,
+  "quota_centroide_uguale": 1.0
+ },
+ "E3_integrita_tautologica": true,
+ "E1": {
+  "hash_1": "024ac9ea2a2b50314dab71a6afc200416c3be7346b188f5f6e788b4ece725454",
+  "hash_2": "024ac9ea2a2b50314dab71a6afc200416c3be7346b188f5f6e788b4ece725454",
+  "passa": true
+ },
+ "E2": {
+  "passa": true,
+  "uscita": [
+   "ok test_T4_monotonie",
+   "ok test_T5_margine",
+   "ok test_T6_identita",
+   "ok test_T7_stessi_costi",
+   "ok test_T8_omogeneita",
+   "ok test_T9_reale",
+   "ok test_T10_VF_solo_acquisto",
+   "ok test_T11_tau_acquisto",
+   "ok test_T12_v1",
+   "ok test_ann",
+   "ok test_reali"
+  ],
+  "errore": ""
+ },
+ "E5": "non applicabile: nessun caso osservato utilizzabile; errore di taratura non misurato",
+ "E6_formula": "cella non robusta se un parametro di E6_LISTA cambia il segno di ΔL per > 50% dei lotti"
+}
