@@ -1,0 +1,255 @@
+PRE-REGISTRAZIONE — Base E v2: motore economico tarato e gap fondiario (ticket #19, ripetizione)
+Versione 1 di questo documento, scritta il 23/11/2026 da economista-abitativo (istanza Claude), PRIMA di ogni esecuzione
+della v2. Nessun codice v2 scritto, nessun calcolo v2 eseguito.
+Sostituisce, per la v2, la pre-registrazione v1 (esperimenti/E_economia/esecuzioni/00_preregistrazione.txt, SHA-256
+ce059fd6…c065, commit b3b0df6), che resta valida per tutto ciò che qui non è cambiato (formule §4, fonti F1–F7, S1–S7).
+Motivo: revisione indipendente della v1 (esperimenti/E_economia/REVISIONE.md, SHA-256 6aeef7cc…57ac0, commit 92d13ed),
+esito proposto "ripeti"; raccomandazioni (a)–(d) accettate provvisoriamente dal coordinatore, non da Dennis
+(tesi/DECISIONI.md, 23/11). Marche: [V] verificato in sessione; [S] secondaria; [I] inferenza; [H] ipotesi; [L] lacuna.
+
+======================================================================================================
+0. QUESTA V2 NON È CIECA: COSA HO VISTO DELLA V1
+======================================================================================================
+Ho eseguito la v1 e letto per intero la revisione. Conosco quindi, tra l'altro:
+- Θ_cal v1 = 5.671 su 20.000; punto centrale fuori da K1 (VAN/C_tot −7,7…−9,6%); parametri spostati: i_D, c_new, g,
+  i_E, δ, η. In Θ_cal r ≤ g nel 27,8% dei punti, mediana di r − g 0,39 punti (revisione G1).
+- Canone di pareggio con suolo gratuito (mediana Θ_cal): 185 / 111 / 87 €/m²/anno a 30 / 60 / 90 anni; al punto
+  centrale 136 (60 anni) e 111 (90 anni). Cessione a c₀ = 90: quota 0,114 (60 anni), 0,589 (90 anni); 0,362 con
+  r − g ≥ 0,5 punti.
+- VRA mediano FAR 1: B 3.220, C 1.260, D 198, E −467 €/m² SL; VRA ≤ 0 nel 39% dei lotti; un premio del nuovo del 20%
+  porta il VRA mediano D/E da 189 a 634 €/m² SL (revisione G3); asta dei diritti 2023: 678 €/m² SL [S].
+- Tornado: a T = 60, c₀ = 90 massimo cambio di segno 0,43; a T = 90, c₀ = 90 g e i_D 0,94, δ 0,93 (revisione G2).
+- Recupero: quota 0,99 per ρ < 0,70 e 0,26 per ρ > 0,85 (C7). Con VF = NOI/y_exit l'acquisto regge in 149/216 lotti (C1).
+- Variante η = 0,70: Θ_cal 1.995.
+Conseguenza: ogni scelta qui sotto è presa conoscendo la direzione dei suoi effetti. Per limitare il danno: (i) le
+correzioni sono quelle chieste dalla revisione, non scelte per ottenere un esito; (ii) ogni scelta che va nella
+direzione della cooperativa è affiancata da una variante nella direzione opposta riportata con lo stesso peso;
+(iii) i centrali della v1 restano dove la revisione non li contesta.
+Fonti aperte in questa sessione (23/11/2026) per la v2 [V]:
+ F8 BCE, Survey of Professional Forecasters, aspettativa d'inflazione di lungo periodo dell'area euro
+    (SPF.Q.U2.HICP.POINT.LT.Q.AVG, data-api.ecb.europa.eu): 2,00–2,05% in tutti i trimestri 2024Q1–2026Q4 (2026Q4 2,02%).
+ F9 BCE, MIR Italia, tassi sui nuovi prestiti alle imprese > 1 M€ (data-api.ecb.europa.eu):
+    fissazione oltre 10 anni (MIR.M.IT.B.A2A.P.R.1.2240.EUR.N) 3,71–5,07% tra 01/2025 e 09/2026, 09/2026 = 4,12%;
+    fissazione 5–10 anni (…A2A.O…) 3,92–5,54% nello stesso periodo.
+ F5 (già v1) rendimento BTP 10 anni 3,39–4,68% tra 09/2025 e 10/2026 (Eurostat irt_lt_mcby_m).
+ F3 (già v1, riletto) CCIAA Como-Lecco, costi standard 12/2024: RC.01 "recupero e consolidamento strutturale"
+    2.300 €/m² s.l.p.; NC.06 condominio nuovo 1.992; NC.01 ERP nuovo 2.150; MA.01 manutenzione straordinaria
+    (adeguamento energetico, casa comunale) 1.247 €/m² s.l.p. Rapporti con NC.06: 1,15 e 0,63 [I].
+Fonti secondarie viste (ricerca web 23/11, non aperte alla fonte) [S]: premio del nuovo sull'usato a Milano:
+Immobiliare.it Insights (via Affaritaliani) +6,5% medio cittadino, +3–6% in alcune zone periferiche (prezzi d'annuncio);
+ItaliaOggi (guida 2026, listino CCIAA Milano) nuovo 6.815, usato recente 5.406, vecchio 4.288 €/m² (+26% e +59%);
+Il Giorno (CCIAA, fine 2024) nuovo in periferia 4.650 (est) – 5.300 (sud) €/m². Listino CCIAA Milano non trovato in
+formato aperto [L]. SL: esclusi vani scala, ascensori, corridoi secondo L.R. lombarda (Assolombarda, [S]); definizione
+del PGT 2030 su pgt.comune.milano.it non aperta (dominio comunale, bloccato in passato; non tentato) [L]; DPR 138/1998
+all. C non riletto [L].
+
+======================================================================================================
+1. COSA CAMBIA RISPETTO ALLA V1 (risposta ai difetti della revisione)
+======================================================================================================
+G1 — Tassi della cooperativa e r − g
+ 1.1 Il lato cooperativa e l'operatore K1 diventano IN TERMINI REALI. Il canone è indicizzato ISTAT per vincolo
+     (DG 365 [V F1]) → crescita reale del canone a costo g = 0 per costruzione; costi di gestione e manutenzione
+     reali costanti. Il parametro g della v1 esce dal cubo.
+ 1.2 Tassi reali con fonte: aspettativa d'inflazione π_e = 2,0% [V F8].
+     i_D reale ∈ [1,4%; 3,1%], centrale 2,2%: estremo basso = BTP 10 anni minimo 3,39% − 2,0 (pavimento sovrano, F5);
+     estremo alto = MIR > 10 anni massimo 5,07% − 2,0; centrale = MIR > 10 anni a 09/2026 4,12% − 2,0 ≈ 2,1, arrotondato
+     a 2,2 (mediana 01/2025–09/2026 ≈ 4,2) [V/I].
+     i_E reale ∈ [−2,0%; +1,5%], centrale −0,5%: capitale dei soci o paziente remunerato 0–3,5% nominale (tetto WGG [S])
+     meno π_e [S/I].
+     r = D × i_D + (1 − D) × i_E (reale); D ∈ [0,50; 0,85] centrale 0,70 [H, invariato].
+ 1.3 Vincolo dichiarato ora: r − g = r ≥ 0,5 punti [H]. Θ* = punti del cubo con r ≥ 0,005. Motivo: un costo reale del
+     capitale vicino a zero su 90 anni è il caso degenere segnalato da G1; 0,5 punti è una soglia scelta, non stimata
+     (il pavimento sovrano reale osservato è 1,4%, F5/F8). È una correzione post hoc (decisa dopo aver visto la v1)
+     e si dichiara come tale. Tutti i risultati si riportano ANCHE senza vincolo e STRATIFICATI per r − g:
+     strati S0 (r ≤ 0), S1 (0 < r ≤ 0,5 punti), S2 (0,5 < r ≤ 1), S3 (r > 1). La lettura per la tesi usa solo Θ*.
+ 1.4 K1 (operatore Piano Casa): canone ERSC 90 reale costante per 30 anni; dopo, 0,8 × canone di mercato OMI di
+     zona con crescita REALE g_m ∈ [0; 1%] centrale 0,5% [H]. Ancora [I]: canoni OMI +70% contro HICP +24% nel
+     2015–2025 (nota 02 [V]) = crescita reale ~3%/anno per un decennio, non estrapolabile a 60 anni; il limite alto
+     1% è scelto. K1 si riporta stratificato anche per r − g_m.
+ 1.5 Developer: orizzonte breve, resta in termini nominali come in v1; i_c ∈ [4,5%; 7,5%] centrale 6% [H, ora con
+     ancora: MIR 5–10 anni 3,92–5,54%, F9, più un premio di rischio di costruzione non misurato, L].
+G2 — E6
+ 1.6 E6 si calcola su TUTTA la griglia c₀ ∈ {60, 75, 90, 110, 130} × T ∈ {30, 60, 90}, per i regimi acquisto e
+     cessione, per i lotti edificabili (FAR 1) e per i lotti da riusare (R1 recupero e R2 a FAR 1), al punto base =
+     mediana marginale di Θ*_cal (sezione 3).
+ 1.7 L'elenco dei parametri "senza fonte" è fissato ora dalle marche di questo documento (sezione 2, colonna E6),
+     senza alcuna regola sui dati (la regola KS > 0,10 della v1 è abolita). Elenco E6: η, d, σ, m_v, λ_c, T_c, τ,
+     y_ERS, g_m, q, δ, D.
+G3 — Prezzo del nuovo e acquisto in periferia
+ 1.8 Prezzo di vendita del developer: p = (1 + π_new) × p_z, con p_z come in v1 (punto medio OTTIMO; intervallo
+     punto medio NORMALE – massimo OTTIMO, quantile comune). π_new ∈ [0; 0,40] centrale 0,15 [S/H] (ancore [S] sopra:
+     +3–6% sugli annunci in periferia, +26% sull'usato recente nel listino CCIAA). È nel cubo e tocca solo il developer.
+ 1.9 Regola d'etichetta fissata ora (indipendente da π_new): in ogni cella (fascia, FAR, T, c₀) in cui la mediana di
+     L_mkt su Θ*_cal è 0, l'acquisto è marcato "non informativo: suolo di mercato nullo nel modello" e NON entra nelle
+     letture. Controllo esterno informativo: rapporto tra VRA mediano D/E (FAR 1, €/m² SL) e 678 €/m² SL (asta 2023
+     [S]); se < 0,5, tutte le celle di acquisto D/E restano "non informative" anche dove L_mkt > 0.
+Correzioni C1–C7
+ 1.10 (C1, m3) Valore finale: tre scenari, tutti riportati con lo stesso peso.
+      VF0 = 0 (come v1; primario solo per continuità, NON più usato da solo per affermazioni sui regimi);
+      VFs = valore reale del solo suolo, restituito alla fine solo in acquisto: VF = L^(acq) (costante reale),
+            scontato a (1 + r)^(T + T_c); 0 in cessione e diritto di superficie;
+      VFe = NOI_(T+1) / y_exit (edificio e suolo), solo in acquisto, y_exit reale 3% [H] (rendimento lordo OMI 4,1%
+            nominale meno π_e, I). In cessione e diritto di superficie VF = 0 sempre (corregge m3).
+ 1.11 (C2) T è una decisione: fuori dal cubo, ogni tabella è per T; l'uscita principale è il canone di pareggio c*
+      (mediana e quantili 5–95% su Θ*_cal) per T, regime e scenario VF; le quote vengono dopo.
+ 1.12 (C3) K1 resta vincolo di segno; regola fissata ora: prima dell'esecuzione si cercano gli esiti dei bandi DG 365
+      (al massimo 5 chiamate web, fonti non comune.milano.it). Se c'è un'aggiudicazione con corrispettivo da fonte
+      primaria o istituzionale [V] → K1 diventa misura (|e| ≤ 0,40, come v1 §6.1). Se i bandi risultano deserti →
+      si calcola anche Θ_rov = punti con VAN < 0 in almeno un compendio e si riportano i risultati su Θ_rov accanto a
+      Θ*_cal. Tutti i risultati si riportano anche sul cubo non tarato Θ* (quota_cubo).
+ 1.13 (C4) In testa a ogni tabella di cessione e diritto di superficie: "lato cooperativa uguale in tutte le zone per
+      m² di SL: le differenze tra fasce non sono geografia". I conteggi di lotti per la cessione sono soppressi
+      (degeneri): si riporta una quota per cella, non un numero di lotti.
+ 1.14 (C5) Analisi della v1 pre-registrate e non fatte: tutte eseguite nella v2 — PRCC (solo numpy) su ΔL^(acq) e
+      ΔL^(ces); quantili 5–50–95% di VRA, L*, c*; tornado sui tre lotti rappresentativi (stessa regola di scelta
+      v1, registro 8f) oltre che sull'insieme; sintesi per proprietà (pubblico comunale / non agganciata); ΔL nella
+      variante D1 (senza ERS); scenari di bonifica 200 e 500 €/m² di area; DCF annuale del developer (r_dev = 15%
+      nominale [H], margine dentro il tasso, mai insieme a π_R) solo al punto base come verifica. Se una non si
+      riesce a fare, si dichiara esclusa nel REPORT §6 con il motivo; nessuna omissione silenziosa.
+ 1.15 (C6) η ∈ [0,70; 1,00], centrale 0,85 [H]: forbice allargata in entrambi i lati, centrale invariato. Motivo
+      [I/S]: la SL esclude vani scala, ascensori e corridoi (L.R. lombarda [S]), quindi superficie commerciale/SL può
+      avvicinarsi o superare 1 con balconi e pertinenze (DPR 138/1998 [L]); 0,70 è la resa utile della Base L.
+      Se nella fase 2 si trovano i testi (PGT 2030 NdA e DPR 138/1998, fuori da comune.milano.it), si riportano come
+      controllo: l'intervallo NON si cambia. Coerenza dichiarata: un alloggio da 80 m² utili della Base L vale
+      80 × η / 0,70 m² commerciali (97 m² a η = 0,85): il confronto con c_sost usa questa superficie.
+ 1.16 (C7) ρ ∈ [0,60; 1,20], centrale 0,90 [V/I: F3, recupero strutturale 1,15 e manutenzione straordinaria 0,63
+      rispetto al nuovo; un solo listino, altra provincia]. I lotti da riusare entrano in E6 (1.6); le quote del
+      recupero si riportano anche per classi di ρ (< 0,8; 0,8–1,0; > 1,0).
+Minori
+ 1.17 (m1) esito_criteri.json scritto per intero dallo script, compresi E1 (doppia esecuzione interna con confronto
+      dell'hash di contenuto), E2 (esito dei test), E5, E6, E7.
+ 1.18 (m2) E3 resta come controllo d'integrità dei dati, dichiarato tautologico, non come evidenza.
+ 1.19 (m4) K1 in due letture della "superficie convenzionale" della DG 365: K1a = SL (ricavi su η × SL, primaria,
+      come v1); K1b = superficie già locabile (ricavi su SL). Θ*_cal si riporta per entrambe; le letture usano K1a.
+ 1.20 (m5) Bonifica dell'operatore K1: primaria = valore atteso con costo effettivo uniforme tra minimo e massimo,
+      cioè 0,25 × (max − min) (Ex Palasharp 1,2 M€, Bovisasca 0,1875 M€); varianti: caso peggiore 0,5 × (max − min)
+      (v1) e funzioni libere con margine π_R. Θ*_cal riportato per le tre.
+ 1.21 (m6) In acquisto la cooperativa paga anche τ: L^(acq) = (1 + τ) × L_mkt.
+ 1.22 (m7) Nel REPORT §5 si scrive: "errore di taratura non misurato" se E5 resta non applicabile.
+
+======================================================================================================
+2. PARAMETRI DEL CUBO Θ (v2) — uniformi indipendenti, seme 4519, N = 20.000
+======================================================================================================
+nome      centrale  intervallo        marca / fonte                                   in elenco E6
+u_p       medio OTT [0;1] quantile    [V] OMI 2025/2                                  no
+π_new     0,15      0 – 0,40          [S/H] 1.8                                       no (ancora S)
+η         0,85      0,70 – 1,00       [H] 1.15                                        SÌ
+c_new     2.000     1.600 – 2.600     [V] F3, SACC (v1)                               no
+ρ         0,90      0,60 – 1,20       [V/I] F3                                        no
+d         25        10 – 50 €/m³      [H]                                             SÌ
+σ         0,12      0,08 – 0,16       [H]                                             SÌ
+o         100       62 – 132 €/m³     [S] S1                                          no
+k         0,075     0,05 – 0,10       [S/L] S2                                        no
+ω         0,8       0,4 – 1,0         [S]                                             no
+π_R       0,15      0,10 – 0,20       [S] S3, su ricavo                               no
+m_v       0,03      0,02 – 0,04       [H]                                             SÌ
+i_c       0,06      0,045 – 0,075     [H, ancora V F9]                                no
+λ_c       0,6       0,5 – 0,7         [H]                                             SÌ
+T_c       3         2 – 4 anni        [H]                                             SÌ
+τ         0,09      0,04 – 0,11       [H/L]                                           SÌ
+y_ERS     0,045     0,04 – 0,055      [H]                                             SÌ
+g_m       0,005     0 – 0,01 (reale)  [H] 1.4 (solo K1, dopo 30 anni)                 SÌ
+v         0,04      0,02 – 0,06       [V: Legacoop morosità 2–3%; S/H sfitto]         no
+q         0,20      0,15 – 0,30       [H]                                             SÌ
+δ         0,008     0,004 – 0,015     [H]                                             SÌ
+D         0,70      0,50 – 0,85       [H]                                             SÌ
+i_D       0,022     0,014 – 0,031     [V] F5, F8, F9 (reale)                          no
+i_E       −0,005    −0,020 – 0,015    [S/I] (reale)                                   no
+Fuori dal cubo (decisioni o scenari): c₀ ∈ {60, 75, 90, 110, 130}; T ∈ {30, 60, 90}; regimi acquisto, diritto di
+superficie (α = 0 con 1 €/m², 0,5, 0,8), cessione; VF0 / VFs / VFe; ERS D2 (primaria) / D1; bonifica 0 / 200 / 500
+€/m²; IVA sul godimento 0 / 10% (variante); η = 0,70 solo come tabella informativa (come v1).
+Invariati da v1: h = 3 m, c_base 484,78 €/m² [S], c_ERS 90, capacità e lotti (Base L v7, SHA-256 5d464a3c…), OMI
+2025/2 (hash in v1, registro 3), K1 con le quantità DG 365 e zone E6, E5, D32.
+
+======================================================================================================
+3. FORMULE CHE CAMBIANO (il resto come v1 §4)
+======================================================================================================
+ Prezzo:          p = (1 + π_new) × [lo + u (hi − lo)]  (u = NaN → punto medio OTTIMO)
+ Cooperativa:     NOI_t = NOI_1 (reale costante, g = 0); NOI_1 = η c₀ [(1 − v)/(1 + IVA_g) − q] − δ c_hard
+                  L* = NOI_1 × A(r, 0, T)/(1 + r)^T_c + VF/(1 + r)^(T + T_c) − C_tot × (1 + r T_c/2)
+                  con A(r, 0, T) = [1 − (1 + r)^(−T)]/r per r ≠ 0 e A = T/(1 + r) per r = 0 (funzione ann() della v1).
+ Gap:             ΔL^(acq) = (1 + τ) L_mkt − L*;  ΔL^(ds,α) = α L_mkt (+ 1 €/m² × area se α = 0) − L*;  ΔL^(ces) = −L*
+                  (VF = 0 in ds e ces; in acquisto VF secondo lo scenario).
+ K1:              come v1 §6.1 e registro 8a, con: canone ERSC 90 reale anni 1–30; anni 31–90: 0,8 × canone OMI × 12 ×
+                  (1 + g_m)^(t − 1); sconto al tasso reale r; bonifica attesa (1.20).
+ Θ*        = {θ ∈ Θ: r ≥ 0,005};  Θ*_cal = {θ ∈ Θ*: K1a in tutti e tre i compendi}.
+ Stratificazione: ogni quota e ogni c* per strato S0–S3 (su Θ_cal senza vincolo) e su Θ*_cal.
+
+======================================================================================================
+4. CRITERI DI ACCETTAZIONE V2 (fissati ora, prima di ogni calcolo)
+======================================================================================================
+ E1 Riproducibilità: lo script esegue due volte il calcolo in processo e confronta l'hash di contenuto delle tabelle
+    (arrotondate come v1); più una seconda esecuzione da riga di comando con lo stesso hash. Seme 4519.
+ E2 Invarianti: T1–T8 della v1 (con T4 nella forma corretta del registro v1, voce 9) più:
+    T9  g = 0 e VF0: passando da T a T + 1, L* cresce esattamente di NOI_1/(1 + r)^(T + 1 + T_c).
+    T10 VF = 0 in cessione e diritto di superficie per costruzione, in ogni scenario VF.
+    T11 in acquisto ΔL^(acq) = (1 + τ) L_mkt − L* esattamente.
+    T12 π_new = 0 riproduce il VRA della v1 a parità degli altri parametri (con g reale non usato dal developer).
+ E3 Integrità dei dati OMI (tautologico per costruzione, dichiarato): come v1.
+ E4 Taratura: |Θ*_cal| ≥ 1.000 punti (5%). Se < 1.000 → arresto. Se > 95% di Θ* → "taratura non informativa".
+    Riportati sempre: |Θ_cal| senza vincolo, |Θ*_cal| per K1a, K1b, bonifica peggiore, libere con margine.
+ E5 Errore sui casi osservati: si applica se ≥ 3 casi (protocollo v1 §6.3; nessuna nuova ricerca di casi oltre 1.12).
+    Altrimenti "errore di taratura non misurato".
+ E6 Robustezza (G2): per ogni cella (classe ∈ {edificabile FAR 1, riuso R1, riuso R2 FAR 1}, regime ∈ {acquisto,
+    cessione}, c₀, T, scenario VF0 e VFs) si calcola, al punto base, la quota di lotti il cui segno di ΔL cambia
+    portando un parametro dell'elenco E6 da un estremo all'altro. Cella NON ROBUSTA se un parametro dell'elenco supera
+    0,50. Il REPORT può fare affermazioni sui regimi solo in celle robuste; le altre si riportano come "dipende da
+    [parametro]". La base passa E6 se le celle usate nelle formulazioni della sezione 6 sono robuste; altrimenti
+    quelle formulazioni si sostituiscono con "non robusto" (esito "cambia" per quella parte, non per tutta la base).
+    Anche i parametri con fonte si riportano nel tornado, ma non decidono E6.
+ E7 Acquisto in periferia (G3): regola d'etichetta 1.9; esito riportato come quota di celle D/E "non informative".
+ Esito: passa se E1–E4 passano, E6 è valutato e le formulazioni rispettano E6 ed E7. E5 non applicabile non è un
+ fallimento ma va scritto. Il congelamento resta una decisione di Dennis (taratura debole, pre-registrazione v1 §6.4).
+
+======================================================================================================
+5. REGOLA DI ARRESTO, RIPRODUCIBILITÀ, LIMITI
+======================================================================================================
+ Arresto: E4 < 1.000; difetto grave del revisore; dato non ottenibile senza aggirare un blocco. Vietato dopo
+ l'esecuzione cambiare intervalli, centrali, vincolo su r, soglie o elenco E6. Deviazioni a registro
+ (esperimenti/E_economia_v2/esecuzioni/registro.txt, riga 1 = commit di questa pre-registrazione).
+ Codice: copia di esperimenti/E_economia/run.py e test_economia.py (SHA-256 run.py 240f328a…) con modifiche minime
+ marcate [v2]; cache OMI riusata da esperimenti/_cache/E_economia/ in sola lettura con verifica degli hash.
+ Limiti che restano: K1 asserzione del proponente (C3); ramo developer non tarato su transazioni; π_new, η e il
+ vincolo su r scelti conoscendo la v1; lato cooperativa senza posizione; oneri [S]; un solo listino per ρ e c_new.
+
+======================================================================================================
+6. FORMULAZIONI AMMESSE NEL REPORT (da revisione §7.7, fissate ora)
+======================================================================================================
+ Si possono scrivere solo in questa forma, riempiendo i numeri della v2 e solo se le celle sono robuste (E6) e non
+ "non informative" (E7):
+ F-a "A c₀ = 90 €/m²/anno e T = 60 anni, con VF = 0 e VF = suolo, la cooperativa non paga il suolo di mercato in
+      [quota] di Θ*_cal (fascia …)". Sempre con le condizioni VF e il vincolo r ≥ 0,5 punti.
+ F-b "Con suolo ceduto e T = 90, il canone a costo di 90 €/m²/anno regge in [quota] di Θ*_cal; [quota per strato]
+      in funzione di r − g". Mai "regge" senza la quota e lo strato.
+ F-c "Canone di pareggio con suolo gratuito: mediana [c*] (5–95%: […]) €/m²/anno a T = 30/60/90": uscita principale.
+ F-d "Le soluzioni con funzioni libere e canoni di mercato dopo 30 anni (Piano Casa) stanno in pari in parte per
+      costruzione, perché la taratura impone che ci stiano": mai presentata come scoperta indipendente.
+ F-e Quote = "quote della regione dei parametri, non probabilità". Errore di taratura: "non misurato" se E5 non si
+      applica. Il lato cooperativa non distingue le zone.
+ F-f La Base E non è un vincolo di fattibilità per lotto nei metodi B0–B6 (DECISIONI 23/11, (d)).
+
+======================================================================================================
+7. SCELTE [H] NUOVE DA CONFERMARE (Dennis)
+======================================================================================================
+ H10 Modello cooperativa e K1 in termini reali, π_e = 2,0% [V F8].
+ H11 i_D reale 1,4–3,1% (centrale 2,2) e i_E reale −2,0–1,5% (centrale −0,5).
+ H12 Vincolo r ≥ 0,5 punti reali (post hoc dichiarato); strati S0–S3.
+ H13 g_m reale 0–1% (centrale 0,5%) per i canoni di mercato dopo 30 anni in K1.
+ H14 π_new 0–40% (centrale 15%) e regola d'etichetta "non informativo" (1.9).
+ H15 η 0,70–1,00 (centrale 0,85 invariato).
+ H16 ρ 0,60–1,20 (centrale 0,90).
+ H17 Bonifica K1 attesa 0,25 × (max − min) come primaria; K1a come primaria.
+ H18 VF in tre scenari, nessuno usato da solo per affermazioni sui regimi; y_exit reale 3%.
+ H19 Elenco E6 (1.7) e soglia 0,50 per cella.
+
+======================================================================================================
+8. PIANO DELLA FASE 2
+======================================================================================================
+ 1. Conferma (o accettazione provvisoria registrata) di H10–H19; commit di questa pre-registrazione; registro riga 1.
+ 2. Ricerca degli esiti dei bandi DG 365 (≤ 5 chiamate, 1.12); eventuale lettura dei testi su SL e DPR 138 (1.15),
+    solo come controllo.
+ 3. Copia del codice v1, modifiche minime [v2]; test T1–T12 prima su dati fittizi.
+ 4. Taratura: Θ*, Θ*_cal (K1a/K1b, bonifica, margine), E4 scritto nel registro prima di ogni ΔL sui lotti.
+ 5. Calcolo su lotti: c* e quote per T, regime, VF, strato r − g; PRCC; tornado sull'insieme e sui tre lotti; E6 per
+    cella; E7; analisi 1.14; JSON e tabelle dallo script; doppia esecuzione (E1).
+ 6. Risposta con §2–6 e §8 del REPORT; revisione indipendente.
