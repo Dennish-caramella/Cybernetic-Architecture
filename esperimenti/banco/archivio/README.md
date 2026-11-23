@@ -1,0 +1,2 @@
+Banco di laboratorio (ticket #17): `python build.py` (geopandas come `../L_lotti_v7/requirements.txt`; legge Base L v7, Base E v2 e la cache NIL `../_cache/L_lotti/raw/ds964_nil.geojson`, verifica gli SHA-256 e scrive `banco.html`, autonomo, Leaflet 1.9.4 da cdnjs, sfondo OSM); geometrie semplificate 1 m (lotti) e 10 m (NIL), nessun seme casuale.
+Test: `NODE_PATH=$(npm root -g) node test_banco.cjs [cartella_screenshot] [eseguibile_chromium]` (Playwright; criteri A2–A8 di `PIANO.md`).

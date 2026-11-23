@@ -1,0 +1,45 @@
+{
+ "NIL_simulati": 87,
+ "NIL_ds205": 88,
+ "NIL_abbinati": 87,
+ "NIL_non_abbinati": [
+  8.0
+ ],
+ "P4a": {
+  "n": 87,
+  "spearman": 0.999216244466776,
+  "SRMSE": 0.02904486521290138,
+  "sim_tot": 56788.0,
+  "obs_tot": 57073.0,
+  "passa": true
+ },
+ "P4b": {
+  "n": 87,
+  "spearman": 0.9985373721909343,
+  "SRMSE": 0.03065498195266748,
+  "sim_tot": 196597.0,
+  "obs_tot": 196577.0,
+  "passa": true
+ },
+ "appendice_quote_minori": {
+  "n": 87,
+  "spearman": 0.9457242837355107,
+  "SRMSE": 0.08705490619870411,
+  "nota": "informativo, senza soglia"
+ },
+ "P4d": "non applicabile (M10 [L])",
+ "P4c": {
+  "mediana_netta": 26539.76,
+  "banda": [
+   33187.5,
+   55312.5
+  ],
+  "mediana_65": 25789.385,
+  "banda_65": [
+   22074.4,
+   41389.5
+  ],
+  "passa": false
+ },
+ "P4_passa": false
+}
