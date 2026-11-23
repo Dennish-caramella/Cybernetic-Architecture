@@ -12,3 +12,14 @@ S7_dim2
 S7_shift
 S8_residuo
 S9_q05
+S9_q09
+         scenario       categoria    tutti  richiedenti  fascia_grigia_quota_rich  isee_14_16_quota_rich  budget_mediano_rich  rapporto_su_base
+51  S5_convivenza  giovani coppie  10582.0       4966.0                  0.104309               0.039066           640.979185           3.69494
+scenario                          S1_T1  S2_res16k  S2_stud50k  S2_stud90k  S3_annunci  S4_rho_eta  S4_rho_p05  S5_convivenza  S6_sap_esclusi   S7_dim2  S7_shift  S8_residuo    S9_q05    S9_q09      base
+categoria                                                                                                                                                                                                  
+anziani soli                    24283.0    41881.0     41881.0     41881.0     41881.0     41881.0     41881.0        41881.0         31354.0   41881.0   41881.0     41881.0   41881.0   41881.0   41881.0
+famiglie con figli minorenni    44716.0    47268.0     47268.0     47268.0     47268.0     47268.0     47268.0        47268.0         35920.0   46896.0   47268.0     47268.0   47268.0   47268.0   47268.0
+giovani coppie                   2045.0     1344.0      1344.0      1344.0      1344.0      1344.0      1344.0         4966.0          1157.0    1210.0    1344.0      1344.0    1344.0    1344.0    1344.0
+giovani soli e nuovi arrivati   90655.0    60729.0     60729.0     60729.0     60729.0     60729.0     60729.0        59235.0         52936.0   53512.0   60729.0     60729.0   60729.0   60729.0   60729.0
+nessuna categoria              122418.0   132886.0    132886.0    132886.0    132886.0    132886.0    132886.0       130758.0        100284.0  132848.0  132886.0    132886.0  132886.0  132886.0  132886.0
+studenti fuori sede             59000.0    54000.0     39000.0     79000.0     59000.0     59000.0     59000.0        59000.0         59000.0   59000.0   59000.0     59000.0   59000.0   59000.0   59000.0
