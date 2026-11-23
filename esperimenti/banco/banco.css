@@ -26,3 +26,4 @@
 }
 #lcl .lb { white-space: normal; }
 #lcl .sw { background: none !important; }
+#flat { touch-action: none; }

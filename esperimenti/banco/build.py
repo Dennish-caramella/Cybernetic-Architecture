@@ -103,6 +103,7 @@ PATCH = [
     ('on("labsites", labMode);', 'on("labsites", labMode); on("lotti", lotMode || lay.lotti); show("bLotti", lotMode);'),
     ("else if (labMode) renderLab();", "else if (labMode) renderLab();\n  else if (lotMode) renderLotti();"),
     ('$("cityBtn").hidden = !(flat && sel >= 0);', '$("cityBtn").hidden = true;'),
+    ('$("ctl").hidden = !(three && cur > 0);', '$("ctl").hidden = !(cur > 0); $("ztilt").hidden = !three;'),
     ("const TOOLS = () => [", "const TOOLS = () => TOOLS0().filter((t) => !/^(show_buildings|get_lab_audit|get_portfolio|get_site)$/.test(t.name));\nconst TOOLS0 = () => ["),
     ("In più c'è il <b>laboratorio</b> sui lotti per social housing e sul potere d'acquisto reale.",
      "In più c'è il <b>banco di laboratorio</b>: i lotti della Base L v7 con schede, filtri e Base E v2."),

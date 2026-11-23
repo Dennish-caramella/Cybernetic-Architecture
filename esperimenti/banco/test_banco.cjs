@@ -53,6 +53,31 @@ const ok = (c, m) => { console.log((c ? "PASSA " : "FALLISCE ") + m); if (!c) pr
       return out; });
     ok(st.land.dusaf > 0 && st.pgt.pgt > 0 && st.bld.fill > 80 && st.land.lotti && st.bld.lotti, `B3 ${t} strati del Lab con lotti sopra ${JSON.stringify(st)}`);
     if (SHOT && !offline && w == 1280) await p.screenshot({ path: path.join(SHOT, `banco_${w}_${scheme}_dbt.png`) });
+    // B9 zoom: rotella, pulsanti, pinch, trascinamento, clic su un lotto da zoomati
+    if (!offline) {
+      if (w < 860) await p.click("#dfold"); // pannello chiuso per vedere la mappa
+      await p.evaluate(() => { dash = "lotti"; met = "lcl"; LF.cl.E = true; render(); setVB(FULL); fitText(); });
+      const vw = () => p.evaluate(() => svg.viewBox.baseVal.width), W0 = await vw();
+      const tgt = await p.evaluate(() => { const L = LOTS.filter((x) => x.p.k == "E").sort((a, b) => b.p.area_m2 - a.p.area_m2)[0]; const r = L.el.getBoundingClientRect(); return { id: L.p.id, x: r.x + r.width / 2, y: r.y + r.height / 2 }; });
+      await p.mouse.move(tgt.x, tgt.y); for (let i = 0; i < 6; i++) { await p.mouse.wheel(0, -400); await p.waitForTimeout(50); }
+      const W1 = await vw();
+      const hit = await p.evaluate((id) => { const L = LOTS.find((x) => x.p.id == id), r = L.el.getBoundingClientRect();
+        for (let i = 1; i < 20; i++) for (let j = 1; j < 20; j++) { const x = r.x + r.width * i / 20, y = r.y + r.height * j / 20; if (document.elementFromPoint(x, y) === L.el) return { x, y }; } return null; }, tgt.id);
+      if (hit) await p.mouse.click(hit.x, hit.y);
+      const clicked = await p.evaluate(() => selLot && selLot.p.id);
+      await p.click("#zin"); const W2 = await vw(); await p.click("#zout"); await p.click("#zout"); const W3 = await vw();
+      const b0 = await p.evaluate(() => svg.viewBox.baseVal.x); const box = await p.locator("#flat").boundingBox();
+      await p.mouse.move(box.x + box.width / 2, box.y + box.height / 2); await p.mouse.down(); await p.mouse.move(box.x + box.width / 2 + 60, box.y + box.height / 2 + 20, { steps: 5 }); await p.mouse.up();
+      const b1 = await p.evaluate(() => svg.viewBox.baseVal.x);
+      const pinch = await p.evaluate(() => { const r = svg.getBoundingClientRect(), cx = r.x + r.width / 2, cy = r.y + r.height / 2, w0 = svg.viewBox.baseVal.width;
+        const ev = (t, id, x, y) => svg.dispatchEvent(new PointerEvent(t, { pointerId: id, clientX: x, clientY: y, bubbles: true }));
+        ev("pointerdown", 11, cx - 20, cy); ev("pointerdown", 12, cx + 20, cy); ev("pointermove", 12, cx + 30, cy); ev("pointermove", 12, cx + 80, cy); ev("pointerup", 11, cx, cy); ev("pointerup", 12, cx, cy);
+        return svg.viewBox.baseVal.width < w0; });
+      await p.click("#zrst"); await p.waitForTimeout(900); const W4 = await vw();
+      const sw = await p.evaluate(() => getComputedStyle(LOTS[0].el).vectorEffect + " " + getComputedStyle(C[0].el).vectorEffect);
+      ok(W1 < W0 / 3 && clicked == tgt.id && W2 < W1 && W3 > W2 && b1 < b0 && pinch && Math.abs(W4 - W0) < 1e-6 && sw == "non-scaling-stroke non-scaling-stroke" && !(await p.isHidden("#zin")),
+        `B9 ${t} zoom: rotella ${W0.toFixed(1)}→${W1.toFixed(2)}, clic sul lotto ${tgt.id} da zoomati → ${clicked}, pulsanti +/− ${W2.toFixed(2)}/${W3.toFixed(2)}, trascinamento ${b0.toFixed(2)}→${b1.toFixed(2)}, pinch ${pinch}, ritorno ${W4.toFixed(1)}, spessore costante (${sw})`);
+    }
     ok(err.length == 0, `B5 ${t} zero errori JS dopo le interazioni ${err.join(" | ")}`);
     await p.close();
   }

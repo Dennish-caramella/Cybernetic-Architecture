@@ -25,3 +25,4 @@ B5. Zero errori JS a 1280 e 400 px, tema chiaro e scuro, prima e dopo le interaz
 B6. Attivazione e GFU senza capacità; GFU tratteggiate e "non verificato"; totali edificabili 16.389 / 32.885 / 65.885.
 B7. `banco.html` sotto 5 MB; cartella sotto 20 MB.
 B8. Quattro avvertenze in pagina; nessun conteggio di lotti per la cessione.
+B9. Zoom della mappa piatta (NIL, strati e lotti), aggiunto il 23/11 su richiesta di Dennis: rotella attorno al puntatore, pinch a due dita, pulsanti + / − / ⟳ del Lab (prima solo per il 3D) e trascinamento, sulla viewBox dell'SVG (`setVB` del Lab), senza librerie; spessore delle linee costante (`vector-effect: non-scaling-stroke`, già nel Lab). Il test verifica, a 1280 e 400 px e nei due temi: rotella e pulsanti cambiano la viewBox, il trascinamento la sposta, il pinch (eventi pointer simulati) avvicina, ⟳ torna alla vista iniziale, il clic su un lotto da zoomati apre la sua scheda, zero errori JS.

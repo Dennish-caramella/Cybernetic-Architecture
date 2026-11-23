@@ -98,3 +98,33 @@ SC.splice(9, 3, { user: "Mostrami i lotti della Base L v7.", d: "lotti", m: "lcl
   return `<p>La Base L v7 ha ${K(n0(T.n.E) + " lotti edificabili")}, ${n0(T.n.R)} lotti da riusare e ${n0(T.n.A)} aree di attivazione; i ${n0(T.n.G)} lotti GFU stanno in una classe separata, <b>non verificata</b> e fuori dai totali.</p><ul><li>Capacità degli edificabili, come forbice: ${K(fa(T.cap.E) + " alloggi")} a FAR 0,5 / 1 / 2 [H].</li><li>La validazione C5 è inconcludente: la base è congelata per decisione di Dennis, non per una misura.</li><li>La Base E v2 accompagna i lotti con il canone di pareggio come forbice; non è un vincolo.</li></ul>` + cite("Base L v7, VERSIONE.md (22/11/2026)") + cite("Base E v2, VERSIONE.md (23/11/2026)") + `<p class="note">Clic su un lotto per la scheda; filtri e avvertenze nel pannello.</p>`;
 } });
 NAMES.splice(9, 3, "Base L v7: lotti");
+/* zoom e spostamento della mappa piatta: viewBox dell'SVG (setVB del Lab); linee a spessore costante con vector-effect */
+const flatOn = () => !svg.classList.contains("off");
+const svgPt = (x, y) => new DOMPoint(x, y).matrixTransform(svg.getScreenCTM().inverse());
+function zoomAt(f, x, y) {
+  const b = svg.viewBox.baseVal, w = Math.min(FULL[2], Math.max(FULL[2] / 400, b.width * f)), k = w / b.width;
+  vbAnim++; setVB([x - (x - b.x) * k, y - (y - b.y) * k, b.width * k, b.height * k]); fitText();
+}
+const zoomMid = (f) => { const b = svg.viewBox.baseVal; zoomAt(f, b.x + b.width / 2, b.y + b.height / 2); };
+[["zin", () => zoomMid(1 / 1.5)], ["zout", () => zoomMid(1.5)], ["zrst", () => { zoomed = -1; zoomVB(FULL); }]].forEach(([id, fn]) => {
+  const old = $(id).onclick; $(id).onclick = (e) => flatOn() ? fn() : old(e);
+});
+svg.addEventListener("wheel", (e) => { e.preventDefault(); const p = svgPt(e.clientX, e.clientY); zoomAt(Math.exp(e.deltaY * 0.0015), p.x, p.y); }, { passive: false });
+const PTR = new Map(); let pan = null, moved = false;
+svg.addEventListener("pointerdown", (e) => { PTR.set(e.pointerId, [e.clientX, e.clientY]); moved = false; pan = null; });
+svg.addEventListener("pointermove", (e) => {
+  if (!PTR.has(e.pointerId)) return;
+  const prev = PTR.get(e.pointerId); PTR.set(e.pointerId, [e.clientX, e.clientY]);
+  if (PTR.size === 2) { // pinch: rapporto delle distanze attorno al punto medio
+    const [a, b] = [...PTR.values()], d = Math.hypot(a[0] - b[0], a[1] - b[1]), m = svgPt((a[0] + b[0]) / 2, (a[1] + b[1]) / 2);
+    if (pan && pan.d) zoomAt(pan.d / d, m.x, m.y); pan = { d }; moved = true; return;
+  }
+  if (Math.hypot(e.clientX - prev[0], e.clientY - prev[1]) === 0) return;
+  if (!pan) pan = { x: e.clientX, y: e.clientY };
+  if (!moved && Math.hypot(e.clientX - pan.x, e.clientY - pan.y) < 4) return;
+  if (!moved) try { svg.setPointerCapture(e.pointerId); } catch (x) { }
+  moved = true; const p0 = svgPt(prev[0], prev[1]), p1 = svgPt(e.clientX, e.clientY), b = svg.viewBox.baseVal;
+  vbAnim++; setVB([b.x - (p1.x - p0.x), b.y - (p1.y - p0.y), b.width, b.height]);
+});
+["pointerup", "pointercancel"].forEach((t) => svg.addEventListener(t, (e) => { PTR.delete(e.pointerId); if (!PTR.size) pan = null; }));
+svg.addEventListener("click", (e) => { if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true); // dopo un trascinamento niente clic
