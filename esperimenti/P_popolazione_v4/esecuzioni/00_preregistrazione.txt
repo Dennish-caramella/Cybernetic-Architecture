@@ -1,0 +1,64 @@
+PRE-REGISTRAZIONE Base P v4 (ticket #18; segue la v3, esito CAMBIA per P4c) — testo di REPORT.md §1.
+Scritta il 2026-11-23 intorno alle 21:45Z dall'agente demografo-popolazioni-sintetiche, prima di scrivere il codice v4 e di eseguire qualsiasi calcolo v4. L'SHA-256 è in 00_preregistrazione.sha256.
+VALIDITÀ: vale solo se è committata prima della prima esecuzione del codice v4, pilota compreso. Il commit sarà la riga 1 di esecuzioni/registro.txt. Dopo il commit nessuna regola cambia; sono ammesse solo correzioni di codice o di acquisizione dei dati, a registro con il motivo.
+RIMANDO: per tutto ciò che qui non è scritto vale la pre-registrazione v3 (a2561ce8…, commit 7eeb306) e, attraverso questa, v2 e v1. Restano invariati: scheletro, minori, titolo, ancore, generatori, popolazione richiedente, categorie (con S5 come riferimento per le giovani coppie e la fascia grigia con due definizioni: decisioni di Dennis del 23/11), semi, criteri P1, P2, P3, P5, P6 e le loro soglie. Vale REVISIONE v3 §7.9.6.
+Scelte: la strada (b) + (c) per il reddito è una scelta provvisoria del coordinatore (tesi/DECISIONI.md, 23/11, "Base P v4: modello del reddito"), da confermare con Dennis. Le scelte nuove qui sono marcate [H-R].
+Marche: [V] verificato in sessione; [S] secondaria; [I] inferenza; [H] ipotesi; [L] lacuna.
+
+0. COSA HO VISTO (la v4 NON è cieca su P4c)
+ - Tutta la v3: P1, P2, P3, P5, P6 e P4. P4a: Spearman 0,9992, SRMSE 0,029. P4b: Spearman 0,9985, SRMSE 0,031. P4c: mediana netta dei nuclei residenti 26.540 € contro la banda 33.188-55.313 €; mediana con capofamiglia ≥ 65 25.789 € (dentro la banda). Appendice: Spearman 0,946, SRMSE 0,087.
+ - La diagnosi descrittiva della v3: 78% dei nuclei con un solo percettore; nuclei di una persona con mediana 21.312 €, di due o più 34.481 €; 20,6% dei contribuenti MEF sotto i 10.000 €.
+ - Ricerca della validazione esterna nuova, solo METADATI SDMX ISTAT (2026-11-23 intorno alle 21:38Z; file in esperimenti/_cache/P_popolazione_v4/meta/, con gli SHA-256 sotto). Nessun VALORE scaricato.
+   * 32_292_DF_DCCV_REDNETFAMFONTERED_9 (558b685975aff8c1…; codelist in rednet9_struct.xml, b6fd85c85f5b4b5a…): REF_AREA comprende i codici 1-9 di CL_ITTER107. Il codice "2" è "centro area metropolitana" (Italia, non per regione) [V]. Periodo 2003-2024; DATA_TYPE REDD_MEDIANO_FAM; IMPUTED_RENTS 1/2; FAM_MAIN_INCOME_SOURCE 1, 2, 3, 4, 9 [V]. Non ho verificato che la combinazione "2" × 2024 abbia un valore: i vincoli di disponibilità sono per dimensione, non per combinazione.
+   * 32_292_DF_DCCV_REDNETFAMFONTERED_1 (4dfbe674a01d49c6…): mediana per numero di componenti (1, 2, 3, 4, "5 o più"), REF_AREA solo IT e ripartizioni (ITC = Nord-ovest) [V].
+   * 32_292_DF_DCCV_REDNETFAMFONTERED_2 (e2f6642efe79dea9…): per tipologia familiare (codici 2, 5, 7, 10, 16-19, 23), stesse aree [V].
+   * 32_38_DF_DCCV_QUINTOREDD_6 (c332e9bbe4c61fbb…): quinti di reddito equivalente, regioni comprese (ITC4) [V]. Non usato.
+   * MEF per CAP con una corrispondenza NIL↔CAP alternativa: ds234 (medici di base) ha CAP e coordinate [V, v1]. Però il modello del reddito non ha variazione spaziale propria e la v4 non la introduce, quindi un confronto per CAP misurerebbe una componente che il modello non pretende di rappresentare. Non usato [I].
+   * ISEE aggregati INPS: l'Osservatorio DSU/ISEE pubblica medie provinciali dei soli richiedenti ISEE [S, ricerca web, https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2023.02.news-osservatorio-su-dsu-e-isee--i-dati-2016-2022.html]. È una popolazione selezionata, non confrontabile con il nostro ISEE proxy su tutti i nuclei; nessun dataset provinciale aperto verificato. Non usato [L].
+   * Banca d'Italia IBF: microdati con registrazione [L, nota 06]. Non usato.
+ - Conclusione: nessuna fonte aperta dà il reddito familiare di MILANO. La validazione esterna nuova e cieca più vicina è la mediana del reddito netto familiare dei "comuni centro di area metropolitana" italiani (V5, sotto). È una prova debole: Milano non è la media dei centri metropolitani italiani.
+
+1. L'UNICA MODIFICA: il modello del reddito per nucleo (blocco 4.3 della v1, ripreso in v2 e v3)
+ Restano invariati: numero di percettori per nucleo (q2 = 0,7 e regole della v1; quindi ancore di lavoro invariate); estrazione dei ranghi u con le correlazioni ρ_p e ρ_età della v1; distribuzione MEF M9 con coda di Pareto; formula del netto; proxy ISEE; canoni; budget; fascia grigia (due definizioni).
+ (b) Percettore principale e percettori secondari [H-R].
+  - Ruoli: in ogni nucleo il primo percettore (rk = 0, il capofamiglia) è il principale; gli altri sono secondari, con lo stesso numero della v1-v3.
+  - Assegnazione dei redditi MEF ai ruoli, con forza s:
+    · si estraggono gli u come in v3 (stesso insieme di valori, quindi M9 resta esatto);
+    · per ogni percettore j: punteggio_j = s · rango_normalizzato(u_j) + (1 − s) · v_j, con v_j ~ U(0,1) dal flusso [3];
+    · gli n_sec percettori con il punteggio più basso cedono i loro u all'insieme dei secondari, gli altri all'insieme dei principali;
+    · dentro ciascun ruolo gli u si riassegnano in modo da conservare l'ordine dei ranghi originali, quindi le correlazioni ρ_p e ρ_età restano dentro il ruolo.
+  - Valori di s: s = 0 riproduce in distribuzione la v3; s = 1 dà ai secondari esattamente i redditi più bassi. Base s = 0,5 [H-R]: nessuna fonte dà la distribuzione dei redditi dei secondari a Milano [L]. Sensibilità S10: s = 0 e s = 1.
+  - Probabilità di avere un reddito per i secondari: invariata dalla v1 (coppie: secondo percettore con probabilità 0,7; altri adulti conviventi: 0,5) [H, scelte D6 della v1 confermate da Dennis il 23/11]. Il livello lo dà la regola sopra.
+  - Ipotesi implicita [H]: ogni nucleo residente ha un percettore principale con reddito IRPEF. I nuclei senza reddito IRPEF (solo redditi esenti) non sono rappresentati [L].
+ (c) Trasferimenti e redditi non IRPEF.
+  c1 Assegno Unico per i figli minori: già presente dalla v1 [S/H, nota 02]; invariato.
+  c2 Assegno sociale [H-R]: ai nuclei con capofamiglia nella classe ≥ 65 (approssima i 67 anni di legge [L]) e reddito lordo IRPEF del nucleo sotto il limite di reddito dell'assegno sociale (persona sola o coniugato, secondo il nucleo), si aggiunge al netto l'integrazione = limite − reddito, fino all'importo annuo. Importi e limiti del 2024 da fonte INPS primaria (circolare annuale di rinnovo), da leggere in fase 2 e registrare con URL [V]. Se non è leggibile, c2 non si applica e lo si scrive a registro. Il trasferimento è esente, quindi va al netto e non al lordo.
+  c3 Redditi da capitale, affitti a cedolare secca, ADI e altri trasferimenti: [L]. Nessuna fonte per Milano: il file MEF comunale 2024 non ha colonne di cedolare o capitale [V, intestazione letta]. Non inclusi. Conseguenza attesa [I]: resta un difetto sistematico verso il basso rispetto a EU-SILC, che li comprende.
+ Nessun'altra parte del codice cambia.
+
+2. CRITERI
+ P1, P2, P3, P5, P6: identici alla v3, stesse soglie. P1 su M9 deve restare esatto come nella v3: stesso insieme di u.
+ P4: P4a e P4b come nella v3. Si ricalcolano, attesi identici perché non dipendono dal reddito.
+ P4c (V3, NON cieco: sezione 0): banda invariata, 0,9-1,5 × 36.875 € e 0,8-1,5 × 27.593 € per i nuclei con capofamiglia ≥ 65. Resta un criterio.
+ P4e NUOVO, cieco [H-R per la banda]:
+  - V5 = REDNETFAMFONTERED_9, REF_AREA "2" (centro area metropolitana), REDD_MEDIANO_FAM, IMPUTED_RENTS "2" (esclusi fitti imputati), FAM_MAIN_INCOME_SOURCE "9" (totale), anno 2024; se il 2024 manca, l'ultimo anno disponibile, dichiarato.
+  - Passa se la mediana netta dei nuclei residenti simulati sta fra 0,9 e 1,5 × V5. È la stessa ampiezza relativa di P4c, scelta per coerenza [H]: Milano è attesa sopra la media dei centri metropolitani italiani [I], ma non oltre una volta e mezza.
+ P4f informativo, controllo (a), senza soglia: mediane simulate per numero di componenti (1, 2, 3, 4, 5+) contro REDNETFAMFONTERED_1, REF_AREA ITC (Nord-ovest), IMPUTED_RENTS "2", fonte "9", stesso anno; rapporti simulato/ITC per dimensione.
+ Esito di P4: passa se passano P4a, P4b, P4c e P4e.
+ Modalità: P4 si valuta UNA sola volta con valida_p4.py, solo se P1-P3 passano, prima di P6. I valori di V5 e P4f li scarica SOLO valida_p4.py al momento di P4 (scaricati e confrontati nella stessa esecuzione, senza guardarli prima). La prova a vuoto della v3 si ripete con valori finti al posto di V5 e P4f, senza scaricarli. Se il download fallisce, P4e è [L] e P4 non si può chiudere: arresto.
+
+3. SEMI: identici. Il flusso [3] serve in più per i v_j di (b).
+
+4. PIANO DI ESECUZIONE (fase 2)
+ 1. Registro: riga 1 = commit. Copia del codice v3 in esperimenti/P_popolazione_v4/; modifica solo del blocco 4.3 e di valida_p4.py (V5, P4f).
+ 2. Lettura della circolare INPS per c2 (URL, importi a registro); controlla; pilota.
+ 3. Esecuzione completa (P1, P2, P5); P3 (12 esecuzioni).
+ 4. Prova a vuoto di valida_p4.py con valori finti; poi P4 una volta, esito subito a registro.
+ 5. P6: S1-S9 e S10 (s = 0, s = 1), S11 (senza c2).
+ 6. Se P4 passa: VERSIONE.md (con le avvertenze a valle della v3) e revisione.
+
+5. LIMITI in più
+ - P4c non è cieco: la scelta (b)+(c) e il valore s = 0,5 sono stati fatti sapendo che la v3 era 26.540 € contro una soglia minima di 33.188 €.
+ - V5 riguarda l'Italia, non Milano: una prova debole in entrambi i sensi.
+ - s non ha fonte.
+ - I redditi non IRPEF restano in gran parte assenti (c3).
