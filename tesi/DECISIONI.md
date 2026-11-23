@@ -87,3 +87,11 @@ La Base P v1 ha esito "cambia" (P1, P3 falliscono). La v2 (`esperimenti/P_popola
 - Le revisioni indipendenti della v1 e della v2 non sono state fatte (decisione del coordinatore, per risparmiare risorse: entrambe fallivano per i propri criteri); nessun ticket di revisione aperto. È una deviazione dal protocollo, registrata qui.
 - La scelta H-N3 della v3 (arrotondamento a due vincoli del titolo di godimento) è provvisoria del coordinatore, non di Dennis.
 - L'attesa "M8 ≤ 0,5 per cella" della pre-registrazione v3 è, secondo la revisione, un'inferenza matematicamente sbagliata e non un criterio. **Da decidere da Dennis**: trattarla così e aprire P4 (raccomandazione del revisore), oppure no.
+
+## 2026-11-23 — Decisioni di Dennis sulle basi ("le 5 decisioni su tutte sì")
+1. **Base P, P4**: l'attesa "M8 ≤ 0,5 per cella" della pre-registrazione v3 è un'inferenza sbagliata, non un criterio. Si apre P4, una volta sola.
+2. **Giovani coppie**: la variante S5 (coppie sposate senza figli + capofamiglia con un convivente, 2 componenti, sotto i 35 anni) è quella di riferimento; la base resta come limite inferiore.
+3. **Fascia grigia**: si riportano sempre entrambe le definizioni, con i canoni OMI e con i canoni d'annuncio.
+4. **Scelte provvisorie confermate da Dennis**: Base P D1–D10, N1–N6, H-N3 (titolo indipendente dall'età come base, variante per età come scenario obbligatorio a valle); Base E H1–H19.
+5. **Base E v2 congelata**.
+Inoltre: il banco si rifà sulla base dello Spatial Milano Lab (NIL e strati disegnati dai dati, senza sfondi esterni), come deciso il 09/11.
