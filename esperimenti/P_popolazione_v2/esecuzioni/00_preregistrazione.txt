@@ -1,0 +1,127 @@
+PRE-REGISTRAZIONE Base P v2 (ticket #18; segue la v1, esito CAMBIA) — popolazione sintetica dei nuclei abitativi di Milano. Testo di REPORT.md §1.
+Scritta il 2026-11-23 intorno alle 07:10Z dall'agente demografo-popolazioni-sintetiche, PRIMA di scrivere il codice v2 e di eseguire qualsiasi calcolo v2. L'SHA-256 è in 00_preregistrazione.sha256.
+VALIDITÀ: vale solo se questo file e il suo .sha256 sono COMMITTATI prima della prima esecuzione del codice v2, pilota compreso. Il commit (hash e ora) sarà la prima riga di esecuzioni/registro.txt. Le scelte nuove sono marcate [H-N] (sezione 8): il coordinatore ha detto che le accetterà provvisoriamente; non sono scelte di Dennis. Le scelte D1-D10 della v1 restano, salvo quanto dice la sezione 8. Dopo il commit nessuna regola cambia; sono ammesse solo correzioni di codice o di acquisizione dei dati, ciascuna a registro con il motivo.
+Marche: [V] verificato (file o metadati aperti); [S] secondaria; [I] inferenza; [H] ipotesi; [H-N] ipotesi nuova della v2; [L] lacuna.
+Questo testo RIUSA la pre-registrazione v1 (esperimenti/P_popolazione/esecuzioni/00_preregistrazione.txt, SHA-256 fa0ec4f8a46783992bba5b6a4506e45a085a2a91e95c4c15c935df82c86036d2): dove non dice altro, valgono le sezioni 1-4, 7, 8 e 10 della v1. Qui sono scritte per intero solo le differenze e i criteri.
+
+======================================================================
+0. COSA HO VISTO PRIMA DI SCRIVERE (la v2 NON è cieca su P1, P2, P3, P5, P6)
+======================================================================
+0.1 Della v1 ho eseguito tutto e visto tutti i risultati di P1, P2, P3, P5 e P6. In sintesi:
+ - P1 fallito su tre margini. M4: TAE/N 3,64%. M5a: TAE/N 1,49%, errore massimo di cella 97%. M5b: errore massimo di cella 64,5%. Gli altri margini sono sotto lo 0,2%.
+ - P2 passato dopo due correzioni di codice (sezioni di ds390 lette come stringhe; flag "fuori Milano").
+ - P3: stesso hash con lo stesso seme; coefficiente di variazione delle giovani coppie richiedenti 2,27% su 1.344 nuclei, sopra la soglia del 2%.
+ - P5: G1 τ 1,00; G2 75,7%, ma polarizzate 0%; G3 passa.
+ - P6: soglia del fattore 2 superata solo da S5.
+ - Conteggi per categoria e budget mediani v1: in esperimenti/P_popolazione/tabelle/.
+0.2 Dei dati grezzi (cache della v1, esperimenti/_cache/P_popolazione/raw/) ho visto:
+ - la tabella tipologia × componenti di ds1441 2025 a livello città, intera: "In convivenza" sono tutte di 1 componente (14.191); le coppie sposate senza figli hanno 1.759 / 343 / 116 nuclei con 3 / 4 / 5+ componenti;
+ - che ds1441 grezzo contiene per ogni anno dal 1999 al 2025 la congiunta Quartiere × Classe_eta_capofamiglia × Genere × Numero_componenti × Tipologia_familiare × Cittadinanza, 87 NIL nel 2021 e nel 2025;
+ - di ds139 2021, solo le etichette: età del capofamiglia "Da 18 a 34", "Da 35 a 64", "Da 65 a 79", "80 anni e più"; componenti 1, 2, 3, "4 e più"; le 10 tipologie; 87 NIL. Valori di ds139 visti: nella v1, i totali per NIL di con_minori, monogen_minori e totale, e i casi dei NIL 73, 24, 39, 85 e 20 (sezione 4 del REPORT v1).
+0.3 Incrocio ISTAT titolo × occupanti (richiesto dal coordinatore). Ho letto SOLO metadati SDMX, oggi 2026-11-23 intorno alle 07:05Z, file in esperimenti/_cache/P_popolazione_v2/meta/:
+ - availableconstraint di DF_DCSS_HUDW_1_COM filtrato su 015146 (avail.xml, sha256 6eff81f5b0c88220…): obs_count = 4. Valori disponibili: INDICATOR NPHH_AV; TENURE_STATUS_HOU ALL / OWN / RENT / OTH_OR; NUMBER_OCCUPANTS solo TOT; tutte le altre dimensioni solo ALL [V]. Quindi per Milano il flusso NON ha l'incrocio titolo × numero di occupanti: ci sono solo le 4 osservazioni già usate nella v1 (M7).
+ - Elenco dei dataflow IT1 (df.xml, sha256 342a441ddef87afd…). Candidati per nome: DF_DCSS_HUDW_3_PROV (abitazioni per superficie e numero di occupanti, solo regioni e province, senza titolo nel nome); DF_BULK_CPO2011_DICA_FAM_CARATT1 ("Famiglie per titolo di godimento", censimento 2011), la cui struttura ha una sola dimensione DimId (bulk_dsd.xml) e la cui interrogazione risponde "doesn't contain a mapping set" (bulk_av.xml) [V]: non è interrogabile via API, come la matrice dei pendolari 2021 nella nota 06.
+ - Conclusione: la lacuna L1 (titolo per tipo di nucleo, età o dimensione a Milano) resta [L]. D4 (titolo indipendente dentro il NIL, scenario T0) resta, con T1 come sensibilità.
+0.4 Non ho aperto, né nella v1 né ora: i valori per NIL delle colonne di ds205 "Minori" e "80 e + soli fam registrate in anagrafe" (margini tenuti fuori V1 e V2); nessun confronto del reddito simulato con V3. P4 è tuttora CHIUSO.
+
+======================================================================
+1. COSA CAMBIA RISPETTO ALLA V1
+======================================================================
+C1 Scheletro dalla congiunta vera. Il nucleo residente si genera dalla tabella di ds1441 2025 NIL × età del capofamiglia (4) × tipologia (8) × componenti (5), sommando su genere e cittadinanza: una riga per famiglia, conteggi esatti. Spariscono l'IPF a margini (v1 4.1) e TUTTI gli zeri strutturali della v1, compreso quello sugli 80+ con minori: la dimensione è quella del dato. M1-M4 diventano identità e servono come controllo del codice.
+C2 Minori dalla stessa fonte anagrafica, come quote condizionate [H-N]. Da ds139 2021 (anagrafe comunale, la stessa fonte di ds1441, ultimo anno con la distinzione minori/maggiorenni), per ogni cella NIL n × età a × componenti s (con 4 e 5+ fusi in "4 e più"):
+   r^C_{nas} = coppie (sposate + conviventi) con almeno un minore / coppie (sposate + conviventi) con figli;
+   r^M_{nas} = monogenitori con almeno un minore / monogenitori con figli.
+ Ogni quota sta tra 0 e 1 per costruzione: numeratore e denominatore vengono dalla stessa tabella. Si applica ai nuclei 2025 delle tipologie con figli: r^C a "Coppia sposata con figli" e "Monogenitore con figli e almeno un convivente" (dove plausibilmente finiscono le coppie non sposate con figli [I, nota 06]); r^M a "Monogenitore con uno o più figli". Numero atteso per cella = r × nuclei della cella; arrotondamento a resti maggiori per NIL; scelta casuale dei nuclei dentro la cella.
+ Celle con denominatore 2021 < 20 [H-N]: si ripiega su n × a, poi su a × s a livello città.
+ Allineamento delle età: "Da 18 a 34" ↔ "Meno di 35 anni" [I: capifamiglia minorenni trascurabili].
+ L'ipotesi diventa: la quota di nuclei con minori fra i nuclei con figli, per NIL × età × dimensione, è stabile dal 2021 al 2025 [H-N]. Sostituisce l'ipotesi v1 sulla quota fra TUTTE le famiglie, smentita dove il NIL è cresciuto.
+ Numero di minori per nucleo: come nella v1, 1 + Binomiale(figli − 1, p), con p calibrato sul totale M6.
+ Adulti per tipologia: come nella v1, tranne "Coppia sposata senza figli" con 3 o più componenti, dove tutti i componenti sono adulti [H-N]; "In convivenza" ha 1 adulto.
+C3 Titolo di godimento con arrotondamento controllato [H-N]. Lo scenario T0 resta: quota d'affitto per NIL da ds1457 2011, riscalata su ISTAT 2021 con IPF, indipendente da età e tipologia dentro il NIL. Cambia l'estrazione: invece di arrotondare per NIL e poi permutare (v1), per ogni cella NIL × tipologia × età × componenti si arrotondano a resti maggiori i conteggi attesi delle tre modalità di titolo. Stessa ipotesi, meno varianza dovuta solo all'estrazione. Motivo, dichiarato: il P3 della v1 è fallito per il rumore di estrazione su una categoria piccola. Non tocco la soglia di P3 (sezione 4).
+C4 Nuovi arrivati con arrotondamento controllato [H-N]. Il numero di nuclei NIL × tipologia della coorte annua si ottiene con un arrotondamento a resti maggiori (prima su NIL, poi su tipologia dentro il NIL) invece che con estrazioni multinomiali. Composizione e dimensione come nella v1 (tipologie dei capifamiglia sotto i 35 anni). Componenti per i nuovi arrivati: distribuzione dei componenti per tipologia dei residenti sotto i 35 anni dello stesso NIL in ds1441 2025 (ripiego: città) [H-N], al posto della tabella IPF della v1.
+C5 G2, minoranza polarizzata non additiva [H-N]: preferenza a punto ideale sul criterio a cui G1 dà il peso più basso, u = −|x_k − x*|, con x* ~ Uniforme(0,3; 0,7) per nucleo; spareggio con 0,01 × il criterio di budget. Non è monotona in x_k, quindi un modello additivo lineare non la rappresenta. È scritta sapendo che nella v1 la forma u = x_k dava τ = 1 (0.1).
+C6 Sensibilità S5 ridefinita [H-N]: "In convivenza" sotto i 35 anni sono nuclei di una persona (0.2), quindi la variante v1 non è coerente col dato. La nuova S5 aggiunge alle giovani coppie i nuclei "Capofamiglia con almeno un convivente" di 2 componenti con capofamiglia sotto i 35 anni [I: è dove plausibilmente finiscono le coppie non sposate senza figli in ds1441].
+C7 Codice: si riusano run.py, scarica.py e test_popolazione.py della v1, con le sole modifiche richieste da C1-C6 e dalla sezione 6. I dati grezzi sono quelli della cache v1; ogni file si verifica con lo SHA-256 di esperimenti/P_popolazione/dati_metadati.csv. Se un hash non coincide, si riscarica e si annota a registro. Il ricalcolo dei margini dal grezzo deve dare gli stessi valori del controllo v1, altrimenti ci si ferma.
+Tutto il resto è come nella v1: reddito, netto, proxy ISEE, canone, budget, fascia grigia, categorie e precedenze, studenti, ancore, G1 e G3, popolazione richiedente, semi e flussi (SEME = 20261122 diviso con SeedSequence.spawn(9); semi di robustezza SEME + k, k = 1…10).
+
+======================================================================
+2. MARGINI
+======================================================================
+ Adattati, cioè riprodotti per costruzione:
+  M0 congiunta ds1441 2025 NIL × età × tipologia × componenti;
+  M1-M4 come nella v1 (ora implicati da M0);
+  M5a, M5b: nuclei con minori e monogenitori con minori per NIL = Σ_celle r × nuclei 2025 (quote condizionate C2);
+  M6 totale minori ds205 2024 (196.577);
+  M7 titolo, città 2021;
+  M8 titolo per NIL;
+  M9 classi MEF dei percettori.
+ Informativi, senza soglia: quota di nuclei con minori per NIL nel 2025 simulato contro la quota di ds139 2021 (ρ di Spearman e scarti), per mostrare l'effetto della crescita dei NIL; tabella tipologia × componenti dei nuovi arrivati.
+ Tenuti fuori (P4), invariati e ancora chiusi: V1 anziani soli ≥80 per NIL, V2 minori per NIL (ds205 2024), V3 reddito familiare Lombardia, V4 non applicabile (M10 è [L]).
+ Avvertenza dichiarata ora [I]: con C1 gli anziani soli 80+ per NIL della popolazione simulata sono quelli di ds1441 2025. P4a diventa quindi un confronto di coerenza fra due tabelle anagrafiche (ds1441 2025 e ds205 2024), non una prova del modello. P4b (minori per NIL, che dipende da C2 e da p) e P4c restano prove del modello.
+
+======================================================================
+3. METODO (formule)
+======================================================================
+ Scheletro: per ogni cella c = (n, a, t, s), N_c nuclei = valore di ds1441 2025 (somma su genere e cittadinanza).
+ Minori: K_c = hamilton_n( r_{n,a,s(c)} · N_c ) per t con figli; poi p tale che Σ_i (1 + p(f_i − 1)) = M6 sui nuclei con il flag (bisezione, come nella v1).
+ Titolo T0: q_n = IPF(ds1457 2011 → ISTAT 2021) come nella v1; per cella, conteggi = hamilton( N_c · q_n ).
+ T1: odds per età (4, 1, 0,5) come nella v1; IPF età × titolo dentro il NIL, poi arrotondamento per cella.
+
+======================================================================
+4. CRITERI DI ACCETTAZIONE (fissati ora; soglie della v1 non abbassate)
+======================================================================
+P1 Calibrazione, seme principale, dopo l'integerizzazione:
+ P1-0 M0: TAE = 0 (identità esatta). Una qualsiasi differenza è un errore di codice.
+ P1a margini cittadini M2, M4, M6, M7: TAE/N ≤ 0,5%; M9: TAE/N ≤ 1% (come la v1).
+ P1b margini per NIL M1, M3, M5a, M5b, M8: TAE/N ≤ 1%; celle con obiettivo ≥ 100: errore relativo ≤ 5%; celle < 100: errore assoluto ≤ 10 nuclei (come la v1).
+ P1c totale residenti 780.935 e totale per NIL esatti.
+ Nota dichiarata [I]: con C1 e C2, P1 sui margini M0-M5 controlla soprattutto il codice. La calibrazione "vera" è il fatto stesso di copiare la congiunta.
+P2 Invarianti: come nella v1, con due modifiche richieste dal dato (non allentamenti):
+ - "monocomponente ⇔ dimensione 1" diventa "dimensione 1 ⇔ tipologia ∈ {Monocomponente, In convivenza}";
+ - in più: congiunta simulata dei residenti = M0, cella per cella.
+ Tutti gli altri invarianti identici, test sulla popolazione in memoria (in test_popolazione.py, sui file arrotondati al centesimo, la tolleranza di 0,2 € sul netto per l'invariante del budget).
+P3 Riproducibilità: identica alla v1. Stesso hash di contenuto per due esecuzioni con SEME; P1 e P2 passano per tutti i 10 semi; coefficiente di variazione tra i 10 semi ≤ 2% per ogni categoria con ≥ 1.000 richiedenti. Soglia NON cambiata. La riduzione di varianza viene solo dal metodo (C3, C4), dichiarata in 0.1 e C3.
+P4 Margini tenuti fuori: soglie identiche alla v1 (P4a ρ ≥ 0,80 e SRMSE ≤ 0,30; P4b ρ ≥ 0,85 e SRMSE ≤ 0,25; P4c banda 0,9-1,5 × 36.875 € e 0,8-1,5 × 27.593 € per i nuclei con capofamiglia ≥ 65; P4d non applicabile).
+ Si valuta UNA sola volta, con lo script separato valida_p4.py (l'unico che legge quelle colonne di ds205), solo se P1, P2 e P3 sono passati, e prima di P6. Il suo esito si scrive a registro prima di qualsiasi altra analisi. Se P1, P2 o P3 falliscono, P4 resta chiuso.
+P5 Generatori: soglie identiche alla v1 (P5a τ mediano G1 ≥ 0,95; P5b ≥ 50% dei nuclei G2 con τ ≤ 0,80; P5c come nella v1).
+ In più, informativo e fissato ora: per ciascuno dei 5 tipi di G2 si riporta la quota con τ ≤ 0,80. Un tipo sotto il 50% si segnala nel REPORT come "rappresentabile dal modello additivo", senza che questo cambi l'esito.
+P6 Sensibilità: S1-S9 come nella v1, con S5 ridefinita (C6). Stessa regola: se una categoria richiedente cambia di oltre un fattore 2 rispetto alla base, la base si congela con due popolazioni.
+ESITO: "passa" se passano P1-P5; "ripeti" solo per errori di codice; "cambia" altrimenti. Regola di arresto: come nella v1 (sezione 7).
+
+======================================================================
+5. SEMI
+======================================================================
+ SEME = 20261122, flussi come nella v1. Il flusso [0] (integerizzazione) ora serve agli spareggi dell'arrotondamento dei minori, del titolo e degli arrivi. Semi di robustezza 20261123…20261132.
+
+======================================================================
+6. PIANO DI ESECUZIONE (fase 2)
+======================================================================
+ 1. Registro: riga 1 = commit di questo testo. Copia del codice v1 in esperimenti/P_popolazione_v2/ e modifiche C1-C6.
+ 2. Verifica degli SHA-256 della cache v1. Ricalcolo dei margini (run.py controlla) e controllo che M0 sommato dia le tabelle della v1.
+ 3. Pilota su 3 NIL (solo debug, nessun P4). Esecuzione completa con --scrivi: P1, P2, P5.
+ 4. P3 (12 esecuzioni).
+ 5. Se P1-P3 passano: valida_p4.py, una sola volta, esito a registro. Se no: P4 resta chiuso.
+ 6. P6 (S1-S9).
+ 7. REPORT in 8 punti (o nella risposta, se il file non si può scrivere), revisore-metodologico.
+ Dati derivati nel repo < 20 MB; dati grezzi solo in cache.
+
+======================================================================
+7. LIMITI (in più rispetto alla v1)
+======================================================================
+ 1. La v2 nasce dopo aver visto i fallimenti della v1 (0.1): le scelte C1-C6 rispondono a quei fallimenti. Il rischio di adattare il metodo ai criteri è mitigato in due modi: le soglie non cambiano, e P4 è rimasto chiuso.
+ 2. Le quote condizionate C2 restano un'ipotesi di stabilità 2021→2025 su celle a volte piccole; il ripiego a soglia 20 è un parametro scelto.
+ 3. P4a perde il ruolo di validazione del modello (sezione 2).
+ 4. L'incrocio titolo × occupanti per Milano non esiste via API (0.3): la correlazione fra titolo ed età o dimensione resta assunta.
+ 5. ds1441 2025 ha anche genere e cittadinanza del capofamiglia: la v2 li somma e non li usa, scelta della v1 per ragioni etiche (niente omofilia su cittadinanza).
+
+======================================================================
+8. SCELTE
+======================================================================
+ Nuove [H-N], da accettare provvisoriamente (coordinatore) e da confermare con Dennis:
+  N1 (C2) quote condizionate dei minori da ds139 2021 per NIL × età × componenti, con ripiego per denominatori < 20;
+  N2 (C2) adulti = componenti per le coppie senza figli con 3+ componenti; "In convivenza" = 1 adulto;
+  N3 (C3) titolo con arrotondamento controllato per cella;
+  N4 (C4) arrivi con arrotondamento controllato e componenti dai residenti sotto i 35 anni dello stesso NIL;
+  N5 (C5) polarizzati a punto ideale;
+  N6 (C6) nuova S5 con "Capofamiglia con almeno un convivente", 2 componenti, sotto i 35 anni.
+ D1-D10 della v1: restano tutte. Nessuna è resa inutile dalla congiunta. D3 (giovani coppie = coppie sposate senza figli sotto i 35 anni in base) resta; la variante cambia (N6). D4 resta perché l'incrocio ISTAT non esiste (0.3).
