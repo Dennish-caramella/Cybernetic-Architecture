@@ -1,0 +1,2 @@
+Base P v3 (ticket #18): come la v2 con il titolo arrotondato a due vincoli; regole in `esecuzioni/00_preregistrazione.txt`, ogni passo in `esecuzioni/registro.txt`. Dati grezzi: cache della v1 (`scarica.py`, hash in `dati_metadati.csv`).
+Da zero: `python3 -I run.py controlla && python3 -I run.py esegui --scrivi && python3 -I test_popolazione.py && python3 -I run.py robustezza && python3 -I run.py sensibilita` (P4: `python3 -I valida_p4.py`, una volta, solo se P1-P3 passano) (seme 20261122).
