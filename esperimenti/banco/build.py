@@ -86,7 +86,7 @@ page = open(PAGE, encoding="utf-8").read()
 lay = {k: json.load(open(os.path.join(LAB, "recuperati_da_artifact", f"{k}.json"), encoding="utf-8")) for k in ("dusaf", "pgt")}
 CSS = open(os.path.join(H, "banco.css"), encoding="utf-8").read()
 PATCH = [
-    ("<title>Spatial Milano Lab</title>", "<title>Banco di laboratorio — Spatial Milano Lab + Base L v7</title>"),
+    ("<title>Spatial Milano Lab</title>", "<title>Banco di laboratorio</title>"),
     ("</style>", CSS + "</style>"),
     ('<g id="labsites" class="lyr off" aria-label="Siti candidati per social housing"></g>',
      '<g id="labsites" class="lyr off" aria-label="Siti candidati per social housing"></g>\n      <g id="lotti" class="lyr off" aria-label="Lotti della Base L v7"></g>'),
