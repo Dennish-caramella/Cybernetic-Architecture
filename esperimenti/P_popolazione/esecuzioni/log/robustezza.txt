@@ -1,1 +1,13 @@
 20261122 17a10161269d False
+20261122 17a10161269d False
+20261123 c44778e935c0 False
+20261124 5b9369f48468 False
+20261125 29a9437ca033 False
+20261126 ac90cd890410 False
+20261127 bdba5abf4dff False
+20261128 08aa777fc9b3 False
+20261129 512147662fc0 False
+20261130 570b37041046 False
+20261131 9f63a7c9bb9c False
+20261132 8195f0619283 False
+{'stesso_hash': True, 'P1_tutti_10_semi': False, 'cv': {'studenti fuori sede': 0.0, 'famiglie con figli minorenni': 0.004132534077304694, 'anziani soli': 0.004184051146992434, 'giovani coppie': 0.02271647584186407, 'giovani soli e nuovi arrivati': 0.00325052669823472, 'nessuna categoria': 0.0008424888925379153}, 'P3_cv_ok': False}
