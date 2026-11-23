@@ -1,4 +1,4 @@
-"""Base P v1 (ticket #18): popolazione sintetica dei nuclei abitativi di Milano.
+"""Base P v2 (ticket #18; regole: esecuzioni/00_preregistrazione.txt v2, sha256 1bf8df2a...; differenze dalla v1 marcate [v2]): popolazione sintetica dei nuclei abitativi di Milano.
 Regole: esecuzioni/00_preregistrazione.txt (sha256 fa0ec4f8...). Dati: scarica.py -> ../_cache/P_popolazione/raw/.
 Uso:
   python3 -I run.py controlla                      # margini dal grezzo = CSV delle note (sezione 0 / regola di arresto)
@@ -13,8 +13,8 @@ from scipy.spatial import cKDTree
 from scipy.stats import norm
 
 QUI = os.path.dirname(os.path.abspath(__file__))
-RAW = os.path.join(QUI, "..", "_cache", "P_popolazione", "raw")
-OUT = os.path.join(QUI, "..", "_cache", "P_popolazione", "out")
+RAW = os.path.join(QUI, "..", "_cache", "P_popolazione", "raw")  # cache v1, sola lettura (hash in dati_metadati.csv)
+OUT = os.path.join(QUI, "..", "_cache", "P_popolazione_v2", "out")
 TAB = os.path.join(QUI, "tabelle")
 NOTE = os.path.join(QUI, "..", "..", "secondo_cervello", "ricerche", "milano_dati")
 SEME = 20261122
@@ -34,7 +34,7 @@ BASE = dict(tenure="T0", studenti=70000, in_residenza=11000, canone="omi", rho_p
             sap="inclusi", arrivi_dim=1.5, arrivi_shift=0.0, budget="30", q2=0.7, q_dsu=0.3)
 SCENARI = {"base": {}, "S1_T1": dict(tenure="T1"), "S2_stud50k": dict(studenti=50000), "S2_stud90k": dict(studenti=90000),
            "S2_res16k": dict(in_residenza=16000), "S3_annunci": dict(canone="annunci"), "S4_rho_p05": dict(rho_p=0.5),
-           "S4_rho_eta": dict(rho_eta=-0.3), "S5_convivenza": dict(giovani_coppie="+convivenza"), "S6_sap_esclusi": dict(sap="esclusi"),
+           "S4_rho_eta": dict(rho_eta=-0.3), "S5_conviventi": dict(giovani_coppie="+conviventi"), "S6_sap_esclusi": dict(sap="esclusi"),
            "S7_dim2": dict(arrivi_dim=2.0), "S7_shift": dict(arrivi_shift=-0.2), "S8_residuo": dict(budget="residuo"),
            "S9_q05": dict(q2=0.5), "S9_q09": dict(q2=0.9)}
 CAT = ["studenti fuori sede", "famiglie con figli minorenni", "anziani soli", "giovani coppie", "giovani soli e nuovi arrivati", "nessuna categoria"]
@@ -66,6 +66,7 @@ def carica():
     M3a = np.zeros(K); m = (y.t == MONO) & (y.a >= 2); np.add.at(M3a, y.i[m], y.Famiglie[m])
     M3b = np.zeros(K); m = y.a == 0; np.add.at(M3b, y.i[m], y.Famiglie[m])
     M4 = np.zeros(5); np.add.at(M4, y.d, y.Famiglie)
+    M0 = np.zeros((K, 4, 8, 5)); np.add.at(M0, (y.i, y.a, y.t, y.d), y.Famiglie)  # [v2 C1] congiunta vera
     vero = dict(nta=np.zeros((K, 8, 4)), td=np.zeros((8, 5)))  # congiunte vere: solo confronto informativo
     np.add.at(vero["nta"], (y.i, y.t, y.a), y.Famiglie); np.add.at(vero["td"], (y.t, y.d), y.Famiglie)
     m = zcsv("ds139.zip", sep=";", encoding="latin1"); m.columns = [c.replace("ï»¿", "").replace("﻿", "") for c in m.columns]
@@ -73,6 +74,20 @@ def carica():
     g = pd.DataFrame(dict(tot=m.groupby("n").Famiglie.sum(), cm=m[tt.str.contains("minorenne")].groupby("n").Famiglie.sum(),
                           mg=m[tt == "Monogenitore con almeno un figlio minorenne"].groupby("n").Famiglie.sum())).reindex(NIL).fillna(0)
     M5 = (g.cm / g.tot).values, (g.mg / g.tot).values
+    # [v2 C2] quote condizionate r^C, r^M per NIL x eta x componenti (4 e piu), ripiego se denominatore < 20
+    m["i"] = m.n.map(ix); m["a"] = fix(m.Classe_eta_capofamiglia).map({"Da 18 a 34 anni": 0, "Da 35 a 64 anni": 1, "Da 65 a 79 anni": 2, "80 anni e piu": 3})
+    m["s"] = fix(m.Numero_componenti).map({"1": 0, "2": 1, "3": 2, "4 e piu": 3}); assert m[["i", "a", "s"]].notna().all().all()
+    def quota(num, den):
+        Nm = np.zeros((K, 4, 4)); De = np.zeros((K, 4, 4))
+        for arr, sel in ((Nm, tt.isin(num)), (De, tt.isin(den))): np.add.at(arr, (m.i[sel].astype(int), m.a[sel].astype(int), m.s[sel].astype(int)), m.Famiglie[sel])
+        r = np.where(De >= 20, Nm / np.maximum(De, 1), np.nan); liv = np.where(De >= 20, 0, -1)
+        na_, da_ = Nm.sum(2, keepdims=True), De.sum(2, keepdims=True); r2 = np.broadcast_to(np.where(da_ >= 20, na_ / np.maximum(da_, 1), np.nan), r.shape)
+        nc, dc = Nm.sum(0), De.sum(0); r3 = np.broadcast_to(np.where(dc >= 20, nc / np.maximum(dc, 1), Nm.sum((0, 2))[:, None] / De.sum((0, 2))[:, None]), r.shape)
+        liv = np.where(np.isnan(r), np.where(np.isnan(r2), 2, 1), 0); r = np.where(np.isnan(r), np.where(np.isnan(r2), r3, r2), r)
+        return r, liv, De
+    CPL = ["Coppia sposata con almeno un figlio minorenne", "Coppia convivente con almeno un figlio minorenne"]
+    CPM = ["Coppia sposata con figli tutti maggiorenni", "Coppia convivente con figli tutti maggiorenni"]
+    RC = quota(CPL, CPL + CPM); RM = quota(["Monogenitore con almeno un figlio minorenne"], ["Monogenitore con almeno un figlio minorenne", "Monogenitore con figli tutti maggiorenni"])
     q = pd.read_csv(raw("ds205.csv"), sep=";", encoding="latin1"); q24 = q[q.Anno == 2024]
     M6 = float(q24.Minori.sum())  # solo totale cittadino (la distribuzione per NIL e' tenuta fuori, V2)
     imm = q24.groupby("NIL").Immigrati.sum().reindex(NIL).fillna(0).values
@@ -88,7 +103,7 @@ def carica():
     media_top = am[-1] / M9[-1]
     u = pd.read_csv(raw("ds752_2024_25.csv"), sep=";", encoding="latin1"); M11 = u.groupby("AteneoNOME").Isc.sum()
     mv = pd.read_csv(raw("ds71.csv"), sep=";", encoding="latin1"); M12 = float(mv[mv.iloc[:, 0] == 2024].iloc[0, 3])
-    return dict(NIL=NIL, M1=M1, M2=M2, M3a=M3a, M3b=M3b, M4=M4, M5=M5, M6=M6, M7=M7, M8seed=M8seed, M9=M9, media_top=media_top,
+    return dict(M0=M0, RC=RC, RM=RM, NIL=NIL, M1=M1, M2=M2, M3a=M3a, M3b=M3b, M4=M4, M5=M5, M6=M6, M7=M7, M8seed=M8seed, M9=M9, media_top=media_top,
                 M11=M11, M12=M12, imm=imm, vero=vero, ds139=g)
 
 def controlla():
@@ -191,58 +206,65 @@ def geo():
 # ------------------------------------------------------------------ generazione
 def genera(seme=SEME, pilota=False, **par):
     P = dict(BASE, **par); D = carica(); ss = np.random.SeedSequence(seme).spawn(9); R = [np.random.default_rng(s) for s in ss]
-    rep = {"convergenza": {}}
-    # 4.1 scheletro
-    T, conv, it = ipf3(D); rep["convergenza"]["ipf3"] = dict(convergito=bool(conv), cicli=int(it))
-    K = len(D["NIL"]); cnt = np.zeros((K, 8, 4), int)
-    for i in range(K): cnt[i] = hamilton(T[i].ravel(), D["M1"][i].sum(), R[0]).reshape(8, 4)
-    ii, tt, aa = np.nonzero(cnt); rr = cnt[ii, tt, aa]
-    n = pd.DataFrame(dict(nil_i=np.repeat(ii, rr), tip=np.repeat(tt, rr), eta=np.repeat(aa, rr)))
+    rep = {}
+    K = len(D["NIL"]); h0 = R[0]
+    # [v2 C1] scheletro = congiunta vera ds1441 2025 (NIL x eta x tipologia x componenti)
+    ii, aa, tt, dd = np.nonzero(D["M0"]); rr = D["M0"][ii, aa, tt, dd].astype(int)
+    n = pd.DataFrame(dict(nil_i=np.repeat(ii, rr), eta=np.repeat(aa, rr), tip=np.repeat(tt, rr), dim=np.repeat(dd + 1, rr)))
     if pilota: n = n[n.nil_i.isin([0, 1, 2])].reset_index(drop=True)
-    # nuovi arrivati: coorte annua [H 4.3, S7]
-    na = int(round(D["M12"] / P["arrivi_dim"])); u35 = D["M2"][:, 0] / D["M2"][:, 0].sum()
-    arr = pd.DataFrame(dict(nil_i=R[5].choice(K, na, p=D["imm"] / D["imm"].sum()), tip=R[5].choice(8, na, p=u35), eta=0))
-    if pilota: arr = arr[arr.nil_i.isin([0, 1, 2])]
+    # [v2 C4] nuovi arrivati con arrotondamento controllato; componenti dai residenti <35 dello stesso NIL (ripiego citta)
+    na = int(round(D["M12"] / P["arrivi_dim"])); u35 = D["M2"][:, 0] / D["M2"][:, 0].sum(); rows = []
+    kn = hamilton(na * D["imm"] / D["imm"].sum(), na, h0)
+    for i in range(K):
+        if kn[i] == 0 or (pilota and i > 2): continue
+        kt = hamilton(kn[i] * u35, kn[i], h0)
+        for t in range(8):
+            if kt[t] == 0: continue
+            w = D["M0"][i, 0, t]; w = w if w.sum() > 0 else D["M0"][:, 0, t].sum(0)
+            kd = hamilton(kt[t] * w / w.sum(), kt[t], h0); rows.append(pd.DataFrame(dict(nil_i=i, eta=0, tip=t, dim=np.repeat(np.arange(1, 6), kd))))
+    arr = pd.concat(rows, ignore_index=True)
     n["origine"] = "residente"; arr["origine"] = "nuovo arrivo"; n = pd.concat([n, arr], ignore_index=True)
-    # componenti: IPF tipologia x dimensione con zeri strutturali
-    mask = np.zeros((8, 5)); [mask.__setitem__((t, d - 1), 1) for t, ds in AMMESSI.items() for d in ds]
-    TD = ipf2(mask, D["M1"].sum(0), D["M4"]); PD = TD / TD.sum(1, keepdims=True); rep["TD"] = TD
-    g = R[1]; n["dim"] = 0
-    for t in range(8):
-        m = n.tip == t; n.loc[m, "dim"] = g.choice(np.arange(1, 6), m.sum(), p=PD[t])
-    n["adulti"] = np.select([n.tip.isin([MONO]), n.tip.isin([CSF, CCF, MGC]), n.tip == MG], [1, 2, 1], n.dim)
+    g = R[1]
+    # [v2 N2] adulti: coppia senza figli con 3+ componenti = tutti adulti; In convivenza = 1 (dim 1)
+    n["adulti"] = np.select([n.tip == MONO, (n.tip == CSF) & (n.dim == 2), n.tip.isin([CCF, MGC]), n.tip == MG], [1, 2, 2, 1], n.dim)
     n["figli"] = np.where(n.tip.isin([CCF, MG, MGC]), n.dim - n.adulti, 0)
-    # minori: flag per NIL (M5) [H]; 80+ zero strutturale (4: combinazione impossibile)
-    cm, mg = D["M5"]; n["minori"] = 0; flag = np.zeros(len(n), bool); res = n.origine == "residente"
-    for i in np.unique(n.nil_i):
-        tot = (res & (n.nil_i == i)).sum(); idx_mg = np.flatnonzero(res & (n.nil_i == i) & (n.tip == MG) & (n.eta < 3))
-        idx_ot = np.flatnonzero(res & (n.nil_i == i) & n.tip.isin([CCF, MGC]) & (n.eta < 3))
-        k_mg = min(int(round(mg[i] * tot)), len(idx_mg)); k_ot = min(max(int(round(cm[i] * tot)) - k_mg, 0), len(idx_ot))
-        flag[g.choice(idx_mg, k_mg, replace=False)] = True; flag[g.choice(idx_ot, k_ot, replace=False)] = True
+    # [v2 C2] minori: quote condizionate per cella NIL x eta x componenti, arrotondamento per NIL, scelta casuale nella cella
+    n["minori"] = 0; flag = np.zeros(len(n), bool); res = (n.origine == "residente").values
+    sc = np.minimum(n.dim.values, 4) - 1; el = res & n.tip.isin([CCF, MG, MGC]).values
+    rq = np.where(n.tip.values == MG, D["RM"][0][n.nil_i.values, n.eta.values, sc], D["RC"][0][n.nil_i.values, n.eta.values, sc])
+    rq = np.where(el, rq, 0.0); tgtC = np.zeros(K); tgtM = np.zeros(K)
+    np.add.at(tgtC, n.nil_i.values, rq); np.add.at(tgtM, n.nil_i.values, np.where(n.tip.values == MG, rq, 0)); rep["M5a_target"], rep["M5b_target"] = tgtC, tgtM
+    cel = pd.DataFrame(dict(i=n.nil_i.values, a=n.eta.values, t=n.tip.values, s=sc, r=rq))[el]
+    for i, gi in cel.groupby("i"):
+        grp = gi.groupby(["a", "t", "s"]); keys = list(grp.groups); idxs = [grp.groups[k_] for k_ in keys]
+        ex = np.array([gi.r.loc[ix].sum() for ix in idxs]); kk = hamilton(ex, round(ex.sum()), h0)
+        for ix, k_ in zip(idxs, kk):
+            if k_: flag[g.choice(np.asarray(ix), k_, replace=False)] = True
     rep["minori_quota_res"] = flag[res].mean()
-    arr_m = ~res & n.tip.isin([CCF, MG, MGC]); flag[arr_m] = g.random(arr_m.sum()) < (flag[res & n.tip.isin([CCF, MG, MGC])].mean())
+    rep["ripiego_RC"] = {int(l): int(((D["RC"][1] == l) * 1).sum()) for l in (0, 1, 2)}; rep["ripiego_RM"] = {int(l): int(((D["RM"][1] == l) * 1).sum()) for l in (0, 1, 2)}
+    arr_m = ~res & n.tip.isin([CCF, MG, MGC]).values; flag[arr_m] = g.random(arr_m.sum()) < (flag[el].mean())
     f = n.figli.values; lo, hi = 0.0, 1.0
-    target = D["M6"] * (res.sum() / (D["M1"].sum() if not pilota else res.sum())) if not pilota else None
     if not pilota:
         for _ in range(60):
             p = (lo + hi) / 2; e = (flag & res) @ (1 + p * (f - 1)); lo, hi = (p, hi) if e < D["M6"] else (lo, p)
     p_min = (lo + hi) / 2 if not pilota else 0.5; rep["p_minori"] = p_min
     n.loc[flag, "minori"] = 1 + g.binomial(np.maximum(f[flag] - 1, 0), p_min)
-    # 4.2 titolo
-    g = R[2]; n["titolo"] = "affitto"; Nn = np.bincount(n.nil_i[res], minlength=K).astype(float)
+    # 4.2 titolo [v2 C3]: arrotondamento controllato per cella NIL x eta x tipologia x componenti
+    g = R[2]; Nn = np.bincount(n.nil_i[res], minlength=K).astype(float)
     seed = np.nan_to_num(D["M8seed"] / np.nansum(D["M8seed"], 1, keepdims=True), nan=1 / 3) * Nn[:, None]
     TT = ipf2(seed, Nn, D["M7"] * Nn.sum()); rep["TT"] = TT
-    lab = np.array(["affitto", "proprieta", "altro"]); tit = np.empty(len(n), object); tit[~res.values] = "affitto"
+    lab = np.array(["affitto", "proprieta", "altro"]); tit = np.empty(len(n), object); tit[~res] = "affitto"
+    QA = {}
     for i in np.unique(n.nil_i[res]):
-        idx = np.flatnonzero(res & (n.nil_i == i))
-        if P["tenure"] == "T0":
-            c = hamilton(TT[i], len(idx), g); tit[g.permutation(idx)] = np.repeat(lab, c)
+        q = TT[i] / TT[i].sum()
+        if P["tenure"] == "T0": QA[i] = np.tile(q, (4, 1))
         else:  # T1: odds affitto per eta (<35, 35-64, >=65) = 4, 1, 0.5 [H]; IPF (eta x titolo) dentro il NIL
-            e3 = np.minimum(n.eta.values[idx], 2); Na = np.bincount(e3, minlength=3).astype(float)
-            sd = np.outer(Na, TT[i] / TT[i].sum()); sd[:, 0] *= np.array([4, 1, 0.5]); X = ipf2(sd, Na, TT[i])
-            for a in range(3):
-                ia = idx[e3 == a]
-                if len(ia): tit[g.permutation(ia)] = np.repeat(lab, hamilton(X[a] * len(ia) / max(X[a].sum(), 1e-12), len(ia), g))
+            e3 = np.minimum(n.eta.values[res & (n.nil_i.values == i)], 2); Na = np.bincount(e3, minlength=3).astype(float)
+            sd = np.outer(Na, q); sd[:, 0] *= np.array([4, 1, 0.5]); X = ipf2(sd, Na, TT[i]); X = X / np.maximum(X.sum(1, keepdims=True), 1e-12)
+            QA[i] = np.vstack([X[0], X[1], X[2], X[2]])
+    rs = pd.DataFrame(dict(i=n.nil_i.values, a=n.eta.values, t=n.tip.values, d=n.dim.values))[res]
+    for (i, a_, t_, d_), ix in rs.groupby(["i", "a", "t", "d"]).groups.items():
+        ix = np.asarray(ix); c = hamilton(len(ix) * QA[i][a_], len(ix), h0); tit[g.permutation(ix)] = np.repeat(lab, c)
     n["titolo"] = tit
     # 4.6 residenza (civico a caso nel NIL)
     G = geo(); g = R[4]; civ = G["civ"]; cx, cy = civ.geometry.x.values, civ.geometry.y.values; cid = civ.ID_NIL.values
@@ -297,7 +319,7 @@ def genera(seme=SEME, pilota=False, **par):
     n["budget"] = 0.30 * n.netto / 12
     if P["budget"] == "residuo":
         ocse = 1 + 0.5 * (n.dim - n.minori - 1) + 0.3 * n.minori; n["budget"] = np.maximum(0, n.netto - 1256.37 * 12 * ocse) / 12
-    gc = (n.tip == CSF) | ((n.tip == INCONV) if P["giovani_coppie"] == "+convivenza" else False)
+    gc = (n.tip == CSF) | (((n.tip == CCONV) & (n.dim == 2)) if P["giovani_coppie"] == "+conviventi" else False)  # [v2 C6]
     n["categoria"] = np.select([n.minori >= 1, (n.tip == MONO) & (n.eta >= 2), gc & (n.eta == 0), ((n.tip == MONO) & (n.eta == 0)) | (n.origine == "nuovo arrivo")],
                                CAT[1:5], CAT[5])
     n["isee_14_16"] = (n.isee >= 14000) & (n.isee <= 16000)
@@ -370,14 +392,16 @@ def err_margine(nome, sim, obi, livello):
 def p1(t, D, rep):
     r = t[t.origine == "residente"]; K = len(D["NIL"]); out = []
     nta = np.zeros((K, 8, 4)); np.add.at(nta, (r.nil_i, r.tip, r.eta), 1)
+    m0 = np.zeros((K, 4, 8, 5)); np.add.at(m0, (r.nil_i, r.eta, r.tip, r.dim - 1), 1)
+    out.append(err_margine("M0 congiunta ds1441 NIL x eta x tipologia x componenti", m0, D["M0"], "NIL"))  # [v2 P1-0]
     out.append(err_margine("M1 NIL x tipologia", nta.sum(2), D["M1"], "NIL"))
     out.append(err_margine("M2 tipologia x eta", nta.sum(0), D["M2"], "citta"))
     out.append(err_margine("M3a soli >=65 per NIL", nta[:, MONO, 2:].sum(1), D["M3a"], "NIL"))
     out.append(err_margine("M3b capofamiglia <35 per NIL", nta[:, :, 0].sum(1), D["M3b"], "NIL"))
     out.append(err_margine("M4 componenti", np.bincount(r.dim - 1, minlength=5), D["M4"], "citta"))
     Nn = np.bincount(r.nil_i, minlength=K)
-    out.append(err_margine("M5a con minori per NIL (quota 2021 x famiglie 2025)", np.bincount(r.nil_i[r.minori > 0], minlength=K), D["M5"][0] * Nn, "NIL"))
-    out.append(err_margine("M5b monogenitori con minori per NIL", np.bincount(r.nil_i[(r.minori > 0) & (r.tip == MG)], minlength=K), D["M5"][1] * Nn, "NIL"))
+    out.append(err_margine("M5a con minori per NIL (quote condizionate ds139 2021)", np.bincount(r.nil_i[r.minori > 0], minlength=K), rep["M5a_target"], "NIL"))
+    out.append(err_margine("M5b monogenitori con minori per NIL", np.bincount(r.nil_i[(r.minori > 0) & (r.tip == MG)], minlength=K), rep["M5b_target"], "NIL"))
     out.append(err_margine("M6 totale minori", [r.minori.sum()], [D["M6"]], "citta"))
     lab = ["affitto", "proprieta", "altro"]; ct = np.array([(r.titolo == l).sum() for l in lab])
     out.append(err_margine("M7 titolo (citta)", ct, D["M7"] * len(r), "citta"))
@@ -386,7 +410,7 @@ def p1(t, D, rep):
     out.append(err_margine("M9 classi MEF (percettori)", rep["M9_sim"], D["M9"] * rep["M9_sim"].sum() / D["M9"].sum(), "citta"))
     out.append(err_margine("P1c totale residenti", [len(r)], [D["M1"].sum()], "citta"))
     e = pd.DataFrame(out)
-    soglia = {"M2": .005, "M4": .005, "M6": .005, "M7": .005, "M9": .01, "M1": .01, "M3a": .01, "M3b": .01, "M5a": .01, "M5b": .01, "M8": .01, "P1c": 0}
+    soglia = {"M0": 0, "M2": .005, "M4": .005, "M6": .005, "M7": .005, "M9": .01, "M1": .01, "M3a": .01, "M3b": .01, "M5a": .01, "M5b": .01, "M8": .01, "P1c": 0}
     e["soglia_TAE_N"] = e.margine.str.split().str[0].map(soglia)
     e["passa"] = (e.TAE_N <= e.soglia_TAE_N + 1e-12) & ((e.livello != "NIL") | (((e.err_rel_max_celle100.fillna(0) <= .05)) & (e.err_abs_max_celle_lt100.fillna(0) <= 10)))
     return e
@@ -395,7 +419,9 @@ def p2(t, anc, tol_netto=0.0):  # tol_netto: solo per i file arrotondati a 2 dec
     G = geo(); r = t[t.origine != "studente"]; c = {}
     c["NIL valido"] = r.nil.isin(carica_nil()).all()
     c["categoria/titolo/dim"] = t.categoria.notna().all() and t.titolo.notna().all() and (t.dim >= 1).all()
-    c["mono <=> dim 1 (tipologia Monocomponente)"] = ((r.tip == MONO) == (r.dim == 1)).all()
+    c["dim 1 <=> tipologia Monocomponente o In convivenza"] = (r.tip.isin([MONO, INCONV]) == (r.dim == 1)).all()  # [v2 P2]
+    rr_ = r[r.origine == "residente"]; m0 = np.zeros_like(carica()["M0"]); np.add.at(m0, (np.searchsorted(carica_nil(), rr_.nil), rr_.eta, rr_.tip, rr_.dim - 1), 1)
+    c["congiunta residenti = M0 cella per cella"] = bool((m0 == carica()["M0"]).all())
     a = r[r.categoria == CAT[2]]; c["anziani soli: dim 1, eta >= 65"] = ((a.dim == 1) & (a.eta >= 2)).all()
     f = t[t.categoria == CAT[1]]; c["famiglie con minori: >=1 minore, dim >=2"] = ((f.minori >= 1) & (f.dim >= 2)).all()
     c["minori <= dim-1"] = (t.minori <= t.dim - 1).all()
@@ -431,7 +457,7 @@ def generatori(t, seme=SEME, n_lotti=50, k=5):
     U2 = U.copy()
     m = tipo == 0; U2[m] = 10 * np.floor(3 * xk[m]) + Xl[:, 1][None, :]  # lessicografiche (3 livelli, poi criterio 1 = budget) [H]
     m = tipo == 1; U2[m] = 0.3 * U[m] + 0.7 * s_own[None, :]  # omofile: quota della propria categoria sul lotto, non vista
-    m = tipo == 2; U2[m] = Xl[:, k - 1][None, :] * np.ones((m.sum(), 1))  # minoranza polarizzata sul criterio con peso G1 piu' basso
+    m = tipo == 2; xs = g2.uniform(0.3, 0.7, m.sum()); U2[m] = -np.abs(Xl[:, k - 1][None, :] - xs[:, None]) + 0.01 * Xl[:, 1][None, :]  # [v2 C5] punto ideale
     m = tipo == 3; thr = g2.uniform(0.3, 0.7, m.sum()); U2[m] = np.where(Xl[:, 0][None, :] < thr[:, None], -10 + U[m], U[m])  # soglia sulle ancore
     m = tipo == 4; Z = (U[m] - U[m].mean(1, keepdims=True)) / U[m].std(1, keepdims=True); U2[m] = Z + g2.standard_normal(Z.shape)  # rumore sd 1
     dich = np.clip(W2 + 0.1 * g2.standard_normal(W2.shape), 0, None); strat = g2.random(N) < 0.1
@@ -477,7 +503,7 @@ def riassunto(t):
 def esegui(seme=SEME, pilota=False, scenario="base", scrivi=False, con_hash=True):
     t, anc, D, rep, P = genera(seme, pilota, **SCENARI[scenario]); t["tip"] = t.tip.astype(int)
     t = t[[c for c in COL if c in t.columns]]; h = hash_contenuto(t, anc) if con_hash else None
-    out = dict(seme=seme, scenario=scenario, pilota=pilota, hash_contenuto=h, n=len(t), rep={k: v for k, v in rep.items() if k not in ("TD", "TT", "M9_sim")})
+    out = dict(seme=seme, scenario=scenario, pilota=pilota, hash_contenuto=h, n=len(t), rep={k: v for k, v in rep.items() if k not in ("TT", "M9_sim", "M5a_target", "M5b_target")})
     if not pilota:
         e = p1(t.assign(nil_i=pd.Series(np.searchsorted(D["NIL"], t.nil)).where(t.nil >= 0, -1)), D, rep); out["P1_passa"] = bool(e.passa.all())
         out["P1"] = e
@@ -506,18 +532,19 @@ def completa(o):
     o["P1"].to_csv(os.path.join(TAB, "P1_errore_margini.csv"), index=False)
     c2, info = p2(t, anc); r5 = p5(t, o["seme"], scrivi=True)
     o["riassunto"].to_csv(os.path.join(TAB, "categorie_base.csv"))
-    # confronto informativo con le congiunte vere di ds1441 (non e' un criterio)
-    r = t[t.origine == "residente"]; K = len(D["NIL"]); nta = np.zeros((K, 8, 4)); np.add.at(nta, (np.searchsorted(D["NIL"], r.nil), r.tip, r.eta), 1)
-    td = np.zeros((8, 5)); np.add.at(td, (r.tip, r.dim - 1), 1)
-    info_vero = [err_margine("INFO congiunta vera NIL x tipologia x eta (ds1441)", nta, D["vero"]["nta"], "info"),
-                 err_margine("INFO congiunta vera tipologia x componenti (ds1441)", td, D["vero"]["td"], "info")]
-    pd.DataFrame(info_vero).to_csv(os.path.join(TAB, "info_congiunte_vere.csv"), index=False)
-    pd.DataFrame(rep["TD"], index=TIP, columns=DIM).round(1).to_csv(os.path.join(TAB, "ipf_tipologia_componenti.csv"))
-    pd.DataFrame(D["vero"]["td"], index=TIP, columns=DIM).to_csv(os.path.join(TAB, "vero_tipologia_componenti_ds1441.csv"))
+    # [v2] informativo: quota con minori per NIL, 2025 simulato contro ds139 2021
+    r = t[t.origine == "residente"]; K = len(D["NIL"]); Nn = np.bincount(np.searchsorted(D["NIL"], r.nil), minlength=K)
+    q25 = np.bincount(np.searchsorted(D["NIL"], r.nil[r.minori > 0]), minlength=K) / Nn
+    inf = pd.DataFrame(dict(nil=D["NIL"], famiglie_2025=Nn, quota_minori_2025_sim=q25, quota_minori_2021_ds139=D["M5"][0]))
+    inf.to_csv(os.path.join(TAB, "info_minori_2025_vs_2021.csv"), index=False)
+    info_vero = [dict(spearman=float(inf.quota_minori_2025_sim.corr(inf.quota_minori_2021_ds139, method="spearman")),
+                      scarto_ass_max=float((inf.quota_minori_2025_sim - inf.quota_minori_2021_ds139).abs().max()), citta_2025=float((r.minori > 0).mean()),
+                      ripiego_RC=rep["ripiego_RC"], ripiego_RM=rep["ripiego_RM"])]
+    a_ = t[t.origine == "nuovo arrivo"]; pd.crosstab(a_.tip.map(dict(enumerate(TIP))), a_.dim).to_csv(os.path.join(TAB, "info_arrivi_tipologia_componenti.csv"))
     ric = t[t.richiedente]; ric.to_csv(os.path.join(TAB, "richiedenti_base.csv.gz"), index=False, float_format="%.2f")
     anc[anc.id.isin(ric.id)].to_csv(os.path.join(TAB, "ancore_richiedenti_base.csv.gz"), index=False, float_format="%.1f")
     esito = dict(seme=o["seme"], hash_contenuto=o["hash_contenuto"], P1_passa=o["P1_passa"], P2=c2, P2_info=info, P5=r5, rep=o["rep"],
-                 congiunte_vere=[{k: v for k, v in x.items()} for x in info_vero])
+                 info_minori=info_vero)
     json.dump(esito, open(os.path.join(TAB, "esito_base.json"), "w"), indent=1, default=str)
     print(json.dumps(esito, indent=1, default=str))
 
