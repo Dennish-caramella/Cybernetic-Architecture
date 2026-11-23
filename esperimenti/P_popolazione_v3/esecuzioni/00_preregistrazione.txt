@@ -1,0 +1,43 @@
+PRE-REGISTRAZIONE Base P v3 (ticket #18; segue la v2, esito CAMBIA) — popolazione sintetica dei nuclei abitativi di Milano. Testo di REPORT.md §1.
+Scritta il 2026-11-23 intorno alle 11:25Z dall'agente demografo-popolazioni-sintetiche, PRIMA di scrivere il codice v3 e di eseguire qualsiasi calcolo v3. L'SHA-256 è in 00_preregistrazione.sha256.
+VALIDITÀ: vale solo se questo file e il suo .sha256 sono COMMITTATI prima della prima esecuzione del codice v3 (anche del pilota). Il commit sarà la riga 1 di esecuzioni/registro.txt. Dopo il commit nessuna regola cambia; sono ammesse solo correzioni di codice o di acquisizione dei dati, ciascuna a registro con il motivo.
+RIMANDO: per tutto ciò che qui non è scritto valgono la pre-registrazione v2 (esperimenti/P_popolazione_v2/esecuzioni/00_preregistrazione.txt, SHA-256 1bf8df2a4b2e338270e37a8105a71d605ef0c64136a3bc8cc071a7b689e454d8, commit eeaeca19) e, attraverso questa, la v1 (fa0ec4f8…). Vale lo stesso per dati, cache (v1, sola lettura, verifica con gli SHA-256), semi, categorie, scelte D1-D10 e N1-N2 e N4-N6, criteri P1-P6 con le STESSE soglie, regola di arresto e piano di esecuzione.
+Marche: [V] verificato; [I] inferenza; [H] ipotesi; [H-N3] scelta nuova di questa versione.
+
+0. COSA HO VISTO (la v3 NON è cieca su M8 né su P1-P3, P5, P6)
+ Della v2 ho visto tutti i risultati e la diagnosi (REPORT v2 e esperimenti/P_popolazione_v2/esecuzioni/registro.txt):
+ - P1 fallito SOLO su M8, per la soglia di cella. NIL 66 "altro" 99 contro 105 (5,7%); NIL 41 "altro" 120 contro 127 (5,5%). TAE/N di M8 0,12%; in città 286 nuclei "altro" in meno e 302 proprietari in più.
+ - P2 passato (18 su 18); P3 fallito solo perché P1 falliva su tutti i semi (stesso hash; coefficiente di variazione dei richiedenti ≤ 0,27%); P5 passato (G2 95,6%, polarizzate 100%); P6 con il solo S5 oltre il fattore 2.
+ - Hash di contenuto v2: b34aef34…; conteggi per categoria nel REPORT v2.
+ P4 (V1, V2, V3) è ANCORA CHIUSO: non l'ho aperto né nella v1 né nella v2.
+
+1. L'UNICA MODIFICA: titolo di godimento con arrotondamento controllato a due vincoli [H-N3] (sostituisce N3 della v2)
+ Notazione, per ogni NIL i:
+  - celle c = (età, tipologia, componenti) dei residenti, con N_c nuclei (M0);
+  - modalità k ∈ {affitto, proprietà, altro};
+  - quote q_ik = TT_ik / N_i, dove TT è l'IPF della v1/v2 (ds1457 2011 riscalato su ISTAT 2021): stesse quote, stessa ipotesi T0.
+ Passo A, totali NIL × titolo interi: T_i = hamilton(TT_i, N_i). Resti maggiori, spareggio col flusso [0]; Σ_k T_ik = N_i.
+ Passo B, valori attesi di cella: E_ck = N_c · T_ik / N_i. Per costruzione Σ_c E_ck = T_ik e Σ_k E_ck = N_c.
+ Passo C, arrotondamento sequenziale per somme cumulate (sistematico), cominciando dalla modalità rara:
+  C1 Le celle del NIL si mettono in un ordine casuale π_i, permutazione dal flusso [0].
+  C2 altro: si estrae u ~ U(0,1) dal flusso [0]; con C_c = somma cumulata di E_{c',altro} fino a c nell'ordine π_i, x_{c,altro} = ⌊C_c + u⌋ − ⌊C_{c−1} + u⌋, con C_0 = 0. Allora Σ_c x_{c,altro} = T_{i,altro} esattamente, ogni x_{c,altro} ∈ {⌊E⌋, ⌈E⌉} e x_{c,altro} ≤ N_c.
+  C3 affitto: R_c = N_c − x_{c,altro}; E'_c = R_c · T_{i,aff} / (T_{i,aff} + T_{i,prop}), quindi Σ_c E'_c = T_{i,aff}. Si arrotonda E'_c con la stessa regola di C2, con un nuovo u e lo stesso ordine π_i. Risultato: Σ_c x_{c,aff} = T_{i,aff} e x_{c,aff} ≤ R_c.
+  C4 proprietà: x_{c,prop} = R_c − x_{c,aff}.
+  Proprietà del metodo: le somme di riga sono N_c esatte, le somme NIL × titolo sono T_ik esatte, ogni cella è entro 1 dal valore atteso del suo passo.
+ Passo D: dentro la cella, le etichette si assegnano ai nuclei con una permutazione casuale (flusso [2]), come nella v2.
+ Variante T1 (S1): E_ck = N_c · Q_{i,a(c),k}, con Q dall'IPF età × titolo della v1/v2. T_ik = hamilton(Σ_c E_ck, N_i). Prima di C2 e di C3 si riscalano i valori attesi della modalità perché sommino a T_ik (per altro: E_c · T_{i,altro} / Σ E_c,altro; per affitto: R_c · Q_aff / (Q_aff + Q_prop), riscalato a T_{i,aff}). Se un valore riscalato supera il residuo della cella, si tronca al residuo e lo si annota a registro.
+ Studenti e nuovi arrivati restano in affitto per definizione, come prima.
+ Conseguenze attese [I], scritte prima di eseguire:
+  - errore di M8 ≤ 0,5 per cella (solo il passo A, contro i valori non interi di TT), quindi errore relativo ≤ 0,5% sulle celle ≥ 100;
+  - M7 entro la somma degli arrotondamenti del passo A;
+  - la varianza fra semi resta bassa.
+ Se queste attese non si realizzano, è un errore di codice o del metodo: vale la regola di arresto.
+
+2. CRITERI E SOGLIE: identici alla v2 (P1-0, P1a-P1c, P2 con 18 invarianti, P3, P4, P5, P6). Nessuna soglia cambiata.
+ P4 si valuta UNA sola volta, con valida_p4.py (l'unico script che legge le colonne tenute fuori di ds205), solo se passano P1, P2 e P3, prima di P6; l'esito va a registro subito.
+
+3. SEMI: identici (SEME = 20261122, SeedSequence.spawn(9), semi di robustezza +1…+10). Il flusso [0] serve per gli spareggi del passo A, le permutazioni π_i e gli u dei passi C2 e C3, oltre agli usi della v2 (minori, arrivi).
+
+4. CODICE: copia di esperimenti/P_popolazione_v2/ in esperimenti/P_popolazione_v3/, con la sola sostituzione del blocco "4.2 titolo" secondo la sezione 1; in più valida_p4.py (previsto dalla v2, non ancora scritto). Output in esperimenti/_cache/P_popolazione_v3/.
+
+5. LIMITI in più: la v3 nasce dopo aver visto il fallimento di M8 (sezione 0). La modifica rimuove una distorsione di arrotondamento e non cambia nessuna ipotesi sulle quote. Il rischio di adattare il metodo ai criteri riguarda solo M8, ed è mitigato dalle soglie invariate e da P4 tuttora cieco.
