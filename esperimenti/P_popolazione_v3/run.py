@@ -345,7 +345,10 @@ def genera(seme=SEME, pilota=False, **par):
                                CAT[1:5], CAT[5])
     n["isee_14_16"] = (n.isee >= 14000) & (n.isee <= 16000)
     n["fascia_grigia"] = (n.isee > 16000) & (12 * n.canone_mese > 0.30 * n.netto)
-    st["categoria"] = CAT[0]; st["isee_14_16"] = False; st["fascia_grigia"] = False
+    for nome, c_ in (("omi", mid * mq), ("annunci", 23.3 * mq)):  # [v3, REVISIONE G1] stessa regola dello scenario S3, per entrambe le fonti dei canoni
+        is_ = np.maximum(n.lordo - n.ded - np.where(aff, np.minimum(12 * c_, 7000), 0), 0) / n.dim.map(SCALA_ISEE)
+        nt_ = n.netto_redditi + 12 * n.minori * auu_mese(is_.values); n[f"fascia_grigia_{nome}"] = (is_ > 16000) & (12 * c_ > 0.30 * nt_)
+    st["categoria"] = CAT[0]; st["isee_14_16"] = False; st["fascia_grigia"] = False; st["fascia_grigia_omi"] = False; st["fascia_grigia_annunci"] = False
     n["sap"] = False
     if P["sap"] == "esclusi":  # 62.457 alloggi [S] tolti dagli affittuari residenti in proporzione agli affittuari del NIL [H]
         idx = np.flatnonzero(res & aff); sc = 62457 if not pilota else int(62457 * len(idx) / 231364)
@@ -514,16 +517,19 @@ def hash_contenuto(t, anc):
 COL = ["id", "origine", "nil", "categoria", "isee_14_16", "fascia_grigia", "richiedente", "tip", "eta", "dim", "adulti", "minori", "titolo", "sap",
        "percettori", "lordo", "netto", "isee", "canone_mese", "mq", "budget", "zona_omi", "x", "y", "ateneo", "idoneo_dsu", "in_residenza"]
 
+EXTRA = ["fascia_grigia_omi", "fascia_grigia_annunci"]  # [v3] fuori dall'hash di contenuto (l'hash della base resta quello pre-esistente)
+
 def riassunto(t):
     c = t.groupby("categoria").size().reindex(CAT, fill_value=0); q = t[t.richiedente].groupby("categoria").size().reindex(CAT, fill_value=0)
     rq = t[t.richiedente]
     return pd.DataFrame(dict(tutti=c, richiedenti=q, fascia_grigia_quota_rich=rq.groupby("categoria").fascia_grigia.mean().reindex(CAT),
                              isee_14_16_quota_rich=rq.groupby("categoria").isee_14_16.mean().reindex(CAT),
-                             budget_mediano_rich=rq.groupby("categoria").budget.median().reindex(CAT)))
+                             budget_mediano_rich=rq.groupby("categoria").budget.median().reindex(CAT),
+                             **{f"rich_{e}": rq.groupby("categoria")[e].sum().reindex(CAT, fill_value=0) for e in EXTRA if e in t.columns}))
 
 def esegui(seme=SEME, pilota=False, scenario="base", scrivi=False, con_hash=True):
     t, anc, D, rep, P = genera(seme, pilota, **SCENARI[scenario]); t["tip"] = t.tip.astype(int)
-    t = t[[c for c in COL if c in t.columns]]; h = hash_contenuto(t, anc) if con_hash else None
+    t = t[[c for c in COL + EXTRA if c in t.columns]]; h = hash_contenuto(t[[c for c in COL if c in t.columns]], anc) if con_hash else None
     out = dict(seme=seme, scenario=scenario, pilota=pilota, hash_contenuto=h, n=len(t), rep={k: v for k, v in rep.items() if k not in ("TT", "M9_sim", "M5a_target", "M5b_target")})
     if not pilota:
         e = p1(t.assign(nil_i=pd.Series(np.searchsorted(D["NIL"], t.nil)).where(t.nil >= 0, -1)), D, rep); out["P1_passa"] = bool(e.passa.all())
@@ -544,7 +550,10 @@ def main(a):
         print(json.dumps({k: v for k, v in o.items() if k not in ("P1", "riassunto", "t", "anc", "D", "rep_full")}, default=str, indent=1))
         if "P1" in o: print(o["P1"].to_string())
         print(o["riassunto"].to_string())
-        if "--scrivi" in a: completa(o)
+        if "--scrivi" in a and sc == "base": completa(o)
+        if "--scrivi" in a and sc != "base":  # [v3] popolazione di scenario (es. S5): richiedenti nel repo, popolazione completa in cache
+            o["t"][o["t"].richiedente].to_csv(os.path.join(TAB, f"richiedenti_{sc}.csv.gz"), index=False, float_format="%.2f")
+            o["riassunto"].to_csv(os.path.join(TAB, f"categorie_{sc}.csv"))
     if a[0] == "robustezza": robustezza()
     if a[0] == "sensibilita": sensibilita()
 
