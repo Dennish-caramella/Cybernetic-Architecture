@@ -39,7 +39,7 @@ const ok = (c, m) => { console.log((c ? "PASSA " : "FALLISCE ") + m); if (!c) pr
     // revisione D1, D2, D6, D7
     const rv = await p.evaluate(() => { let rk; try { TOOLS().find((x) => x.name == "get_ranking").execute({ indicator: "d_tau" }); rk = "accettato"; } catch (x) { rk = "rifiutato"; }
       const L = (h) => { const c = h.match(/\d+/g).slice(0, 3).map((x) => +x / 255).map((x) => x <= 0.04045 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4); return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]; };
-      const cr = (a, b) => { const x = L(a), y = L(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
+      const cr = window.__cr = (a, b) => { const x = L(a), y = L(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
       const hex = (h) => { h = h.trim().replace("#", ""); return `rgb(${parseInt(h.slice(0, 2), 16)}, ${parseInt(h.slice(2, 4), 16)}, ${parseInt(h.slice(4, 6), 16)})`; };
       const land = hex(getComputedStyle($("map")).getPropertyValue("--land")), lc = {};
       ["E", "R", "A", "G"].forEach((k) => { lc[k] = +cr(getComputedStyle(LOTS.find((x) => x.p.k == k).el).stroke, land).toFixed(2); });
@@ -70,6 +70,8 @@ const ok = (c, m) => { console.log((c ? "PASSA " : "FALLISCE ") + m); if (!c) pr
         && (id != "E00205" || /in ambito, stato non censito/.test(s)), `M7 D3 D4 M6 ${t} ${id} come nel gpkg e scheda corretta ${JSON.stringify(got)}`);
     }
     ok(/lago su oltre metà/.test(await sch("E00170")), `D5 ${t} nota sui corpi idrici per E00170`);
+    const tg = await p.evaluate(() => { const e = document.querySelector("#lsch .tag"), s = getComputedStyle(e); return +window.__cr(s.color, s.backgroundColor).toFixed(2); });
+    ok(tg >= 4.5, `D7 ${t} etichetta di classe nella scheda: contrasto ${tg}`);
     ok(/alloggi \(FAR 0,5 \/ 1 \/ 2\)/.test(e) && /Base E v2/.test(e) && /canone di pareggio/.test(e) && /Proprietà/.test(e) && /Stato attuativo/.test(e), `${t} scheda edificabile con Base E v2`);
     if (SHOT && !offline) await p.screenshot({ path: path.join(SHOT, `banco_${w}_${scheme}.png`), fullPage: w == 400 });
     await p.click('#lcl button[data-k="E"]');
