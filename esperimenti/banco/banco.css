@@ -1,0 +1,28 @@
+
+/* banco: lotti della Base L v7 */
+#lotti path { fill-rule: evenodd; fill-opacity: .35; stroke-width: 1.3px; vector-effect: non-scaling-stroke; }
+#lotti path.kG { fill-opacity: .06; stroke-dasharray: 4 3; stroke-width: 1.6px; }
+#lotti:not(.off) path { pointer-events: auto; cursor: pointer; }
+#lotti path.hot { stroke: var(--white) !important; stroke-width: 3.5px; }
+.lab .warn { border-color: var(--study); }
+.lab .warn ul { margin: 0; padding-left: 16px; display: grid; gap: 3px; }
+.lab .card summary { cursor: pointer; }
+.lab table.sch th { text-align: left; color: var(--muted); font-weight: 400; vertical-align: top; white-space: normal; width: 34%; }
+.lab table.sch td { text-align: left; white-space: normal; overflow-wrap: anywhere; font: 11px var(--sans); color: var(--fg); }
+.lab td, .lab th { white-space: normal; }
+.lab .sel-row select, .lab .lin { width: 100%; background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; font-size: 12px; color: var(--white); }
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f3f4f6; --panel: #ffffff; --panel2: #eef0f3; --line: #d5d9de; --fg: #2a2f36; --muted: #5b6470; --white: #0d1117; --link: #1f5fbf; color-scheme: light; }
+  .dash { background: rgb(255 255 255 / .96); }
+  .pill, .ctl button { background: rgb(255 255 255 / .94); border-color: #c9cfd6; color: #2a2f36; }
+  .tip, .loading { background: rgb(255 255 255 / .97); border-color: #c9cfd6; }
+  .steps { background: #e8ebee; border-top-color: #d5d9de; } .steps .arr { color: #9aa3ad; }
+  .msg.user .bub { background: #dde3ea; } .cite, .tbl { background: #f7f8fa; border-color: #d5d9de; } .tbl .cap { border-color: #d5d9de; }
+  .chip-b, .h button, .ins .nav button, .sugg button, .bands button { border-color: #c5cbd2; }
+  .rank button:hover, .rank button.on, .lab tr[data-act]:hover td { background: #e3e7eb; }
+  .lab .tag { background: #e3e7eb; } .lab .pair button { background: #f7f8fa; border-color: #c5cbd2; }
+  .send, .bands .ck { color: #fff; } .key { text-shadow: none; } .hist rect { fill: #aab3bd; }
+  .brand .mode.demo { background: #d5d9de; }
+}
+#lcl .lb { white-space: normal; }
+#lcl .sw { background: none !important; }
