@@ -354,7 +354,9 @@ def ancore(n, st, g, g2):
     for a in np.unique(st.ateneo):
         m = (st.ateneo == a).values; sd = G["sedi"][a]; xy[m] = sd[g2.integers(0, len(sd), m.sum())]
     out.append(pd.DataFrame(dict(pos=ps, tipo="universita", x=xy[:, 0], y=xy[:, 1], fuori_milano=False)))
-    return pd.concat(out, ignore_index=True)
+    a = pd.concat(out, ignore_index=True)  # flag dalla geometria: alcuni ambulatori MMG stanno appena fuori dal confine [registro]
+    a["fuori_milano"] = a.fuori_milano.values | ~gpd.GeoSeries(gpd.points_from_xy(a.x, a.y), crs=CRS).within(G["conf"].buffer(1.0)).values
+    return a
 
 # ------------------------------------------------------------------ criteri P1, P2, P5
 def err_margine(nome, sim, obi, livello):

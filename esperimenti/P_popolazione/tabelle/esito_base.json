@@ -1,6 +1,6 @@
 {
  "seme": 20261122,
- "hash_contenuto": "a5b9ded78390b08d0ab56d13b1b265827426f44b50a1c15d1a720b599ed9827f",
+ "hash_contenuto": "17a10161269db2283b71ad813a6db9a59df83516e748be91daeb34c000089f9a",
  "P1_passa": false,
  "P2": {
   "NIL valido": true,
@@ -15,14 +15,14 @@
   "minori -> >=1 ancora scuola": true,
   "studente -> 1 ancora universita": true,
   "percettore non pensionato -> 1 ancora lavoro": true,
-  "coordinate valide": false,
-  "ancore non 'fuori Milano' dentro il confine": false,
+  "coordinate valide": true,
+  "ancore non 'fuori Milano' dentro il confine": true,
   "residenza dentro il confine": true,
   "studenti e arrivi marcati": true,
   "nessun campo da LLM": true
  },
  "P2_info": {
-  "ancore_fuori_confine": 577813,
+  "ancore_fuori_confine": 0,
   "residenze_fuori": 0
  },
  "P5": {
