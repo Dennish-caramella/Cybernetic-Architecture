@@ -1,4 +1,4 @@
-"""Base P v3 (ticket #18; unica modifica: titolo con arrotondamento a due vincoli, pre-registrazione v3 a2561ce8...; resto = v2; regole v2: sha256 1bf8df2a...; differenze dalla v1 marcate [v2]): popolazione sintetica dei nuclei abitativi di Milano.
+"""Base P v4 (ticket #18; [v4] unica modifica: reddito per ruoli (b), pre-registrazione 87392129...; v3: titolo con arrotondamento a due vincoli, pre-registrazione v3 a2561ce8...; resto = v2; regole v2: sha256 1bf8df2a...; differenze dalla v1 marcate [v2]): popolazione sintetica dei nuclei abitativi di Milano.
 Regole v1: sha256 fa0ec4f8.... Dati: scarica.py -> ../_cache/P_popolazione/raw/.
 Uso:
   python3 -I run.py controlla                      # margini dal grezzo = CSV delle note (sezione 0 / regola di arresto)
@@ -15,7 +15,7 @@ from scipy.stats import norm
 
 QUI = os.path.dirname(os.path.abspath(__file__))
 RAW = os.path.join(QUI, "..", "_cache", "P_popolazione", "raw")  # cache v1, sola lettura (hash in dati_metadati.csv)
-OUT = os.path.join(QUI, "..", "_cache", "P_popolazione_v3", "out")
+OUT = os.path.join(QUI, "..", "_cache", "P_popolazione_v4", "out")
 TAB = os.path.join(QUI, "tabelle")
 NOTE = os.path.join(QUI, "..", "..", "secondo_cervello", "ricerche", "milano_dati")
 SEME = 20261122
@@ -32,12 +32,13 @@ MEF_CL = [("0-10k", 0, 10000, "da 0 a 10000 euro"), ("10-15k", 10000, 15000, "da
           ("55-75k", 55000, 75000, "da 55000 a 75000 euro"), ("75-120k", 75000, 120000, "da 75000 a 120000 euro"),
           (">120k", 120000, np.inf, "oltre 120000 euro")]
 BASE = dict(tenure="T0", studenti=70000, in_residenza=11000, canone="omi", rho_p=0.0, rho_eta=0.0, giovani_coppie="sposate",
-            sap="inclusi", arrivi_dim=1.5, arrivi_shift=0.0, budget="30", q2=0.7, q_dsu=0.3)
+            sap="inclusi", arrivi_dim=1.5, arrivi_shift=0.0, budget="30", q2=0.7, q_dsu=0.3, s_ruolo=0.5, c2=False)  # [v4] s base 0,5 [H-R]; c2 non applicato: Allegato 2 INPS non leggibile [L], a registro
 SCENARI = {"base": {}, "S1_T1": dict(tenure="T1"), "S2_stud50k": dict(studenti=50000), "S2_stud90k": dict(studenti=90000),
            "S2_res16k": dict(in_residenza=16000), "S3_annunci": dict(canone="annunci"), "S4_rho_p05": dict(rho_p=0.5),
            "S4_rho_eta": dict(rho_eta=-0.3), "S5_conviventi": dict(giovani_coppie="+conviventi"), "S6_sap_esclusi": dict(sap="esclusi"),
            "S7_dim2": dict(arrivi_dim=2.0), "S7_shift": dict(arrivi_shift=-0.2), "S8_residuo": dict(budget="residuo"),
-           "S9_q05": dict(q2=0.5), "S9_q09": dict(q2=0.9)}
+           "S9_q05": dict(q2=0.5), "S9_q09": dict(q2=0.9),
+           "S10_s0": dict(s_ruolo=0.0), "S10_s1": dict(s_ruolo=1.0), "S11_senza_c2": dict(c2=False)}  # [v4]
 CAT = ["studenti fuori sede", "famiglie con figli minorenni", "anziani soli", "giovani coppie", "giovani soli e nuovi arrivati", "nessuna categoria"]
 MQ = {1: 45, 2: 60, 3: 75, 4: 85, 5: 95}  # m2; monogenitore con 1 figlio = 65 [H, 4.5]
 SCALA_ISEE = {1: 1.0, 2: 1.57, 3: 2.04, 4: 2.46, 5: 2.85}  # 5: [L]
@@ -321,6 +322,13 @@ def genera(seme=SEME, pilota=False, **par):
         part = (rk == 1) & n.tip.isin([CSF, CCF]).values[rid]; z[part] = P["rho_p"] * zf[part] + np.sqrt(1 - P["rho_p"] ** 2) * z[part]
     u = norm.cdf(z)
     if P["arrivi_shift"]: a_ = (n.origine.values[rid] == "nuovo arrivo"); u[a_] = np.clip(u[a_] + P["arrivi_shift"], 1e-9, 1 - 1e-9)
+    # [v4 (b)] ruoli: principale (rk = 0) e secondari; punteggio = s*rango(u) + (1-s)*U; i n_sec punteggi piu' bassi cedono i loro u ai secondari;
+    # dentro ogni ruolo gli u si riassegnano conservando l'ordine dei ranghi originali (stesso insieme di u -> M9 invariato)
+    sec = rk > 0; sr = P["s_ruolo"]; rnk = np.argsort(np.argsort(u)) / max(len(u) - 1, 1); vv = g.random(len(u))
+    o_ = np.argsort(sr * rnk + (1 - sr) * vv, kind="stable"); ns = int(sec.sum()); un = np.empty_like(u)
+    for idx, pool in ((np.flatnonzero(sec), np.sort(u[o_[:ns]])), (np.flatnonzero(~sec), np.sort(u[o_[ns:]]))):
+        un[idx[np.argsort(u[idx], kind="stable")]] = pool
+    u = un; rep["n_secondari"] = ns
     L, kcl = lordo_da_u(u, D["M9"], D["media_top"]); rep["M9_sim"] = np.bincount(kcl, minlength=7)
     nt = netto(L, pens); ded = np.where(pens, 0, np.minimum(0.2 * L, 3000))
     n["lordo"] = np.bincount(rid, L, len(n)); n["netto_redditi"] = np.bincount(rid, nt, len(n))
