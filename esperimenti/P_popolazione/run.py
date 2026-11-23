@@ -474,9 +474,9 @@ def riassunto(t):
                              isee_14_16_quota_rich=rq.groupby("categoria").isee_14_16.mean().reindex(CAT),
                              budget_mediano_rich=rq.groupby("categoria").budget.median().reindex(CAT)))
 
-def esegui(seme=SEME, pilota=False, scenario="base", scrivi=False):
+def esegui(seme=SEME, pilota=False, scenario="base", scrivi=False, con_hash=True):
     t, anc, D, rep, P = genera(seme, pilota, **SCENARI[scenario]); t["tip"] = t.tip.astype(int)
-    t = t[[c for c in COL if c in t.columns]]; h = hash_contenuto(t, anc)
+    t = t[[c for c in COL if c in t.columns]]; h = hash_contenuto(t, anc) if con_hash else None
     out = dict(seme=seme, scenario=scenario, pilota=pilota, hash_contenuto=h, n=len(t), rep={k: v for k, v in rep.items() if k not in ("TD", "TT", "M9_sim")})
     if not pilota:
         e = p1(t.assign(nil_i=pd.Series(np.searchsorted(D["NIL"], t.nil)).where(t.nil >= 0, -1)), D, rep); out["P1_passa"] = bool(e.passa.all())
@@ -535,7 +535,7 @@ def robustezza():
 def sensibilita():
     righe = []
     for sc in SCENARI:
-        o = esegui(SEME, scenario=sc); r = o["riassunto"]
+        o = esegui(SEME, scenario=sc, con_hash=False); r = o["riassunto"]
         for c in CAT: righe.append(dict(scenario=sc, categoria=c, **r.loc[c].to_dict()))
         print(sc, flush=True)
     d = pd.DataFrame(righe); b = d[d.scenario == "base"].set_index("categoria").richiedenti
