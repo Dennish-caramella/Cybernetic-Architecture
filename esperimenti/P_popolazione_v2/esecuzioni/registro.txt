@@ -1,0 +1,3 @@
+eeaeca19f5d23066c86696ab6e85c4cf119f0bf2 2026-11-23T07:08:35Z commit della pre-registrazione v2 (00_preregistrazione.txt sha256 1bf8df2a4b2e338270e37a8105a71d605ef0c64136a3bc8cc071a7b689e454d8), ultimo commit che tocca il file (git log -1)
+2026-11-23T07:08:46Z Scelte N1-N6 accettate PROVVISORIAMENTE dal coordinatore, NON da Dennis (tesi/DECISIONI.md, voce 2026-11-23 "Base P v2: scelte N1-N6 accettate provvisoriamente dal coordinatore"). D1-D10 restano come nella v1 (provvisorie del coordinatore, 22/11).
+2026-11-23T07:08:46Z Inizio fase 2. Copia di run.py, scarica.py, test_popolazione.py, requirements.txt dalla v1; nessuna esecuzione prima di questa riga.

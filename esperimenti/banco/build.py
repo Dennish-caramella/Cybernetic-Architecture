@@ -92,5 +92,6 @@ data = {"lotti": {"type": "FeatureCollection", "features": lotti}, "nil": {"type
         "ces": ces, "cstar": cstar, "sha": hashes, "tol": [TOL_LOTTI, TOL_NIL], "nil_url": NIL_URL}
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 src = open(os.path.join(H, "banco.src.html"), encoding="utf-8").read()
+src = src.replace("/*LEAFLET_CSS*/", open(os.path.join(H, "leaflet-1.9.4.min.css"), encoding="utf-8").read().replace("url(images/", "url(https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/"))  # il visualizzatore degli artifact blocca i fogli di stile esterni (SRI verificato al download)
 open(os.path.join(H, "banco.html"), "w", encoding="utf-8").write(src.replace("/*__DATA__*/null", js))
 print("banco.html", os.path.getsize(os.path.join(H, "banco.html")), "byte;", n, cap["E"])
