@@ -21,7 +21,11 @@ Criteri B0–B9 soddisfatti nel test automatico. Da confermare con la revisione 
 Apertura nel visualizzatore simulata a rete bloccata, non provata dal vero; pinch provato solo con eventi simulati; a 400 px il pannello copre gran parte della mappa; la chat del Lab chiede la capacità `sample` (interrogare Claude), non dichiarata: risponde in demo; hash di contenuto della Base L non riproducibile dal gpkg (vale lo SHA-256 del file); limiti ereditati dalla Base L (schegge geometriche, nessuna maschera dei corpi idrici) e dalla Base E (non vincolo).
 
 ## 7. Revisione indipendente
-(da scrivere dal `revisore-metodologico`)
+Testo completo in `REVISIONE.md` (`revisore-metodologico`; altra istanza dello stesso sistema, non una verifica umana). **Esito proposto: passa, con correzioni.** Nessun difetto grave, regola di arresto non scattata.
+- Riproduzione [V]: build.py rieseguito, SHA-256 d'ingresso e di `banco.html` (`bfa8ad96…`) identici; test tutto PASSA; nessuna immagine AGEA o Sentinel.
+- Fedeltà [V]: 10 lotti (seme 17) contro `lotti_v7.gpkg` su 11 campi, 0 differenze; valori Base E, totali, scenari GFU e avvertenze coincidono.
+- Da correggere: D1 chiavi del modello di domanda escluso ancora raggiungibili dalla chat (falso zero); D2 "701 lotti" conta anche attivazione e GFU; D3 11 poligoni in ambito senza stato detti "fuori dagli ambiti"; D4 superficie marcata "[V] catasto" ma è l'area della geometria della base, fonti generiche; D5 mancano i limiti di validazione (riuso, AdP) e la maschera dei corpi idrici (E00170); D6 redditi per CAP riportati ai NIL senza avvertenza (40,57% su 5 NIL); D7 contrasto e tastiera nel tema chiaro.
+- Minori M1–M8: precisare "90 €/m²/anno non bastano" (98% della regione tarata); decimali; OMI 2024 e 2025/2 insieme; licenze; Google Fonts esterni; marche ripetute; test senza valori per lotto; pubblicazione prima della revisione (deviazione dal protocollo, dichiarata).
 
 ## 8. Cosa passa alla prova successiva
 Il banco è lo strumento su cui mostrare i risultati di A1–A4 e B0–B6: ogni analisi aggiunge uno strato o una dashboard con lo stesso meccanismo (`build.py` + `lotti.js`), con hash dei file d'ingresso controllati.
