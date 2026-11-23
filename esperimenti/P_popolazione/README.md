@@ -1,0 +1,2 @@
+Base P v1 (ticket #18): popolazione sintetica dei nuclei abitativi di Milano; regole in `esecuzioni/00_preregistrazione.txt`, esiti in `REPORT.md`, ogni passo in `esecuzioni/registro.txt`.
+Da zero: `python3 -I scarica.py && python3 -I run.py controlla && python3 -I run.py esegui --scrivi && python3 -I test_popolazione.py && python3 -I run.py robustezza && python3 -I run.py sensibilita` (seme 20261122; versioni in `requirements.txt`).
