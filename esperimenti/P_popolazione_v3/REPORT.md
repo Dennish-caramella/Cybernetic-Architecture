@@ -25,7 +25,7 @@ Sospeso: i criteri valutati passano; l'esito finale dipende da (a) come trattare
 Quelli di v1 e v2; inferenza sbagliata nella pre-registrazione (registrata); `valida_p4.py` mai eseguito (un suo errore emergerebbe solo all'unica esecuzione); confini NIL 2021–2025 non verificati; riproduzione da zero non fatta.
 
 ## 7. Revisione indipendente
-(da scrivere dal `revisore-metodologico`)
+Testo in `REVISIONE.md`. **Esito proposto: passa** per P1–P3 e P5 (riprodotti); attesa M8 = inferenza sbagliata; dopo v2 e v3 P1 non è una validazione esterna ("costruita dai dati"), l'unica validazione esterna è P4. Difetti gravi per l'uso a valle: **G1** fascia grigia ×3,5 secondo la fonte dei canoni (consegnare entrambe le definizioni); **G2** giovani coppie della base smentite dal dato (S5 come riferimento). Raccomanda di aprire P4 adesso, dopo prova a vuoto e appendice.
 
 ## 8. Cosa passa alla prova successiva
 Se Dennis tratta l'attesa come inferenza sbagliata e non come criterio: P4 una volta con `valida_p4.py`, esito a registro, poi congelamento con `VERSIONE.md` e due popolazioni (base e S5).

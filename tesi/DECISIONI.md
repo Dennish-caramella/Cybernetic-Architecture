@@ -82,3 +82,8 @@ H10–H19 della pre-registrazione della Base E v2 (`esperimenti/E_economia_v2/`)
 
 ## 2026-11-23 — Base P v2: scelte N1–N6 accettate provvisoriamente dal coordinatore
 La Base P v1 ha esito "cambia" (P1, P3 falliscono). La v2 (`esperimenti/P_popolazione_v2/`) usa la tabella congiunta vera di ds1441 e le quote dei minori da ds139 2021; scelte N1–N6 (ripieghi per le quote dei minori, componenti adulti nelle coppie senza figli, arrotondamento controllato del titolo e dei nuovi arrivati, forma a punto ideale per la minoranza polarizzata, nuova variante S5) accettate **dal coordinatore, non da Dennis**. D1–D10 invariate. La v2 non è cieca su P1–P3 (dichiarato).
+
+## 2026-11-23 — Base P: deviazioni registrate (dalla revisione della v3)
+- Le revisioni indipendenti della v1 e della v2 non sono state fatte (decisione del coordinatore, per risparmiare risorse: entrambe fallivano per i propri criteri); nessun ticket di revisione aperto. È una deviazione dal protocollo, registrata qui.
+- La scelta H-N3 della v3 (arrotondamento a due vincoli del titolo di godimento) è provvisoria del coordinatore, non di Dennis.
+- L'attesa "M8 ≤ 0,5 per cella" della pre-registrazione v3 è, secondo la revisione, un'inferenza matematicamente sbagliata e non un criterio. **Da decidere da Dennis**: trattarla così e aprire P4 (raccomandazione del revisore), oppure no.
