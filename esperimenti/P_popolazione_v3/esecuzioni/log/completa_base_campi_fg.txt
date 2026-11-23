@@ -1,0 +1,126 @@
+{
+ "seme": 20261122,
+ "scenario": "base",
+ "pilota": false,
+ "hash_contenuto": "7ec73ec8c6816b291aa6157e813afa2e76de602973131bd382b155ef3b13825d",
+ "n": 881980,
+ "rep": {
+  "minori_quota_res": 0.1543150198159898,
+  "ripiego_RC": {
+   "0": 475,
+   "1": 673,
+   "2": 244
+  },
+  "ripiego_RM": {
+   "0": 521,
+   "1": 599,
+   "2": 272
+  },
+  "p_minori": 0.8563789066018332,
+  "troncamenti_T1": 0,
+  "nil_senza_civici": [],
+  "fuori_zona_quotata": 3717
+ },
+ "P1_passa": true
+}
+                                                   margine livello  celle  obiettivo_tot          TAE     TAE_N  err_rel_max_celle100  err_abs_max_celle_lt100     SRMSE  soglia_TAE_N  passa
+0   M0 congiunta ds1441 NIL x eta x tipologia x componenti     NIL  13920  780935.000000     0.000000  0.000000              0.000000                 0.000000  0.000000         0.000   True
+1                                       M1 NIL x tipologia     NIL    696  780935.000000     0.000000  0.000000              0.000000                 0.000000  0.000000         0.010   True
+2                                       M2 tipologia x eta   citta     32  780935.000000     0.000000  0.000000              0.000000                      NaN  0.000000         0.005   True
+3                                    M3a soli >=65 per NIL     NIL     87  127837.000000     0.000000  0.000000              0.000000                 0.000000  0.000000         0.010   True
+4                             M3b capofamiglia <35 per NIL     NIL     87  127178.000000     0.000000  0.000000              0.000000                 0.000000  0.000000         0.010   True
+5                                            M4 componenti   citta      5  780935.000000     0.000000  0.000000              0.000000                      NaN  0.000000         0.005   True
+6   M5a con minori per NIL (quote condizionate ds139 2021)     NIL     87  120508.045477    21.419762  0.000178              0.003245                 0.474187  0.000205         0.010   True
+7                      M5b monogenitori con minori per NIL     NIL     87   30093.241902    41.951046  0.001394              0.006633                 1.011844  0.001692         0.010   True
+8                                         M6 totale minori   citta      1  196577.000000    20.000000  0.000102              0.000102                      NaN  0.000102         0.005   True
+9                                        M7 titolo (citta)   citta      3  780935.000000     5.477399  0.000007              0.000074                      NaN  0.000007         0.005   True
+10                      M8 titolo per NIL (2011 riscalato)     NIL    261  780935.000000    64.913059  0.000083              0.004429                 0.562749  0.000097         0.010   True
+11                              M9 classi MEF (percettori)   citta      7  985790.000000  1737.135491  0.001762              0.006365                      NaN  0.001890         0.010   True
+12                                    P1c totale residenti   citta      1  780935.000000     0.000000  0.000000              0.000000                      NaN  0.000000         0.000   True
+                                tutti  richiedenti  fascia_grigia_quota_rich  isee_14_16_quota_rich  budget_mediano_rich  rich_fascia_grigia_omi  rich_fascia_grigia_annunci
+categoria                                                                                                                                                                   
+studenti fuori sede             70000        59000                  0.000000               0.000000           665.436841                       0                           0
+famiglie con figli minorenni   121779        40144                  0.093289               0.046607           910.081901                    3745                       13431
+anziani soli                   127837        41576                  0.150568               0.036079           507.511147                    6260                       16986
+giovani coppie                   2955         1327                  0.078372               0.038433           971.756192                     104                         501
+giovani soli e nuovi arrivati  128447        60766                  0.086660               0.037949           553.957726                    5266                       21266
+nessuna categoria              430962       140295                  0.097922               0.038305           669.006785                   13738                       50955
+{
+ "seme": 20261122,
+ "hash_contenuto": "7ec73ec8c6816b291aa6157e813afa2e76de602973131bd382b155ef3b13825d",
+ "P1_passa": true,
+ "P2": {
+  "NIL valido": true,
+  "categoria/titolo/dim": true,
+  "dim 1 <=> tipologia Monocomponente o In convivenza": true,
+  "congiunta residenti = M0 cella per cella": true,
+  "anziani soli: dim 1, eta >= 65": true,
+  "famiglie con minori: >=1 minore, dim >=2": true,
+  "minori <= dim-1": true,
+  "netto >= 0": true,
+  "isee >= 0": true,
+  "budget > 0 se reddito > 0": true,
+  "minori -> >=1 ancora scuola": true,
+  "studente -> 1 ancora universita": true,
+  "percettore non pensionato -> 1 ancora lavoro": true,
+  "coordinate valide": true,
+  "ancore non 'fuori Milano' dentro il confine": true,
+  "residenza dentro il confine": true,
+  "studenti e arrivi marcati": true,
+  "nessun campo da LLM": true
+ },
+ "P2_info": {
+  "ancore_fuori_confine": 0,
+  "residenze_fuori": 0
+ },
+ "P5": {
+  "n": 343108,
+  "G1_tau_mediana": 1.0,
+  "P5a": true,
+  "G2_quota_tau_le_080": 0.9559701318535272,
+  "P5b": true,
+  "G2_quota_per_tipo": {
+   "lessicografiche": 0.8009026135159844,
+   "omofile": 1.0,
+   "polarizzate": 1.0,
+   "soglia": 0.979874633622566,
+   "rumore": 1.0
+  },
+  "G3_sha256_veri": "60ad875d4b117990f2faf1c09a32e839c03c3cf90686c172f7729d38091fc70c",
+  "P5c": true
+ },
+ "rep": {
+  "minori_quota_res": 0.1543150198159898,
+  "ripiego_RC": {
+   "0": 475,
+   "1": 673,
+   "2": 244
+  },
+  "ripiego_RM": {
+   "0": 521,
+   "1": 599,
+   "2": 272
+  },
+  "p_minori": 0.8563789066018332,
+  "troncamenti_T1": 0,
+  "nil_senza_civici": [],
+  "fuori_zona_quotata": 3717
+ },
+ "info_minori": [
+  {
+   "spearman": 0.45556608587883646,
+   "scarto_ass_max": 0.587938596491228,
+   "citta_2025": 0.1543150198159898,
+   "ripiego_RC": {
+    "0": 475,
+    "1": 673,
+    "2": 244
+   },
+   "ripiego_RM": {
+    "0": 521,
+    "1": 599,
+    "2": 272
+   }
+  }
+ ]
+}

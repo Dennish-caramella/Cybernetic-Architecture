@@ -1,11 +1,12 @@
-"""Base P v3 (ticket #18; unica modifica: titolo con arrotondamento a due vincoli, pre-registrazione v3 a2561ce8...; resto = v2; regole: esecuzioni/00_preregistrazione.txt v2, sha256 1bf8df2a...; differenze dalla v1 marcate [v2]): popolazione sintetica dei nuclei abitativi di Milano.
-Regole: esecuzioni/00_preregistrazione.txt (sha256 fa0ec4f8...). Dati: scarica.py -> ../_cache/P_popolazione/raw/.
+"""Base P v3 (ticket #18; unica modifica: titolo con arrotondamento a due vincoli, pre-registrazione v3 a2561ce8...; resto = v2; regole v2: sha256 1bf8df2a...; differenze dalla v1 marcate [v2]): popolazione sintetica dei nuclei abitativi di Milano.
+Regole v1: sha256 fa0ec4f8.... Dati: scarica.py -> ../_cache/P_popolazione/raw/.
 Uso:
   python3 -I run.py controlla                      # margini dal grezzo = CSV delle note (sezione 0 / regola di arresto)
   python3 -I run.py esegui [--seme S] [--pilota] [--scenario NOME] [--scrivi]
   python3 -I run.py robustezza                     # P3: seme principale due volte + 10 semi
   python3 -I run.py sensibilita                    # S1-S9
-I margini tenuti fuori (V1, V2 di ds205) NON sono letti da questo file: solo valida_p4.py li legge.
+I margini tenuti fuori V1, V2 (valori per NIL di ds205) non sono usati da questo file: carica() legge tutto ds205, ma della colonna "Minori"
+usa solo il totale cittadino (M6, adattato) e non usa la colonna "80 e + soli..."; il confronto per NIL lo fa solo valida_p4.py.
 """
 import glob, hashlib, io, json, os, sys, zipfile
 import numpy as np, pandas as pd, geopandas as gpd
