@@ -4,6 +4,7 @@ Una riga per giorno, dal più recente. Le date vengono dal registro storico e da
 
 | Giorno | Cosa è stato fatto | Dove |
 |---|---|---|
+| 2026-11-23/24 | Le 5 decisioni di Dennis (tutte sì); Base E v2 congelata; banco rifatto sulla base del Lab con zoom, revisione (passa con correzioni) e correzioni D1–D7 applicate, ripubblicato; Base P v4 pre-registrata ed eseguita: P4 fallisce (mediana 28.302 € contro 30.182–55.313), esito cambia; revisione della v4 in corso | `esperimenti/banco/`, `esperimenti/P_popolazione_v4/` |
 | 2026-11-22/23 | Base P v1–v3 (v3: criteri passano, P4 chiuso in attesa di Dennis), Base E v1–v2 (v2: revisione passa con correzioni; canone di pareggio 130–172 €/m²/anno, mai sotto 90), banco pubblicato come artifact, verifica delle fonti del video sulla crisi abitativa, controllo umano di C5 e congelamento della Base L v7 | `esperimenti/P_popolazione*`, `esperimenti/E_economia*`, `esperimenti/banco/` |
 | 2026-11-16/22 | Base L v7: GFU separate, pre-registrazione (corretta dopo un conteggio), codifiche cieche a blocchi (Haiku; Fable bloccato dai crediti, codificatore 1 rifatto con Opus), C5a 0,722; revisione: ripeti C5; controllo umano di Dennis su 60 lotti (0,737, inconcludente), base congelata per sua decisione | `esperimenti/L_lotti_v7/` |
 | 2026-11-11/14 | Mappa wayfinder della scala urbana (issue #15–#38) e team di 12 agenti con protocollo di laboratorio; Base L v1–v4 (catasto incompleto corretto, riuso entro 10 m, scoperta che lo strato AT regionale è il PGT 2012); v5 con gli ambiti del PGT 2030: 216 edificabili / 176 riuso / 309 attivazione, C5 passa di misura (0,708), C9 censimento non passa (11/29), revisione indipendente: cambia; poi regole di Dennis del 14/11, v6 (C5 0,686, non passa: le GFU come edificabili 0,26), analisi Bartlett RC10, tre figure di sintesi socio-economica | `esperimenti/L_lotti_v*/`, `esperimenti/PROTOCOLLO_LABORATORIO.md`, `.claude/agents/` |
@@ -22,4 +23,4 @@ Una riga per giorno, dal più recente. Le date vengono dal registro storico e da
 | 2026-10-10 | Rilettura integrale delle schede 01–24; second brain v1/v2; audit | `secondo_cervello/mappe/`, `secondo_cervello/fonti/AUDIT_CARTELLA_2026-10-10.md` |
 | 2026-10-07 | Gioco "regole comuni" (data del file, non accertata altrimenti) | `prove/archivio/2026-10-07_gioco/` |
 
-Ultimo aggiornamento del giornale: 2026-11-23.
+Ultimo aggiornamento del giornale: 2026-11-24.
