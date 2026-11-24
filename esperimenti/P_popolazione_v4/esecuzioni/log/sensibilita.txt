@@ -1,0 +1,29 @@
+base
+S1_T1
+S2_stud50k
+S2_stud90k
+S2_res16k
+S3_annunci
+S4_rho_p05
+S4_rho_eta
+S5_conviventi
+S6_sap_esclusi
+S7_dim2
+S7_shift
+S8_residuo
+S9_q05
+S9_q09
+S10_s0
+S10_s1
+S11_senza_c2
+         scenario       categoria    tutti  richiedenti  fascia_grigia_quota_rich  isee_14_16_quota_rich  budget_mediano_rich  rich_fascia_grigia_omi  rich_fascia_grigia_annunci  rapporto_su_base
+51  S5_conviventi  giovani coppie  10814.0       4854.0                  0.114957               0.044087           783.113037                   558.0                      2032.0          3.657875
+scenario                         S10_s0    S10_s1  S11_senza_c2     S1_T1  S2_res16k  S2_stud50k  S2_stud90k  S3_annunci  S4_rho_eta  S4_rho_p05  S5_conviventi  S6_sap_esclusi   S7_dim2  S7_shift  S8_residuo    S9_q05    S9_q09      base
+categoria                                                                                                                                                                                                                                    
+anziani soli                    41576.0   41576.0       41576.0   24162.0    41576.0     41576.0     41576.0     41576.0     41576.0     41576.0        41576.0         31461.0   41574.0   41576.0     41576.0   41576.0   41576.0   41576.0
+famiglie con figli minorenni    40144.0   40144.0       40144.0   41305.0    40144.0     40144.0     40144.0     40144.0     40144.0     40144.0        40144.0         30477.0   39844.0   40144.0     40144.0   40144.0   40144.0   40144.0
+giovani coppie                   1327.0    1327.0        1327.0    2053.0     1327.0      1327.0      1327.0      1327.0      1327.0      1327.0         4854.0          1142.0    1181.0    1327.0      1327.0    1327.0    1327.0    1327.0
+giovani soli e nuovi arrivati   60766.0   60766.0       60766.0   90829.0    60766.0     60766.0     60766.0     60766.0     60766.0     60766.0        59234.0         52948.0   53470.0   60766.0     60766.0   60766.0   60766.0   60766.0
+nessuna categoria              140295.0  140295.0      140295.0  125759.0   140295.0    140295.0    140295.0    140295.0    140295.0    140295.0       138300.0        105623.0  140278.0  140295.0    140295.0  140295.0  140295.0  140295.0
+studenti fuori sede             59000.0   59000.0       59000.0   59000.0    54000.0     39000.0     79000.0     59000.0     59000.0     59000.0        59000.0         59000.0   59000.0   59000.0     59000.0   59000.0   59000.0   59000.0
+FINE

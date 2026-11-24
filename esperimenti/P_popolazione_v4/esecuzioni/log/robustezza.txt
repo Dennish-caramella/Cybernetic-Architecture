@@ -1,0 +1,14 @@
+20261122 61373daf2922 True
+20261122 61373daf2922 True
+20261123 143f9f0ac05a True
+20261124 d593b6f90882 True
+20261125 1ce05c035d78 True
+20261126 22821eda4043 True
+20261127 713626822373 True
+20261128 a599f690c016 True
+20261129 f229810245a2 True
+20261130 426dac4f42da True
+20261131 953512352feb True
+20261132 02cc6b08237f True
+{'stesso_hash': True, 'P1_tutti_10_semi': True, 'cv': {'studenti fuori sede': 0.0, 'famiglie con figli minorenni': 0.0026766353374016606, 'anziani soli': 0.0001653893741775793, 'giovani coppie': 0.0034312520342613504, 'giovani soli e nuovi arrivati': 0.0003030088696328807, 'nessuna categoria': 0.0007061706835668522}, 'P3_cv_ok': True}
+FINE

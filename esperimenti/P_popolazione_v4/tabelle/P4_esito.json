@@ -1,0 +1,86 @@
+{
+ "NIL_simulati": 87,
+ "NIL_ds205": 88,
+ "NIL_abbinati": 87,
+ "NIL_non_abbinati": [
+  8.0
+ ],
+ "P4a": {
+  "n": 87,
+  "spearman": 0.999216244466776,
+  "SRMSE": 0.02904486521290138,
+  "sim_tot": 56788.0,
+  "obs_tot": 57073.0,
+  "passa": true
+ },
+ "P4b": {
+  "n": 87,
+  "spearman": 0.9985373721909343,
+  "SRMSE": 0.03065498195266748,
+  "sim_tot": 196597.0,
+  "obs_tot": 196577.0,
+  "passa": true
+ },
+ "appendice_quote_minori": {
+  "n": 87,
+  "spearman": 0.9457242837355107,
+  "SRMSE": 0.08705490619870411,
+  "nota": "informativo, senza soglia"
+ },
+ "P4d": "non applicabile (M10 [L])",
+ "P4e": {
+  "V5": {
+   "valore": 33536.0,
+   "anno": 2024,
+   "sha256": "60e6eb9fb474de3638f8da003bc8dffadaffb244dea6d31ca25644fd00d516ef",
+   "sha256_p4f": "c438297a76a4a033040ee786eee5c1e954d28190d2db8cff4501c250b42750f8"
+  },
+  "mediana_netta_sim": 28301.5,
+  "banda": [
+   30182.4,
+   50304.0
+  ],
+  "passa": false
+ },
+ "P4f_informativo": {
+  "1": {
+   "sim": 25749.9,
+   "ITC": 22697.0,
+   "rapporto": 1.1345067630083272
+  },
+  "2": {
+   "sim": 29866.995000000003,
+   "ITC": 40631.0,
+   "rapporto": 0.7350790037163742
+  },
+  "3": {
+   "sim": 32091.614999999998,
+   "ITC": 52852.0,
+   "rapporto": 0.607197740861273
+  },
+  "4": {
+   "sim": 35144.244999999995,
+   "ITC": 58799.0,
+   "rapporto": 0.5977014064865048
+  },
+  "7": {
+   "sim": 36674.185,
+   "ITC": 55968.0,
+   "rapporto": 0.6552706010577473
+  }
+ },
+ "P4c": {
+  "mediana_netta": 28301.5,
+  "banda": [
+   33187.5,
+   55312.5
+  ],
+  "mediana_65": 27256.655,
+  "banda_65": [
+   22074.4,
+   41389.5
+  ],
+  "passa": false
+ },
+ "P4_passa": false
+}
