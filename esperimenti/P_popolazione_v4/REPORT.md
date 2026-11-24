@@ -117,7 +117,11 @@ La variante più vicina alla banda è la base, a −1.880 € dalla soglia di P4
 - Non verificato: che la combinazione "centro area metropolitana" 2024 sia confrontabile con le famiglie anagrafiche (famiglia di fatto contro famiglia anagrafica).
 
 ## 7. Revisione indipendente
-(da scrivere a cura del `revisore-metodologico`)
+Testo completo in `REVISIONE.md` (`revisore-metodologico`; altra istanza dello stesso sistema, non una verifica umana). **Esito proposto: cambia, confermato**; regola di arresto: decide Dennis.
+- Riproduzione [V]: pre-registrazione e commit prima di ogni esecuzione; run da capo con lo stesso hash di contenuto `61373daf…`; P4c 28.301,5 €, V5 33.536 €, P4f ricalcolati dalla cache; codici ISTAT controllati sulla codelist; test 18/18; codice cambiato solo nel blocco del reddito e in `valida_p4.py`.
+- **G1: la diagnosi di §5 e §8 regge a metà.** s non è la leva (vero), ma neanche "più percettori": il reddito totale simulato è già pari al MEF (lordo 42,95 contro 42,44 miliardi) e il netto medio per nucleo (36.669 €) è sopra V5. S9_q09 (più percettori del MEF) dà 29.556 €, ancora sotto. Il problema è la composizione dei nuclei (57,5% di una persona) e la distribuzione fra nuclei [I]. Una v5 costruita su §8 punto 1 rischierebbe di adattarsi a soglie non più cieche.
+- Difetti: D1 M9 non controlla conteggio dei percettori né reddito totale; D2 script delle mediane di sensibilità non nel repo; D3 mediane di S9 mancanti; D4 "nessun s raggiunge le soglie" va marcato [I]; D5 anno del reddito di TIME_PERIOD 2024 [L] (l'esito non cambia); D6 S10 obbligatorio a valle (fascia grigia OMI 29.112–36.155). Minori M1–M7.
+- Raccomandazione del revisore: congelare la struttura (P1, P2, P3, P5) con reddito "non validato", s = 0,5, S9, S10 e le due fasce grigie obbligatorie a valle, come deviazione registrata; una v5 solo con criterio sulla composizione dei nuclei, vincoli MEF e fonte nuova cieca pre-registrati.
 
 ## 8. Cosa passa alla prova successiva
 - **Nessun congelamento.** Restano valide e riprodotte le parti che non dipendono dal reddito: scheletro, minori, titolo, ancore, generatori; P1, P2, P3, P5.
